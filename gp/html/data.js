@@ -1,6 +1,6 @@
 var start = {
 	theme: "#LIVE 🔴 aus 🇧🇷 Markus Mauthe - Naturfotograf & Umweltaktivist",
-	message_neg: "Naturwunder Erde 🌎 - Gleich geht's los!",
+	message_neg: "Naturwunder Erde - Gleich geht's los!",
 	call2action: "👁 Sei jetzt LIVE dabei!"
 };
 var finish = {
