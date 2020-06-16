@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<svg	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	
+	width="1280" height="720"
+
+	font-family="Sunbeat"
+	text-anchor="middle"
+
+	fill="#74c0a1"
+	stroke="white" stroke-width="8">
+
+<defs>
+	<desc>	3:2	3 * 570/2 = 855 </desc>
+	<rect id="screen"
+		x="-427.5" y="0"
+		width="855" height="570"/>
+	<rect id="banner" class="background"
+		x="-120" y="-20"
+		width="240" height="40"
+		stroke-width="0"/>
+
+	<desc>	2:3	2 * 330/3 = 220 </desc>
+	<rect id="cams"
+		x="-110" y="-165"
+		width="220" height="330"/>
+
+	<image id="lutz"
+		x="-90" y="-150"
+		href="https://static.wixstatic.com/media/b8486a_56df73b6eede4d99b24f7ca93b4f6cfb~mv2.png"
+		height="300"/>
+	<image id="markus"
+		x="-90" y="-150"
+		href="https://static.wixstatic.com/media/b8486a_8802ee4cc1c845eea7d8574535c554aa~mv2.png"
+		height="300"/>
+	<image id="buntdenker"
+		x="-150" y="-150"
+		href="https://static.wixstatic.com/media/b8486a_9193e57831044be08b3803d9ddbf5227~mv2.png"
+		height="300"/>
+</defs>
+	<rect	class="background"
+		width="1280" height="720"
+		x="0" y="0"
+		stroke-width="0"
+		fill="#15a355"/>
+
+	<rect	class="background"
+		width="400" height="68"
+		x="-200" y="686"
+		transform="translate(640 -50)"
+		stroke-width="0"/>
+
+	<text x="640" y="697"
+		stroke="none"
+		font-size="74"
+		fill="white">
+		buntdenker.de</text>
+
+	<desc>	50 + 570 - 60 = 560 </desc>
+	<g transform="translate(100 560) rotate(-2)">
+		<use xlink:href="#banner"/>
+		
+		<text x="0" y="0"
+			transform="translate(0 13)"
+			stroke="none"
+			font-size="37"
+			fill="white">
+			Lutz Jäkel</text></g>
+
+	<desc>	50 + 56 = 110 </desc>
+	<g transform="translate(1180 110) rotate(2)">
+		<use xlink:href="#banner"/>
+
+		<text x="0" y="0"
+			transform="translate(0 13)"
+			stroke="none"
+			font-size="37"
+			fill="white">
+			Markus Mauthe</text></g>
+
+	<use xlink:href="#screen" x="640" y="50"/>
+	<text x="640" y="145"
+		stroke="none"
+		font-size="36"
+		fill="white">
+		Gleich geht´s los!</text>
+	<text x="640" y="240"
+		stroke="none"
+		font-size="111"
+		fill="white">
+		#buntgespräch</text>
+	<use xlink:href="#buntdenker" transform="translate(850 430)"/>
+	<use xlink:href="#buntdenker" transform="translate(430 430) scale(-1,1)" opacity="0.5"/>
+
+	<desc>	50 + 570/2 = 335 = 360 - 25 </desc>
+	<g transform="translate(130 360) rotate(-2)">
+		<use xlink:href="#cams"/>
+		<use xlink:href="#lutz"/>
+	</g>
+	<desc>	50 + 570/2 = 335 = 310 + 25 </desc>
+	<g transform="translate(1150 310) rotate(2)">
+		<use xlink:href="#cams"/>
+		<use xlink:href="#markus"/>
+	</g>
+	<object type="image/svg+xml"
+		x="0" y="0"
+		data="clock.svg"/>
+
+	<circle cx="1097.5" cy="194" r="98"
+		stroke="none"
+		fill="none"/>
+
+	<circle cx="182.5" cy="194" r="98"
+		stroke="none"
+		fill="none"/>
+
+<style type="text/css">
+	<![CDATA[
+/*
+	.background {
+		fill: white;
+	}
+	#cams {
+		fill: white;
+	}
+*/
+	]]>
+</style> 
+</svg>

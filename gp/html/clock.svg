@@ -1,0 +1,99 @@
+<?xml-stylesheet type="text/css" href="stylesheet.css"?>
+<svg version="1.1"
+	width="500" height="500"
+	viewBox="-100 -100 200 200"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+
+	onmouseover="setEventStartTime()"
+	onmousedown="setEventStartTime()"
+	onkeydown="setEventStartTime()"
+	onload="updateTime()">
+
+	<g id="clockFace">
+		<circle id="marker" cy="90" r="3" stroke-width="2"/>
+		<use href="#marker" transform="rotate(090)"/>
+		<use href="#marker" transform="rotate(180)"/>
+		<use href="#marker" transform="rotate(270)"/>
+		<use href="#marker" transform="rotate(030)"/>
+		<use href="#marker" transform="rotate(060)"/>
+		<use href="#marker" transform="rotate(120)"/>
+		<use href="#marker" transform="rotate(150)"/>
+		<use href="#marker" transform="rotate(210)"/>
+		<use href="#marker" transform="rotate(240)"/>
+		<use href="#marker" transform="rotate(300)"/>
+		<use href="#marker" transform="rotate(330)"/>
+	</g>
+	<g class="clockHands">
+		<line id="alarmHand" y1="0" y2="100"
+			stroke-width="0" stroke-linecap="round"></line>
+		<line id="hourHand" y1="-10" y2="60"
+			stroke-width="3" stroke-linecap="round"></line>
+		<line id="minuteHand" y1="-10" y2="90"
+			stroke-width="3" stroke-linecap="round"></line>
+		<line id="secondHand" y1="-5" y2="90"
+			stroke-width="2" stroke-linecap="round"></line>
+	</g>
+	<script  type="text/javascript">
+	<![CDATA[
+	var eventStartAngle = "";
+	
+	function setEventStartTime() {
+		var input = window.prompt("starting time", "hh:mm");
+		if (input === "" || input === null) {
+			return false;
+		}
+		var time = input.split(":");
+		if (Number.isNaN(time[0]) || time[0] > 23 || Number.isNaN(time[1]) || time[1] > 59) {
+			window.alert("invalid input");
+			document.getElementById("alarmHand").setAttribute("stroke-width", "0");
+			eventStartAngle = "";
+			return false;
+		} else {
+			time[0] = time[0] % 12;
+			eventStartAngle = (180 + (time[0] + time[1] / 60) * 30) % 360;
+			document.getElementById("alarmHand").setAttribute("transform", "rotate(" + (eventStartAngle) + ")");
+			document.getElementById("alarmHand").setAttribute("stroke-width", "3");
+		}
+	}
+	
+	function displayStatus() {
+		if (window.obsstudio) {
+			window.obsstudio.getStatus(function (status) {
+				switch (true) {
+					case (status.recording):
+					case (status.streaming):
+						document.getElementById("marker").setAttribute("fill", "white");
+						break;
+					default:
+						document.getElementById("marker").setAttribute("fill", "yellow");
+				}
+			});
+		}
+	}
+	
+	function updateTime() {
+		var date = new Date();
+		var seconds = date.getSeconds();
+		var minutes = date.getMinutes();
+		var hours = 2 + date.getUTCHours();
+		hours = hours % 12;
+		var hourAngle = (180 + (hours + minutes / 60) * 30) % 360;
+		var minuteAngle = (180 + minutes * 6) % 360;
+		var secondAngle = (180 + seconds * 6) % 360;
+		document.getElementById("hourHand").setAttribute("transform", "rotate(" + (hourAngle) + ")");
+		document.getElementById("minuteHand").setAttribute("transform", "rotate(" + (minuteAngle) + ")");
+		document.getElementById("secondHand").setAttribute("transform", "rotate(" + (secondAngle) + ")");
+
+		if (eventStartAngle === hourAngle) {
+			document.getElementById("marker").setAttribute("stroke-width", "2");
+		} else {
+			document.getElementById("marker").setAttribute("stroke-width", "0");
+		}
+
+		displayStatus();
+		setTimeout(updateTime, 1000);
+	}
+	]]>
+	</script>
+</svg>

@@ -1,0 +1,215 @@
+body {
+	background: #73be1e;
+	color: white;
+	font-family: "Helvetica Neue";
+	font-weight: bold
+}
+
+.author {
+	color: white;
+	bottom: 0;
+	font-family: "Helvetica Neue";
+	font-size: 10pt;
+	right: 0;
+	opacity: 0.75;
+	position: absolute;
+	transform: rotate(180deg);
+	writing-mode: vertical-lr
+}
+
+
+.arrows {
+	background: linear-gradient(to bottom, #ff0032, #480019);
+	border-radius: 50%;
+	box-shadow: 0px 15px 5px rgba(0,0,0,0.1), 10px 20px 5px rgba(0,0,0,0.05), -10px 20px 5px rgba(0,0,0,0.05);
+	display: inline-block;
+	font-size: 36px;
+	line-height: 1.6em;
+	text-align: center;
+	height: 1.6em;
+	width: 1.6em
+}
+
+#chat {
+	bottom: 10px;
+	position: absolute;
+	right: 10px
+}
+
+#description {
+	bottom: 10px;
+	left: calc(50% - 1em);
+	position: absolute
+}
+
+#infocards {
+	position: absolute;
+	right: 100px;
+	top: 2px
+}
+
+#channelIcon {
+	border-radius: 50%;
+	border: 5px solid;
+	box-shadow: 0px 15px 5px rgba(0,0,0,0.1), 10px 20px 5px rgba(0,0,0,0.05), -10px 20px 5px rgba(0,0,0,0.05);
+	left: calc(182px - 206px/2);
+	padding: 8px;
+	position: absolute;
+	top: calc(273px - 206px/2);
+	width: 180px
+}
+
+#clockLogo {
+	heigth: 100px;
+	position: absolute;
+	right: calc(182.5px - 100px / 2);
+	top: calc(193px - 40px);
+	width: 100px;
+	z-index: -1
+}
+
+#clock {
+	border: 5px solid currentColor;
+	border-radius: 50%;
+	box-shadow: 0px 15px 5px rgba(0,0,0,0.1), 10px 20px 5px rgba(0,0,0,0.05), -10px 20px 5px rgba(0,0,0,0.05);
+	height: 196px;
+	position: absolute;
+	right: calc(182.5px - 206px / 2);
+	top: calc(193px - 206px / 2);
+	width: 196px
+}
+
+#marker {
+	stroke: #ff0032
+}
+
+#alarmHand {
+	stroke: #ff0032
+}
+
+#hourHand,
+#minuteHand {
+	stroke: white
+}
+
+#secondHand {
+	stroke: yellow
+}
+
+#banner {
+	font-size: 18px;
+	position: absolute;
+	transform-origin: right top;
+	transform: rotate(-5deg)
+}
+
+
+.element {
+	display: inline-block;
+	margin-bottom: .2em;
+	padding-left: .2em;
+	padding-right: .2em;
+	position: relative
+}
+
+.element:after {
+	outline: solid transparent;
+	background: inherit;
+	bottom: 0;
+	box-shadow: 0px 15px 5px rgba(0,0,0,0.1), 10px 20px 5px rgba(0,0,0,0.05), -10px 20px 5px rgba(0,0,0,0.05);
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform-origin: right bottom;
+	transform: skew(-10deg);
+	z-index: -1
+}
+
+.call2action {
+	background: linear-gradient(to bottom, #ff0032, #480019);
+	font-size: 200%;
+}
+
+.message_neg {
+	background: white;
+	color: #73be1e;
+	font-size: 200%;
+}
+
+.message {
+	background: #73be1e;
+	color: white;
+	font-size: 200%;
+}
+
+.theme {
+	background: yellow;
+	color: black;
+	font-size: 100%;
+}
+
+#hostLogo {
+	bottom: 10px;
+	height: auto;
+	position: absolute;
+	right: 10px;
+	width: 340px
+}
+
+#organizationLogo {
+	bottom: 10px;
+	height: auto;
+	left: 10px;
+	position: absolute;
+	width: 340px
+}
+
+#presenterLogo {
+	height: 135px;
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+#videoThumb {
+	border: 5px solid;
+	border-radius: 10px;
+	bottom: calc(226px - 234px / 2 - 5px);
+	box-shadow: 0px 15px 5px rgba(0,0,0,0.1), 10px 20px 5px rgba(0,0,0,0.05), -10px 20px 5px rgba(0,0,0,0.05);
+	height: 234px;
+	left: 50%;
+	overflow: hidden;
+	position: absolute;
+	transform: translate(-50%, 0%);
+	width: 416px
+}
+
+.heartbeat {
+	animation: heartbeat 1.5s ease-in-out infinite both
+}
+
+@keyframes heartbeat {
+	from {
+		transform: scale(1);
+		transform-origin: center center;
+		animation-timing-function: ease-out
+	}
+	10% {
+		transform: scale(0.91);
+		animation-timing-function: ease-in
+	}
+	17% {
+		transform: scale(0.98);
+		animation-timing-function: ease-out
+	}
+	33% {
+		transform: scale(0.87);
+		animation-timing-function: ease-in
+	}
+	45% {
+		transform: scale(1);
+		animation-timing-function: ease-out
+	}
+}

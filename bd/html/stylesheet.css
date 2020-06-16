@@ -1,0 +1,28 @@
+#clock {
+	height: 196px;
+	position: absolute;
+	left: 640;
+	top: 360;
+	width: 196px
+}
+
+#main {
+	z-index: -1
+}
+
+#marker {
+	stroke: white
+}
+
+#alarmHand {
+	stroke: #ff0032
+}
+
+#hourHand,
+#minuteHand {
+	stroke: white
+}
+
+#secondHand {
+	stroke: yellow
+}
