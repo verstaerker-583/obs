@@ -30,16 +30,13 @@ function buildArrows() {
 function buildBanner(object) {
 	var banner = document.createElement("span");
 	banner.id = "banner";
-
 	for (let [key, value] of Object.entries(object)) {
 		var elmnt = document.createElement("span");
 		elmnt.id = key;
 		elmnt.classList.add("element");
 		elmnt.classList.add(key);
 		elmnt.innerHTML = value;
-
 		banner.appendChild(elmnt);
-
 		var br = document.createElement("br");
 		banner.appendChild(br);
 	}
@@ -84,17 +81,13 @@ function build() {
 			pics.videoThumb = "";
 			loadPics();
 			position();
-
 			break;
 		case "donate":
 			document.body.style.backgroundColor = "transparent";
 			document.body.style.backgroundImage = "none";
-
 			buildBanner(donate);
 			buildArrows();
-
 			call2action.classList.add("heartbeat");
-
 			break;
 		default:
 			buildBanner(finish);

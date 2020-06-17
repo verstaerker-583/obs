@@ -20,3 +20,6 @@ var pics = {
 	presenterLogo: "../../gp/mmLogo.png",
 	videoThumb: "https://www.markus-mauthe.de/site/assets/files/1001/homepage_045.jpg"
 }
+var alarm = {
+	time: "19:30"
+}

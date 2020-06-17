@@ -1,33 +1,33 @@
 @import "../../gp/html/stylesheet.css";
-body {
-	background-image: url("https://markus-mauthe.de/site/assets/files/1/dsc6707.jpg");
-	background-size: cover;
-	color: white;
-	font-family: Sunbeat;
-}
-
 .arrows {
-	background: linear-gradient(to bottom, #c9ae93, #50593c);
-}
-
-.element {
-	border-radius: 5px;
-}
-
-.element:after {
-	content: none;
+	background: linear-gradient(to bottom, #c9ae93, #50593c)
 }
 
 .call2action {
-	background: linear-gradient(to bottom, #c9ae93, #50593c);
+	background: linear-gradient(to bottom, #c9ae93, #50593c)
+}
+
+.element {
+	border-radius: 5px
+}
+
+.element:after {
+	content: none
 }
 
 .message {
 	background: #edc9af;
-	color: white;
+	color: white
 }
 
 .theme {
 	background: #edc9af;
-	color: #50593c;
+	color: #50593c
+}
+
+body {
+	background-image: url("https://markus-mauthe.de/site/assets/files/1/dsc6707.jpg");
+	background-size: cover;
+	color: white;
+	font-family: Sunbeat
 }
