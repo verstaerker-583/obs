@@ -17,7 +17,7 @@ var pics = {
 	channelIcon: "https://yt3.ggpht.com/a/AATXAJyD2gbYLJc6Bargpj-z-TNv3XYkI7qCEPx5bQ=s176-c-k-c0x00ffffff-no-rj-mo",
 	clockLogo: "https://sofareisen.org/images/logo_schrift.png",
 	hostLogo: "https://sofareisen.org/images/sofareisen_logo_all.png",
-	organizationLogo: "../bd-logo.svg",
+	organizationLogo: "../bdLogo.svg",
 	presenterLogo: "../../gp/mmLogo.png",
 	videoThumb: "https://www.globalsocial-network.org/wp-content/uploads/logo_GlobalSocial.png"
 	

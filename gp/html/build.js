@@ -21,6 +21,7 @@ function buildArrows() {
 		elmnt.id = id;
 		elmnt.innerHTML = "⇨";
 		elmnt.classList.add("arrows");
+		elmnt.classList.add("call2action");
 		elmnt.classList.add("heartbeat");
 		document.body.appendChild(elmnt);
 	}
@@ -72,8 +73,8 @@ function position() {
 
 function build() {
 	var URL = location.pathname;
-	var PageName = URL.substring(URL.lastIndexOf("/") + 1)
-	PageName = PageName.substring(0, PageName.lastIndexOf("."))
+	var PageName = URL.substring(URL.lastIndexOf("/") + 1);
+	PageName = PageName.substring(0, PageName.lastIndexOf("."));
 	switch (PageName) {
 		case "start":
 			buildBanner(start);
