@@ -1,28 +1,15 @@
-#clock {
-	height: 196px;
-	position: absolute;
-	left: 640;
-	top: 360;
-	width: 196px
+.background {
+	fill: #15a355;
 }
-
-#main {
-	z-index: -1
+.frames {
+	stroke: white;
+	stroke-width: 8px;
 }
-
-#marker {
-	stroke: white
+#logos, #cams {
+	fill: #74c0a1;
 }
-
-#alarmHand {
-	stroke: #ff0032
-}
-
-#hourHand,
-#minuteHand {
-	stroke: white
-}
-
-#secondHand {
-	stroke: yellow
+text {
+	fill: white;
+	font-family: Sunbeat;
+	text-anchor: middle
 }
