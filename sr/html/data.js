@@ -20,5 +20,4 @@ var pics = {
 	organizationLogo: "../bdLogo.svg",
 	presenterLogo: "../../gp/mmLogo.png",
 	videoThumb: "https://www.globalsocial-network.org/wp-content/uploads/logo_GlobalSocial.png"
-	
-}
+};

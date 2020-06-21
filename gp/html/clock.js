@@ -2,7 +2,7 @@ var alarmAngle;
 var hourAngle;
 
 function setAlarm() {
-	if (alarm.time) {
+	if (typeof alarm !== 'undefined') {
 		var strs = alarm.time.split(":");
 		var hours = strs[0] % 12;
 		var minutes = strs[1];
@@ -48,7 +48,9 @@ function updateTime() {
 	document.getElementById("hourHand").setAttribute("transform", "rotate(" + (hourAngle) + ")");
 	document.getElementById("minuteHand").setAttribute("transform", "rotate(" + (minuteAngle) + ")");
 	document.getElementById("secondHand").setAttribute("transform", "rotate(" + (secondAngle) + ")");
+	/*
 	checkAlarm();
+	*/
 	checkOBSStatus();
 	setTimeout(updateTime, 1000);
 }
