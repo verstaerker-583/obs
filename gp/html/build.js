@@ -72,30 +72,30 @@ function position() {
 }
 
 function build() {
-var URL = location.pathname;
-var PageName = URL.substring(URL.lastIndexOf("/") + 1);
-PageName = PageName.substring(0, PageName.lastIndexOf("."));
-switch (PageName) {
-	case "start":
-		buildBanner(start);
-		loadClock();
-		pics.videoThumb = "";
-		loadPics();
-		position();
-		break;
-	case "donate":
-		document.body.style.backgroundColor = "transparent";
-		document.body.style.backgroundImage = "none";
-		buildBanner(donate);
-		buildArrows();
-		call2action.classList.add("heartbeat");
-		break;
-	default:
-		buildBanner(finish);
-		loadClock();
-		loadPics();
-		position();
-		clock.classList.add("heartbeat");
-		channelIcon.classList.add("heartbeat");
-}
+	var URL = location.pathname;
+	var PageName = URL.substring(URL.lastIndexOf("/") + 1);
+	PageName = PageName.substring(0, PageName.lastIndexOf("."));
+	switch (PageName) {
+		case "start":
+			buildBanner(start);
+			loadClock();
+			pics.videoThumb = "";
+			loadPics();
+			position();
+			break;
+		case "donate":
+			document.body.style.backgroundColor = "transparent";
+			document.body.style.backgroundImage = "none";
+			buildBanner(donate);
+			buildArrows();
+			call2action.classList.add("heartbeat");
+			break;
+		default:
+			buildBanner(finish);
+			loadClock();
+			loadPics();
+			position();
+			clock.classList.add("heartbeat");
+			channelIcon.classList.add("heartbeat");
+	}
 }
