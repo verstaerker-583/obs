@@ -2,6 +2,7 @@
 	fill: #15a355;
 }
 .frames {
+	fill: none;
 	stroke: white;
 	stroke-width: 8px;
 }
@@ -11,5 +12,12 @@
 text {
 	fill: white;
 	font-family: Sunbeat;
-	text-anchor: middle
+	text-anchor: middle;
+	font-size: 72px;
+}
+.names {
+	fill: white;
+	font-family: Sunbeat;
+	text-anchor: middle;
+	font-size: 36px;
 }
