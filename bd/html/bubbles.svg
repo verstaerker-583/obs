@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="bubbles.css"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" onload="bubbles()">
+	<script xlink:href="https://haganbmj.github.io/obs-websocket-js/dist/obs-websocket.js" />
+	<script xlink:href="bubbles.js" />
+	<defs>
+		<clipPath id="clipCircle">
+			<circle r="98" />
+		</clipPath>
+		<image id="Lutz" x="-98" y="-98" width="196" height="250" clip-path="url(#clipCircle)" href="https://static.wixstatic.com/media/b8486a_56df73b6eede4d99b24f7ca93b4f6cfb~mv2.png" />
+		<image id="Markus" x="-98" y="-98" width="196" height="250" clip-path="url(#clipCircle)" href="https://static.wixstatic.com/media/b8486a_8802ee4cc1c845eea7d8574535c554aa~mv2.png" />
+		<image id="LutzYT" x="-98" y="-98" width="196" height="196" clip-path="url(#clipCircle)" href="https://yt3.ggpht.com/a/AATXAJwrQs7nO_291m4RNUM2gsgIdLX_uhEDAOnUgQ=s100-c-k-c0xffffffff-no-rj-mo" />
+		<image id="MarkusYT" x="-98" y="-98" width="196" height="196" clip-path="url(#clipCircle)" href="https://yt3.ggpht.com/a/AATXAJyD2gbYLJc6Bargpj-z-TNv3XYkI7qCEPx5bQ=s176-c-k-c0x00ffffff-no-rj-mo" />
+	</defs>
+</svg>

@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="./stylesheet.css"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-	width="1280" height="720"
-	onload="build(evt)">
-	<script xlink:href="build.js" />
-<defs>
-	<text id="buntdenker" class="text" dx="640" dy="710">buntdenker.de</text>
-	<text id="Lutz" class="names" dx="435" dy="35">
-		<textPath xlink:href="#path1" textLength="130">Lutz Jäkel</textPath>
-	</text>
-	<text id="Markus" class="names" dx="445" dy="35">
-		<textPath xlink:href="#path2" textLength="200">Markus Mauthe</textPath>
-	</text>
-</defs>
-
-</svg>
+bubbles.svg

@@ -116,18 +116,6 @@
 	width: 1.6em
 }
 
-.author {
-	bottom: 0;
-	color: white;
-	font-family: "Helvetica Neue";
-	font-size: 50%;
-	opacity: 0.75;
-	position: absolute;
-	right: 0;
-	transform: rotate(180deg);
-	writing-mode: vertical-lr
-}
-
 .call2action {
 	background: linear-gradient(to bottom, #ff0032, #480019);
 	font-size: 200%

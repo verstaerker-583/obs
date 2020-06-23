@@ -1,0 +1,32 @@
+.logo {
+	alignment-baseline: middle;
+	fill: white;
+	font-family: Sunbeat;
+	font-size: 64px;
+	text-anchor: middle;
+}
+
+.names {
+	alignment-baseline: top;
+	fill: white;
+	font-family: Sunbeat;
+	font-size: 32px;
+	text-anchor: middle;
+}
+
+.frames {
+	fill: none;
+	stroke: white;
+	stroke-width: 5px;
+}
+
+.background {
+	fill: #2DBD92;
+}
+
+#clock {
+	fill: white;
+	font-family: Sunbeat;
+	font-size: 64px;
+	text-anchor: start;
+}
