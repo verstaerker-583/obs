@@ -1,0 +1,626 @@
+{
+	"AuxAudioDevice1": {
+		"filters": [
+			{
+				"id": "noise_suppress_filter",
+				"name": "Noise Suppression"
+			},
+			{
+				"id": "noise_gate_filter",
+				"name": "Noise Gate"
+			},
+			{
+				"id": "compressor_filter",
+				"name": "Compressor",
+				"settings": {
+					"attack_time": 1,
+					"output_gain": 1
+				}
+			},
+			{
+				"id": "limiter_filter",
+				"name": "Limiter"
+			}
+		],
+		"flags": 2,
+		"hotkeys": {
+			"libobs.mute": [
+				{
+					"key": "OBS_KEY_1"
+				},
+				{
+					"key": "OBS_KEY_4"
+				},
+				{
+					"key": "OBS_KEY_M"
+				}
+			],
+			"libobs.unmute": [
+				{
+					"key": "OBS_KEY_2"
+				},
+				{
+					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_M"
+				}
+			]
+		},
+		"id": "coreaudio_input_capture",
+		"mixers": 255,
+		"name": "Mic",
+		"private_settings": {
+			"volume_locked": true
+		},
+		"settings": {
+			"device_id": "default"
+		}
+	},
+	"AuxAudioDevice2": {
+		"filters": [
+			{
+				"id": "noise_suppress_filter",
+				"name": "Noise Suppression"
+			},
+			{
+				"id": "compressor_filter",
+				"name": "Ducking",
+				"settings": {
+					"attack_time": 100,
+					"ratio": 32,
+					"release_time": 600,
+					"sidechain_source": "Mic",
+					"threshold": -36
+				}
+			},
+			{
+				"id": "limiter_filter",
+				"name": "Limiter"
+			}
+		],
+		"hotkeys": {
+			"libobs.mute": [
+				{
+					"key": "OBS_KEY_1"
+				},
+				{
+					"key": "OBS_KEY_4"
+				},
+				{
+					"key": "OBS_KEY_D"
+				}
+			],
+			"libobs.unmute": [
+				{
+					"key": "OBS_KEY_2"
+				},
+				{
+					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_D"
+				}
+			]
+		},
+		"id": "coreaudio_input_capture",
+		"mixers": 255,
+		"monitoring_type": 2,
+		"name": "Desktop",
+		"private_settings": {
+			"volume_locked": true
+		},
+		"settings": {
+			"device_id": "BlackHole_UID"
+		}
+	},
+	"current_scene": "Start",
+	"current_transition": "Fade",
+	"name": "bd",
+	"preview_locked": true,
+	"scene_order": [
+		{
+			"name": "Start"
+		},
+		{
+			"name": "Cam"
+		},
+		{
+			"name": "Screen"
+		},
+		{
+			"name": "Finish"
+		},
+		{
+			"name": "cams"
+		}
+	],
+	"sources": [
+		{
+			"filters": [
+				{
+					"id": "sharpness_filter",
+					"name": "Sharpness"
+				},
+				{
+					"id": "clut_filter",
+					"name": "LUT",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
+					}
+				},
+				{
+					"id": "mask_filter",
+					"name": "Image Mask",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
+				},
+				{
+					"id": "noise_suppress_filter",
+					"name": "Noise Suppression"
+				},
+				{
+					"id": "noise_gate_filter",
+					"name": "Noise Gate"
+				},
+				{
+					"id": "compressor_filter",
+					"name": "Ducking",
+					"settings": {
+						"attack_time": 100,
+						"ratio": 32,
+						"release_time": 600,
+						"sidechain_source": "Mic",
+						"threshold": -36
+					}
+				},
+				{
+					"id": "limiter_filter",
+					"name": "Limiter"
+				}
+			],
+			"hotkeys": {
+				"libobs.mute": [
+					{
+						"key": "OBS_KEY_1"
+					},
+					{
+						"key": "OBS_KEY_4"
+					},
+					{
+						"key": "OBS_KEY_S"
+					}
+				],
+				"libobs.unmute": [
+					{
+						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_S"
+					}
+				]
+			},
+			"id": "ndi_source",
+			"monitoring_type": 2,
+			"name": "skype",
+			"private_settings": {
+				"mixer_hidden": true,
+				"volume_locked": true
+			},
+			"settings": {
+				"ndi_source_name": "OLAFS-AIR (Skype - Aktiver Sprecher)"
+			}
+		},
+		{
+			"filters": [
+				{
+					"id": "sharpness_filter",
+					"name": "Sharpness"
+				},
+				{
+					"id": "clut_filter",
+					"name": "LUT",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
+					}
+				},
+				{
+					"id": "mask_filter",
+					"name": "Image Mask",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
+				}
+			],
+			"id": "av_capture_input",
+			"name": "camA",
+			"settings": {
+				"device": "CC27327P54QGDV4AV",
+				"device_name": "FaceTime HD Camera"
+			}
+		},
+		{
+			"filters": [
+				{
+					"id": "sharpness_filter",
+					"name": "Sharpness"
+				},
+				{
+					"id": "clut_filter",
+					"name": "LUT",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
+					}
+				},
+				{
+					"id": "mask_filter",
+					"name": "Image Mask",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
+				}
+			],
+			"id": "av_capture_input",
+			"name": "camB",
+			"settings": {
+				"device": "obs-virtual-cam-device",
+				"device_name": "OBS Virtual Camera"
+			}
+		},
+		{
+			"hotkeys": {
+				"libobs.hide_scene_item.camA": [
+					{
+						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				],
+				"libobs.hide_scene_item.camB": [
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				],
+				"libobs.show_scene_item.cam": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				],
+				"libobs.show_scene_item.camA": [
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				],
+				"libobs.show_scene_item.camB": [
+					{
+						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				],
+				"libobs.show_scene_item.skype": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				],
+				"OBSBasic.SelectScene": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				]
+			},
+			"id": "scene",
+			"name": "Cam",
+			"settings": {
+				"items": [
+					{
+						"align": 0,
+						"bounds": {
+							"y": 630
+						},
+						"bounds_type": 5,
+						"locked": true,
+						"name": "camA",
+						"pos": {
+							"x": 320,
+							"y": 400
+						}
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"y": 630
+						},
+						"bounds_type": 5,
+						"locked": true,
+						"name": "camB",
+						"pos": {
+							"x": 320,
+							"y": 400
+						}
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"y": 630
+						},
+						"bounds_type": 5,
+						"locked": true,
+						"name": "skype",
+						"pos": {
+							"x": 960,
+							"y": 320
+						}
+					},
+					{
+						"locked": true,
+						"name": "cam"
+					}
+				]
+			}
+		},
+		{
+			"hotkeys": {
+				"libobs.hide_scene_item.camA": [
+					{
+						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				],
+				"libobs.hide_scene_item.camB": [
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				],
+				"libobs.show_scene_item.camA": [
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				],
+				"libobs.show_scene_item.camB": [
+					{
+						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				],
+				"libobs.show_scene_item.skype": [
+					{
+						"key": "OBS_KEY_3"
+					}
+				]
+			},
+			"id": "scene",
+			"name": "cams",
+			"private_settings": {
+				"show_in_multiview": false
+			},
+			"settings": {
+				"items": [
+					{
+						"align": 0,
+						"bounds": {
+							"y": 196
+						},
+						"bounds_type": 5,
+						"locked": true,
+						"name": "camA",
+						"pos": {
+							"x": 108,
+							"y": 400
+						},
+						"rot": -5
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"y": 196
+						},
+						"bounds_type": 5,
+						"locked": true,
+						"name": "camB",
+						"pos": {
+							"x": 108,
+							"y": 400
+						},
+						"rot": -5
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"y": 196
+						},
+						"bounds_type": 5,
+						"locked": true,
+						"name": "skype",
+						"pos": {
+							"x": 1172,
+							"y": 320
+						},
+						"rot": -5
+					},
+					{
+						"locked": true,
+						"name": "screen"
+					}
+				]
+			}
+		},
+		{
+			"hotkeys": {
+				"libobs.hide_scene_item.cams": [
+					{
+						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_BRACKETRIGHT"
+					}
+				],
+				"libobs.show_scene_item.cams": [
+					{
+						"key": "OBS_KEY_BRACKETRIGHT"
+					}
+				],
+				"libobs.show_scene_item.fotomagico": [
+					{
+						"key": "OBS_KEY_3"
+					}
+				],
+				"OBSBasic.SelectScene": [
+					{
+						"key": "OBS_KEY_3"
+					}
+				]
+			},
+			"id": "scene",
+			"name": "Screen",
+			"settings": {
+				"items": [
+					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 4,
+						"locked": true,
+						"name": "fotomagico",
+						"pos": {
+							"x": 640,
+							"y": 360
+						}
+					},
+					{
+						"locked": true,
+						"name": "cams"
+					}
+				]
+			}
+		},
+		{
+			"hotkeys": {
+				"libobs.show_scene_item.finish": [
+					{
+						"key": "OBS_KEY_4"
+					}
+				],
+				"OBSBasic.SelectScene": [
+					{
+						"key": "OBS_KEY_4"
+					}
+				]
+			},
+			"id": "scene",
+			"name": "Finish",
+			"settings": {
+				"items": [
+					{
+						"locked": true,
+						"name": "finish"
+					}
+				]
+			}
+		},
+		{
+			"hotkeys": {
+				"libobs.show_scene_item.start": [
+					{
+						"key": "OBS_KEY_1"
+					}
+				],
+				"OBSBasic.SelectScene": [
+					{
+						"key": "OBS_KEY_1"
+					}
+				]
+			},
+			"id": "scene",
+			"name": "Start",
+			"settings": {
+				"items": [
+					{
+						"locked": true,
+						"name": "start",
+						"visible": true
+					}
+				]
+			}
+		},
+		{
+			"id": "browser_source",
+			"name": "cam",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "",
+				"height": 720,
+				"is_local_file": false,
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/cam.svg",
+				"width": 1280
+			}
+		},
+		{
+			"id": "browser_source",
+			"name": "finish",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "",
+				"height": 720,
+				"is_local_file": false,
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/finish.svg",
+				"width": 1280
+			}
+		},
+		{
+			"id": "browser_source",
+			"name": "screen",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "",
+				"height": 720,
+				"is_local_file": false,
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/screen.svg",
+				"width": 1280
+			}
+		},
+		{
+			"id": "browser_source",
+			"name": "start",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "",
+				"height": 720,
+				"is_local_file": false,
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/start.svg",
+				"width": 1280
+			}
+		},
+		{
+			"id": "window_capture",
+			"name": "fotomagico",
+			"settings": {
+				"owner_name": "FotoMagico 5",
+				"window_name": ""
+			}
+		}
+	]
+}
