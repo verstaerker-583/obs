@@ -154,11 +154,22 @@
 			"settings": {
 				"files": [
 					{
-						"value": "/Library/Desktop Pictures"
+						"value": "https://www.markus-mauthe.de/site/assets/files/1108/na3.jpg"
+					},
+					{
+						"value": "https://www.markus-mauthe.de/site/assets/files/1049/ap15.jpg"
+					},
+					{
+						"value": "https://www.markus-mauthe.de/site/assets/files/1048/sa13.jpg"
+					},
+					{
+						"value": "https://www.markus-mauthe.de/site/assets/files/1108/na1.jpg"
+					},
+					{
+						"value": "https://www.markus-mauthe.de/site/assets/files/1047/a4.jpg"
 					}
 				],
-				"slide_mode": "mode_manual",
-				"use_custom_size": "1280x720"
+				"slide_mode": "mode_manual"
 			}
 		},
 		{
@@ -546,8 +557,18 @@
 			"settings": {
 				"items": [
 					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 4,
 						"locked": true,
-						"name": "slideshow"
+						"name": "slideshow",
+						"pos": {
+							"x": 640,
+							"y": 360
+						}
 					},
 					{
 						"align": 0,
