@@ -329,7 +329,8 @@
 					{
 						"align": 0,
 						"bounds": {
-							"y": 620
+							"x": 600,
+							"y": 600
 						},
 						"bounds_type": 5,
 						"locked": true,
@@ -342,7 +343,8 @@
 					{
 						"align": 0,
 						"bounds": {
-							"y": 620
+							"x": 600,
+							"y": 600
 						},
 						"bounds_type": 5,
 						"locked": true,
@@ -355,7 +357,8 @@
 					{
 						"align": 0,
 						"bounds": {
-							"y": 620
+							"x": 600,
+							"y": 600
 						},
 						"bounds_type": 5,
 						"locked": true,
@@ -417,6 +420,7 @@
 					{
 						"align": 0,
 						"bounds": {
+							"x": 196,
 							"y": 196
 						},
 						"bounds_type": 5,
@@ -431,6 +435,7 @@
 					{
 						"align": 0,
 						"bounds": {
+							"x": 196,
 							"y": 196
 						},
 						"bounds_type": 5,
@@ -445,6 +450,7 @@
 					{
 						"align": 0,
 						"bounds": {
+							"x": 196,
 							"y": 196
 						},
 						"bounds_type": 5,

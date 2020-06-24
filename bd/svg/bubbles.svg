@@ -10,12 +10,10 @@
 				<feMergeNode in="SourceGraphic" />
 				</feMerge>
 		</filter>
-		<clipPath id="clipCircle">
-			<circle r="98" />
-		</clipPath>
-		<image id="Lutz" x="-98" y="-98" width="196" height="250" clip-path="url(#clipCircle)" href="https://static.wixstatic.com/media/b8486a_56df73b6eede4d99b24f7ca93b4f6cfb~mv2.png" />
-		<image id="Markus" x="-98" y="-98" width="196" height="250" clip-path="url(#clipCircle)" href="https://static.wixstatic.com/media/b8486a_8802ee4cc1c845eea7d8574535c554aa~mv2.png" />
-		<image id="LutzYT" x="-98" y="-98" width="196" height="196" clip-path="url(#clipCircle)" href="https://yt3.ggpht.com/a/AATXAJwrQs7nO_291m4RNUM2gsgIdLX_uhEDAOnUgQ=s100-c-k-c0xffffffff-no-rj-mo" />
-		<image id="MarkusYT" x="-98" y="-98" width="196" height="196" clip-path="url(#clipCircle)" href="https://yt3.ggpht.com/a/AATXAJyD2gbYLJc6Bargpj-z-TNv3XYkI7qCEPx5bQ=s176-c-k-c0x00ffffff-no-rj-mo" />
+
+		<image class="images" x="-98" y="-98" id="Lutz" href="http://static.wixstatic.com/media/b8486a_56df73b6eede4d99b24f7ca93b4f6cfb~mv2.png" />
+		<image class="images" x="-98" y="-98" id="Markus" href="http://static.wixstatic.com/media/b8486a_8802ee4cc1c845eea7d8574535c554aa~mv2.png" />
+		<image class="images" x="-98" y="-98" id="LutzYT" href="http://yt3.ggpht.com/a/AATXAJwrQs7nO_291m4RNUM2gsgIdLX_uhEDAOnUgQ=s100-c-k-c0xffffffff-no-rj-mo" />
+		<image class="images" x="-98" y="-98" id="MarkusYT" href="http://yt3.ggpht.com/a/AATXAJyD2gbYLJc6Bargpj-z-TNv3XYkI7qCEPx5bQ=s176-c-k-c0x00ffffff-no-rj-mo" />
 	</defs>
 </svg>

@@ -1,8 +1,27 @@
-var svg = document.documentElement;
-var rect = svg.getBoundingClientRect();
+svgNS = "http://www.w3.org/2000/svg";
 
 var heightLeft = 400;
 var heightRight = 320;
+var r = 196 / 2 + 5;
+
+function xLeft(r) {
+	return r + 5;
+}
+
+function xRight(r) {
+	return rect.width - (r + 5);
+}
+
+function yLeft(r) {
+	return rect.height - (r + 5);
+}
+
+function yRight(r) {
+	return r + 5;
+}
+
+var svg = document.documentElement;
+var rect = svg.getBoundingClientRect();
 
 function checkTime(i) {
 	if (i < 10) {
@@ -24,7 +43,7 @@ function startTime() {
 }
 
 function loadClock() {
-	var elmnt = document.createElementNS("http://www.w3.org/2000/svg", "text");
+	var elmnt = document.createElementNS(svgNS, "text");
 	elmnt.setAttribute("x", "43%");
 	elmnt.setAttribute("y", "50%");
 	elmnt.id = "clock";
@@ -33,22 +52,20 @@ function loadClock() {
 }
 
 function background() {
-	var elmnt = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-	elmnt.setAttribute("width", "100%");
-	elmnt.setAttribute("height", "100%");
+	var elmnt = document.createElementNS(svgNS, "rect");
 	elmnt.classList.add("background");
 	svg.appendChild(elmnt);
 }
 
 function banner() {
-	var elmnt = document.createElementNS("http://www.w3.org/2000/svg", "text");
+	var elmnt = document.createElementNS(svgNS, "text");
 	elmnt.setAttribute("x", "25%");
 	elmnt.setAttribute("y", "05%");
 	elmnt.classList.add("logo");
 	elmnt.textContent = "#buntgespräch";
 	svg.appendChild(elmnt);
 
-	var elmnt = document.createElementNS("http://www.w3.org/2000/svg", "text");
+	elmnt = document.createElementNS(svgNS, "text");
 	elmnt.setAttribute("x", "75%");
 	elmnt.setAttribute("y", "95%");
 	elmnt.classList.add("logo");
@@ -59,18 +76,18 @@ function banner() {
 function bubble(r, cx, cy, name, offset) {
 	var path = "M0 0 m" + -r + " 0 a1 1 0 0 0 +" + 2 * r + " 0 a1 1 0 0 0 -" + 2 * r + " 0";
 
-	var elmnt = document.createElementNS("http://www.w3.org/2000/svg", "path");
+	var elmnt = document.createElementNS(svgNS, "path");
 	elmnt.setAttribute("d", path);
 	elmnt.setAttribute("transform", "translate(" + cx + "," + cy + ")");
 	elmnt.classList.add("frames");
 	elmnt.id = "myPath" + cx + "";
 	svg.appendChild(elmnt);
 
-	var elmnt = document.createElementNS("http://www.w3.org/2000/svg", "text");
+	elmnt = document.createElementNS(svgNS, "text");
 	elmnt.classList.add("names");
 	elmnt.setAttribute("dy", "1em");
-	var textPath = document.createElementNS("http://www.w3.org/2000/svg", "textPath");
-	textPath.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "#myPath" + cx + "");
+	var textPath = document.createElementNS(svgNS, "textPath");
+	textPath.setAttribute("href", "#myPath" + cx + "");
 	textPath.setAttribute("startOffset", offset);
 	textPath.textContent = name;
 
@@ -87,46 +104,64 @@ function bubbles() {
 		case "start":
 			background();
 			loadClock();
-			var r = 196 / 2 + 5;
 			bubble(r, 320, heightLeft, "Markus Mauthe", "12.5%");
 			bubble(r, 960, heightRight, "Lutz Jäkel", "37.5%");
 
-			var elmnt = document.createElementNS("http://www.w3.org/2000/svg", "use");
-			elmnt.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "#Lutz");
+			/*
+			var elmnt = document.createElementNS(svgNS, "use");
+			elmnt.setAttribute("href", "#Lutz");
 			elmnt.setAttribute("transform", "translate(960," + heightRight + ")");
 			svg.appendChild(elmnt);
+			*/
+			var elmnt = document.createElementNS(svgNS, "image");
+			elmnt.setAttribute("href", "https://static.wixstatic.com/media/b8486a_56df73b6eede4d99b24f7ca93b4f6cfb~mv2.png");
+			elmnt.classList.add("images");
+			var x = 960 - 98;
+			var y = 320 - 98;
+			elmnt.setAttribute("transform", "translate(" + x + "," + y + ")");
+			svg.appendChild(elmnt);
 
-			var elmnt = document.createElementNS("http://www.w3.org/2000/svg", "use");
-			elmnt.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "#Markus");
+			elmnt = document.createElementNS(svgNS, "use");
+			elmnt.setAttribute("href", "#Markus");
 			elmnt.setAttribute("transform", "translate(320," + heightLeft + ")");
 			svg.appendChild(elmnt);
 
 			break;
 		case "cam":
 			background();
-			var r = 315;
-			bubble(r, (r + 5), heightLeft, "Markus Mauthe", "12.5%");
-			bubble(r, rect.width - (r + 5), heightRight, "Lutz Jäkel", "37.5%");
+			r = 305;
+			bubble(r, 320, 400, "Markus Mauthe", "12.5%");
+			bubble(r, 960, 320, "Lutz Jäkel", "37.5%");
+
+			/*
+			var elmnt = document.createElementNS(svgNS, "use");
+			elmnt.setAttribute("href", "#LutzTest");
+			elmnt.setAttribute("transform", "translate(960," + heightRight + ")");
+			svg.appendChild(elmnt);
+			*/
 			break;
 		case "screen":
-			var r = 196 / 2 + 5;
-			bubble(r, (r + 5), heightLeft, "Markus Mauthe", "25%");
-			bubble(r, rect.width - (r + 5), heightRight, "Lutz Jäkel", "25%");
+			bubble(r, xLeft(r), heightLeft, "Markus Mauthe", "25%");
+			bubble(r, xRight(r), heightRight, "Lutz Jäkel", "25%");
+
+			var elmnt = document.createElementNS(svgNS, "use");
+			elmnt.setAttribute("href", "#Lutz");
+			elmnt.setAttribute("transform", "translate(" + xRight(r) + "," + heightRight + ")");
+			svg.appendChild(elmnt);
 			break;
 		case "finish":
 			background();
 			loadClock();
-			var r = 196 / 2 + 5;
 			bubble(r, 320, heightLeft, "Markus Mauthe", "12.5%");
 			bubble(r, 960, heightRight, "Lutz Jäkel", "37.5%");
 
-			var elmnt = document.createElementNS("http://www.w3.org/2000/svg", "use");
-			elmnt.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "#LutzYT");
+			var elmnt = document.createElementNS(svgNS, "use");
+			elmnt.setAttribute("href", "#LutzYT");
 			elmnt.setAttribute("transform", "translate(960," + heightRight + ")");
 			svg.appendChild(elmnt);
 
-			var elmnt = document.createElementNS("http://www.w3.org/2000/svg", "use");
-			elmnt.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "#MarkusYT");
+			elmnt = document.createElementNS(svgNS, "use");
+			elmnt.setAttribute("href", "#MarkusYT");
 			elmnt.setAttribute("transform", "translate(320," + heightLeft + ")");
 			svg.appendChild(elmnt);
 

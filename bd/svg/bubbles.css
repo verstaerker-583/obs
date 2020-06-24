@@ -8,7 +8,7 @@
 }
 
 .names {
-	alignment-baseline: top;
+	dy: 1em;
 	fill: white;
 	font-family: Sunbeat;
 	font-size: 32px;
@@ -22,12 +22,21 @@
 }
 
 .background {
+	height: 100%;
+	width: 100%;
 	fill: #33CC99;
 }
 
 #clock {
+	elmnt.setAttribute("width", "100%");
+	elmnt.setAttribute("height", "100%");
 	fill: white;
 	font-family: Sunbeat;
 	font-size: 64px;
 	text-anchor: start;
+}
+.images {
+	height: 196px;
+	width: 196px;
+	clip-path: circle(50% at 50% 50%);
 }
