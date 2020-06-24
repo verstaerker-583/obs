@@ -19,19 +19,10 @@ function buildArrows() {
 	for (const id of ["chat", "description", "infocards"]) {
 		var elmnt = document.createElement("span");
 		elmnt.id = id;
-		/*
-		elmnt.innerHTML = "⇨";
-		elmnt.classList.add("arrows");
-		elmnt.classList.add("call2action");
-		elmnt.classList.add("heartbeat");
-		*/
 		elmnt.textContent = "⇨";
 		elmnt.classList.add("arrows","call2action","heartbeat");
 		document.body.appendChild(elmnt);
 	}
-	/*
-	description.innerHTML = "⇩";
-	*/
 	description.textContent = "⇩";
 }
 
@@ -40,11 +31,6 @@ function buildBanner(object) {
 	banner.id = "banner";
 	for (let [key, value] of Object.entries(object)) {
 		var elmnt = document.createElement("span");
-		/*
-		elmnt.innerHTML = value;
-		elmnt.classList.add("element");
-		elmnt.classList.add(key);
-		*/
 		elmnt.id = key;
 		elmnt.textContent = value;
 		elmnt.classList.add("element", key);

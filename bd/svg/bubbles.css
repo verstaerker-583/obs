@@ -35,7 +35,7 @@
 	font-size: 64px;
 	text-anchor: start;
 }
-.images {
+image {
 	height: 196px;
 	width: 196px;
 	clip-path: circle(50% at 50% 50%);

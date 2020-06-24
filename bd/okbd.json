@@ -132,10 +132,35 @@
 			"name": "Finish"
 		},
 		{
-			"name": "cams"
+			"name": "Cams"
 		}
 	],
 	"sources": [
+		{
+			"hotkeys": {
+				"SlideShow.NextSlide": [
+					{
+						"key": "OBS_KEY_N"
+					}
+				],
+				"SlideShow.PreviousSlide": [
+					{
+						"key": "OBS_KEY_V"
+					}
+				]
+			},
+			"id": "slideshow",
+			"name": "slideshow",
+			"settings": {
+				"files": [
+					{
+						"value": "/Library/Desktop Pictures"
+					}
+				],
+				"slide_mode": "mode_manual",
+				"use_custom_size": "1280x720"
+			}
+		},
 		{
 			"filters": [
 				{
@@ -399,7 +424,7 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.show_scene_item.screen": [
+				"libobs.show_scene_item.cams": [
 					{
 						"key": "OBS_KEY_3"
 					}
@@ -411,7 +436,7 @@
 				]
 			},
 			"id": "scene",
-			"name": "cams",
+			"name": "Cams",
 			"private_settings": {
 				"show_in_multiview": false
 			},
@@ -464,14 +489,14 @@
 					},
 					{
 						"locked": true,
-						"name": "screen"
+						"name": "cams"
 					}
 				]
 			}
 		},
 		{
 			"hotkeys": {
-				"libobs.hide_scene_item.cams": [
+				"libobs.hide_scene_item.Cams": [
 					{
 						"key": "OBS_KEY_3"
 					},
@@ -479,14 +504,35 @@
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
-				"libobs.show_scene_item.cams": [
+				"libobs.show_scene_item.Cams": [
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
-				"libobs.show_scene_item.fotomagico": [
+				"libobs.hide_scene_item.fotomagico": [
 					{
 						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_BACKSLASH"
+					}
+				],
+				"libobs.show_scene_item.fotomagico": [
+					{
+						"key": "OBS_KEY_BACKSLASH"
+					}
+				],
+				"libobs.hide_scene_item.slideshow": [
+					{
+						"key": "OBS_KEY_BACKSLASH"
+					}
+				],
+				"libobs.show_scene_item.slideshow": [
+					{
+						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_BACKSLASH"
 					}
 				],
 				"OBSBasic.SelectScene": [
@@ -499,6 +545,10 @@
 			"name": "Screen",
 			"settings": {
 				"items": [
+					{
+						"locked": true,
+						"name": "slideshow"
+					},
 					{
 						"align": 0,
 						"bounds": {
@@ -515,7 +565,7 @@
 					},
 					{
 						"locked": true,
-						"name": "cams"
+						"name": "Cams"
 					}
 				]
 			}
@@ -599,7 +649,7 @@
 		},
 		{
 			"id": "browser_source",
-			"name": "screen",
+			"name": "cams",
 			"private_settings": {
 				"mixer_hidden": true
 			},
@@ -607,7 +657,7 @@
 				"css": "",
 				"height": 720,
 				"is_local_file": false,
-				"url": "https://verstaerker-583.github.io/obs/bd/svg/screen.svg",
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/cams.svg",
 				"width": 1280
 			}
 		},
