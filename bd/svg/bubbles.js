@@ -127,7 +127,7 @@ function bubbles() {
 			svg.appendChild(elmnt);
 
 			break;
-		case "cams":
+		case "cam":
 			background();
 			r = 305;
 			bubble(r, 320, 400, "Markus Mauthe", "12.5%");
@@ -140,7 +140,7 @@ function bubbles() {
 			svg.appendChild(elmnt);
 			*/
 			break;
-		case "screen":
+		case "cams":
 			bubble(r, xLeft(r), heightLeft, "Markus Mauthe", "25%");
 			bubble(r, xRight(r), heightRight, "Lutz Jäkel", "25%");
 
