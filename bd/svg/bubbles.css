@@ -1,6 +1,7 @@
 .logo {
 	alignment-baseline: middle;
 	fill: white;
+	filter: url(#flooder);
 	font-family: Sunbeat;
 	font-size: 64px;
 	text-anchor: middle;
@@ -21,7 +22,7 @@
 }
 
 .background {
-	fill: #2DBD92;
+	fill: #33CC99;
 }
 
 #clock {

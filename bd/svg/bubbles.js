@@ -13,7 +13,7 @@ function checkTime(i) {
 
 function startTime() {
 	var today = new Date();
-	var h = today.getUTCHours() + 2;
+	var h = today.getUTCHours();
 	var m = today.getMinutes();
 	var s = today.getSeconds();
 	m = checkTime(m);

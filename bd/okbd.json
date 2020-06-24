@@ -323,9 +323,13 @@
 			"settings": {
 				"items": [
 					{
+						"locked": true,
+						"name": "cam"
+					},
+					{
 						"align": 0,
 						"bounds": {
-							"y": 630
+							"y": 620
 						},
 						"bounds_type": 5,
 						"locked": true,
@@ -338,7 +342,7 @@
 					{
 						"align": 0,
 						"bounds": {
-							"y": 630
+							"y": 620
 						},
 						"bounds_type": 5,
 						"locked": true,
@@ -351,7 +355,7 @@
 					{
 						"align": 0,
 						"bounds": {
-							"y": 630
+							"y": 620
 						},
 						"bounds_type": 5,
 						"locked": true,
@@ -360,10 +364,6 @@
 							"x": 960,
 							"y": 320
 						}
-					},
-					{
-						"locked": true,
-						"name": "cam"
 					}
 				]
 			}
@@ -394,6 +394,11 @@
 					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				],
+				"libobs.show_scene_item.screen": [
+					{
+						"key": "OBS_KEY_3"
 					}
 				],
 				"libobs.show_scene_item.skype": [
