@@ -1,3 +1,4 @@
+"use strict";
 function loadClock() {
 	var elmnt = document.createElement("object");
 	elmnt.id = "clock";

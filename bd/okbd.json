@@ -154,16 +154,34 @@
 			"settings": {
 				"files": [
 					{
+						"value": "https://gobi.michael-martin.de/i/header_2018/unplugged/index_02.jpg"
+					},
+					{
+						"value": "https://lutz-jaekel.com/wp-content/uploads/2018/08/jaek_04537_syr07-SW.jpg"
+					},
+					{
 						"value": "https://www.markus-mauthe.de/site/assets/files/1108/na3.jpg"
+					},
+					{
+						"value": "https://lutz-jaekel.com/wp-content/uploads/2018/08/jaek_0006_casalquartett-705x469.jpg"
 					},
 					{
 						"value": "https://www.markus-mauthe.de/site/assets/files/1049/ap15.jpg"
 					},
 					{
+						"value": "https://lutz-jaekel.com/wp-content/uploads/2018/08/JAEK_54015_SYR05.jpg"
+					},
+					{
 						"value": "https://www.markus-mauthe.de/site/assets/files/1048/sa13.jpg"
 					},
 					{
+						"value": "https://lutz-jaekel.com/wp-content/uploads/2018/07/jaek_4045_wiener-food-705x470.jpg"
+					},
+					{
 						"value": "https://www.markus-mauthe.de/site/assets/files/1108/na1.jpg"
+					},
+					{
+						"value": "https://lutz-jaekel.com/wp-content/uploads/2018/07/JAEK_12027_JOR03-705x448.jpg"
 					},
 					{
 						"value": "https://www.markus-mauthe.de/site/assets/files/1047/a4.jpg"
@@ -374,7 +392,8 @@
 						"pos": {
 							"x": 320,
 							"y": 400
-						}
+						},
+						"rot": -5
 					},
 					{
 						"align": 0,
@@ -388,7 +407,8 @@
 						"pos": {
 							"x": 320,
 							"y": 400
-						}
+						},
+						"rot": -5
 					},
 					{
 						"align": 0,
@@ -402,7 +422,8 @@
 						"pos": {
 							"x": 960,
 							"y": 320
-						}
+						},
+						"rot": 5
 					}
 				]
 			}
@@ -496,7 +517,7 @@
 							"x": 1172,
 							"y": 320
 						},
-						"rot": -5
+						"rot": 5
 					},
 					{
 						"locked": true,
