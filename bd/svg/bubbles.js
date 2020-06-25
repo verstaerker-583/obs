@@ -109,7 +109,7 @@ function loadClock() {
 }
 
 function questionmarks(id) {
-	var question = "❓ buntgefragt ❓";
+	var question = "??? buntgefragt ???";
 	if (id.textContent === question) 
 		id.textContent = "#buntgespräch";
 	else
