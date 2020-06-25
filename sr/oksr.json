@@ -116,7 +116,7 @@
 	},
 	"current_scene": "Start",
 	"current_transition": "Fade",
-	"name": "bd",
+	"name": "sr",
 	"preview_locked": true,
 	"scene_order": [
 		{
@@ -133,6 +133,9 @@
 		},
 		{
 			"name": "cams"
+		},
+		{
+			"name": "screens"
 		}
 	],
 	"sources": [
@@ -150,20 +153,12 @@
 					}
 				},
 				{
-					"id": "mask_filter",
-					"name": "Image Mask",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
-						"type": "mask_alpha_filter.effect"
-					}
+					"id": "noise_gate_filter",
+					"name": "Noise Gate"
 				},
 				{
 					"id": "noise_suppress_filter",
 					"name": "Noise Suppression"
-				},
-				{
-					"id": "noise_gate_filter",
-					"name": "Noise Gate"
 				},
 				{
 					"id": "compressor_filter",
@@ -228,14 +223,6 @@
 					"settings": {
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
-				},
-				{
-					"id": "mask_filter",
-					"name": "Image Mask",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
-						"type": "mask_alpha_filter.effect"
-					}
 				}
 			],
 			"id": "av_capture_input",
@@ -256,14 +243,6 @@
 					"name": "LUT",
 					"settings": {
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
-					}
-				},
-				{
-					"id": "mask_filter",
-					"name": "Image Mask",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
-						"type": "mask_alpha_filter.effect"
 					}
 				}
 			],
@@ -309,6 +288,176 @@
 			}
 		},
 		{
+			"filters": [
+				{
+					"id": "mask_filter",
+					"name": "Image Mask",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/gp/camsMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
+				}
+			],
+			"hotkeys": {
+				"libobs.hide_scene_item.camA": [
+					{
+						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				],
+				"libobs.hide_scene_item.camB": [
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				],
+				"libobs.show_scene_item.camA": [
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				],
+				"libobs.show_scene_item.camB": [
+					{
+						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				]
+			},
+			"id": "scene",
+			"name": "cams",
+			"private_settings": {
+				"show_in_multiview": false
+			},
+			"settings": {
+				"items": [
+					{
+						"align": 0,
+						"bounds": {
+							"y": 240
+						},
+						"bounds_type": 3,
+						"crop_left": 256,
+						"locked": true,
+						"name": "camA",
+						"pos": {
+							"x": 1160,
+							"y": 269.01178
+						},
+						"rot": -5
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"y": 240
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "camB",
+						"pos": {
+							"x": 120,
+							"y": 360
+						},
+						"rot": -5
+					}
+				]
+			}
+		},
+		{
+			"filters": [
+				{
+					"id": "mask_filter",
+					"name": "Image Mask",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/gp/screensMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
+				}
+			],
+			"hotkeys": {
+				"libobs.hide_scene_item.skype": [
+					{
+						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_BACKSLASH"
+					}
+				],
+				"libobs.show_scene_item.fotomagico": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				],
+				"libobs.show_scene_item.skype": [
+					{
+						"key": "OBS_KEY_BACKSLASH"
+					}
+				],
+				"libobs.show_scene_item.slideshow": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				]
+			},
+			"id": "scene",
+			"name": "screens",
+			"private_settings": {
+				"show_in_multiview": false
+			},
+			"settings": {
+				"items": [
+					{
+						"align": 0,
+						"bounds": {
+							"x": 480,
+							"y": 270
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "slideshow",
+						"pos": {
+							"x": 250,
+							"y": 360
+						},
+						"private_settings": {
+							"color": "",
+							"color-preset": 7
+						}
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 480,
+							"y": 270
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "fotomagico",
+						"pos": {
+							"x": 250,
+							"y": 360
+						}
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 480,
+							"y": 270
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "skype",
+						"pos": {
+							"x": 250,
+							"y": 360
+						}
+					}
+				]
+			}
+		},
+		{
 			"hotkeys": {
 				"SlideShow.NextSlide": [
 					{
@@ -331,39 +480,6 @@
 			"settings": {
 				"files": [
 					{
-						"value": "https://gobi.michael-martin.de/i/header_2018/unplugged/index_02.jpg"
-					},
-					{
-						"value": "https://www.markus-mauthe.de/site/assets/files/1047/a4.jpg"
-					},
-					{
-						"value": "https://lutz-jaekel.com/wp-content/uploads/2018/07/JAEK_12027_JOR03-705x448.jpg"
-					},
-					{
-						"value": "https://www.markus-mauthe.de/site/assets/files/1048/sa13.jpg"
-					},
-					{
-						"value": "https://lutz-jaekel.com/wp-content/uploads/2018/07/jaek_4045_wiener-food-705x470.jpg"
-					},
-					{
-						"value": "https://www.markus-mauthe.de/site/assets/files/1049/ap15.jpg"
-					},
-					{
-						"value": "https://lutz-jaekel.com/wp-content/uploads/2018/08/JAEK_54015_SYR05.jpg"
-					},
-					{
-						"value": "https://www.markus-mauthe.de/site/assets/files/1108/na1.jpg"
-					},
-					{
-						"value": "https://lutz-jaekel.com/wp-content/uploads/2018/08/jaek_0006_casalquartett-705x469.jpg"
-					},
-					{
-						"value": "https://www.markus-mauthe.de/site/assets/files/1108/na3.jpg"
-					},
-					{
-						"value": "https://lutz-jaekel.com/wp-content/uploads/2018/08/jaek_04537_syr07-SW.jpg"
-					},
-					{
 						"value": "/Library/Desktop Pictures"
 					}
 				],
@@ -372,14 +488,43 @@
 		},
 		{
 			"hotkeys": {
+				"libobs.hide_scene_item.?": [
+					{
+						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_MINUS"
+					}
+				],
 				"libobs.hide_scene_item.camB": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
+				"libobs.hide_scene_item.donateOVL": [
+					{
+						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_SLASH"
+					}
+				],
+				"libobs.hide_scene_item.screens": [
+					{
+						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_BRACKETRIGHT"
+					}
+				],
 				"libobs.hide_scene_item.trailer": [
 					{
 						"key": "OBS_KEY_2"
+					}
+				],
+				"libobs.show_scene_item.?": [
+					{
+						"key": "OBS_KEY_MINUS"
 					}
 				],
 				"libobs.show_scene_item.camA": [
@@ -395,14 +540,24 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.show_scene_item.CamOVL": [
+				"libobs.show_scene_item.donateOVL": [
+					{
+						"key": "OBS_KEY_SLASH"
+					}
+				],
+				"libobs.show_scene_item.organisationLogo": [
 					{
 						"key": "OBS_KEY_2"
 					}
 				],
-				"libobs.show_scene_item.skype": [
+				"libobs.show_scene_item.presenterLogo": [
 					{
 						"key": "OBS_KEY_2"
+					}
+				],
+				"libobs.show_scene_item.screens": [
+					{
+						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
 				"libobs.show_scene_item.trailer": [
@@ -424,53 +579,69 @@
 			"settings": {
 				"items": [
 					{
-						"locked": true,
-						"name": "CamOVL"
-					},
-					{
 						"align": 0,
 						"bounds": {
-							"x": 600,
-							"y": 600
+							"x": 1280
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "camA",
 						"pos": {
-							"x": 320,
-							"y": 400
-						},
-						"rot": -5
+							"x": 640,
+							"y": 360
+						}
 					},
 					{
 						"align": 0,
 						"bounds": {
-							"x": 600,
-							"y": 600
+							"x": 1280
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "camB",
 						"pos": {
-							"x": 320,
-							"y": 400
+							"x": 640,
+							"y": 360
+						}
+					},
+					{
+						"align": 6,
+						"bounds": {
+							"x": 135,
+							"y": 135
 						},
-						"rot": -5
+						"bounds_type": 6,
+						"locked": true,
+						"name": "presenterLogo",
+						"pos": {
+							"x": 1280
+						}
+					},
+					{
+						"align": 9,
+						"locked": true,
+						"name": "organisationLogo",
+						"pos": {
+							"x": 10,
+							"y": 710
+						}
+					},
+					{
+						"locked": true,
+						"name": "donateOVL"
+					},
+					{
+						"locked": true,
+						"name": "screens"
 					},
 					{
 						"align": 0,
-						"bounds": {
-							"x": 600,
-							"y": 600
-						},
-						"bounds_type": 3,
 						"locked": true,
-						"name": "skype",
+						"name": "?",
 						"pos": {
-							"x": 960,
-							"y": 320
-						},
-						"rot": 5
+							"x": 250,
+							"y": 360
+						}
 					},
 					{
 						"align": 0,
@@ -495,102 +666,20 @@
 		},
 		{
 			"hotkeys": {
-				"libobs.hide_scene_item.camB": [
-					{
-						"key": "OBS_KEY_DEAD_GRAVE"
-					}
-				],
-				"libobs.show_scene_item.camA": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
-				"libobs.show_scene_item.camB": [
-					{
-						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_DEAD_GRAVE"
-					}
-				],
-				"libobs.show_scene_item.camsOVL": [
-					{
-						"key": "OBS_KEY_3"
-					}
-				],
-				"libobs.show_scene_item.skype": [
-					{
-						"key": "OBS_KEY_3"
-					}
-				]
-			},
-			"id": "scene",
-			"name": "cams",
-			"private_settings": {
-				"show_in_multiview": false
-			},
-			"settings": {
-				"items": [
-					{
-						"locked": true,
-						"name": "camsOVL"
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 196,
-							"y": 196
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "camA",
-						"pos": {
-							"x": 108,
-							"y": 400
-						},
-						"rot": -5
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 196,
-							"y": 196
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "camB",
-						"pos": {
-							"x": 108,
-							"y": 400
-						},
-						"rot": -5
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 196,
-							"y": 196
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "skype",
-						"pos": {
-							"x": 1172,
-							"y": 320
-						},
-						"rot": 5
-					}
-				]
-			}
-		},
-		{
-			"hotkeys": {
 				"libobs.hide_scene_item.cams": [
 					{
 						"key": "OBS_KEY_3"
 					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
+					}
+				],
+				"libobs.hide_scene_item.skype": [
+					{
+						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_BACKSLASH"
 					}
 				],
 				"libobs.show_scene_item.cams": [
@@ -604,6 +693,11 @@
 				"libobs.show_scene_item.fotomagico": [
 					{
 						"key": "OBS_KEY_3"
+					}
+				],
+				"libobs.show_scene_item.skype": [
+					{
+						"key": "OBS_KEY_BACKSLASH"
 					}
 				],
 				"libobs.show_scene_item.slideshow": [
@@ -648,6 +742,20 @@
 						"bounds_type": 3,
 						"locked": true,
 						"name": "fotomagico",
+						"pos": {
+							"x": 640,
+							"y": 360
+						}
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "skype",
 						"pos": {
 							"x": 640,
 							"y": 360
@@ -711,20 +819,6 @@
 		},
 		{
 			"id": "browser_source",
-			"name": "CamOVL",
-			"private_settings": {
-				"mixer_hidden": true
-			},
-			"settings": {
-				"css": "",
-				"height": 720,
-				"is_local_file": false,
-				"url": "https://verstaerker-583.github.io/obs/bd/svg/cam.svg",
-				"width": 1280
-			}
-		},
-		{
-			"id": "browser_source",
 			"name": "FinishOVL",
 			"private_settings": {
 				"mixer_hidden": true
@@ -733,7 +827,7 @@
 				"css": "",
 				"height": 720,
 				"is_local_file": false,
-				"url": "https://verstaerker-583.github.io/obs/bd/svg/finish.svg",
+				"url": "https://verstaerker-583.github.io/obs/sr/html/finish.html",
 				"width": 1280
 			}
 		},
@@ -747,13 +841,13 @@
 				"css": "",
 				"height": 720,
 				"is_local_file": false,
-				"url": "https://verstaerker-583.github.io/obs/bd/svg/start.svg",
+				"url": "https://verstaerker-583.github.io/obs/sr/html/start.html",
 				"width": 1280
 			}
 		},
 		{
 			"id": "browser_source",
-			"name": "camsOVL",
+			"name": "donateOVL",
 			"private_settings": {
 				"mixer_hidden": true
 			},
@@ -761,8 +855,45 @@
 				"css": "",
 				"height": 720,
 				"is_local_file": false,
-				"url": "https://verstaerker-583.github.io/obs/bd/svg/cams.svg",
+				"url": "https://verstaerker-583.github.io/obs/sr/html/donate.html",
 				"width": 1280
+			}
+		},
+		{
+			"id": "browser_source",
+			"name": "organisationLogo",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "",
+				"height": 90,
+				"is_local_file": false,
+				"url": "https://verstaerker-583.github.io/obs/sr/bdLogo.svg",
+				"width": 390
+			}
+		},
+		{
+			"id": "image_source",
+			"name": "presenterLogo",
+			"settings": {
+				"file": "https://verstaerker-583.github.io/obs/gp/mmLogo.png"
+			}
+		},
+		{
+			"id": "text_ft2_source",
+			"name": "?",
+			"settings": {
+				"color1": 4287868617,
+				"color2": 4282145104,
+				"font": {
+					"face": "Helvetica Neue",
+					"flags": 1,
+					"size": 288,
+					"style": "Condensed Black"
+				},
+				"outlinevisible": true,
+				"text": "?"
 			}
 		},
 		{

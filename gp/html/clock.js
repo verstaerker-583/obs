@@ -1,16 +1,7 @@
+"use strict";
+
 var alarmAngle;
 var hourAngle;
-
-function setAlarm() {
-	if (typeof alarm !== 'undefined') {
-		var strs = alarm.time.split(":");
-		var hours = strs[0] % 12;
-		var minutes = strs[1];
-		alarmAngle = (180 + (hours + minutes / 60) * 30) % 360;
-		document.getElementById("alarmHand").setAttribute("transform", "rotate(" + (alarmAngle) + ")");
-		document.getElementById("alarmHand").setAttribute("stroke-width", "3");
-	}
-}
 
 function checkAlarm() {
 	if (hourAngle === alarmAngle) {
@@ -36,11 +27,22 @@ function checkOBSStatus() {
 		document.getElementById("marker").setAttribute("fill", "inherit");
 }
 
+function setAlarm() {
+	if (typeof alarm !== 'undefined') {
+		var strs = alarm.time.split(":");
+		var hours = strs[0] % 12;
+		var minutes = strs[1];
+		alarmAngle = (180 + (hours + minutes / 60) * 30) % 360;
+		document.getElementById("alarmHand").setAttribute("transform", "rotate(" + (alarmAngle) + ")");
+		document.getElementById("alarmHand").setAttribute("stroke-width", "3");
+	}
+}
+
 function updateTime() {
 	var date = new Date();
-	var seconds = date.getSeconds();
-	var minutes = date.getMinutes();
 	var hours = 2 + date.getUTCHours();
+	var minutes = date.getMinutes();
+	var seconds = date.getSeconds();
 	hours = hours % 12;
 	hourAngle = (180 + (hours + minutes / 60) * 30) % 360;
 	var minuteAngle = (180 + minutes * 6) % 360;
@@ -48,9 +50,7 @@ function updateTime() {
 	document.getElementById("hourHand").setAttribute("transform", "rotate(" + (hourAngle) + ")");
 	document.getElementById("minuteHand").setAttribute("transform", "rotate(" + (minuteAngle) + ")");
 	document.getElementById("secondHand").setAttribute("transform", "rotate(" + (secondAngle) + ")");
-	/*
 	checkAlarm();
-	*/
 	checkOBSStatus();
 	setTimeout(updateTime, 1000);
 }
