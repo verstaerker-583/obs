@@ -601,6 +601,11 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
+				"libobs.show_scene_item.colorSource": [
+					{
+						"key": "OBS_KEY_3"
+					}
+				],
 				"libobs.show_scene_item.fotomagico": [
 					{
 						"key": "OBS_KEY_3"
@@ -621,6 +626,10 @@
 			"name": "Screen",
 			"settings": {
 				"items": [
+					{
+						"locked": true,
+						"name": "colorSource"
+					},
 					{
 						"align": 0,
 						"bounds": {
@@ -762,6 +771,15 @@
 				"height": 720,
 				"is_local_file": false,
 				"url": "https://verstaerker-583.github.io/obs/bd/svg/cams.svg",
+				"width": 1280
+			}
+		},
+		{
+			"id": "color_source",
+			"name": "colorSource",
+			"settings": {
+				"color": 4288269363,
+				"height": 720,
 				"width": 1280
 			}
 		},

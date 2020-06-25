@@ -10,7 +10,9 @@ function background() {
 }
 
 function banner() {
-	svgText("#buntgespräch", "25%", "05%").classList.add("logo");
+	var elmnt = svgText("#buntgespräch", "25%", "05%")
+	elmnt.classList.add("logo")
+	elmnt.setAttribute("onclick", "questionmarks(this)");
 	svgText("buntdenker.de", "75%", "95%").classList.add("logo");
 }
 
@@ -66,6 +68,21 @@ function bubbles() {
 	banner();
 }
 
+function checkOBSStatus() {
+	if (window.obsstudio) {
+		window.obsstudio.getStatus(function (status) {
+			switch (true) {
+				case (status.recording):
+				case (status.streaming):
+					document.getElementById("clock").style.fill = "white"; 
+					break;
+				default:
+					document.getElementById("clock").style.fill = "yellow"; 
+			}
+		});
+	}
+}
+
 function checkTime(i) {
 	if (i < 10) {
 		i = "0" + i
@@ -91,6 +108,14 @@ function loadClock() {
 	startTime();
 }
 
+function questionmarks(id) {
+	var question = "❓ buntgefragt ❓";
+	if (id.textContent === question) 
+		id.textContent = "#buntgespräch";
+	else
+		id.textContent = question;
+}
+
 function startTime() {
 	var today = new Date();
 	var h = today.getUTCHours();
@@ -99,6 +124,7 @@ function startTime() {
 	m = checkTime(m);
 	s = checkTime(s);
 	svg.getElementById("clock").textContent = h + ":" + m + ":" + s + " UTC ";
+	checkOBSStatus();
 	var t = setTimeout(startTime, 500);
 }
 
