@@ -1,5 +1,5 @@
 {
-	"name": "bd",
+	"name": "gp",
 	"current_scene": "Start",
 	"preview_locked": true,
 	"AuxAudioDevice1": {
@@ -136,7 +136,7 @@
 					"id": "mask_filter",
 					"name": "Image Mask/Blend",
 					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
+						"image_path": "https://verstaerker-583.github.io/obs/gp/camMask.png",
 						"type": "mask_alpha_filter.effect"
 					}
 				}
@@ -166,7 +166,7 @@
 					"id": "mask_filter",
 					"name": "Image Mask/Blend",
 					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
+						"image_path": "https://verstaerker-583.github.io/obs/gp/camMask.png",
 						"type": "mask_alpha_filter.effect"
 					}
 				}
@@ -241,7 +241,7 @@
 					"id": "mask_filter",
 					"name": "Image Mask/Blend",
 					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
+						"image_path": "https://verstaerker-583.github.io/obs/gp/camMask.png",
 						"type": "mask_alpha_filter.effect"
 					}
 				},
@@ -363,7 +363,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/bd/html/start.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/start.html",
 				"width": 1280
 			}
 		},
@@ -376,7 +376,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/bd/html/cam.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/cam.html",
 				"width": 1280
 			}
 		},
@@ -389,7 +389,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/bd/html/finish.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/finish.html",
 				"width": 1280
 			}
 		},
@@ -402,7 +402,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/bd/html/cams.svg",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/cams.svg",
 				"width": 1280
 			}
 		},
@@ -524,31 +524,21 @@
 					},
 					{
 						"align": 0,
-						"bounds": {
-							"x": 600,
-							"y": 600
-						},
-						"bounds_type": 3,
 						"locked": true,
 						"name": "camA",
 						"pos": {
-							"x": 320,
-							"y": 400
+							"x": 640,
+							"y": 360
 						},
 						"rot": -5
 					},
 					{
 						"align": 0,
-						"bounds": {
-							"x": 600,
-							"y": 600
-						},
-						"bounds_type": 3,
 						"locked": true,
 						"name": "camB",
 						"pos": {
-							"x": 320,
-							"y": 400
+							"x": 640,
+							"y": 360
 						},
 						"rot": -5
 					},
@@ -570,14 +560,14 @@
 					{
 						"align": 0,
 						"bounds": {
-							"x": 150,
-							"y": 150 
+							"x": 480,
+							"y": 480 
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "screen",
 						"pos": {
-							"x": 640,
+							"x": 250,
 							"y": 360
 						}
 					},
@@ -751,11 +741,10 @@
 		{
 			"filters": [
 				{
-					"enabled": false,
 					"id": "mask_filter",
 					"name": "Image Mask/Blend",
 					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/gp/camsMask.png",
+						"image_path": "https://verstaerker-583.github.io/obs/gp/newcamsMask.png",
 						"type": "mask_alpha_filter.effect"
 					}
 				}
@@ -826,8 +815,8 @@
 						"locked": true,
 						"name": "camB",
 						"pos": {
-							"x": 108,
-							"y": 400
+							"x": 1172,
+							"y": 320
 						},
 						"rot": -5
 					},
