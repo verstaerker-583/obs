@@ -12,6 +12,7 @@ function build() {
 			loadPics();
 			position();
 			break;
+		case "cam":
 		case "donate":
 			document.body.style.backgroundColor = "transparent";
 			document.body.style.backgroundImage = "none";
