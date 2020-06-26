@@ -5,9 +5,9 @@ var hourAngle;
 
 function checkAlarm() {
 	if (hourAngle === alarmAngle) {
-		document.getElementById("clockFaceBackground").setAttribute("fill", "#ff0032");
+		document.getElementById("clockFaceBackground").style.fill = "#ff0032";
 	} else {
-		document.getElementById("clockFaceBackground").setAttribute("fill", "none");
+		document.getElementById("clockFaceBackground").style.fill = "none"; 
 	}
 }
 
@@ -17,14 +17,13 @@ function checkOBSStatus() {
 			switch (true) {
 				case (status.recording):
 				case (status.streaming):
-					document.getElementById("marker").setAttribute("fill", "inherit");
+					document.getElementById("marker").style.fill = "white"; 
 					break;
 				default:
-					document.getElementById("marker").setAttribute("fill", "yellow");
+					document.getElementById("marker").style.fill = "yellow"; 
 			}
 		});
-	} else
-		document.getElementById("marker").setAttribute("fill", "inherit");
+	}
 }
 
 function setAlarm() {

@@ -6,15 +6,15 @@
 		"filters": [
 			{
 				"id": "noise_suppress_filter",
-				"name":	"Noise Suppression"
+				"name": "Noise Suppression"
 			},
 			{
 				"id": "noise_gate_filter",
-				"name":	"Noise Gate"
+				"name": "Noise Gate"
 			},
 			{
 				"id": "compressor_filter",
-				"name":	"Compressor",
+				"name": "Compressor",
 				"settings": {
 					"attack_time": 1,
 					"output_gain": 1
@@ -22,7 +22,7 @@
 			},
 			{
 				"id": "limiter_filter",
-				"name":	"Limiter"
+				"name": "Limiter"
 			}
 		],
 		"flags": 2,
@@ -55,20 +55,23 @@
 		"name": "Mic",
 		"private_settings": {
 			"volume_locked": true
-		},
-		"settings": {
-			"device_id": "default"
 		}
 	},
 	"AuxAudioDevice2": {
 		"filters": [
 			{
+				"enable": false,
 				"id": "noise_suppress_filter",
-				"name":	"Noise Suppression"
+				"name": "Noise Suppression"
+			},
+			{
+				"enable": false,
+				"id": "noise_gate_filter",
+				"name": "Noise Gate"
 			},
 			{
 				"id": "compressor_filter",
-				"name":	"Compressor",
+				"name": "Compressor",
 				"settings": {
 					"attack_time": 100,
 					"ratio": 32,
@@ -79,7 +82,7 @@
 			},
 			{
 				"id": "limiter_filter",
-				"name":	"Limiter"
+				"name": "Limiter"
 			}
 		],
 		"hotkeys": {
@@ -122,11 +125,11 @@
 			"filters": [
 				{
 					"id": "sharpness_filter",
-					"name":	"Sharpen"
+					"name": "Sharpen"
 				},
 				{
 					"id": "clut_filter",
-					"name":	"Apply LUT",
+					"name": "Apply LUT",
 					"settings": {
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
@@ -141,7 +144,7 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "camA",
+			"name": "Cam Internal",
 			"settings": {
 				"device": "CC27327P54QGDV4AV",
 				"device_name": "FaceTime HD Camera"
@@ -151,11 +154,11 @@
 			"filters": [
 				{
 					"id": "sharpness_filter",
-					"name":	"Sharpen"
+					"name": "Sharpen"
 				},
 				{
 					"id": "clut_filter",
-					"name":	"Apply LUT",
+					"name": "Apply LUT",
 					"settings": {
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
@@ -170,7 +173,7 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "camB",
+			"name": "Cam External",
 			"settings": {
 				"device": "obs-virtual-cam-device",
 				"device_name": "OBS Virtual Camera"
@@ -178,7 +181,7 @@
 		},
 		{
 			"id": "color_source",
-			"name":	"Color Source",
+			"name": "Color Source",
 			"settings": {
 				"color": 4288269363,
 				"height": 720,
@@ -188,12 +191,18 @@
 		{
 			"filters": [
 				{
+					"enable": false,
 					"id": "noise_suppress_filter",
-					"name":	"Noise Suppression"
+					"name": "Noise Suppression"
+				},
+				{
+					"enable": false,
+					"id": "noise_gate_filter",
+					"name": "Noise Gate"
 				},
 				{
 					"id": "compressor_filter",
-					"name":	"Compressor",
+					"name": "Compressor",
 					"settings": {
 						"attack_time": 100,
 						"ratio": 32,
@@ -204,13 +213,13 @@
 				},
 				{
 					"id": "limiter_filter",
-					"name":	"Limiter"
+					"name": "Limiter"
 				}
 			],
 			"id": "ffmpeg_source",
 			"mixers": 255,
 			"monitoring_type": 2,
-			"name":	"Media Source",
+			"name": "Media Source",
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
@@ -225,11 +234,11 @@
 			"filters": [
 				{
 					"id": "sharpness_filter",
-					"name":	"Sharpen"
+					"name": "Sharpen"
 				},
 				{
 					"id": "clut_filter",
-					"name":	"Apply LUT",
+					"name": "Apply LUT",
 					"settings": {
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
@@ -244,15 +253,16 @@
 				},
 				{
 					"id": "noise_suppress_filter",
-					"name":	"Noise Suppression"
+					"name": "Noise Suppression"
 				},
 				{
+					"enable": false,
 					"id": "noise_gate_filter",
-					"name":	"Noise Gate"
+					"name": "Noise Gate"
 				},
 				{
 					"id": "compressor_filter",
-					"name":	"Compressor",
+					"name": "Compressor",
 					"settings": {
 						"attack_time": 100,
 						"ratio": 32,
@@ -263,7 +273,7 @@
 				},
 				{
 					"id": "limiter_filter",
-					"name":	"Limiter"
+					"name": "Limiter"
 				}
 			],
 			"flags": 2,
@@ -294,7 +304,7 @@
 			"id": "ndi_source",
 			"mixers": 255,
 			"monitoring_type": 2,
-			"name":	"NDI™ Source",
+			"name": "NDI™ Source",
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
@@ -317,7 +327,7 @@
 				]
 			},
 			"id": "slideshow",
-			"name":	"Slide Show",
+			"name": "Slide Show",
 			"settings": {
 				"files": [
 					{
@@ -325,22 +335,6 @@
 					}
 				],
 				"slide_mode": "mode_manual"
-			}
-		},
-		{
-			"id": "text_ft2_source",
-			"name": "?",
-			"settings": {
-				"color1": 4281467135,
-				"color2": 4279828552,
-				"font": {
-					"face": "Helvetica Neue",
-					"flags": 1,
-					"size": 288,
-					"style": "Condensed Black"
-				},
-				"outlinevisible": true,
-				"text": "?"
 			}
 		},
 		{
@@ -430,23 +424,7 @@
 		},
 		{
 			"hotkeys": {
-				"libobs.hide_scene_item.?": [
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_MINUS"
-					}
-				],
-				"libobs.hide_scene_item.screen": [
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_BRACKETRIGHT"
-					}
-				],
-				"libobs.hide_scene_item.camB": [
+				"libobs.hide_scene_item.Cam External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
@@ -456,27 +434,12 @@
 						"key": "OBS_KEY_2"
 					}
 				],
-				"libobs.hide_scene_item.Overlay Cam": [
-					{
-						"key": "OBS_KEY_SLASH"
-					}
-				],
-				"libobs.show_scene_item.?": [
-					{
-						"key": "OBS_KEY_MINUS"
-					}
-				],
-				"libobs.show_scene_item.screen": [
-					{
-						"key": "OBS_KEY_BRACKETRIGHT"
-					}
-				],
-				"libobs.show_scene_item.camA": [
+				"libobs.show_scene_item.Cam Internal": [
 					{
 						"key": "OBS_KEY_2"
 					}
 				],
-				"libobs.show_scene_item.camB": [
+				"libobs.show_scene_item.Cam External": [
 					{
 						"key": "OBS_KEY_2"
 					},
@@ -484,12 +447,9 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.show_scene_item.Overlay Cam": [
+				"libobs.show_scene_item.Media Source": [
 					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_SLASH"
+						"key": "OBS_KEY_T"
 					}
 				],
 				"libobs.show_scene_item.NDI™ Source": [
@@ -497,9 +457,9 @@
 						"key": "OBS_KEY_2"
 					}
 				],
-				"libobs.show_scene_item.Media Source": [
+				"libobs.show_scene_item.Overlay Cam": [
 					{
-						"key": "OBS_KEY_T"
+						"key": "OBS_KEY_2"
 					}
 				],
 				"OBSBasic.SelectScene": [
@@ -527,7 +487,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "camA",
+						"name": "Cam Internal",
 						"pos": {
 							"x": 320,
 							"y": 400
@@ -542,7 +502,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "camB",
+						"name": "Cam External",
 						"pos": {
 							"x": 320,
 							"y": 400
@@ -557,35 +517,12 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name":	"NDI™ Source",
+						"name": "NDI™ Source",
 						"pos": {
 							"x": 960,
 							"y": 320
 						},
-						"rot": 5
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 150,
-							"y": 150 
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "screen",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
-					},
-					{
-						"align": 0,
-						"locked": true,
-						"name": "?",
-						"pos": {
-							"x": 250,
-							"y": 360
-						}
+						"rot": -5
 					},
 					{
 						"align": 0,
@@ -595,7 +532,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name":	"Media Source",
+						"name": "Media Source",
 						"pos": {
 							"x": 640,
 							"y": 360
@@ -666,7 +603,7 @@
 				"items": [
 					{
 						"locked": true,
-						"name":	"Color Source"
+						"name": "Color Source"
 					},
 					{
 						"align": 0,
@@ -676,7 +613,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name":	"Slide Show",
+						"name": "Slide Show",
 						"pos": {
 							"x": 640,
 							"y": 360
@@ -695,20 +632,6 @@
 						"bounds_type": 3,
 						"locked": true,
 						"name": "FotoMagico",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name":	"NDI™ Source",
 						"pos": {
 							"x": 640,
 							"y": 360
@@ -758,17 +681,17 @@
 				}
 			],
 			"hotkeys": {
-				"libobs.hide_scene_item.camB": [
+				"libobs.hide_scene_item.Cam External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.show_scene_item.camA": [
+				"libobs.show_scene_item.Cam Internal": [
 					{
 						"key": "OBS_KEY_3"
 					}
 				],
-				"libobs.show_scene_item.camB": [
+				"libobs.show_scene_item.Cam External": [
 					{
 						"key": "OBS_KEY_3"
 					},
@@ -806,7 +729,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "camA",
+						"name": "Cam Internal",
 						"pos": {
 							"x": 108,
 							"y": 400
@@ -821,7 +744,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "camB",
+						"name": "Cam External",
 						"pos": {
 							"x": 108,
 							"y": 400
@@ -836,121 +759,12 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name":	"NDI™ Source",
+						"name": "NDI™ Source",
 						"pos": {
 							"x": 1172,
 							"y": 320
 						},
-						"rot": 5
-					}
-				]
-			}
-		},
-		{
-			"filters": [
-				{
-					"id": "mask_filter",
-					"name": "Image Mask/Blend",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/gp/screenMask.png",
-						"type": "mask_alpha_filter.effect"
-					}
-				}
-			],
-			"hotkeys": {
-				"libobs.show_scene_item.Screen": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				]
-			},
-			"hotkeys": {
-				"libobs.hide_scene_item.NDI™ Source": [
-					{
-						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_BACKSLASH"
-					}
-				],
-				"libobs.show_scene_item.Color Source": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
-				"libobs.show_scene_item.FotoMagico": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
-				"libobs.show_scene_item.NDI™ Source": [
-					{
-						"key": "OBS_KEY_BACKSLASH"
-					}
-				],
-				"libobs.show_scene_item.Slide Show": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				]
-			},
-			"id": "scene",
-			"id": "scene",
-			"name": "screen",
-			"private_settings": {
-				"show_in_multiview": false
-			},
-			"settings": {
-				"items": [
-					{
-						"locked": true,
-						"name":	"Color Source"
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name":	"Slide Show",
-						"pos": {
-							"x": 640,
-							"y": 360
-						},
-						"private_settings": {
-							"color": "",
-							"color-preset": 7
-						}
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "FotoMagico",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name":	"NDI™ Source",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
+						"rot": -5
 					}
 				]
 			}
