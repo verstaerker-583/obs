@@ -20,7 +20,7 @@
 		<use href="#marker" transform="rotate(330)" />
 	</g>
 	<g class="clockHands">
-		<line id="alarmHand" y1="0" y2="100" stroke-width="0" stroke-linecap="round" />
+		<line id="alarmHand" y1="0" y2="100" stroke-width="3" stroke-linecap="round" />
 		<line id="hourHand" y1="-10" y2="60" stroke-width="3" stroke-linecap="round" />
 		<line id="minuteHand" y1="-10" y2="90" stroke-width="3" stroke-linecap="round" />
 		<line id="secondHand" y1="-5" y2="90" stroke-width="2" stroke-linecap="round" />

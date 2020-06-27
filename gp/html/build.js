@@ -6,9 +6,9 @@ function build() {
 	PageName = PageName.substring(0, PageName.lastIndexOf("."));
 	switch (PageName) {
 		case "start":
+			pics.videoThumb = "";
 			buildBanner(start);
 			loadClock();
-			pics.videoThumb = "";
 			loadPics();
 			position();
 			break;

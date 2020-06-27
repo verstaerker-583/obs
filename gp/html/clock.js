@@ -32,8 +32,9 @@ function setAlarm() {
 		var hours = strs[0] % 12;
 		var minutes = strs[1];
 		alarmAngle = (180 + (hours + minutes / 60) * 30) % 360;
-		document.getElementById("alarmHand").setAttribute("transform", "rotate(" + (alarmAngle) + ")");
-		document.getElementById("alarmHand").setAttribute("stroke-width", "3");
+		var elmnt = document.getElementById("alarmHand");
+		elmnt.setAttribute("transform", "rotate(" + (alarmAngle) + ")");
+		elmnt.style.visibility = "visible";
 	}
 }
 

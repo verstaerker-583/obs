@@ -1,5 +1,6 @@
 #alarmHand {
 	stroke: #ff0032;
+	visibility: hidden;
 }
 
 #banner {

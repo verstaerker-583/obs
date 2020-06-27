@@ -840,49 +840,37 @@
 					}
 				}
 			],
-			"hotkeys": [
-				{
-					"libobs.show_scene_item.Screen": [
-						{
-							"key": "OBS_KEY_2"
-						}
-					]
-				},
-				{
-					"libobs.hide_scene_item.NDI™ Source": [
-						{
-							"key": "OBS_KEY_3"
-						},
-						{
-							"key": "OBS_KEY_BACKSLASH"
-						}
-					],
-					"libobs.show_scene_item.Color Source": [
-						{
-							"key": "OBS_KEY_2"
-						}
-					],
-					"libobs.show_scene_item.FotoMagico": [
-						{
-							"key": "OBS_KEY_2"
-						}
-					],
-					"libobs.show_scene_item.NDI™ Source": [
-						{
-							"key": "OBS_KEY_BACKSLASH"
-						}
-					],
-					"libobs.show_scene_item.Slide Show": [
-						{
-							"key": "OBS_KEY_2"
-						}
-					]
-				}
-			],
-			"id": [
-				"scene",
-				"scene"
-			],
+			"hotkeys": {
+				"libobs.hide_scene_item.NDI™ Source": [
+					{
+						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_BACKSLASH"
+					}
+				],
+				"libobs.show_scene_item.Color Source": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				],
+				"libobs.show_scene_item.FotoMagico": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				],
+				"libobs.show_scene_item.NDI™ Source": [
+					{
+						"key": "OBS_KEY_BACKSLASH"
+					}
+				],
+				"libobs.show_scene_item.Slide Show": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				]
+			},
+			"id": "scene",
 			"name": "screen",
 			"private_settings": {
 				"show_in_multiview": false
