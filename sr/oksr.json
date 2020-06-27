@@ -130,6 +130,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
+						"clut_amount": 0.5,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				}
@@ -151,6 +152,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
+						"clut_amount": 0.5,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				}
@@ -171,7 +173,6 @@
 			"settings": {
 				"css": "",
 				"height": 90,
-				"is_local_file": false,
 				"url": "https://verstaerker-583.github.io/obs/sr/bdLogo.svg",
 				"width": 390
 			}
@@ -222,8 +223,7 @@
 			},
 			"settings": {
 				"close_when_inactive": true,
-				"is_local_file": false,
-				"input": "https://verstaerker-583.github.io/obs/gp/trailer.mp4"
+				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
 			}
 		},
 		{
@@ -243,6 +243,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
+						"clut_amount": 0.5,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				},
