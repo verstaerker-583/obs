@@ -1,9 +1,3 @@
-#buntdenker {
-	height: 196px;
-	transform: translate(-98px, -98px);
-	width: 196px;
-}
-
 .background {
 	fill: #33cc99;
 	height: 100%;
@@ -17,7 +11,13 @@
 	width: 600px;
 }
 
-.buntdenker {
+.buntdenker0 {
+	height: 196px;
+	transform: translate(-98px, -98px);
+	width: 196px;
+}
+
+.buntdenker1 {
 	filter: url(#grayscale);
 	transform: translate(50%, 75%);
 }

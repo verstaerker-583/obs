@@ -20,11 +20,10 @@
 			<stop offset="0" stop-color="white" />
 			<stop offset="1" stop-color="#cc3366" />
 		</linearGradient>
-		<image class="smallImages" id="Lutz" href="https://static.wixstatic.com/media/b8486a_56df73b6eede4d99b24f7ca93b4f6cfb~mv2.png" />
-		<image class="smallImages" id="Markus" href="https://static.wixstatic.com/media/b8486a_8802ee4cc1c845eea7d8574535c554aa~mv2.png" />
-		<image class="smallImages" id="LutzYT" href="https://yt3.ggpht.com/a/AATXAJwrQs7nO_291m4RNUM2gsgIdLX_uhEDAOnUgQ=s100-c-k-c0xffffffff-no-rj-mo" />
-		<image class="smallImages" id="MarkusYT" href="https://yt3.ggpht.com/a/AATXAJyD2gbYLJc6Bargpj-z-TNv3XYkI7qCEPx5bQ=s176-c-k-c0x00ffffff-no-rj-mo" />
-		<image class="bigImages" id="LutzBig" href="https://static.wixstatic.com/media/b8486a_56df73b6eede4d99b24f7ca93b4f6cfb~mv2.png" />
+		<image id="Lutz" href="https://static.wixstatic.com/media/b8486a_56df73b6eede4d99b24f7ca93b4f6cfb~mv2.png" />
+		<image id="Markus" href="https://static.wixstatic.com/media/b8486a_8802ee4cc1c845eea7d8574535c554aa~mv2.png" />
+		<image id="LutzYT" href="https://yt3.ggpht.com/a/AATXAJwrQs7nO_291m4RNUM2gsgIdLX_uhEDAOnUgQ=s100-c-k-c0xffffffff-no-rj-mo" />
+		<image id="MarkusYT" href="https://yt3.ggpht.com/a/AATXAJyD2gbYLJc6Bargpj-z-TNv3XYkI7qCEPx5bQ=s176-c-k-c0x00ffffff-no-rj-mo" />
 		<image id="buntdenker" href="https://static.wixstatic.com/media/b8486a_9193e57831044be08b3803d9ddbf5227~mv2.png" />
 	</defs>
 </svg>
