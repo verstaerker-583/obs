@@ -171,7 +171,6 @@
 			"settings": {
 				"css": "",
 				"height": 90,
-				"is_local_file": false,
 				"url": "https://verstaerker-583.github.io/obs/gp/gpLogo.svg",
 				"width": 390
 			}
@@ -222,7 +221,7 @@
 			},
 			"settings": {
 				"close_when_inactive": true,
-				"local_file": "file:///System/Library/Compositions/Rollercoaster.mov"
+				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
 			}
 		},
 		{

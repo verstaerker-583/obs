@@ -226,7 +226,7 @@
 			},
 			"settings": {
 				"close_when_inactive": true,
-				"local_file": "file:///System/Library/Compositions/Rollercoaster.mov"
+				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
 			}
 		},
 		{
