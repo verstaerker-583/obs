@@ -10,8 +10,8 @@ function background() {
 }
 
 function banner() {
-	var elmnt = svgText("#buntgespräch", "25%", "05%")
-	elmnt.classList.add("logo")
+	var elmnt = svgText("#buntgespräch", "25%", "05%");
+	elmnt.classList.add("logo");
 	elmnt.setAttribute("onclick", "questionmarks(this)");
 	svgText("buntdenker.de", "75%", "95%").classList.add("logo");
 }
@@ -85,8 +85,8 @@ function checkOBSStatus() {
 
 function checkTime(i) {
 	if (i < 10) {
-		i = "0" + i
-	};
+		i = "0" + i;
+	}
 	return i;
 }
 
@@ -110,10 +110,12 @@ function loadClock() {
 
 function questionmarks(id) {
 	var question = "??? buntgefragt ???";
-	if (id.textContent === question) 
+	if (id.textContent === question) { 
 		id.textContent = "#buntgespräch";
-	else
+	}
+	else {
 		id.textContent = question;
+	}
 }
 
 function startTime() {
