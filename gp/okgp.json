@@ -222,8 +222,7 @@
 			},
 			"settings": {
 				"close_when_inactive": true,
-				"is_local_file": false,
-				"input": "https://verstaerker-583.github.io/obs/gp/trailer.mp4"
+				"local_file": "file:///System/Library/Compositions/Rollercoaster.mov"
 			}
 		},
 		{

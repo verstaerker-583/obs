@@ -1,4 +1,5 @@
 "use strict";
+window.addEventListener('load', build);
 
 function build() {
 	var URL = location.pathname;

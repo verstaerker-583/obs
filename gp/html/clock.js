@@ -1,7 +1,9 @@
 "use strict";
-
 var alarmAngle;
 var hourAngle;
+
+window.addEventListener('load', updateTime);
+window.addEventListener('load', setAlarm);
 
 function checkAlarm() {
 	if (hourAngle === alarmAngle) {

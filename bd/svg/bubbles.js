@@ -3,6 +3,8 @@ var svgNS = "http://www.w3.org/2000/svg";
 var r = 196 / 2 + 5;
 var svg = document.documentElement;
 
+window.addEventListener('load', bubbles);
+
 function background() {
 	var elmnt = document.createElementNS(svgNS, "rect");
 	elmnt.classList.add("background");
