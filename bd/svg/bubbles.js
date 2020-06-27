@@ -111,7 +111,7 @@ function loadClock() {
 	elmnt.classList.add("text");
 	elmnt.id = "clock";
 	svg.appendChild(elmnt);
-	startTime();
+	updateTime();
 }
 
 function questionmarks(id) {
@@ -124,16 +124,16 @@ function questionmarks(id) {
 	}
 }
 
-function startTime() {
-	var today = new Date();
-	var h = today.getUTCHours();
-	var m = today.getMinutes();
-	var s = today.getSeconds();
-	m = checkTime(m);
-	s = checkTime(s);
-	svg.getElementById("clock").textContent = h + ":" + m + ":" + s + " UTC ";
+function updateTime() {
+	var date = new Date();
+	var hours = 2 + date.getUTCHours();
+	var minutes = date.getMinutes();
+	var seconds = date.getSeconds();
+	minutes = checkTime(minutes);
+	seconds = checkTime(seconds);
+	svg.getElementById("clock").textContent = hours + ":" + minutes + ":" + seconds + " UTC ";
 	checkOBSStatus();
-	var t = setTimeout(startTime, 500);
+	setTimeout(updateTime, 1000);
 }
 
 function svgText(text, x, y) {
