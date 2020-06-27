@@ -12,7 +12,7 @@ function background() {
 }
 
 function banner() {
-	var elmnt = svgText("#buntgespräch", "25%", "05%");
+	var elmnt = svgText("#buntgequatsche", "25%", "05%");
 	elmnt.classList.add("logo");
 	elmnt.setAttribute("onclick", "questionmarks(this)");
 	svgText("buntdenker.de", "75%", "95%").classList.add("logo");
@@ -113,7 +113,7 @@ function loadClock() {
 function questionmarks(id) {
 	var question = "??? buntgefragt ???";
 	if (id.textContent === question) { 
-		id.textContent = "#buntgespräch";
+		id.textContent = "#buntgequatsche";
 	}
 	else {
 		id.textContent = question;
