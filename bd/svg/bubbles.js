@@ -59,8 +59,8 @@ function bubbles() {
 			useImage("Markus", "bigImages", "Markus");
 			break;
 		case "cams":
-			bubble("Lutz Jäkel", "30%", "camsLutz");
-			bubble("Markus Mauthe", "20%", "camsMarkus");
+			bubble("Lutz Jäkel", "25%", "camsLutz");
+			bubble("Markus Mauthe", "25%", "camsMarkus");
 			useImage("Lutz", "smallImages", "camsLutz");
 			useImage("Markus", "smallImages", "camsMarkus");
 			break;
