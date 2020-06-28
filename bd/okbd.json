@@ -32,6 +32,9 @@
 					"key": "OBS_KEY_M"
 				},
 				{
+					"key": "OBS_KEY_O"
+				},
+				{
 					"key": "OBS_KEY_1"
 				},
 				{
@@ -60,12 +63,12 @@
 	"AuxAudioDevice2": {
 		"filters": [
 			{
-				"enable": false,
+				"enabled": false,
 				"id": "noise_suppress_filter",
 				"name": "Noise Suppression"
 			},
 			{
-				"enable": false,
+				"enabled": false,
 				"id": "noise_gate_filter",
 				"name": "Noise Gate"
 			},
@@ -89,6 +92,9 @@
 			"libobs.mute": [
 				{
 					"key": "OBS_KEY_D"
+				},
+				{
+					"key": "OBS_KEY_O"
 				},
 				{
 					"key": "OBS_KEY_1"
@@ -193,12 +199,12 @@
 		{
 			"filters": [
 				{
-					"enable": false,
+					"enabled": false,
 					"id": "noise_suppress_filter",
 					"name": "Noise Suppression"
 				},
 				{
-					"enable": false,
+					"enabled": false,
 					"id": "noise_gate_filter",
 					"name": "Noise Gate"
 				},
@@ -221,7 +227,48 @@
 			"id": "ffmpeg_source",
 			"mixers": 255,
 			"monitoring_type": 2,
-			"name": "Media Source",
+			"name": "Intro",
+			"private_settings": {
+				"mixer_hidden": true,
+				"volume_locked": true
+			},
+			"settings": {
+				"close_when_inactive": true,
+				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
+			}
+		},
+		{
+			"filters": [
+				{
+					"enabled": false,
+					"id": "noise_suppress_filter",
+					"name": "Noise Suppression"
+				},
+				{
+					"enabled": false,
+					"id": "noise_gate_filter",
+					"name": "Noise Gate"
+				},
+				{
+					"id": "compressor_filter",
+					"name": "Compressor",
+					"settings": {
+						"attack_time": 100,
+						"ratio": 32,
+						"release_time": 600,
+						"sidechain_source": "Mic",
+						"threshold": -36
+					}
+				},
+				{
+					"id": "limiter_filter",
+					"name": "Limiter"
+				}
+			],
+			"id": "ffmpeg_source",
+			"mixers": 255,
+			"monitoring_type": 2,
+			"name": "Outro",
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
@@ -258,7 +305,7 @@
 					"name": "Noise Suppression"
 				},
 				{
-					"enable": false,
+					"enabled": false,
 					"id": "noise_gate_filter",
 					"name": "Noise Gate"
 				},
@@ -281,6 +328,9 @@
 			"flags": 2,
 			"hotkeys": {
 				"libobs.mute": [
+					{
+						"key": "OBS_KEY_O"
+					},
 					{
 						"key": "OBS_KEY_S"
 					},
@@ -431,7 +481,7 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.hide_scene_item.Media Source": [
+				"libobs.hide_scene_item.Intro": [
 					{
 						"key": "OBS_KEY_2"
 					}
@@ -449,9 +499,9 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.show_scene_item.Media Source": [
+				"libobs.show_scene_item.Intro": [
 					{
-						"key": "OBS_KEY_T"
+						"key": "OBS_KEY_I"
 					}
 				],
 				"libobs.show_scene_item.NDI™ Source": [
@@ -469,7 +519,7 @@
 						"key": "OBS_KEY_2"
 					},
 					{
-						"key": "OBS_KEY_T"
+						"key": "OBS_KEY_I"
 					}
 				]
 			},
@@ -534,7 +584,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Media Source",
+						"name": "Intro",
 						"pos": {
 							"x": 640,
 							"y": 360
@@ -648,6 +698,16 @@
 		},
 		{
 			"hotkeys": {
+				"libobs.hide_scene_item.Outro": [
+					{
+						"key": "OBS_KEY_4"
+					}
+				],
+				"libobs.show_scene_item.Outro": [
+					{
+						"key": "OBS_KEY_O"
+					}
+				],
 				"libobs.show_scene_item.Overlay Finish": [
 					{
 						"key": "OBS_KEY_4"
@@ -656,6 +716,9 @@
 				"OBSBasic.SelectScene": [
 					{
 						"key": "OBS_KEY_4"
+					},
+					{
+						"key": "OBS_KEY_O"
 					}
 				]
 			},
@@ -666,6 +729,24 @@
 					{
 						"locked": true,
 						"name": "Overlay Finish"
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "Outro",
+						"pos": {
+							"x": 640,
+							"y": 360
+						},
+						"private_settings": {
+							"color": "",
+							"color-preset": 7
+						}
 					}
 				]
 			}

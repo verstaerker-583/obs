@@ -126,7 +126,7 @@ function questionmarks(id) {
 
 function updateTime() {
 	var date = new Date();
-	var hours = 2 + date.getUTCHours();
+	var hours = date.getUTCHours();
 	var minutes = date.getMinutes();
 	var seconds = date.getSeconds();
 	minutes = checkTime(minutes);
