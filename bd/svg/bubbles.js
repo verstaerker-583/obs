@@ -104,7 +104,7 @@ function commons() {
 function loadClock() {
 	var elmnt = document.createElementNS(svgNS, "text");
 	elmnt.setAttribute("x", "50%");
-	elmnt.setAttribute("y", "75%");
+	elmnt.setAttribute("y", "80%");
 	elmnt.classList.add("text");
 	elmnt.id = "clock";
 	svg.appendChild(elmnt);
