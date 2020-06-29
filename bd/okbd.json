@@ -224,6 +224,18 @@
 					"name": "Limiter"
 				}
 			],
+		"hotkeys": {
+			"libobs.mute": [
+				{
+					"key": "OBS_KEY_1"
+				}
+			],
+			"libobs.unmute": [
+				{
+					"key": "OBS_KEY_T"
+				}
+			]
+		},
 			"id": "ffmpeg_source",
 			"mixers": 255,
 			"monitoring_type": 2,
@@ -234,7 +246,8 @@
 			},
 			"settings": {
 				"close_when_inactive": true,
-				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
+				"local_file": "/System/Library/Compositions/Rollercoaster.mov",
+				"local_file": "/Users/olaf/Desktop/katamari-star8-10s-h264.mov"
 			}
 		},
 		{
@@ -275,7 +288,8 @@
 			},
 			"settings": {
 				"close_when_inactive": true,
-				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
+				"local_file": "/System/Library/Compositions/Rollercoaster.mov",
+				"local_file": "/Users/olaf/Desktop/katamari-star8-10s-h264.mov"
 			}
 		},
 		{
@@ -284,9 +298,9 @@
 					"id": "chroma_key_filter",
 					"name": "Chroma Key",
 					"settings": {
-						"similarity": 100,
-						"smoothness": 1,
-						"spill": 1
+						"similarity": 400,
+						"smoothness": 35,
+						"spill": 200
 					}
 				},
 				{

@@ -55,18 +55,14 @@ function bubbles() {
 			background();
 			bubble("Lutz Jäkel", "37.5%", "Lutz");
 			bubble("Markus Mauthe", "12.5%", "Markus");
-			/*
-			useImage("Lutz", "bigImages", "Lutz");
+			useImage("LutzBG", "bigBG", "Lutz");
 			useImage("Markus", "bigImages", "Markus");
-			*/
 			break;
 		case "cams":
 			bubble("Lutz Jäkel", "25%", "camsLutz");
 			bubble("Markus Mauthe", "25%", "camsMarkus");
-			/*
-			useImage("Lutz", "smallImages", "camsLutz");
+			useImage("LutzBG", "smallBG", "Lutz");
 			useImage("Markus", "smallImages", "camsMarkus");
-			*/
 			break;
 		case "finish":
 			commons();

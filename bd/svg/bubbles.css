@@ -4,6 +4,12 @@
 	width: 100%;
 }
 
+.bigBG {
+	clip-path: circle(300px at 300px 300px);
+	height: 600px;
+	transform: translate(-300px, -300px);
+}
+
 .bigImages {
 	clip-path: circle(50% at 50% 50%);
 	height: 600px;
@@ -54,6 +60,13 @@
 	dy: 1em;
 	font-size: 36px;
 }
+
+.smallBG {
+	height: 196px;
+	clip-path: circle(98px at 98px 98px);
+	transform: translate(6px, -98px);
+}
+
 
 .smallImages {
 	clip-path: circle(50% at 50% 50%);
