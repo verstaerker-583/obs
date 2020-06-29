@@ -13,13 +13,13 @@
 
 .buntdenker0 {
 	height: 196px;
-	transform: translate(-98px, -98px);
+	transform: translate(-98px, -138px);
 	width: 196px;
 }
 
 .buntdenker1 {
 	filter: url(#grayscale);
-	transform: translate(50%, 75%);
+	transform: translate(50%, 50%);
 }
 
 .camsLutz {

@@ -104,14 +104,7 @@ function commons() {
 function loadClock() {
 	var elmnt = document.createElementNS(svgNS, "text");
 	elmnt.setAttribute("x", "50%");
-	elmnt.setAttribute("y", "45%");
-	elmnt.classList.add("text");
-	elmnt.id = "date";
-	svg.appendChild(elmnt);
-
-	var elmnt = document.createElementNS(svgNS, "text");
-	elmnt.setAttribute("x", "50%");
-	elmnt.setAttribute("y", "55%");
+	elmnt.setAttribute("y", "75%");
 	elmnt.classList.add("text");
 	elmnt.id = "clock";
 	svg.appendChild(elmnt);
@@ -130,10 +123,8 @@ function questionmarks(id) {
 
 function updateTime() {
 	var date = new Date();
-	var options = {year: 'numeric', month: 'numeric', day: 'numeric', timeZone: 'Europe/Berlin'};
-	svg.getElementById("date").textContent = date.toLocaleDateString('de-DE', options);
-	options = {timeZone: 'Europe/Berlin'};
-	svg.getElementById("clock").textContent = date.toLocaleTimeString('de-DE', options);
+	var options = {timeZone: 'Europe/Berlin'};
+	svg.getElementById("clock").textContent = date.toLocaleString('de-DE', options);
 	checkOBSStatus();
 	setTimeout(updateTime, 1000);
 }
