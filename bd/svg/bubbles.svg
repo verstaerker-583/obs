@@ -5,7 +5,7 @@
 	<defs>
 		<filter id="grayscale" filterUnits="objectBoundingBox">
 			<feColorMatrix type="saturate" in="SourceGraphic" values="1">
-				<animate attributeName="values" values="0;1.5;0" dur="10s" repeatCount="indefinite" />
+				<animate attributeName="values" values="0;1.5;0" dur="30s" repeatCount="indefinite" />
 			</feColorMatrix>
 		</filter>
 		<filter id="flooder">
