@@ -130,6 +130,10 @@
 		{
 			"filters": [
 				{
+					"id": "chroma_key_filter",
+					"name": "Chroma Key"
+				},
+				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
 				},
@@ -159,6 +163,10 @@
 		},
 		{
 			"filters": [
+				{
+					"id": "chroma_key_filter",
+					"name": "Chroma Key"
+				},
 				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
@@ -280,6 +288,10 @@
 		},
 		{
 			"filters": [
+				{
+					"id": "chroma_key_filter",
+					"name": "Chroma Key"
+				},
 				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
