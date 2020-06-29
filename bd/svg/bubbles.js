@@ -93,13 +93,6 @@ function checkOBSStatus() {
 	}
 }
 
-function checkTime(i) {
-	if (i < 10) {
-		i = "0" + i;
-	}
-	return i;
-}
-
 function commons() {
 	background();
 	bubble("Lutz Jäkel", "37.5%", "Lutz");
@@ -111,7 +104,14 @@ function commons() {
 function loadClock() {
 	var elmnt = document.createElementNS(svgNS, "text");
 	elmnt.setAttribute("x", "50%");
-	elmnt.setAttribute("y", "50%");
+	elmnt.setAttribute("y", "45%");
+	elmnt.classList.add("text");
+	elmnt.id = "date";
+	svg.appendChild(elmnt);
+
+	var elmnt = document.createElementNS(svgNS, "text");
+	elmnt.setAttribute("x", "50%");
+	elmnt.setAttribute("y", "55%");
 	elmnt.classList.add("text");
 	elmnt.id = "clock";
 	svg.appendChild(elmnt);
@@ -130,12 +130,10 @@ function questionmarks(id) {
 
 function updateTime() {
 	var date = new Date();
-	var hours = date.getUTCHours();
-	var minutes = date.getMinutes();
-	var seconds = date.getSeconds();
-	minutes = checkTime(minutes);
-	seconds = checkTime(seconds);
-	svg.getElementById("clock").textContent = hours + ":" + minutes + ":" + seconds + " UTC ";
+	var options = {year: 'numeric', month: 'numeric', day: 'numeric', timeZone: 'Europe/Berlin'};
+	svg.getElementById("date").textContent = date.toLocaleDateString('de-DE', options);
+	options = {timeZone: 'Europe/Berlin'};
+	svg.getElementById("clock").textContent = date.toLocaleTimeString('de-DE', options);
 	checkOBSStatus();
 	setTimeout(updateTime, 1000);
 }
