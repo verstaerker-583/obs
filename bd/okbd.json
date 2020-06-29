@@ -281,9 +281,13 @@
 		{
 			"filters": [
 				{
-					"enabled": false,
 					"id": "chroma_key_filter",
-					"name": "Chroma Key"
+					"name": "Chroma Key",
+					"settings": {
+						"similarity": 100,
+						"smoothness": 1,
+						"spill": 1
+					}
 				},
 				{
 					"id": "sharpness_filter",
