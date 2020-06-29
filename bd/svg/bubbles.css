@@ -57,9 +57,7 @@
 
 .smallImages {
 	clip-path: circle(50% at 50% 50%);
-	/*
 	filter: url(#grayscale);
-	*/
 	height: 196px;
 	transform: translate(-98px, -98px);
 	width: 196px;
