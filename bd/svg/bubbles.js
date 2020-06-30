@@ -1,7 +1,7 @@
 "use strict";
-var svgNS = "http://www.w3.org/2000/svg";
 var r = 196 / 2 + 5;
 var svg = document.documentElement;
+var svgNS = "http://www.w3.org/2000/svg";
 
 window.addEventListener('load', bubbles);
 
@@ -12,15 +12,20 @@ function background() {
 }
 
 function banner() {
-	var elmnt = svgText("#buntgespräch", "25%", "05%");
+	var elmnt = svgText("#buntgespräch", "25%", "5%");
 	elmnt.classList.add("logo");
 	elmnt.setAttribute("onclick", "questionmarks(this)");
 	svgText("buntdenker.de", "75%", "95%").classList.add("logo");
 }
 
 function bubble(name, offset, myClass) {
+	var elmnt = document.createElementNS(svgNS, "circle");
+	elmnt.classList.add(myClass);
+	elmnt.setAttribute("r", r - 5);
+	svg.appendChild(elmnt);
+
 	var path = "M0 0 m" + -r + " 0 a1 1 0 0 0 " + 2 * r + " 0 a1 1 0 0 0 " + 2 * -r + " 0";
-	var elmnt = document.createElementNS(svgNS, "path");
+	elmnt = document.createElementNS(svgNS, "path");
 	elmnt.classList.add("frames");
 	elmnt.classList.add(myClass);
 	elmnt.id = name;
@@ -28,9 +33,10 @@ function bubble(name, offset, myClass) {
 
 	var text = document.createElementNS(svgNS, "text");
 	text.classList.add("names");
-	text.setAttribute("dy", "1em");
+	text.setAttribute("dy", "0.6em");
 	var textPath = document.createElementNS(svgNS, "textPath");
-	textPath.setAttribute("href", "#" + name + "");
+	textPath.classList.add("names");
+	textPath.setAttribute("href", "#" + name);
 	textPath.setAttribute("startOffset", offset);
 	textPath.textContent = name;
 	text.appendChild(textPath);
@@ -46,29 +52,25 @@ function bubbles() {
 	switch (PageName) {
 		case "start":
 			commons();
-			svgText("Gleich geht's los!", "50%", "25%").classList.add("text");
-			useImage("Lutz", "smallImages", "Lutz");
-			useImage("Markus", "smallImages", "Markus");
+			svgText("Gleich geht's los!", "50%", "20%");
+			bubble("Lutz Jäkel", "37.5%", "Lutz");
+			bubble("Markus Mauthe", "12.5%", "Markus");
 			break;
 		case "cam":
 			r = 305;
 			background();
-			bubble("Lutz Jäkel", "37.5%", "Lutz");
-			bubble("Markus Mauthe", "12.5%", "Markus");
-			useImage("LutzBG", "bigBG", "Lutz");
-			useImage("Markus", "bigImages", "Markus");
+			bubble("Lutz Jäkel", "37.5%", "LutzBackground");
+			bubble("Markus Mauthe", "12.5%", "MarkusBackground");
 			break;
 		case "cams":
-			bubble("Lutz Jäkel", "25%", "camsLutz");
-			bubble("Markus Mauthe", "25%", "camsMarkus");
-			useImage("LutzBG", "smallBG", "Lutz");
-			useImage("Markus", "smallImages", "camsMarkus");
+			bubble("Lutz Jäkel", "25%", "LutzCams");
+			bubble("Markus Mauthe", "25%", "MarkusCams");
 			break;
 		case "finish":
 			commons();
-			svgText("Vielen Dank und auf Wiedersehen!", "50%", "25%").classList.add("text");
-			useImage("LutzYT", "smallImages", "Lutz");
-			useImage("MarkusYT", "smallImages", "Markus");
+			svgText("Vielen Dank und auf Wiedersehen!", "50%", "20%");
+			bubble("Lutz Jäkel", "37.5%", "LutzYT");
+			bubble("Markus Mauthe", "12.5%", "MarkusYT");
 			break;
 	}
 	banner();
@@ -80,10 +82,10 @@ function checkOBSStatus() {
 			switch (true) {
 				case (status.recording):
 				case (status.streaming):
-					document.getElementById("clock").style.fill = "white"; 
+					document.getElementById("clock").style.fill = "white";
 					break;
 				default:
-					document.getElementById("clock").style.fill = "yellow"; 
+					document.getElementById("clock").style.fill = "yellow";
 			}
 		});
 	}
@@ -91,35 +93,34 @@ function checkOBSStatus() {
 
 function commons() {
 	background();
-	bubble("Lutz Jäkel", "37.5%", "Lutz");
-	bubble("Markus Mauthe", "12.5%", "Markus");
 	loadClock();
-	useImage("buntdenker", "buntdenker0", "buntdenker1");
+	bubble("", "25%", "Buntdenker");
 }
 
 function loadClock() {
 	var elmnt = document.createElementNS(svgNS, "text");
-	elmnt.setAttribute("x", "50%");
-	elmnt.setAttribute("y", "80%");
 	elmnt.classList.add("text");
 	elmnt.id = "clock";
+	elmnt.setAttribute("x", "50%");
+	elmnt.setAttribute("y", "80%");
 	svg.appendChild(elmnt);
 	updateTime();
 }
 
 function questionmarks(id) {
 	var question = "??? buntgefragt ???";
-	if (id.textContent === question) { 
+	if (id.textContent === question) {
 		id.textContent = "#buntgespräch";
-	}
-	else {
+	} else {
 		id.textContent = question;
 	}
 }
 
 function updateTime() {
 	var date = new Date();
-	var options = {timeZone: 'Europe/Berlin'};
+	var options = {
+		timeZone: 'Europe/Berlin'
+	};
 	svg.getElementById("clock").textContent = date.toLocaleString('de-DE', options);
 	checkOBSStatus();
 	setTimeout(updateTime, 1000);
@@ -127,18 +128,10 @@ function updateTime() {
 
 function svgText(text, x, y) {
 	var elmnt = document.createElementNS(svgNS, "text");
+	elmnt.classList.add("text");
 	elmnt.setAttribute("x", x);
 	elmnt.setAttribute("y", y);
 	elmnt.textContent = text;
 	svg.appendChild(elmnt);
 	return elmnt;
-}
-
-function useImage(id, myClass0, myClass1) {
-	var elmnt = document.getElementById(id);
-	elmnt.classList.add(myClass0);
-	elmnt = document.createElementNS(svgNS, "use");
-	elmnt.classList.add(myClass1);
-	elmnt.setAttribute("href", "#"+id);
-	svg.appendChild(elmnt);
 }

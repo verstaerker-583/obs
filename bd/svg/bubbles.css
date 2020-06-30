@@ -1,87 +1,97 @@
+feFlood {
+	flood-color: #cc3366;
+	flood-opacity: 90%
+}
+
+.Buntdenker {
+	transform: translate(50%, 50%)
+}
+
+.LutzCams {
+	transform: translate(90%, 45%)
+}
+
+.LutzYT,
+.LutzBackground,
+.Lutz {
+	transform: translate(75%, 45%)
+}
+
+.MarkusCams {
+	transform: translate(10%, 55%)
+}
+
+.MarkusYT,
+.MarkusBackground,
+.Markus {
+	transform: translate(25%, 55%)
+}
+
 .background {
-	fill: #33cc99;
+	fill: #3c9;
 	height: 100%;
-	width: 100%;
-}
-
-.bigBG {
-	clip-path: circle(300px at 300px 300px);
-	height: 600px;
-	transform: translate(-300px, -300px);
-}
-
-.bigImages {
-	clip-path: circle(50% at 50% 50%);
-	height: 600px;
-	transform: translate(-300px, -300px);
-	width: 600px;
-}
-
-.buntdenker0 {
-	height: 196px;
-	transform: translate(-98px, -98px);
-	width: 196px;
-}
-
-.buntdenker1 {
-	filter: url(#grayscale);
-	transform: translate(50%, 50%);
-}
-
-.camsLutz {
-	transform: translate(1172px, 320px);
-}
-
-.camsMarkus {
-	transform: translate(108px, 400px);
+	width: 100%
 }
 
 .frames {
 	fill: none;
 	stroke: url(#lg);
-	stroke-width: 5px;
+	stroke-width: 5px
 }
 
 .logo {
-	alignment-baseline: middle;
+	dominant-baseline: central;
 	filter: url(#flooder);
-	font-size: 64px;
-}
-
-.Lutz {
-	transform: translate(75%, 320px);
-}
-
-.Markus {
-	transform: translate(25%, 400px);
+	font-family: Sunbeat;
+	font-size: 64px
 }
 
 .names {
-	dy: 1em;
-	font-size: 36px;
+	dominant-baseline: central;
+	font-family: Sunbeat;
+	font-size: 36px
 }
 
-.smallBG {
+.small {
 	height: 196px;
-	clip-path: circle(98px at 98px 98px);
-	transform: translate(114px, -98px);
+	width: 196px
 }
 
-
-.smallImages {
-	clip-path: circle(50% at 50% 50%);
-	height: 196px;
-	transform: translate(-98px, -98px);
-	width: 196px;
+circle.Buntdenker {
+	fill: url(#Buntdenker);
+	filter: url(#grayscale)
 }
 
-.text {
-	font-family: courier;
+circle.Lutz {
+	fill: url(#Lutz)
+}
+
+circle.LutzCams,
+circle.LutzBackground {
+	fill: url(#LutzBackground)
+}
+
+circle.LutzYT {
+	fill: url(#LutzYT)
+}
+
+circle.Markus {
+	fill: url(#Markus)
+}
+
+circle.MarkusCams,
+circle.MarkusBackground {
+	fill: url(#MarkusBackground)
+}
+
+circle.MarkusYT {
+	fill: url(#MarkusYT)
 }
 
 text {
-	fill: white;
+	dominant-baseline: central;
+	fill: #FFF;
+	font-family: courier;
 	font-size: 48px;
-	font-family: Sunbeat;
-	text-anchor: middle;
+	text-anchor: middle
 }

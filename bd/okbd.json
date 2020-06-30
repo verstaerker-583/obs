@@ -43,18 +43,18 @@
 			],
 			"libobs.unmute": [
 				{
-					"key": "OBS_KEY_M"
-				},
-				{
 					"key": "OBS_KEY_2"
 				},
 				{
 					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_Y"
 				}
 			]
 		},
 		"id": "coreaudio_input_capture",
-		"mixers": 255,
+		"mixers": 2,
 		"name": "Mic",
 		"private_settings": {
 			"volume_locked": true
@@ -116,7 +116,7 @@
 			]
 		},
 		"id": "coreaudio_input_capture",
-		"mixers": 255,
+		"mixers": 1,
 		"monitoring_type": 2,
 		"name": "Desktop Audio",
 		"private_settings": {
@@ -199,16 +199,6 @@
 		{
 			"filters": [
 				{
-					"enabled": false,
-					"id": "noise_suppress_filter",
-					"name": "Noise Suppression"
-				},
-				{
-					"enabled": false,
-					"id": "noise_gate_filter",
-					"name": "Noise Gate"
-				},
-				{
 					"id": "compressor_filter",
 					"name": "Compressor",
 					"settings": {
@@ -225,7 +215,7 @@
 				}
 			],
 			"id": "ffmpeg_source",
-			"mixers": 255,
+			"mixers": 4,
 			"monitoring_type": 2,
 			"name": "Intro",
 			"private_settings": {
@@ -240,16 +230,6 @@
 		{
 			"filters": [
 				{
-					"enabled": false,
-					"id": "noise_suppress_filter",
-					"name": "Noise Suppression"
-				},
-				{
-					"enabled": false,
-					"id": "noise_gate_filter",
-					"name": "Noise Gate"
-				},
-				{
 					"id": "compressor_filter",
 					"name": "Compressor",
 					"settings": {
@@ -266,7 +246,7 @@
 				}
 			],
 			"id": "ffmpeg_source",
-			"mixers": 255,
+			"mixers": 4,
 			"monitoring_type": 2,
 			"name": "Outro",
 			"private_settings": {
@@ -284,7 +264,7 @@
 					"id": "chroma_key_filter",
 					"name": "Chroma Key",
 					"settings": {
-						"similarity": 400,
+						"similarity": 396,
 						"smoothness": 35,
 						"spill": 200
 					}
@@ -308,69 +288,19 @@
 						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
 						"type": "mask_alpha_filter.effect"
 					}
-				},
-				{
-					"id": "noise_suppress_filter",
-					"name": "Noise Suppression"
-				},
-				{
-					"enabled": false,
-					"id": "noise_gate_filter",
-					"name": "Noise Gate"
-				},
-				{
-					"id": "compressor_filter",
-					"name": "Compressor",
-					"settings": {
-						"attack_time": 100,
-						"ratio": 32,
-						"release_time": 600,
-						"sidechain_source": "Mic",
-						"threshold": -36
-					}
-				},
-				{
-					"id": "limiter_filter",
-					"name": "Limiter"
 				}
 			],
-			"flags": 2,
-			"hotkeys": {
-				"libobs.mute": [
-					{
-						"key": "OBS_KEY_O"
-					},
-					{
-						"key": "OBS_KEY_S"
-					},
-					{
-						"key": "OBS_KEY_1"
-					},
-					{
-						"key": "OBS_KEY_4"
-					}
-				],
-				"libobs.unmute": [
-					{
-						"key": "OBS_KEY_S"
-					},
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_3"
-					}
-				]
-			},
 			"id": "ndi_source",
-			"mixers": 255,
+			"mixers": 0,
 			"monitoring_type": 2,
+			"muted": true,
 			"name": "NDI™ Source",
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
 			},
 			"settings": {
+				"ndi_fix_alpha_blending": true,
 				"ndi_source_name": "OLAFS-AIR (Skype - Aktiver Sprecher)"
 			}
 		},
@@ -550,8 +480,8 @@
 						"locked": true,
 						"name": "Cam Internal",
 						"pos": {
-							"x": 320,
-							"y": 400
+							"x": 324,
+							"y": 396
 						},
 						"rot": -5
 					},
@@ -565,8 +495,8 @@
 						"locked": true,
 						"name": "Cam External",
 						"pos": {
-							"x": 320,
-							"y": 400
+							"x": 324,
+							"y": 396
 						},
 						"rot": -5
 					},
@@ -581,7 +511,7 @@
 						"name": "NDI™ Source",
 						"pos": {
 							"x": 960,
-							"y": 320
+							"y": 324
 						},
 						"rot": -5
 					},
@@ -823,8 +753,8 @@
 						"locked": true,
 						"name": "Cam Internal",
 						"pos": {
-							"x": 108,
-							"y": 400
+							"x": 128,
+							"y": 396
 						},
 						"rot": -5
 					},
@@ -838,8 +768,8 @@
 						"locked": true,
 						"name": "Cam External",
 						"pos": {
-							"x": 108,
-							"y": 400
+							"x": 128,
+							"y": 396
 						},
 						"rot": -5
 					},
@@ -853,8 +783,8 @@
 						"locked": true,
 						"name": "NDI™ Source",
 						"pos": {
-							"x": 1172,
-							"y": 320
+							"x": 1152,
+							"y": 324
 						},
 						"rot": -5
 					}
