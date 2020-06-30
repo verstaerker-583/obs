@@ -63,6 +63,10 @@ function bubbles() {
 			bubble("Markus Mauthe", "12.5%", "MarkusBackground");
 			break;
 		case "cams":
+			if (window.obsstudio) {}
+			else {
+				background();
+			}
 			bubble("Lutz Jäkel", "25%", "LutzCams");
 			bubble("Markus Mauthe", "25%", "MarkusCams");
 			break;
