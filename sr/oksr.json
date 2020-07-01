@@ -134,7 +134,6 @@
 				}
 			},
 			{
-				"enabled": false,
 				"id": "noise_gate_filter",
 				"name": "Noise Gate"
 			},

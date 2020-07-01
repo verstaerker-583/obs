@@ -1,0 +1,16 @@
+"device": "0x8020000005ac8514",
+"device_name": "FaceTime HD-Kamera (integriert)"
+
+"device": "0x543000043e9a4d",
+"device_name": "LG UltraFine Display Camera",
+
+"device_id": "BuiltInMicrophoneDevice"
+"device_id": "bc-f2-92-f1-a9-57:input"
+
+"ndi_source_name": "MARKUS-MAUTHE-2019.LOCAL (Skype - Aktiver Sprecher)"
+
+MonitoringDeviceName=PLT V5200 Series
+MonitoringDeviceId=bc-f2-92-f1-a9-57:output
+
+MonitoringDeviceName=Externe Kopfhörer
+MonitoringDeviceId=BuiltInHeadphoneOutputDevice

@@ -1,13 +1,10 @@
 #!/bin/sh
 
-#chmod -R +w ~/Documents/obs/profiles
-#chmod -R +w ~/Documents/obs/scenes
-
 gsed -f gpTosr.sed ../gp/okgp.json > ../sr/oksr.json
 
-gsed -f toMm.sed ../bd/okbd.json > ../bd/mmbd.json
-gsed -f toMm.sed ../gp/okgp.json > ../gp/mmgp.json
-gsed -f toMm.sed ../sr/oksr.json > ../sr/mmsr.json
+gsed -f toMm.sed ../bd/okbd.json > ../scenes/mmbd.json
+gsed -f toMm.sed ../gp/okgp.json > ../scenes/mmgp.json
+gsed -f toMm.sed ../sr/oksr.json > ../scenes/mmsr.json
 
 
 mkdir -p ../profiles/okYTlq ../profiles/okYTmq
@@ -23,6 +20,5 @@ gsed -f toMm.sed ../profiles/okYTmq/basic.ini > ../profiles/mmYTmq/basic.ini
 #gsed -f toGp.sed ../profiles/okYTlq/basic.ini > ../profiles/gpYTlq/basic.ini
 #gsed -f toGp.sed ../profiles/okYTmq/basic.ini > ../profiles/gpYTmq/basic.ini
 
-#cd ~
-#zip --symlinks -q -r "Desktop/"`date "+%Y%m%d%H%M%S.zip"`\
-#       "Documents/obs" -x@"Documents/obs/exclude.list"
+cd ../.. 
+zip --symlinks -q -r ~/Desktop/`date "+%Y%m%d%H%M%S.zip"` obs/profiles/mm* obs/scenes/mm*.json

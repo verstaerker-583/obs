@@ -1,0 +1,9 @@
+obs/scripts/*
+obs/*/ok*
+obs/scenes/.DS_Store
+obs/profiles/ok*
+obs/profiles/gp*
+obs/profiles/.DS_Store
+obs/graphics/*
+obs/devices_mm.txt
+obs/.DS_Store
