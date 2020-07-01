@@ -32,6 +32,9 @@
 					"key": "OBS_KEY_M"
 				},
 				{
+					"key": "OBS_KEY_O"
+				},
+				{
 					"key": "OBS_KEY_1"
 				},
 				{
@@ -40,18 +43,19 @@
 			],
 			"libobs.unmute": [
 				{
-					"key": "OBS_KEY_M"
-				},
-				{
 					"key": "OBS_KEY_2"
 				},
 				{
 					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_M"
 				}
 			]
 		},
 		"id": "coreaudio_input_capture",
-		"mixers": 255,
+		"mixers": 3,
+		"monitoring_type": 0,
 		"name": "Mic",
 		"private_settings": {
 			"volume_locked": true
@@ -61,12 +65,10 @@
 		"filters": [
 			{
 				"id": "noise_suppress_filter",
-				"name": "Noise Suppression"
-			},
-			{
-				"enabled": false,
-				"id": "noise_gate_filter",
-				"name": "Noise Gate"
+				"name": "Noise Suppression",
+				"settings": {
+					"suppress_level": -6
+				}
 			},
 			{
 				"id": "compressor_filter",
@@ -90,6 +92,9 @@
 					"key": "OBS_KEY_D"
 				},
 				{
+					"key": "OBS_KEY_O"
+				},
+				{
 					"key": "OBS_KEY_1"
 				},
 				{
@@ -109,7 +114,7 @@
 			]
 		},
 		"id": "coreaudio_input_capture",
-		"mixers": 255,
+		"mixers": 5,
 		"monitoring_type": 2,
 		"name": "Desktop Audio",
 		"private_settings": {
@@ -119,9 +124,85 @@
 			"device_id": "BlackHole_UID"
 		}
 	},
+	"AuxAudioDevice3": {
+		"filters": [
+			{
+				"id": "noise_suppress_filter",
+				"name": "Noise Suppression",
+				"settings": {
+					"suppress_level": -6
+				}
+			},
+			{
+				"enabled": false,
+				"id": "noise_gate_filter",
+				"name": "Noise Gate"
+			},
+			{
+				"id": "compressor_filter",
+				"name": "Compressor",
+				"settings": {
+					"attack_time": 100,
+					"ratio": 32,
+					"release_time": 600,
+					"sidechain_source": "Mic",
+					"threshold": -36
+				}
+			},
+			{
+				"id": "limiter_filter",
+				"name": "Limiter"
+			}
+		],
+		"flags": 2,
+		"hotkeys": {
+			"libobs.mute": [
+				{
+					"key": "OBS_KEY_N"
+				},
+				{
+					"key": "OBS_KEY_O"
+				},
+				{
+					"key": "OBS_KEY_1"
+				},
+				{
+					"key": "OBS_KEY_4"
+				}
+			],
+			"libobs.unmute": [
+				{
+					"key": "OBS_KEY_N"
+				},
+				{
+					"key": "OBS_KEY_2"
+				},
+				{
+					"key": "OBS_KEY_3"
+				}
+			]
+		},
+		"id": "ndi_source",
+		"mixers": 9,
+		"monitoring_type": 2,
+		"name": "NDI™ Source - Audio",
+		"private_settings": {
+			"mixer_hidden": true,
+			"volume_locked": true
+		},
+		"settings": {
+			"ndi_bw_mode": 2,
+			"ndi_source_name": "OLAFS-AIR (Skype - Aktiver Sprecher)"
+		}
+	},
 	"sources": [
 		{
 			"filters": [
+				{
+					"enabled": false,
+					"id": "chroma_key_filter",
+					"name": "Chroma Key"
+				},
 				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
@@ -130,8 +211,16 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.5,
+						"clut_amount": 0.75,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
+					}
+				},
+				{
+					"id": "mask_filter",
+					"name": "Image Mask/Blend",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/gp/camMask.png",
+						"type": "mask_alpha_filter.effect"
 					}
 				}
 			],
@@ -145,6 +234,11 @@
 		{
 			"filters": [
 				{
+					"enabled": false,
+					"id": "chroma_key_filter",
+					"name": "Chroma Key"
+				},
+				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
 				},
@@ -152,8 +246,16 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.5,
+						"clut_amount": 0.75,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
+					}
+				},
+				{
+					"id": "mask_filter",
+					"name": "Image Mask/Blend",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/gp/camMask.png",
+						"type": "mask_alpha_filter.effect"
 					}
 				}
 			],
@@ -190,12 +292,10 @@
 			"filters": [
 				{
 					"id": "noise_suppress_filter",
-					"name": "Noise Suppression"
-				},
-				{
-					"enabled": false,
-					"id": "noise_gate_filter",
-					"name": "Noise Gate"
+					"name": "Noise Suppression",
+					"settings": {
+						"suppress_level": -6
+					}
 				},
 				{
 					"id": "compressor_filter",
@@ -214,9 +314,47 @@
 				}
 			],
 			"id": "ffmpeg_source",
-			"mixers": 255,
+			"mixers": 17,
 			"monitoring_type": 2,
-			"name": "Media Source",
+			"name": "Intro",
+			"private_settings": {
+				"mixer_hidden": true,
+				"volume_locked": true
+			},
+			"settings": {
+				"close_when_inactive": true,
+				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
+			}
+		},
+		{
+			"filters": [
+				{
+					"id": "noise_suppress_filter",
+					"name": "Noise Suppression",
+					"settings": {
+						"suppress_level": -6
+					}
+				},
+				{
+					"id": "compressor_filter",
+					"name": "Compressor",
+					"settings": {
+						"attack_time": 100,
+						"ratio": 32,
+						"release_time": 600,
+						"sidechain_source": "Mic",
+						"threshold": -36
+					}
+				},
+				{
+					"id": "limiter_filter",
+					"name": "Limiter"
+				}
+			],
+			"id": "ffmpeg_source",
+			"mixers": 17,
+			"monitoring_type": 2,
+			"name": "Outro",
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
@@ -236,6 +374,11 @@
 		{
 			"filters": [
 				{
+					"enabled": false,
+					"id": "chroma_key_filter",
+					"name": "Chroma Key"
+				},
+				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
 				},
@@ -243,8 +386,16 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.5,
+						"clut_amount": 0.75,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
+					}
+				},
+				{
+					"id": "mask_filter",
+					"name": "Image Mask/Blend",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/gp/camMask.png",
+						"type": "mask_alpha_filter.effect"
 					}
 				},
 				{
@@ -252,7 +403,6 @@
 					"name": "Noise Suppression"
 				},
 				{
-					"enabled": false,
 					"id": "noise_gate_filter",
 					"name": "Noise Gate"
 				},
@@ -276,7 +426,10 @@
 			"hotkeys": {
 				"libobs.mute": [
 					{
-						"key": "OBS_KEY_S"
+						"key": "OBS_KEY_N"
+					},
+					{
+						"key": "OBS_KEY_O"
 					},
 					{
 						"key": "OBS_KEY_1"
@@ -287,7 +440,7 @@
 				],
 				"libobs.unmute": [
 					{
-						"key": "OBS_KEY_S"
+						"key": "OBS_KEY_N"
 					},
 					{
 						"key": "OBS_KEY_2"
@@ -298,14 +451,17 @@
 				]
 			},
 			"id": "ndi_source",
-			"mixers": 255,
-			"monitoring_type": 2,
+			"mixers": 0,
+			"monitoring_type": 0,
 			"name": "NDI™ Source",
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
 			},
 			"settings": {
+				"ndi_bw_mode": 1,
+				"ndi_fix_alpha_blending": false,
+				"ndi_recv_hw_accel": true,
 				"ndi_source_name": "OLAFS-AIR (Skype - Aktiver Sprecher)"
 			}
 		},
@@ -397,19 +553,6 @@
 			}
 		},
 		{
-			"id": "browser_source",
-			"name": "Overlay cams",
-			"private_settings": {
-				"mixer_hidden": true
-			},
-			"settings": {
-				"css": "",
-				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/gp/html/cams.svg",
-				"width": 1280
-			}
-		},
-		{
 			"hotkeys": {
 				"libobs.show_scene_item.Overlay Start": [
 					{
@@ -457,7 +600,7 @@
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
-				"libobs.hide_scene_item.Media Source": [
+				"libobs.hide_scene_item.Intro": [
 					{
 						"key": "OBS_KEY_2"
 					}
@@ -508,9 +651,9 @@
 						"key": "OBS_KEY_2"
 					}
 				],
-				"libobs.show_scene_item.Media Source": [
+				"libobs.show_scene_item.Intro": [
 					{
-						"key": "OBS_KEY_T"
+						"key": "OBS_KEY_I"
 					}
 				],
 				"OBSBasic.SelectScene": [
@@ -518,7 +661,7 @@
 						"key": "OBS_KEY_2"
 					},
 					{
-						"key": "OBS_KEY_T"
+						"key": "OBS_KEY_I"
 					}
 				]
 			},
@@ -542,6 +685,10 @@
 						"pos": {
 							"x": 640,
 							"y": 360
+						},
+						"private_settings": {
+							"color": "",
+							"color-preset": 7
 						}
 					},
 					{
@@ -601,7 +748,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Media Source",
+						"name": "Intro",
 						"pos": {
 							"x": 640,
 							"y": 360
@@ -718,6 +865,18 @@
 						"pos": {
 							"x": 640,
 							"y": 360
+						},
+						"private_settings": {
+							"color": "",
+							"color-preset": 7
+						}
+					},
+					{
+						"locked": true,
+						"name": "NDI™ Source - Audio",
+						"private_settings": {
+							"color": "",
+							"color-preset": 7
 						}
 					},
 					{
@@ -729,6 +888,16 @@
 		},
 		{
 			"hotkeys": {
+				"libobs.hide_scene_item.Outro": [
+					{
+						"key": "OBS_KEY_4"
+					}
+				],
+				"libobs.show_scene_item.Outro": [
+					{
+						"key": "OBS_KEY_O"
+					}
+				],
 				"libobs.show_scene_item.Overlay Finish": [
 					{
 						"key": "OBS_KEY_4"
@@ -737,6 +906,9 @@
 				"OBSBasic.SelectScene": [
 					{
 						"key": "OBS_KEY_4"
+					},
+					{
+						"key": "OBS_KEY_O"
 					}
 				]
 			},
@@ -747,6 +919,24 @@
 					{
 						"locked": true,
 						"name": "Overlay Finish"
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "Outro",
+						"pos": {
+							"x": 640,
+							"y": 360
+						},
+						"private_settings": {
+							"color": "",
+							"color-preset": 7
+						}
 					}
 				]
 			}
@@ -894,10 +1084,6 @@
 						"pos": {
 							"x": 640,
 							"y": 360
-						},
-						"private_settings": {
-							"color": "",
-							"color-preset": 7
 						}
 					},
 					{

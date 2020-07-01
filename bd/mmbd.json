@@ -192,7 +192,7 @@
 		},
 		"settings": {
 			"ndi_bw_mode": 2,
-			"ndi_source_name": "OLAFS-AIR (Skype - Aktiver Sprecher)"
+			"ndi_source_name": "MARKUS-MAUTHE-2019.LOCAL (Skype - Aktiver Sprecher)"
 		}
 	},
 	"sources": [
@@ -227,8 +227,8 @@
 			"id": "av_capture_input",
 			"name": "Cam Internal",
 			"settings": {
-				"device": "CC27327P54QGDV4AV",
-				"device_name": "FaceTime HD Camera"
+				"device": "0x8020000005ac8514",
+				"device_name": "FaceTime HD-Kamera (integriert)"
 			}
 		},
 		{
@@ -262,8 +262,8 @@
 			"id": "av_capture_input",
 			"name": "Cam External",
 			"settings": {
-				"device": "obs-virtual-cam-device",
-				"device_name": "OBS Virtual Camera"
+				"device": "0x543000043e9a4d",
+				"device_name": "LG UltraFine Display Camera"
 			}
 		},
 		{
@@ -450,7 +450,7 @@
 				"ndi_bw_mode": 1,
 				"ndi_fix_alpha_blending": false,
 				"ndi_recv_hw_accel": true,
-				"ndi_source_name": "OLAFS-AIR (Skype - Aktiver Sprecher)"
+				"ndi_source_name": "MARKUS-MAUTHE-2019.LOCAL (Skype - Aktiver Sprecher)"
 			}
 		},
 		{

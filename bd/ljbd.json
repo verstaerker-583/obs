@@ -2,199 +2,6 @@
 	"name": "bd",
 	"current_scene": "Start",
 	"preview_locked": true,
-	"AuxAudioDevice1": {
-		"filters": [
-			{
-				"id": "noise_suppress_filter",
-				"name": "Noise Suppression"
-			},
-			{
-				"id": "noise_gate_filter",
-				"name": "Noise Gate"
-			},
-			{
-				"id": "compressor_filter",
-				"name": "Compressor",
-				"settings": {
-					"attack_time": 1,
-					"output_gain": 1
-				}
-			},
-			{
-				"id": "limiter_filter",
-				"name": "Limiter"
-			}
-		],
-		"flags": 2,
-		"hotkeys": {
-			"libobs.mute": [
-				{
-					"key": "OBS_KEY_M"
-				},
-				{
-					"key": "OBS_KEY_O"
-				},
-				{
-					"key": "OBS_KEY_1"
-				},
-				{
-					"key": "OBS_KEY_4"
-				}
-			],
-			"libobs.unmute": [
-				{
-					"key": "OBS_KEY_2"
-				},
-				{
-					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_M"
-				}
-			]
-		},
-		"id": "coreaudio_input_capture",
-		"mixers": 3,
-		"monitoring_type": 0,
-		"name": "Mic",
-		"private_settings": {
-			"volume_locked": true
-		}
-	},
-	"AuxAudioDevice2": {
-		"filters": [
-			{
-				"id": "noise_suppress_filter",
-				"name": "Noise Suppression",
-				"settings": {
-					"suppress_level": -6
-				}
-			},
-			{
-				"id": "compressor_filter",
-				"name": "Compressor",
-				"settings": {
-					"attack_time": 100,
-					"ratio": 32,
-					"release_time": 600,
-					"sidechain_source": "Mic",
-					"threshold": -36
-				}
-			},
-			{
-				"id": "limiter_filter",
-				"name": "Limiter"
-			}
-		],
-		"hotkeys": {
-			"libobs.mute": [
-				{
-					"key": "OBS_KEY_D"
-				},
-				{
-					"key": "OBS_KEY_O"
-				},
-				{
-					"key": "OBS_KEY_1"
-				},
-				{
-					"key": "OBS_KEY_4"
-				}
-			],
-			"libobs.unmute": [
-				{
-					"key": "OBS_KEY_D"
-				},
-				{
-					"key": "OBS_KEY_2"
-				},
-				{
-					"key": "OBS_KEY_3"
-				}
-			]
-		},
-		"id": "coreaudio_input_capture",
-		"mixers": 5,
-		"monitoring_type": 2,
-		"name": "Desktop Audio",
-		"private_settings": {
-			"volume_locked": true
-		},
-		"settings": {
-			"device_id": "BlackHole_UID"
-		}
-	},
-	"AuxAudioDevice3": {
-		"filters": [
-			{
-				"id": "noise_suppress_filter",
-				"name": "Noise Suppression",
-				"settings": {
-					"suppress_level": -6
-				}
-			},
-			{
-				"enabled": false,
-				"id": "noise_gate_filter",
-				"name": "Noise Gate"
-			},
-			{
-				"id": "compressor_filter",
-				"name": "Compressor",
-				"settings": {
-					"attack_time": 100,
-					"ratio": 32,
-					"release_time": 600,
-					"sidechain_source": "Mic",
-					"threshold": -36
-				}
-			},
-			{
-				"id": "limiter_filter",
-				"name": "Limiter"
-			}
-		],
-		"flags": 2,
-		"hotkeys": {
-			"libobs.mute": [
-				{
-					"key": "OBS_KEY_N"
-				},
-				{
-					"key": "OBS_KEY_O"
-				},
-				{
-					"key": "OBS_KEY_1"
-				},
-				{
-					"key": "OBS_KEY_4"
-				}
-			],
-			"libobs.unmute": [
-				{
-					"key": "OBS_KEY_N"
-				},
-				{
-					"key": "OBS_KEY_2"
-				},
-				{
-					"key": "OBS_KEY_3"
-				}
-			]
-		},
-		"id": "ndi_source",
-		"mixers": 9,
-		"monitoring_type": 2,
-		"name": "NDI™ Source - Audio",
-		"private_settings": {
-			"mixer_hidden": true,
-			"volume_locked": true
-		},
-		"settings": {
-			"ndi_bw_mode": 2,
-			"ndi_source_name": "OLAFS-AIR (Skype - Aktiver Sprecher)"
-		}
-	},
 	"sources": [
 		{
 			"filters": [
@@ -225,11 +32,7 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "Cam Internal",
-			"settings": {
-				"device": "CC27327P54QGDV4AV",
-				"device_name": "FaceTime HD Camera"
-			}
+			"name": "Cam Internal"
 		},
 		{
 			"filters": [
@@ -260,11 +63,7 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "Cam External",
-			"settings": {
-				"device": "obs-virtual-cam-device",
-				"device_name": "OBS Virtual Camera"
-			}
+			"name": "Cam External"
 		},
 		{
 			"id": "color_source",
@@ -310,7 +109,8 @@
 			},
 			"settings": {
 				"close_when_inactive": true,
-				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
+				"input": "http://hubblesource.stsci.edu/sources/video/clips/details/images/sn1987a_2.mpg",
+				"is_local_file": false
 			}
 		},
 		{
@@ -348,7 +148,8 @@
 			},
 			"settings": {
 				"close_when_inactive": true,
-				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
+				"input": "http://hubblesource.stsci.edu/sources/video/clips/details/images/comet_jupiter_2.mpg",
+				"is_local_file": false
 			}
 		},
 		{
@@ -357,7 +158,7 @@
 					"id": "chroma_key_filter",
 					"name": "Chroma Key",
 					"settings": {
-						"similarity": 396,
+						"similarity": 324,
 						"smoothness": 35,
 						"spill": 200
 					}
@@ -471,7 +272,13 @@
 			"settings": {
 				"files": [
 					{
-						"value": "/Library/Desktop Pictures"
+						"value": "https://lutz-jaekel.com/wp-content/uploads/2018/07/jaek_0553_kuba-2013-705x469.jpg"
+					},
+					{
+						"value": "https://lutz-jaekel.com/wp-content/uploads/2018/07/jaek_2838_havanna-2016-705x470.jpg"
+					},
+					{
+						"value": "https://lutz-jaekel.com/wp-content/uploads/2018/07/jaek_2998_havanna-2016-705x470.jpg"
 					}
 				],
 				"slide_mode": "mode_manual"
@@ -479,11 +286,7 @@
 		},
 		{
 			"id": "window_capture",
-			"name": "FotoMagico",
-			"settings": {
-				"owner_name": "FotoMagico 5",
-				"window_name": ""
-			}
+			"name": "Window Capture"
 		},
 		{
 			"id": "browser_source",
@@ -617,7 +420,8 @@
 				"items": [
 					{
 						"locked": true,
-						"name": "Overlay Cam"
+						"name": "Overlay Cam",
+						"visible": true
 					},
 					{
 						"align": 0,
@@ -629,10 +433,15 @@
 						"locked": true,
 						"name": "Cam Internal",
 						"pos": {
-							"x": 320,
-							"y": 396
+							"x": 960,
+							"y": 324
 						},
-						"rot": -5
+						"private_settings": {
+							"color": "",
+							"color-preset": 7
+						},
+						"rot": -5,
+						"visible": true
 					},
 					{
 						"align": 0,
@@ -644,14 +453,15 @@
 						"locked": true,
 						"name": "Cam External",
 						"pos": {
-							"x": 320,
-							"y": 396
+							"x": 960,
+							"y": 324
 						},
 						"private_settings": {
 							"color": "",
 							"color-preset": 7
 						},
-						"rot": -5
+						"rot": -5,
+						"visible": true
 					},
 					{
 						"align": 0,
@@ -663,22 +473,15 @@
 						"locked": true,
 						"name": "NDI™ Source",
 						"pos": {
-							"x": 960,
-							"y": 324
+							"x": 320,
+							"y": 396
 						},
 						"private_settings": {
 							"color": "",
 							"color-preset": 7
 						},
-						"rot": -5
-					},
-					{
-						"locked": true,
-						"name": "NDI™ Source - Audio",
-						"private_settings": {
-							"color": "",
-							"color-preset": 7
-						}
+						"rot": -5,
+						"visible": true
 					},
 					{
 						"align": 0,
@@ -692,10 +495,6 @@
 						"pos": {
 							"x": 640,
 							"y": 360
-						},
-						"private_settings": {
-							"color": "",
-							"color-preset": 7
 						}
 					}
 				]
@@ -704,9 +503,6 @@
 		{
 			"hotkeys": {
 				"libobs.hide_scene_item.cams": [
-					{
-						"key": "OBS_KEY_3"
-					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
@@ -721,6 +517,9 @@
 				],
 				"libobs.show_scene_item.cams": [
 					{
+						"key": "OBS_KEY_3"
+					},
+					{
 						"key": "OBS_KEY_BRACKETRIGHT"
 					},
 					{
@@ -732,7 +531,7 @@
 						"key": "OBS_KEY_3"
 					}
 				],
-				"libobs.show_scene_item.FotoMagico": [
+				"libobs.show_scene_item.Window Capture": [
 					{
 						"key": "OBS_KEY_3"
 					}
@@ -759,7 +558,8 @@
 				"items": [
 					{
 						"locked": true,
-						"name": "Color Source"
+						"name": "Color Source",
+						"visible": true
 					},
 					{
 						"align": 0,
@@ -774,10 +574,7 @@
 							"x": 640,
 							"y": 360
 						},
-						"private_settings": {
-							"color": "",
-							"color-preset": 7
-						}
+						"visible": true
 					},
 					{
 						"align": 0,
@@ -787,15 +584,17 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "FotoMagico",
+						"name": "Window Capture",
 						"pos": {
 							"x": 640,
 							"y": 360
-						}
+						},
+						"visible": true
 					},
 					{
 						"locked": true,
-						"name": "cams"
+						"name": "cams",
+						"visible": true
 					}
 				]
 			}
@@ -832,7 +631,8 @@
 				"items": [
 					{
 						"locked": true,
-						"name": "Overlay Finish"
+						"name": "Overlay Finish",
+						"visible": true
 					},
 					{
 						"align": 0,
@@ -846,10 +646,6 @@
 						"pos": {
 							"x": 640,
 							"y": 360
-						},
-						"private_settings": {
-							"color": "",
-							"color-preset": 7
 						}
 					}
 				]
@@ -895,7 +691,8 @@
 				"items": [
 					{
 						"locked": true,
-						"name": "Overlay cams"
+						"name": "Overlay cams",
+						"visible": true
 					},
 					{
 						"align": 0,
@@ -907,10 +704,11 @@
 						"locked": true,
 						"name": "Cam Internal",
 						"pos": {
-							"x": 128,
-							"y": 396
+							"x": 1152,
+							"y": 324
 						},
-						"rot": -5
+						"rot": -5,
+						"visible": true
 					},
 					{
 						"align": 0,
@@ -922,10 +720,11 @@
 						"locked": true,
 						"name": "Cam External",
 						"pos": {
-							"x": 128,
-							"y": 396
+							"x": 1152,
+							"y": 324
 						},
-						"rot": -5
+						"rot": -5,
+						"visible": true
 					},
 					{
 						"align": 0,
@@ -937,10 +736,11 @@
 						"locked": true,
 						"name": "NDI™ Source",
 						"pos": {
-							"x": 1152,
-							"y": 324
+							"x": 128,
+							"y": 396
 						},
-						"rot": -5
+						"rot": -5,
+						"visible": true
 					}
 				]
 			}
