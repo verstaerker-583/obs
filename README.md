@@ -1,2 +1,2 @@
 # obs
-specific obs overlays and configurations
+obs configurations und overlays
