@@ -134,10 +134,12 @@
 				}
 			},
 			{
+				"enabled": false,
 				"id": "noise_gate_filter",
 				"name": "Noise Gate"
 			},
 			{
+				"enabled": false,
 				"id": "compressor_filter",
 				"name": "Compressor",
 				"settings": {
@@ -157,7 +159,7 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-					"key": "OBS_KEY_N"
+					"key": "OBS_KEY_L"
 				},
 				{
 					"key": "OBS_KEY_O"
@@ -171,7 +173,7 @@
 			],
 			"libobs.unmute": [
 				{
-					"key": "OBS_KEY_N"
+					"key": "OBS_KEY_L"
 				},
 				{
 					"key": "OBS_KEY_2"
@@ -191,7 +193,7 @@
 		},
 		"settings": {
 			"ndi_bw_mode": 2,
-			"ndi_source_name": "MARKUS-MAUTHE-2019.LOCAL (Skype - Aktiver Sprecher)"
+			"ndi_source_name": "MARKUS-MAC-PRO.LOCAL (Skype - Aktiver Sprecher)"
 		}
 	},
 	"sources": [
@@ -210,7 +212,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.75,
+						"clut_amount": 0.25,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				},
@@ -245,7 +247,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.75,
+						"clut_amount": 0.25,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				},
@@ -309,7 +311,7 @@
 			},
 			"settings": {
 				"close_when_inactive": true,
-				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
+				"local_file": "/Users/markusmauthe1/Documents/Buntdenker/BUNTTRAILER/Animiertes Logo 1.mov"
 			}
 		},
 		{
@@ -347,7 +349,7 @@
 			},
 			"settings": {
 				"close_when_inactive": true,
-				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
+				"local_file": "/Users/markusmauthe1/Documents/Buntdenker/Buntgespräch/Trailer für Folgen/BUNTGESPRÄCH 1 final.mov"
 			}
 		},
 		{
@@ -366,10 +368,11 @@
 					"name": "Sharpen"
 				},
 				{
+					"enabled": false,
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.75,
+						"clut_amount": 0.25,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				},
@@ -382,6 +385,7 @@
 					}
 				},
 				{
+					"enabled": false,
 					"id": "noise_suppress_filter",
 					"name": "Noise Suppression",
 					"settings": {
@@ -389,10 +393,12 @@
 					}
 				},
 				{
+					"enabled": false,
 					"id": "noise_gate_filter",
 					"name": "Noise Gate"
 				},
 				{
+					"enabled": false,
 					"id": "compressor_filter",
 					"name": "Compressor",
 					"settings": {
@@ -404,41 +410,16 @@
 					}
 				},
 				{
+					"enabled": false,
 					"id": "limiter_filter",
 					"name": "Limiter"
 				}
 			],
 			"flags": 2,
-			"hotkeys": {
-				"libobs.mute": [
-					{
-						"key": "OBS_KEY_N"
-					},
-					{
-						"key": "OBS_KEY_O"
-					},
-					{
-						"key": "OBS_KEY_1"
-					},
-					{
-						"key": "OBS_KEY_4"
-					}
-				],
-				"libobs.unmute": [
-					{
-						"key": "OBS_KEY_N"
-					},
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_3"
-					}
-				]
-			},
 			"id": "ndi_source",
 			"mixers": 0,
 			"monitoring_type": 0,
+			"muted": true,
 			"name": "NDI™ Source",
 			"private_settings": {
 				"mixer_hidden": true,
@@ -448,7 +429,7 @@
 				"ndi_bw_mode": 1,
 				"ndi_fix_alpha_blending": false,
 				"ndi_recv_hw_accel": true,
-				"ndi_source_name": "MARKUS-MAUTHE-2019.LOCAL (Skype - Aktiver Sprecher)"
+				"ndi_source_name": "MARKUS-MAC-PRO.LOCAL (Skype - Aktiver Sprecher)"
 			}
 		},
 		{
@@ -469,7 +450,34 @@
 			"settings": {
 				"files": [
 					{
-						"value": "/Library/Desktop Pictures"
+						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/1.jpg"
+					},
+					{
+						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/3.jpg"
+					},
+					{
+						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/4.jpg"
+					},
+					{
+						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/5.jpg"
+					},
+					{
+						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/6.jpg"
+					},
+					{
+						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/7.jpg"
+					},
+					{
+						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/8.jpg"
+					},
+					{
+						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/13.jpg"
+					},
+					{
+						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/11.jpg"
+					},
+					{
+						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/9.jpg"
 					}
 				],
 				"slide_mode": "mode_manual"

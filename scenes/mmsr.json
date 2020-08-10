@@ -191,7 +191,7 @@
 		},
 		"settings": {
 			"ndi_bw_mode": 2,
-			"ndi_source_name": "MARKUS-MAUTHE-2019.LOCAL (Skype - Aktiver Sprecher)"
+			"ndi_source_name": "MARKUS-MAC-PRO.LOCAL (Skype - Aktiver Sprecher)"
 		}
 	},
 	"sources": [
@@ -461,7 +461,7 @@
 				"ndi_bw_mode": 1,
 				"ndi_fix_alpha_blending": false,
 				"ndi_recv_hw_accel": true,
-				"ndi_source_name": "MARKUS-MAUTHE-2019.LOCAL (Skype - Aktiver Sprecher)"
+				"ndi_source_name": "MARKUS-MAC-PRO.LOCAL (Skype - Aktiver Sprecher)"
 			}
 		},
 		{

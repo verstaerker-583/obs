@@ -9,6 +9,6 @@ s/CC27327P54QGDV4AV/0x8020000005ac8514/
 s/"OBS Virtual Camera"/"LG UltraFine Display Camera"/
 s/"obs-virtual-cam-device"/"0x543000043e9a4d"/
 
-s/OLAFS-AIR/MARKUS-MAUTHE-2019.LOCAL/
+s/OLAFS-AIR/MARKUS-MAC-PRO.LOCAL/
 
 s/ok/mm/

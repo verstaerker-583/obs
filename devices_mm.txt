@@ -8,6 +8,7 @@
 "device_id": "bc-f2-92-f1-a9-57:input"
 
 "ndi_source_name": "MARKUS-MAUTHE-2019.LOCAL (Skype - Aktiver Sprecher)"
+"ndi_source_name": "MARKUS-MAC-PRO.LOCAL (Skype - Aktiver Sprecher)"
 
 MonitoringDeviceName=PLT V5200 Series
 MonitoringDeviceId=bc-f2-92-f1-a9-57:output
