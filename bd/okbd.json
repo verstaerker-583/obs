@@ -159,7 +159,7 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-					"key": "OBS_KEY_L"
+					"key": "OBS_KEY_S"
 				},
 				{
 					"key": "OBS_KEY_O"
@@ -173,7 +173,7 @@
 			],
 			"libobs.unmute": [
 				{
-					"key": "OBS_KEY_L"
+					"key": "OBS_KEY_S"
 				},
 				{
 					"key": "OBS_KEY_2"

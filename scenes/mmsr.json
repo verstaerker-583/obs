@@ -134,10 +134,12 @@
 				}
 			},
 			{
+				"enabled": false,
 				"id": "noise_gate_filter",
 				"name": "Noise Gate"
 			},
 			{
+				"enabled": false,
 				"id": "compressor_filter",
 				"name": "Compressor",
 				"settings": {
@@ -157,7 +159,7 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-					"key": "OBS_KEY_N"
+					"key": "OBS_KEY_S"
 				},
 				{
 					"key": "OBS_KEY_O"
@@ -171,7 +173,7 @@
 			],
 			"libobs.unmute": [
 				{
-					"key": "OBS_KEY_N"
+					"key": "OBS_KEY_S"
 				},
 				{
 					"key": "OBS_KEY_2"
@@ -402,10 +404,12 @@
 					"name": "Noise Suppression"
 				},
 				{
+					"enabled": false,
 					"id": "noise_gate_filter",
 					"name": "Noise Gate"
 				},
 				{
+					"enabled": false,
 					"id": "compressor_filter",
 					"name": "Compressor",
 					"settings": {
@@ -422,36 +426,10 @@
 				}
 			],
 			"flags": 2,
-			"hotkeys": {
-				"libobs.mute": [
-					{
-						"key": "OBS_KEY_N"
-					},
-					{
-						"key": "OBS_KEY_O"
-					},
-					{
-						"key": "OBS_KEY_1"
-					},
-					{
-						"key": "OBS_KEY_4"
-					}
-				],
-				"libobs.unmute": [
-					{
-						"key": "OBS_KEY_N"
-					},
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_3"
-					}
-				]
-			},
 			"id": "ndi_source",
 			"mixers": 0,
 			"monitoring_type": 0,
+			"muted": true,
 			"name": "NDI™ Source",
 			"private_settings": {
 				"mixer_hidden": true,
