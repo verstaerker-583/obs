@@ -123,10 +123,10 @@
 				"volume_locked": true
 			},
 			"settings": {
-                "buffering_mb": 16,
-                "close_when_inactive": true,
-                "input": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/intro.mov",
-                "is_local_file": false
+				"buffering_mb": 16,
+				"close_when_inactive": true,
+				"input": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/intro.mov",
+				"is_local_file": false
 			}
 		},
 		{
@@ -163,10 +163,10 @@
 				"volume_locked": true
 			},
 			"settings": {
-                "buffering_mb": 16,
-                "close_when_inactive": true,
-                "input": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/outro.mov",
-                "is_local_file": false
+				"buffering_mb": 16,
+				"close_when_inactive": true,
+				"input": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/outro.mov",
+				"is_local_file": false
 			}
 		},
 		{
@@ -229,7 +229,12 @@
 					{
 						"key": "OBS_KEY_V"
 					}
-				]
+				],
+                "SlideShow.Restart": [
+                    {
+                        "key": "OBS_KEY_1"
+                    }
+                ]
 			},
 			"id": "slideshow",
 			"name": "Slide Show",
