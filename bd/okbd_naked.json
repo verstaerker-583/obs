@@ -123,8 +123,10 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"close_when_inactive": true,
-				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
+                "buffering_mb": 16,
+                "close_when_inactive": true,
+                "input": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/intro.mov",
+                "is_local_file": false
 			}
 		},
 		{
@@ -161,8 +163,10 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"close_when_inactive": true,
-				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
+                "buffering_mb": 16,
+                "close_when_inactive": true,
+                "input": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/outro.mov",
+                "is_local_file": false
 			}
 		},
 		{
@@ -232,7 +236,34 @@
 			"settings": {
 				"files": [
 					{
-						"value": "/Library/Desktop Pictures"
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/a.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/b.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/c.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/d.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/e.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/f.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/g.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/h.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/i.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/j.jpg"
 					}
 				],
 				"slide_mode": "mode_manual"
