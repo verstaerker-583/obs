@@ -13,14 +13,11 @@ mkdir -p ../profiles/okYTlq ../profiles/okYTmq
 gsed -f lqProfiles.sed ../profiles/okRec/basic.ini > ../profiles/okYTlq/basic.ini
 gsed -f mqProfiles.sed ../profiles/okRec/basic.ini > ../profiles/okYTmq/basic.ini
 
-mkdir -p ../profiles/mmRec ../profiles/mmYTlq ../profiles/mmYTmq
+mkdir -p ../profiles/mmRec ../profiles/mmYTlq ../profiles/mmYTmq ../profiles/mmnaked
 gsed -f toMm.sed ../profiles/okRec/basic.ini > ../profiles/mmRec/basic.ini
 gsed -f toMm.sed ../profiles/okYTlq/basic.ini > ../profiles/mmYTlq/basic.ini
 gsed -f toMm.sed ../profiles/okYTmq/basic.ini > ../profiles/mmYTmq/basic.ini
-
-#mkdir -p ../profiles/gpYTlq ../profiles/gpYTmq
-#gsed -f toGp.sed ../profiles/okYTlq/basic.ini > ../profiles/gpYTlq/basic.ini
-#gsed -f toGp.sed ../profiles/okYTmq/basic.ini > ../profiles/gpYTmq/basic.ini
+gsed -f toMm.sed ../profiles/oknaked/basic.ini > ../profiles/mmnaked/basic.ini
 
 #cd ../.. 
 #zip --symlinks -q -r ~/Desktop/`date "+%Y%m%d%H%M%S.zip"` obs/profiles/mm* obs/scenes/mm*.json

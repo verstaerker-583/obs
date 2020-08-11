@@ -1,6 +1,7 @@
 {
-	"name": "bd",
+	"name": "bd_naked",
 	"current_scene": "Start",
+	"current_transition": "Schnitt",
 	"preview_locked": true,
 	"AuxAudioDevice1": {
 		"filters": [
@@ -26,35 +27,8 @@
 			}
 		],
 		"flags": 2,
-		"hotkeys": {
-			"libobs.mute": [
-				{
-					"key": "OBS_KEY_M"
-				},
-				{
-					"key": "OBS_KEY_O"
-				},
-				{
-					"key": "OBS_KEY_1"
-				},
-				{
-					"key": "OBS_KEY_4"
-				}
-			],
-			"libobs.unmute": [
-				{
-					"key": "OBS_KEY_2"
-				},
-				{
-					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_M"
-				}
-			]
-		},
 		"id": "coreaudio_input_capture",
-		"mixers": 3,
+		"mixers": 1,
 		"monitoring_type": 0,
 		"name": "Mic",
 		"private_settings": {
@@ -62,183 +36,22 @@
 		}
 	},
 	"AuxAudioDevice2": {
-		"filters": [
-			{
-				"id": "noise_suppress_filter",
-				"name": "Noise Suppression",
-				"settings": {
-					"suppress_level": -6
-				}
-			},
-			{
-				"id": "compressor_filter",
-				"name": "Compressor",
-				"settings": {
-					"attack_time": 100,
-					"ratio": 32,
-					"release_time": 600,
-					"sidechain_source": "Mic",
-					"threshold": -36
-				}
-			},
-			{
-				"id": "limiter_filter",
-				"name": "Limiter"
-			}
-		],
-		"hotkeys": {
-			"libobs.mute": [
-				{
-					"key": "OBS_KEY_D"
-				},
-				{
-					"key": "OBS_KEY_O"
-				},
-				{
-					"key": "OBS_KEY_1"
-				},
-				{
-					"key": "OBS_KEY_4"
-				}
-			],
-			"libobs.unmute": [
-				{
-					"key": "OBS_KEY_D"
-				},
-				{
-					"key": "OBS_KEY_2"
-				},
-				{
-					"key": "OBS_KEY_3"
-				}
-			]
-		},
-		"id": "coreaudio_input_capture",
-		"mixers": 5,
-		"monitoring_type": 2,
-		"name": "Desktop Audio",
-		"private_settings": {
-			"volume_locked": true
-		},
-		"settings": {
-			"device_id": "BlackHole_UID"
-		}
-	},
-	"AuxAudioDevice3": {
-		"filters": [
-			{
-				"id": "noise_suppress_filter",
-				"name": "Noise Suppression",
-				"settings": {
-					"suppress_level": -6
-				}
-			},
-			{
-				"enabled": false,
-				"id": "noise_gate_filter",
-				"name": "Noise Gate"
-			},
-			{
-				"enabled": false,
-				"id": "compressor_filter",
-				"name": "Compressor",
-				"settings": {
-					"attack_time": 100,
-					"ratio": 32,
-					"release_time": 600,
-					"sidechain_source": "Mic",
-					"threshold": -36
-				}
-			},
-			{
-				"id": "limiter_filter",
-				"name": "Limiter"
-			}
-		],
-		"flags": 2,
-		"hotkeys": {
-			"libobs.mute": [
-				{
-					"key": "OBS_KEY_S"
-				},
-				{
-					"key": "OBS_KEY_O"
-				},
-				{
-					"key": "OBS_KEY_1"
-				},
-				{
-					"key": "OBS_KEY_4"
-				}
-			],
-			"libobs.unmute": [
-				{
-					"key": "OBS_KEY_S"
-				},
-				{
-					"key": "OBS_KEY_2"
-				},
-				{
-					"key": "OBS_KEY_3"
-				}
-			]
-		},
 		"id": "ndi_source",
-		"mixers": 9,
+		"mixers": 1,
 		"monitoring_type": 2,
 		"name": "NDI™ Source - Audio",
 		"private_settings": {
-			"mixer_hidden": true,
 			"volume_locked": true
 		},
 		"settings": {
 			"ndi_bw_mode": 2,
+			"ndi_recv_hw_accel": true,
 			"ndi_source_name": "MARKUS-MAC-PRO.LOCAL (Skype - Aktiver Sprecher)"
 		}
 	},
 	"sources": [
 		{
 			"filters": [
-				{
-					"enabled": false,
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
-				},
-				{
-					"id": "clut_filter",
-					"name": "Apply LUT",
-					"settings": {
-						"clut_amount": 0.25,
-						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
-					}
-				},
-				{
-					"id": "mask_filter",
-					"name": "Image Mask/Blend",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
-						"type": "mask_alpha_filter.effect"
-					}
-				}
-			],
-			"id": "av_capture_input",
-			"name": "Cam Internal",
-			"settings": {
-				"device": "0x8020000005ac8514",
-				"device_name": "FaceTime HD-Kamera (integriert)"
-			}
-		},
-		{
-			"filters": [
-				{
-					"enabled": false,
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
 				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
@@ -302,7 +115,7 @@
 				}
 			],
 			"id": "ffmpeg_source",
-			"mixers": 17,
+			"mixers": 1,
 			"monitoring_type": 2,
 			"name": "Intro",
 			"private_settings": {
@@ -310,8 +123,10 @@
 				"volume_locked": true
 			},
 			"settings": {
+				"buffering_mb": 16,
 				"close_when_inactive": true,
-				"local_file": "/Users/markusmauthe1/Documents/Buntdenker/Buntgespräch/Trailer für Folgen/BUNTGESPRÄCH 1 final.mov"
+				"input": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/intro.mov",
+				"is_local_file": false
 			}
 		},
 		{
@@ -340,7 +155,7 @@
 				}
 			],
 			"id": "ffmpeg_source",
-			"mixers": 17,
+			"mixers": 1,
 			"monitoring_type": 2,
 			"name": "Outro",
 			"private_settings": {
@@ -348,8 +163,10 @@
 				"volume_locked": true
 			},
 			"settings": {
+				"buffering_mb": 16,
 				"close_when_inactive": true,
-				"local_file": "/Users/markusmauthe1/Documents/Buntdenker/BUNTTRAILER/Animiertes Logo 1.mov"
+				"input": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/outro.mov",
+				"is_local_file": false
 			}
 		},
 		{
@@ -383,39 +200,8 @@
 						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
 						"type": "mask_alpha_filter.effect"
 					}
-				},
-				{
-					"enabled": false,
-					"id": "noise_suppress_filter",
-					"name": "Noise Suppression",
-					"settings": {
-						"suppress_level": -6
-					}
-				},
-				{
-					"enabled": false,
-					"id": "noise_gate_filter",
-					"name": "Noise Gate"
-				},
-				{
-					"enabled": false,
-					"id": "compressor_filter",
-					"name": "Compressor",
-					"settings": {
-						"attack_time": 100,
-						"ratio": 32,
-						"release_time": 600,
-						"sidechain_source": "Mic",
-						"threshold": -36
-					}
-				},
-				{
-					"enabled": false,
-					"id": "limiter_filter",
-					"name": "Limiter"
 				}
 			],
-			"flags": 2,
 			"id": "ndi_source",
 			"mixers": 0,
 			"monitoring_type": 0,
@@ -443,56 +229,54 @@
 					{
 						"key": "OBS_KEY_V"
 					}
-				]
+				],
+                "SlideShow.Restart": [
+                    {
+                        "key": "OBS_KEY_1"
+                    }
+                ]
 			},
 			"id": "slideshow",
 			"name": "Slide Show",
 			"settings": {
 				"files": [
 					{
-						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/1.jpg"
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/a.jpg"
 					},
 					{
-						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/3.jpg"
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/b.jpg"
 					},
 					{
-						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/4.jpg"
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/c.jpg"
 					},
 					{
-						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/5.jpg"
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/d.jpg"
 					},
 					{
-						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/6.jpg"
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/e.jpg"
 					},
 					{
-						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/7.jpg"
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/f.jpg"
 					},
 					{
-						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/8.jpg"
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/g.jpg"
 					},
 					{
-						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/13.jpg"
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/h.jpg"
 					},
 					{
-						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/11.jpg"
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/i.jpg"
 					},
 					{
-						"value": "/Users/markusmauthe1/Pictures/Buntgespraeche/Bilder Buntgespraech_1/9.jpg"
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/j.jpg"
 					}
 				],
 				"slide_mode": "mode_manual"
 			}
 		},
 		{
-			"id": "window_capture",
-			"name": "FotoMagico",
-			"settings": {
-				"owner_name": "FotoMagico 5",
-				"window_name": ""
-			}
-		},
-		{
 			"id": "browser_source",
+			"mixers": 0,
 			"name": "Overlay Start",
 			"private_settings": {
 				"mixer_hidden": true
@@ -506,6 +290,7 @@
 		},
 		{
 			"id": "browser_source",
+			"mixers": 0,
 			"name": "Overlay Cam",
 			"private_settings": {
 				"mixer_hidden": true
@@ -519,6 +304,7 @@
 		},
 		{
 			"id": "browser_source",
+			"mixers": 0,
 			"name": "Overlay Finish",
 			"private_settings": {
 				"mixer_hidden": true
@@ -532,6 +318,7 @@
 		},
 		{
 			"id": "browser_source",
+			"mixers": 0,
 			"name": "Overlay cams",
 			"private_settings": {
 				"mixer_hidden": true
@@ -570,17 +357,7 @@
 		},
 		{
 			"hotkeys": {
-				"libobs.hide_scene_item.Cam External": [
-					{
-						"key": "OBS_KEY_DEAD_GRAVE"
-					}
-				],
 				"libobs.hide_scene_item.Intro": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
-				"libobs.show_scene_item.Cam Internal": [
 					{
 						"key": "OBS_KEY_2"
 					}
@@ -588,9 +365,6 @@
 				"libobs.show_scene_item.Cam External": [
 					{
 						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
 				"libobs.show_scene_item.Intro": [
@@ -624,21 +398,6 @@
 					{
 						"locked": true,
 						"name": "Overlay Cam"
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 600,
-							"y": 600
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "Cam Internal",
-						"pos": {
-							"x": 320,
-							"y": 396
-						},
-						"rot": -5
 					},
 					{
 						"align": 0,
@@ -728,17 +487,9 @@
 				"libobs.show_scene_item.cams": [
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
-					},
-					{
-						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
 				"libobs.show_scene_item.Color Source": [
-					{
-						"key": "OBS_KEY_3"
-					}
-				],
-				"libobs.show_scene_item.FotoMagico": [
 					{
 						"key": "OBS_KEY_3"
 					}
@@ -783,20 +534,6 @@
 						"private_settings": {
 							"color": "",
 							"color-preset": 7
-						}
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "FotoMagico",
-						"pos": {
-							"x": 640,
-							"y": 360
 						}
 					},
 					{
@@ -863,22 +600,9 @@
 		},
 		{
 			"hotkeys": {
-				"libobs.hide_scene_item.Cam External": [
-					{
-						"key": "OBS_KEY_DEAD_GRAVE"
-					}
-				],
-				"libobs.show_scene_item.Cam Internal": [
-					{
-						"key": "OBS_KEY_3"
-					}
-				],
 				"libobs.show_scene_item.Cam External": [
 					{
 						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
 				"libobs.show_scene_item.Overlay cams": [
@@ -902,21 +626,6 @@
 					{
 						"locked": true,
 						"name": "Overlay cams"
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 196,
-							"y": 196
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "Cam Internal",
-						"pos": {
-							"x": 128,
-							"y": 396
-						},
-						"rot": -5
 					},
 					{
 						"align": 0,
