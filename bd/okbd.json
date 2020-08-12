@@ -192,7 +192,9 @@
 			"volume_locked": true
 		},
 		"settings": {
+			"latency": 1,
 			"ndi_bw_mode": 2,
+			"ndi_recv_hw_accel": true,
 			"ndi_source_name": "OLAFS-AIR (Skype - Aktiver Sprecher)"
 		}
 	},
@@ -426,6 +428,7 @@
 				"volume_locked": true
 			},
 			"settings": {
+				"latency": 1,
 				"ndi_bw_mode": 1,
 				"ndi_fix_alpha_blending": false,
 				"ndi_recv_hw_accel": true,

@@ -44,6 +44,7 @@
 			"volume_locked": true
 		},
 		"settings": {
+			"latency": 1,
 			"ndi_bw_mode": 2,
 			"ndi_recv_hw_accel": true,
 			"ndi_source_name": "MARKUS-MAC-PRO.LOCAL (Skype - Aktiver Sprecher)"
@@ -123,7 +124,7 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"buffering_mb": 16,
+				"buffering_mb": 128,
 				"close_when_inactive": true,
 				"input": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/intro.mov",
 				"is_local_file": false
@@ -163,7 +164,7 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"buffering_mb": 16,
+				"buffering_mb": 128,
 				"close_when_inactive": true,
 				"input": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/outro.mov",
 				"is_local_file": false
@@ -212,6 +213,7 @@
 				"volume_locked": true
 			},
 			"settings": {
+				"latency": 1,
 				"ndi_bw_mode": 1,
 				"ndi_fix_alpha_blending": false,
 				"ndi_recv_hw_accel": true,
@@ -230,11 +232,11 @@
 						"key": "OBS_KEY_V"
 					}
 				],
-                "SlideShow.Restart": [
-                    {
-                        "key": "OBS_KEY_1"
-                    }
-                ]
+				"SlideShow.Restart": [
+					{
+						"key": "OBS_KEY_1"
+					}
+				]
 			},
 			"id": "slideshow",
 			"name": "Slide Show",
