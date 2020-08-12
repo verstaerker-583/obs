@@ -139,6 +139,7 @@
 				}
 			},
 			{
+				"enabled": false,
 				"id": "noise_suppress_filter",
 				"name": "Noise Suppression"
 			},
@@ -159,6 +160,7 @@
 				}
 			},
 			{
+				"enabled": false,
 				"id": "limiter_filter",
 				"name": "Limiter"
 			}
@@ -283,6 +285,7 @@
 					"name": "Chroma Key"
 				},
 				{
+					"enabled": false,
 					"id": "sharpness_filter",
 					"name": "Sharpen"
 				},
