@@ -43,13 +43,16 @@
 			],
 			"libobs.unmute": [
 				{
+					"key": "OBS_KEY_I"
+				},
+				{
+					"key": "OBS_KEY_M"
+				},
+				{
 					"key": "OBS_KEY_2"
 				},
 				{
 					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_M"
 				}
 			]
 		},
@@ -67,7 +70,6 @@
 				"id": "noise_suppress_filter",
 				"name": "Noise Suppression",
 				"settings": {
-					"suppress_level": -6
 				}
 			},
 			{
@@ -127,6 +129,14 @@
 	"AuxAudioDevice3": {
 		"filters": [
 			{
+				"id": "gain_filter",
+				"name": "Gain",
+				"settings": {
+					"db": -6.0
+				}
+			},
+			{
+				"enabled": false,
 				"id": "noise_suppress_filter",
 				"name": "Noise Suppression",
 				"settings": {
@@ -139,7 +149,6 @@
 				"name": "Noise Gate"
 			},
 			{
-				"enabled": false,
 				"id": "compressor_filter",
 				"name": "Compressor",
 				"settings": {
@@ -159,10 +168,10 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-					"key": "OBS_KEY_S"
+					"key": "OBS_KEY_O"
 				},
 				{
-					"key": "OBS_KEY_O"
+					"key": "OBS_KEY_S"
 				},
 				{
 					"key": "OBS_KEY_1"
@@ -172,6 +181,9 @@
 				}
 			],
 			"libobs.unmute": [
+				{
+					"key": "OBS_KEY_I"
+				},
 				{
 					"key": "OBS_KEY_S"
 				},
@@ -183,19 +195,15 @@
 				}
 			]
 		},
-		"id": "ndi_source",
+		"id": "coreaudio_input_capture",
 		"mixers": 9,
 		"monitoring_type": 2,
-		"name": "NDI™ Source - Audio",
+		"name": "NDI Audio",
 		"private_settings": {
-			"mixer_hidden": true,
 			"volume_locked": true
 		},
 		"settings": {
-			"latency": 1,
-			"ndi_bw_mode": 2,
-			"ndi_recv_hw_accel": true,
-			"ndi_source_name": "MARKUS-MAC-PRO.LOCAL (Skype - Aktiver Sprecher)"
+			"device_id": "BF568F24-731B-41DB-932E-AC7E260BC71A"
 		}
 	},
 	"sources": [
@@ -270,6 +278,41 @@
 			}
 		},
 		{
+			"filters": [
+				{
+					"id": "chroma_key_filter",
+					"name": "Chroma Key"
+				},
+				{
+					"id": "sharpness_filter",
+					"name": "Sharpen"
+				},
+				{
+					"enabled": false,
+					"id": "clut_filter",
+					"name": "Apply LUT",
+					"settings": {
+						"clut_amount": 0.25,
+						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
+					}
+				},
+				{
+					"id": "mask_filter",
+					"name": "Image Mask/Blend",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
+				}
+			],
+			"id": "av_capture_input",
+			"name": "NDI Video",
+			"settings": {
+				"device": "BB86C477-373F-49D9-AA4B-CE86A0E883F1",
+				"device_name": "NDI Video"
+			}
+		},
+		{
 			"id": "color_source",
 			"name": "Color Source",
 			"settings": {
@@ -312,8 +355,10 @@
 				"volume_locked": true
 			},
 			"settings": {
+				"buffering_mb": 128,
 				"close_when_inactive": true,
-				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
+				"input": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/intro.mov",
+				"is_local_file": false
 			}
 		},
 		{
@@ -350,89 +395,10 @@
 				"volume_locked": true
 			},
 			"settings": {
+				"buffering_mb": 128,
 				"close_when_inactive": true,
-				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
-			}
-		},
-		{
-			"filters": [
-				{
-					"id": "chroma_key_filter",
-					"name": "Chroma Key",
-					"settings": {
-						"similarity": 396,
-						"smoothness": 35,
-						"spill": 200
-					}
-				},
-				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
-				},
-				{
-					"enabled": false,
-					"id": "clut_filter",
-					"name": "Apply LUT",
-					"settings": {
-						"clut_amount": 0.25,
-						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
-					}
-				},
-				{
-					"id": "mask_filter",
-					"name": "Image Mask/Blend",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
-						"type": "mask_alpha_filter.effect"
-					}
-				},
-				{
-					"enabled": false,
-					"id": "noise_suppress_filter",
-					"name": "Noise Suppression",
-					"settings": {
-						"suppress_level": -6
-					}
-				},
-				{
-					"enabled": false,
-					"id": "noise_gate_filter",
-					"name": "Noise Gate"
-				},
-				{
-					"enabled": false,
-					"id": "compressor_filter",
-					"name": "Compressor",
-					"settings": {
-						"attack_time": 100,
-						"ratio": 32,
-						"release_time": 600,
-						"sidechain_source": "Mic",
-						"threshold": -36
-					}
-				},
-				{
-					"enabled": false,
-					"id": "limiter_filter",
-					"name": "Limiter"
-				}
-			],
-			"flags": 2,
-			"id": "ndi_source",
-			"mixers": 0,
-			"monitoring_type": 0,
-			"muted": true,
-			"name": "NDI™ Source",
-			"private_settings": {
-				"mixer_hidden": true,
-				"volume_locked": true
-			},
-			"settings": {
-				"latency": 1,
-				"ndi_bw_mode": 1,
-				"ndi_fix_alpha_blending": false,
-				"ndi_recv_hw_accel": true,
-				"ndi_source_name": "MARKUS-MAC-PRO.LOCAL (Skype - Aktiver Sprecher)"
+				"input": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/outro.mov",
+				"is_local_file": false
 			}
 		},
 		{
@@ -446,6 +412,11 @@
 					{
 						"key": "OBS_KEY_V"
 					}
+				],
+				"SlideShow.Restart": [
+					{
+						"key": "OBS_KEY_1"
+					}
 				]
 			},
 			"id": "slideshow",
@@ -453,7 +424,34 @@
 			"settings": {
 				"files": [
 					{
-						"value": "/Library/Desktop Pictures"
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/a.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/b.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/c.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/d.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/e.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/f.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/g.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/h.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/i.jpg"
+					},
+					{
+						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/j.jpg"
 					}
 				],
 				"slide_mode": "mode_manual"
@@ -469,6 +467,7 @@
 		},
 		{
 			"id": "browser_source",
+			"mixers": 0,
 			"name": "Overlay Start",
 			"private_settings": {
 				"mixer_hidden": true
@@ -482,6 +481,7 @@
 		},
 		{
 			"id": "browser_source",
+			"mixers": 0,
 			"name": "Overlay Cam",
 			"private_settings": {
 				"mixer_hidden": true
@@ -495,6 +495,7 @@
 		},
 		{
 			"id": "browser_source",
+			"mixers": 0,
 			"name": "Overlay Finish",
 			"private_settings": {
 				"mixer_hidden": true
@@ -508,6 +509,7 @@
 		},
 		{
 			"id": "browser_source",
+			"mixers": 0,
 			"name": "Overlay cams",
 			"private_settings": {
 				"mixer_hidden": true
@@ -574,7 +576,7 @@
 						"key": "OBS_KEY_I"
 					}
 				],
-				"libobs.show_scene_item.NDI™ Source": [
+				"libobs.show_scene_item.NDI Video": [
 					{
 						"key": "OBS_KEY_2"
 					}
@@ -643,7 +645,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "NDI™ Source",
+						"name": "NDI Video",
 						"pos": {
 							"x": 960,
 							"y": 324
@@ -653,14 +655,6 @@
 							"color-preset": 7
 						},
 						"rot": -5
-					},
-					{
-						"locked": true,
-						"name": "NDI™ Source - Audio",
-						"private_settings": {
-							"color": "",
-							"color-preset": 7
-						}
 					},
 					{
 						"align": 0,
@@ -693,7 +687,7 @@
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
-				"libobs.hide_scene_item.NDI™ Source": [
+				"libobs.hide_scene_item.NDI Video": [
 					{
 						"key": "OBS_KEY_3"
 					},
@@ -719,7 +713,7 @@
 						"key": "OBS_KEY_3"
 					}
 				],
-				"libobs.show_scene_item.NDI™ Source": [
+				"libobs.show_scene_item.NDI Video": [
 					{
 						"key": "OBS_KEY_BACKSLASH"
 					}
@@ -862,7 +856,7 @@
 						"key": "OBS_KEY_3"
 					}
 				],
-				"libobs.show_scene_item.NDI™ Source": [
+				"libobs.show_scene_item.NDI Video": [
 					{
 						"key": "OBS_KEY_3"
 					}
@@ -917,7 +911,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "NDI™ Source",
+						"name": "NDI Video",
 						"pos": {
 							"x": 1152,
 							"y": 324
