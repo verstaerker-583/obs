@@ -18,7 +18,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.75,
+						"clut_amount": 0.5,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				},
@@ -32,7 +32,7 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "Cam Internal",
+			"name": "Internal",
 			"settings": {
 				"device": "CC27327P54QGDV4AV",
 				"device_name": "FaceTime HD Camera"
@@ -53,7 +53,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.75,
+						"clut_amount": 0.5,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				},
@@ -67,7 +67,7 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "Cam External",
+			"name": "External",
 			"settings": {
 				"device": "obs-virtual-cam-device",
 				"device_name": "OBS Virtual Camera"
@@ -83,7 +83,7 @@
 				"css": "",
 				"height": 135,
 				"url": "https://www.amap-brazil.org/site/templates/img/amap.svg",
-				"width": 135 
+				"width": 135
 			}
 		},
 		{
@@ -113,6 +113,11 @@
 					{
 						"key": "OBS_KEY_V"
 					}
+				],
+				"SlideShow.Restart": [
+					{
+						"key": "OBS_KEY_1"
+					}
 				]
 			},
 			"id": "slideshow",
@@ -136,7 +141,7 @@
 		},
 		{
 			"hotkeys": {
-				"libobs.hide_scene_item.Cam External": [
+				"libobs.hide_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
@@ -149,12 +154,12 @@
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
-				"libobs.show_scene_item.Cam Internal": [
+				"libobs.show_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_2"
 					}
 				],
-				"libobs.show_scene_item.Cam External": [
+				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_2"
 					},
@@ -190,7 +195,7 @@
 					{
 						"align": 0,
 						"locked": true,
-						"name": "Cam Internal",
+						"name": "Internal",
 						"pos": {
 							"x": 640,
 							"y": 360
@@ -199,7 +204,7 @@
 					{
 						"align": 0,
 						"locked": true,
-						"name": "Cam External",
+						"name": "External",
 						"pos": {
 							"x": 640,
 							"y": 360
@@ -347,7 +352,7 @@
 				}
 			],
 			"hotkeys": {
-				"libobs.hide_scene_item.Cam Internal": [
+				"libobs.hide_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_3"
 					},
@@ -355,17 +360,17 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.hide_scene_item.Cam External": [
+				"libobs.hide_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.show_scene_item.Cam Internal": [
+				"libobs.show_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.show_scene_item.Cam External": [
+				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_3"
 					},
@@ -389,7 +394,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Cam Internal",
+						"name": "Internal",
 						"pos": {
 							"x": 1172,
 							"y": 320
@@ -404,7 +409,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Cam External",
+						"name": "External",
 						"pos": {
 							"x": 108,
 							"y": 400

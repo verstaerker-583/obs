@@ -3,6 +3,7 @@
 	"current_scene": "Start",
 	"preview_locked": true,
 	"AuxAudioDevice1": {
+		"balance": 0.25,
 		"filters": [
 			{
 				"id": "noise_suppress_filter",
@@ -29,37 +30,37 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-					"key": "OBS_KEY_M"
-				},
-				{
-					"key": "OBS_KEY_O"
-				},
-				{
 					"key": "OBS_KEY_1"
 				},
 				{
 					"key": "OBS_KEY_4"
-				}
-			],
-			"libobs.unmute": [
-				{
-					"key": "OBS_KEY_I"
 				},
 				{
 					"key": "OBS_KEY_M"
 				},
+				{
+					"key": "OBS_KEY_O"
+				}
+			],
+			"libobs.unmute": [
 				{
 					"key": "OBS_KEY_2"
 				},
 				{
 					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_I"
+				},
+				{
+					"key": "OBS_KEY_M"
 				}
 			]
 		},
 		"id": "coreaudio_input_capture",
 		"mixers": 3,
 		"monitoring_type": 0,
-		"name": "Mic",
+		"name": "Microphone",
 		"private_settings": {
 			"volume_locked": true
 		}
@@ -69,7 +70,9 @@
 			{
 				"id": "noise_suppress_filter",
 				"name": "Noise Suppression",
-				"settings": {}
+				"settings": {
+					"suppress_level": -6
+				}
 			},
 			{
 				"id": "compressor_filter",
@@ -78,7 +81,7 @@
 					"attack_time": 100,
 					"ratio": 32,
 					"release_time": 600,
-					"sidechain_source": "Mic",
+					"sidechain_source": "Microphone",
 					"threshold": -36
 				}
 			},
@@ -90,27 +93,27 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-					"key": "OBS_KEY_D"
-				},
-				{
-					"key": "OBS_KEY_O"
-				},
-				{
 					"key": "OBS_KEY_1"
 				},
 				{
 					"key": "OBS_KEY_4"
-				}
-			],
-			"libobs.unmute": [
+				},
 				{
 					"key": "OBS_KEY_D"
 				},
+				{
+					"key": "OBS_KEY_O"
+				}
+			],
+			"libobs.unmute": [
 				{
 					"key": "OBS_KEY_2"
 				},
 				{
 					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_D"
 				}
 			]
 		},
@@ -126,6 +129,7 @@
 		}
 	},
 	"AuxAudioDevice3": {
+		"balance": 0.75,
 		"filters": [
 			{
 				"id": "gain_filter",
@@ -135,12 +139,8 @@
 				}
 			},
 			{
-				"enabled": false,
 				"id": "noise_suppress_filter",
-				"name": "Noise Suppression",
-				"settings": {
-					"suppress_level": -6
-				}
+				"name": "Noise Suppression"
 			},
 			{
 				"enabled": false,
@@ -154,7 +154,7 @@
 					"attack_time": 100,
 					"ratio": 32,
 					"release_time": 600,
-					"sidechain_source": "Mic",
+					"sidechain_source": "Microphone",
 					"threshold": -36
 				}
 			},
@@ -167,30 +167,30 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-					"key": "OBS_KEY_O"
-				},
-				{
-					"key": "OBS_KEY_S"
-				},
-				{
 					"key": "OBS_KEY_1"
 				},
 				{
 					"key": "OBS_KEY_4"
-				}
-			],
-			"libobs.unmute": [
+				},
 				{
-					"key": "OBS_KEY_I"
+					"key": "OBS_KEY_O"
 				},
 				{
 					"key": "OBS_KEY_S"
-				},
+				}
+			],
+			"libobs.unmute": [
 				{
 					"key": "OBS_KEY_2"
 				},
 				{
 					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_I"
+				},
+				{
+					"key": "OBS_KEY_S"
 				}
 			]
 		},
@@ -221,7 +221,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.25,
+						"clut_amount": 0.5,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				},
@@ -235,7 +235,7 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "Cam Internal",
+			"name": "Internal",
 			"settings": {
 				"device": "CC27327P54QGDV4AV",
 				"device_name": "FaceTime HD Camera"
@@ -256,7 +256,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.25,
+						"clut_amount": 0.5,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				},
@@ -270,7 +270,7 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "Cam External",
+			"name": "External",
 			"settings": {
 				"device": "obs-virtual-cam-device",
 				"device_name": "OBS Virtual Camera"
@@ -291,7 +291,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.25,
+						"clut_amount": 0.5,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				},
@@ -305,10 +305,10 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "NDI Video",
+			"name": "NDI",
 			"settings": {
 				"device": "BB86C477-373F-49D9-AA4B-CE86A0E883F1",
-				"device_name": "NDI Video"
+				"device_name": "NDI"
 			}
 		},
 		{
@@ -323,24 +323,6 @@
 		{
 			"filters": [
 				{
-					"id": "noise_suppress_filter",
-					"name": "Noise Suppression",
-					"settings": {
-						"suppress_level": -6
-					}
-				},
-				{
-					"id": "compressor_filter",
-					"name": "Compressor",
-					"settings": {
-						"attack_time": 100,
-						"ratio": 32,
-						"release_time": 600,
-						"sidechain_source": "Mic",
-						"threshold": -36
-					}
-				},
-				{
 					"id": "limiter_filter",
 					"name": "Limiter"
 				}
@@ -354,32 +336,12 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"buffering_mb": 128,
 				"close_when_inactive": true,
-				"input": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/intro.mov",
-				"is_local_file": false
+				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
 			}
 		},
 		{
 			"filters": [
-				{
-					"id": "noise_suppress_filter",
-					"name": "Noise Suppression",
-					"settings": {
-						"suppress_level": -6
-					}
-				},
-				{
-					"id": "compressor_filter",
-					"name": "Compressor",
-					"settings": {
-						"attack_time": 100,
-						"ratio": 32,
-						"release_time": 600,
-						"sidechain_source": "Mic",
-						"threshold": -36
-					}
-				},
 				{
 					"id": "limiter_filter",
 					"name": "Limiter"
@@ -394,10 +356,8 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"buffering_mb": 128,
 				"close_when_inactive": true,
-				"input": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/outro.mov",
-				"is_local_file": false
+				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
 			}
 		},
 		{
@@ -466,7 +426,6 @@
 		},
 		{
 			"id": "browser_source",
-			"mixers": 0,
 			"name": "Overlay Start",
 			"private_settings": {
 				"mixer_hidden": true
@@ -480,7 +439,6 @@
 		},
 		{
 			"id": "browser_source",
-			"mixers": 0,
 			"name": "Overlay Cam",
 			"private_settings": {
 				"mixer_hidden": true
@@ -494,7 +452,6 @@
 		},
 		{
 			"id": "browser_source",
-			"mixers": 0,
 			"name": "Overlay Finish",
 			"private_settings": {
 				"mixer_hidden": true
@@ -508,7 +465,6 @@
 		},
 		{
 			"id": "browser_source",
-			"mixers": 0,
 			"name": "Overlay cams",
 			"private_settings": {
 				"mixer_hidden": true
@@ -547,7 +503,7 @@
 		},
 		{
 			"hotkeys": {
-				"libobs.hide_scene_item.Cam External": [
+				"libobs.hide_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
@@ -557,12 +513,12 @@
 						"key": "OBS_KEY_2"
 					}
 				],
-				"libobs.show_scene_item.Cam Internal": [
+				"libobs.show_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_2"
 					}
 				],
-				"libobs.show_scene_item.Cam External": [
+				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_2"
 					},
@@ -575,7 +531,7 @@
 						"key": "OBS_KEY_I"
 					}
 				],
-				"libobs.show_scene_item.NDI Video": [
+				"libobs.show_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_2"
 					}
@@ -610,7 +566,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Cam Internal",
+						"name": "Internal",
 						"pos": {
 							"x": 320,
 							"y": 396
@@ -625,7 +581,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Cam External",
+						"name": "External",
 						"pos": {
 							"x": 320,
 							"y": 396
@@ -644,14 +600,10 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "NDI Video",
+						"name": "NDI",
 						"pos": {
 							"x": 960,
 							"y": 324
-						},
-						"private_settings": {
-							"color": "",
-							"color-preset": 7
 						},
 						"rot": -5
 					},
@@ -686,7 +638,7 @@
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
-				"libobs.hide_scene_item.NDI Video": [
+				"libobs.hide_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_3"
 					},
@@ -712,7 +664,7 @@
 						"key": "OBS_KEY_3"
 					}
 				],
-				"libobs.show_scene_item.NDI Video": [
+				"libobs.show_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_BACKSLASH"
 					}
@@ -832,17 +784,17 @@
 		},
 		{
 			"hotkeys": {
-				"libobs.hide_scene_item.Cam External": [
+				"libobs.hide_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.show_scene_item.Cam Internal": [
+				"libobs.show_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_3"
 					}
 				],
-				"libobs.show_scene_item.Cam External": [
+				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_3"
 					},
@@ -855,7 +807,7 @@
 						"key": "OBS_KEY_3"
 					}
 				],
-				"libobs.show_scene_item.NDI Video": [
+				"libobs.show_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_3"
 					}
@@ -880,7 +832,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Cam Internal",
+						"name": "Internal",
 						"pos": {
 							"x": 128,
 							"y": 396
@@ -895,7 +847,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Cam External",
+						"name": "External",
 						"pos": {
 							"x": 128,
 							"y": 396
@@ -910,7 +862,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "NDI Video",
+						"name": "NDI",
 						"pos": {
 							"x": 1152,
 							"y": 324

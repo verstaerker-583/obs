@@ -2,11 +2,11 @@
 
 gsed -f gpToSr.sed ../gp/okgp.json > ../sr/oksr.json
 
+mkdir -p ../scenes
 gsed -f toMm.sed ../bd/okbd.json > ../scenes/mmbd.json
 gsed -f toMm.sed ../gp/okgp.json > ../scenes/mmgp.json
 gsed -f toMm.sed ../sr/oksr.json > ../scenes/mmsr.json
 gsed -f toMm.sed ../ap/okap.json > ../scenes/mmap.json
-
 
 mkdir -p ../profiles/okYTlq ../profiles/okYTmq
 gsed -f lqProfiles.sed ../profiles/okRec/basic.ini > ../profiles/okYTlq/basic.ini

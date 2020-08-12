@@ -29,16 +29,16 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-					"key": "OBS_KEY_M"
-				},
-				{
-					"key": "OBS_KEY_O"
-				},
-				{
 					"key": "OBS_KEY_1"
 				},
 				{
 					"key": "OBS_KEY_4"
+				},
+				{
+					"key": "OBS_KEY_M"
+				},
+				{
+					"key": "OBS_KEY_O"
 				}
 			],
 			"libobs.unmute": [
@@ -49,6 +49,9 @@
 					"key": "OBS_KEY_3"
 				},
 				{
+					"key": "OBS_KEY_I"
+				},
+				{
 					"key": "OBS_KEY_M"
 				}
 			]
@@ -56,7 +59,7 @@
 		"id": "coreaudio_input_capture",
 		"mixers": 3,
 		"monitoring_type": 0,
-		"name": "Mic",
+		"name": "Microphone",
 		"private_settings": {
 			"volume_locked": true
 		}
@@ -77,7 +80,7 @@
 					"attack_time": 100,
 					"ratio": 32,
 					"release_time": 600,
-					"sidechain_source": "Mic",
+					"sidechain_source": "Microphone",
 					"threshold": -36
 				}
 			},
@@ -89,27 +92,27 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-					"key": "OBS_KEY_D"
-				},
-				{
-					"key": "OBS_KEY_O"
-				},
-				{
 					"key": "OBS_KEY_1"
 				},
 				{
 					"key": "OBS_KEY_4"
-				}
-			],
-			"libobs.unmute": [
+				},
 				{
 					"key": "OBS_KEY_D"
 				},
+				{
+					"key": "OBS_KEY_O"
+				}
+			],
+			"libobs.unmute": [
 				{
 					"key": "OBS_KEY_2"
 				},
 				{
 					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_D"
 				}
 			]
 		},
@@ -128,10 +131,7 @@
 		"filters": [
 			{
 				"id": "noise_suppress_filter",
-				"name": "Noise Suppression",
-				"settings": {
-					"suppress_level": -6
-				}
+				"name": "Noise Suppression"
 			},
 			{
 				"enabled": false,
@@ -146,7 +146,7 @@
 					"attack_time": 100,
 					"ratio": 32,
 					"release_time": 600,
-					"sidechain_source": "Mic",
+					"sidechain_source": "Microphone",
 					"threshold": -36
 				}
 			},
@@ -159,41 +159,39 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-					"key": "OBS_KEY_S"
+					"key": "OBS_KEY_1"
+				},
+				{
+					"key": "OBS_KEY_4"
 				},
 				{
 					"key": "OBS_KEY_O"
 				},
 				{
-					"key": "OBS_KEY_1"
-				},
-				{
-					"key": "OBS_KEY_4"
+					"key": "OBS_KEY_S"
 				}
 			],
 			"libobs.unmute": [
-				{
-					"key": "OBS_KEY_S"
-				},
 				{
 					"key": "OBS_KEY_2"
 				},
 				{
 					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_S"
 				}
 			]
 		},
-		"id": "ndi_source",
+		"id": "coreaudio_input_capture",
 		"mixers": 9,
 		"monitoring_type": 2,
-		"name": "NDI™ Source - Audio",
+		"name": "NDI Audio",
 		"private_settings": {
-			"mixer_hidden": true,
 			"volume_locked": true
 		},
 		"settings": {
-			"ndi_bw_mode": 2,
-			"ndi_source_name": "OLAFS-AIR (Skype - Aktiver Sprecher)"
+			"device_id": "BF568F24-731B-41DB-932E-AC7E260BC71A"
 		}
 	},
 	"sources": [
@@ -212,7 +210,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.75,
+						"clut_amount": 0.5,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				},
@@ -226,7 +224,7 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "Cam Internal",
+			"name": "Internal",
 			"settings": {
 				"device": "CC27327P54QGDV4AV",
 				"device_name": "FaceTime HD Camera"
@@ -247,7 +245,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.75,
+						"clut_amount": 0.5,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				},
@@ -261,10 +259,46 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "Cam External",
+			"name": "External",
 			"settings": {
 				"device": "obs-virtual-cam-device",
 				"device_name": "OBS Virtual Camera"
+			}
+		},
+		{
+			"filters": [
+				{
+					"enabled": false,
+					"id": "chroma_key_filter",
+					"name": "Chroma Key"
+				},
+				{
+					"id": "sharpness_filter",
+					"name": "Sharpen"
+				},
+				{
+					"id": "clut_filter",
+					"name": "Apply LUT",
+					"settings": {
+						"clut_amount": 0.5,
+						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
+					}
+				},
+				{
+					"id": "mask_filter",
+					"name": "Image Mask/Blend",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/gp/camMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
+				}
+			],
+			"flags": 2,
+			"id": "av_capture_input",
+			"name": "NDI",
+			"settings": {
+				"device": "BB86C477-373F-49D9-AA4B-CE86A0E883F1",
+				"device_name": "NDI"
 			}
 		},
 		{
@@ -305,7 +339,7 @@
 						"attack_time": 100,
 						"ratio": 32,
 						"release_time": 600,
-						"sidechain_source": "Mic",
+						"sidechain_source": "Microphone",
 						"threshold": -36
 					}
 				},
@@ -343,7 +377,7 @@
 						"attack_time": 100,
 						"ratio": 32,
 						"release_time": 600,
-						"sidechain_source": "Mic",
+						"sidechain_source": "Microphone",
 						"threshold": -36
 					}
 				},
@@ -373,76 +407,6 @@
 			}
 		},
 		{
-			"filters": [
-				{
-					"enabled": false,
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
-				},
-				{
-					"id": "clut_filter",
-					"name": "Apply LUT",
-					"settings": {
-						"clut_amount": 0.75,
-						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
-					}
-				},
-				{
-					"id": "mask_filter",
-					"name": "Image Mask/Blend",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/gp/camMask.png",
-						"type": "mask_alpha_filter.effect"
-					}
-				},
-				{
-					"id": "noise_suppress_filter",
-					"name": "Noise Suppression"
-				},
-				{
-					"enabled": false,
-					"id": "noise_gate_filter",
-					"name": "Noise Gate"
-				},
-				{
-					"enabled": false,
-					"id": "compressor_filter",
-					"name": "Compressor",
-					"settings": {
-						"attack_time": 100,
-						"ratio": 32,
-						"release_time": 600,
-						"sidechain_source": "Mic",
-						"threshold": -36
-					}
-				},
-				{
-					"id": "limiter_filter",
-					"name": "Limiter"
-				}
-			],
-			"flags": 2,
-			"id": "ndi_source",
-			"mixers": 0,
-			"monitoring_type": 0,
-			"muted": true,
-			"name": "NDI™ Source",
-			"private_settings": {
-				"mixer_hidden": true,
-				"volume_locked": true
-			},
-			"settings": {
-				"ndi_bw_mode": 1,
-				"ndi_fix_alpha_blending": false,
-				"ndi_recv_hw_accel": true,
-				"ndi_source_name": "OLAFS-AIR (Skype - Aktiver Sprecher)"
-			}
-		},
-		{
 			"hotkeys": {
 				"SlideShow.NextSlide": [
 					{
@@ -452,6 +416,11 @@
 				"SlideShow.PreviousSlide": [
 					{
 						"key": "OBS_KEY_V"
+					}
+				],
+				"SlideShow.Restart": [
+					{
+						"key": "OBS_KEY_1"
 					}
 				]
 			},
@@ -564,7 +533,7 @@
 						"key": "OBS_KEY_MINUS"
 					}
 				],
-				"libobs.hide_scene_item.Cam External": [
+				"libobs.hide_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
@@ -595,12 +564,12 @@
 						"key": "OBS_KEY_MINUS"
 					}
 				],
-				"libobs.show_scene_item.Cam Internal": [
+				"libobs.show_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_2"
 					}
 				],
-				"libobs.show_scene_item.Cam External": [
+				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_2"
 					},
@@ -649,7 +618,7 @@
 					{
 						"align": 0,
 						"locked": true,
-						"name": "Cam Internal",
+						"name": "Internal",
 						"pos": {
 							"x": 640,
 							"y": 360
@@ -658,7 +627,7 @@
 					{
 						"align": 0,
 						"locked": true,
-						"name": "Cam External",
+						"name": "External",
 						"pos": {
 							"x": 640,
 							"y": 360
@@ -748,7 +717,7 @@
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
-				"libobs.hide_scene_item.NDI™ Source": [
+				"libobs.hide_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_3"
 					},
@@ -774,7 +743,7 @@
 						"key": "OBS_KEY_3"
 					}
 				],
-				"libobs.show_scene_item.NDI™ Source": [
+				"libobs.show_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_BACKSLASH"
 					}
@@ -838,19 +807,11 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "NDI™ Source",
+						"name": "NDI",
 						"pos": {
 							"x": 640,
 							"y": 360
 						},
-						"private_settings": {
-							"color": "",
-							"color-preset": 7
-						}
-					},
-					{
-						"locked": true,
-						"name": "NDI™ Source - Audio",
 						"private_settings": {
 							"color": "",
 							"color-preset": 7
@@ -930,7 +891,7 @@
 				}
 			],
 			"hotkeys": {
-				"libobs.hide_scene_item.Cam Internal": [
+				"libobs.hide_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_3"
 					},
@@ -938,17 +899,17 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.hide_scene_item.Cam External": [
+				"libobs.hide_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.show_scene_item.Cam Internal": [
+				"libobs.show_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.show_scene_item.Cam External": [
+				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_3"
 					},
@@ -972,7 +933,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Cam Internal",
+						"name": "Internal",
 						"pos": {
 							"x": 1172,
 							"y": 320
@@ -987,7 +948,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Cam External",
+						"name": "External",
 						"pos": {
 							"x": 108,
 							"y": 400
@@ -1009,7 +970,7 @@
 				}
 			],
 			"hotkeys": {
-				"libobs.hide_scene_item.NDI™ Source": [
+				"libobs.hide_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_2"
 					},
@@ -1027,7 +988,7 @@
 						"key": "OBS_KEY_2"
 					}
 				],
-				"libobs.show_scene_item.NDI™ Source": [
+				"libobs.show_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_BACKSLASH"
 					}
@@ -1085,7 +1046,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "NDI™ Source",
+						"name": "NDI",
 						"pos": {
 							"x": 640,
 							"y": 360
