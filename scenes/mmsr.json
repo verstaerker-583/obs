@@ -134,14 +134,20 @@
 				"name": "Noise Suppression"
 			},
 			{
-				"enabled": false,
 				"id": "noise_gate_filter",
 				"name": "Noise Gate"
 			},
 			{
-				"enabled": false,
 				"id": "compressor_filter",
 				"name": "Compressor",
+				"settings": {
+					"attack_time": 1,
+					"output_gain": 1
+				}
+			},
+			{
+				"id": "compressor_filter",
+				"name": "Ducking",
 				"settings": {
 					"attack_time": 100,
 					"ratio": 32,

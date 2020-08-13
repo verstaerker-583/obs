@@ -78,6 +78,14 @@
 				"id": "compressor_filter",
 				"name": "Compressor",
 				"settings": {
+					"attack_time": 1,
+					"output_gain": 1
+				}
+			},
+			{
+				"id": "compressor_filter",
+				"name": "Ducking",
+				"settings": {
 					"attack_time": 100,
 					"ratio": 32,
 					"release_time": 600,
@@ -132,12 +140,10 @@
 		"balance": 0.75,
 		"filters": [
 			{
-				"enabled": false,
 				"id": "noise_suppress_filter",
 				"name": "Noise Suppression"
 			},
 			{
-				"enabled": false,
 				"id": "noise_gate_filter",
 				"name": "Noise Gate"
 			},
@@ -153,7 +159,6 @@
 				}
 			},
 			{
-				"enabled": false,
 				"id": "limiter_filter",
 				"name": "Limiter"
 			}
