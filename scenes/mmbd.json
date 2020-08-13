@@ -132,13 +132,7 @@
 		"balance": 0.75,
 		"filters": [
 			{
-				"id": "gain_filter",
-				"name": "Gain",
-				"settings": {
-					"db": -6
-				}
-			},
-			{
+				"enabled": false,
 				"id": "noise_suppress_filter",
 				"name": "Noise Suppression"
 			},
@@ -159,6 +153,7 @@
 				}
 			},
 			{
+				"enabled": false,
 				"id": "limiter_filter",
 				"name": "Limiter"
 			}
@@ -283,6 +278,7 @@
 					"name": "Chroma Key"
 				},
 				{
+					"enabled": false,
 					"id": "sharpness_filter",
 					"name": "Sharpen"
 				},
@@ -383,34 +379,7 @@
 			"settings": {
 				"files": [
 					{
-						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/a.jpg"
-					},
-					{
-						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/b.jpg"
-					},
-					{
-						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/c.jpg"
-					},
-					{
-						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/d.jpg"
-					},
-					{
-						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/e.jpg"
-					},
-					{
-						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/f.jpg"
-					},
-					{
-						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/g.jpg"
-					},
-					{
-						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/h.jpg"
-					},
-					{
-						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/i.jpg"
-					},
-					{
-						"value": "https://verstaerker-583.github.io/obs/bd/buntgespraech_1/j.jpg"
+						"value": "/Library/Desktop Pictures"
 					}
 				],
 				"slide_mode": "mode_manual"

@@ -15,3 +15,6 @@ MonitoringDeviceId=bc-f2-92-f1-a9-57:output
 
 MonitoringDeviceName=Externe Kopfhörer
 MonitoringDeviceId=BuiltInHeadphoneOutputDevice
+
+C02C406NK7GF	Mac Pro (2019)
+C02Z2297LVDR	MacBook Pro (15-inch, 2019)
