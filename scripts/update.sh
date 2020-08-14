@@ -30,3 +30,5 @@ find ~/Documents/GitHub/obs -exec touch -ht 197304291400 '{}' \;
 chmod -R -w ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs/.git
 
+cd ..
+zip --symlinks -q -r ~/Desktop/`date "+%Y%m%d%H%M%S.zip"` magic
