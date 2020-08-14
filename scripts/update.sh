@@ -1,5 +1,7 @@
 #!/bin/sh
 
+chmod -R +w ~/Documents/GitHub/obs
+
 gsed -f gpToSr.sed ../gp/okgp.json > ../sr/oksr.json
 
 mkdir -p ../scenes
@@ -16,7 +18,8 @@ gsed -f toMm.sed ../profiles/okRec/basic.ini > ../profiles/mmRec/basic.ini
 gsed -f toMm.sed ../profiles/okYTlq/basic.ini > ../profiles/mmYTlq/basic.ini
 gsed -f toMm.sed ../profiles/okYTmq/basic.ini > ../profiles/mmYTmq/basic.ini
 
-find ~/Documents/GitHub/obs -exec touch -ht 197304291400 '{}' \;\
+find ~/Documents/GitHub/obs -exec touch -ht 197304291400 '{}' \;
+chmod -R +w ~/Documents/GitHub/obs
 
 #cd ../.. 
 #zip --symlinks -q -r ~/Desktop/`date "+%Y%m%d%H%M%S.zip"` obs/profiles/mm* obs/scenes/mm*.json
