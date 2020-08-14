@@ -219,14 +219,6 @@
 						"clut_amount": 0.5,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
-				},
-				{
-					"id": "mask_filter",
-					"name": "Image Mask/Blend",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/gp/camMask.png",
-						"type": "mask_alpha_filter.effect"
-					}
 				}
 			],
 			"id": "av_capture_input",
@@ -254,14 +246,6 @@
 						"clut_amount": 0.5,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
-				},
-				{
-					"id": "mask_filter",
-					"name": "Image Mask/Blend",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/gp/camMask.png",
-						"type": "mask_alpha_filter.effect"
-					}
 				}
 			],
 			"id": "av_capture_input",
@@ -288,14 +272,6 @@
 					"settings": {
 						"clut_amount": 0.5,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
-					}
-				},
-				{
-					"id": "mask_filter",
-					"name": "Image Mask/Blend",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/gp/camMask.png",
-						"type": "mask_alpha_filter.effect"
 					}
 				}
 			],
