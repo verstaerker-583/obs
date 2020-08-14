@@ -7,7 +7,7 @@ gsed -f gpToSr.sed ../gp/okgp.json > ../sr/oksr.json
 
 mkdir -p ../obs/scenes
 gsed -f toMm.sed ../bd/okbd.json > ../obs/scenes/mmbd.json
-gsed -f toMm.sed ../bd/okbd.json > ../obs/scenes/mmbd_naked.json
+gsed -f toMm.sed ../bd/okbd_naked.json > ../obs/scenes/mmbd_naked.json
 gsed -f toMm.sed ../gp/okgp.json > ../obs/scenes/mmgp.json
 gsed -f toMm.sed ../sr/oksr.json > ../obs/scenes/mmsr.json
 gsed -f toMm.sed ../ap/okap.json > ../obs/scenes/mmap.json
