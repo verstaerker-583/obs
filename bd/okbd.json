@@ -68,21 +68,6 @@
 	"AuxAudioDevice2": {
 		"filters": [
 			{
-				"id": "noise_suppress_filter",
-				"name": "Noise Suppression",
-				"settings": {
-					"suppress_level": -6
-				}
-			},
-			{
-				"id": "compressor_filter",
-				"name": "Compressor",
-				"settings": {
-					"attack_time": 1,
-					"output_gain": 1
-				}
-			},
-			{
 				"id": "compressor_filter",
 				"name": "Ducking",
 				"settings": {
@@ -150,6 +135,14 @@
 			{
 				"id": "compressor_filter",
 				"name": "Compressor",
+				"settings": {
+					"attack_time": 1,
+					"output_gain": 1
+				}
+			},
+			{
+				"id": "compressor_filter",
+				"name": "Ducking",
 				"settings": {
 					"attack_time": 100,
 					"ratio": 32,
@@ -283,12 +276,10 @@
 					"name": "Chroma Key"
 				},
 				{
-					"enabled": false,
 					"id": "sharpness_filter",
 					"name": "Sharpen"
 				},
 				{
-					"enabled": false,
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {

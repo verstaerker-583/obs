@@ -67,15 +67,8 @@
 	"AuxAudioDevice2": {
 		"filters": [
 			{
-				"id": "noise_suppress_filter",
-				"name": "Noise Suppression",
-				"settings": {
-					"suppress_level": -6
-				}
-			},
-			{
 				"id": "compressor_filter",
-				"name": "Compressor",
+				"name": "Ducking",
 				"settings": {
 					"attack_time": 100,
 					"ratio": 32,
@@ -308,24 +301,6 @@
 		{
 			"filters": [
 				{
-					"id": "noise_suppress_filter",
-					"name": "Noise Suppression",
-					"settings": {
-						"suppress_level": -6
-					}
-				},
-				{
-					"id": "compressor_filter",
-					"name": "Compressor",
-					"settings": {
-						"attack_time": 100,
-						"ratio": 32,
-						"release_time": 600,
-						"sidechain_source": "Microphone",
-						"threshold": -36
-					}
-				},
-				{
 					"id": "limiter_filter",
 					"name": "Limiter"
 				}
@@ -345,24 +320,6 @@
 		},
 		{
 			"filters": [
-				{
-					"id": "noise_suppress_filter",
-					"name": "Noise Suppression",
-					"settings": {
-						"suppress_level": -6
-					}
-				},
-				{
-					"id": "compressor_filter",
-					"name": "Compressor",
-					"settings": {
-						"attack_time": 100,
-						"ratio": 32,
-						"release_time": 600,
-						"sidechain_source": "Microphone",
-						"threshold": -36
-					}
-				},
 				{
 					"id": "limiter_filter",
 					"name": "Limiter"
