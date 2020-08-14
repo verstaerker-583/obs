@@ -16,5 +16,7 @@ gsed -f toMm.sed ../profiles/okRec/basic.ini > ../profiles/mmRec/basic.ini
 gsed -f toMm.sed ../profiles/okYTlq/basic.ini > ../profiles/mmYTlq/basic.ini
 gsed -f toMm.sed ../profiles/okYTmq/basic.ini > ../profiles/mmYTmq/basic.ini
 
+find ~/Documents/GitHub/obs -exec touch -ht 197304291400 '{}' \;\
+
 #cd ../.. 
 #zip --symlinks -q -r ~/Desktop/`date "+%Y%m%d%H%M%S.zip"` obs/profiles/mm* obs/scenes/mm*.json
