@@ -106,6 +106,9 @@
 				},
 				{
 					"key": "OBS_KEY_D"
+				},
+				{
+					"key": "OBS_KEY_I"
 				}
 			]
 		},
