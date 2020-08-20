@@ -16,7 +16,7 @@ var donate = {
 var pics = {
 	channelIcon: "http://www.langenachtderliteratur.de/lndl/portraits/Web_Taucherzentrum2-sw.png",
 	clockLogo: "https://www.sharkproject.org/wp-content/uploads/2018/05/sp_logo.svg",
-	hostLogo: "https://www.taucher-zentrum.de/wp-content/uploads/Logos/Logo-Taucherzentrum-2-e1559631576790.png",
+	hostLogo: "../tzLogo.png",
 	organizationLogo: "https://www.sharkproject.org/wp-content/uploads/2018/05/sp_logo.svg",
 	videoThumb: "https://www.globalsocial-network.org/wp-content/uploads/logo_GlobalSocial.png"
 };

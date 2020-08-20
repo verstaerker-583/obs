@@ -315,7 +315,8 @@
 			},
 			"settings": {
 				"close_when_inactive": true,
-				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
+				"input": "https://images-assets.nasa.gov/video/Jack%20Kings%20Apollo%2011%20Launch%20Commentary/Jack%20Kings%20Apollo%2011%20Launch%20Commentary~orig.mp4",
+				"is_local_file": false
 			}
 		},
 		{

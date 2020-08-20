@@ -1,5 +1,5 @@
 {
-	"name": "sr",
+	"name": "tz",
 	"current_scene": "Start",
 	"preview_locked": true,
 	"AuxAudioDevice1": {
@@ -284,9 +284,7 @@
 			},
 			"settings": {
 				"css": "",
-				"height": 90,
-				"url": "https://www.sharkproject.org/wp-content/uploads/2018/05/sp_logo.svg",
-				"width": 390
+				"url": "https://www.sharkproject.org/wp-content/uploads/2018/05/sp_logo.svg"
 			}
 		},
 		{
@@ -315,7 +313,8 @@
 			},
 			"settings": {
 				"close_when_inactive": true,
-				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
+				"input": "https://images-assets.nasa.gov/video/Jack%20Kings%20Apollo%2011%20Launch%20Commentary/Jack%20Kings%20Apollo%2011%20Launch%20Commentary~orig.mp4",
+				"is_local_file": false
 			}
 		},
 		{
@@ -342,7 +341,7 @@
 			"id": "image_source",
 			"name": "Logo Presenter",
 			"settings": {
-				"file": "https://verstaerker-583.github.io/obs/tz/mmLogo.png"
+				"file": "https://verstaerker-583.github.io/obs/gp/mmLogo.png"
 			}
 		},
 		{
@@ -407,7 +406,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/start.html",
+				"url": "https://verstaerker-583.github.io/obs/tz/html/start.html",
 				"width": 1280
 			}
 		},
@@ -420,7 +419,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/cam.html",
+				"url": "https://verstaerker-583.github.io/obs/tz/html/cam.html",
 				"width": 1280
 			}
 		},
@@ -433,7 +432,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/finish.html",
+				"url": "https://verstaerker-583.github.io/obs/tz/html/finish.html",
 				"width": 1280
 			}
 		},
@@ -826,7 +825,7 @@
 					"id": "mask_filter",
 					"name": "Image Mask/Blend",
 					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/tz/camsMask.png",
+						"image_path": "https://verstaerker-583.github.io/obs/gp/camsMask.png",
 						"type": "mask_alpha_filter.effect"
 					}
 				}
@@ -905,7 +904,7 @@
 					"id": "mask_filter",
 					"name": "Image Mask/Blend",
 					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/tz/screenMask.png",
+						"image_path": "https://verstaerker-583.github.io/obs/gp/screenMask.png",
 						"type": "mask_alpha_filter.effect"
 					}
 				}

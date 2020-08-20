@@ -4,6 +4,7 @@ sudo chown -R olaf ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs
 
 gsed -f gpToSr.sed ../gp/okgp.json > ../sr/oksr.json
+gsed -f gpToTz.sed ../gp/okgp.json > ../tz/oktz.json
 
 mkdir -p ../magic/scenes
 gsed -f toMm.sed ../bd/okbd.json > ../magic/scenes/mmbd.json
@@ -30,5 +31,6 @@ find ~/Documents/GitHub/obs -exec touch -ht 197304291400 '{}' \;
 chmod -R -w ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs/.git
 
+exit 0
 cd ..
 zip --symlinks -q -r ~/Desktop/`date "+%Y%m%d%H%M%S.zip"` magic
