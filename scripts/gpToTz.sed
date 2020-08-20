@@ -1,4 +1,4 @@
-s/https:\/\/verstaerker-583.github.io\/obs\/gp\/gpLogo.svg/https:\/\/www.sharkproject.org\/wp-content\/uploads\/2018\/05\/sp_logo.svg/
+s/gp\/mmLogo/tz\/spLogo/
 s/gp\/html/tz\/html/
 s/"name": "gp"/"name": "tz"/
 

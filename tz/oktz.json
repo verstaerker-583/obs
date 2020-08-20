@@ -285,7 +285,7 @@
 			"settings": {
 				"css": "",
 				"height": 90,
-				"url": "https://www.sharkproject.org/wp-content/uploads/2018/05/sp_logo.svg",
+				"url": "https://verstaerker-583.github.io/obs/gp/gpLogo.svg",
 				"width": 390
 			}
 		},
@@ -343,7 +343,7 @@
 			"id": "image_source",
 			"name": "Logo Presenter",
 			"settings": {
-				"file": "https://verstaerker-583.github.io/obs/gp/mmLogo.png"
+				"file": "https://verstaerker-583.github.io/obs/tz/spLogo.png"
 			}
 		},
 		{

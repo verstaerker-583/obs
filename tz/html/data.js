@@ -18,6 +18,7 @@ var pics = {
 	clockLogo: "https://www.sharkproject.org/wp-content/uploads/2018/05/sp_logo.svg",
 	hostLogo: "../tzLogo.png",
 	organizationLogo: "https://www.sharkproject.org/wp-content/uploads/2018/05/sp_logo.svg",
+	presenterLogo: "../spLogo.png",
 	videoThumb: "../pool.jpg"
 };
 var alarm = {
