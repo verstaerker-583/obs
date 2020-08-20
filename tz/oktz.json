@@ -285,7 +285,7 @@
 			"settings": {
 				"css": "",
 				"height": 90,
-				"url": "https://verstaerker-583.github.io/obs/tz/spLogo.svg",
+				"url": "https://www.sharkproject.org/wp-content/uploads/2018/05/sp_logo.svg",
 				"width": 390
 			}
 		},
@@ -588,8 +588,8 @@
 						"locked": true,
 						"name": "Logo Organization",
 						"pos": {
-							"x": -15,
-							"y": 710
+							"x": 10,
+							"y": 770
 						}
 					},
 					{
