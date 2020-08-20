@@ -1,12 +1,12 @@
 var start = {
-	theme: "Lange Nach der Literatur - Hamburg",
+	theme: "#LIVE 🔴 aus Hamburg: 7. Lange Nacht der Literatur mit Gerhard Wegner",
 	message: "Gleich geht's los!",
-	call2action: "Gerhard Wegner: Michel, der kleine Haiforscher"
+	call2action: "Michel, der kleine Haiforscher"
 };
 var finish = {
-	theme: "Lange Nach der Literatur - Hamburg",
-	message: "Vielen Dank und auf Wiedersehen!",
-	call2action: "⇨ Bitte unterstütze Sharkproject International e.V.!"
+	theme: "#LIVE 🔴 aus Hamburg: 7. Lange Nacht der Literatur mit Gerhard Wegner",
+	message: "Vielen Dank und Tschüss!",
+	call2action: "www.sharkproject.org"
 };
 var donate = {
 	theme: "Spenden & Helfen",
@@ -18,7 +18,7 @@ var pics = {
 	clockLogo: "https://www.sharkproject.org/wp-content/uploads/2018/05/sp_logo.svg",
 	hostLogo: "../tzLogo.png",
 	organizationLogo: "https://www.sharkproject.org/wp-content/uploads/2018/05/sp_logo.svg",
-	videoThumb: "https://www.globalsocial-network.org/wp-content/uploads/logo_GlobalSocial.png"
+	videoThumb: "https://www.taucher-zentrum.de/wp-content/uploads/2020/03/termine430x250_Pool-400x233.jpg"
 };
 var alarm = {
 	time: "15:00"

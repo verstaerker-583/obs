@@ -284,7 +284,9 @@
 			},
 			"settings": {
 				"css": "",
-				"url": "https://www.sharkproject.org/wp-content/uploads/2018/05/sp_logo.svg"
+				"height": 90,
+				"url": "https://www.sharkproject.org/wp-content/uploads/2018/05/sp_logo.svg",
+				"width": 390
 			}
 		},
 		{

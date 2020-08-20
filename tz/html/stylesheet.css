@@ -1,10 +1,9 @@
 @import "../../gp/html/stylesheet.css";
-.arrows {
-	background: linear-gradient(to bottom, #c9ae93, #50593c);
-}
-
-.call2action {
-	background: linear-gradient(to bottom, #c9ae93, #50593c);
+.call2action,
+.message,
+.theme {
+	background: linear-gradient(to bottom, #999999, #0058a0);
+	color: white;
 }
 
 .element {
@@ -15,19 +14,8 @@
 	content: none;
 }
 
-.message {
-	background: #edc9af;
-	color: white;
-}
-
-.theme {
-	background: #edc9af;
-	color: #50593c;
-}
-
 body {
-	background-image: url("https://markus-mauthe.de/site/assets/files/1/dsc6707.jpg");
+	background: #0058a0;
+	background-image: url("https://www.sharkproject.org/wp-content/uploads/2014/07/banner2.jpg");
 	background-size: cover;
-	color: white;
-	font-family: Sunbeat;
 }
