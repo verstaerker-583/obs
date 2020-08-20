@@ -293,7 +293,7 @@
 			"id": "color_source",
 			"name": "Color Source",
 			"settings": {
-				"color": 4280204915,
+				"color": 4288256409,
 				"height": 720,
 				"width": 1280
 			}
@@ -343,7 +343,7 @@
 			"id": "image_source",
 			"name": "Logo Presenter",
 			"settings": {
-				"file": "https://verstaerker-583.github.io/obs/gp/mmLogo.png"
+				"file": "https://verstaerker-583.github.io/obs/tz/mmLogo.png"
 			}
 		},
 		{
@@ -379,8 +379,8 @@
 			"id": "text_ft2_source",
 			"name": "?",
 			"settings": {
-				"color1": 4287868617,
-				"color2": 4282145104,
+				"color1": 4288256409,
+				"color2": 4288698368,
 				"font": {
 					"face": "Helvetica Neue",
 					"flags": 1,
