@@ -18,7 +18,7 @@ var pics = {
 	clockLogo: "https://www.sharkproject.org/wp-content/uploads/2018/05/sp_logo.svg",
 	hostLogo: "../tzLogo.png",
 	organizationLogo: "https://www.sharkproject.org/wp-content/uploads/2018/05/sp_logo.svg",
-	videoThumb: "https://www.taucher-zentrum.de/wp-content/uploads/2020/03/termine430x250_Pool-400x233.jpg"
+	videoThumb: "../pool.jpg"
 };
 var alarm = {
 	time: "15:00"
