@@ -285,7 +285,7 @@
 			"settings": {
 				"css": "",
 				"height": 90,
-				"url": "https://verstaerker-583.github.io/obs/gp/gpLogo.svg",
+				"url": "https://verstaerker-583.github.io/obs/tz/spLogo.svg",
 				"width": 390
 			}
 		},
@@ -343,7 +343,7 @@
 			"id": "image_source",
 			"name": "Logo Presenter",
 			"settings": {
-				"file": "https://verstaerker-583.github.io/obs/tz/spLogo.png"
+				"file": "https://verstaerker-583.github.io/obs/gp/mmLogo.png"
 			}
 		},
 		{
@@ -588,7 +588,7 @@
 						"locked": true,
 						"name": "Logo Organization",
 						"pos": {
-							"x": 10,
+							"x": -15,
 							"y": 710
 						}
 					},

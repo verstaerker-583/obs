@@ -1,3 +1,4 @@
+s/gp\/gpLogo.svg/tz\/spLogo.svg/
 s/gp\/html/tz\/html/
 s/"name": "gp"/"name": "tz"/
 
