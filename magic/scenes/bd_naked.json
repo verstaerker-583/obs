@@ -1,5 +1,5 @@
 {
-	"name": "bd",
+	"name": "bd_naked",
 	"current_scene": "Start",
 	"preview_locked": true,
 	"AuxAudioDevice1": {
@@ -15,11 +15,7 @@
 			},
 			{
 				"id": "compressor_filter",
-				"name": "Compressor",
-				"settings": {
-					"attack_time": 1,
-					"output_gain": 1
-				}
+				"name": "Compressor"
 			},
 			{
 				"id": "limiter_filter",
@@ -30,19 +26,20 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
+				},
+				{
 					"key": "OBS_KEY_1"
 				},
 				{
 					"key": "OBS_KEY_4"
 				},
 				{
-					"key": "OBS_KEY_M"
-				},
-				{
 					"key": "OBS_KEY_O"
 				}
 			],
 			"libobs.unmute": [
+				{
+				},
 				{
 					"key": "OBS_KEY_2"
 				},
@@ -51,9 +48,6 @@
 				},
 				{
 					"key": "OBS_KEY_I"
-				},
-				{
-					"key": "OBS_KEY_M"
 				}
 			]
 		},
@@ -63,7 +57,8 @@
 		"name": "Microphone",
 		"private_settings": {
 			"volume_locked": true
-		}
+		},
+		"volume": 2
 	},
 	"AuxAudioDevice2": {
 		"filters": [
@@ -86,13 +81,12 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
+				},
+				{
 					"key": "OBS_KEY_1"
 				},
 				{
 					"key": "OBS_KEY_4"
-				},
-				{
-					"key": "OBS_KEY_D"
 				},
 				{
 					"key": "OBS_KEY_O"
@@ -100,13 +94,12 @@
 			],
 			"libobs.unmute": [
 				{
+				},
+				{
 					"key": "OBS_KEY_2"
 				},
 				{
 					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_D"
 				}
 			]
 		},
@@ -125,22 +118,22 @@
 		"balance": 0.75,
 		"filters": [
 			{
+				"enabled": false,
 				"id": "noise_suppress_filter",
 				"name": "Noise Suppression"
 			},
 			{
+				"enabled": false,
 				"id": "noise_gate_filter",
 				"name": "Noise Gate"
 			},
 			{
+				"enabled": false,
 				"id": "compressor_filter",
-				"name": "Compressor",
-				"settings": {
-					"attack_time": 1,
-					"output_gain": 1
-				}
+				"name": "Compressor"
 			},
 			{
+				"enabled": false,
 				"id": "compressor_filter",
 				"name": "Ducking",
 				"settings": {
@@ -160,6 +153,8 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
+				},
+				{
 					"key": "OBS_KEY_1"
 				},
 				{
@@ -167,12 +162,11 @@
 				},
 				{
 					"key": "OBS_KEY_O"
-				},
-				{
-					"key": "OBS_KEY_S"
 				}
 			],
 			"libobs.unmute": [
+				{
+				},
 				{
 					"key": "OBS_KEY_2"
 				},
@@ -181,9 +175,6 @@
 				},
 				{
 					"key": "OBS_KEY_I"
-				},
-				{
-					"key": "OBS_KEY_S"
 				}
 			]
 		},
@@ -276,10 +267,12 @@
 					"name": "Chroma Key"
 				},
 				{
+					"enabled": false,
 					"id": "sharpness_filter",
 					"name": "Sharpen"
 				},
 				{
+					"enabled": false,
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
@@ -315,6 +308,10 @@
 		{
 			"filters": [
 				{
+					"id": "compressor_filter",
+					"name": "Compressor"
+				},
+				{
 					"id": "limiter_filter",
 					"name": "Limiter"
 				}
@@ -329,11 +326,16 @@
 			},
 			"settings": {
 				"close_when_inactive": true,
-				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
+				"input": "https://tinyurl.com/yyczgwlc",
+				"is_local_file": false
 			}
 		},
 		{
 			"filters": [
+				{
+					"id": "compressor_filter",
+					"name": "Compressor"
+				},
 				{
 					"id": "limiter_filter",
 					"name": "Limiter"
@@ -349,7 +351,8 @@
 			},
 			"settings": {
 				"close_when_inactive": true,
-				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
+				"input": "https://tinyurl.com/yyczgwlc",
+				"is_local_file": false
 			}
 		},
 		{

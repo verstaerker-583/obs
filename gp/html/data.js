@@ -1,11 +1,11 @@
 var start = {
-	theme: "#LIVE 🔴 aus 🇧🇷 Markus Mauthe - Naturfotograf & Umweltaktivist",
+	theme: "#LIVE 🔴 Markus Mauthe - Naturfotograf & Umweltaktivist",
 	message_neg: "Naturwunder Erde - Gleich geht's los!",
 	call2action: "👁 Sei jetzt LIVE dabei!"
 };
 var finish = {
-	theme: "#LIVE 🔴 aus 🇧🇷 Markus Mauthe - Naturfotograf & Umweltaktivist",
-	message_neg: "Adeus e Obrigado 💚!",
+	theme: "#LIVE 🔴 Markus Mauthe - Naturfotograf & Umweltaktivist",
+	message_neg: "Vielen Dank und auf Wiedersehen! 💚",
 	call2action: "👁 Sei auch beim nächsten Mal dabei!"
 };
 var donate = {

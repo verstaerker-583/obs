@@ -14,11 +14,7 @@
 			},
 			{
 				"id": "compressor_filter",
-				"name": "Compressor",
-				"settings": {
-					"attack_time": 1,
-					"output_gain": 1
-				}
+				"name": "Compressor"
 			},
 			{
 				"id": "limiter_filter",
@@ -29,19 +25,22 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
+					"key": "OBS_KEY_M"
+				},
+				{
 					"key": "OBS_KEY_1"
 				},
 				{
 					"key": "OBS_KEY_4"
 				},
 				{
-					"key": "OBS_KEY_M"
-				},
-				{
 					"key": "OBS_KEY_O"
 				}
 			],
 			"libobs.unmute": [
+				{
+					"key": "OBS_KEY_M"
+				},
 				{
 					"key": "OBS_KEY_2"
 				},
@@ -50,9 +49,6 @@
 				},
 				{
 					"key": "OBS_KEY_I"
-				},
-				{
-					"key": "OBS_KEY_M"
 				}
 			]
 		},
@@ -62,10 +58,15 @@
 		"name": "Microphone",
 		"private_settings": {
 			"volume_locked": true
-		}
+		},
+		"volume": 2
 	},
 	"AuxAudioDevice2": {
 		"filters": [
+			{
+				"id": "compressor_filter",
+				"name": "Compressor"
+			},
 			{
 				"id": "compressor_filter",
 				"name": "Ducking",
@@ -85,13 +86,13 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
+					"key": "OBS_KEY_D"
+				},
+				{
 					"key": "OBS_KEY_1"
 				},
 				{
 					"key": "OBS_KEY_4"
-				},
-				{
-					"key": "OBS_KEY_D"
 				},
 				{
 					"key": "OBS_KEY_O"
@@ -99,13 +100,13 @@
 			],
 			"libobs.unmute": [
 				{
+					"key": "OBS_KEY_D"
+				},
+				{
 					"key": "OBS_KEY_2"
 				},
 				{
 					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_D"
 				},
 				{
 					"key": "OBS_KEY_I"
@@ -135,11 +136,7 @@
 			},
 			{
 				"id": "compressor_filter",
-				"name": "Compressor",
-				"settings": {
-					"attack_time": 1,
-					"output_gain": 1
-				}
+				"name": "Compressor"
 			},
 			{
 				"id": "compressor_filter",
@@ -161,6 +158,9 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
+					"key": "OBS_KEY_S"
+				},
+				{
 					"key": "OBS_KEY_1"
 				},
 				{
@@ -168,20 +168,17 @@
 				},
 				{
 					"key": "OBS_KEY_O"
-				},
-				{
-					"key": "OBS_KEY_S"
 				}
 			],
 			"libobs.unmute": [
+				{
+					"key": "OBS_KEY_S"
+				},
 				{
 					"key": "OBS_KEY_2"
 				},
 				{
 					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_S"
 				}
 			]
 		},
@@ -304,6 +301,10 @@
 		{
 			"filters": [
 				{
+					"id": "compressor_filter",
+					"name": "Compressor"
+				},
+				{
 					"id": "limiter_filter",
 					"name": "Limiter"
 				}
@@ -318,12 +319,16 @@
 			},
 			"settings": {
 				"close_when_inactive": true,
-				"input": "https://images-assets.nasa.gov/video/Jack%20Kings%20Apollo%2011%20Launch%20Commentary/Jack%20Kings%20Apollo%2011%20Launch%20Commentary~orig.mp4",
+				"input": "https://tinyurl.com/yyczgwlc",
 				"is_local_file": false
 			}
 		},
 		{
 			"filters": [
+				{
+					"id": "compressor_filter",
+					"name": "Compressor"
+				},
 				{
 					"id": "limiter_filter",
 					"name": "Limiter"
@@ -502,7 +507,7 @@
 						"key": "OBS_KEY_2"
 					},
 					{
-						"key": "OBS_KEY_SLASH"
+						"key": "OBS_KEY_E"
 					}
 				],
 				"libobs.show_scene_item.?": [
@@ -533,7 +538,7 @@
 				],
 				"libobs.show_scene_item.Overlay Cam": [
 					{
-						"key": "OBS_KEY_SLASH"
+						"key": "OBS_KEY_E"
 					}
 				],
 				"libobs.show_scene_item.Logo Organization": [

@@ -80,10 +80,10 @@ function checkOBSStatus() {
 	if (window.obsstudio) {
 		window.obsstudio.getStatus(function (status) {
 			switch (true) {
-				case (status.recording):
 				/*
-				case (status.streaming):
+				case (status.recording):
 				*/
+				case (status.streaming):
 					document.getElementById("clock").style.fill = "white";
 					break;
 				default:

@@ -1,6 +1,5 @@
-s/FPSCommon.*$/FPSCommon=24 NTSC/
+s/^Name=.*$/Name=okYTlq/
 
 s/\[SimpleOutput\]/[SimpleOutput]\nABitrate=48/
 s/\[SimpleOutput\]/[SimpleOutput]\nVBitrate=500/
-
-s/^Name=.*$/Name=okYTlq/
+s/\[Video\]/[Video]\nFPSCommon=24 NTSC/

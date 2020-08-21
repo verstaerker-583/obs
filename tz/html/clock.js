@@ -1,1 +1,0 @@
-../../gp/html/clock.js

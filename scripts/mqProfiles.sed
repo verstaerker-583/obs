@@ -1,5 +1,4 @@
-s/FPSCommon.*$/FPSCommon=24 NTSC/
+s/^Name=.*$/Name=okYTmq/
 
 s/\[SimpleOutput\]/[SimpleOutput]\nABitrate=128/
-
-s/^Name=.*$/Name=okYTmq/
+s/\[Video\]/[Video]\nFPSCommon=24 NTSC/

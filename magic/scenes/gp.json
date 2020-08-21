@@ -1,5 +1,5 @@
 {
-	"name": "tz",
+	"name": "gp",
 	"current_scene": "Start",
 	"preview_locked": true,
 	"AuxAudioDevice1": {
@@ -14,11 +14,7 @@
 			},
 			{
 				"id": "compressor_filter",
-				"name": "Compressor",
-				"settings": {
-					"attack_time": 1,
-					"output_gain": 1
-				}
+				"name": "Compressor"
 			},
 			{
 				"id": "limiter_filter",
@@ -29,19 +25,22 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
+					"key": "OBS_KEY_M"
+				},
+				{
 					"key": "OBS_KEY_1"
 				},
 				{
 					"key": "OBS_KEY_4"
 				},
 				{
-					"key": "OBS_KEY_M"
-				},
-				{
 					"key": "OBS_KEY_O"
 				}
 			],
 			"libobs.unmute": [
+				{
+					"key": "OBS_KEY_M"
+				},
 				{
 					"key": "OBS_KEY_2"
 				},
@@ -50,9 +49,6 @@
 				},
 				{
 					"key": "OBS_KEY_I"
-				},
-				{
-					"key": "OBS_KEY_M"
 				}
 			]
 		},
@@ -62,10 +58,15 @@
 		"name": "Microphone",
 		"private_settings": {
 			"volume_locked": true
-		}
+		},
+		"volume": 2
 	},
 	"AuxAudioDevice2": {
 		"filters": [
+			{
+				"id": "compressor_filter",
+				"name": "Compressor"
+			},
 			{
 				"id": "compressor_filter",
 				"name": "Ducking",
@@ -85,13 +86,13 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
+					"key": "OBS_KEY_D"
+				},
+				{
 					"key": "OBS_KEY_1"
 				},
 				{
 					"key": "OBS_KEY_4"
-				},
-				{
-					"key": "OBS_KEY_D"
 				},
 				{
 					"key": "OBS_KEY_O"
@@ -99,13 +100,13 @@
 			],
 			"libobs.unmute": [
 				{
+					"key": "OBS_KEY_D"
+				},
+				{
 					"key": "OBS_KEY_2"
 				},
 				{
 					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_D"
 				},
 				{
 					"key": "OBS_KEY_I"
@@ -135,11 +136,7 @@
 			},
 			{
 				"id": "compressor_filter",
-				"name": "Compressor",
-				"settings": {
-					"attack_time": 1,
-					"output_gain": 1
-				}
+				"name": "Compressor"
 			},
 			{
 				"id": "compressor_filter",
@@ -161,6 +158,9 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
+					"key": "OBS_KEY_S"
+				},
+				{
 					"key": "OBS_KEY_1"
 				},
 				{
@@ -168,20 +168,17 @@
 				},
 				{
 					"key": "OBS_KEY_O"
-				},
-				{
-					"key": "OBS_KEY_S"
 				}
 			],
 			"libobs.unmute": [
+				{
+					"key": "OBS_KEY_S"
+				},
 				{
 					"key": "OBS_KEY_2"
 				},
 				{
 					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_S"
 				}
 			]
 		},
@@ -220,8 +217,8 @@
 			"id": "av_capture_input",
 			"name": "Internal",
 			"settings": {
-				"device": "CC27327P54QGDV4AV",
-				"device_name": "FaceTime HD Camera"
+				"device": "0x8020000005ac8514",
+				"device_name": "FaceTime HD-Kamera (integriert)"
 			}
 		},
 		{
@@ -247,8 +244,8 @@
 			"id": "av_capture_input",
 			"name": "External",
 			"settings": {
-				"device": "obs-virtual-cam-device",
-				"device_name": "OBS Virtual Camera"
+				"device": "0x543000043e9a4d",
+				"device_name": "LG UltraFine Display Camera"
 			}
 		},
 		{
@@ -288,7 +285,7 @@
 			"settings": {
 				"css": "",
 				"height": 90,
-				"url": "https://www.sharkproject.org/wp-content/uploads/2018/05/sp_logo.svg",
+				"url": "https://verstaerker-583.github.io/obs/gp/gpLogo.svg",
 				"width": 390
 			}
 		},
@@ -296,13 +293,17 @@
 			"id": "color_source",
 			"name": "Color Source",
 			"settings": {
-				"color": 4288256409,
+				"color": 4280204915,
 				"height": 720,
 				"width": 1280
 			}
 		},
 		{
 			"filters": [
+				{
+					"id": "compressor_filter",
+					"name": "Compressor"
+				},
 				{
 					"id": "limiter_filter",
 					"name": "Limiter"
@@ -318,12 +319,16 @@
 			},
 			"settings": {
 				"close_when_inactive": true,
-				"input": "https://images-assets.nasa.gov/video/Jack%20Kings%20Apollo%2011%20Launch%20Commentary/Jack%20Kings%20Apollo%2011%20Launch%20Commentary~orig.mp4",
+				"input": "https://tinyurl.com/yyczgwlc",
 				"is_local_file": false
 			}
 		},
 		{
 			"filters": [
+				{
+					"id": "compressor_filter",
+					"name": "Compressor"
+				},
 				{
 					"id": "limiter_filter",
 					"name": "Limiter"
@@ -346,7 +351,7 @@
 			"id": "image_source",
 			"name": "Logo Presenter",
 			"settings": {
-				"file": "https://verstaerker-583.github.io/obs/tz/ohLogo.png"
+				"file": "https://verstaerker-583.github.io/obs/gp/mmLogo.png"
 			}
 		},
 		{
@@ -382,8 +387,8 @@
 			"id": "text_ft2_source",
 			"name": "?",
 			"settings": {
-				"color1": 4288256409,
-				"color2": 4288698368,
+				"color1": 4281467135,
+				"color2": 4279828552,
 				"font": {
 					"face": "Helvetica Neue",
 					"flags": 1,
@@ -411,7 +416,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/tz/html/start.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/start.html",
 				"width": 1280
 			}
 		},
@@ -424,7 +429,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/tz/html/cam.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/cam.html",
 				"width": 1280
 			}
 		},
@@ -437,7 +442,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/tz/html/finish.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/finish.html",
 				"width": 1280
 			}
 		},
@@ -502,7 +507,7 @@
 						"key": "OBS_KEY_2"
 					},
 					{
-						"key": "OBS_KEY_SLASH"
+						"key": "OBS_KEY_E"
 					}
 				],
 				"libobs.show_scene_item.?": [
@@ -533,7 +538,7 @@
 				],
 				"libobs.show_scene_item.Overlay Cam": [
 					{
-						"key": "OBS_KEY_SLASH"
+						"key": "OBS_KEY_E"
 					}
 				],
 				"libobs.show_scene_item.Logo Organization": [
@@ -591,8 +596,8 @@
 						"locked": true,
 						"name": "Logo Organization",
 						"pos": {
-							"x": 10,
-							"y": 770
+							"x": -15,
+							"y": 710
 						}
 					},
 					{
