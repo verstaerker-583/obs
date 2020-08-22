@@ -381,7 +381,8 @@
 						"value": "/Library/Desktop Pictures"
 					}
 				],
-				"slide_mode": "mode_manual"
+				"slide_mode": "mode_manual",
+				"use_custom_size": "1280x720"
 			}
 		},
 		{
@@ -576,18 +577,8 @@
 						"rot": -5
 					},
 					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
 						"locked": true,
 						"name": "Intro",
-						"pos": {
-							"x": 640,
-							"y": 360
-						},
 						"private_settings": {
 							"color": "",
 							"color-preset": 7
@@ -657,18 +648,8 @@
 						"name": "Color Source"
 					},
 					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
 						"locked": true,
 						"name": "Slide Show",
-						"pos": {
-							"x": 640,
-							"y": 360
-						},
 						"private_settings": {
 							"color": "",
 							"color-preset": 7
@@ -730,18 +711,8 @@
 						"name": "Overlay Finish"
 					},
 					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
 						"locked": true,
 						"name": "Outro",
-						"pos": {
-							"x": 640,
-							"y": 360
-						},
 						"private_settings": {
 							"color": "",
 							"color-preset": 7

@@ -173,12 +173,6 @@
 			"libobs.unmute": [
 				{
 					"key": "OBS_KEY_S"
-				},
-				{
-					"key": "OBS_KEY_2"
-				},
-				{
-					"key": "OBS_KEY_3"
 				}
 			]
 		},
@@ -380,7 +374,8 @@
 						"value": "/Library/Desktop Pictures"
 					}
 				],
-				"slide_mode": "mode_manual"
+				"slide_mode": "mode_manual",
+				"use_custom_size": "1280x720"
 			}
 		},
 		{
@@ -491,9 +486,6 @@
 						"key": "OBS_KEY_2"
 					},
 					{
-						"key": "OBS_KEY_BACKSLASH"
-					},
-					{
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
@@ -529,9 +521,6 @@
 					}
 				],
 				"libobs.show_scene_item.screen": [
-					{
-						"key": "OBS_KEY_BACKSLASH"
-					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
@@ -641,18 +630,8 @@
 						"name": "Overlay Cam"
 					},
 					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
 						"locked": true,
 						"name": "Intro",
-						"pos": {
-							"x": 640,
-							"y": 360
-						},
 						"private_settings": {
 							"color": "",
 							"color-preset": 7
@@ -673,10 +652,10 @@
 				],
 				"libobs.hide_scene_item.NDI": [
 					{
-						"key": "OBS_KEY_3"
+						"key": "OBS_KEY_1"
 					},
 					{
-						"key": "OBS_KEY_BACKSLASH"
+						"key": "OBS_KEY_S"
 					}
 				],
 				"libobs.show_scene_item.cams": [
@@ -699,7 +678,7 @@
 				],
 				"libobs.show_scene_item.NDI": [
 					{
-						"key": "OBS_KEY_BACKSLASH"
+						"key": "OBS_KEY_S"
 					}
 				],
 				"libobs.show_scene_item.Slide Show": [
@@ -722,18 +701,8 @@
 						"name": "Color Source"
 					},
 					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
 						"locked": true,
 						"name": "Slide Show",
-						"pos": {
-							"x": 640,
-							"y": 360
-						},
 						"private_settings": {
 							"color": "",
 							"color-preset": 7
@@ -754,18 +723,8 @@
 						}
 					},
 					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
 						"locked": true,
-						"name": "NDI",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
+						"name": "NDI"
 					},
 					{
 						"locked": true,
@@ -809,18 +768,8 @@
 						"name": "Overlay Finish"
 					},
 					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
 						"locked": true,
 						"name": "Outro",
-						"pos": {
-							"x": 640,
-							"y": 360
-						},
 						"private_settings": {
 							"color": "",
 							"color-preset": 7
@@ -922,10 +871,10 @@
 			"hotkeys": {
 				"libobs.hide_scene_item.NDI": [
 					{
-						"key": "OBS_KEY_2"
+						"key": "OBS_KEY_1"
 					},
 					{
-						"key": "OBS_KEY_BACKSLASH"
+						"key": "OBS_KEY_S"
 					}
 				],
 				"libobs.show_scene_item.Color Source": [
@@ -940,7 +889,7 @@
 				],
 				"libobs.show_scene_item.NDI": [
 					{
-						"key": "OBS_KEY_BACKSLASH"
+						"key": "OBS_KEY_S"
 					}
 				],
 				"libobs.show_scene_item.Slide Show": [
@@ -961,18 +910,8 @@
 						"name": "Color Source"
 					},
 					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
 						"locked": true,
-						"name": "Slide Show",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
+						"name": "Slide Show"
 					},
 					{
 						"align": 0,
@@ -989,18 +928,8 @@
 						}
 					},
 					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
 						"locked": true,
-						"name": "NDI",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
+						"name": "NDI"
 					}
 				]
 			}

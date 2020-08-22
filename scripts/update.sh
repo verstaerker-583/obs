@@ -31,11 +31,10 @@ gsed -f toGp.sed ../profiles/YTmq/basic.ini	> ../magic/profiles/gpYTmq/basic.ini
 
 ln -sf	../gpYTlq/service.json		../magic/profiles/gpYTmq
 
-find ~/Documents/GitHub/obs -exec touch -t 197304291400 '{}' \;
+find ~/Documents/GitHub/obs -d -exec touch -ht 197304291400 '{}' \;
 
 chmod -R -w ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs/.git
 
-exit 0
 cd ..
 zip --symlinks -q -r ~/Desktop/`date "+%Y%m%d%H%M%S.zip"` magic
