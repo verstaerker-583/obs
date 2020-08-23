@@ -177,7 +177,7 @@
 			]
 		},
 		"id": "coreaudio_input_capture",
-		"mixers": 9,
+		"mixers": 17,
 		"monitoring_type": 2,
 		"name": "NDI Audio",
 		"private_settings": {
@@ -304,7 +304,7 @@
 				}
 			],
 			"id": "ffmpeg_source",
-			"mixers": 17,
+			"mixers": 9,
 			"monitoring_type": 2,
 			"name": "Intro",
 			"private_settings": {
@@ -329,7 +329,7 @@
 				}
 			],
 			"id": "ffmpeg_source",
-			"mixers": 17,
+			"mixers": 9,
 			"monitoring_type": 2,
 			"name": "Outro",
 			"private_settings": {
@@ -338,7 +338,8 @@
 			},
 			"settings": {
 				"close_when_inactive": true,
-				"local_file": "/System/Library/Compositions/Rollercoaster.mov"
+				"input": "https://tinyurl.com/yyczgwlc",
+				"is_local_file": false
 			}
 		},
 		{
@@ -630,8 +631,18 @@
 						"name": "Overlay Cam"
 					},
 					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
 						"locked": true,
 						"name": "Intro",
+						"pos": {
+							"x": 640,
+							"y": 360
+						},
 						"private_settings": {
 							"color": "",
 							"color-preset": 7
@@ -768,8 +779,18 @@
 						"name": "Overlay Finish"
 					},
 					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
 						"locked": true,
 						"name": "Outro",
+						"pos": {
+							"x": 640,
+							"y": 360
+						},
 						"private_settings": {
 							"color": "",
 							"color-preset": 7

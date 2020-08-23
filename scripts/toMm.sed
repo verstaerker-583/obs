@@ -7,4 +7,4 @@ s/CC27327P54QGDV4AV/0x8020000005ac8514/
 s/OBS Virtual Camera/LG UltraFine Display Camera/
 s/obs-virtual-cam-device/0x543000043e9a4d/
 
-s/ok/mm/
+s/Name=ok/Name=mm/
