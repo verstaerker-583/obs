@@ -16,8 +16,8 @@ rm -f ~/Library/Preferences/*audio*
 
 sudo rm -rf /Library/Preferences/Audio
 
-osascript -e "set volume output volume 25"
-osascript -e "set volume input volume 50"
+osascript -e "set volume output volume 35"
+osascript -e "set volume input volume 25"
 osascript -e "set volume alert volume 0"
 
 # Profiles

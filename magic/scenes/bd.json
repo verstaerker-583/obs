@@ -22,7 +22,6 @@
 				"name": "Limiter"
 			}
 		],
-		"flags": 2,
 		"hotkeys": {
 			"libobs.mute": [
 				{
@@ -59,8 +58,7 @@
 		"name": "Microphone",
 		"private_settings": {
 			"volume_locked": true
-		},
-		"volume": 2
+		}
 	},
 	"AuxAudioDevice2": {
 		"filters": [
@@ -153,7 +151,6 @@
 				"name": "Limiter"
 			}
 		],
-		"flags": 2,
 		"hotkeys": {
 			"libobs.mute": [
 				{
