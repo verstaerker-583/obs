@@ -25,8 +25,6 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-				},
-				{
 					"key": "OBS_KEY_1"
 				},
 				{
@@ -37,8 +35,6 @@
 				}
 			],
 			"libobs.unmute": [
-				{
-				},
 				{
 					"key": "OBS_KEY_2"
 				},
@@ -79,8 +75,6 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-				},
-				{
 					"key": "OBS_KEY_1"
 				},
 				{
@@ -91,8 +85,6 @@
 				}
 			],
 			"libobs.unmute": [
-				{
-				},
 				{
 					"key": "OBS_KEY_2"
 				},
@@ -150,8 +142,6 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-				},
-				{
 					"key": "OBS_KEY_1"
 				},
 				{
@@ -162,8 +152,6 @@
 				}
 			],
 			"libobs.unmute": [
-				{
-				},
 				{
 					"key": "OBS_KEY_2"
 				},
