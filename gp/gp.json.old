@@ -1,5 +1,5 @@
 {
-	"name": "sr",
+	"name": "gp",
 	"current_scene": "Start",
 	"preview_locked": true,
 	"AuxAudioDevice1": {
@@ -53,6 +53,7 @@
 			]
 		},
 		"id": "coreaudio_input_capture",
+		"mixers": 3,
 		"monitoring_type": 0,
 		"name": "Microphone",
 		"private_settings": {
@@ -112,6 +113,7 @@
 			]
 		},
 		"id": "coreaudio_input_capture",
+		"mixers": 5,
 		"monitoring_type": 2,
 		"name": "Desktop Audio",
 		"private_settings": {
@@ -174,6 +176,7 @@
 			]
 		},
 		"id": "coreaudio_input_capture",
+		"mixers": 17,
 		"monitoring_type": 2,
 		"name": "NDI Audio",
 		"private_settings": {
@@ -207,8 +210,8 @@
 			"id": "av_capture_input",
 			"name": "Internal",
 			"settings": {
-				"device": "0x8020000005ac8514",
-				"device_name": "FaceTime HD-Kamera (integriert)"
+				"device": "CC27327P54QGDV4AV",
+				"device_name": "FaceTime HD Camera"
 			}
 		},
 		{
@@ -234,8 +237,8 @@
 			"id": "av_capture_input",
 			"name": "External",
 			"settings": {
-				"device": "0x543000043e9a4d",
-				"device_name": "LG UltraFine Display Camera"
+				"device": "obs-virtual-cam-device",
+				"device_name": "OBS Virtual Camera"
 			}
 		},
 		{
@@ -275,7 +278,7 @@
 			"settings": {
 				"css": "",
 				"height": 90,
-				"url": "https://verstaerker-583.github.io/obs/sr/bdLogo.svg",
+				"url": "https://verstaerker-583.github.io/obs/gp/gpLogo.svg",
 				"width": 390
 			}
 		},
@@ -300,6 +303,7 @@
 				}
 			],
 			"id": "ffmpeg_source",
+			"mixers": 9,
 			"monitoring_type": 2,
 			"name": "Intro",
 			"private_settings": {
@@ -324,6 +328,7 @@
 				}
 			],
 			"id": "ffmpeg_source",
+			"mixers": 9,
 			"monitoring_type": 2,
 			"name": "Outro",
 			"private_settings": {
@@ -377,8 +382,8 @@
 			"id": "text_ft2_source",
 			"name": "?",
 			"settings": {
-				"color1": 4287868617,
-				"color2": 4282145104,
+				"color1": 4281467135,
+				"color2": 4279828552,
 				"font": {
 					"face": "Helvetica Neue",
 					"flags": 1,
@@ -406,7 +411,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/start.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/start.html",
 				"width": 1280
 			}
 		},
@@ -419,7 +424,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/cam.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/cam.html",
 				"width": 1280
 			}
 		},
@@ -432,7 +437,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/finish.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/finish.html",
 				"width": 1280
 			}
 		},
@@ -580,7 +585,7 @@
 						"locked": true,
 						"name": "Logo Organization",
 						"pos": {
-							"x": 10,
+							"x": -15,
 							"y": 710
 						}
 					},
