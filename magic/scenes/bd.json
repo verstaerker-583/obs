@@ -196,7 +196,6 @@
 		{
 			"filters": [
 				{
-					"enabled": false,
 					"id": "chroma_key_filter",
 					"name": "Chroma Key"
 				},
@@ -231,7 +230,6 @@
 		{
 			"filters": [
 				{
-					"enabled": false,
 					"id": "chroma_key_filter",
 					"name": "Chroma Key"
 				},

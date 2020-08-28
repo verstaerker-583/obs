@@ -6,7 +6,7 @@ OBS="Library/Application Support/obs-studio"
 # Prep
 killall obs > /dev/null 2>&1
 
-#sudo chown -R root `pwd` 
+sudo chown -R root `pwd` 
 sudo find `pwd` -exec touch -ht $DATE '{}' \;
 
 sudo rm -rf ~/"$OBS"
