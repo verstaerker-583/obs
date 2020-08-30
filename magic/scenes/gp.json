@@ -32,9 +32,6 @@
 				},
 				{
 					"key": "OBS_KEY_4"
-				},
-				{
-					"key": "OBS_KEY_O"
 				}
 			],
 			"libobs.unmute": [
@@ -92,9 +89,6 @@
 				},
 				{
 					"key": "OBS_KEY_4"
-				},
-				{
-					"key": "OBS_KEY_O"
 				}
 			],
 			"libobs.unmute": [
@@ -164,9 +158,6 @@
 				},
 				{
 					"key": "OBS_KEY_4"
-				},
-				{
-					"key": "OBS_KEY_O"
 				}
 			],
 			"libobs.unmute": [
@@ -268,15 +259,6 @@
 			}
 		},
 		{
-			"id": "color_source",
-			"name": "Color Source",
-			"settings": {
-				"color": 4280204915,
-				"height": 720,
-				"width": 1280
-			}
-		},
-		{
 			"filters": [
 				{
 					"id": "compressor_filter",
@@ -302,65 +284,10 @@
 			}
 		},
 		{
-			"filters": [
-				{
-					"id": "compressor_filter",
-					"name": "Compressor"
-				},
-				{
-					"id": "limiter_filter",
-					"name": "Limiter"
-				}
-			],
-			"id": "ffmpeg_source",
-			"mixers": 9,
-			"monitoring_type": 2,
-			"name": "Outro",
-			"private_settings": {
-				"mixer_hidden": true,
-				"volume_locked": true
-			},
-			"settings": {
-				"close_when_inactive": true,
-				"input": "https://tinyurl.com/yyczgwlc",
-				"is_local_file": false
-			}
-		},
-		{
 			"id": "image_source",
 			"name": "Logo Presenter",
 			"settings": {
 				"file": "https://verstaerker-583.github.io/obs/gp/mmLogo.png"
-			}
-		},
-		{
-			"hotkeys": {
-				"SlideShow.NextSlide": [
-					{
-						"key": "OBS_KEY_N"
-					}
-				],
-				"SlideShow.PreviousSlide": [
-					{
-						"key": "OBS_KEY_V"
-					}
-				],
-				"SlideShow.Restart": [
-					{
-						"key": "OBS_KEY_1"
-					}
-				]
-			},
-			"id": "slideshow",
-			"name": "Slide Show",
-			"settings": {
-				"files": [
-					{
-						"value": "/Library/Desktop Pictures"
-					}
-				],
-				"slide_mode": "mode_manual",
-				"use_custom_size": "1280x720"
 			}
 		},
 		{
@@ -661,11 +588,6 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.show_scene_item.Color Source": [
-					{
-						"key": "OBS_KEY_3"
-					}
-				],
 				"libobs.show_scene_item.FotoMagico": [
 					{
 						"key": "OBS_KEY_3"
@@ -674,11 +596,6 @@
 				"libobs.show_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_S"
-					}
-				],
-				"libobs.show_scene_item.Slide Show": [
-					{
-						"key": "OBS_KEY_3"
 					}
 				],
 				"OBSBasic.SelectScene": [
@@ -691,18 +608,6 @@
 			"name": "Screen",
 			"settings": {
 				"items": [
-					{
-						"locked": true,
-						"name": "Color Source"
-					},
-					{
-						"locked": true,
-						"name": "Slide Show",
-						"private_settings": {
-							"color": "",
-							"color-preset": 7
-						}
-					},
 					{
 						"align": 0,
 						"bounds": {
@@ -730,16 +635,6 @@
 		},
 		{
 			"hotkeys": {
-				"libobs.hide_scene_item.Outro": [
-					{
-						"key": "OBS_KEY_4"
-					}
-				],
-				"libobs.show_scene_item.Outro": [
-					{
-						"key": "OBS_KEY_O"
-					}
-				],
 				"libobs.show_scene_item.Overlay Finish": [
 					{
 						"key": "OBS_KEY_4"
@@ -748,9 +643,6 @@
 				"OBSBasic.SelectScene": [
 					{
 						"key": "OBS_KEY_4"
-					},
-					{
-						"key": "OBS_KEY_O"
 					}
 				]
 			},
@@ -761,24 +653,6 @@
 					{
 						"locked": true,
 						"name": "Overlay Finish"
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "Outro",
-						"pos": {
-							"x": 640,
-							"y": 360
-						},
-						"private_settings": {
-							"color": "",
-							"color-preset": 7
-						}
 					}
 				]
 			}
@@ -882,11 +756,6 @@
 						"key": "OBS_KEY_S"
 					}
 				],
-				"libobs.show_scene_item.Color Source": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
 				"libobs.show_scene_item.FotoMagico": [
 					{
 						"key": "OBS_KEY_2"
@@ -895,11 +764,6 @@
 				"libobs.show_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_S"
-					}
-				],
-				"libobs.show_scene_item.Slide Show": [
-					{
-						"key": "OBS_KEY_2"
 					}
 				]
 			},
@@ -910,14 +774,6 @@
 			},
 			"settings": {
 				"items": [
-					{
-						"locked": true,
-						"name": "Color Source"
-					},
-					{
-						"locked": true,
-						"name": "Slide Show"
-					},
 					{
 						"align": 0,
 						"bounds": {
@@ -931,10 +787,6 @@
 							"x": 640,
 							"y": 360
 						}
-					},
-					{
-						"locked": true,
-						"name": "NDI"
 					}
 				]
 			}

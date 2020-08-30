@@ -1,5 +1,5 @@
 {
-	"name": "sr",
+	"name": "gp",
 	"current_scene": "Start",
 	"preview_locked": true,
 	"AuxAudioDevice1": {
@@ -32,6 +32,9 @@
 				},
 				{
 					"key": "OBS_KEY_4"
+				},
+				{
+					"key": "OBS_KEY_O"
 				}
 			],
 			"libobs.unmute": [
@@ -89,6 +92,9 @@
 				},
 				{
 					"key": "OBS_KEY_4"
+				},
+				{
+					"key": "OBS_KEY_O"
 				}
 			],
 			"libobs.unmute": [
@@ -158,6 +164,9 @@
 				},
 				{
 					"key": "OBS_KEY_4"
+				},
+				{
+					"key": "OBS_KEY_O"
 				}
 			],
 			"libobs.unmute": [
@@ -196,8 +205,8 @@
 			"id": "av_capture_input",
 			"name": "Internal",
 			"settings": {
-				"device": "0x8020000005ac8514",
-				"device_name": "FaceTime HD-Kamera (integriert)"
+				"device": "CC27327P54QGDV4AV",
+				"device_name": "FaceTime HD Camera"
 			}
 		},
 		{
@@ -218,8 +227,8 @@
 			"id": "av_capture_input",
 			"name": "External",
 			"settings": {
-				"device": "0x543000043e9a4d",
-				"device_name": "LG UltraFine Display Camera"
+				"device": "obs-virtual-cam-device",
+				"device_name": "OBS Virtual Camera"
 			}
 		},
 		{
@@ -254,8 +263,17 @@
 			"settings": {
 				"css": "",
 				"height": 90,
-				"url": "https://verstaerker-583.github.io/obs/sr/bdLogo.svg",
+				"url": "https://verstaerker-583.github.io/obs/gp/gpLogo.svg",
 				"width": 390
+			}
+		},
+		{
+			"id": "color_source",
+			"name": "Color Source",
+			"settings": {
+				"color": 4280204915,
+				"height": 720,
+				"width": 1280
 			}
 		},
 		{
@@ -284,6 +302,31 @@
 			}
 		},
 		{
+			"filters": [
+				{
+					"id": "compressor_filter",
+					"name": "Compressor"
+				},
+				{
+					"id": "limiter_filter",
+					"name": "Limiter"
+				}
+			],
+			"id": "ffmpeg_source",
+			"mixers": 9,
+			"monitoring_type": 2,
+			"name": "Outro",
+			"private_settings": {
+				"mixer_hidden": true,
+				"volume_locked": true
+			},
+			"settings": {
+				"close_when_inactive": true,
+				"input": "https://tinyurl.com/yyczgwlc",
+				"is_local_file": false
+			}
+		},
+		{
 			"id": "image_source",
 			"name": "Logo Presenter",
 			"settings": {
@@ -291,11 +334,41 @@
 			}
 		},
 		{
+			"hotkeys": {
+				"SlideShow.NextSlide": [
+					{
+						"key": "OBS_KEY_N"
+					}
+				],
+				"SlideShow.PreviousSlide": [
+					{
+						"key": "OBS_KEY_V"
+					}
+				],
+				"SlideShow.Restart": [
+					{
+						"key": "OBS_KEY_1"
+					}
+				]
+			},
+			"id": "slideshow",
+			"name": "Slide Show",
+			"settings": {
+				"files": [
+					{
+						"value": "/Library/Desktop Pictures"
+					}
+				],
+				"slide_mode": "mode_manual",
+				"use_custom_size": "1280x720"
+			}
+		},
+		{
 			"id": "text_ft2_source",
 			"name": "?",
 			"settings": {
-				"color1": 4287868617,
-				"color2": 4282145104,
+				"color1": 4281467135,
+				"color2": 4279828552,
 				"font": {
 					"face": "Helvetica Neue",
 					"flags": 1,
@@ -323,7 +396,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/start.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/start.html",
 				"width": 1280
 			}
 		},
@@ -336,7 +409,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/cam.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/cam.html",
 				"width": 1280
 			}
 		},
@@ -349,7 +422,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/finish.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/finish.html",
 				"width": 1280
 			}
 		},
@@ -497,7 +570,7 @@
 						"locked": true,
 						"name": "Logo Organization",
 						"pos": {
-							"x": 10,
+							"x": -15,
 							"y": 710
 						}
 					},
@@ -588,6 +661,11 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
+				"libobs.show_scene_item.Color Source": [
+					{
+						"key": "OBS_KEY_3"
+					}
+				],
 				"libobs.show_scene_item.FotoMagico": [
 					{
 						"key": "OBS_KEY_3"
@@ -596,6 +674,11 @@
 				"libobs.show_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_S"
+					}
+				],
+				"libobs.show_scene_item.Slide Show": [
+					{
+						"key": "OBS_KEY_3"
 					}
 				],
 				"OBSBasic.SelectScene": [
@@ -608,6 +691,18 @@
 			"name": "Screen",
 			"settings": {
 				"items": [
+					{
+						"locked": true,
+						"name": "Color Source"
+					},
+					{
+						"locked": true,
+						"name": "Slide Show",
+						"private_settings": {
+							"color": "",
+							"color-preset": 7
+						}
+					},
 					{
 						"align": 0,
 						"bounds": {
@@ -635,6 +730,16 @@
 		},
 		{
 			"hotkeys": {
+				"libobs.hide_scene_item.Outro": [
+					{
+						"key": "OBS_KEY_4"
+					}
+				],
+				"libobs.show_scene_item.Outro": [
+					{
+						"key": "OBS_KEY_O"
+					}
+				],
 				"libobs.show_scene_item.Overlay Finish": [
 					{
 						"key": "OBS_KEY_4"
@@ -643,6 +748,9 @@
 				"OBSBasic.SelectScene": [
 					{
 						"key": "OBS_KEY_4"
+					},
+					{
+						"key": "OBS_KEY_O"
 					}
 				]
 			},
@@ -653,6 +761,24 @@
 					{
 						"locked": true,
 						"name": "Overlay Finish"
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "Outro",
+						"pos": {
+							"x": 640,
+							"y": 360
+						},
+						"private_settings": {
+							"color": "",
+							"color-preset": 7
+						}
 					}
 				]
 			}
@@ -756,6 +882,11 @@
 						"key": "OBS_KEY_S"
 					}
 				],
+				"libobs.show_scene_item.Color Source": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				],
 				"libobs.show_scene_item.FotoMagico": [
 					{
 						"key": "OBS_KEY_2"
@@ -764,6 +895,11 @@
 				"libobs.show_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_S"
+					}
+				],
+				"libobs.show_scene_item.Slide Show": [
+					{
+						"key": "OBS_KEY_2"
 					}
 				]
 			},
@@ -774,6 +910,14 @@
 			},
 			"settings": {
 				"items": [
+					{
+						"locked": true,
+						"name": "Color Source"
+					},
+					{
+						"locked": true,
+						"name": "Slide Show"
+					},
 					{
 						"align": 0,
 						"bounds": {
@@ -787,6 +931,10 @@
 							"x": 640,
 							"y": 360
 						}
+					},
+					{
+						"locked": true,
+						"name": "NDI"
 					}
 				]
 			}
