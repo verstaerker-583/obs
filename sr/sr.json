@@ -32,6 +32,9 @@
 				},
 				{
 					"key": "OBS_KEY_4"
+				},
+				{
+					"key": "OBS_KEY_O"
 				}
 			],
 			"libobs.unmute": [
@@ -46,6 +49,9 @@
 				},
 				{
 					"key": "OBS_KEY_I"
+				},
+				{
+					"key": "OBS_KEY_K"
 				}
 			]
 		},
@@ -89,6 +95,9 @@
 				},
 				{
 					"key": "OBS_KEY_4"
+				},
+				{
+					"key": "OBS_KEY_O"
 				}
 			],
 			"libobs.unmute": [
@@ -151,18 +160,24 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-					"key": "OBS_KEY_S"
-				},
-				{
 					"key": "OBS_KEY_1"
 				},
 				{
+					"key": "OBS_KEY_2"
+				},
+				{
+					"key": "OBS_KEY_3"
+				},
+				{
 					"key": "OBS_KEY_4"
+				},
+				{
+					"key": "OBS_KEY_O"
 				}
 			],
 			"libobs.unmute": [
 				{
-					"key": "OBS_KEY_S"
+					"key": "OBS_KEY_K"
 				}
 			]
 		},
@@ -284,6 +299,31 @@
 			}
 		},
 		{
+			"filters": [
+				{
+					"id": "compressor_filter",
+					"name": "Compressor"
+				},
+				{
+					"id": "limiter_filter",
+					"name": "Limiter"
+				}
+			],
+			"id": "ffmpeg_source",
+			"mixers": 9,
+			"monitoring_type": 2,
+			"name": "Outro",
+			"private_settings": {
+				"mixer_hidden": true,
+				"volume_locked": true
+			},
+			"settings": {
+				"close_when_inactive": true,
+				"input": "https://tinyurl.com/yyczgwlc",
+				"is_local_file": false
+			}
+		},
+		{
 			"id": "image_source",
 			"name": "Logo Presenter",
 			"settings": {
@@ -385,6 +425,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_K"
+					},
+					{
 						"key": "OBS_KEY_MINUS"
 					}
 				],
@@ -404,6 +447,9 @@
 				"libobs.hide_scene_item.Intro": [
 					{
 						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_K"
 					}
 				],
 				"libobs.hide_scene_item.Overlay Cam": [
@@ -412,6 +458,9 @@
 					},
 					{
 						"key": "OBS_KEY_E"
+					},
+					{
+						"key": "OBS_KEY_K"
 					}
 				],
 				"libobs.show_scene_item.?": [
@@ -430,11 +479,17 @@
 					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					},
+					{
+						"key": "OBS_KEY_K"
 					}
 				],
 				"libobs.show_scene_item.screen": [
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
+					},
+					{
+						"key": "OBS_KEY_K"
 					}
 				],
 				"libobs.show_scene_item.Overlay Cam": [
@@ -463,6 +518,9 @@
 					},
 					{
 						"key": "OBS_KEY_I"
+					},
+					{
+						"key": "OBS_KEY_K"
 					}
 				]
 			},
@@ -572,14 +630,6 @@
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
-				"libobs.hide_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_1"
-					},
-					{
-						"key": "OBS_KEY_S"
-					}
-				],
 				"libobs.show_scene_item.cams": [
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
@@ -591,11 +641,6 @@
 				"libobs.show_scene_item.FotoMagico": [
 					{
 						"key": "OBS_KEY_3"
-					}
-				],
-				"libobs.show_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_S"
 					}
 				],
 				"OBSBasic.SelectScene": [
@@ -624,10 +669,6 @@
 					},
 					{
 						"locked": true,
-						"name": "NDI"
-					},
-					{
-						"locked": true,
 						"name": "cams"
 					}
 				]
@@ -635,6 +676,16 @@
 		},
 		{
 			"hotkeys": {
+				"libobs.hide_scene_item.Outro": [
+					{
+						"key": "OBS_KEY_4"
+					}
+				],
+				"libobs.show_scene_item.Outro": [
+					{
+						"key": "OBS_KEY_O"
+					}
+				],
 				"libobs.show_scene_item.Overlay Finish": [
 					{
 						"key": "OBS_KEY_4"
@@ -643,6 +694,9 @@
 				"OBSBasic.SelectScene": [
 					{
 						"key": "OBS_KEY_4"
+					},
+					{
+						"key": "OBS_KEY_O"
 					}
 				]
 			},
@@ -653,6 +707,24 @@
 					{
 						"locked": true,
 						"name": "Overlay Finish"
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "Outro",
+						"pos": {
+							"x": 640,
+							"y": 360
+						},
+						"private_settings": {
+							"color": "",
+							"color-preset": 7
+						}
 					}
 				]
 			}
@@ -750,10 +822,7 @@
 			"hotkeys": {
 				"libobs.hide_scene_item.NDI": [
 					{
-						"key": "OBS_KEY_1"
-					},
-					{
-						"key": "OBS_KEY_S"
+						"key": "OBS_KEY_2"
 					}
 				],
 				"libobs.show_scene_item.FotoMagico": [
@@ -763,7 +832,7 @@
 				],
 				"libobs.show_scene_item.NDI": [
 					{
-						"key": "OBS_KEY_S"
+						"key": "OBS_KEY_K"
 					}
 				]
 			},
@@ -787,6 +856,10 @@
 							"x": 640,
 							"y": 360
 						}
+					},
+					{
+						"locked": true,
+						"name": "NDI"
 					}
 				]
 			}
