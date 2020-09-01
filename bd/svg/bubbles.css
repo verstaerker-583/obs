@@ -32,6 +32,10 @@ feFlood {
 	transform: translate(25%, 55%)
 }
 
+.MarkusSolo {
+	transform: translate(50%, 50%)
+}
+
 .background {
 	fill: #3c9;
 	height: 100%;
@@ -85,7 +89,8 @@ circle.Markus {
 }
 
 circle.MarkusCams,
-circle.MarkusBackground {
+circle.MarkusBackground,
+circle.MarkusSolo {
 	fill: url(#MarkusBackground)
 }
 
