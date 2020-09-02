@@ -32,11 +32,6 @@ feFlood {
 	transform: translate(25%, 55%)
 }
 
-.LutzSolo,
-.MarkusSolo {
-	transform: translate(50%, 50%)
-}
-
 .background {
 	fill: #3c9;
 	height: 100%;
@@ -77,8 +72,7 @@ circle.Lutz {
 }
 
 circle.LutzCams,
-circle.LutzBackground,
-circle.LutzSolo {
+circle.LutzBackground {
 	fill: url(#LutzBackground)
 }
 
@@ -91,8 +85,7 @@ circle.Markus {
 }
 
 circle.MarkusCams,
-circle.MarkusBackground,
-circle.MarkusSolo {
+circle.MarkusBackground {
 	fill: url(#MarkusBackground)
 }
 
