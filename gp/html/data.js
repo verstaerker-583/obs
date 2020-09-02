@@ -16,7 +16,8 @@ var donate = {
 var pics = {
 	channelIcon: "https://yt3.ggpht.com/a/AATXAJz1rf8F_1ZMrY7BkibAF0CFrkj4qja9n7fTqgrz=s800-c-k-c0xffffffff-no-rj-mo",
 	clockLogo: "../gpLogo.svg",
-	organizationLogo: "../gpLogoNeg.svg",
+	organizationLogo: "../gpLogo.svg",
+	organizationLogoNeg: "../gpLogoNeg.svg",
 	presenterLogo: "../../gp/mmLogo.png",
 	videoThumb: "https://www.markus-mauthe.de/site/assets/files/1001/homepage_045.jpg"
 };

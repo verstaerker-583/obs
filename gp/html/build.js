@@ -7,6 +7,7 @@ function build() {
 	PageName = PageName.substring(0, PageName.lastIndexOf("."));
 	switch (PageName) {
 		case "start":
+			pics.organizationLogo = "";
 			pics.videoThumb = "";
 			buildBanner(start);
 			loadClock();
@@ -16,7 +17,7 @@ function build() {
 		case "cam":
 			pics.clockLogo = "";
 			pics.channelIcon = "";
-			pics.organizationLogo = "../gpLogo.svg";
+			pics.organizationLogoNeg = "";
 			pics.videoThumb = "";
 			document.body.style.backgroundColor = "transparent";
 			document.body.style.backgroundImage = "none";
@@ -30,6 +31,7 @@ function build() {
 			call2action.classList.add("heartbeat");
 			break;
 		default:
+			pics.organizationLogo = "";
 			buildBanner(finish);
 			loadClock();
 			loadPics();
@@ -86,7 +88,7 @@ function position() {
 	var cssObj = getComputedStyle(elmnt);
 	var x0 = parseInt(cssObj.left);
 	var y0 = parseInt(cssObj.top);
-	elmnt = document.getElementById("organizationLogo");
+	elmnt = document.getElementById("organizationLogoNeg");
 	cssObj = getComputedStyle(elmnt);
 	var x = parseInt(elmnt.offsetWidth) / 2 + parseInt(cssObj.left) + 2;
 	elmnt = document.getElementById("channelIcon");

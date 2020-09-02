@@ -1,4 +1,10 @@
 @import "../../gp/html/stylesheet.css";
+
+@font-face {
+	font-family: Sunbeat;
+	src: url(../../bd/svg/sunbeat.otf)
+}
+
 .call2action {
 	background: linear-gradient(to bottom, #c9ae93, #50593c);
 }

@@ -18,6 +18,7 @@ var pics = {
 	clockLogo: "https://sofareisen.org/images/logo_schrift.png",
 	hostLogo: "https://sofareisen.org/images/sofareisen_logo_all.png",
 	organizationLogo: "../bdLogo.svg",
+	organizationLogoNeg: "../bdLogo.svg",
 	presenterLogo: "../../gp/mmLogo.png",
 	videoThumb: "https://www.globalsocial-network.org/wp-content/uploads/logo_GlobalSocial.png"
 };

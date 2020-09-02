@@ -75,7 +75,8 @@
 	top: 2px;
 }
 
-#organizationLogo {
+#organizationLogo,
+#organizationLogoNeg {
 	bottom: 10px;
 	height: auto;
 	left: 10px;
