@@ -32,6 +32,7 @@ feFlood {
 	transform: translate(25%, 55%)
 }
 
+.LutzSolo,
 .MarkusSolo {
 	transform: translate(50%, 50%)
 }
@@ -52,7 +53,7 @@ feFlood {
 	dominant-baseline: central;
 	filter: url(#flooder);
 	font-family: Sunbeat;
-	font-size: 64px
+	font-size: 62px
 }
 
 .names {
@@ -76,7 +77,8 @@ circle.Lutz {
 }
 
 circle.LutzCams,
-circle.LutzBackground {
+circle.LutzBackground,
+circle.LutzSolo {
 	fill: url(#LutzBackground)
 }
 
