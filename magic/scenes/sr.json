@@ -261,16 +261,12 @@
 			}
 		},
 		{
-			"id": "browser_source",
-			"name": "Logo Organization",
-			"private_settings": {
-				"mixer_hidden": true
-			},
+			"id": "color_source",
+			"name": "Color Source",
 			"settings": {
-				"css": "",
-				"height": 90,
-				"url": "https://verstaerker-583.github.io/obs/sr/bdLogo.svg",
-				"width": 390
+				"color": 4280204915,
+				"height": 720,
+				"width": 1280
 			}
 		},
 		{
@@ -324,10 +320,33 @@
 			}
 		},
 		{
-			"id": "image_source",
-			"name": "Logo Presenter",
+			"hotkeys": {
+				"SlideShow.NextSlide": [
+					{
+						"key": "OBS_KEY_N"
+					}
+				],
+				"SlideShow.PreviousSlide": [
+					{
+						"key": "OBS_KEY_V"
+					}
+				],
+				"SlideShow.Restart": [
+					{
+						"key": "OBS_KEY_1"
+					}
+				]
+			},
+			"id": "slideshow",
+			"name": "Slide Show",
 			"settings": {
-				"file": "https://verstaerker-583.github.io/obs/gp/mmLogo.png"
+				"files": [
+					{
+						"value": "/Library/Desktop Pictures"
+					}
+				],
+				"slide_mode": "mode_manual",
+				"use_custom_size": "1280x720"
 			}
 		},
 		{
@@ -377,6 +396,19 @@
 				"css": "",
 				"height": 720,
 				"url": "https://verstaerker-583.github.io/obs/sr/html/cam.html",
+				"width": 1280
+			}
+		},
+		{
+			"id": "browser_source",
+			"name": "Overlay Donate",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "",
+				"height": 720,
+				"url": "https://verstaerker-583.github.io/obs/sr/html/donate.html",
 				"width": 1280
 			}
 		},
@@ -452,7 +484,7 @@
 						"key": "OBS_KEY_K"
 					}
 				],
-				"libobs.hide_scene_item.Overlay Cam": [
+				"libobs.hide_scene_item.Overlay Donate": [
 					{
 						"key": "OBS_KEY_2"
 					},
@@ -494,17 +526,12 @@
 				],
 				"libobs.show_scene_item.Overlay Cam": [
 					{
+						"key": "OBS_KEY_2"
+					}
+				],
+				"libobs.show_scene_item.Overlay Donate": [
+					{
 						"key": "OBS_KEY_E"
-					}
-				],
-				"libobs.show_scene_item.Logo Organization": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
-				"libobs.show_scene_item.Logo Presenter": [
-					{
-						"key": "OBS_KEY_2"
 					}
 				],
 				"libobs.show_scene_item.Intro": [
@@ -551,26 +578,8 @@
 						}
 					},
 					{
-						"align": 9,
 						"locked": true,
-						"name": "Logo Organization",
-						"pos": {
-							"x": 10,
-							"y": 710
-						}
-					},
-					{
-						"align": 6,
-						"bounds": {
-							"x": 135,
-							"y": 135
-						},
-						"bounds_type": 6,
-						"locked": true,
-						"name": "Logo Presenter",
-						"pos": {
-							"x": 1280
-						}
+						"name": "Overlay Cam"
 					},
 					{
 						"align": 0,
@@ -597,7 +606,7 @@
 					},
 					{
 						"locked": true,
-						"name": "Overlay Cam"
+						"name": "Overlay Donate"
 					},
 					{
 						"align": 0,
@@ -638,7 +647,17 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
+				"libobs.show_scene_item.Color Source": [
+					{
+						"key": "OBS_KEY_3"
+					}
+				],
 				"libobs.show_scene_item.FotoMagico": [
+					{
+						"key": "OBS_KEY_3"
+					}
+				],
+				"libobs.show_scene_item.Slide Show": [
 					{
 						"key": "OBS_KEY_3"
 					}
@@ -653,6 +672,18 @@
 			"name": "Screen",
 			"settings": {
 				"items": [
+					{
+						"locked": true,
+						"name": "Color Source"
+					},
+					{
+						"locked": true,
+						"name": "Slide Show",
+						"private_settings": {
+							"color": "",
+							"color-preset": 7
+						}
+					},
 					{
 						"align": 0,
 						"bounds": {
@@ -825,6 +856,11 @@
 						"key": "OBS_KEY_2"
 					}
 				],
+				"libobs.show_scene_item.Color Source": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				],
 				"libobs.show_scene_item.FotoMagico": [
 					{
 						"key": "OBS_KEY_2"
@@ -833,6 +869,11 @@
 				"libobs.show_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_K"
+					}
+				],
+				"libobs.show_scene_item.Slide Show": [
+					{
+						"key": "OBS_KEY_2"
 					}
 				]
 			},
@@ -843,6 +884,14 @@
 			},
 			"settings": {
 				"items": [
+					{
+						"locked": true,
+						"name": "Color Source"
+					},
+					{
+						"locked": true,
+						"name": "Slide Show"
+					},
 					{
 						"align": 0,
 						"bounds": {
