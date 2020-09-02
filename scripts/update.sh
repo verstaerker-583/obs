@@ -4,6 +4,7 @@ sudo chown -R olaf ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs
 
 gsed -f gpToSr.sed ../gp/gp.json > ../sr/sr.json
+gsed -f gpToBd.sed ../gp/gp.json > ../bd/bd_solo.json
 gsed -f bd_naked.sed ../bd/bd.json > ../bd/bd_naked.json
 
 mkdir -p ../profiles/YTlq ../profiles/YTmq ../profiles/YTsq

@@ -14,6 +14,15 @@ function build() {
 			position();
 			break;
 		case "cam":
+			pics.clockLogo = "";
+			pics.channelIcon = "";
+			pics.organizationLogo = "../gpLogo.svg";
+			pics.videoThumb = "";
+			document.body.style.backgroundColor = "transparent";
+			document.body.style.backgroundImage = "none";
+			loadPics();
+			break;
+		case "donate":
 			document.body.style.backgroundColor = "transparent";
 			document.body.style.backgroundImage = "none";
 			buildArrows();
