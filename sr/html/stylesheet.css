@@ -28,8 +28,8 @@
 }
 
 body {
+	background: #edc9af;
 	background-image: url("https://markus-mauthe.de/site/assets/files/1/dsc6707.jpg");
 	background-size: cover;
-	background: #edc9af;
 	font-family: Sunbeat;
 }
