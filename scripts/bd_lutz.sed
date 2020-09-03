@@ -21,3 +21,9 @@ s/"name": "bd_solo"/"name": "bd_lutz"/
 # video
 /"device"/d
 /"device_name"/d
+
+# slideshow
+/"files":/,/],/d
+
+# ffmpeg_source
+/"input"/,+1d
