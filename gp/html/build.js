@@ -15,8 +15,8 @@ function build() {
 			position();
 			break;
 		case "cam":
-			pics.clockLogo = "";
 			pics.channelIcon = "";
+			pics.clockLogo = "";
 			pics.organizationLogoNeg = "";
 			pics.videoThumb = "";
 			document.body.style.backgroundColor = "transparent";
@@ -36,8 +36,8 @@ function build() {
 			loadClock();
 			loadPics();
 			position();
-			clock.classList.add("heartbeat");
 			channelIcon.classList.add("heartbeat");
+			clock.classList.add("heartbeat");
 	}
 }
 
