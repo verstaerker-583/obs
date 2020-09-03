@@ -196,6 +196,7 @@
 		{
 			"filters": [
 				{
+					"enabled": true,
 					"id": "chroma_key_filter",
 					"name": "Chroma Key"
 				},
@@ -230,6 +231,7 @@
 		{
 			"filters": [
 				{
+					"enabled": true,
 					"id": "chroma_key_filter",
 					"name": "Chroma Key"
 				},
@@ -326,9 +328,6 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"close_when_inactive": true,
-				"input": "https://tinyurl.com/yyczgwlc",
-				"is_local_file": false
 			}
 		},
 		{
@@ -351,9 +350,6 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"close_when_inactive": true,
-				"input": "https://tinyurl.com/yyczgwlc",
-				"is_local_file": false
 			}
 		},
 		{
@@ -377,11 +373,6 @@
 			"id": "slideshow",
 			"name": "Slide Show",
 			"settings": {
-				"files": [
-					{
-						"value": "/Library/Desktop Pictures"
-					}
-				],
 				"slide_mode": "mode_manual",
 				"use_custom_size": "1280x720"
 			}

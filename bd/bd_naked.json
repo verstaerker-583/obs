@@ -178,6 +178,7 @@
 		{
 			"filters": [
 				{
+					"enabled": false,
 					"id": "chroma_key_filter",
 					"name": "Chroma Key"
 				},
@@ -212,6 +213,7 @@
 		{
 			"filters": [
 				{
+					"enabled": false,
 					"id": "chroma_key_filter",
 					"name": "Chroma Key"
 				},
@@ -308,7 +310,6 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"close_when_inactive": true,
 				"input": "https://tinyurl.com/yyczgwlc",
 				"is_local_file": false
 			}
@@ -333,7 +334,6 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"close_when_inactive": true,
 				"input": "https://tinyurl.com/yyczgwlc",
 				"is_local_file": false
 			}

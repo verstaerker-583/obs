@@ -1,10 +1,15 @@
 {
-	"name": "ap",
-	"current_scene": "Screen",
+	"name": "nk",
+	"current_scene": "Cam",
 	"preview_locked": true,
 	"sources": [
 		{
 			"filters": [
+				{
+					"enabled": false,
+					"id": "chroma_key_filter",
+					"name": "Chroma Key"
+				},
 				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
@@ -28,6 +33,11 @@
 		{
 			"filters": [
 				{
+					"enabled": false,
+					"id": "chroma_key_filter",
+					"name": "Chroma Key"
+				},
+				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
 				},
@@ -48,35 +58,7 @@
 			}
 		},
 		{
-			"id": "browser_source",
-			"name": "Logo Organization",
-			"private_settings": {
-				"mixer_hidden": true
-			},
-			"settings": {
-				"css": "",
-				"height": 135,
-				"url": "https://www.amap-brazil.org/site/templates/img/amap.svg",
-				"width": 135
-			}
-		},
-		{
-			"id": "color_source",
-			"name": "Color Source",
-			"settings": {
-				"color": 4291951359,
-				"height": 720,
-				"width": 1280
-			}
-		},
-		{
-			"id": "image_source",
-			"name": "Logo Presenter",
-			"settings": {
-				"file": "https://verstaerker-583.github.io/obs/gp/mmLogo.png"
-			}
-		},
-		{
+			"name": "Slide Show",
 			"hotkeys": {
 				"SlideShow.NextSlide": [
 					{
@@ -95,20 +77,14 @@
 				]
 			},
 			"id": "slideshow",
-			"name": "Slide Show",
 			"settings": {
-				"files": [
-					{
-						"value": "/Library/Desktop Pictures"
-					}
-				],
 				"slide_mode": "mode_manual",
 				"use_custom_size": "1280x720"
 			}
 		},
 		{
-			"id": "window_capture",
 			"name": "FotoMagico",
+			"id": "window_capture",
 			"settings": {
 				"owner_name": "FotoMagico 5",
 				"window_name": ""
@@ -140,26 +116,22 @@
 					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					},
+					{
 					}
 				],
 				"libobs.show_scene_item.screen": [
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
-					}
-				],
-				"libobs.show_scene_item.Logo Organization": [
+					},
 					{
-						"key": "OBS_KEY_2"
-					}
-				],
-				"libobs.show_scene_item.Logo Presenter": [
-					{
-						"key": "OBS_KEY_2"
 					}
 				],
 				"OBSBasic.SelectScene": [
 					{
 						"key": "OBS_KEY_2"
+					},
+					{
 					}
 				]
 			},
@@ -190,26 +162,8 @@
 						}
 					},
 					{
-						"align": 9,
 						"locked": true,
-						"name": "Logo Organization",
-						"pos": {
-							"x": 10,
-							"y": 710
-						}
-					},
-					{
-						"align": 6,
-						"bounds": {
-							"x": 135,
-							"y": 135
-						},
-						"bounds_type": 6,
-						"locked": true,
-						"name": "Logo Presenter",
-						"pos": {
-							"x": 1280
-						}
+						"name": "Overlay Cam"
 					},
 					{
 						"align": 0,
@@ -224,6 +178,8 @@
 							"x": 250,
 							"y": 380
 						}
+					},
+					{
 					}
 				]
 			}
@@ -244,11 +200,6 @@
 					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					}
-				],
-				"libobs.show_scene_item.Color Source": [
-					{
-						"key": "OBS_KEY_3"
 					}
 				],
 				"libobs.show_scene_item.FotoMagico": [
@@ -272,19 +223,15 @@
 			"settings": {
 				"items": [
 					{
-						"locked": true,
-						"name": "Color Source"
-					},
-					{
-						"locked": true,
 						"name": "Slide Show",
+						"locked": true,
 						"private_settings": {
 							"color": "",
 							"color-preset": 7
-						},
-						"visible": true
+						}
 					},
 					{
+						"name": "FotoMagico",
 						"align": 0,
 						"bounds": {
 							"x": 1280,
@@ -292,7 +239,6 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "FotoMagico",
 						"pos": {
 							"x": 640,
 							"y": 360
@@ -342,7 +288,8 @@
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
-				]
+				],
+				"OBSBasic.SelectScene": []
 			},
 			"id": "scene",
 			"name": "cams",
@@ -396,11 +343,6 @@
 				}
 			],
 			"hotkeys": {
-				"libobs.show_scene_item.Color Source": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
 				"libobs.show_scene_item.FotoMagico": [
 					{
 						"key": "OBS_KEY_2"
@@ -410,7 +352,8 @@
 					{
 						"key": "OBS_KEY_2"
 					}
-				]
+				],
+				"OBSBasic.SelectScene": []
 			},
 			"id": "scene",
 			"name": "screen",
@@ -420,14 +363,11 @@
 			"settings": {
 				"items": [
 					{
-						"locked": true,
-						"name": "Color Source"
+						"name": "Slide Show",
+						"locked": true
 					},
 					{
-						"locked": true,
-						"name": "Slide Show"
-					},
-					{
+						"name": "FotoMagico",
 						"align": 0,
 						"bounds": {
 							"x": 1280,
@@ -435,11 +375,12 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "FotoMagico",
 						"pos": {
 							"x": 640,
 							"y": 360
 						}
+					},
+					{
 					}
 				]
 			}
