@@ -6,7 +6,7 @@ var start = {
 var finish = {
 	theme: "#LIVE 🔴 Markus Mauthe - Naturfotograf & Umweltaktivist",
 	message_neg: "Vielen Dank und auf Wiedersehen! 💚",
-	call2action: "👁 Sei am 30.09. wieder live dabei!"
+	call2action: "👁 Sei auch am 30.09. wieder live dabei!"
 };
 var donate = {
 	theme: "💚 Schon kleine Spendenbeträge helfen! 💚",
