@@ -1,6 +1,6 @@
 body {
 	background-color: transparent !important;
-	color: #73be1e;
+	color: #73be1e !important;
 	overflow: hidden;
 }
 
@@ -34,7 +34,7 @@ yt-live-chat-author-chip #author-name {
 
 yt-live-chat-renderer * {
 	font-family: "Helvetica Neue";
-	font-size: 24px !important;
+	font-size: 20px !important;
 }
 
 yt-live-chat-text-message-renderer #content,
