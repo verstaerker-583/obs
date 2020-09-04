@@ -71,7 +71,6 @@ yt-live-chat-text-message-renderer #author-photo {
 
 yt-live-chat-text-message-renderer #author-badges {
 	display: none !important;
-	vertical-align: text-top !important;
 }
 
 yt-live-chat-text-message-renderer #author-name::after {
