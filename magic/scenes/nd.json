@@ -162,9 +162,8 @@
 						}
 					},
 					{
-						"locked": true,
-						"locked": true,
-						"name": "Overlay Cam"
+						"name": "Overlay Cam",
+						"locked": true
 					},
 					{
 						"align": 0,

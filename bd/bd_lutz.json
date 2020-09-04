@@ -341,9 +341,8 @@
 						}
 					},
 					{
-						"locked": true,
-						"locked": true,
-						"name": "Overlay Cam"
+						"name": "Overlay Cam",
+						"locked": true
 					},
 					{
 						"align": 0,
@@ -483,6 +482,7 @@
 						"name": "Overlay Finish"
 					},
 					{
+						"name": "Outro",
 						"align": 0,
 						"bounds": {
 							"x": 1280,
@@ -490,7 +490,6 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Outro",
 						"pos": {
 							"x": 640,
 							"y": 360
