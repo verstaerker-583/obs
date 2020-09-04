@@ -391,7 +391,7 @@
 				"mixer_hidden": true
 			},
 			"settings": {
-				"css": "@import https://verstaerker-583.github.io/obs/gp/html/chat.css",
+				"css": "@import url(https://verstaerker-583.github.io/obs/gp/html/chat.css)",
 				"height": 720,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/chat.html",
 				"width": 1280
