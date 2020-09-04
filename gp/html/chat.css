@@ -1,14 +1,7 @@
-/* Background colors*/
-
 body {
-	overflow: hidden;
-	/*
-	background-color: rgba(0, 0, 0, 0);
-	*/
 	background-color: transparent !important;
+	overflow: hidden;
 }
-
-/* Transparent background. */
 
 yt-live-chat-renderer {
 	background-color: transparent !important;
@@ -38,18 +31,15 @@ yt-live-chat-author-chip #author-name {
 	background-color: transparent !important;
 }
 
-/* Outlines */
-
 yt-live-chat-renderer * {
 	font-family: "Helvetica Neue";
+	font-size: 18px !important;
 }
 
 yt-live-chat-text-message-renderer #content,
 yt-live-chat-legacy-paid-message-renderer #content {
 	overflow: initial !important;
 }
-
-/* Hide scrollbar. */
 
 yt-live-chat-item-list-renderer #items {
 	overflow: hidden !important;
@@ -59,14 +49,10 @@ yt-live-chat-item-list-renderer #item-scroller {
 	overflow: hidden !important;
 }
 
-/* Hide header and input. */
-
 yt-live-chat-header-renderer,
 yt-live-chat-message-input-renderer {
 	display: none !important;
 }
-
-/* Reduce side padding. */
 
 yt-live-chat-text-message-renderer,
 yt-live-chat-legacy-paid-message-renderer {
@@ -79,13 +65,9 @@ yt-live-chat-paid-message-renderer #header {
 	padding-right: 4px !important;
 }
 
-/* Avatars. */
-
 yt-live-chat-text-message-renderer #author-photo {
 	display: none !important;
 }
-
-/* Hide badges. */
 
 yt-live-chat-text-message-renderer #author-badges {
 	display: none !important;
