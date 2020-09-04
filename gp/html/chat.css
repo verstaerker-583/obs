@@ -32,8 +32,7 @@ yt-live-chat-author-chip #author-name {
 }
 
 yt-live-chat-renderer * {
-	color: #73be1e !important;
-	font-family: "Helvetica Neue";
+	font-family: "Helvetica Neue" 20px !important;
 	font-size: 20px !important;
 }
 
