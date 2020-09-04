@@ -22,17 +22,12 @@ yt-live-chat-text-message-renderer[author-type="moderator"][is-highlighted] {
 	background-color: transparent !important;
 }
 
-yt-live-chat-text-message-renderer[author-type="member"],
-yt-live-chat-text-message-renderer[author-type="member"][is-highlighted] {
-	background-color: transparent !important;
-}
-
 yt-live-chat-author-chip #author-name {
 	background-color: transparent !important;
 }
 
 yt-live-chat-renderer * {
-	font-family: "Helvetica Neue" 20px !important;
+	font-family: "Helvetica Neue" !important;
 	font-size: 20px !important;
 	line-height: 20px !important;
 }
@@ -105,18 +100,3 @@ yt-live-chat-text-message-renderer #author-name.moderator,
 yt-live-chat-text-message-renderer yt-live-chat-author-badge-renderer[type="moderator"] {
   color: #73be1e !important;
 }
-
-yt-live-chat-text-message-renderer #author-name[type="member"],
-yt-live-chat-text-message-renderer #author-name.member,
-yt-live-chat-text-message-renderer yt-live-chat-author-badge-renderer[type="member"] {
-  color: #0f9d58 !important;
-}
-
-/* Channel names. */
-/*
-yt-live-chat-text-message-renderer #author-name {
-  color: #73be1e !important;
-  font-size: 24px !important;
-  line-height: 24px !important;
-}
-*/
