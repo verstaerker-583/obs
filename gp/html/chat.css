@@ -36,11 +36,9 @@ yt-live-chat-renderer {
 }
 
 yt-live-chat-renderer * {
-	/*
 	font-family: "Helvetica Neue" !important;
 	font-size: 20px !important;
 	line-height: 20px !important;
-	*/
 }
 
 yt-live-chat-text-message-renderer #author-badges {
