@@ -1,0 +1,110 @@
+/* Background colors*/
+
+body {
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+/* Transparent background. */
+
+yt-live-chat-renderer {
+	background-color: transparent !important;
+}
+
+yt-live-chat-text-message-renderer,
+yt-live-chat-text-message-renderer[is-highlighted] {
+	background-color: transparent !important;
+}
+
+yt-live-chat-text-message-renderer[author-type="owner"],
+yt-live-chat-text-message-renderer[author-type="owner"][is-highlighted] {
+	background-color: transparent !important;
+}
+
+yt-live-chat-text-message-renderer[author-type="moderator"],
+yt-live-chat-text-message-renderer[author-type="moderator"][is-highlighted] {
+	background-color: transparent !important;
+}
+
+yt-live-chat-text-message-renderer[author-type="member"],
+yt-live-chat-text-message-renderer[author-type="member"][is-highlighted] {
+	background-color: transparent !important;
+}
+
+yt-live-chat-author-chip #author-name {
+	background-color: transparent !important;
+}
+
+/* Outlines */
+
+yt-live-chat-renderer * {
+	font-family: "Helvetica Neue";
+}
+
+yt-live-chat-text-message-renderer #content,
+yt-live-chat-legacy-paid-message-renderer #content {
+	overflow: initial !important;
+}
+
+/* Hide scrollbar. */
+
+yt-live-chat-item-list-renderer #items {
+	overflow: hidden !important;
+}
+
+yt-live-chat-item-list-renderer #item-scroller {
+	overflow: hidden !important;
+}
+
+/* Hide header and input. */
+
+yt-live-chat-header-renderer,
+yt-live-chat-message-input-renderer {
+	display: none !important;
+}
+
+/* Reduce side padding. */
+
+yt-live-chat-text-message-renderer,
+yt-live-chat-legacy-paid-message-renderer {
+	padding-left: 4px !important;
+	padding-right: 4px !important;
+}
+
+yt-live-chat-paid-message-renderer #header {
+	padding-left: 4px !important;
+	padding-right: 4px !important;
+}
+
+/* Avatars. */
+
+yt-live-chat-text-message-renderer #author-photo {
+	display: none !important;
+}
+
+/* Hide badges. */
+
+yt-live-chat-text-message-renderer #author-badges {
+	display: none !important;
+	vertical-align: text-top !important;
+}
+
+yt-live-chat-text-message-renderer #author-name::after {
+	content: ":";
+	margin-left: 2px;
+}
+
+yt-live-chat-ticker-renderer {
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
+
+yt-live-chat-ticker-renderer {
+	display: none !important;
+}
+
+yt-live-chat-mode-change-message-renderer,
+yt-live-chat-viewer-engagement-message-renderer,
+yt-live-chat-restricted-participation-renderer {
+	display: none !important;
+}

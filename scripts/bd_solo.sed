@@ -9,11 +9,14 @@ s/gp\/html\/cam.html/bd\/svg\/bubbles.svg/
 s/gp\/html\/finish.html/bd\/svg\/finish.svg/
 s/gp\/html\/start.html/bd\/svg\/start.svg/
 
-# hotkeys
-/libobs.*Overlay Donate/,/],/d
+# sources
+/^\t\{3\}"name": "Chat"/,/^\t\{2\}{/d
+/^\t\{3\}"name": "Overlay Donate"/,/^\t\{2\}{/d
 
 # scene items
+/^\t\{6\}"name": "Chat"/,/^\t\{5\}{/d
 /^\t\{6\}"name": "Overlay Donate"/,/^\t\{5\}{/d
 
-# sources
-/^\t\{3\}"name": "Overlay Donate"/,/^\t\{2\}{/d
+# hotkeys
+/libobs.*Chat/,/],/d
+/libobs.*Overlay Donate/,/],/d

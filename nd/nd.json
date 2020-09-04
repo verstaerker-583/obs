@@ -110,11 +110,6 @@
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
-				"libobs.show_scene_item.Internal": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
 				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_2"
@@ -123,6 +118,11 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					},
 					{
+					}
+				],
+				"libobs.show_scene_item.Internal": [
+					{
+						"key": "OBS_KEY_2"
 					}
 				],
 				"libobs.show_scene_item.screen": [
@@ -168,6 +168,7 @@
 					},
 					{
 						"locked": true,
+						"locked": true,
 						"name": "Overlay Cam"
 					},
 					{
@@ -199,14 +200,6 @@
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
-				"libobs.show_scene_item.cams": [
-					{
-						"key": "OBS_KEY_BRACKETRIGHT"
-					},
-					{
-						"key": "OBS_KEY_DEAD_GRAVE"
-					}
-				],
 				"libobs.show_scene_item.FotoMagico": [
 					{
 						"key": "OBS_KEY_3"
@@ -215,6 +208,14 @@
 				"libobs.show_scene_item.Slide Show": [
 					{
 						"key": "OBS_KEY_3"
+					}
+				],
+				"libobs.show_scene_item.cams": [
+					{
+						"key": "OBS_KEY_BRACKETRIGHT"
+					},
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
 				"OBSBasic.SelectScene": [
@@ -268,6 +269,11 @@
 				}
 			],
 			"hotkeys": {
+				"libobs.hide_scene_item.External": [
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				],
 				"libobs.hide_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_3"
@@ -276,20 +282,15 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.hide_scene_item.External": [
+				"libobs.show_scene_item.External": [
+					{
+						"key": "OBS_KEY_3"
+					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
 				"libobs.show_scene_item.Internal": [
-					{
-						"key": "OBS_KEY_DEAD_GRAVE"
-					}
-				],
-				"libobs.show_scene_item.External": [
-					{
-						"key": "OBS_KEY_3"
-					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
