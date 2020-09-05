@@ -130,6 +130,13 @@
 			}
 		},
 		{
+			"name": "Background",
+			"id": "image_source",
+			"settings": {
+				"file": "https://markus-mauthe.de/site/assets/files/1048/sa14.jpg"
+			}
+		},
+		{
 			"name": "Slide Show",
 			"hotkeys": {
 				"SlideShow.NextSlide": [
@@ -271,6 +278,11 @@
 						"key": "OBS_KEY_MINUS"
 					}
 				],
+				"libobs.show_scene_item.Background": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				],
 				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_2"
@@ -318,6 +330,20 @@
 			"name": "Cam",
 			"settings": {
 				"items": [
+					{
+						"name": "Background",
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"pos": {
+							"x": 640,
+							"y": 360
+						}
+					},
 					{
 						"align": 0,
 						"locked": true,
