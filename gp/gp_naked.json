@@ -69,6 +69,8 @@
 				"name": "Compressor"
 			},
 			{
+				
+				"enabled": false,
 				"id": "compressor_filter",
 				"name": "Ducking",
 				"settings": {
@@ -141,6 +143,7 @@
 				"name": "Compressor"
 			},
 			{
+				"enabled": false,
 				"id": "compressor_filter",
 				"name": "Ducking",
 				"settings": {
@@ -207,7 +210,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.5,
+						"clut_amount": 0.25,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				}
@@ -234,7 +237,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.5,
+						"clut_amount": 0.25,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				}
@@ -262,7 +265,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.75,
+						"clut_amount": 0.25,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				}
@@ -293,7 +296,7 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"input": "https://verstaerker-583.github.io/obs/gp/outro.mov",
+				"input": "https://tinyurl.com/yyczgwlc",
 				"is_local_file": false
 			}
 		},
@@ -319,13 +322,6 @@
 			"settings": {
 				"input": "https://tinyurl.com/yyczgwlc",
 				"is_local_file": false
-			}
-		},
-		{
-			"name": "Background",
-			"id": "image_source",
-			"settings": {
-				"file": "https://markus-mauthe.de/site/assets/files/1048/sa14.jpg"
 			}
 		},
 		{
@@ -500,11 +496,6 @@
 						"key": "OBS_KEY_MINUS"
 					}
 				],
-				"libobs.show_scene_item.Background": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
 				"libobs.show_scene_item.Chat": [
 					{
 						"key": "OBS_KEY_C"
@@ -569,20 +560,6 @@
 			"settings": {
 				"items": [
 					{
-						"name": "Background",
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
-					},
-					{
 						"align": 0,
 						"locked": true,
 						"name": "Internal",
@@ -623,7 +600,7 @@
 						"name": "screen",
 						"pos": {
 							"x": 250,
-							"y": 380
+							"y": 360
 						}
 					},
 					{
@@ -632,7 +609,7 @@
 						"locked": true,
 						"pos": {
 							"x": 250,
-							"y": 360
+							"y": 340
 						}
 					},
 					{

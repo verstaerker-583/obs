@@ -57,6 +57,7 @@
 	"AuxAudioDevice2": {
 		"filters": [
 			{
+				"enabled": false;
 				"id": "compressor_filter",
 				"name": "Ducking",
 				"settings": {
@@ -123,7 +124,7 @@
 				"name": "Compressor"
 			},
 			{
-				"enabled": false,
+				"enabled": false;
 				"id": "compressor_filter",
 				"name": "Ducking",
 				"settings": {
@@ -190,7 +191,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.5,
+						"clut_amount": 0.25,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				},
@@ -225,7 +226,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.5,
+						"clut_amount": 0.25,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				},
@@ -261,7 +262,7 @@
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
-						"clut_amount": 0.5,
+						"clut_amount": 0.25,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
 				},
