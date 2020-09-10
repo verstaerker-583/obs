@@ -8,4 +8,5 @@ s/"color2": 4279828552/"color2": 4282145104/
 s/gp\/html/sr\/html/
 
 # filters
-/^\t\{4\}"name": "Ducking"/,/^\t\{3\}{/d
+/^\t\{4\}"enabled":/,/^\t\{3\}{/d
+/^\t\{5\}"enabled":/,/^\t\{4\}{/d

@@ -69,8 +69,6 @@
 				"name": "Compressor"
 			},
 			{
-				"enabled": true,
-				"id": "compressor_filter",
 				"id": "limiter_filter",
 				"name": "Limiter"
 			}
@@ -132,8 +130,6 @@
 				"name": "Compressor"
 			},
 			{
-				"enabled": true,
-				"id": "compressor_filter",
 				"id": "limiter_filter",
 				"name": "Limiter"
 			}
@@ -177,11 +173,6 @@
 		{
 			"filters": [
 				{
-					"enabled": false,
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
 				},
@@ -203,11 +194,6 @@
 		},
 		{
 			"filters": [
-				{
-					"enabled": false,
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
 				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
@@ -231,11 +217,6 @@
 		{
 			"name": "NDI",
 			"filters": [
-				{
-					"enabled": false,
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
 				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"

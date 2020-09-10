@@ -34,6 +34,7 @@ function build() {
 			break;
 		case "chat":
 			document.body.style.backgroundColor = "transparent";
+			document.body.style.backgroundImage = "none";
 			if (typeof videoId !== 'undefined') {
 				window.location = "https://www.youtube.com/live_chat?is_popout=1&v=" + videoId;
 			}
