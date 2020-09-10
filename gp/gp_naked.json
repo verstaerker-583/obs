@@ -411,6 +411,11 @@
 						"key": "OBS_KEY_MINUS"
 					}
 				],
+				"libobs.hide_scene_item.guest": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				],
 				"libobs.hide_scene_item.Chat": [
 					{
 						"key": "OBS_KEY_2"
@@ -449,11 +454,19 @@
 					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
+					},
+					{
+						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.show_scene_item.?": [
 					{
 						"key": "OBS_KEY_MINUS"
+					}
+				],
+				"libobs.show_scene_item.guest": [
+					{
+						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.show_scene_item.Chat": [
@@ -498,9 +511,6 @@
 				"libobs.show_scene_item.screen": [
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
-					},
-					{
-						"key": "OBS_KEY_G"
 					}
 				],
 				"OBSBasic.SelectScene": [
@@ -548,6 +558,20 @@
 					{
 						"name": "Overlay Cam",
 						"locked": true
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 480,
+							"y": 480
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "guest",
+						"pos": {
+							"x": 250,
+							"y": 360
+						}
 					},
 					{
 						"align": 0,
@@ -607,11 +631,6 @@
 					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
-					}
-				],
-				"libobs.hide_scene_item.FotoMagico": [
-					{
-						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.show_scene_item.FotoMagico": [
@@ -801,30 +820,47 @@
 					"id": "mask_filter",
 					"name": "Image Mask/Blend",
 					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/gp/guestMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
+				}
+			],
+			"hotkeys": {
+				"libobs.show_scene_item.NDI": [
+					{
+						"key": "OBS_KEY_G"
+					}
+				]
+			},
+			"id": "scene",
+			"name": "guest",
+			"private_settings": {
+				"show_in_multiview": false
+			},
+			"settings": {
+				"items": [
+					{
+						"name": "NDI",
+						"locked": true
+					}
+				]
+			}
+		},
+		{
+			"filters": [
+				{
+					"id": "mask_filter",
+					"name": "Image Mask/Blend",
+					"settings": {
 						"image_path": "https://verstaerker-583.github.io/obs/gp/screenMask.png",
 						"type": "mask_alpha_filter.effect"
 					}
 				}
 			],
 			"hotkeys": {
-				"libobs.hide_scene_item.FotoMagico": [
-					{
-						"key": "OBS_KEY_G"
-					}
-				],
-				"libobs.hide_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
 				"libobs.show_scene_item.FotoMagico": [
 					{
 						"key": "OBS_KEY_2"
-					}
-				],
-				"libobs.show_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_G"
 					}
 				],
 				"OBSBasic.SelectScene": []
@@ -849,12 +885,6 @@
 							"x": 640,
 							"y": 360
 						}
-					},
-					{
-						"name": "NDI",
-						"locked": true
-					},
-					{
 					}
 				]
 			}

@@ -22,4 +22,7 @@ var pics = {
 	videoThumb: "https://www.markus-mauthe.de/site/assets/files/1001/homepage_045.jpg"
 };
 var alarmTime =  "19:30";
+/*
 var videoId = "uS3Um_Vrv3E";
+*/
+var videoId = "36YnV9STBqc";

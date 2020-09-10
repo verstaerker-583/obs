@@ -253,6 +253,11 @@
 						"key": "OBS_KEY_MINUS"
 					}
 				],
+				"libobs.hide_scene_item.guest": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				],
 				"libobs.hide_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
@@ -271,11 +276,17 @@
 					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
+					},
+					{
 					}
 				],
 				"libobs.show_scene_item.?": [
 					{
 						"key": "OBS_KEY_MINUS"
+					}
+				],
+				"libobs.show_scene_item.guest": [
+					{
 					}
 				],
 				"libobs.show_scene_item.Background": [
@@ -311,8 +322,6 @@
 				"libobs.show_scene_item.screen": [
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
-					},
-					{
 					}
 				],
 				"OBSBasic.SelectScene": [
@@ -369,6 +378,20 @@
 					{
 						"name": "Overlay Cam",
 						"locked": true
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 480,
+							"y": 480
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "guest",
+						"pos": {
+							"x": 250,
+							"y": 360
+						}
 					},
 					{
 						"align": 0,
@@ -616,17 +639,12 @@
 					"id": "mask_filter",
 					"name": "Image Mask/Blend",
 					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/gp/screenMask.png",
+						"image_path": "https://verstaerker-583.github.io/obs/gp/guestMask.png",
 						"type": "mask_alpha_filter.effect"
 					}
 				}
 			],
 			"hotkeys": {
-				"libobs.show_scene_item.Color Source": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
 				"libobs.show_scene_item.Slide Show": [
 					{
 						"key": "OBS_KEY_2"
@@ -650,9 +668,3 @@
 						"locked": true
 					},
 					{
-					}
-				]
-			}
-		}
-	]
-}

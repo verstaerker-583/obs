@@ -104,6 +104,11 @@
 		},
 		{
 			"hotkeys": {
+				"libobs.hide_scene_item.guest": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				],
 				"libobs.hide_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
@@ -115,6 +120,12 @@
 					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
+					},
+					{
+					}
+				],
+				"libobs.show_scene_item.guest": [
+					{
 					}
 				],
 				"libobs.show_scene_item.Background": [
@@ -140,8 +151,6 @@
 				"libobs.show_scene_item.screen": [
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
-					},
-					{
 					}
 				],
 				"OBSBasic.SelectScene": [
@@ -200,6 +209,20 @@
 						"align": 0,
 						"bounds": {
 							"x": 480,
+							"y": 480
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "guest",
+						"pos": {
+							"x": 250,
+							"y": 360
+						}
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 480,
 							"y": 270
 						},
 						"bounds_type": 3,
@@ -223,10 +246,6 @@
 					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
-					}
-				],
-				"libobs.hide_scene_item.FotoMagico": [
-					{
 					}
 				],
 				"libobs.show_scene_item.FotoMagico": [
@@ -372,16 +391,12 @@
 					"id": "mask_filter",
 					"name": "Image Mask/Blend",
 					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/gp/screenMask.png",
+						"image_path": "https://verstaerker-583.github.io/obs/gp/guestMask.png",
 						"type": "mask_alpha_filter.effect"
 					}
 				}
 			],
 			"hotkeys": {
-				"libobs.hide_scene_item.FotoMagico": [
-					{
-					}
-				],
 				"libobs.show_scene_item.FotoMagico": [
 					{
 						"key": "OBS_KEY_2"
@@ -418,8 +433,6 @@
 							"x": 640,
 							"y": 360
 						}
-					},
-					{
 					}
 				]
 			}
