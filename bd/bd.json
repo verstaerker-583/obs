@@ -63,7 +63,11 @@
 	"AuxAudioDevice2": {
 		"filters": [
 			{
-				"enabled": false;
+				"id": "compressor_filter",
+				"name": "Compressor"
+			},
+			{
+				"enabled": true,
 				"id": "compressor_filter",
 				"name": "Ducking",
 				"settings": {
@@ -136,7 +140,7 @@
 				"name": "Compressor"
 			},
 			{
-				"enabled": false;
+				"enabled": true,
 				"id": "compressor_filter",
 				"name": "Ducking",
 				"settings": {
@@ -155,7 +159,7 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-					"key": "OBS_KEY_S"
+					"key": "OBS_KEY_G"
 				},
 				{
 					"key": "OBS_KEY_1"
@@ -169,7 +173,7 @@
 			],
 			"libobs.unmute": [
 				{
-					"key": "OBS_KEY_S"
+					"key": "OBS_KEY_G"
 				},
 				{
 					"key": "OBS_KEY_2"

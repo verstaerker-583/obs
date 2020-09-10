@@ -19,7 +19,7 @@ s/"name": "bd_solo"/"name": "bd_lutz"/
 /libobs.*FotoMagico/,/],/d
 /libobs.*NDI/,/],/d
 
-/OBS_KEY_K"/d
+/OBS_KEY_G"/d
 
 # video
 /"device"/d

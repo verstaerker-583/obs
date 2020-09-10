@@ -38,4 +38,4 @@ s/"current_scene": "Start"/"current_scene": "Cam"/
 /libobs.*Overlay Donate/,/],/d
 
 /OBS_KEY_I"/,+2d
-/OBS_KEY_K"/d
+/OBS_KEY_G"/d

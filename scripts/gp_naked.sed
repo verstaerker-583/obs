@@ -14,3 +14,7 @@ s/"name": "gp"/"name": "gp_naked"/
 /libobs.*Background/,/],/d
 /libobs.*Color Source/,/],/d
 /libobs.*Slide Show/,/],/d
+
+# filters
+/^\t\{4\}"enabled":/,/^\t\{3\}{/d
+/^\t\{5\}"enabled":/,/^\t\{4\}{/d

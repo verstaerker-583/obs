@@ -20,3 +20,7 @@ s/gp\/html\/start.html/bd\/svg\/start.svg/
 # hotkeys
 /libobs.*Chat/,/],/d
 /libobs.*Overlay Donate/,/],/d
+
+# filters
+/^\t\{4\}"enabled": true/,/^\t\{3\}{/d
+/^\t\{5\}"enabled": true/,/^\t\{4\}{/d

@@ -47,7 +47,7 @@
 					"key": "OBS_KEY_I"
 				},
 				{
-					"key": "OBS_KEY_K"
+					"key": "OBS_KEY_G"
 				},
 				{
 					"key": "OBS_KEY_M"
@@ -69,19 +69,8 @@
 				"name": "Compressor"
 			},
 			{
-				
-				"enabled": false,
+				"enabled": true,
 				"id": "compressor_filter",
-				"name": "Ducking",
-				"settings": {
-					"attack_time": 100,
-					"ratio": 32,
-					"release_time": 600,
-					"sidechain_source": "Microphone",
-					"threshold": -36
-				}
-			},
-			{
 				"id": "limiter_filter",
 				"name": "Limiter"
 			}
@@ -143,18 +132,8 @@
 				"name": "Compressor"
 			},
 			{
-				"enabled": false,
+				"enabled": true,
 				"id": "compressor_filter",
-				"name": "Ducking",
-				"settings": {
-					"attack_time": 100,
-					"ratio": 32,
-					"release_time": 600,
-					"sidechain_source": "Microphone",
-					"threshold": -36
-				}
-			},
-			{
 				"id": "limiter_filter",
 				"name": "Limiter"
 			}
@@ -179,7 +158,7 @@
 			],
 			"libobs.unmute": [
 				{
-					"key": "OBS_KEY_K"
+					"key": "OBS_KEY_G"
 				}
 			]
 		},
@@ -491,7 +470,7 @@
 						"key": "OBS_KEY_2"
 					},
 					{
-						"key": "OBS_KEY_K"
+						"key": "OBS_KEY_G"
 					},
 					{
 						"key": "OBS_KEY_MINUS"
@@ -515,7 +494,7 @@
 						"key": "OBS_KEY_2"
 					},
 					{
-						"key": "OBS_KEY_K"
+						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.hide_scene_item.Overlay Donate": [
@@ -526,7 +505,7 @@
 						"key": "OBS_KEY_E"
 					},
 					{
-						"key": "OBS_KEY_K"
+						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.hide_scene_item.screen": [
@@ -552,7 +531,7 @@
 						"key": "OBS_KEY_C"
 					},
 					{
-						"key": "OBS_KEY_K"
+						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.show_scene_item.External": [
@@ -563,7 +542,7 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					},
 					{
-						"key": "OBS_KEY_K"
+						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.show_scene_item.Internal": [
@@ -591,7 +570,7 @@
 						"key": "OBS_KEY_BRACKETRIGHT"
 					},
 					{
-						"key": "OBS_KEY_K"
+						"key": "OBS_KEY_G"
 					}
 				],
 				"OBSBasic.SelectScene": [
@@ -602,7 +581,7 @@
 						"key": "OBS_KEY_I"
 					},
 					{
-						"key": "OBS_KEY_K"
+						"key": "OBS_KEY_G"
 					}
 				]
 			},
@@ -946,7 +925,7 @@
 				],
 				"libobs.show_scene_item.NDI": [
 					{
-						"key": "OBS_KEY_K"
+						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.show_scene_item.Slide Show": [
