@@ -243,6 +243,14 @@
 						"clut_amount": 0.25,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
+				},
+				{
+					"id": "mask_filter",
+					"name": "Image Mask/Blend",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
 				}
 			],
 			"id": "av_capture_input",
@@ -361,19 +369,6 @@
 			}
 		},
 		{
-			"name": "Overlay Start",
-			"id": "browser_source",
-			"private_settings": {
-				"mixer_hidden": true
-			},
-			"settings": {
-				"css": "",
-				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/bd/svg/start.svg",
-				"width": 1280
-			}
-		},
-		{
 			"name": "Overlay Cam",
 			"id": "browser_source",
 			"private_settings": {
@@ -387,6 +382,19 @@
 			}
 		},
 		{
+			"name": "Overlay Chat",
+			"id": "browser_source",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "@import url(https://verstaerker-583.github.io/obs/gp/html/chat.css)",
+				"height": 720,
+				"url": "https://verstaerker-583.github.io/obs/gp/html/chat.html",
+				"width": 1280
+			}
+		},
+		{
 			"name": "Overlay Finish",
 			"id": "browser_source",
 			"private_settings": {
@@ -396,6 +404,19 @@
 				"css": "",
 				"height": 720,
 				"url": "https://verstaerker-583.github.io/obs/bd/svg/finish.svg",
+				"width": 1280
+			}
+		},
+		{
+			"name": "Overlay Start",
+			"id": "browser_source",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "",
+				"height": 720,
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/start.svg",
 				"width": 1280
 			}
 		},
@@ -437,11 +458,6 @@
 						"key": "OBS_KEY_MINUS"
 					}
 				],
-				"libobs.hide_scene_item.guest": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
 				"libobs.hide_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
@@ -453,6 +469,11 @@
 					},
 					{
 						"key": "OBS_KEY_G"
+					}
+				],
+				"libobs.hide_scene_item.NDI": [
+					{
+						"key": "OBS_KEY_2"
 					}
 				],
 				"libobs.hide_scene_item.screen": [
@@ -469,11 +490,6 @@
 				"libobs.show_scene_item.?": [
 					{
 						"key": "OBS_KEY_MINUS"
-					}
-				],
-				"libobs.show_scene_item.guest": [
-					{
-						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.show_scene_item.Background": [
@@ -500,6 +516,11 @@
 				"libobs.show_scene_item.Intro": [
 					{
 						"key": "OBS_KEY_I"
+					}
+				],
+				"libobs.show_scene_item.NDI": [
+					{
+						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.show_scene_item.Overlay Cam": [
@@ -565,10 +586,6 @@
 						}
 					},
 					{
-						"name": "Overlay Cam",
-						"locked": true
-					},
-					{
 						"align": 0,
 						"bounds": {
 							"x": 480,
@@ -576,11 +593,20 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "guest",
+						"name": "NDI",
 						"pos": {
 							"x": 250,
 							"y": 360
-						}
+						},
+						"rot": 5
+					},
+					{
+						"name": "Overlay Chat",
+						"locked": true
+					},
+					{
+						"name": "Overlay Cam",
+						"locked": true
 					},
 					{
 						"align": 0,
@@ -622,9 +648,9 @@
 							"color": "",
 							"color-preset": 7
 						}
+					}
 					},
 					{
-					}
 				]
 			}
 		},
@@ -847,38 +873,6 @@
 					"id": "mask_filter",
 					"name": "Image Mask/Blend",
 					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/gp/guestMask.png",
-						"type": "mask_alpha_filter.effect"
-					}
-				}
-			],
-			"hotkeys": {
-				"libobs.show_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_G"
-					}
-				]
-			},
-			"id": "scene",
-			"name": "guest",
-			"private_settings": {
-				"show_in_multiview": false
-			},
-			"settings": {
-				"items": [
-					{
-						"name": "NDI",
-						"locked": true
-					}
-				]
-			}
-		},
-		{
-			"filters": [
-				{
-					"id": "mask_filter",
-					"name": "Image Mask/Blend",
-					"settings": {
 						"image_path": "https://verstaerker-583.github.io/obs/gp/screenMask.png",
 						"type": "mask_alpha_filter.effect"
 					}
@@ -930,6 +924,8 @@
 							"x": 640,
 							"y": 360
 						}
+					},
+					{
 					}
 				]
 			}

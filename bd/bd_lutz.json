@@ -72,6 +72,14 @@
 						"clut_amount": 0.25,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
+				},
+				{
+					"id": "mask_filter",
+					"name": "Image Mask/Blend",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
 				}
 			],
 			"id": "av_capture_input",
@@ -178,19 +186,6 @@
 			}
 		},
 		{
-			"name": "Overlay Start",
-			"id": "browser_source",
-			"private_settings": {
-				"mixer_hidden": true
-			},
-			"settings": {
-				"css": "",
-				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/bd/svg/start.svg",
-				"width": 1280
-			}
-		},
-		{
 			"name": "Overlay Cam",
 			"id": "browser_source",
 			"private_settings": {
@@ -204,6 +199,19 @@
 			}
 		},
 		{
+			"name": "Overlay Chat",
+			"id": "browser_source",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "@import url(https://verstaerker-583.github.io/obs/gp/html/chat.css)",
+				"height": 720,
+				"url": "https://verstaerker-583.github.io/obs/gp/html/chat.html",
+				"width": 1280
+			}
+		},
+		{
 			"name": "Overlay Finish",
 			"id": "browser_source",
 			"private_settings": {
@@ -213,6 +221,19 @@
 				"css": "",
 				"height": 720,
 				"url": "https://verstaerker-583.github.io/obs/bd/svg/finish.svg",
+				"width": 1280
+			}
+		},
+		{
+			"name": "Overlay Start",
+			"id": "browser_source",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "",
+				"height": 720,
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/start.svg",
 				"width": 1280
 			}
 		},
@@ -253,11 +274,6 @@
 						"key": "OBS_KEY_MINUS"
 					}
 				],
-				"libobs.hide_scene_item.guest": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
 				"libobs.hide_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
@@ -283,10 +299,6 @@
 				"libobs.show_scene_item.?": [
 					{
 						"key": "OBS_KEY_MINUS"
-					}
-				],
-				"libobs.show_scene_item.guest": [
-					{
 					}
 				],
 				"libobs.show_scene_item.Background": [
@@ -376,10 +388,6 @@
 						}
 					},
 					{
-						"name": "Overlay Cam",
-						"locked": true
-					},
-					{
 						"align": 0,
 						"bounds": {
 							"x": 480,
@@ -387,11 +395,12 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "guest",
-						"pos": {
-							"x": 250,
-							"y": 360
-						}
+						"name": "Overlay Chat",
+						"locked": true
+					},
+					{
+						"name": "Overlay Cam",
+						"locked": true
 					},
 					{
 						"align": 0,
@@ -433,9 +442,9 @@
 							"color": "",
 							"color-preset": 7
 						}
+					}
 					},
 					{
-					}
 				]
 			}
 		},
@@ -639,12 +648,17 @@
 					"id": "mask_filter",
 					"name": "Image Mask/Blend",
 					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/gp/guestMask.png",
+						"image_path": "https://verstaerker-583.github.io/obs/gp/screenMask.png",
 						"type": "mask_alpha_filter.effect"
 					}
 				}
 			],
 			"hotkeys": {
+				"libobs.show_scene_item.Color Source": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				],
 				"libobs.show_scene_item.Slide Show": [
 					{
 						"key": "OBS_KEY_2"
@@ -668,3 +682,9 @@
 						"locked": true
 					},
 					{
+					}
+				]
+			}
+		}
+	]
+}
