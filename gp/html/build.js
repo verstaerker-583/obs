@@ -8,7 +8,9 @@ function build() {
 	switch (PageName) {
 		case "start":
 			pics.organizationLogo = "";
+			/*
 			pics.videoThumb = "";
+			*/
 			buildBanner(start);
 			loadClock();
 			loadPics();
@@ -37,6 +39,7 @@ function build() {
 			loadPics();
 			position();
 			channelIcon.classList.add("heartbeat");
+			videoThumb.classList.add("heartbeat");
 			clock.classList.add("heartbeat");
 	}
 }
