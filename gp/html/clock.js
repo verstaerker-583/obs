@@ -31,8 +31,8 @@ function checkOBSStatus() {
 }
 
 function setAlarm() {
-	if (typeof alarm !== 'undefined') {
-		var strs = alarm.time.split(":");
+	if (typeof alarmTime !== 'undefined') {
+		var strs = alarmTime.split(":");
 		var hours = strs[0] % 12;
 		var minutes = strs[1];
 		alarmAngle = (180 + (hours + minutes / 60) * 30) % 360;

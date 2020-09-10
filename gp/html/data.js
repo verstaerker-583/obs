@@ -21,9 +21,5 @@ var pics = {
 	presenterLogo: "../../gp/mmLogo.png",
 	videoThumb: "https://www.markus-mauthe.de/site/assets/files/1001/homepage_045.jpg"
 };
-var alarm = {
-	time: "19:30"
-};
-var video = {
-	id: "uS3Um_Vrv3E"
-};
+var alarmTime =  "19:30";
+var VideoId = "uS3Um_Vrv3E";

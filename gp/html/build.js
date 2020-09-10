@@ -33,7 +33,10 @@ function build() {
 			call2action.classList.add("heartbeat");
 			break;
 		case "chat":
-			window.location = "https://www.youtube.com/live_chat?is_popout=1&v=" + video.id;
+			document.body.style.backgroundColor = "transparent";
+			if (typeof videoId !== 'undefined') {
+				window.location = "https://www.youtube.com/live_chat?is_popout=1&v=" + videoId;
+			}
 			break;
 		default:
 			pics.organizationLogo = "";
