@@ -605,6 +605,11 @@
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
+				"libobs.hide_scene_item.FotoMagico": [
+					{
+						"key": "OBS_KEY_G"
+					}
+				],
 				"libobs.show_scene_item.FotoMagico": [
 					{
 						"key": "OBS_KEY_3"
@@ -798,6 +803,11 @@
 				}
 			],
 			"hotkeys": {
+				"libobs.hide_scene_item.FotoMagico": [
+					{
+						"key": "OBS_KEY_G"
+					}
+				],
 				"libobs.hide_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_2"
