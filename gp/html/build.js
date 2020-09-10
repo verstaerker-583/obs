@@ -32,6 +32,9 @@ function build() {
 			buildBanner(donate);
 			call2action.classList.add("heartbeat");
 			break;
+		case "chat":
+			window.location = "https://www.youtube.com/live_chat?is_popout=1&v=" + video.id;
+			break;
 		default:
 			pics.organizationLogo = "";
 			buildBanner(finish);
@@ -39,7 +42,6 @@ function build() {
 			loadPics();
 			position();
 			channelIcon.classList.add("heartbeat");
-			videoThumb.classList.add("heartbeat");
 			clock.classList.add("heartbeat");
 	}
 }
