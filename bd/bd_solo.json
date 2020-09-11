@@ -398,9 +398,9 @@
 			},
 			"settings": {
 				"css": "@import url(https://verstaerker-583.github.io/obs/gp/html/chat.css)",
-				"height": 720,
+				"height": 120,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/chat.html",
-				"width": 1280
+				"width": 640 
 			}
 		},
 		{
@@ -611,7 +611,11 @@
 					},
 					{
 						"name": "Overlay Chat",
-						"locked": true
+						"locked": true,
+						"pos": {
+							"x": 500,
+							"y": 600
+						}
 					},
 					{
 						"name": "Overlay Cam",
@@ -657,9 +661,9 @@
 							"color": "",
 							"color-preset": 7
 						}
-					}
 					},
 					{
+					}
 				]
 			}
 		},
