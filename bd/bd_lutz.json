@@ -54,39 +54,6 @@
 			}
 		},
 		{
-			"name": "NDI",
-			"filters": [
-				{
-					"enabled": false,
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
-				},
-				{
-					"id": "clut_filter",
-					"name": "Apply LUT",
-					"settings": {
-						"clut_amount": 0.25,
-						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
-					}
-				},
-				{
-					"id": "mask_filter",
-					"name": "Image Mask/Blend",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
-						"type": "mask_alpha_filter.effect"
-					}
-				}
-			],
-			"id": "av_capture_input",
-			"settings": {
-			}
-		},
-		{
 			"name": "Color Source",
 			"id": "color_source",
 			"settings": {
@@ -196,19 +163,6 @@
 				"height": 720,
 				"url": "https://verstaerker-583.github.io/obs/bd/svg/bubbles.svg",
 				"width": 1280
-			}
-		},
-		{
-			"name": "Overlay Chat",
-			"id": "browser_source",
-			"private_settings": {
-				"mixer_hidden": true
-			},
-			"settings": {
-				"css": "@import url(https://verstaerker-583.github.io/obs/gp/html/chat.css)",
-				"height": 120,
-				"url": "https://verstaerker-583.github.io/obs/gp/html/chat.html",
-				"width": 640 
 			}
 		},
 		{
@@ -385,21 +339,6 @@
 						"private_settings": {
 							"color": "",
 							"color-preset": 7
-						}
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 480,
-							"y": 480
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "Overlay Chat",
-						"locked": true,
-						"pos": {
-							"x": 500,
-							"y": 600
 						}
 					},
 					{

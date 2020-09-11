@@ -556,6 +556,7 @@
 						}
 					},
 					{
+						"name": "NDI",
 						"align": 0,
 						"bounds": {
 							"x": 480,
@@ -563,7 +564,6 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "NDI",
 						"pos": {
 							"x": 250,
 							"y": 360

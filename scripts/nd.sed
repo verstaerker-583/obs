@@ -12,12 +12,12 @@ s/"color2": 4279828552/"color2": 4282145104/
 # sources
 #/^\t\{3\}"name": "?"/,/^\t\{2\}{/d
 /^\t\{3\}"name": "Background"/,/^\t\{2\}{/d
-/^\t\{3\}"name": "Chat"/,/^\t\{2\}{/d
 #/^\t\{3\}"name": "Color Source"/,/^\t\{2\}{/d
 /^\t\{3\}"name": "Intro"/,/^\t\{2\}{/d
 /^\t\{3\}"name": "NDI"/,/^\t\{2\}{/d
 /^\t\{3\}"name": "Outro"/,/^\t\{2\}{/d
 /^\t\{3\}"name": "Overlay Cam"/,/^\t\{2\}{/d
+/^\t\{3\}"name": "Overlay Chat"/,/^\t\{2\}{/d
 /^\t\{3\}"name": "Overlay Donate"/,/^\t\{2\}{/d
 /^\t\{3\}"name": "Overlay Finish"/,/^\t\{2\}{/d
 /^\t\{3\}"name": "Overlay Start"/,/^\t\{2\}{/d
@@ -29,21 +29,21 @@ s/"color2": 4279828552/"color2": 4282145104/
 # scene items
 #/^\t\{6\}"name": "?"/,/^\t\{5\}{/d
 /^\t\{6\}"name": "Background"/,/^\t\{5\}{/d
-/^\t\{6\}"name": "Chat"/,/^\t\{5\}{/d
 #/^\t\{6\}"name": "Color Source"/,/^\t\{5\}{/d
 /^\t\{6\}"name": "Intro"/,/^\t\{5\}{/d
 /^\t\{6\}"name": "NDI"/,/^\t\{5\}{/d
 /^\t\{6\}"name": "Overlay Cam"/,/^\t\{5\}{/d
+/^\t\{6\}"name": "Overlay Chat"/,/^\t\{5\}{/d
 /^\t\{6\}"name": "Overlay Donate"/,/^\t\{5\}{/d
 
 # hotkeys
 #/libobs.*?/,/],/d
 /libobs.*Background/,/],/d
-/libobs.*Chat/,/],/d
 #/libobs.*Color Source/,/],/d
 /libobs.*Intro/,/],/d
 /libobs.*NDI/,/],/d
 /libobs.*Overlay Cam/,/],/d
+/libobs.*Overlay Chat/,/],/d
 /libobs.*Overlay Donate/,/],/d
 
 /OBS_KEY_G"/d

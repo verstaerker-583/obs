@@ -116,19 +116,6 @@
 			}
 		},
 		{
-			"name": "Overlay Chat",
-			"id": "browser_source",
-			"private_settings": {
-				"mixer_hidden": true
-			},
-			"settings": {
-				"css": "@import url(https://verstaerker-583.github.io/obs/gp/html/chat.css)",
-				"height": 120,
-				"url": "https://verstaerker-583.github.io/obs/gp/html/chat.html",
-				"width": 640 
-			}
-		},
-		{
 			"hotkeys": {
 				"libobs.hide_scene_item.?": [
 					{
@@ -212,21 +199,6 @@
 						"private_settings": {
 							"color": "",
 							"color-preset": 7
-						}
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 480,
-							"y": 480
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "Overlay Chat",
-						"locked": true,
-						"pos": {
-							"x": 500,
-							"y": 600
 						}
 					},
 					{

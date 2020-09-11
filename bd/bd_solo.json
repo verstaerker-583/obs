@@ -391,19 +391,6 @@
 			}
 		},
 		{
-			"name": "Overlay Chat",
-			"id": "browser_source",
-			"private_settings": {
-				"mixer_hidden": true
-			},
-			"settings": {
-				"css": "@import url(https://verstaerker-583.github.io/obs/gp/html/chat.css)",
-				"height": 120,
-				"url": "https://verstaerker-583.github.io/obs/gp/html/chat.html",
-				"width": 640 
-			}
-		},
-		{
 			"name": "Overlay Finish",
 			"id": "browser_source",
 			"private_settings": {
@@ -595,6 +582,7 @@
 						}
 					},
 					{
+						"name": "NDI",
 						"align": 0,
 						"bounds": {
 							"x": 480,
@@ -602,20 +590,11 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "NDI",
 						"pos": {
 							"x": 250,
 							"y": 360
 						},
 						"rot": 5
-					},
-					{
-						"name": "Overlay Chat",
-						"locked": true,
-						"pos": {
-							"x": 500,
-							"y": 600
-						}
 					},
 					{
 						"name": "Overlay Cam",
