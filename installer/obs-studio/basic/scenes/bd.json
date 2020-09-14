@@ -495,11 +495,6 @@
 						"key": "OBS_KEY_2"
 					}
 				],
-				"libobs.hide_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
 				"libobs.show_scene_item.?": [
 					{
 						"key": "OBS_KEY_MINUS"
