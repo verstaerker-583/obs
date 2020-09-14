@@ -1,17 +1,17 @@
 {
-	"name": "bd",
 	"current_scene": "Start",
+	"name": "bd",
 	"preview_locked": true,
 	"AuxAudioDevice1": {
 		"balance": 0.25,
 		"filters": [
 			{
-				"id": "noise_suppress_filter",
-				"name": "Noise Suppression"
-			},
-			{
 				"id": "noise_gate_filter",
 				"name": "Noise Gate"
+			},
+			{
+				"id": "noise_suppress_filter",
+				"name": "Noise Suppression"
 			},
 			{
 				"id": "compressor_filter",
@@ -25,22 +25,19 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-					"key": "OBS_KEY_M"
-				},
-				{
 					"key": "OBS_KEY_1"
 				},
 				{
 					"key": "OBS_KEY_4"
 				},
 				{
+					"key": "OBS_KEY_M"
+				},
+				{
 					"key": "OBS_KEY_O"
 				}
 			],
 			"libobs.unmute": [
-				{
-					"key": "OBS_KEY_M"
-				},
 				{
 					"key": "OBS_KEY_2"
 				},
@@ -49,12 +46,14 @@
 				},
 				{
 					"key": "OBS_KEY_I"
+				},
+				{
+					"key": "OBS_KEY_M"
 				}
 			]
 		},
 		"id": "coreaudio_input_capture",
 		"mixers": 3,
-		"monitoring_type": 0,
 		"name": "Microphone",
 		"private_settings": {
 			"volume_locked": true
@@ -67,7 +66,7 @@
 				"name": "Compressor"
 			},
 			{
-				"enabled": true,
+				"enabled": "false",
 				"id": "compressor_filter",
 				"name": "Ducking",
 				"settings": {
@@ -86,13 +85,13 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-					"key": "OBS_KEY_D"
-				},
-				{
 					"key": "OBS_KEY_1"
 				},
 				{
 					"key": "OBS_KEY_4"
+				},
+				{
+					"key": "OBS_KEY_D"
 				},
 				{
 					"key": "OBS_KEY_O"
@@ -100,13 +99,16 @@
 			],
 			"libobs.unmute": [
 				{
-					"key": "OBS_KEY_D"
-				},
-				{
 					"key": "OBS_KEY_2"
 				},
 				{
 					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_D"
+				},
+				{
+					"key": "OBS_KEY_I"
 				}
 			]
 		},
@@ -125,22 +127,18 @@
 		"balance": 0.75,
 		"filters": [
 			{
-				"enabled": true,
 				"id": "noise_suppress_filter",
 				"name": "Noise Suppression"
 			},
 			{
-				"enabled": true,
 				"id": "noise_gate_filter",
 				"name": "Noise Gate"
 			},
 			{
-				"enabled": true,
 				"id": "compressor_filter",
 				"name": "Compressor"
 			},
 			{
-				"enabled": true,
 				"id": "compressor_filter",
 				"name": "Ducking",
 				"settings": {
@@ -159,13 +157,13 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
-					"key": "OBS_KEY_G"
-				},
-				{
 					"key": "OBS_KEY_1"
 				},
 				{
 					"key": "OBS_KEY_4"
+				},
+				{
+					"key": "OBS_KEY_G"
 				},
 				{
 					"key": "OBS_KEY_O"
@@ -173,16 +171,13 @@
 			],
 			"libobs.unmute": [
 				{
-					"key": "OBS_KEY_G"
-				},
-				{
 					"key": "OBS_KEY_2"
 				},
 				{
 					"key": "OBS_KEY_3"
 				},
 				{
-					"key": "OBS_KEY_I"
+					"key": "OBS_KEY_G"
 				}
 			]
 		},
@@ -201,48 +196,13 @@
 		{
 			"filters": [
 				{
-					"enabled": true,
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
 				},
 				{
-					"id": "clut_filter",
-					"name": "Apply LUT",
-					"settings": {
-						"clut_amount": 0.25,
-						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
-					}
-				},
-				{
-					"id": "mask_filter",
-					"name": "Image Mask/Blend",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
-						"type": "mask_alpha_filter.effect"
-					}
-				}
-			],
-			"id": "av_capture_input",
-			"name": "Internal",
-			"settings": {
-				"device": "CC27327P54QGDV4AV",
-				"device_name": "FaceTime HD Camera"
-			}
-		},
-		{
-			"filters": [
-				{
-					"enabled": true,
+					"enabled": "false",
 					"id": "chroma_key_filter",
 					"name": "Chroma Key"
-				},
-				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
 				},
 				{
 					"id": "clut_filter",
@@ -264,23 +224,54 @@
 			"id": "av_capture_input",
 			"name": "External",
 			"settings": {
-				"device": "obs-virtual-cam-device",
-				"device_name": "OBS Virtual Camera"
+				"device": "CC27327P54QGDV4AV"
 			}
 		},
 		{
 			"filters": [
 				{
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
-					"enabled": true,
 					"id": "sharpness_filter",
 					"name": "Sharpen"
 				},
 				{
-					"enabled": true,
+					"enabled": "false",
+					"id": "chroma_key_filter",
+					"name": "Chroma Key"
+				},
+				{
+					"id": "clut_filter",
+					"name": "Apply LUT",
+					"settings": {
+						"clut_amount": 0.25,
+						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
+					}
+				},
+				{
+					"id": "mask_filter",
+					"name": "Image Mask/Blend",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
+				}
+			],
+			"id": "av_capture_input",
+			"name": "Internal",
+			"settings": {
+				"device": "CC27327P54QGDV4AV"
+			}
+		},
+		{
+			"filters": [
+				{
+					"id": "sharpness_filter",
+					"name": "Sharpen"
+				},
+				{
+					"id": "chroma_key_filter",
+					"name": "Chroma Key"
+				},
+				{
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
@@ -300,17 +291,7 @@
 			"id": "av_capture_input",
 			"name": "NDI",
 			"settings": {
-				"device": "BB86C477-373F-49D9-AA4B-CE86A0E883F1",
-				"device_name": "NDI"
-			}
-		},
-		{
-			"id": "color_source",
-			"name": "Color Source",
-			"settings": {
-				"color": 4288269363,
-				"height": 720,
-				"width": 1280
+				"device": "BB86C477-373F-49D9-AA4B-CE86A0E883F1"
 			}
 		},
 		{
@@ -375,7 +356,7 @@
 				],
 				"SlideShow.Restart": [
 					{
-						"key": "OBS_KEY_1"
+						"key": "OBS_KEY_R"
 					}
 				]
 			},
@@ -392,11 +373,34 @@
 			}
 		},
 		{
-			"id": "window_capture",
-			"name": "FotoMagico",
+			"id": "color_source",
+			"name": "Color Source",
 			"settings": {
-				"owner_name": "FotoMagico 5",
-				"window_name": ""
+				"color": 4288269363,
+				"height": 720,
+				"width": 1280
+			}
+		},
+		{
+			"id": "text_ft2_source",
+			"name": "?",
+			"settings": {
+				"color1": 4284888012,
+				"color2": 4294967295,
+				"font": {
+					"face": "Helvetica Neue",
+					"size": 288,
+					"style": "Condensed Black"
+				},
+				"text": "?"
+			}
+		},
+		{
+			"id": "window_capture",
+			"name": "Window Capture",
+			"settings": {
+				"owner_name": "Dock",
+				"window_name": "Desktop Picture - DefaultDesktop.heic"
 			}
 		},
 		{
@@ -453,12 +457,12 @@
 		},
 		{
 			"hotkeys": {
-				"libobs.show_scene_item.Overlay Start": [
+				"OBSBasic.SelectScene": [
 					{
 						"key": "OBS_KEY_1"
 					}
 				],
-				"OBSBasic.SelectScene": [
+				"libobs.show_scene_item.Overlay Start": [
 					{
 						"key": "OBS_KEY_1"
 					}
@@ -478,6 +482,22 @@
 		},
 		{
 			"hotkeys": {
+				"OBSBasic.SelectScene": [
+					{
+						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_I"
+					}
+				],
+				"libobs.hide_scene_item.?": [
+					{
+						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_MINUS"
+					}
+				],
 				"libobs.hide_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
@@ -488,9 +508,14 @@
 						"key": "OBS_KEY_2"
 					}
 				],
-				"libobs.show_scene_item.Internal": [
+				"libobs.hide_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_2"
+					}
+				],
+				"libobs.show_scene_item.?": [
+					{
+						"key": "OBS_KEY_MINUS"
 					}
 				],
 				"libobs.show_scene_item.External": [
@@ -499,6 +524,11 @@
 					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				],
+				"libobs.show_scene_item.Internal": [
+					{
+						"key": "OBS_KEY_2"
 					}
 				],
 				"libobs.show_scene_item.Intro": [
@@ -514,14 +544,6 @@
 				"libobs.show_scene_item.Overlay Cam": [
 					{
 						"key": "OBS_KEY_2"
-					}
-				],
-				"OBSBasic.SelectScene": [
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_I"
 					}
 				]
 			},
@@ -562,7 +584,6 @@
 							"y": 396
 						},
 						"private_settings": {
-							"color": "",
 							"color-preset": 7
 						},
 						"rot": 5
@@ -584,6 +605,15 @@
 					},
 					{
 						"align": 0,
+						"locked": true,
+						"name": "?",
+						"pos": {
+							"x": 640,
+							"y": 360
+						}
+					},
+					{
+						"align": 0,
 						"bounds": {
 							"x": 1280,
 							"y": 720
@@ -596,7 +626,6 @@
 							"y": 360
 						},
 						"private_settings": {
-							"color": "",
 							"color-preset": 7
 						}
 					}
@@ -605,6 +634,11 @@
 		},
 		{
 			"hotkeys": {
+				"OBSBasic.SelectScene": [
+					{
+						"key": "OBS_KEY_3"
+					}
+				],
 				"libobs.hide_scene_item.cams": [
 					{
 						"key": "OBS_KEY_3"
@@ -613,12 +647,19 @@
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
-				"libobs.hide_scene_item.NDI": [
+				"libobs.show_scene_item.Color Source": [
 					{
 						"key": "OBS_KEY_3"
-					},
+					}
+				],
+				"libobs.show_scene_item.Slide Show": [
 					{
-						"key": "OBS_KEY_BACKSLASH"
+						"key": "OBS_KEY_3"
+					}
+				],
+				"libobs.show_scene_item.Window Capture": [
+					{
+						"key": "OBS_KEY_3"
 					}
 				],
 				"libobs.show_scene_item.cams": [
@@ -627,31 +668,6 @@
 					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					}
-				],
-				"libobs.show_scene_item.Color Source": [
-					{
-						"key": "OBS_KEY_3"
-					}
-				],
-				"libobs.show_scene_item.FotoMagico": [
-					{
-						"key": "OBS_KEY_3"
-					}
-				],
-				"libobs.show_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_BACKSLASH"
-					}
-				],
-				"libobs.show_scene_item.Slide Show": [
-					{
-						"key": "OBS_KEY_3"
-					}
-				],
-				"OBSBasic.SelectScene": [
-					{
-						"key": "OBS_KEY_3"
 					}
 				]
 			},
@@ -667,7 +683,6 @@
 						"locked": true,
 						"name": "Slide Show",
 						"private_settings": {
-							"color": "",
 							"color-preset": 7
 						}
 					},
@@ -679,7 +694,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "FotoMagico",
+						"name": "Window Capture",
 						"pos": {
 							"x": 640,
 							"y": 360
@@ -694,6 +709,14 @@
 		},
 		{
 			"hotkeys": {
+				"OBSBasic.SelectScene": [
+					{
+						"key": "OBS_KEY_4"
+					},
+					{
+						"key": "OBS_KEY_O"
+					}
+				],
 				"libobs.hide_scene_item.Outro": [
 					{
 						"key": "OBS_KEY_4"
@@ -707,14 +730,6 @@
 				"libobs.show_scene_item.Overlay Finish": [
 					{
 						"key": "OBS_KEY_4"
-					}
-				],
-				"OBSBasic.SelectScene": [
-					{
-						"key": "OBS_KEY_4"
-					},
-					{
-						"key": "OBS_KEY_O"
 					}
 				]
 			},
@@ -740,7 +755,6 @@
 							"y": 360
 						},
 						"private_settings": {
-							"color": "",
 							"color-preset": 7
 						}
 					}
@@ -754,11 +768,6 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.show_scene_item.Internal": [
-					{
-						"key": "OBS_KEY_3"
-					}
-				],
 				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_3"
@@ -767,12 +776,17 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.show_scene_item.Overlay cams": [
+				"libobs.show_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_3"
 					}
 				],
 				"libobs.show_scene_item.NDI": [
+					{
+						"key": "OBS_KEY_3"
+					}
+				],
+				"libobs.show_scene_item.Overlay cams": [
 					{
 						"key": "OBS_KEY_3"
 					}

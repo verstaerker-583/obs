@@ -1,42 +1,11 @@
 {
 	"current_scene": "Start",
-	"name": "bd_solo",
+	"name": "nd",
 	"preview_locked": true,
 	"sources": [
 		{
 			"filters": [
 				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
-				},
-				{
-					"enabled": "false",
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
-					"id": "clut_filter",
-					"name": "Apply LUT",
-					"settings": {
-						"clut_amount": 0.25,
-						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
-					}
-				},
-				{
-					"id": "mask_filter",
-					"name": "Image Mask/Blend",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
-						"type": "mask_alpha_filter.effect"
-					}
-				}
-			],
-			"id": "av_capture_input",
-			"name": "NDI"
-		},
-		{
-			"filters": [
-				{
 					"enabled": "false",
 					"id": "chroma_key_filter",
 					"name": "Chroma Key"
@@ -55,67 +24,35 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "External"
-		},
-		{
-			"filters": [
-				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
-				},
-				{
-					"enabled": "false",
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
-					"id": "clut_filter",
-					"name": "Apply LUT",
-					"settings": {
-						"clut_amount": 0.25,
-						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
-					}
-				}
-			],
-			"id": "av_capture_input",
-			"name": "Internal"
-		},
-		{
-			"filters": [
-				{
-					"id": "compressor_filter",
-					"name": "Compressor"
-				},
-				{
-					"id": "limiter_filter",
-					"name": "Limiter"
-				}
-			],
-			"id": "ffmpeg_source",
-			"monitoring_type": 2,
-			"name": "Intro",
-			"private_settings": {
-				"mixer_hidden": true,
-				"volume_locked": true
+			"name": "External",
+			"settings": {
+				"device": "CC27327P54QGDV4AV"
 			}
 		},
 		{
 			"filters": [
 				{
-					"id": "compressor_filter",
-					"name": "Compressor"
+					"id": "sharpness_filter",
+					"name": "Sharpen"
 				},
 				{
-					"id": "limiter_filter",
-					"name": "Limiter"
+					"enabled": "false",
+					"id": "chroma_key_filter",
+					"name": "Chroma Key"
+				},
+				{
+					"id": "clut_filter",
+					"name": "Apply LUT",
+					"settings": {
+						"clut_amount": 0.25,
+						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
+					}
 				}
 			],
-			"id": "ffmpeg_source",
-			"monitoring_type": 2,
-			"name": "Outro",
-			"private_settings": {
-				"mixer_hidden": true,
-				"volume_locked": true
+			"id": "av_capture_input",
+			"name": "Internal",
+			"settings": {
+				"device": "CC27327P54QGDV4AV"
 			}
 		},
 		{
@@ -139,32 +76,19 @@
 			"id": "slideshow",
 			"name": "Slide Show",
 			"settings": {
+				"files": [
+					{
+						"value": "/Library/Desktop Pictures"
+					}
+				],
 				"slide_mode": "mode_manual",
 				"use_custom_size": "1280x720"
-			}
-		},
-		{
-			"id": "color_source",
-			"name": "Color Source",
-			"settings": {
-				"color": 4288269363,
-				"height": 720,
-				"width": 1280
-			}
-		},
-		{
-			"id": "image_source",
-			"name": "Background",
-			"settings": {
-				"file": "https://markus-mauthe.de/site/assets/files/1048/sa14.jpg"
 			}
 		},
 		{
 			"id": "text_ft2_source",
 			"name": "?",
 			"settings": {
-				"color1": 4284888012,
-				"color2": 4294967295,
 				"font": {
 					"face": "Helvetica Neue",
 					"size": 288,
@@ -182,88 +106,26 @@
 			}
 		},
 		{
-			"id": "browser_source",
-			"name": "Overlay Start",
-			"private_settings": {
-				"mixer_hidden": true
-			},
-			"settings": {
-				"css": "",
-				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/bd/svg/start.svg",
-				"width": 1280
-			}
-		},
-		{
-			"id": "browser_source",
-			"name": "Overlay Cam",
-			"private_settings": {
-				"mixer_hidden": true
-			},
-			"settings": {
-				"css": "",
-				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/bd/svg/bubbles.svg",
-				"width": 1280
-			}
-		},
-		{
-			"id": "browser_source",
-			"name": "Overlay Finish",
-			"private_settings": {
-				"mixer_hidden": true
-			},
-			"settings": {
-				"css": "",
-				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/bd/svg/finish.svg",
-				"width": 1280
-			}
-		},
-		{
 			"hotkeys": {
 				"OBSBasic.SelectScene": [
-					{
-						"key": "OBS_KEY_1"
-					}
-				],
-				"libobs.show_scene_item.Overlay Start": [
 					{
 						"key": "OBS_KEY_1"
 					}
 				]
 			},
 			"id": "scene",
-			"name": "Start",
-			"settings": {
-				"items": [
-					{
-						"locked": true,
-						"name": "Overlay Start",
-						"visible": true
-					}
-				]
-			}
+			"name": "Start"
 		},
 		{
 			"hotkeys": {
 				"OBSBasic.SelectScene": [
 					{
 						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_I"
 					}
 				],
 				"libobs.hide_scene_item.?": [
 					{
 						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_G"
 					},
 					{
 						"key": "OBS_KEY_MINUS"
@@ -274,38 +136,17 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.hide_scene_item.Intro": [
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_G"
-					}
-				],
-				"libobs.hide_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
 				"libobs.hide_scene_item.screen": [
 					{
 						"key": "OBS_KEY_2"
 					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
-					},
-					{
-						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.show_scene_item.?": [
 					{
 						"key": "OBS_KEY_MINUS"
-					}
-				],
-				"libobs.show_scene_item.Background": [
-					{
-						"key": "OBS_KEY_2"
 					}
 				],
 				"libobs.show_scene_item.External": [
@@ -314,27 +155,9 @@
 					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					},
-					{
-						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.show_scene_item.Internal": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
-				"libobs.show_scene_item.Intro": [
-					{
-						"key": "OBS_KEY_I"
-					}
-				],
-				"libobs.show_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_G"
-					}
-				],
-				"libobs.show_scene_item.Overlay Cam": [
 					{
 						"key": "OBS_KEY_2"
 					}
@@ -349,20 +172,6 @@
 			"name": "Cam",
 			"settings": {
 				"items": [
-					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "Background",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
-					},
 					{
 						"align": 0,
 						"locked": true,
@@ -388,21 +197,6 @@
 						"align": 0,
 						"bounds": {
 							"x": 480,
-							"y": 480
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "NDI",
-						"pos": {
-							"x": 250,
-							"y": 360
-						},
-						"rot": 5
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 480,
 							"y": 270
 						},
 						"bounds_type": 3,
@@ -421,27 +215,6 @@
 							"x": 250,
 							"y": 340
 						}
-					},
-					{
-						"locked": true,
-						"name": "Overlay Cam"
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "Intro",
-						"pos": {
-							"x": 640,
-							"y": 360
-						},
-						"private_settings": {
-							"color-preset": 7
-						}
 					}
 				]
 			}
@@ -459,11 +232,6 @@
 					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
-					}
-				],
-				"libobs.show_scene_item.Color Source": [
-					{
-						"key": "OBS_KEY_3"
 					}
 				],
 				"libobs.show_scene_item.Slide Show": [
@@ -491,10 +259,6 @@
 				"items": [
 					{
 						"locked": true,
-						"name": "Color Source"
-					},
-					{
-						"locked": true,
 						"name": "Slide Show",
 						"private_settings": {
 							"color-preset": 7
@@ -517,60 +281,6 @@
 					{
 						"locked": true,
 						"name": "cams"
-					}
-				]
-			}
-		},
-		{
-			"hotkeys": {
-				"OBSBasic.SelectScene": [
-					{
-						"key": "OBS_KEY_4"
-					},
-					{
-						"key": "OBS_KEY_O"
-					}
-				],
-				"libobs.hide_scene_item.Outro": [
-					{
-						"key": "OBS_KEY_4"
-					}
-				],
-				"libobs.show_scene_item.Outro": [
-					{
-						"key": "OBS_KEY_O"
-					}
-				],
-				"libobs.show_scene_item.Overlay Finish": [
-					{
-						"key": "OBS_KEY_4"
-					}
-				]
-			},
-			"id": "scene",
-			"name": "Finish",
-			"settings": {
-				"items": [
-					{
-						"locked": true,
-						"name": "Overlay Finish"
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "Outro",
-						"pos": {
-							"x": 640,
-							"y": 360
-						},
-						"private_settings": {
-							"color-preset": 7
-						}
 					}
 				]
 			}
@@ -666,11 +376,6 @@
 				}
 			],
 			"hotkeys": {
-				"libobs.show_scene_item.Color Source": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
 				"libobs.show_scene_item.Slide Show": [
 					{
 						"key": "OBS_KEY_2"
@@ -689,10 +394,6 @@
 			},
 			"settings": {
 				"items": [
-					{
-						"locked": true,
-						"name": "Color Source"
-					},
 					{
 						"locked": true,
 						"name": "Slide Show"

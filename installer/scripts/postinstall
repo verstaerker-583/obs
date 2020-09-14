@@ -1,0 +1,15 @@
+#!/bin/sh
+OBS="Library/Application Support/obs-studio"
+
+rm -rf ~/"$OBS"
+mv /tmp/obs-studio ~/"Library/Application Support"
+
+find ~/"$OBS" -d -exec touch -ht 197304291400 '{}' \;
+
+osascript -e "set volume alert volume 0"
+osascript -e "set volume input volume 25"
+osascript -e "set volume output volume 35"
+
+open /Applications/obs.app
+
+exit 0

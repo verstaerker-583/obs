@@ -1,195 +1,6 @@
 {
-	"AuxAudioDevice1": {
-		"filters": [
-			{
-				"id": "noise_suppress_filter",
-				"name": "Noise Suppression"
-			},
-			{
-				"id": "noise_gate_filter",
-				"name": "Noise Gate"
-			},
-			{
-				"id": "compressor_filter",
-				"name": "Compressor"
-			},
-			{
-				"id": "limiter_filter",
-				"name": "Limiter"
-			}
-		],
-		"hotkeys": {
-			"libobs.mute": [
-				{
-					"key": "OBS_KEY_1"
-				},
-				{
-					"key": "OBS_KEY_4"
-				},
-				{
-					"key": "OBS_KEY_M"
-				},
-				{
-					"key": "OBS_KEY_O"
-				}
-			],
-			"libobs.unmute": [
-				{
-					"key": "OBS_KEY_2"
-				},
-				{
-					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_G"
-				},
-				{
-					"key": "OBS_KEY_I"
-				},
-				{
-					"key": "OBS_KEY_M"
-				}
-			]
-		},
-		"id": "coreaudio_input_capture",
-		"mixers": 3,
-		"name": "Microphone",
-		"private_settings": {
-			"volume_locked": true
-		}
-	},
-	"AuxAudioDevice2": {
-		"filters": [
-			{
-				"id": "compressor_filter",
-				"name": "Compressor"
-			},
-			{
-				"enabled": "false",
-				"id": "compressor_filter",
-				"name": "Ducking",
-				"settings": {
-					"attack_time": 100,
-					"ratio": 32,
-					"release_time": 600,
-					"sidechain_source": "Microphone",
-					"threshold": -36
-				}
-			},
-			{
-				"id": "limiter_filter",
-				"name": "Limiter"
-			}
-		],
-		"hotkeys": {
-			"libobs.mute": [
-				{
-					"key": "OBS_KEY_1"
-				},
-				{
-					"key": "OBS_KEY_4"
-				},
-				{
-					"key": "OBS_KEY_D"
-				},
-				{
-					"key": "OBS_KEY_O"
-				}
-			],
-			"libobs.unmute": [
-				{
-					"key": "OBS_KEY_2"
-				},
-				{
-					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_D"
-				},
-				{
-					"key": "OBS_KEY_I"
-				}
-			]
-		},
-		"id": "coreaudio_input_capture",
-		"mixers": 5,
-		"monitoring_type": 2,
-		"name": "Desktop Audio",
-		"private_settings": {
-			"volume_locked": true
-		},
-		"settings": {
-			"device_id": "BlackHole_UID"
-		}
-	},
-	"AuxAudioDevice3": {
-		"balance": 0.25,
-		"filters": [
-			{
-				"id": "noise_suppress_filter",
-				"name": "Noise Suppression"
-			},
-			{
-				"id": "noise_gate_filter",
-				"name": "Noise Gate"
-			},
-			{
-				"id": "compressor_filter",
-				"name": "Compressor"
-			},
-			{
-				"id": "compressor_filter",
-				"name": "Ducking",
-				"settings": {
-					"attack_time": 100,
-					"ratio": 32,
-					"release_time": 600,
-					"sidechain_source": "Microphone",
-					"threshold": -36
-				}
-			},
-			{
-				"id": "limiter_filter",
-				"name": "Limiter"
-			}
-		],
-		"hotkeys": {
-			"libobs.mute": [
-				{
-					"key": "OBS_KEY_1"
-				},
-				{
-					"key": "OBS_KEY_2"
-				},
-				{
-					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_4"
-				},
-				{
-					"key": "OBS_KEY_O"
-				}
-			],
-			"libobs.unmute": [
-				{
-					"key": "OBS_KEY_G"
-				}
-			]
-		},
-		"id": "coreaudio_input_capture",
-		"mixers": 17,
-		"monitoring_type": 2,
-		"name": "NDI Audio",
-		"private_settings": {
-			"volume_locked": true
-		},
-		"settings": {
-			"device_id": "BF568F24-731B-41DB-932E-AC7E260BC71A"
-		}
-	},
 	"current_scene": "Start",
-	"name": "sr",
+	"name": "bd_solo",
 	"preview_locked": true,
 	"sources": [
 		{
@@ -221,10 +32,7 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "NDI",
-			"settings": {
-				"device": "BB86C477-373F-49D9-AA4B-CE86A0E883F1"
-			}
+			"name": "NDI"
 		},
 		{
 			"filters": [
@@ -249,7 +57,7 @@
 			"id": "av_capture_input",
 			"name": "External",
 			"settings": {
-				"device": "CC27327P54QGDV4AV"
+				"device": "0x543000043e9a4d"
 			}
 		},
 		{
@@ -275,7 +83,7 @@
 			"id": "av_capture_input",
 			"name": "Internal",
 			"settings": {
-				"device": "CC27327P54QGDV4AV"
+				"device": "0x8020000005ac8514"
 			}
 		},
 		{
@@ -290,16 +98,11 @@
 				}
 			],
 			"id": "ffmpeg_source",
-			"mixers": 9,
 			"monitoring_type": 2,
 			"name": "Intro",
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
-			},
-			"settings": {
-				"input": "https://tinyurl.com/yyczgwlc",
-				"is_local_file": false
 			}
 		},
 		{
@@ -314,16 +117,11 @@
 				}
 			],
 			"id": "ffmpeg_source",
-			"mixers": 9,
 			"monitoring_type": 2,
 			"name": "Outro",
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
-			},
-			"settings": {
-				"input": "https://tinyurl.com/yyczgwlc",
-				"is_local_file": false
 			}
 		},
 		{
@@ -347,11 +145,6 @@
 			"id": "slideshow",
 			"name": "Slide Show",
 			"settings": {
-				"files": [
-					{
-						"value": "/Library/Desktop Pictures"
-					}
-				],
 				"slide_mode": "mode_manual",
 				"use_custom_size": "1280x720"
 			}
@@ -360,7 +153,7 @@
 			"id": "color_source",
 			"name": "Color Source",
 			"settings": {
-				"color": 4287868617,
+				"color": 4288269363,
 				"height": 720,
 				"width": 1280
 			}
@@ -376,8 +169,8 @@
 			"id": "text_ft2_source",
 			"name": "?",
 			"settings": {
-				"color1": 4287868617,
-				"color2": 4282145104,
+				"color1": 4284888012,
+				"color2": 4294967295,
 				"font": {
 					"face": "Helvetica Neue",
 					"size": 288,
@@ -390,8 +183,8 @@
 			"id": "window_capture",
 			"name": "Window Capture",
 			"settings": {
-				"owner_name": "Dock",
-				"window_name": "Desktop Picture - DefaultDesktop.heic"
+				"owner_name": "FotoMagico 5",
+				"window_name": ""
 			}
 		},
 		{
@@ -403,7 +196,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/start.html",
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/start.svg",
 				"width": 1280
 			}
 		},
@@ -416,7 +209,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/cam.html",
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/bubbles.svg",
 				"width": 1280
 			}
 		},
@@ -429,33 +222,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/finish.html",
-				"width": 1280
-			}
-		},
-		{
-			"id": "browser_source",
-			"name": "Overlay Chat",
-			"private_settings": {
-				"mixer_hidden": true
-			},
-			"settings": {
-				"css": "@import url(https://verstaerker-583.github.io/obs/sr/html/chat.css)",
-				"height": 120,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/chat.html",
-				"width": 640
-			}
-		},
-		{
-			"id": "browser_source",
-			"name": "Overlay Donate",
-			"private_settings": {
-				"mixer_hidden": true
-			},
-			"settings": {
-				"css": "",
-				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/donate.html",
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/finish.svg",
 				"width": 1280
 			}
 		},
@@ -526,25 +293,6 @@
 						"key": "OBS_KEY_2"
 					}
 				],
-				"libobs.hide_scene_item.Overlay Chat": [
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_C"
-					}
-				],
-				"libobs.hide_scene_item.Overlay Donate": [
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_E"
-					},
-					{
-						"key": "OBS_KEY_G"
-					}
-				],
 				"libobs.hide_scene_item.screen": [
 					{
 						"key": "OBS_KEY_2"
@@ -597,19 +345,6 @@
 						"key": "OBS_KEY_2"
 					}
 				],
-				"libobs.show_scene_item.Overlay Chat": [
-					{
-						"key": "OBS_KEY_C"
-					},
-					{
-						"key": "OBS_KEY_G"
-					}
-				],
-				"libobs.show_scene_item.Overlay Donate": [
-					{
-						"key": "OBS_KEY_E"
-					}
-				],
 				"libobs.show_scene_item.screen": [
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
@@ -656,14 +391,6 @@
 						}
 					},
 					{
-						"locked": true,
-						"name": "Overlay Chat",
-						"pos": {
-							"x": 500,
-							"y": 600
-						}
-					},
-					{
 						"align": 0,
 						"bounds": {
 							"x": 480,
@@ -704,10 +431,6 @@
 					{
 						"locked": true,
 						"name": "Overlay Cam"
-					},
-					{
-						"locked": true,
-						"name": "Overlay Donate"
 					},
 					{
 						"align": 0,

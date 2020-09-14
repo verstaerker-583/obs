@@ -189,7 +189,7 @@
 		}
 	},
 	"current_scene": "Start",
-	"name": "sr",
+	"name": "bd_solo",
 	"preview_locked": true,
 	"sources": [
 		{
@@ -249,7 +249,7 @@
 			"id": "av_capture_input",
 			"name": "External",
 			"settings": {
-				"device": "CC27327P54QGDV4AV"
+				"device": "0x543000043e9a4d"
 			}
 		},
 		{
@@ -275,7 +275,7 @@
 			"id": "av_capture_input",
 			"name": "Internal",
 			"settings": {
-				"device": "CC27327P54QGDV4AV"
+				"device": "0x8020000005ac8514"
 			}
 		},
 		{
@@ -296,10 +296,6 @@
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
-			},
-			"settings": {
-				"input": "https://tinyurl.com/yyczgwlc",
-				"is_local_file": false
 			}
 		},
 		{
@@ -320,10 +316,6 @@
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
-			},
-			"settings": {
-				"input": "https://tinyurl.com/yyczgwlc",
-				"is_local_file": false
 			}
 		},
 		{
@@ -347,11 +339,6 @@
 			"id": "slideshow",
 			"name": "Slide Show",
 			"settings": {
-				"files": [
-					{
-						"value": "/Library/Desktop Pictures"
-					}
-				],
 				"slide_mode": "mode_manual",
 				"use_custom_size": "1280x720"
 			}
@@ -360,7 +347,7 @@
 			"id": "color_source",
 			"name": "Color Source",
 			"settings": {
-				"color": 4287868617,
+				"color": 4288269363,
 				"height": 720,
 				"width": 1280
 			}
@@ -376,8 +363,8 @@
 			"id": "text_ft2_source",
 			"name": "?",
 			"settings": {
-				"color1": 4287868617,
-				"color2": 4282145104,
+				"color1": 4284888012,
+				"color2": 4294967295,
 				"font": {
 					"face": "Helvetica Neue",
 					"size": 288,
@@ -390,8 +377,8 @@
 			"id": "window_capture",
 			"name": "Window Capture",
 			"settings": {
-				"owner_name": "Dock",
-				"window_name": "Desktop Picture - DefaultDesktop.heic"
+				"owner_name": "FotoMagico 5",
+				"window_name": ""
 			}
 		},
 		{
@@ -403,7 +390,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/start.html",
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/start.svg",
 				"width": 1280
 			}
 		},
@@ -416,7 +403,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/cam.html",
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/bubbles.svg",
 				"width": 1280
 			}
 		},
@@ -429,33 +416,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/finish.html",
-				"width": 1280
-			}
-		},
-		{
-			"id": "browser_source",
-			"name": "Overlay Chat",
-			"private_settings": {
-				"mixer_hidden": true
-			},
-			"settings": {
-				"css": "@import url(https://verstaerker-583.github.io/obs/sr/html/chat.css)",
-				"height": 120,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/chat.html",
-				"width": 640
-			}
-		},
-		{
-			"id": "browser_source",
-			"name": "Overlay Donate",
-			"private_settings": {
-				"mixer_hidden": true
-			},
-			"settings": {
-				"css": "",
-				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/donate.html",
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/finish.svg",
 				"width": 1280
 			}
 		},
@@ -526,25 +487,6 @@
 						"key": "OBS_KEY_2"
 					}
 				],
-				"libobs.hide_scene_item.Overlay Chat": [
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_C"
-					}
-				],
-				"libobs.hide_scene_item.Overlay Donate": [
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_E"
-					},
-					{
-						"key": "OBS_KEY_G"
-					}
-				],
 				"libobs.hide_scene_item.screen": [
 					{
 						"key": "OBS_KEY_2"
@@ -597,19 +539,6 @@
 						"key": "OBS_KEY_2"
 					}
 				],
-				"libobs.show_scene_item.Overlay Chat": [
-					{
-						"key": "OBS_KEY_C"
-					},
-					{
-						"key": "OBS_KEY_G"
-					}
-				],
-				"libobs.show_scene_item.Overlay Donate": [
-					{
-						"key": "OBS_KEY_E"
-					}
-				],
 				"libobs.show_scene_item.screen": [
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
@@ -656,14 +585,6 @@
 						}
 					},
 					{
-						"locked": true,
-						"name": "Overlay Chat",
-						"pos": {
-							"x": 500,
-							"y": 600
-						}
-					},
-					{
 						"align": 0,
 						"bounds": {
 							"x": 480,
@@ -704,10 +625,6 @@
 					{
 						"locked": true,
 						"name": "Overlay Cam"
-					},
-					{
-						"locked": true,
-						"name": "Overlay Donate"
 					},
 					{
 						"align": 0,

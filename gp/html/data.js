@@ -19,7 +19,7 @@ var pics = {
 	organizationLogo: "../gpLogo.svg",
 	organizationLogoNeg: "../gpLogoNeg.svg",
 	presenterLogo: "../../gp/mmLogo.png",
-	videoThumb: "https://www.markus-mauthe.de/site/assets/files/1001/homepage_045.jpg"
+	videoThumb: "https://i3.ytimg.com/vi/uS3Um_Vrv3E/maxresdefault.jpg"
 };
 var alarmTime =  "19:30";
 /*

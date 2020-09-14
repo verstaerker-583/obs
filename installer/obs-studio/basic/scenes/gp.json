@@ -189,7 +189,7 @@
 		}
 	},
 	"current_scene": "Start",
-	"name": "sr",
+	"name": "gp",
 	"preview_locked": true,
 	"sources": [
 		{
@@ -249,7 +249,7 @@
 			"id": "av_capture_input",
 			"name": "External",
 			"settings": {
-				"device": "CC27327P54QGDV4AV"
+				"device": "0x543000043e9a4d"
 			}
 		},
 		{
@@ -275,7 +275,7 @@
 			"id": "av_capture_input",
 			"name": "Internal",
 			"settings": {
-				"device": "CC27327P54QGDV4AV"
+				"device": "0x8020000005ac8514"
 			}
 		},
 		{
@@ -296,10 +296,6 @@
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
-			},
-			"settings": {
-				"input": "https://tinyurl.com/yyczgwlc",
-				"is_local_file": false
 			}
 		},
 		{
@@ -320,10 +316,6 @@
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
-			},
-			"settings": {
-				"input": "https://tinyurl.com/yyczgwlc",
-				"is_local_file": false
 			}
 		},
 		{
@@ -347,11 +339,6 @@
 			"id": "slideshow",
 			"name": "Slide Show",
 			"settings": {
-				"files": [
-					{
-						"value": "/Library/Desktop Pictures"
-					}
-				],
 				"slide_mode": "mode_manual",
 				"use_custom_size": "1280x720"
 			}
@@ -360,7 +347,7 @@
 			"id": "color_source",
 			"name": "Color Source",
 			"settings": {
-				"color": 4287868617,
+				"color": 4280204915,
 				"height": 720,
 				"width": 1280
 			}
@@ -376,8 +363,8 @@
 			"id": "text_ft2_source",
 			"name": "?",
 			"settings": {
-				"color1": 4287868617,
-				"color2": 4282145104,
+				"color1": 4281467135,
+				"color2": 4279828552,
 				"font": {
 					"face": "Helvetica Neue",
 					"size": 288,
@@ -390,8 +377,8 @@
 			"id": "window_capture",
 			"name": "Window Capture",
 			"settings": {
-				"owner_name": "Dock",
-				"window_name": "Desktop Picture - DefaultDesktop.heic"
+				"owner_name": "FotoMagico 5",
+				"window_name": ""
 			}
 		},
 		{
@@ -403,7 +390,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/start.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/start.html",
 				"width": 1280
 			}
 		},
@@ -416,7 +403,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/cam.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/cam.html",
 				"width": 1280
 			}
 		},
@@ -429,7 +416,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/finish.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/finish.html",
 				"width": 1280
 			}
 		},
@@ -440,9 +427,9 @@
 				"mixer_hidden": true
 			},
 			"settings": {
-				"css": "@import url(https://verstaerker-583.github.io/obs/sr/html/chat.css)",
+				"css": "@import url(https://verstaerker-583.github.io/obs/gp/html/chat.css)",
 				"height": 120,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/chat.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/chat.html",
 				"width": 640
 			}
 		},
@@ -455,7 +442,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/donate.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/donate.html",
 				"width": 1280
 			}
 		},
