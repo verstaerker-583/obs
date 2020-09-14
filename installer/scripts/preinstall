@@ -1,19 +1,20 @@
 #!/bin/sh
 
 #
-rm -rf "/Library/Application Support/obs-studio"
-rm -rf ~/Documents/TouchPortal
-rm -rf ~/Documents/magic
-rm -rf ~/Documents/obs
+#rm -rf "/Library/Application Support/obs-studio"
+#rm -rf ~/Documents/TouchPortal
+#rm -rf ~/Documents/magic
+#rm -rf ~/Documents/obs
 
-osascript -e "set volume output volume 100"
-say -v Alex ",,cleaning harddrive,,ready to delete all image files older than one week,,5,,4,,3,,2,,1,,0,,done,,it's magic"
+#osascript -e "set volume output volume 100"
+#say -v Alex ",,cleaning harddrive,,ready to delete all image files older than one week,,5,,4,,3,,2,,1,,0,,done,,it's magic"
 #
 
-killall coreaudiod
-killall obs
+#killall coreaudiod
 
-rm -rf /Library/Preferences/Audio
-rm -rf /Library/Preferences/com.apple.soundpref.plist
+#rm -rf /Library/Preferences/Audio
+#rm -rf /Library/Preferences/com.apple.soundpref.plist
+
+killall obs
 
 exit 0
