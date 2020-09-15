@@ -18,7 +18,7 @@ sed -f profilesLq.sed basic.ini > ../profiles/YTlq/basic.ini
 sed -f profilesMq.sed basic.ini > ../profiles/YTmq/basic.ini
 sed -f profilesSq.sed basic.ini > ../profiles/YTsq/basic.ini
 
-PAYLOAD="../installer/obs-studio"
+PAYLOAD="../pkg/obs-studio"
 # mm scenes
 mkdir -p $PAYLOAD/basic/scenes
 for i in `ls ../*/*.json`; do
@@ -44,8 +44,8 @@ chmod -R -w ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs/.git
 
 chmod -R +w $PAYLOAD
-chmod -R -w $PAYLOAD/basic/profiles
-sudo chown -R root $PAYLOAD/basic/profiles
+#chmod -R -w $PAYLOAD/basic/profiles
+#sudo chown -R root $PAYLOAD/basic/profiles
 
 pkgbuild \
 	--identifier magic\
@@ -53,6 +53,6 @@ pkgbuild \
 	--ownership preserve\
 	--quiet\
 	--root $PAYLOAD\
-	--scripts ../installer/scripts\
+	--scripts ../pkg/scripts\
 	--version `date "+%Y%m%d%H%M%S"`\
        	~/Desktop/magic.pkg

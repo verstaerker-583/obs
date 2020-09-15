@@ -1,0 +1,5 @@
+#!/bin/sh
+
+killall obs
+
+exit 0
