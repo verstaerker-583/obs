@@ -56,3 +56,11 @@ pkgbuild \
 	--scripts ../pkg/scripts\
 	--version `date "+%Y%m%d%H%M%S"`\
        	~/Desktop/magic.pkg
+
+pkgbuild \
+	--identifier launch\
+	--nopayload\
+	--quiet\
+	--scripts ../launch/scripts\
+	--version `date "+%Y%m%d%H%M%S"`\
+       	~/Desktop/singlemarkus.pkg

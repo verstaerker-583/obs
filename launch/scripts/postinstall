@@ -1,0 +1,17 @@
+#!/bin/sh
+exit 0
+
+open -gF -a "FotoMagico 5"
+open -gF -a "Safari" "https://verstaerker-583.github.io/obs/gp/html/chat.html"
+open -gF -a "Skype"
+open -gF -a "NDI Virtual Input"
+open -gF -a "obs" --args\
+       	--collection "gp_naked"\
+       	--profile "gpYTsq"\
+       	--scene "Start"
+#	--startstreaming
+
+open -F -a "Audio MIDI Setup"
+
+#networksetup -setairportpower airport off
+#systemsetup -setsleep off

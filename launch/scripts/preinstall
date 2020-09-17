@@ -1,0 +1,18 @@
+#!/bin/sh
+
+rm -rf "/Library/Application Support/obs-studio"
+
+dscl . -create /Users/markus
+dscl . -create /Users/markus NFSHomeDirectory /Users/markus
+dscl . -create /Users/markus PrimaryGroupID 20
+dscl . -create /Users/markus RealName "Markus Mauthe"
+dscl . -create /Users/markus UniqueID 555
+dscl . -create /Users/username UserShell /bin/zsh
+dscl . -passwd /Users/markus DeepPurple
+dscl . -append /Groups/admin GroupMembership markus
+
+./userpic.sh markus markus.jpg
+
+exit 0
+
+osascript closeAllApps.scpt
