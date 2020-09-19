@@ -34,7 +34,7 @@ for CHANNEL in bd gp mm; do
 			s/Name=ok/Name='$CHANNEL'/
 			s/AppleHDAEngineOutput:1B,0,1,1:0/BuiltInHeadphoneOutputDevice/
 			' ../profiles/$i/basic.ini > $PAYLOAD/basic/profiles/$CHANNEL$i/basic.ini
-			[ $i == $lq ] || ln -sf ../$CHANNEL$lq/service.json  $PAYLOAD/basic/profiles/$CHANNEL$i
+			[ $i == $lq ] || ln -sf ../$CHANNEL$lq/service.json $PAYLOAD/basic/profiles/$CHANNEL$i
 	done
 done
 
@@ -51,11 +51,14 @@ pkgbuild \
 	--identifier magic\
 	--install-location /tmp/obs-studio\
 	--ownership preserve\
-	--quiet\
 	--root $PAYLOAD\
 	--scripts ../pkg/scripts\
 	--version `date "+%Y%m%d%H%M%S"`\
-       	~/Desktop/magic.pkg
+	~/Desktop/magic.pkg
+
+#	--info ../pkg/PackageInfo\
+
+exit 0
 
 pkgbuild \
 	--identifier launch\
@@ -63,4 +66,4 @@ pkgbuild \
 	--quiet\
 	--scripts ../launch/scripts\
 	--version `date "+%Y%m%d%H%M%S"`\
-       	~/Desktop/singlemarkus.pkg
+ 	~/Desktop/launch.pkg

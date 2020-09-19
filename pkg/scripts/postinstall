@@ -1,8 +1,8 @@
 #!/bin/sh
+
 OBS="Library/Application Support/obs-studio"
 
-rm -rf ~/"$OBS"
-mv /tmp/obs-studio ~/"Library/Application Support"
+mv /tmp/obs-studio ~/"$OBS"
 
 find ~/"$OBS" -d -exec touch -ht 197304291400 '{}' \;
 

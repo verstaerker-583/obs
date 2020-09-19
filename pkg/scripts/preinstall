@@ -1,5 +1,14 @@
 #!/bin/sh
 
+dscl . -create /Users/markus UserShell /bin/zsh
+
+find /Users -type d -d -empty -delete
+chmod -R 755 /Users/Shared
+
+OBS="Library/Application Support/obs-studio"
+
 killall obs
+
+rm -rf /Users/*/"$OBS" /"$OBS"
 
 exit 0
