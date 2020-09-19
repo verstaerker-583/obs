@@ -770,6 +770,11 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
+				"libobs.hide_scene_item.NDI": [
+					{
+						"key": "OBS_KEY_P"
+					}
+				],
 				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_3"
@@ -791,6 +796,36 @@
 			},
 			"settings": {
 				"items": [
+					{
+						"align": 0,
+						"bounds": {
+							"x": 196,
+							"y": 196
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "NDI",
+						"pos": {
+							"x": 1172,
+							"y": 320
+						},
+						"rot": 180
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 196,
+							"y": 196
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "NDI",
+						"pos": {
+							"x": 108,
+							"y": 400
+						},
+						"rot": 180
+					},
 					{
 						"align": 0,
 						"bounds": {
