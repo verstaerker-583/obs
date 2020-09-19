@@ -3,6 +3,11 @@ body {
 	overflow: hidden;
 }
 
+* {
+	background-color: transparent !important;
+	overflow: hidden;
+}
+
 /*
 yt-live-chat-author-chip #author-name {
 	background-color: transparent !important;
