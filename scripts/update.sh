@@ -3,6 +3,9 @@
 sudo chown -R olaf ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs
 
+# masks
+/Applications/Inkscape.app/Contents/MacOS/inkscape --export-type="png" ../*/*Mask.svg
+
 # scenes
 jq -S --tab -f bd_solo.jq	../gp/gp.json		> ../bd/bd_solo.json
 jq -S --tab -f gp_naked.jq	../gp/gp.json		> ../gp/gp_naked.json

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720">
-	<defs>
-		<circle id="cam" r="98"/>
-	</defs>
-	<use xlink:href="#cam" x="108" y="400" />
-	<use xlink:href="#cam" x="1172" y="320" />
-</svg>
