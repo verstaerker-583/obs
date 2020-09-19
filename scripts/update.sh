@@ -4,7 +4,7 @@ sudo chown -R olaf ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs
 
 # masks
-/Applications/Inkscape.app/Contents/MacOS/inkscape --export-type="png" ../*/*Mask.svg
+/Applications/Inkscape.app/Contents/MacOS/inkscape --export-type="png" ../*/*Mask.svg &>/dev/null
 
 # scenes
 jq -S --tab -f bd_solo.jq	../gp/gp.json		> ../bd/bd_solo.json
@@ -54,6 +54,7 @@ pkgbuild \
 	--identifier magic\
 	--install-location /tmp/obs-studio\
 	--ownership preserve\
+	--quiet\
 	--root $PAYLOAD\
 	--scripts ../pkg/scripts\
 	--version `date "+%Y%m%d%H%M%S"`\
