@@ -1,36 +1,36 @@
 {
-  "SPAudioDataType": [
-    {
-      "_items": [
-        {
-          "_name": "MacBook Pro Mikrofon",
-          "coreaudio_default_audio_input_device": "spaudio_yes",
-          "coreaudio_device_input": 1,
-          "coreaudio_device_manufacturer": "Apple Inc.",
-          "coreaudio_device_srate": 48000,
-          "coreaudio_device_transport": "coreaudio_device_type_builtin",
-          "coreaudio_input_source": "MacBook Pro Mikrofon"
-        },
-        {
-          "_name": "MacBook Pro Lautsprecher",
-          "_properties": "coreaudio_default_audio_system_device",
-          "coreaudio_default_audio_output_device": "spaudio_yes",
-          "coreaudio_default_audio_system_device": "spaudio_yes",
-          "coreaudio_device_manufacturer": "Apple Inc.",
-          "coreaudio_device_output": 2,
-          "coreaudio_device_srate": 48000,
-          "coreaudio_device_transport": "coreaudio_device_type_builtin",
-          "coreaudio_output_source": "MacBook Pro Lautsprecher"
-        }
-      ],
-      "_name": "coreaudio_device"
-    }
-  ],
-  "SPCameraDataType": [
-    {
-      "_name": "FaceTime HD-Kamera (integriert)",
-      "spcamera_model-id": "UVC Camera VendorID_1452 ProductID_34068",
-      "spcamera_unique-id": "0x8020000005ac8514"
-    }
-  ]
+	"SPAudioDataType": [
+		{
+			"_items": [
+				{
+					"_name": "MacBook Pro Mikrofon",
+					"coreaudio_default_audio_input_device": "spaudio_yes",
+					"coreaudio_device_input": 1,
+					"coreaudio_device_manufacturer": "Apple Inc.",
+					"coreaudio_device_srate": 48000,
+					"coreaudio_device_transport": "coreaudio_device_type_builtin",
+					"coreaudio_input_source": "MacBook Pro Mikrofon"
+				},
+				{
+					"_name": "MacBook Pro Lautsprecher",
+					"_properties": "coreaudio_default_audio_system_device",
+					"coreaudio_default_audio_output_device": "spaudio_yes",
+					"coreaudio_default_audio_system_device": "spaudio_yes",
+					"coreaudio_device_manufacturer": "Apple Inc.",
+					"coreaudio_device_output": 2,
+					"coreaudio_device_srate": 48000,
+					"coreaudio_device_transport": "coreaudio_device_type_builtin",
+					"coreaudio_output_source": "MacBook Pro Lautsprecher"
+				}
+			],
+			"_name": "coreaudio_device"
+		}
+	],
+	"SPCameraDataType": [
+		{
+			"_name": "FaceTime HD-Kamera (integriert)",
+			"spcamera_model-id": "UVC Camera VendorID_1452 ProductID_34068",
+			"spcamera_unique-id": "0x8020000005ac8514"
+		}
+	]
 }
