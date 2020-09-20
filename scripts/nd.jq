@@ -19,7 +19,8 @@
 		"libobs.show_scene_item.Overlay Cam",
 		"libobs.show_scene_item.Overlay Chat",
 		"libobs.show_scene_item.Overlay Donate",
-		"libobs.show_scene_item.Overlay Start"
+		"libobs.show_scene_item.Overlay Start",
+		"libobs.show_scene_item.guest"
 	]
 )
 
@@ -34,12 +35,13 @@
 	select(.name? == "Intro"),
 	select(.name? == "NDI"),
 	select(.name? == "Outro"),
-
-	select(.name? == "Finish"),
 #	select(.name? == "Start"),
 	select(.name? == "Start").settings,
-
+	select(.name? == "Finish"),
+	select(.name? == "guest"),
 	select(.name? | test("Overlay")?),
+
+	select(.key? == "OBS_KEY_F"),
 	select(.key? == "OBS_KEY_G"),
 	select(.key? == "OBS_KEY_H"),
 	select(.key? == "OBS_KEY_I")

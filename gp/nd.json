@@ -136,6 +136,11 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
+				"libobs.hide_scene_item.guest": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				],
 				"libobs.hide_scene_item.screen": [
 					{
 						"key": "OBS_KEY_2"

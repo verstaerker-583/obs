@@ -4,16 +4,16 @@ sudo chown -R olaf ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs
 
 # masks
-#/Applications/Inkscape.app/Contents/MacOS/inkscape --export-type="png" ../*/*Mask.svg &>/dev/null
+/Applications/Inkscape.app/Contents/MacOS/inkscape --export-type="png" ../*/*Mask.svg &>/dev/null
 
 # scenes
-jq -S --tab -f bd_solo.jq	../gp/gp.json		> ../bd/bd_solo.json
 jq -S --tab -f gp_naked.jq	../gp/gp.json		> ../gp/gp_naked.json
 jq -S --tab -f nd.jq		../gp/gp.json		> ../gp/nd.json
-jq -S --tab -f sr.jq		../gp/gp.json		> ../sr/sr.json
-jq -S --tab -f bd_naked.jq	../bd/bd.json		> ../bd/bd_naked.json
+jq -S --tab -f sr.jq		../gp/gp_naked.json	> ../sr/sr.json
 
+jq -S --tab -f bd_solo.jq	../gp/gp_naked.json	> ../bd/bd_solo.json
 jq -S --tab -f toLJ.jq		../bd/bd_solo.json	> ../bd/bd_lutz.json
+jq -S --tab -f bd_naked.jq	../bd/bd.json		> ../bd/bd_naked.json
 
 # profiles
 mkdir -p ../profiles/YTlq ../profiles/YTmq ../profiles/YTsq

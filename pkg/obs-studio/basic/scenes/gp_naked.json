@@ -190,35 +190,6 @@
 						"clut_amount": 0.25,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
-				},
-				{
-					"id": "mask_filter",
-					"name": "Image Mask/Blend",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
-						"type": "mask_alpha_filter.effect"
-					}
-				}
-			],
-			"id": "av_capture_input",
-			"name": "NDI",
-			"settings": {
-				"device": "BB86C477-373F-49D9-AA4B-CE86A0E883F1"
-			}
-		},
-		{
-			"filters": [
-				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
-				},
-				{
-					"id": "clut_filter",
-					"name": "Apply LUT",
-					"settings": {
-						"clut_amount": 0.25,
-						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
-					}
 				}
 			],
 			"id": "av_capture_input",
@@ -246,6 +217,27 @@
 			"name": "Internal",
 			"settings": {
 				"device": "0x8020000005ac8514"
+			}
+		},
+		{
+			"filters": [
+				{
+					"id": "sharpness_filter",
+					"name": "Sharpen"
+				},
+				{
+					"id": "clut_filter",
+					"name": "Apply LUT",
+					"settings": {
+						"clut_amount": 0.25,
+						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
+					}
+				}
+			],
+			"id": "av_capture_input",
+			"name": "NDI",
+			"settings": {
+				"device": "BB86C477-373F-49D9-AA4B-CE86A0E883F1"
 			}
 		},
 		{
@@ -437,11 +429,6 @@
 						"key": "OBS_KEY_G"
 					}
 				],
-				"libobs.hide_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
 				"libobs.hide_scene_item.Overlay Chat": [
 					{
 						"key": "OBS_KEY_2"
@@ -459,6 +446,11 @@
 					},
 					{
 						"key": "OBS_KEY_G"
+					}
+				],
+				"libobs.hide_scene_item.guest": [
+					{
+						"key": "OBS_KEY_2"
 					}
 				],
 				"libobs.hide_scene_item.screen": [
@@ -498,11 +490,6 @@
 						"key": "OBS_KEY_I"
 					}
 				],
-				"libobs.show_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_G"
-					}
-				],
 				"libobs.show_scene_item.Overlay Cam": [
 					{
 						"key": "OBS_KEY_2"
@@ -519,6 +506,11 @@
 				"libobs.show_scene_item.Overlay Donate": [
 					{
 						"key": "OBS_KEY_E"
+					}
+				],
+				"libobs.show_scene_item.guest": [
+					{
+						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.show_scene_item.screen": [
@@ -582,7 +574,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "NDI",
+						"name": "guest",
 						"pos": {
 							"x": 250,
 							"y": 360
@@ -809,6 +801,43 @@
 							"y": 400
 						},
 						"rot": 5
+					}
+				]
+			}
+		},
+		{
+			"filters": [
+				{
+					"id": "mask_filter",
+					"name": "Image Mask/Blend",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
+				}
+			],
+			"hotkeys": {
+				"libobs.show_scene_item.NDI": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				]
+			},
+			"id": "scene",
+			"name": "guest",
+			"private_settings": {
+				"show_in_multiview": false
+			},
+			"settings": {
+				"items": [
+					{
+						"align": 0,
+						"locked": true,
+						"name": "NDI",
+						"pos": {
+							"x": 640,
+							"y": 360
+						}
 					}
 				]
 			}

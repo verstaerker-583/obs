@@ -2,9 +2,12 @@
 
 | del(.. |
 	select(.enabled? == "false"),
+
 	select(.name? == "Background"),
 	select(.name? == "Color Source"),
 	select(.name? == "Slide Show"),
+
+	select(.key? == "OBS_KEY_F"),
 	select(.key? == "OBS_KEY_H")
 )
 
@@ -15,6 +18,12 @@
 	]
 )
 
+| del(.sources[] | select(.name == "Cam").settings.items[] | select(.name == "NDI"))
+| del(.sources[] | select(.name == "Cam").hotkeys[
+		"libobs.hide_scene_item.NDI",
+		"libobs.show_scene_item.NDI"
+	]
+)
 | del(.sources[] | select(.name == "cams").settings.items[] | select(.name == "NDI"))
 | del(.sources[] | select(.name == "cams").hotkeys[
 		"libobs.hide_scene_item.NDI",

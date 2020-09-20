@@ -62,18 +62,6 @@
 				"name": "Compressor"
 			},
 			{
-				"enabled": "false",
-				"id": "compressor_filter",
-				"name": "Ducking",
-				"settings": {
-					"attack_time": 100,
-					"ratio": 32,
-					"release_time": 600,
-					"sidechain_source": "Microphone",
-					"threshold": -36
-				}
-			},
-			{
 				"id": "limiter_filter",
 				"name": "Limiter"
 			}
@@ -196,45 +184,6 @@
 					"name": "Sharpen"
 				},
 				{
-					"enabled": "false",
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
-					"id": "clut_filter",
-					"name": "Apply LUT",
-					"settings": {
-						"clut_amount": 0.25,
-						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
-					}
-				},
-				{
-					"id": "mask_filter",
-					"name": "Image Mask/Blend",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
-						"type": "mask_alpha_filter.effect"
-					}
-				}
-			],
-			"id": "av_capture_input",
-			"name": "NDI",
-			"settings": {
-				"device": "BB86C477-373F-49D9-AA4B-CE86A0E883F1"
-			}
-		},
-		{
-			"filters": [
-				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
-				},
-				{
-					"enabled": "false",
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
@@ -256,11 +205,6 @@
 					"name": "Sharpen"
 				},
 				{
-					"enabled": "false",
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
@@ -273,6 +217,27 @@
 			"name": "Internal",
 			"settings": {
 				"device": "CC27327P54QGDV4AV"
+			}
+		},
+		{
+			"filters": [
+				{
+					"id": "sharpness_filter",
+					"name": "Sharpen"
+				},
+				{
+					"id": "clut_filter",
+					"name": "Apply LUT",
+					"settings": {
+						"clut_amount": 0.25,
+						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
+					}
+				}
+			],
+			"id": "av_capture_input",
+			"name": "NDI",
+			"settings": {
+				"device": "BB86C477-373F-49D9-AA4B-CE86A0E883F1"
 			}
 		},
 		{
@@ -321,52 +286,6 @@
 			"settings": {
 				"input": "https://tinyurl.com/yyczgwlc",
 				"is_local_file": false
-			}
-		},
-		{
-			"hotkeys": {
-				"SlideShow.NextSlide": [
-					{
-						"key": "OBS_KEY_N"
-					}
-				],
-				"SlideShow.PreviousSlide": [
-					{
-						"key": "OBS_KEY_V"
-					}
-				],
-				"SlideShow.Restart": [
-					{
-						"key": "OBS_KEY_R"
-					}
-				]
-			},
-			"id": "slideshow",
-			"name": "Slide Show",
-			"settings": {
-				"files": [
-					{
-						"value": "/Library/Desktop Pictures"
-					}
-				],
-				"slide_mode": "mode_manual",
-				"use_custom_size": "1280x720"
-			}
-		},
-		{
-			"id": "color_source",
-			"name": "Color Source",
-			"settings": {
-				"color": 4288269363,
-				"height": 720,
-				"width": 1280
-			}
-		},
-		{
-			"id": "image_source",
-			"name": "Background",
-			"settings": {
-				"file": "https://markus-mauthe.de/site/assets/files/1048/sa14.jpg"
 			}
 		},
 		{
@@ -492,7 +411,7 @@
 						"key": "OBS_KEY_G"
 					}
 				],
-				"libobs.hide_scene_item.NDI": [
+				"libobs.hide_scene_item.guest": [
 					{
 						"key": "OBS_KEY_2"
 					}
@@ -511,11 +430,6 @@
 				"libobs.show_scene_item.?": [
 					{
 						"key": "OBS_KEY_MINUS"
-					}
-				],
-				"libobs.show_scene_item.Background": [
-					{
-						"key": "OBS_KEY_2"
 					}
 				],
 				"libobs.show_scene_item.External": [
@@ -539,14 +453,14 @@
 						"key": "OBS_KEY_I"
 					}
 				],
-				"libobs.show_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_G"
-					}
-				],
 				"libobs.show_scene_item.Overlay Cam": [
 					{
 						"key": "OBS_KEY_2"
+					}
+				],
+				"libobs.show_scene_item.guest": [
+					{
+						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.show_scene_item.screen": [
@@ -559,20 +473,6 @@
 			"name": "Cam",
 			"settings": {
 				"items": [
-					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "Background",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
-					},
 					{
 						"align": 0,
 						"locked": true,
@@ -616,7 +516,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "NDI",
+						"name": "guest",
 						"pos": {
 							"x": 250,
 							"y": 360
@@ -671,16 +571,6 @@
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
-				"libobs.show_scene_item.Color Source": [
-					{
-						"key": "OBS_KEY_3"
-					}
-				],
-				"libobs.show_scene_item.Slide Show": [
-					{
-						"key": "OBS_KEY_3"
-					}
-				],
 				"libobs.show_scene_item.Window Capture": [
 					{
 						"key": "OBS_KEY_3"
@@ -699,17 +589,6 @@
 			"name": "Screen",
 			"settings": {
 				"items": [
-					{
-						"locked": true,
-						"name": "Color Source"
-					},
-					{
-						"locked": true,
-						"name": "Slide Show",
-						"private_settings": {
-							"color-preset": 7
-						}
-					},
 					{
 						"align": 0,
 						"bounds": {
@@ -870,22 +749,49 @@
 					"id": "mask_filter",
 					"name": "Image Mask/Blend",
 					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
+				}
+			],
+			"hotkeys": {
+				"libobs.show_scene_item.NDI": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				]
+			},
+			"id": "scene",
+			"name": "guest",
+			"private_settings": {
+				"show_in_multiview": false
+			},
+			"settings": {
+				"items": [
+					{
+						"align": 0,
+						"locked": true,
+						"name": "NDI",
+						"pos": {
+							"x": 640,
+							"y": 360
+						}
+					}
+				]
+			}
+		},
+		{
+			"filters": [
+				{
+					"id": "mask_filter",
+					"name": "Image Mask/Blend",
+					"settings": {
 						"image_path": "https://verstaerker-583.github.io/obs/gp/screenMask.png",
 						"type": "mask_alpha_filter.effect"
 					}
 				}
 			],
 			"hotkeys": {
-				"libobs.show_scene_item.Color Source": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
-				"libobs.show_scene_item.Slide Show": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
 				"libobs.show_scene_item.Window Capture": [
 					{
 						"key": "OBS_KEY_2"
@@ -899,14 +805,6 @@
 			},
 			"settings": {
 				"items": [
-					{
-						"locked": true,
-						"name": "Color Source"
-					},
-					{
-						"locked": true,
-						"name": "Slide Show"
-					},
 					{
 						"align": 0,
 						"bounds": {

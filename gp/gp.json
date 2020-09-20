@@ -41,6 +41,9 @@
 					"key": "OBS_KEY_3"
 				},
 				{
+					"key": "OBS_KEY_F"
+				},
+				{
 					"key": "OBS_KEY_I"
 				},
 				{
@@ -170,6 +173,9 @@
 			],
 			"libobs.unmute": [
 				{
+					"key": "OBS_KEY_F"
+				},
+				{
 					"key": "OBS_KEY_G"
 				},
 				{
@@ -192,40 +198,6 @@
 	"name": "gp",
 	"preview_locked": true,
 	"sources": [
-		{
-			"filters": [
-				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
-				},
-				{
-					"enabled": "false",
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
-					"id": "clut_filter",
-					"name": "Apply LUT",
-					"settings": {
-						"clut_amount": 0.25,
-						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
-					}
-				},
-				{
-					"id": "mask_filter",
-					"name": "Image Mask/Blend",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
-						"type": "mask_alpha_filter.effect"
-					}
-				}
-			],
-			"id": "av_capture_input",
-			"name": "NDI",
-			"settings": {
-				"device": "BB86C477-373F-49D9-AA4B-CE86A0E883F1"
-			}
-		},
 		{
 			"filters": [
 				{
@@ -281,6 +253,41 @@
 		{
 			"filters": [
 				{
+					"id": "sharpness_filter",
+					"name": "Sharpen"
+				},
+				{
+					"enabled": "false",
+					"id": "chroma_key_filter",
+					"name": "Chroma Key"
+				},
+				{
+					"id": "clut_filter",
+					"name": "Apply LUT",
+					"settings": {
+						"clut_amount": 0.25,
+						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
+					}
+				}
+			],
+			"id": "av_capture_input",
+			"name": "NDI",
+			"settings": {
+				"device": "BB86C477-373F-49D9-AA4B-CE86A0E883F1"
+			}
+		},
+		{
+			"id": "color_source",
+			"name": "Color Source",
+			"settings": {
+				"color": 4280204915,
+				"height": 720,
+				"width": 1280
+			}
+		},
+		{
+			"filters": [
+				{
 					"id": "compressor_filter",
 					"name": "Compressor"
 				},
@@ -327,6 +334,13 @@
 			}
 		},
 		{
+			"id": "image_source",
+			"name": "Background",
+			"settings": {
+				"file": "https://markus-mauthe.de/site/assets/files/1048/sa14.jpg"
+			}
+		},
+		{
 			"hotkeys": {
 				"SlideShow.NextSlide": [
 					{
@@ -354,22 +368,6 @@
 				],
 				"slide_mode": "mode_manual",
 				"use_custom_size": "1280x720"
-			}
-		},
-		{
-			"id": "color_source",
-			"name": "Color Source",
-			"settings": {
-				"color": 4280204915,
-				"height": 720,
-				"width": 1280
-			}
-		},
-		{
-			"id": "image_source",
-			"name": "Background",
-			"settings": {
-				"file": "https://markus-mauthe.de/site/assets/files/1048/sa14.jpg"
 			}
 		},
 		{
@@ -491,6 +489,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_F"
+					},
+					{
 						"key": "OBS_KEY_G"
 					},
 					{
@@ -500,6 +501,9 @@
 				"libobs.hide_scene_item.?": [
 					{
 						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_F"
 					},
 					{
 						"key": "OBS_KEY_G"
@@ -518,12 +522,18 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_F"
+					},
+					{
 						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.hide_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.hide_scene_item.Overlay Chat": [
@@ -532,6 +542,9 @@
 					},
 					{
 						"key": "OBS_KEY_C"
+					},
+					{
+						"key": "OBS_KEY_F"
 					}
 				],
 				"libobs.hide_scene_item.Overlay Donate": [
@@ -542,7 +555,18 @@
 						"key": "OBS_KEY_E"
 					},
 					{
+						"key": "OBS_KEY_F"
+					},
+					{
 						"key": "OBS_KEY_G"
+					}
+				],
+				"libobs.hide_scene_item.guest": [
+					{
+						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_F"
 					}
 				],
 				"libobs.hide_scene_item.screen": [
@@ -551,6 +575,9 @@
 					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
+					},
+					{
+						"key": "OBS_KEY_F"
 					},
 					{
 						"key": "OBS_KEY_G"
@@ -589,7 +616,7 @@
 				],
 				"libobs.show_scene_item.NDI": [
 					{
-						"key": "OBS_KEY_G"
+						"key": "OBS_KEY_F"
 					}
 				],
 				"libobs.show_scene_item.Overlay Cam": [
@@ -608,6 +635,11 @@
 				"libobs.show_scene_item.Overlay Donate": [
 					{
 						"key": "OBS_KEY_E"
+					}
+				],
+				"libobs.show_scene_item.guest": [
+					{
+						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.show_scene_item.screen": [
@@ -656,6 +688,15 @@
 						}
 					},
 					{
+						"align": 0,
+						"locked": true,
+						"name": "NDI",
+						"pos": {
+							"x": 640,
+							"y": 360
+						}
+					},
+					{
 						"locked": true,
 						"name": "Overlay Chat",
 						"pos": {
@@ -685,7 +726,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "NDI",
+						"name": "guest",
 						"pos": {
 							"x": 250,
 							"y": 360
@@ -888,6 +929,9 @@
 				"libobs.hide_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					},
+					{
+						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.hide_scene_item.Internal": [
@@ -896,9 +940,6 @@
 					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					},
-					{
-						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.hide_scene_item.NDI": [
@@ -912,14 +953,14 @@
 					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					},
-					{
-						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.show_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					},
+					{
+						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.show_scene_item.NDI": [
@@ -994,6 +1035,43 @@
 							"y": 400
 						},
 						"rot": 5
+					}
+				]
+			}
+		},
+		{
+			"filters": [
+				{
+					"id": "mask_filter",
+					"name": "Image Mask/Blend",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
+				}
+			],
+			"hotkeys": {
+				"libobs.show_scene_item.NDI": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				]
+			},
+			"id": "scene",
+			"name": "guest",
+			"private_settings": {
+				"show_in_multiview": false
+			},
+			"settings": {
+				"items": [
+					{
+						"align": 0,
+						"locked": true,
+						"name": "NDI",
+						"pos": {
+							"x": 640,
+							"y": 360
+						}
 					}
 				]
 			}

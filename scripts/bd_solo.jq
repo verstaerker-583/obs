@@ -11,6 +11,7 @@
 | del(.. |
 	select(.name? == "Overlay Chat"),
 	select(.name? == "Overlay Donate"),
+	select(.key? == "OBS_KEY_F"),
 	select(.key? == "OBS_KEY_H")
 )
 
@@ -19,12 +20,5 @@
 		"libobs.hide_scene_item.Overlay Donate",
 		"libobs.show_scene_item.Overlay Chat",
 		"libobs.show_scene_item.Overlay Donate"
-	]
-)
-
-| del(.sources[] | select(.name == "cams").settings.items[] | select(.name == "NDI"))
-| del(.sources[] | select(.name == "cams").hotkeys[
-		"libobs.hide_scene_item.NDI",
-		"libobs.show_scene_item.NDI"
 	]
 )
