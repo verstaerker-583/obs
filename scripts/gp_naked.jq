@@ -15,9 +15,8 @@
 	]
 )
 
-| del(.sources[] | select(.name == "cams") |
-	.settings.items[] | select(.name == "NDI"),
-	.hotkeys[
+| del(.sources[] | select(.name == "cams").settings.items[] | select(.name == "NDI"))
+| del(.sources[] | select(.name == "cams").hotkeys[
 		"libobs.hide_scene_item.NDI",
 		"libobs.show_scene_item.NDI"
 	]
