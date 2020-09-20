@@ -9,7 +9,7 @@ function checkAlarm() {
 	if (hourAngle === alarmAngle) {
 		document.getElementById("clockFaceBackground").style.fill = "#ff0032";
 	} else {
-		document.getElementById("clockFaceBackground").style.fill = "none"; 
+		document.getElementById("clockFaceBackground").style.fill = "none";
 	}
 }
 
@@ -21,10 +21,10 @@ function checkOBSStatus() {
 				case (status.recording):
 				*/
 				case (status.streaming):
-					document.getElementById("marker").style.fill = "white"; 
+					document.getElementById("marker").style.fill = "white";
 					break;
 				default:
-					document.getElementById("marker").style.fill = "yellow"; 
+					document.getElementById("marker").style.fill = "yellow";
 			}
 		});
 	}

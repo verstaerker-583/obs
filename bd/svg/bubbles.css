@@ -33,7 +33,7 @@ feFlood {
 }
 
 .background {
-	fill: #3c9;
+	fill: #33cc99;
 	height: 100%;
 	width: 100%
 }
@@ -95,7 +95,7 @@ circle.MarkusYT {
 
 text {
 	dominant-baseline: central;
-	fill: #FFF;
+	fill: white;
 	font-family: courier;
 	font-size: 48px;
 	text-anchor: middle

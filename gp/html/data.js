@@ -21,7 +21,7 @@ var pics = {
 	presenterLogo: "../../gp/mmLogo.png",
 	videoThumb: "https://i3.ytimg.com/vi/uS3Um_Vrv3E/maxresdefault.jpg"
 };
-var alarmTime =  "19:30";
+var alarmTime = "19:30";
 /*
 var videoId = "uS3Um_Vrv3E";
 */
