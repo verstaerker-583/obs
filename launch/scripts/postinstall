@@ -4,7 +4,7 @@ exit 0
 defaults write com.boinx.FotoMagico5 masterVolume -float 0.25
 
 open -gF -a "FotoMagico 5"
-open -gF -a "Safari" "https://verstaerker-583.github.io/obs/gp/html/chat.html"
+#open -gF -a "Safari" "https://verstaerker-583.github.io/obs/gp/html/chat.html"
 open -gF -a "Skype"
 open -gF -a "NDI Virtual Input"
 open -gF -a "obs" --args\
