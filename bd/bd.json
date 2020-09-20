@@ -1,7 +1,4 @@
 {
-	"current_scene": "Start",
-	"name": "bd",
-	"preview_locked": true,
 	"AuxAudioDevice1": {
 		"balance": 0.25,
 		"filters": [
@@ -192,6 +189,9 @@
 			"device_id": "BF568F24-731B-41DB-932E-AC7E260BC71A"
 		}
 	},
+	"current_scene": "Start",
+	"name": "bd",
+	"preview_locked": true,
 	"sources": [
 		{
 			"filters": [

@@ -41,9 +41,6 @@
 					"key": "OBS_KEY_3"
 				},
 				{
-					"key": "OBS_KEY_G"
-				},
-				{
 					"key": "OBS_KEY_I"
 				},
 				{
@@ -174,6 +171,9 @@
 			"libobs.unmute": [
 				{
 					"key": "OBS_KEY_G"
+				},
+				{
+					"key": "OBS_KEY_H"
 				}
 			]
 		},
@@ -229,6 +229,10 @@
 		{
 			"filters": [
 				{
+					"id": "sharpness_filter",
+					"name": "Sharpen"
+				},
+				{
 					"enabled": "false",
 					"id": "chroma_key_filter",
 					"name": "Chroma Key"
@@ -240,10 +244,6 @@
 						"clut_amount": 0.25,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
-				},
-				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
 				}
 			],
 			"id": "av_capture_input",
@@ -409,19 +409,6 @@
 		},
 		{
 			"id": "browser_source",
-			"name": "Overlay Finish",
-			"private_settings": {
-				"mixer_hidden": true
-			},
-			"settings": {
-				"css": "",
-				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/finish.html",
-				"width": 1280
-			}
-		},
-		{
-			"id": "browser_source",
 			"name": "Overlay Chat",
 			"private_settings": {
 				"mixer_hidden": true
@@ -443,6 +430,19 @@
 				"css": "",
 				"height": 720,
 				"url": "https://verstaerker-583.github.io/obs/sr/html/donate.html",
+				"width": 1280
+			}
+		},
+		{
+			"id": "browser_source",
+			"name": "Overlay Finish",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "",
+				"height": 720,
+				"url": "https://verstaerker-583.github.io/obs/sr/html/finish.html",
 				"width": 1280
 			}
 		},
@@ -654,6 +654,20 @@
 						"align": 0,
 						"bounds": {
 							"x": 480,
+							"y": 270
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "screen",
+						"pos": {
+							"x": 250,
+							"y": 360
+						}
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 480,
 							"y": 480
 						},
 						"bounds_type": 3,
@@ -664,20 +678,6 @@
 							"y": 360
 						},
 						"rot": 5
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 480,
-							"y": 270
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "screen",
-						"pos": {
-							"x": 250,
-							"y": 360
-						}
 					},
 					{
 						"align": 0,
@@ -721,6 +721,9 @@
 				"OBSBasic.SelectScene": [
 					{
 						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.hide_scene_item.cams": [
@@ -734,16 +737,25 @@
 				"libobs.show_scene_item.Color Source": [
 					{
 						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.show_scene_item.Slide Show": [
 					{
 						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.show_scene_item.Window Capture": [
 					{
 						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.show_scene_item.cams": [
@@ -752,6 +764,9 @@
 					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					},
+					{
+						"key": "OBS_KEY_H"
 					}
 				]
 			},
@@ -868,6 +883,9 @@
 					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					},
+					{
+						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.hide_scene_item.NDI": [
@@ -881,11 +899,19 @@
 					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					},
+					{
+						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.show_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				],
+				"libobs.show_scene_item.NDI": [
+					{
+						"key": "OBS_KEY_H"
 					}
 				]
 			},
@@ -909,7 +935,7 @@
 							"x": 1172,
 							"y": 320
 						},
-						"rot": 180
+						"rot": -5
 					},
 					{
 						"align": 0,
@@ -924,7 +950,7 @@
 							"x": 108,
 							"y": 400
 						},
-						"rot": 180
+						"rot": 5
 					},
 					{
 						"align": 0,

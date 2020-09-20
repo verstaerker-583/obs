@@ -37,6 +37,10 @@
 		{
 			"filters": [
 				{
+					"id": "sharpness_filter",
+					"name": "Sharpen"
+				},
+				{
 					"enabled": "false",
 					"id": "chroma_key_filter",
 					"name": "Chroma Key"
@@ -48,10 +52,6 @@
 						"clut_amount": 0.25,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
-				},
-				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
 				}
 			],
 			"id": "av_capture_input",
@@ -388,6 +388,20 @@
 						"align": 0,
 						"bounds": {
 							"x": 480,
+							"y": 270
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "screen",
+						"pos": {
+							"x": 250,
+							"y": 360
+						}
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 480,
 							"y": 480
 						},
 						"bounds_type": 3,
@@ -398,20 +412,6 @@
 							"y": 360
 						},
 						"rot": 5
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 480,
-							"y": 270
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "screen",
-						"pos": {
-							"x": 250,
-							"y": 360
-						}
 					},
 					{
 						"align": 0,
@@ -600,11 +600,6 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.hide_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_P"
-					}
-				],
 				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_3"
@@ -626,36 +621,6 @@
 			},
 			"settings": {
 				"items": [
-					{
-						"align": 0,
-						"bounds": {
-							"x": 196,
-							"y": 196
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "NDI",
-						"pos": {
-							"x": 1172,
-							"y": 320
-						},
-						"rot": 180
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 196,
-							"y": 196
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "NDI",
-						"pos": {
-							"x": 108,
-							"y": 400
-						},
-						"rot": 180
-					},
 					{
 						"align": 0,
 						"bounds": {

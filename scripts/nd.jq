@@ -41,5 +41,6 @@
 
 	select(.name? | test("Overlay")?),
 	select(.key? == "OBS_KEY_G"),
+	select(.key? == "OBS_KEY_H"),
 	select(.key? == "OBS_KEY_I")
 )

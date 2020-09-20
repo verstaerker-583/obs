@@ -6,6 +6,10 @@
 		{
 			"filters": [
 				{
+					"id": "sharpness_filter",
+					"name": "Sharpen"
+				},
+				{
 					"enabled": "false",
 					"id": "chroma_key_filter",
 					"name": "Chroma Key"
@@ -17,10 +21,6 @@
 						"clut_amount": 0.25,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
-				},
-				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
 				}
 			],
 			"id": "av_capture_input",

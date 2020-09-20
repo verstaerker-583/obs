@@ -41,9 +41,6 @@
 					"key": "OBS_KEY_3"
 				},
 				{
-					"key": "OBS_KEY_G"
-				},
-				{
 					"key": "OBS_KEY_I"
 				},
 				{
@@ -212,16 +209,16 @@
 		{
 			"filters": [
 				{
+					"id": "sharpness_filter",
+					"name": "Sharpen"
+				},
+				{
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
 						"clut_amount": 0.25,
 						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
 					}
-				},
-				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
 				}
 			],
 			"id": "av_capture_input",
@@ -349,19 +346,6 @@
 		},
 		{
 			"id": "browser_source",
-			"name": "Overlay Finish",
-			"private_settings": {
-				"mixer_hidden": true
-			},
-			"settings": {
-				"css": "",
-				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/gp/html/finish.html",
-				"width": 1280
-			}
-		},
-		{
-			"id": "browser_source",
 			"name": "Overlay Chat",
 			"private_settings": {
 				"mixer_hidden": true
@@ -383,6 +367,19 @@
 				"css": "",
 				"height": 720,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/donate.html",
+				"width": 1280
+			}
+		},
+		{
+			"id": "browser_source",
+			"name": "Overlay Finish",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "",
+				"height": 720,
+				"url": "https://verstaerker-583.github.io/obs/gp/html/finish.html",
 				"width": 1280
 			}
 		},
@@ -575,6 +572,20 @@
 						"align": 0,
 						"bounds": {
 							"x": 480,
+							"y": 270
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "screen",
+						"pos": {
+							"x": 250,
+							"y": 360
+						}
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 480,
 							"y": 480
 						},
 						"bounds_type": 3,
@@ -585,20 +596,6 @@
 							"y": 360
 						},
 						"rot": 5
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 480,
-							"y": 270
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "screen",
-						"pos": {
-							"x": 250,
-							"y": 360
-						}
 					},
 					{
 						"align": 0,
@@ -787,7 +784,8 @@
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
-				]
+				],
+				"libobs.show_scene_item.NDI": []
 			},
 			"id": "scene",
 			"name": "cams",
@@ -796,36 +794,6 @@
 			},
 			"settings": {
 				"items": [
-					{
-						"align": 0,
-						"bounds": {
-							"x": 196,
-							"y": 196
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "NDI",
-						"pos": {
-							"x": 1172,
-							"y": 320
-						},
-						"rot": 180
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 196,
-							"y": 196
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "NDI",
-						"pos": {
-							"x": 108,
-							"y": 400
-						},
-						"rot": 180
-					},
 					{
 						"align": 0,
 						"bounds": {
