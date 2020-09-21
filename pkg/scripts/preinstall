@@ -1,5 +1,13 @@
 #!/bin/sh
 
+defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Volume.menu"
+defaults write com.boinx.FotoMagico5 masterVolume -float 0.25
+killall SystemUIServer
+
 dscl . -create /Users/markus UserShell /bin/zsh
 
 find /Users -type d -d -empty -delete
