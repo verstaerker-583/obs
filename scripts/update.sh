@@ -58,10 +58,20 @@ pkgbuild \
 	--root $PAYLOAD\
 	--scripts ../pkg/scripts\
 	--version `date "+%Y%m%d%H%M%S"`\
-	~/Desktop/magic.pkg
+	/tmp/magic.pkg
 
 #	--info ../pkg/PackageInfo\
 
+pkgbuild \
+	--identifier hammerspoon\
+	--nopayload\
+	--quiet\
+	--version `date "+%Y%m%d%H%M%S"`\
+	--scripts ../pkg/scripts.hammerspoon\
+	/tmp/hammerspoon.pkg
+#	--component ~/Applications/Hammerspoon.app\
+#	--info ../pkg/PackageInfo\
+#	--install-location /Applications\
 exit 0
 
 pkgbuild \
