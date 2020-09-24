@@ -1,6 +1,6 @@
 {
 	"AuxAudioDevice1": {
-		"balance": 0.25,
+		"balance": 0.75,
 		"filters": [
 			{
 				"id": "noise_gate_filter",
@@ -117,11 +117,11 @@
 			"volume_locked": true
 		},
 		"settings": {
-			"device_id": "BlackHole_UID"
+			"device_id": "BlackHole2ch_UID"
 		}
 	},
 	"AuxAudioDevice3": {
-		"balance": 0.75,
+		"balance": 0.25,
 		"filters": [
 			{
 				"id": "noise_suppress_filter",
@@ -295,6 +295,15 @@
 			}
 		},
 		{
+			"id": "color_source",
+			"name": "Color Source",
+			"settings": {
+				"color": 4288269363,
+				"height": 720,
+				"width": 1280
+			}
+		},
+		{
 			"filters": [
 				{
 					"id": "compressor_filter",
@@ -373,15 +382,6 @@
 			}
 		},
 		{
-			"id": "color_source",
-			"name": "Color Source",
-			"settings": {
-				"color": 4288269363,
-				"height": 720,
-				"width": 1280
-			}
-		},
-		{
 			"id": "text_ft2_source",
 			"name": "?",
 			"settings": {
@@ -397,7 +397,7 @@
 		},
 		{
 			"id": "window_capture",
-			"name": "Window Capture",
+			"name": "Screen Capture",
 			"settings": {
 				"owner_name": "Dock",
 				"window_name": "Desktop Picture - DefaultDesktop.heic"
@@ -498,7 +498,7 @@
 						"key": "OBS_KEY_MINUS"
 					}
 				],
-				"libobs.hide_scene_item.External": [
+				"libobs.hide_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
@@ -516,14 +516,14 @@
 				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
 				"libobs.show_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
 				"libobs.show_scene_item.Intro": [
@@ -558,12 +558,15 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Internal",
+						"name": "External",
 						"pos": {
-							"x": 320,
-							"y": 396
+							"x": 960,
+							"y": 324
 						},
-						"rot": 5
+						"private_settings": {
+							"color-preset": 7
+						},
+						"rot": -5
 					},
 					{
 						"align": 0,
@@ -573,15 +576,12 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "External",
+						"name": "Internal",
 						"pos": {
-							"x": 320,
-							"y": 396
+							"x": 960,
+							"y": 324
 						},
-						"private_settings": {
-							"color-preset": 7
-						},
-						"rot": 5
+						"rot": -5
 					},
 					{
 						"align": 0,
@@ -593,10 +593,10 @@
 						"locked": true,
 						"name": "NDI",
 						"pos": {
-							"x": 960,
-							"y": 324
+							"x": 320,
+							"y": 396
 						},
-						"rot": -5
+						"rot": 5
 					},
 					{
 						"align": 0,
@@ -647,12 +647,12 @@
 						"key": "OBS_KEY_3"
 					}
 				],
-				"libobs.show_scene_item.Slide Show": [
+				"libobs.show_scene_item.Screen Capture": [
 					{
 						"key": "OBS_KEY_3"
 					}
 				],
-				"libobs.show_scene_item.Window Capture": [
+				"libobs.show_scene_item.Slide Show": [
 					{
 						"key": "OBS_KEY_3"
 					}
@@ -689,7 +689,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Window Capture",
+						"name": "Screen Capture",
 						"pos": {
 							"x": 640,
 							"y": 360
@@ -758,7 +758,7 @@
 		},
 		{
 			"hotkeys": {
-				"libobs.hide_scene_item.External": [
+				"libobs.hide_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
@@ -766,14 +766,14 @@
 				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
 				"libobs.show_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
 				"libobs.show_scene_item.NDI": [
@@ -806,12 +806,12 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Internal",
+						"name": "External",
 						"pos": {
-							"x": 128,
-							"y": 396
+							"x": 1152,
+							"y": 324
 						},
-						"rot": 5
+						"rot": -5
 					},
 					{
 						"align": 0,
@@ -821,12 +821,12 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "External",
+						"name": "Internal",
 						"pos": {
-							"x": 128,
-							"y": 396
+							"x": 1152,
+							"y": 324
 						},
-						"rot": 5
+						"rot": -5
 					},
 					{
 						"align": 0,
@@ -838,10 +838,10 @@
 						"locked": true,
 						"name": "NDI",
 						"pos": {
-							"x": 1152,
-							"y": 324
+							"x": 128,
+							"y": 396
 						},
-						"rot": -5
+						"rot": 5
 					}
 				]
 			}

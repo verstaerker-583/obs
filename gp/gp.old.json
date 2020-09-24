@@ -119,7 +119,7 @@
 			"volume_locked": true
 		},
 		"settings": {
-			"device_id": "BlackHole_UID"
+			"device_id": "BlackHole2ch_UID"
 		}
 	},
 	"AuxAudioDevice3": {
@@ -221,7 +221,7 @@
 			"id": "av_capture_input",
 			"name": "External",
 			"settings": {
-				"device": "0x2543000043e9a4d"
+				"device": "CC27327P54QGDV4AV"
 			}
 		},
 		{
@@ -247,7 +247,7 @@
 			"id": "av_capture_input",
 			"name": "Internal",
 			"settings": {
-				"device": "0x8020000005ac8514"
+				"device": "CC27327P54QGDV4AV"
 			}
 		},
 		{
@@ -303,6 +303,10 @@
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
+			},
+			"settings": {
+				"input": "https://tinyurl.com/yyczgwlc",
+				"is_local_file": false
 			}
 		},
 		{
@@ -323,6 +327,10 @@
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
+			},
+			"settings": {
+				"input": "https://tinyurl.com/yyczgwlc",
+				"is_local_file": false
 			}
 		},
 		{
@@ -353,6 +361,11 @@
 			"id": "slideshow",
 			"name": "Slide Show",
 			"settings": {
+				"files": [
+					{
+						"value": "/Library/Desktop Pictures"
+					}
+				],
 				"slide_mode": "mode_manual",
 				"use_custom_size": "1280x720"
 			}
@@ -375,8 +388,8 @@
 			"id": "window_capture",
 			"name": "Window Capture",
 			"settings": {
-				"owner_name": "FotoMagico 5",
-				"window_name": ""
+				"owner_name": "Dock",
+				"window_name": "Desktop Picture - DefaultDesktop.heic"
 			}
 		},
 		{

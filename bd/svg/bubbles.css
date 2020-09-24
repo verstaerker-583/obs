@@ -12,23 +12,23 @@ feFlood {
 	transform: translate(50%, 50%)
 }
 
-.LutzCams {
-	transform: translate(90%, 45%)
-}
-
-.LutzYT,
-.LutzBackground,
-.Lutz {
-	transform: translate(75%, 45%)
-}
-
 .MarkusCams {
-	transform: translate(10%, 55%)
+	transform: translate(90%, 45%)
 }
 
 .MarkusYT,
 .MarkusBackground,
 .Markus {
+	transform: translate(75%, 45%)
+}
+
+.LutzCams {
+	transform: translate(10%, 55%)
+}
+
+.LutzYT,
+.LutzBackground,
+.Lutz {
 	transform: translate(25%, 55%)
 }
 
@@ -67,19 +67,6 @@ circle.Buntdenker {
 	filter: url(#grayscale)
 }
 
-circle.Lutz {
-	fill: url(#Lutz)
-}
-
-circle.LutzCams,
-circle.LutzBackground {
-	fill: url(#LutzBackground)
-}
-
-circle.LutzYT {
-	fill: url(#LutzYT)
-}
-
 circle.Markus {
 	fill: url(#Markus)
 }
@@ -91,6 +78,19 @@ circle.MarkusBackground {
 
 circle.MarkusYT {
 	fill: url(#MarkusYT)
+}
+
+circle.Lutz {
+	fill: url(#Lutz)
+}
+
+circle.LutzCams,
+circle.LutzBackground {
+	fill: url(#LutzBackground)
+}
+
+circle.LutzYT {
+	fill: url(#LutzYT)
 }
 
 text {

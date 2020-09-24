@@ -1,7 +1,13 @@
+-- Alerts
+hs.alert.defaultStyle.strokeColor = {red = 1, alpha = 1}
+hs.alert.defaultStyle.strokeWidth = 10
+hs.alert.defaultStyle.textColor = {red = 1, alpha = 1}
+hs.alert.defaultStyle.textSize = 64
+
 function applicationWatcher(appName, eventType, appObject)
 	if appName == "OBS" then
 		if eventType == hs.application.watcher.launching then
-			preFlight()
+			preFlight(true)
 		end
 		if eventType == hs.application.watcher.terminated then
 			postFlight()
@@ -13,7 +19,6 @@ function mailLogs()
 	hs.execute(
 		"system_profiler -json -detailLevel full SPAudioDataType SPCameraDataType SPDisplaysDataType SPHardwareDataType SPSoftwareDataType > /tmp/system.json"
 	)
-
 	mailer = hs.sharing.newShare("com.apple.share.Mail.compose")
 	mailer:subject("Logfiles " .. os.date()):recipients({"o.koepke@gmx.de"})
 	mailer:shareItems(
@@ -27,9 +32,10 @@ function mailLogs()
 end
 
 function postFlight()
-	-- Audio
+	-- Alert Sounds
 	hs.osascript._osascript("set volume alert volume 100", "")
 
+	-- Audio
 	devices = hs.audiodevice.allDevices()
 	for i, dev in ipairs(devices) do
 		dev:setMuted(false)
@@ -42,10 +48,7 @@ function postFlight()
 	devices = hs.screen.allScreens()
 	for i, dev in ipairs(devices) do
 		if dev ~= hs.screen.primaryScreen() then
-			if dev:setMode(3840, 2160, 1) then
-			else
-				dev:setMode(1920, 1080, 1)
-			end
+			dev:setMode(1920, 1080, 1)					-- specific
 		end
 	end
 
@@ -54,7 +57,6 @@ function postFlight()
 
 	-- Wifi
 	hs.wifi.setPower(true)
-
 	hs.notify.new({title = "OBS", informativeText = "Post-Flight Checklist completed!"}):send()
 end
 
@@ -62,50 +64,48 @@ function preFlight()
 	log = io.open("/tmp/log.txt", "w")
 	log:write(os.date() .. "\n")
 
-	-- Various
+	-- FotoMagico
 	hs.execute("defaults delete com.boinx.FotoMagico5 masterVolume")
 	hs.execute("defaults write com.boinx.FotoMagico5 ScreenHasBeenChosen -int 1")
 
-	-- Audio
+	-- Alert Sounds
 	hs.osascript._osascript("set volume alert volume 0", "")
 
 	-- Audio Input Devices
 	log:write("\nAudio Input Devices\n")
 	log:write("current: " .. hs.inspect(hs.audiodevice.current(true)) .. "\n")
-
 	devices = hs.audiodevice.allInputDevices()
 	log:write(hs.inspect(devices) .. "\n")
-
 	for i, dev in ipairs(devices) do
 		dev:setInputMuted(false)
 		dev:setBalance(0.5)
 		if dev:transportType() == "Built-in" then
 			dev:setDefaultInputDevice()
-			dev:setInputVolume(40)				-- Micro
+			dev:setInputVolume(40)						 -- Micro
 		elseif dev:transportType() == "Virtual" then
-			dev:setInputVolume(40)				-- NDI Audio
+			dev:setInputVolume(40)						 -- NDI Audio
 		else
 			dev:setInputMuted(true)
 		end
 		log:write(dev:transportType() .. " " .. dev:name() .. " " .. dev:volume() .. "\n")
 	end
-
 	log:write("done: " .. hs.inspect(hs.audiodevice.current(true)) .. "\n")
 
-	if hs.audiodevice.findDeviceByName("Externes Mikrofon") then
-		hs.audiodevice.findDeviceByName("Externes Mikrofon"):setDefaultInputDevice()
-		log:write("re-done: " .. hs.inspect(hs.audiodevice.current(true)) .. "")
-	else
-		hs.notify.new({title = "OBS", informativeText = "No Headset!"}):send()
+	-- Mac(Book) Pro
+	if hs.audiodevice.findDeviceByUID("BuiltInMicrophoneDevice") then
+		if hs.audiodevice.findDeviceByUID("BuiltInHeadphoneInputDevice"):setDefaultInputDevice() then
+			log:write("re-done: " .. hs.inspect(hs.audiodevice.current(true)) .. "")
+		else
+			hs.alert.show("Connect HEADSET!", 20)
+			log:write("\nConnect HEADSET!\n")
+		end
 	end
 
 	-- Audio Output Devices
 	log:write("\nAudio Output Devices\n")
 	log:write("current: " .. hs.inspect(hs.audiodevice.current()) .. "\n")
-
 	devices = hs.audiodevice.allOutputDevices()
 	log:write(hs.inspect(devices) .. "\n")
-
 	for i, dev in ipairs(devices) do
 		dev:setMuted(false)
 		dev:setBalance(0.5)
@@ -114,7 +114,7 @@ function preFlight()
 		elseif dev:transportType() == "Virtual" then
 			dev:setDefaultOutputDevice()
 			dev:setInputMuted(false)
-			dev:setInputVolume(75)				-- BlackHole
+			dev:setInputVolume(75)						 -- BlackHole
 			dev:setVolume(100)
 		else
 			dev:setVolume(50)
@@ -122,10 +122,10 @@ function preFlight()
 		end
 		log:write(dev:transportType() .. " " .. dev:name() .. " " .. dev:volume() .. "\n")
 	end
-
 	log:write("done: " .. hs.inspect(hs.audiodevice.current()) .. "\n")
 
 	-- Video
+	alarm = true
 	log:write("\nScreens\n")
 	devices = hs.screen.allScreens()
 	log:write(hs.inspect(devices) .. "\n")
@@ -134,54 +134,42 @@ function preFlight()
 		log:write("current: " .. hs.inspect(dev:currentMode()) .. "\n")
 		if dev ~= hs.screen.primaryScreen() then
 			dev:setMode(1280, 720, 1)
+			alarm = false
+		elseif dev:name() == "Color LCD" then	-- MacBook?
+			dev:setMode(1440, 900, 1)					-- specific
 		end
 		log:write("done: " .. hs.inspect(dev:currentMode()) .. "\n")
---		log:write(hs.inspect(dev:availableModes()) .. "\n")
+--		log:write(hs.inspect(dev:availableModes()) .. "\n")			-- for new platforms
 	end
-
-	log:close()
-
-	-- Apps
-	for i, app in ipairs(hs.application.runningApplications()) do
-		if app:name() == "Finder" then
-		elseif app:name() == "Dock" then
-		elseif app:name() == "FotoMagico 5" then
-		elseif app:name() == "Hammerspoon" then
-		elseif app:name() == "Mitteilungszentrale" then
-		elseif app:name() == "NDI Virtual Input" then
-		elseif app:name() == "Nachrichten" then
-		elseif app:name() == "Notizen" then
-		elseif app:name() == "OBS" then
-		elseif app:name() == "Skype" then
-		elseif app:name() == "Terminal" then
-		else
-			app:kill()
-		end
+	if alarm then
+		hs.alert.show("Connect external MONITOR!", 20)
+		log:write("\nConnect external MONITOR!\n")
 	end
-
-	hs.application.open("FotoMagico 5", 0, true)
-	hs.application.open("NDI Virtual Input", 0, true)
-	hs.application.open("Skype", 0, true)
-
---	hs.application.launchOrFocus("OBS")
 
 	-- Power Management
 	hs.caffeinate.set("displayIdle", true, false)
 
-	hs.notify.new({title = "OBS", informativeText = "Pre-Flight Checklist completed!"}):send()
+	-- Power
+	if hs.battery.powerSource() ~= "AC Power" then
+		hs.alert.show("Connect POWER!", 20)
+		log:write("\nConnect POWER!\n")
+	end
 
-	-- Wifi
-	-- hs.wifi.setPower(false)
 
+	-- Network
 	if hs.network.interfaceDetails(v4) then
 		if hs.network.interfaceDetails(v4)["AirPort"] then
-			print("on wifi")
+			hs.alert.show("Connect LAN!", 20)
+			log:write("\nConnect LAN!\n")
 		else
-			print("on Lan")
+			hs.wifi.setPower(false)
 		end
 	else
-		print("not connected to internet")
+		hs.alert.show("Can not reach YouTube!", 20)
+		log:write("\nCan not reach YouTube!\n")
 	end
+	hs.notify.new({title = "OBS", informativeText = "Pre-Flight Checklist completed!"}):send()
+	log:close()
 end
 
 function reloadConfig(files)
@@ -196,9 +184,34 @@ function reloadConfig(files)
 	end
 end
 
+function startOBS()
+	hs.execute("open -a 'OBS' --args --scene 'Start' --collection 'gp' --profile 'okYTsq' --verbose --startstreaming")
+
+	-- Apps
+	for i, app in ipairs(hs.application.runningApplications()) do
+		if app:name() == "Finder" then
+		elseif app:name() == "Dock" then
+		elseif app:name() == "FotoMagico 5" then
+		elseif app:name() == "Hammerspoon" then
+		elseif app:name() == "Mitteilungszentrale" then
+		elseif app:name() == "NDI Virtual Input" then
+		elseif app:name() == "Nachrichten" then
+		elseif app:name() == "Notizen" then
+		elseif app:name() == "OBS" then
+		elseif app:name() == "Skype" then
+		else
+			app:kill()
+		end
+	end
+	hs.application.open("FotoMagico 5", 0, true)
+	hs.application.open("NDI Virtual Input", 0, true)
+	hs.application.open("Skype", 0, true)
+end
+
+-- Watcher/ Key Bindings
 appWatcher = hs.application.watcher.new(applicationWatcher)
 appWatcher:start()
-
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "G", preFlight)
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "M", mailLogs)
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "O", startOBS)
 hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
