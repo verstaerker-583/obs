@@ -81,9 +81,9 @@ function preFlight()
 		dev:setBalance(0.5)
 		if dev:transportType() == "Built-in" then
 			dev:setDefaultInputDevice()
-			dev:setInputVolume(50)
+			dev:setInputVolume(40)				-- Micro
 		elseif dev:transportType() == "Virtual" then
-			dev:setInputVolume(50) -- NDI Audio
+			dev:setInputVolume(40)				-- NDI Audio
 		else
 			dev:setInputMuted(true)
 		end
@@ -114,7 +114,7 @@ function preFlight()
 		elseif dev:transportType() == "Virtual" then
 			dev:setDefaultOutputDevice()
 			dev:setInputMuted(false)
-			dev:setInputVolume(75) -- BlackHole
+			dev:setInputVolume(75)				-- BlackHole
 			dev:setVolume(100)
 		else
 			dev:setVolume(50)
@@ -136,7 +136,7 @@ function preFlight()
 			dev:setMode(1280, 720, 1)
 		end
 		log:write("done: " .. hs.inspect(dev:currentMode()) .. "\n")
-		log:write(hs.inspect(dev:availableModes()) .. "\n")
+--		log:write(hs.inspect(dev:availableModes()) .. "\n")
 	end
 
 	log:close()
