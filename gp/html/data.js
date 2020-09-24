@@ -1,6 +1,6 @@
 var start = {
 	theme: "#LIVE 🔴 Markus Mauthe - Naturfotograf & Umweltaktivist",
-	message_neg: "Gleich: Die Welt im Blick 📷",
+	message_neg: "Gleich: Die Welt 🌍 im Blick 📷",
 	call2action: "👁 Sei jetzt LIVE dabei!"
 };
 var finish = {
