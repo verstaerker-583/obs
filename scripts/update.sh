@@ -35,6 +35,7 @@ for CHANNEL in bd gp mm; do
 		lq="YTlq"
 		sed -e '
 			s/Name=ok/Name='$CHANNEL'/
+			s/AppleHDAEngineOutput:1B,0,1,1:0/BuiltInSpeakerDevice/
 			s/AppleHDAEngineOutput:1B,0,1,1:0/BuiltInHeadphoneOutputDevice/
 			' ../profiles/$i/basic.ini > $PAYLOAD/basic/profiles/$CHANNEL$i/basic.ini
 			[ $i == $lq ] || ln -sf ../$CHANNEL$lq/service.json $PAYLOAD/basic/profiles/$CHANNEL$i
@@ -63,12 +64,12 @@ pkgbuild \
 #	--info ../pkg/PackageInfo\
 
 pkgbuild \
-	--identifier hammerspoon\
+	--identifier ckecklist\
 	--nopayload\
 	--quiet\
 	--version `date "+%Y%m%d%H%M%S"`\
 	--scripts ../pkg/scripts.hammerspoon\
-	/tmp/hammerspoon.pkg
+	/tmp/checklist.pkg
 #	--component ~/Applications/Hammerspoon.app\
 #	--info ../pkg/PackageInfo\
 #	--install-location /Applications\

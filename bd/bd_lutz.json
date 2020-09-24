@@ -525,7 +525,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Internal",
+						"name": "External",
 						"pos": {
 							"x": 1172,
 							"y": 320
@@ -540,7 +540,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "External",
+						"name": "Internal",
 						"pos": {
 							"x": 108,
 							"y": 400
