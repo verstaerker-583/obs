@@ -1,5 +1,6 @@
 del(.sources[] | 
 #	select(.id == "slideshow").settings.files,
+	select(.id == "ffmpeg_source").settings,
 	select(.id == "window_capture").settings
 )
 
