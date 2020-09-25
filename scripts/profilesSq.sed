@@ -1,3 +1,3 @@
-s/^Name=.*$/Name=okYTsq/
-
+/\[General\]/a\
+Name=YTsq
 /\[AdvOut\]/,/^$/d

@@ -2,10 +2,14 @@
 
 OBS="Library/Application Support/obs-studio"
 
+mkdir -p ~/.hammerspoon
+
+mv /tmp/obs-studio/init.lua ~/.hammerspoon
 mv /tmp/obs-studio ~/"$OBS"
 
 find ~/"$OBS" -d -exec touch -ht 197304291400 '{}' \;
 
-open /Applications/obs.app
+open -a hammerspoon
+open -a OBS
 
 exit 0

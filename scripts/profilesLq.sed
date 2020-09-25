@@ -1,5 +1,5 @@
-s/^Name=.*$/Name=okYTlq/
-
+/\[General\]/a\
+Name=YTlq
 /\[SimpleOutput\]/a\
 VBitrate=500
 /\[SimpleOutput\]/a\

@@ -48,7 +48,7 @@ function postFlight()
 	devices = hs.screen.allScreens()
 	for i, dev in ipairs(devices) do
 		if dev ~= hs.screen.primaryScreen() then
-			dev:setMode(1920, 1080, 1)					-- specific
+			dev:setMode(5120, 2880, 1)					-- specific
 		end
 	end
 
@@ -136,7 +136,7 @@ function preFlight()
 			dev:setMode(1280, 720, 1)
 			alarm = false
 		elseif dev:name() == "Color LCD" then	-- MacBook?
-			dev:setMode(1440, 900, 1)					-- specific
+			dev:setMode(2880, 1800, 1)					-- specific
 		end
 		log:write("done: " .. hs.inspect(dev:currentMode()) .. "\n")
 --		log:write(hs.inspect(dev:availableModes()) .. "\n")			-- for new platforms
@@ -185,11 +185,12 @@ function reloadConfig(files)
 end
 
 function startOBS()
-	hs.execute("open -a 'OBS' --args --scene 'Start' --collection 'gp' --profile 'okYTsq' --verbose --startstreaming")
+	hs.execute("open -a 'OBS' --args --scene 'Start' --collection 'gp' --profile 'YTsq' --verbose --startstreaming")
 
 	-- Apps
 	for i, app in ipairs(hs.application.runningApplications()) do
 		if app:name() == "Finder" then
+		elseif app:name() == "AirPlayUIAgent" then
 		elseif app:name() == "Dock" then
 		elseif app:name() == "FotoMagico 5" then
 		elseif app:name() == "Hammerspoon" then
@@ -199,8 +200,10 @@ function startOBS()
 		elseif app:name() == "Notizen" then
 		elseif app:name() == "OBS" then
 		elseif app:name() == "Skype" then
+		elseif app:name() == "Terminal" then
 		else
 			app:kill()
+			print(app:name())
 		end
 	end
 	hs.application.open("FotoMagico 5", 0, true)

@@ -18,6 +18,7 @@
 				"name": "Limiter"
 			}
 		],
+		"flags": 2,
 		"hotkeys": {
 			"libobs.mute": [
 				{
@@ -304,7 +305,7 @@
 		},
 		{
 			"id": "window_capture",
-			"name": "Window Capture",
+			"name": "Screen Capture",
 			"settings": {
 				"owner_name": "Dock",
 				"window_name": "Desktop Picture - DefaultDesktop.heic"
@@ -398,7 +399,7 @@
 						"key": "OBS_KEY_MINUS"
 					}
 				],
-				"libobs.hide_scene_item.External": [
+				"libobs.hide_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
@@ -435,17 +436,17 @@
 				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_2"
+					}
+				],
+				"libobs.show_scene_item.Internal": [
+					{
+						"key": "OBS_KEY_2"
 					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					},
 					{
 						"key": "OBS_KEY_G"
-					}
-				],
-				"libobs.show_scene_item.Internal": [
-					{
-						"key": "OBS_KEY_2"
 					}
 				],
 				"libobs.show_scene_item.Intro": [
@@ -476,15 +477,6 @@
 					{
 						"align": 0,
 						"locked": true,
-						"name": "Internal",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
-					},
-					{
-						"align": 0,
-						"locked": true,
 						"name": "External",
 						"pos": {
 							"x": 640,
@@ -492,6 +484,15 @@
 						},
 						"private_settings": {
 							"color-preset": 7
+						}
+					},
+					{
+						"align": 0,
+						"locked": true,
+						"name": "Internal",
+						"pos": {
+							"x": 640,
+							"y": 360
 						}
 					},
 					{
@@ -571,7 +572,7 @@
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
-				"libobs.show_scene_item.Window Capture": [
+				"libobs.show_scene_item.Screen Capture": [
 					{
 						"key": "OBS_KEY_3"
 					}
@@ -597,7 +598,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Window Capture",
+						"name": "Screen Capture",
 						"pos": {
 							"x": 640,
 							"y": 360
@@ -678,26 +679,26 @@
 			"hotkeys": {
 				"libobs.hide_scene_item.External": [
 					{
+						"key": "OBS_KEY_3"
+					},
+					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
 				"libobs.hide_scene_item.Internal": [
-					{
-						"key": "OBS_KEY_3"
-					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
 				"libobs.show_scene_item.External": [
 					{
-						"key": "OBS_KEY_3"
-					},
-					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
 				"libobs.show_scene_item.Internal": [
+					{
+						"key": "OBS_KEY_3"
+					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
@@ -792,7 +793,7 @@
 				}
 			],
 			"hotkeys": {
-				"libobs.show_scene_item.Window Capture": [
+				"libobs.show_scene_item.Screen Capture": [
 					{
 						"key": "OBS_KEY_2"
 					}
@@ -813,7 +814,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Window Capture",
+						"name": "Screen Capture",
 						"pos": {
 							"x": 640,
 							"y": 360

@@ -15,70 +15,71 @@ jq -S --tab -f bd_solo.jq	../gp/gp_naked.json	> ../bd/bd_solo.json
 jq -S --tab -f toLJ.jq		../bd/bd_solo.json	> ../bd/bd_lutz.json
 jq -S --tab -f bd_naked.jq	../bd/bd.json		> ../bd/bd_naked.json
 
-# profiles
-mkdir -p ../profiles/YTlq ../profiles/YTmq ../profiles/YTsq
-sed -f profilesLq.sed basic.ini > ../profiles/YTlq/basic.ini
-sed -f profilesMq.sed basic.ini > ../profiles/YTmq/basic.ini
-sed -f profilesSq.sed basic.ini > ../profiles/YTsq/basic.ini
+for QUALITY in lq mq sq; do
+	mkdir -p ../profiles/YT$QUALITY
+	sed -f profiles$QUALITY.sed templates/basic.ini > ../profiles/YT$QUALITY/basic.ini
+done
 
-PAYLOAD="../pkg/obs-studio"
-# mm scenes
-mkdir -p $PAYLOAD/basic/scenes
+#
+# ok
+#
+
+killall obs 
+sudo rm -rf ~/"Library/Application Support/obs-studio"
+
+# ok scenes
+mkdir -p ~/"Library/Application Support/obs-studio/basic/scenes"
 for i in `ls ../*/*.json`; do
-	[ `basename $i` == "bd_lutz.json" ] || jq -S --tab -f toMM.jq $i > $PAYLOAD/basic/scenes/`basename $i`;
+	[ `basename $i` == "bd_lutz.json" ] || jq -S --tab '.' $i > ~/"Library/Application Support/obs-studio/basic/scenes/`basename $i`"
+done
+
+# ok profiles
+for QUALITY in lq mq sq; do
+	mkdir -p ~/"Library/Application Support/obs-studio/basic/profiles/YT$QUALITY"
+	sed -f profiles$QUALITY.sed templates/basic.ini|sed -f took.sed > ~/"Library/Application Support/obs-studio/basic/profiles/YT$QUALITY/basic.ini"
+done
+
+sed -f took.sed templates/global.ini > ~/"Library/Application Support/obs-studio/global.ini"
+
+#
+# mm
+#
+
+# mm scenes
+USERS="mm"
+mkdir -p /tmp/obs-studio/basic/scenes
+for i in `ls ../*/*.json`; do
+	[ `basename $i` == "bd_lutz.json" ] || jq -S --tab -f tomm.jq $i > /tmp/obs-studio/basic/scenes/`basename $i`
 done
 
 # mm profiles
 for CHANNEL in bd gp mm; do
 	for i in `ls ../profiles`; do
-		mkdir -p $PAYLOAD/basic/profiles/$CHANNEL$i
-		lq="YTlq"
+		mkdir -p /tmp/obs-studio/basic/profiles/$CHANNEL$i
+		LQ="YTlq"
 		sed -e '
-			s/Name=ok/Name='$CHANNEL'/
-			s/AppleHDAEngineOutput:1B,0,1,1:0/BuiltInSpeakerDevice/
-			s/AppleHDAEngineOutput:1B,0,1,1:0/BuiltInHeadphoneOutputDevice/
-			' ../profiles/$i/basic.ini > $PAYLOAD/basic/profiles/$CHANNEL$i/basic.ini
-			[ $i == $lq ] || ln -sf ../$CHANNEL$lq/service.json $PAYLOAD/basic/profiles/$CHANNEL$i
+			s/Name=/Name='$CHANNEL'/
+			' ../profiles/$i/basic.ini|sed -f tomm.sed > /tmp/obs-studio/basic/profiles/$CHANNEL$i/basic.ini
+
+			[ $i == $LQ ] || ln -sf ../$CHANNEL$LQ/service.json /tmp/obs-studio/basic/profiles/$CHANNEL$i
 	done
+	cp templates/service$CHANNEL.json /tmp/obs-studio/basic/profiles/$CHANNEL$LQ/service.json
 done
 
-sudo find ~/Documents/GitHub/obs -exec touch -ht 197304291400 '{}' \;
+sed -f tomm.sed templates/global.ini > /tmp/obs-studio/global.ini
+sed -f tomm.sed ~/.hammerspoon/init.lua > /tmp/obs-studio/init.lua
 
+sudo find ~/Documents/GitHub/obs -exec touch -ht 197304291400 '{}' \;
 chmod -R -w ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs/.git
 
-chmod -R +w $PAYLOAD
-#chmod -R -w $PAYLOAD/basic/profiles
-#sudo chown -R root $PAYLOAD/basic/profiles
-
+#	--info ../pkg/PackageInfo\
 pkgbuild \
 	--identifier magic\
 	--install-location /tmp/obs-studio\
 	--ownership preserve\
 	--quiet\
-	--root $PAYLOAD\
+	--root /tmp/obs-studio\
 	--scripts ../pkg/scripts\
 	--version `date "+%Y%m%d%H%M%S"`\
 	/tmp/magic.pkg
-
-#	--info ../pkg/PackageInfo\
-
-pkgbuild \
-	--identifier ckecklist\
-	--nopayload\
-	--quiet\
-	--version `date "+%Y%m%d%H%M%S"`\
-	--scripts ../pkg/scripts.hammerspoon\
-	/tmp/checklist.pkg
-#	--component ~/Applications/Hammerspoon.app\
-#	--info ../pkg/PackageInfo\
-#	--install-location /Applications\
-exit 0
-
-pkgbuild \
-	--identifier launch\
-	--nopayload\
-	--quiet\
-	--scripts ../launch/scripts\
-	--version `date "+%Y%m%d%H%M%S"`\
- 	~/Desktop/launch.pkg

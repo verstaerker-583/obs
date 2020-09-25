@@ -1,8 +1,0 @@
-#!/bin/sh
-
-killall Hammerspoon
-
-mkdir -p ~/.hammerspoon
-cp -a init.lua ~/.hammerspoon
-
-exit 0

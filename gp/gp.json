@@ -355,7 +355,7 @@
 				],
 				"SlideShow.Restart": [
 					{
-						"key": "OBS_KEY_R"
+						"key": "OBS_KEY_1"
 					}
 				]
 			},
@@ -364,7 +364,7 @@
 			"settings": {
 				"files": [
 					{
-						"value": "/Library/Desktop Pictures"
+						"value": "https://www.nasa.gov/sites/default/files/images/297755main_GPN-2001-000009_full.jpg"
 					}
 				],
 				"slide_mode": "mode_manual",

@@ -1,5 +1,0 @@
-#!/bin/sh
-
-open -a Hammerspoon
-
-exit 0
