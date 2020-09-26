@@ -9,6 +9,7 @@
 1. **[1]** Szene "Start" ⏰
     * 🔇 alle Audioquellen geschlossen
 
+
 2. **[2]** Szene "Cam" 🎥
     * 🔊 alle Audioquellen, außer Gast, offen
     * 🎥 `Internal`
@@ -20,6 +21,7 @@
     * **[?]** ❓
     * **[C]** Chat 💬 ein-/ausblenden
 
+
 3. **[3]** Szene "Screen" 📺
     * 🔊 alle Audioquellen, außer Gast, offen
     * Kameras nicht sichtbar
@@ -27,6 +29,7 @@
     * **[+]** Kameras ein-/ausblenden
         * 🎥 `External` (rechts oben)
         * **[<]** Kameraumschaltung
+
 
 4. **[4]** Szene "Finish" 🛌
     * 🔇
@@ -36,6 +39,7 @@
     * wechselt zu Szene "Cam"
     * 🔊 alle Audioquellen, außer Gast, offen
 
+
 * **[O]** Outro 🎞
     * wechselt zu Szene "Finish"
     * 🔇 alle Audioquellen geschlossen
@@ -43,12 +47,15 @@
 ### Guest 📞
 * **[1]**, **[2]**, **[3]** und **[4]** - Gast niemals hör- und sichtbar
 
+
 * **[F]** "Full" entspricht Szene "Cam" **[2]** mit Gast anstatt Gastgeber im Großbild
    * zusätzlich Ton Gast auf
    * Mikrofon zu
    * **[€]** Spendenaufruf, **[?]** und **[+]** Screen
 
+
 * **[G]** Szene "Guest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
+
 
 * **[H]** Szene "History" entspricht Szene "Screen" **[3]**
    * zusätzlich Ton Gast auf
@@ -73,6 +80,7 @@
     * kann immer wieder gedrückt werden, z.B. bei Tonproblemen, oder wenn der Monitor seine EInstellungen vergisst
     * wird immer durchgeführt, wenn OBS geöffent wird
 
+
 * **[ctrl][alt][cmd] & [S]** - "Streamen" 🔧
     * Skype, FotoMagico und NDI Virtual Input werden geöffnet
     * nicht erforderliche Anwendungen werden geschlossen
@@ -83,11 +91,12 @@
 
     * auch wiederholbar
 
+
 * **[ctrl][alt][cmd] & [M]** - "Mail"
     * Log- und Konfiguratuonsdateien sammeln und als Email verschicken
 
 ## FotoMagico
-    * **\[cmd\] \& \[P\]** Präsentation im Vollbildmodus starten
+* **[cmd] & [P]** Präsentation im Vollbildmodus starten
 
 
 
