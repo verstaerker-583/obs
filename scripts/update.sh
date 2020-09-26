@@ -76,11 +76,11 @@ sudo find ~/Documents/GitHub/obs -exec touch -ht 197304291400 '{}' \;
 chmod -R -w ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs/.git
 
-#	--info ../pkg/PackageInfo\
 pkgbuild \
 	--identifier magic\
 	--install-location /tmp/obs-studio\
 	--ownership preserve\
+	--info ../pkg/PackageInfo\
 	--quiet\
 	--root /tmp/obs-studio\
 	--scripts ../pkg/scripts\
