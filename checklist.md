@@ -133,9 +133,11 @@
     * wechselt automatisch zu Szene "Cams"
 * Auf geht's! 🎬
 
-## Landing
+## Re-entry
 * Nach dem letzten Satz mind. 20sec warten, dann
 * mit **[O]** das Outro starten
 * [Mic] gemutet? - Du bist nicht mehr zu sehen und zu hören!
+
+## Landing
 * Streaming in OBS nach frühesten 10min beenden - Jetzt bist Du offline!
 * Olaf: Warten auf das Ausbleiben des Signals und dann den Stream auf YouTube beenden.
