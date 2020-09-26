@@ -101,8 +101,6 @@
     * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
     * OBS streamt 🔴
 
-
-
 ### FotoMagico
 * Präsentation laden
 * **[cmd] & [P]** Startposition `FotoMagico`
@@ -176,15 +174,17 @@
 * Startposition **[cmd] & [P]**
 
 ### OBS
-* OBS > `Stream manuell starten`
+#### Quellen sicht-/unsichtbar schalten und Overlays laden
+* Achtung: Vorschaubild OBS anklicken!
 * **[1]**
-* **[2]**
+* **[2]**, **[€]**, **[C]**
+* **[<]**
+    * 🎥 `External` aktiv?
 * **[3]**
-    * FotoMagico sichtbar?
+    * `FotoMagico` (anklicken, damit bedienbar) sicht- und hörbar?
 * **[4]**
-* **[G]**
-* **[1]** Mic gemutet?
-* **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
+* **[1]**
+    * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 
 19:15 Uhr
 
@@ -198,11 +198,17 @@
 19:30 Uhr
 
 ## Launch
-    * auf den "Alarm" warten
-    * mit **[I]** das Intro starten,
-    * Status:
-	* alle Audioquellen öffnen, du kannst mit **[M]** muten
-        * wechselt automatisch zu Szene "Cams"
-    * Auf geht's!
+* `FotoMagico` (anklicken, damit bedienbar)
+* auf den "Alarm" warten
+* mit **[I]** das Intro starten,
+* Status:
+    * alle Audioquellen öffnen, du kannst mit **[M]** muten
+    * wechselt automatisch zu Szene "Cams"
+* Auf geht's!
 
-
+## Landing
+* Nach dem letzten Satz mind. 20sec warten, dann mit
+* mit **[O]** das Outro starten
+* [Mic] gemutet? - Du bist nicht mehr zu sehen und zu hören!
+* Streaming in OBS nach frühesten 10min beenden - Jetzt bist Du offline!
+* Olaf: Warten auf das Ausbleiben des Signals und dann den Stream beenden.
