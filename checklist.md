@@ -7,16 +7,14 @@
 
 ### Szenen
 1. **[1]** Szene "Start" ⏰
-
     * 🔇 alle Audioquellen geschlossen  
 
 
 2. **[2]** Szene "Cam" 🎥
-
     * 🔊 alle Audioquellen, außer Gast, offen
     * 🎥 `Internal`
     * 📺 Screen, Spendenaufruf, ❓ und Chat 💬 nicht sichtbar
-
+---
     * **[<]** Kameraumschaltung
     * **[+]** "Screen" 📺 ein-/ausblenden
     * **[€]** Spendenaufruf
@@ -25,17 +23,14 @@
 
 
 3. **[3]** Szene "Screen" 📺
-
     * 🔊 alle Audioquellen, außer Gast, offen
     * Kameras nicht sichtbar
-
+---
     * **[+]** Kameras ein-/ausblenden
         * 🎥 `External` (rechts oben)
         * **[<]** Kameraumschaltung  
 
-
 4. **[4]** Szene "Finish" 🛌
-
     * 🔇 alle Audioquellen geschlossen  
 
 
@@ -47,26 +42,21 @@
 
 
 * **[O]** **O**utro 🎞
-    * 🔇
     * wechselt zu Szene "Finish"
     * 🔇 alle Audioquellen geschlossen
 
 ### Guest 📞
 * **[1]**, **[2]**, **[3]** und **[4]** - Gast niemals hör- und sichtbar
 
-
 * **[F]** "**F**ull" entspricht Szene "Cam" **[2]** mit Gast anstatt Gastgeber im Großbild
-
    * zusätzlich Ton Gast auf
    * Mikrofon zu
-   * **[€]** Spendenaufruf, **[?]** und **[+]** Screen
 
+   * **[€]** Spendenaufruf, **[?]** und **[+]** Screen
 
 * **[G]** Szene "**G**uest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
 
-
 * **[H]** Szene "**H**istory" entspricht Szene "Screen" **[3]**
-
    * zusätzlich Ton Gast auf
    * Kameras/ Gast unmittelbar sichtbar
 
@@ -78,7 +68,6 @@
 * **[2]**,  **[3]** und **[G]** können auch benutzt werden, um z.B. das Mikrofon nach **[M]** wieder zu öffnen
 * Der Gast kann in **[G]** durch Wechsel zu **[2]** und in **[H**] zu **[3]** ausgeblendet und gemutet werden
 
-
 ## Hammerspoon
 * **[ctrl][alt][cmd] & [G]** - ***"Grundeinstellungen"*** 🧯
     * alle Audio- und Videoeinstellungen werden vorgenommen
@@ -89,7 +78,6 @@
     * kann immer wieder gedrückt werden, z.B. bei Tonproblemen, oder wenn der Monitor seine EInstellungen vergisst
     * wird immer durchgeführt, wenn OBS geöffent wird  
 
-
 * **[ctrl][alt][cmd] & [S]** - ***"Streamen"*** 🔧
     * Skype, FotoMagico und NDI Virtual Input werden geöffnet
     * nicht erforderliche Anwendungen werden geschlossen
@@ -99,7 +87,6 @@
         * OBS streamt 🔴
 
     * auch wiederholbar  
-
 
 * **[ctrl][alt][cmd] & [M]** - ***"Mail"*** ✉️ 
     * Log- und Konfiguratuonsdateien sammeln und als Email verschicken  
