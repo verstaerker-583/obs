@@ -2,15 +2,15 @@
 
 ## OBS
 ### Allgemein
-* [M] Mikrofon muten
-* [D] Desktop Audio muten
+* [M] Mikrofon muten 🔇
+* [D] Desktop Audio mten 🔇
 
 ### Szenen
 * [1] Szene "Start" ⏰
-    * 🔇 
+    * 🔇
 
 * [2] Szene "Cam" 🎥
-    * alle Audioquellen, ausser Gast, offen
+    * alle Audioquellen, außer Gast, offen
     * 🎥 `Internal`
     * 📺 Screen, Spendenaufruf, ❓ und Chat 💬 nicht sichtbar
 
@@ -21,7 +21,7 @@
     * [C] Chat 💬 ein-/ausblenden
 
 * [3] Szene "Screen" 📺
-    * alle Audioquellen, ausser Gast, offen
+    * alle Audioquellen, außer Gast, offen
     * Kameras nicht sichtbar
 
     * [+] Kameras ein-/ausblenden
@@ -34,7 +34,7 @@
 ### Intro/ Outro
 * [I] Intro 🎞
     * wechselt zu Szene "Cam"
-    * alle Audioquellen, ausser Gast, offen
+    * alle Audioquellen, außer Gast, offen
 
 * [O] Outro 🎞
     * wechselt zu Szene "Finish"
@@ -50,7 +50,7 @@
 
 * **[G]** Szenen "Guest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
 
-* [H] entspricht Szene "Screen" [3] 
+* [H] entspricht Szene "Screen" [3]
    * zusätzlich Ton Gast auf
    * Kameras/ Gast unmittelbar sichtbar
 
@@ -69,10 +69,10 @@
     * Powermanagement deaktiviert
     * WiFi deaktiviert
     * verschiedene Prüfungen
-   
+
     * kann immer wieder gedrückt werden, z.B. bei Tonproblemen, oder wenn der Monitor seine EInstellungen vergisst
     * wird immer durchgeführt, wenn OBS geöffent wird
-  
+
 * \[ctrl]\[alt][cmd] & [S] - "Streamen"
     * Skype, FotoMagico & NDI Virtual Input werden geöffnet
     * nicht erforderliche Anwendungen werden geschlossen
@@ -82,12 +82,12 @@
         * OBS streamt
 
     * auch wiederholbar
-  
+
 * \[ctrl]\[alt][cmd] & [M] - "Mail"
     * Log- und Konfiguratuonsdateien sammeln und als Email verschicken
-  
+
 ## FotoMagico
-    * [cmd] & \[P] Präsentation im Vollbildmodus starten
+    * [cmd] & [P] Präsentation im Vollbildmodus starten
 
 
 
@@ -187,7 +187,7 @@
 * [4], [G]
 * [1] Mic gemutet?
 * Report in OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
- 
+
 19:00 Uhr
 ### YouTube
 * Stream starten
