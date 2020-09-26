@@ -126,7 +126,7 @@
 
 🚽
 
-⏰ **19:30 Uhr**
+⏰ **19:25 Uhr**
 ## Launch
 * `FotoMagico` (anklicken, damit bedienbar)
 * auf den "Alarm" warten
