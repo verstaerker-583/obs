@@ -72,22 +72,22 @@
    
     * kann immer wieder gedrückt werden, z.B. bei Tonproblemen, oder wenn der Monitor seine EInstellungen vergisst
     * wird immer durchgeführt, wenn OBS geöffent wird
-
+  
 * \[ctrl]\[alt][cmd] & [S] - "Streamen"
     * Skype, FotoMagico & NDI Virtual Input werden geöffnet
     * nicht erforderliche Anwendungen werden geschlossen
     * wenn OBS nicht schon auf
-    📴     * "Grundeinstellungen" (weil mit OBS verknüpft)
+         * "Grundeinstellungen" (weil mit OBS verknüpft)
         * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
         * OBS streamt
 
     * auch wiederholbar
-
+  
 * \[ctrl]\[alt][cmd] & [M] - "Mail"
     * Log- und Konfiguratuonsdateien sammeln und als Email verschicken
-
+  
 ## FotoMagico
-    * [cmd] & [P] Präsemntation im Vollbildmodus starten
+    * [cmd] & \[P] Präsentation im Vollbildmodus starten
 
 
 
