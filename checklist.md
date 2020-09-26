@@ -1,6 +1,6 @@
 # Checklist
 16:00 Uhr
-## Prelauch
+## Prelaunch
 
 ### Allgemein
 * Smartphone & Tablet lautlos?
