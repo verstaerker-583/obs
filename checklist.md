@@ -1,9 +1,13 @@
 # Checklist
 
 ## OBS
-* Intro
-* Outro
-* Kamera
+### Filme
+* Intro [I]
+* Outro [O]
+
+* [2] Kameras
+* [3] FotoMagico
+* [G] für Chat
 
 ## Skype
 ### Skype > Einstellungen > Anrufe > Erweitert
@@ -11,15 +15,16 @@
 * ☑ `Video automatisch starten`
 * ☑ `NDI-Nutzung erlauben`
 
-* Skype > Einstellungen > Audio und Video
-    * Kamera: `FaceTime HD-Kamera`
+### Skype > Einstellungen > Audio und Video
+* Kamera: `FaceTime HD-Kamera`
 
 * Mikrofon: `Standardgerät`
-    * ☐ Mikrofoneinstellungen automatisch anpassen
+    * ☐ `Mikrofoneinstellungen automatisch anpassen`
     * 🎚️~ 4,2 (automatisch durch Hammerspoon)
 
 * Lautsprecher: Standardgerät?
-    * 🎚️= 0
+    * 🎚️= `0`
 
 * Kostenlosen Testanruf tätigen
-    * NDI Virtual Input (macOS Menüleiste) -> (Skype - Aktiver Sprecher) Test Mithörton
+    * NDI Virtual Input (macOS Menüleiste) -> `(Skype - Aktiver Sprecher)`
+    * Mithörton
