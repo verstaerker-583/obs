@@ -66,13 +66,13 @@
 * Szene "Cam" **[2]**, "Screen" **[3]**, "Full" **[F]** und "Guest" **[G]** können nach Einblendungen durch erneutes Drücken wieder "aufgeräumt" werden.
 * **[2]**,  **[3]** und **[G]** können auch benutzt werden, um z.B. das Mikrofon nach **[M]** wieder zu öffnen.
 * Der Gast kann in **[G]** durch Wechsel zu **[2]** und in **[H]** zu **[3]** ausgeblendet und gemutet werden.
+* Mit Gast kannst Du in [F] ungesehen und ungehört "ordentlich abhusten".
 
 ## Hammerspoon
 * **[ctrl][alt][cmd] & [G]** - ***"Grundeinstellungen"*** 🧯
     * Audio- und Videoeinstellungen werden vorgenommen
     * Powermanagement deaktiviert
     * WiFi deaktiviert
-    * nicht erforderliche Anwendungen werden geschlossen
     * verschiedene Prüfungen werden durchgeführt
     * kann immer wieder gedrückt werden, z.B. bei Tonproblemen, oder wenn der Monitor Einstellungen "vergisst"
     * wird immer durchgeführt, wenn OBS geöffent wird
@@ -85,6 +85,7 @@
         * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
         * OBS streamt 🔴
     * auch wiederholbar
+    * Schnellste Möglichkeit - nach z.B einem Reboot, wieder in die volle Streaming-Konfiguration zu kommen.
 
 * **[ctrl][alt][cmd] & [M]** - ***"Mail"*** ✉️
     * Log- und Konfiguratuonsdateien sammeln und als Email verschicken
