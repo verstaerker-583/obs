@@ -12,7 +12,7 @@
     * Powermanagement deaktiviert
     * WiFi deaktiviert
     * Skype, FotoMagico & NDI Virtual Input werden geöffnet
-    * OBS wird mit dem Profil "gpYTsq" und der Szenensammlung "gp_naked" geöffnet
+    * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
     * OBS streamt
 
 ### FotoMagico
@@ -23,10 +23,11 @@
 * Achtung: Vorschaubild anklicken!
 * [1]
 * [2], [€]
-    * [<]
+* [<]
     * 🎥 `External` aktiv?
 * [3] FotoMagico: [cmd] & [P]
     * FotoMagico sicht- und hörbar?
+* [+] Kamera zuschalten - "Stresstest"
     * Report: Markus, in OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 * [4]
 
@@ -35,7 +36,11 @@
 * [O] Outro sicht- und hörbar?
 
 #### Skype
-* [G] \(schwarzer Kreis)
+* [G] \(vorerst schwarzer Kreis)
+
+### Hammerspoon
+* \[ctrl]\[alt]\[cmd] & [M]
+    * senden der Log- und Konfigurationsdateien
 
 ### Skype
 #### Skype > Einstellungen > Anrufe > Erweitert
@@ -70,10 +75,6 @@
 * 'Stream beenden'
 * [1]
 * **Programme geöffnet lassen!**
-
-### Hammerspoon
-* \[ctrl]\[alt]\[cmd] & [M]
-    * senden der Log- und Konfigurationsdateien
 
 19:00 Uhr
 ## Ignition
