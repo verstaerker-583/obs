@@ -18,10 +18,10 @@
 
 ### FotoMagico
 * Präsentation laden
-* **[cmd] & [P]** Startposition `FotoMagico`
+* **[cmd] & [P]** Startposition `FotoMagico`/ Vollbild
 
 ### OBS
-#### Quellen sicht-/unsichtbar schalten und Overlays laden
+#### Szenen in Ausgangsposition, Quellen sicht-/unsichtbar schalten und Overlays vom Server laden
 * ⚠ Vorschaubild OBS anklicken!
 * **[1]**
 * **[2]**, **[€]**
@@ -94,10 +94,10 @@
 * **[ctrl][alt]\[cmd] & [G]**
 
 ### FotoMagico
-* Startposition **[cmd] & [P]**
+* **[cmd] & [P]** Startposition `FotoMagico`/ Vollbild
 
 ### OBS
-#### Quellen sicht-/unsichtbar schalten und Overlays laden
+#### Szenen in Ausgangsposition, Quellen sicht-/unsichtbar schalten und Overlays vom Server laden
 * ⚠ Vorschaubild OBS anklicken!
 * **[1]**
 * **[2]**, **[€]**, **[C]**
