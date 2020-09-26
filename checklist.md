@@ -6,21 +6,21 @@
 * [D] Desktop Audio muten
 
 ### Szenen
-* [1] Szene "Start"
-    * alle Audioquellen zu
+* [1] Szene "Start" ⏰
+    * 🔇 
 
-* [2] Szene "Cam"
+* [2] Szene "Cam" 🎥
     * alle Audioquellen, ausser Gast, offen
     * 🎥 `Internal`
-    * Screen, Spendenaufruf, ? und Chat nicht sichtbar
+    * 📺 Screen, Spendenaufruf, ❓ und Chat 💬 nicht sichtbar
 
     * [<] Kameraumschaltung
     * [+] "Screen" einblenden
     * [€] Spendenaufruf
-    * [?] Fragen?
-    * [C] Chat einblenden
+    * [?] ❓
+    * [C] Chat 💬 einblenden
 
-* [3] Szene "Screen"
+* [3] Szene "Screen" 📺
     * alle Audioquellen, ausser Gast, offen
     * Kameras nicht sichtbar
 
@@ -29,37 +29,67 @@
         * [<] Kameraumschaltung
 
 * [4] Szene "Finish"
-    * alle Audioquellen zu
+    * 🔇
 
 ### Intro/ Outro
 * [I] Intro 🎞
-    * alle Audioquellen, ausser Gast, offen
     * wechselt zu Szene "Cam"
+    * alle Audioquellen, ausser Gast, offen
 
 * [O] Outro 🎞
     * wechselt zu Szene "Finish"
-    * alle Audioquelen zu
+    * 🔇
 
-### Guest
+### Guest 📞
 * [1], [2], [3] & [4] - Gast niemals hör- und sichtbar
 
 * [F] entspricht Szene "Cam" [2] mit Gast anstatt Gastgeber im Großbild
    * zusätzlich Ton Gast auf
    * Mikrofon zu
-   * [€] Spwndenaufruf, [?] und [+] Screen
+   * [€] Spendenaufruf, [?] und **[+]** Screen
 
-* [G] entspricht Szene "Cam" [2] mit eingeblendetem Gast und Chat
+* **[G]** entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
+
+* [3] Szene "Screen" 📺
+    * alle Audioquellen, ausser Gast, offen
+    * Kameras nicht sichtbar
+
+    * [+] Kameras einblenden
+        * 🎥 `External` (rechts oben)
+        * [<] Kameraumschaltung
+
+* [4] Szene "Finish"
+    * 🔇
+
+### Intro/ Outro
+* [I] Intro 🎞
+    * wechselt zu Szene "Cam"
+    * alle Audioquellen, ausser Gast, offen
+
+* [O] Outro 🎞
+    * wechselt zu Szene "Finish"
+    * 🔇
+
+### Guest 📞
+* [1], [2], [3] & [4] - Gast niemals hör- und sichtbar
+
+* [F] entspricht Szene "Cam" [2] mit Gast anstatt Gastgeber im Großbild
    * zusätzlich Ton Gast auf
-   * [€] Spwndenaufruf und [?]
+   * Mikrofon zu
+   * [€] Spendenaufruf, [?] und **[+]** Screen
 
-* [H] entspricht Szene "Screen" [3] mit eingeblendetem Gast und Chat
+* **[G]** entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und 
+   * zusätzlich Ton Gast auf
+   * [€] Spendenaufruf und [?]
+
+* [H] entspricht Szene "Screen" **[3]** mit eingeblendetem Gast und Chat
    * zusätzlich Ton Gast auf
    * Kameras/ Gast sofort eingeblendet
         * [<] Kameraumschaltung
         * [+] Kameras einblenden
 
 ## Hotspoon
-* \[ctrl]\[alt][cmd] & [G] - "Grundeinstellung"
+* \[ctrl]\[alt][cmd] & [G] - "Grundeinstellungen" 🧯
     * alle Audio- und Videoeinstellungen werden vorgenommen
     * Powermanagement deaktiviert
     * WiFi deaktiviert
@@ -72,7 +102,7 @@
     * Skype, FotoMagico & NDI Virtual Input werden geöffnet
     * nicht erforderliche Anwendungen werden geschlossen
     * wenn OBS nicht schon auf
-        * "Grundeinstellung" (weil mit OBS verknüpft)
+        * "Grundeinstellungen" (weil mit OBS verknüpft)
         * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
         * OBS streamt
 
@@ -92,7 +122,7 @@
 ## Prelaunch
 
 ### Allgemein
-* Smartphone & Tablet lautlos?
+* 📴 Smartphone & Tablet lautlos?
 
 ### Hammerspoon
 * \[ctrl]\[alt]\[cmd] & [S]
