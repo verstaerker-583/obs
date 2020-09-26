@@ -67,7 +67,6 @@
     * Powermanagement deaktiviert
     * WiFi deaktiviert
     * verschiedene Prüfungen
-
     * kann immer wieder gedrückt werden, z.B. bei Tonproblemen, oder wenn der Monitor seine EInstellungen vergisst
     * wird immer durchgeführt, wenn OBS geöffent wird  
 
@@ -78,7 +77,6 @@
         * "Grundeinstellungen" (weil mit OBS verknüpft)
         * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
         * OBS streamt 🔴
-
     * auch wiederholbar  
 
 * **[ctrl][alt][cmd] & [M]** - ***"Mail"*** ✉️ 
