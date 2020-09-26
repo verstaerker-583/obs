@@ -13,6 +13,7 @@
     * 🔊 alle Audioquellen, außer Gast, offen
     * 🎥 `Internal`
     * 📺 Screen, Spendenaufruf, ❓ und Chat 💬 nicht sichtbar
+
     Hotkeys
     * **[<]** Kameraumschaltung
     * **[+]** "Screen" 📺 ein-/ausblenden
@@ -23,6 +24,7 @@
 3. **[3]** Szene "Screen" 📺
     * 🔊 alle Audioquellen, außer Gast, offen
     * Kameras nicht sichtbar
+
     Hotkeys
     * **[+]** Kameras ein-/ausblenden
         * 🎥 `External` (rechts oben)
@@ -46,6 +48,7 @@
 * **[F]** Szene "**F**ull" entspricht Szene "Cam" **[2]** mit Gast anstatt Gastgeber im Großbild
     * zusätzlich Ton Gast auf
     * 🔇 Mikrofon zu
+
     Hotkeys
     * **[€]** Spendenaufruf, **[?]** und **[+]** Screen
 
@@ -54,6 +57,7 @@
 * **[H]** Szene "**H**istory" entspricht Szene "Screen" **[3]**
     * zusätzlich Ton Gast auf
     * Kameras/ Gast unmittelbar sichtbar
+
     Hotkeys
     * **[+]** Kameras aus-/einblenden
         * **[<]** Kameraumschaltung
