@@ -15,7 +15,7 @@
     * 📺 Screen, Spendenaufruf, ❓ und Chat 💬 nicht sichtbar
 
     * **[<]** Kameraumschaltung
-    * **[+]** "Screen" ein-/ausblenden
+    * **[+]** "Screen" 📺 ein-/ausblenden
     * **[€]** Spendenaufruf
     * **[?]** ❓
     * **[C]** Chat 💬 ein-/ausblenden
@@ -41,16 +41,16 @@
     * 🔇
 
 ### Guest 📞
-* **[1], [2], [3] & [4]** - Gast niemals hör- und sichtbar
+* **[1]**, **[2]**, **[3]** und **[4]** - Gast niemals hör- und sichtbar
 
-* **[F]** "Full" entspricht Szene "Cam" [2] mit Gast anstatt Gastgeber im Großbild
+* **[F]** "Full" entspricht Szene "Cam" **[2]** mit Gast anstatt Gastgeber im Großbild
    * zusätzlich Ton Gast auf
    * Mikrofon zu
-   * **[€]** Spendenaufruf, [?] und **[+]** Screen
+   * **[€]** Spendenaufruf, **[?]** und **[+]** Screen
 
 * **[G]** Szenen "Guest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
 
-* **[H]** entspricht Szene "Screen" [3]
+* **[H]** entspricht Szene "Screen" **[3]**
    * zusätzlich Ton Gast auf
    * Kameras/ Gast unmittelbar sichtbar
 
@@ -58,8 +58,8 @@
         * **[<]** Kameraumschaltung
 
 ### Tipps
-* Szene "Cam" **[2]**, "Screen" **[3]**, "Full" **[F]** & "Guest" **[G]** können nach Einblendungen durch erneutes Drücken wieder "aufgeräumt" werden
-* **[2]** & **[3]** & **[G]** können auch benutzt werden, um z.B. das Mikrofon nach **[M]** wieder zu öffnen
+* Szene "Cam" **[2]**, "Screen" **[3]**, "Full" **[F]** und "Guest" **[G]** können nach Einblendungen durch erneutes Drücken wieder "aufgeräumt" werden
+* **[2]**,  **[3]** und **[G]** können auch benutzt werden, um z.B. das Mikrofon nach **[M]** wieder zu öffnen
 * der Gast kann in **[G]** durch Wechsel zu **[2]** und in **[H**] zu **[3]** gemutet werden
 
 
@@ -74,7 +74,7 @@
     * wird immer durchgeführt, wenn OBS geöffent wird
   
 * **[ctrl][alt][cmd] & [S]** - "Streamen"
-    * Skype, FotoMagico & NDI Virtual Input werden geöffnet
+    * Skype, FotoMagico und NDI Virtual Input werden geöffnet
     * nicht erforderliche Anwendungen werden geschlossen
     * wenn OBS nicht schon auf
          * "Grundeinstellungen" (weil mit OBS verknüpft)
@@ -97,7 +97,7 @@
 ## Prelaunch
 
 ### Allgemein
-* 📴 Smartphone & Tablet lautlos?
+* 📴 Smartphone und Tablet lautlos?
 
 ### Hammerspoon
 * **[ctrl][alt][cmd] & [S]**
