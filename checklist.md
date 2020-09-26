@@ -2,69 +2,69 @@
 
 ## OBS
 ### Allgemein
-* [M] Mikrofon muten 🔇
-* [D] Desktop Audio mten 🔇
+* **[M]** Mikrofon muten 🔇
+* **[D]** Desktop Audio mten 🔇
 
 ### Szenen
-* [1] Szene "Start" ⏰
+* **[1]** Szene "Start" ⏰
     * 🔇
   
-* [2] Szene "Cam" 🎥
+* **[2]** Szene "Cam" 🎥
     * alle Audioquellen, außer Gast, offen
     * 🎥 `Internal`
     * 📺 Screen, Spendenaufruf, ❓ und Chat 💬 nicht sichtbar
 
-    * [<] Kameraumschaltung
-    * [+] "Screen" ein-/ausblenden
-    * [€] Spendenaufruf
-    * [?] ❓
-    * [C] Chat 💬 ein-/ausblenden
+    * **[<]** Kameraumschaltung
+    * **[+]** "Screen" ein-/ausblenden
+    * **[€]** Spendenaufruf
+    * **[?]** ❓
+    * **[C]** Chat 💬 ein-/ausblenden
   
-* [3] Szene "Screen" 📺
+* **[3]** Szene "Screen" 📺
     * alle Audioquellen, außer Gast, offen
     * Kameras nicht sichtbar
 
-    * [+] Kameras ein-/ausblenden
+    * **[+]** Kameras ein-/ausblenden
         * 🎥 `External` (rechts oben)
-        * [<] Kameraumschaltung
+        * **[<]** Kameraumschaltung
   
-* [4] Szene "Finish"
+* **[4]** Szene "Finish"
     * 🔇
   
 ### Intro/ Outro
-* [I] Intro 🎞
+* **[I]** Intro 🎞
     * wechselt zu Szene "Cam"
     * alle Audioquellen, außer Gast, offen
 
-* [O] Outro 🎞
+* **[O]** Outro 🎞
     * wechselt zu Szene "Finish"
     * 🔇
 
 ### Guest 📞
-* [1], [2], [3] & [4] - Gast niemals hör- und sichtbar
+* **[1], [2], [3] & [4]** - Gast niemals hör- und sichtbar
 
-* [F] "Full" entspricht Szene "Cam" [2] mit Gast anstatt Gastgeber im Großbild
+* **[F]** "Full" entspricht Szene "Cam" [2] mit Gast anstatt Gastgeber im Großbild
    * zusätzlich Ton Gast auf
    * Mikrofon zu
-   * [€] Spendenaufruf, [?] und **[+]** Screen
+   * **[€]** Spendenaufruf, [?] und **[+]** Screen
 
 * **[G]** Szenen "Guest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
 
-* [H] entspricht Szene "Screen" [3]
+* **[H]** entspricht Szene "Screen" [3]
    * zusätzlich Ton Gast auf
    * Kameras/ Gast unmittelbar sichtbar
 
-   * [+] Kameras aus-/einblenden
-        * [<] Kameraumschaltung
+   * **[+]** Kameras aus-/einblenden
+        * **[<]** Kameraumschaltung
 
 ### Tipps
-* Szene "Cam" [2], "Screen" [3], "Full" [F] & "Guest" [G] können nach Einblendungen durch erneutes Drücken wieder "aufgeräumt" werden
-* [2] & [3] & [G] können auch benutzt werden, um z.B. das Mikrofon nach [M] wieder zu öffnen
-* der Gast kann in [G] durch Wechsel zu [2] und in [H] zu [3] gemutet werden
+* Szene "Cam" **[2]**, "Screen" **[3]**, "Full" **[F]** & "Guest" **[G]** können nach Einblendungen durch erneutes Drücken wieder "aufgeräumt" werden
+* **[2]** & **[3]** & **[G]** können auch benutzt werden, um z.B. das Mikrofon nach **[M]** wieder zu öffnen
+* der Gast kann in **[G]** durch Wechsel zu **[2]** und in **[H**] zu **[3]** gemutet werden
 
 
 ## Hotspoon
-* \[ctrl]\[alt][cmd] & [G] - "Grundeinstellungen" 🧯
+* **[ctrl][alt][cmd] & [G]** - "Grundeinstellungen" 🧯
     * alle Audio- und Videoeinstellungen werden vorgenommen
     * Powermanagement deaktiviert
     * WiFi deaktiviert
@@ -73,7 +73,7 @@
     * kann immer wieder gedrückt werden, z.B. bei Tonproblemen, oder wenn der Monitor seine EInstellungen vergisst
     * wird immer durchgeführt, wenn OBS geöffent wird
   
-* \[ctrl]\[alt][cmd] & [S] - "Streamen"
+* **[ctrl][alt][cmd] & [S]** - "Streamen"
     * Skype, FotoMagico & NDI Virtual Input werden geöffnet
     * nicht erforderliche Anwendungen werden geschlossen
     * wenn OBS nicht schon auf
@@ -83,11 +83,11 @@
 
     * auch wiederholbar
   
-* \[ctrl]\[alt][cmd] & [M] - "Mail"
+* **[ctrl][alt][cmd] & [M]** - "Mail"
     * Log- und Konfiguratuonsdateien sammeln und als Email verschicken
 
 ## FotoMagico
-    * \[cmd] & [P] Präsentation im Vollbildmodus starten
+    * **[cmd] & [P]** Präsentation im Vollbildmodus starten
 
 
 
@@ -100,7 +100,7 @@
 * 📴 Smartphone & Tablet lautlos?
 
 ### Hammerspoon
-* \[ctrl]\[alt]\[cmd] & [S]
+* **[ctrl][alt][cmd] & [S]**
     * nicht erforderliche Anwendungen werden geschlossen
     * Audio- und Videoeinstellungen werden vorgenommen
     * Powermanagement deaktiviert
@@ -111,30 +111,30 @@
 
 ### FotoMagico
 * Präsentation laden
-* [cmd] & [P] Startposition FotoMagico
+* **[cmd] & [P]** Startposition FotoMagico
 
 ### OBS
 #### Quellen sicht-/unsichtbar schalten und Overlays laden
 * Achtung: Vorschaubild anklicken!
-* [1]
-* [2], [€]
-* [<]
+* **[1]**
+* **[2]**, [€]
+* **[<]**
     * 🎥 `External` aktiv?
-* [3]
+* **[3]**
     * FotoMagico (anklicken) sicht- und hörbar?
-* [+] Kamera zuschalten - "Stresstest"
+* **[+]** Kamera zuschalten - "Stresstest"
     * Report: Markus, in OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
-* [4]
+* **[4]**
 
 #### Filme
-* [I] Intro sicht- und hörbar?
-* [O] Outro sicht- und hörbar?
+* **[I]** Intro sicht- und hörbar?
+* **[O]** Outro sicht- und hörbar?
 
 #### Skype
-* [G] \(vorerst schwarzer Kreis)
+* **[G]** \(vorerst schwarzer Kreis)
 
 ### Hammerspoon
-* \[ctrl]\[alt]\[cmd] & [M]
+* **[ctrl][alt][cmd] & [M]**
     * senden der Log- und Konfigurationsdateien
 
 ### Skype
@@ -160,32 +160,32 @@
 ### OBS
 16:20 Uhr
 #### Testanruf Gast?
-* [2] und auf Anruf warten
-* Zeichen geben und Gast mit [G] zuschalten
-* [F], [G] und [H] Kameraposition und Ton prüfen
+* **[2]** und auf Anruf warten
+* Zeichen geben und Gast mit **[G]** zuschalten
+* **[F]**, **[G]** und **[H]** Kameraposition und Ton prüfen
 * Zeichen üben
-* [1] und Gespräch beenden
+* **[1]** und Gespräch beenden
 
 * Report: Markus, in OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 * 'Stream beenden'
-* [1]
+* **[1]**
 * **Programme geöffnet lassen!**
 
 18:45 Uhr
 ## Ignition
 ### Hammerspoon
-* \[ctrl]\[alt]\[cmd] & [G]
+* **[ctrl][alt]\[cmd] & [G]**
 
 ### FotoMagico
-* Startposition [cmd] & [P]
+* Startposition **[cmd] & [P]**
 
 ### OBS
 * OBS > `Stream starten`
-* [1], [2]
-* [3]
+* **[1]**, **[2]**
+* **[3]**
     * FotoMagico sichtbar?
-* [4], [G]
-* [1] Mic gemutet?
+* **[4]**, [G]
+* **[1]** Mic gemutet?
 * Report in OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 
 19:00 Uhr
