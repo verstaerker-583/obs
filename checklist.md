@@ -86,7 +86,7 @@
 
 # Checklist
 ⏰ **16:00 Uhr**
---> ☎️  Olaf
+--> ▶️ ☎️  Olaf
 ## Prelaunch
 
 ### Allgemein
@@ -164,10 +164,10 @@
 * 'Stream beenden'
 * **[1]**
 * **Programme geöffnet lassen!**
-<-- Ende ☎️  Olaf
+<-- ⏹️ ☎️  Olaf
 
 ⏰ **18:45 Uhr**
---> ☎️  Olaf
+--> ▶️ ☎️  Olaf
 ## Ignition
 ### Hammerspoon
 * **[ctrl][alt]\[cmd] & [G]**
@@ -188,17 +188,17 @@
 * **[1]**
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 * Stream nicht beenden!
-<-- Ende ☎️  Olaf
+<-- ⏹️ ☎️  Olaf
 
 ⏰ **19:15 Uhr**
---> ☎️  Olaf
+--> ▶️ ☎️  Olaf
 ### YouTube
 * Olaf: Stream auf YouTube starten ⚡️
 * Status:
     * 🔴 Online, Audio gemuted
     * Zuschauer werden benachrichtigt und sehen den Startbildschirm
     * **Guidance is internal!**
-<-- ☎️  Olaf
+<-- ⏹️ ☎️  Olaf
 
 ⏰ **19:30 Uhr**
 ## Launch
