@@ -5,11 +5,9 @@
 * **[M]** 🔇 Mikrofon
 * **[D]** 🔇 Desktop Audio
 
-
 ### Szenen
 1. **[1]** Szene "Start" ⏰
     * 🔇 alle Audioquellen geschlossen
-
 
 2. **[2]** Szene "Cam" 🎥
     * 🔊 alle Audioquellen, außer Gast, offen
@@ -23,7 +21,6 @@
     * **[?]** ❓
     * **[C]** Chat 💬 ein-/ausblenden
 
-
 3. **[3]** Szene "Screen" 📺
     * 🔊 alle Audioquellen, außer Gast, offen
     * Kameras nicht sichtbar
@@ -33,10 +30,8 @@
         * 🎥 `External` (rechts oben)
     * **[<]** Kameraumschaltung
 
-
 4. **[4]** Szene "Finish" 🛌
     * 🔇 alle Audioquellen geschlossen
-
 
 ### Intro/ Outro
 * **[I]** **I**ntro 🎞
@@ -50,7 +45,6 @@
 ### Guest 📞
 * **[1]**, **[2]**, **[3]** und **[4]** - Gast niemals hör- und sichtbar
 
-
 * **[F]** Szene "**F**ull" entspricht Szene "Cam" **[2]** mit Gast anstatt Gastgeber im Großbild
     * zusätzlich Ton Gast auf
     * 🔇 Mikrofon zu
@@ -58,9 +52,7 @@
     Hotkeys
     * **[€]** Spendenaufruf, **[?]** und **[+]** Screen
 
-
 * **[G]** Szene "**G**uest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
-
 
 * **[H]** Szene "**H**istory" entspricht Szene "Screen" **[3]**
     * zusätzlich Ton Gast auf
@@ -69,7 +61,6 @@
     Hotkeys
     * **[+]** Kameras aus-/einblenden
         * **[<]** Kameraumschaltung
-
 
 ### Tipps
 * Szene "Cam" **[2]**, "Screen" **[3]**, "Full" **[F]** und "Guest" **[G]** können nach Einblendungen durch erneutes Drücken wieder "aufgeräumt" werden.
