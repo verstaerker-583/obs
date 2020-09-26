@@ -1,5 +1,9 @@
 # Checklist
 ## Prelauch
+
+### Allgemein
+* Smartphone & Tablet lautlos?
+
 ### [Skype](file:/Applications/Skype.app)
 
 #### Skype > Einstellungen > Anrufe > Erweitert
