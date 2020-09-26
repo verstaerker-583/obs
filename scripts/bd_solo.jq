@@ -9,6 +9,8 @@
 | (.sources[] | select(.name == "?").settings.color2) = 4294967295
 
 | del(.. |
+	select(.key? == "OBS_KEY_F"),
+	select(.key? == "OBS_KEY_H"),
 	select(.name? == "Overlay Chat"),
 	select(.name? == "Overlay Donate")
 )
@@ -18,5 +20,12 @@
 		"libobs.hide_scene_item.Overlay Donate",
 		"libobs.show_scene_item.Overlay Chat",
 		"libobs.show_scene_item.Overlay Donate"
+	]
+)
+
+| del(.sources[] | select(.name != "guest").settings.items[]? | select(.name == "NDI"))
+| del(.sources[] | select(.name != "guest").hotkeys[
+		"libobs.hide_scene_item.NDI",
+		"libobs.show_scene_item.NDI"
 	]
 )

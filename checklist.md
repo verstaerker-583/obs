@@ -9,23 +9,19 @@
 1. **[1]** Szene "Start" ⏰
     * 🔇 alle Audioquellen geschlossen  
 
-
 2. **[2]** Szene "Cam" 🎥
     * 🔊 alle Audioquellen, außer Gast, offen
     * 🎥 `Internal`
     * 📺 Screen, Spendenaufruf, ❓ und Chat 💬 nicht sichtbar
----
     * **[<]** Kameraumschaltung
     * **[+]** "Screen" 📺 ein-/ausblenden
     * **[€]** Spendenaufruf
     * **[?]** ❓
     * **[C]** Chat 💬 ein-/ausblenden  
 
-
 3. **[3]** Szene "Screen" 📺
     * 🔊 alle Audioquellen, außer Gast, offen
     * Kameras nicht sichtbar
----
     * **[+]** Kameras ein-/ausblenden
         * 🎥 `External` (rechts oben)
         * **[<]** Kameraumschaltung  
@@ -33,13 +29,11 @@
 4. **[4]** Szene "Finish" 🛌
     * 🔇 alle Audioquellen geschlossen  
 
-
 ### Intro/ Outro
 * **[I]** **I**ntro 🎞
 
     * wechselt zu Szene "Cam"
     * 🔊 alle Audioquellen, außer Gast, offen
-
 
 * **[O]** **O**utro 🎞
     * wechselt zu Szene "Finish"
@@ -93,9 +87,6 @@
 
 ## FotoMagico 🖼
 * **[cmd] & [P]** Präsentation im Vollbildmodus starten
-
-
-
 
 # Checklist
 16:00 Uhr
@@ -198,8 +189,6 @@
 * Stream starten
 
 19:30 Uhr
-
-
 
 Einwahl Karo
 Allgemein unten

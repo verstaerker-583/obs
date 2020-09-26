@@ -20,6 +20,7 @@
 		"libobs.show_scene_item.Overlay Chat",
 		"libobs.show_scene_item.Overlay Donate",
 		"libobs.show_scene_item.Overlay Start",
+		"libobs.hide_scene_item.guest",
 		"libobs.show_scene_item.guest"
 	]
 )

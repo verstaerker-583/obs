@@ -188,9 +188,6 @@
 						"key": "OBS_KEY_2"
 					},
 					{
-						"key": "OBS_KEY_F"
-					},
-					{
 						"key": "OBS_KEY_G"
 					},
 					{
@@ -200,9 +197,6 @@
 				"libobs.hide_scene_item.?": [
 					{
 						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_F"
 					},
 					{
 						"key": "OBS_KEY_G"
@@ -221,26 +215,12 @@
 						"key": "OBS_KEY_2"
 					},
 					{
-						"key": "OBS_KEY_F"
-					},
-					{
-						"key": "OBS_KEY_G"
-					}
-				],
-				"libobs.hide_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
 						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.hide_scene_item.guest": [
 					{
 						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_F"
 					}
 				],
 				"libobs.hide_scene_item.screen": [
@@ -249,9 +229,6 @@
 					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
-					},
-					{
-						"key": "OBS_KEY_F"
 					},
 					{
 						"key": "OBS_KEY_G"
@@ -281,11 +258,6 @@
 				"libobs.show_scene_item.Intro": [
 					{
 						"key": "OBS_KEY_I"
-					}
-				],
-				"libobs.show_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_F"
 					}
 				],
 				"libobs.show_scene_item.Overlay Cam": [
@@ -324,15 +296,6 @@
 						"align": 0,
 						"locked": true,
 						"name": "Internal",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
-					},
-					{
-						"align": 0,
-						"locked": true,
-						"name": "NDI",
 						"pos": {
 							"x": 640,
 							"y": 360
@@ -405,9 +368,6 @@
 				"OBSBasic.SelectScene": [
 					{
 						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.hide_scene_item.cams": [
@@ -421,9 +381,6 @@
 				"libobs.show_scene_item.Screen Capture": [
 					{
 						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.show_scene_item.cams": [
@@ -432,9 +389,6 @@
 					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					},
-					{
-						"key": "OBS_KEY_H"
 					}
 				]
 			},
@@ -540,22 +494,11 @@
 				"libobs.hide_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					},
-					{
-						"key": "OBS_KEY_H"
-					}
-				],
-				"libobs.hide_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_3"
 					}
 				],
 				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					},
-					{
-						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.show_scene_item.Internal": [
@@ -564,11 +507,6 @@
 					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					}
-				],
-				"libobs.show_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_H"
 					}
 				]
 			},
@@ -579,36 +517,6 @@
 			},
 			"settings": {
 				"items": [
-					{
-						"align": 0,
-						"bounds": {
-							"x": 196,
-							"y": 196
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "NDI",
-						"pos": {
-							"x": 1172,
-							"y": 320
-						},
-						"rot": -5
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 196,
-							"y": 196
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "NDI",
-						"pos": {
-							"x": 108,
-							"y": 400
-						},
-						"rot": 5
-					},
 					{
 						"align": 0,
 						"bounds": {

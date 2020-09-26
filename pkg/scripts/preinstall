@@ -7,6 +7,11 @@ killall obs
 rm -rf ~/"$OBS"
 
 # maintenance
+mkdir -p ~/Documents/DieWeltImBlick
+
+find ~ -name "DTV_GPOP022_089.mov"\
+	-exec cp '{}' ~/Documents/DieWeltImBlick/outro.mov \;
+
 rm -rf /Users/*/"$OBS" /"$OBS"
 chown -R $USER ~
 
