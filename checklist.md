@@ -7,7 +7,7 @@
 
 ### Szenen
 1. **[1]** Szene "Start" ⏰
-    * 🔇 alle Audioquellen geschlossen
+    * 🔇 alle Audioquellen geschlossen  
 
 
 2. **[2]** Szene "Cam" 🎥
@@ -19,7 +19,7 @@
     * **[+]** "Screen" 📺 ein-/ausblenden
     * **[€]** Spendenaufruf
     * **[?]** ❓
-    * **[C]** Chat 💬 ein-/ausblenden
+    * **[C]** Chat 💬 ein-/ausblenden  
 
 
 3. **[3]** Szene "Screen" 📺
@@ -28,7 +28,7 @@
 
     * **[+]** Kameras ein-/ausblenden
         * 🎥 `External` (rechts oben)
-        * **[<]** Kameraumschaltung
+        * **[<]** Kameraumschaltung  
 
 
 4. **[4]** Szene "Finish" 🛌
@@ -78,7 +78,7 @@
     * verschiedene Prüfungen
 
     * kann immer wieder gedrückt werden, z.B. bei Tonproblemen, oder wenn der Monitor seine EInstellungen vergisst
-    * wird immer durchgeführt, wenn OBS geöffent wird
+    * wird immer durchgeführt, wenn OBS geöffent wird  
 
 
 * **[ctrl][alt][cmd] & [S]** - "Streamen" 🔧
@@ -87,13 +87,13 @@
     * wenn OBS nicht schon auf
         * "Grundeinstellungen" (weil mit OBS verknüpft)
         * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
-        * OBS streamt
+        * OBS streamt 🔴
 
-    * auch wiederholbar
+    * auch wiederholbar  
 
 
 * **[ctrl][alt][cmd] & [M]** - "Mail"
-    * Log- und Konfiguratuonsdateien sammeln und als Email verschicken
+    * Log- und Konfiguratuonsdateien sammeln und als Email verschicken  
 
 ## FotoMagico
 * **[cmd] & [P]** Präsentation im Vollbildmodus starten
