@@ -134,7 +134,7 @@
 * Status:
     * alle Audioquellen öffnen, du kannst mit **[M]** muten
     * wechselt automatisch zu Szene "Cams"
-* Auf geht's! 🎬
+* Auf geht's! 🎬 Apollo 12 Commander Pete Conrad: (...) Man, that may have been a small one for Neil, but that's a long one for me. (...)
 
 ## Re-entry
 * Nach dem letzten Satz mind. 20sec warten, dann
