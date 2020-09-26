@@ -24,26 +24,26 @@
     * Kameras nicht sichtbar
     * **[+]** Kameras ein-/ausblenden
         * 🎥 `External` (rechts oben)
-        * **[<]** Kameraumschaltung
+    * **[<]** Kameraumschaltung
 
 4. **[4]** Szene "Finish" 🛌
     * 🔇 alle Audioquellen geschlossen
 
 ### Intro/ Outro
 * **[I]** **I**ntro 🎞
-    * wechselt zu Szene "Cam"
     * 🔊 alle Audioquellen, außer Gast, offen
+    * wechselt zu Szene "Cam"
 
 * **[O]** **O**utro 🎞
-    * wechselt zu Szene "Finish"
     * 🔇 alle Audioquellen geschlossen
+    * wechselt zu Szene "Finish"
 
 ### Guest 📞
 * **[1]**, **[2]**, **[3]** und **[4]** - Gast niemals hör- und sichtbar
 
 * **[F]** Szene "**F**ull" entspricht Szene "Cam" **[2]** mit Gast anstatt Gastgeber im Großbild
     * zusätzlich Ton Gast auf
-    * Mikrofon zu
+    * 🔇 Mikrofon zu
     * **[€]** Spendenaufruf, **[?]** und **[+]** Screen
 
 * **[G]** Szene "**G**uest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
@@ -51,28 +51,28 @@
 * **[H]** Szene "**H**istory" entspricht Szene "Screen" **[3]**
     * zusätzlich Ton Gast auf
     * Kameras/ Gast unmittelbar sichtbar
-
     * **[+]** Kameras aus-/einblenden
         * **[<]** Kameraumschaltung
 
 ### Tipps
-* Szene "Cam" **[2]**, "Screen" **[3]**, "Full" **[F]** und "Guest" **[G]** können nach Einblendungen durch erneutes Drücken wieder "aufgeräumt" werden
-* **[2]**,  **[3]** und **[G]** können auch benutzt werden, um z.B. das Mikrofon nach **[M]** wieder zu öffnen
-* Der Gast kann in **[G]** durch Wechsel zu **[2]** und in **[H]** zu **[3]** ausgeblendet und gemutet werden
+* Szene "Cam" **[2]**, "Screen" **[3]**, "Full" **[F]** und "Guest" **[G]** können nach Einblendungen durch erneutes Drücken wieder "aufgeräumt" werden.
+* **[2]**,  **[3]** und **[G]** können auch benutzt werden, um z.B. das Mikrofon nach **[M]** wieder zu öffnen.
+* Der Gast kann in **[G]** durch Wechsel zu **[2]** und in **[H]** zu **[3]** ausgeblendet und gemutet werden.
 
 ## Hammerspoon
 * **[ctrl][alt][cmd] & [G]** - ***"Grundeinstellungen"*** 🧯
-    * alle Audio- und Videoeinstellungen werden vorgenommen
+    * Audio- und Videoeinstellungen werden vorgenommen
     * Powermanagement deaktiviert
     * WiFi deaktiviert
-    * verschiedene Prüfungen
-    * kann immer wieder gedrückt werden, z.B. bei Tonproblemen, oder wenn der Monitor seine EInstellungen vergisst
+    * nicht erforderliche Anwendungen werden geschlossen
+    * verschiedene Prüfungen werden durchgeführt
+    * kann immer wieder gedrückt werden, z.B. bei Tonproblemen, oder wenn der Monitor Einstellungen "vergisst"
     * wird immer durchgeführt, wenn OBS geöffent wird
 
 * **[ctrl][alt][cmd] & [S]** - ***"Streamen"*** 🔧
-    * Skype, FotoMagico und NDI Virtual Input werden geöffnet
+    * `Skype`, `FotoMagico` und `NDI Virtual Input` werden geöffnet
     * nicht erforderliche Anwendungen werden geschlossen
-    * wenn OBS nicht schon auf
+    * wenn OBS nicht schon aktiv: 
         * "Grundeinstellungen" (weil mit OBS verknüpft)
         * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
         * OBS streamt 🔴
@@ -93,34 +93,36 @@
 
 ### Hammerspoon
 * **[ctrl][alt][cmd] & [S]**
-    * nicht erforderliche Anwendungen werden geschlossen
     * Audio- und Videoeinstellungen werden vorgenommen
     * Powermanagement deaktiviert
     * WiFi deaktiviert
-    * Skype, FotoMagico und NDI Virtual Input werden geöffnet
+    * nicht erforderliche Anwendungen werden geschlossen
+    * verschiedene Prüfungen werden durchgeführt
     * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
-    * OBS streamt
+    * OBS streamt 🔴
+
+
 
 ### FotoMagico
 * Präsentation laden
-* **[cmd] & [P]** Startposition FotoMagico
+* **[cmd] & [P]** Startposition `FotoMagico`
 
 ### OBS
 #### Quellen sicht-/unsichtbar schalten und Overlays laden
-* Achtung: Vorschaubild anklicken!
+* Achtung: Vorschaubild OBS anklicken!
 * **[1]**
-* **[2]**, [€]
+* **[2]**, **[€]**
 * **[<]**
     * 🎥 `External` aktiv?
 * **[3]**
-    * FotoMagico (anklicken) sicht- und hörbar?
-* **[+]** Kamera zuschalten - "Stresstest"
-    * Report: Markus, in OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
+    * `FotoMagico` (anklicken, damit bedienbar) sicht- und hörbar?
+* **[+]** Kamera zuschalten > ***Stresstest***
+    * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 * **[4]**
 
 #### Filme
-* **[I]** Intro sicht- und hörbar?
-* **[O]** Outro sicht- und hörbar?
+* **[I]** **I**ntro sicht- und hörbar?
+* **[O]** **O**utro sicht- und hörbar?
 
 #### Skype
 * **[G]** \(vorerst schwarzer Kreis)
@@ -140,30 +142,32 @@
 
 * Mikrofon: `Standardgerät`
     * ☐ `Mikrofoneinstellungen automatisch anpassen`
-    * 🎚️ ≈ '4' (automatisch durch Hammerspoon)
+    * 🎚️ ≈ `4` (automatisch durch Hammerspoon)
 
 * Lautsprecher: Standardgerät?
     * 🎚️= `0`
 
-* 'Kostenlosen Testanruf tätigen'
+* `Kostenlosen Testanruf tätigen`
     * NDI Virtual Input (macOS Menüleiste) -> `(Skype - Aktiver Sprecher)`
     * Mithörton? Eigene Stimme hörbar?
 
-### OBS
 16:20 Uhr
-#### Testanruf Gast?
-* **[2]** und auf Anruf warten
-* Zeichen geben und Gast mit **[G]** zuschalten
-* **[F]**, **[G]** und **[H]** Kameraposition und Ton prüfen
-* Zeichen üben
-* **[1]** und Gespräch beenden
 
-* Report: Markus, in OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
+### OBS
+#### Testanrufe Gast und Co-Moderatorin
+* **[2]** und auf Anruf warten
+* **[G]** Gast zuschalten, Kameraposition und Ton prüfen
+* **[F]**
+* **[H]** > ***Stresstest***
+    * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
+* **[2]** und Gespräch beenden
+
 * 'Stream beenden'
 * **[1]**
 * **Programme geöffnet lassen!**
 
-18:45 Uhr
+19:00 Uhr
+
 ## Ignition
 ### Hammerspoon
 * **[ctrl][alt]\[cmd] & [G]**
@@ -172,19 +176,33 @@
 * Startposition **[cmd] & [P]**
 
 ### OBS
-* OBS > `Stream starten`
-* **[1]**, **[2]**
+* OBS > `Stream manuell starten`
+* **[1]**
+* **[2]**
 * **[3]**
     * FotoMagico sichtbar?
-* **[4]**, [G]
+* **[4]**
+* **[G]**
 * **[1]** Mic gemutet?
-* Report in OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
+* **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 
-19:00 Uhr
+19:15 Uhr
+
 ### YouTube
-* Stream starten
+* Olaf: Stream auf YouTube starten
+* Status:
+    * Online, Audio gemuted
+    * Zuschauer werden benachrichtigt und sehen den Startbildschirm
+    * **Guidance is internal!**
 
 19:30 Uhr
 
-Einwahl Karo
-Allgemein unten
+## Launch
+    * auf den "Alarm" warten
+    * mit **[I]** das Intro starten,
+    * Status:
+	* alle Audioquellen öffnen, du kannst mit **[M]** muten
+        * wechselt automatisch zu Szene "Cams"
+    * Auf geht's!
+
+
