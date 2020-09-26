@@ -85,7 +85,8 @@
 * **[cmd] & [P]** Präsentation im Vollbildmodus starten
 
 # Checklist
-16:00 Uhr
+⏰ **16:00 Uhr**
+--> ☎️  Olaf
 ## Prelaunch
 
 ### Allgemein
@@ -148,9 +149,9 @@
 * `Kostenlosen Testanruf tätigen`
     * NDI Virtual Input (macOS Menüleiste) -> `(Skype - Aktiver Sprecher)`
     * Mithörton? Eigene Stimme hörbar?
+* **Go-No-Go decision!**
 
-16:20 Uhr
-
+⏰ **16:15 Uhr**
 ### OBS
 #### Testanrufe Gast und Co-Moderatorin
 * **[2]** und auf Anruf warten
@@ -163,9 +164,10 @@
 * 'Stream beenden'
 * **[1]**
 * **Programme geöffnet lassen!**
+<-- Ende ☎️  Olaf
 
-19:00 Uhr
-
+⏰ **18:45 Uhr**
+--> ☎️  Olaf
 ## Ignition
 ### Hammerspoon
 * **[ctrl][alt]\[cmd] & [G]**
@@ -185,30 +187,31 @@
 * **[4]**
 * **[1]**
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
+<-- Ende ☎️  Olaf
 
-19:15 Uhr
-
+⏰ **19:15 Uhr**
+--> ☎️  Olaf
 ### YouTube
-* Olaf: Stream auf YouTube starten
+* Olaf: Stream auf YouTube starten ⚡️
 * Status:
     * Online, Audio gemuted
     * Zuschauer werden benachrichtigt und sehen den Startbildschirm
     * **Guidance is internal!**
+<-- ☎️  Olaf
 
-19:30 Uhr
-
+⏰ **19:30 Uhr**
 ## Launch
 * `FotoMagico` (anklicken, damit bedienbar)
 * auf den "Alarm" warten
-* mit **[I]** das Intro starten,
+* mit **[I]** das Intro starten 🚀
 * Status:
     * alle Audioquellen öffnen, du kannst mit **[M]** muten
     * wechselt automatisch zu Szene "Cams"
 * Auf geht's!
 
 ## Landing
-* Nach dem letzten Satz mind. 20sec warten, dann mit
+* Nach dem letzten Satz mind. 20sec warten, dann
 * mit **[O]** das Outro starten
 * [Mic] gemutet? - Du bist nicht mehr zu sehen und zu hören!
 * Streaming in OBS nach frühesten 10min beenden - Jetzt bist Du offline!
-* Olaf: Warten auf das Ausbleiben des Signals und dann den Stream beenden.
+* Olaf: Warten auf das Ausbleiben des Signals und dann den Stream auf YouTube beenden.
