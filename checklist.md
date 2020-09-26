@@ -7,10 +7,12 @@
 
 ### Szenen
 1. **[1]** Szene "Start" ⏰
+
     * 🔇 alle Audioquellen geschlossen  
 
 
 2. **[2]** Szene "Cam" 🎥
+
     * 🔊 alle Audioquellen, außer Gast, offen
     * 🎥 `Internal`
     * 📺 Screen, Spendenaufruf, ❓ und Chat 💬 nicht sichtbar
@@ -23,6 +25,7 @@
 
 
 3. **[3]** Szene "Screen" 📺
+
     * 🔊 alle Audioquellen, außer Gast, offen
     * Kameras nicht sichtbar
 
@@ -32,15 +35,19 @@
 
 
 4. **[4]** Szene "Finish" 🛌
-    * 🔇
+
+    * 🔇 alle Audioquellen geschlossen  
+
 
 ### Intro/ Outro
-* **[I]** Intro 🎞
+* **[I]** **I**ntro 🎞
+
     * wechselt zu Szene "Cam"
     * 🔊 alle Audioquellen, außer Gast, offen
 
 
-* **[O]** Outro 🎞
+* **[O]** **O**utro 🎞
+    * 🔇
     * wechselt zu Szene "Finish"
     * 🔇 alle Audioquellen geschlossen
 
@@ -48,16 +55,18 @@
 * **[1]**, **[2]**, **[3]** und **[4]** - Gast niemals hör- und sichtbar
 
 
-* **[F]** "Full" entspricht Szene "Cam" **[2]** mit Gast anstatt Gastgeber im Großbild
+* **[F]** "**F**ull" entspricht Szene "Cam" **[2]** mit Gast anstatt Gastgeber im Großbild
+
    * zusätzlich Ton Gast auf
    * Mikrofon zu
    * **[€]** Spendenaufruf, **[?]** und **[+]** Screen
 
 
-* **[G]** Szene "Guest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
+* **[G]** Szene "**G**uest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
 
 
-* **[H]** Szene "History" entspricht Szene "Screen" **[3]**
+* **[H]** Szene "**H**istory" entspricht Szene "Screen" **[3]**
+
    * zusätzlich Ton Gast auf
    * Kameras/ Gast unmittelbar sichtbar
 
@@ -70,8 +79,8 @@
 * Der Gast kann in **[G]** durch Wechsel zu **[2]** und in **[H**] zu **[3]** ausgeblendet und gemutet werden
 
 
-## Hotspoon
-* **[ctrl][alt][cmd] & [G]** - "Grundeinstellungen" 🧯
+## Hammerspoon
+* **[ctrl][alt][cmd] & [G]** - ***"Grundeinstellungen"*** 🧯
     * alle Audio- und Videoeinstellungen werden vorgenommen
     * Powermanagement deaktiviert
     * WiFi deaktiviert
@@ -81,7 +90,7 @@
     * wird immer durchgeführt, wenn OBS geöffent wird  
 
 
-* **[ctrl][alt][cmd] & [S]** - "Streamen" 🔧
+* **[ctrl][alt][cmd] & [S]** - ***"Streamen"*** 🔧
     * Skype, FotoMagico und NDI Virtual Input werden geöffnet
     * nicht erforderliche Anwendungen werden geschlossen
     * wenn OBS nicht schon auf
@@ -92,10 +101,10 @@
     * auch wiederholbar  
 
 
-* **[ctrl][alt][cmd] & [M]** - "Mail"
+* **[ctrl][alt][cmd] & [M]** - ***"Mail"*** ✉️ 
     * Log- und Konfiguratuonsdateien sammeln und als Email verschicken  
 
-## FotoMagico
+## FotoMagico 🖼
 * **[cmd] & [P]** Präsentation im Vollbildmodus starten
 
 
@@ -114,7 +123,7 @@
     * Audio- und Videoeinstellungen werden vorgenommen
     * Powermanagement deaktiviert
     * WiFi deaktiviert
-    * Skype, FotoMagico & NDI Virtual Input werden geöffnet
+    * Skype, FotoMagico und NDI Virtual Input werden geöffnet
     * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
     * OBS streamt
 
