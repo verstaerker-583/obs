@@ -1,8 +1,11 @@
 # Checklist
 ⏰ **16:00 Uhr**
 
---> ▶️ ☎️  Olaf
+▶️ ☎️  Olaf
 ## Prelaunch
+### macOS
+* Neustart Computer
+
 ### Hammerspoon
 * **[ctrl][alt][cmd] & [S]**
     * Audio- und Videoeinstellungen werden vorgenommen
@@ -25,7 +28,7 @@
 * **[<]**
     * 🎥 `External` aktiv?
 * **[3]**
-    * `FotoMagico` (anklicken, damit bedienbar) sicht- und hörbar?
+    * `FotoMagico` (⚠ FotoMagico anklicken, damit bedienbar) sicht- und hörbar?
 * **[+]** Kamera zuschalten > ***Stresstest***
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 * **[4]**
@@ -54,7 +57,7 @@
     * ☐ `Mikrofoneinstellungen automatisch anpassen`
     * 🎚️ ≈ `4` (automatisch durch Hammerspoon)
 
-* Lautsprecher: Standardgerät?
+* Lautsprecher: `Standardgerät`
     * 🎚️= `0`
 
 * `Kostenlosen Testanruf tätigen`
@@ -75,13 +78,13 @@
 * 'Stream beenden'
 * **[1]**
 * **Programme geöffnet lassen!**
-<-- ⏹️ ☎️  Olaf  
+⏹️ ☎️  Olaf  
 
 ☕
 
 ⏰ **18:45 Uhr**
 
---> ▶️ ☎️  Olaf
+▶️ ☎️  Olaf
 ## Ignition
 
 ### Allgemein
@@ -105,21 +108,21 @@
 * **[4]**
 * **[1]**
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
-* Stream nicht beenden!
-<-- ⏹️ ☎️  Olaf  
+* ⚠ Stream nicht beenden!
+⏹️ ☎️  Olaf  
 
 🚽
 
 ⏰ **19:15 Uhr**
 
---> ▶️ ☎️  Olaf
+▶️ ☎️  Olaf
 ### YouTube
 * Olaf: Stream auf YouTube starten ⚡️
 * Status:
     * 🔴 Online, Audio gemuted
     * Zuschauer werden benachrichtigt und sehen den Startbildschirm
     * **Guidance is internal!**
-<-- ⏹️ ☎️  Olaf  
+⏹️ ☎️  Olaf  
 
 🚽
 
