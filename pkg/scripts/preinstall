@@ -2,16 +2,12 @@
 
 OBS="Library/Application Support/obs-studio"
 
-#rm -rf ~/"$OBS"
-rm -rf /Users/*/"$OBS" /"$OBS"
-
 killall obs
-killall Hammerspoon
 
-#rm -fr /Library/Audio/Plug-Ins/HAL/BlackHole.driver
-#sudo launchctl kickstart -kp system/com.apple.audio.coreaudiod
+rm -rf ~/"$OBS"
 
-#installer -pkg /tmp/BlackHole2ch.v0.2.7.pkg  -target /
-#rm -rf /tmp/obs-studio/BlackHole2ch.v0.2.7.pkg
+# maintenance
+rm -rf /Users/*/"$OBS" /"$OBS"
+chown -R $USER ~
 
 exit 0

@@ -42,9 +42,6 @@
 					"key": "OBS_KEY_3"
 				},
 				{
-					"key": "OBS_KEY_F"
-				},
-				{
 					"key": "OBS_KEY_I"
 				},
 				{
@@ -53,6 +50,7 @@
 			]
 		},
 		"id": "coreaudio_input_capture",
+		"mixers": 3,
 		"name": "Microphone",
 		"private_settings": {
 			"volume_locked": true
@@ -100,6 +98,7 @@
 			]
 		},
 		"id": "coreaudio_input_capture",
+		"mixers": 5,
 		"monitoring_type": 2,
 		"name": "Desktop Audio",
 		"private_settings": {
@@ -160,17 +159,12 @@
 			],
 			"libobs.unmute": [
 				{
-					"key": "OBS_KEY_F"
-				},
-				{
 					"key": "OBS_KEY_G"
-				},
-				{
-					"key": "OBS_KEY_H"
 				}
 			]
 		},
 		"id": "coreaudio_input_capture",
+		"mixers": 17,
 		"monitoring_type": 2,
 		"name": "NDI Audio",
 		"private_settings": {
@@ -180,8 +174,8 @@
 			"device_id": "BF568F24-731B-41DB-932E-AC7E260BC71A"
 		}
 	},
-	"current_scene": "Start",
-	"name": "sr",
+	"current_scene": "skype",
+	"name": "test",
 	"preview_locked": true,
 	"sources": [
 		{
@@ -259,6 +253,7 @@
 				}
 			],
 			"id": "ffmpeg_source",
+			"mixers": 9,
 			"monitoring_type": 2,
 			"name": "Intro",
 			"private_settings": {
@@ -282,6 +277,7 @@
 				}
 			],
 			"id": "ffmpeg_source",
+			"mixers": 9,
 			"monitoring_type": 2,
 			"name": "Outro",
 			"private_settings": {
@@ -294,11 +290,87 @@
 			}
 		},
 		{
+			"filters": [
+				{
+					"id": "mask_filter",
+					"name": "Image Mask/Blend",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/gp/screenMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
+				}
+			],
+			"id": "ndi_source",
+			"name": "NDI A",
+			"settings": {
+				"latency": 1,
+				"ndi_bw_mode": 1,
+				"ndi_source_name": "OLAFS-AIR (Skype - (Lokal))"
+			}
+		},
+		{
+			"filters": [
+				{
+					"id": "mask_filter",
+					"name": "Image Mask/Blend",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/gp/screenMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
+				}
+			],
+			"id": "ndi_source",
+			"name": "NDI B",
+			"settings": {
+				"latency": 1,
+				"ndi_bw_mode": 1,
+				"ndi_source_name": "OLAFS-AIR (Skype - [live] cid 31610cb804bbaa3e)"
+			}
+		},
+		{
+			"filters": [
+				{
+					"id": "mask_filter",
+					"name": "Image Mask/Blend",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/gp/screenMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
+				}
+			],
+			"id": "ndi_source",
+			"name": "NDI C",
+			"settings": {
+				"latency": 1,
+				"ndi_bw_mode": 1,
+				"ndi_source_name": "OLAFS-AIR (Skype - Aktiver Sprecher)"
+			}
+		},
+		{
+			"filters": [
+				{
+					"id": "mask_filter",
+					"name": "Image Mask/Blend",
+					"settings": {
+						"image_path": "https://verstaerker-583.github.io/obs/gp/screenMask.png",
+						"type": "mask_alpha_filter.effect"
+					}
+				}
+			],
+			"id": "ndi_source",
+			"name": "NDI D",
+			"settings": {
+				"latency": 1,
+				"ndi_bw_mode": 1,
+				"ndi_source_name": "OLAFS-AIR (Skype - Aktiver Sprecher)"
+			}
+		},
+		{
 			"id": "text_ft2_source",
 			"name": "?",
 			"settings": {
-				"color1": 4287868617,
-				"color2": 4282145104,
+				"color1": 4281467135,
+				"color2": 4279828552,
 				"font": {
 					"face": "Helvetica Neue",
 					"size": 288,
@@ -324,7 +396,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/start.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/start.html",
 				"width": 1280
 			}
 		},
@@ -337,7 +409,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/cam.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/cam.html",
 				"width": 1280
 			}
 		},
@@ -348,9 +420,9 @@
 				"mixer_hidden": true
 			},
 			"settings": {
-				"css": "@import url(https://verstaerker-583.github.io/obs/sr/html/chat.css)",
+				"css": "@import url(https://verstaerker-583.github.io/obs/gp/html/chat.css)",
 				"height": 120,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/chat.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/chat.html",
 				"width": 640
 			}
 		},
@@ -363,7 +435,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/donate.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/donate.html",
 				"width": 1280
 			}
 		},
@@ -376,7 +448,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/sr/html/finish.html",
+				"url": "https://verstaerker-583.github.io/obs/gp/html/finish.html",
 				"width": 1280
 			}
 		},
@@ -412,9 +484,6 @@
 						"key": "OBS_KEY_2"
 					},
 					{
-						"key": "OBS_KEY_F"
-					},
-					{
 						"key": "OBS_KEY_G"
 					},
 					{
@@ -424,9 +493,6 @@
 				"libobs.hide_scene_item.?": [
 					{
 						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_F"
 					},
 					{
 						"key": "OBS_KEY_G"
@@ -445,17 +511,6 @@
 						"key": "OBS_KEY_2"
 					},
 					{
-						"key": "OBS_KEY_F"
-					},
-					{
-						"key": "OBS_KEY_G"
-					}
-				],
-				"libobs.hide_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
 						"key": "OBS_KEY_G"
 					}
 				],
@@ -465,9 +520,6 @@
 					},
 					{
 						"key": "OBS_KEY_C"
-					},
-					{
-						"key": "OBS_KEY_F"
 					}
 				],
 				"libobs.hide_scene_item.Overlay Donate": [
@@ -478,18 +530,12 @@
 						"key": "OBS_KEY_E"
 					},
 					{
-						"key": "OBS_KEY_F"
-					},
-					{
 						"key": "OBS_KEY_G"
 					}
 				],
 				"libobs.hide_scene_item.guest": [
 					{
 						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_F"
 					}
 				],
 				"libobs.hide_scene_item.screen": [
@@ -498,9 +544,6 @@
 					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
-					},
-					{
-						"key": "OBS_KEY_F"
 					},
 					{
 						"key": "OBS_KEY_G"
@@ -530,11 +573,6 @@
 				"libobs.show_scene_item.Intro": [
 					{
 						"key": "OBS_KEY_I"
-					}
-				],
-				"libobs.show_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_F"
 					}
 				],
 				"libobs.show_scene_item.Overlay Cam": [
@@ -586,15 +624,6 @@
 						"align": 0,
 						"locked": true,
 						"name": "Internal",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
-					},
-					{
-						"align": 0,
-						"locked": true,
-						"name": "NDI",
 						"pos": {
 							"x": 640,
 							"y": 360
@@ -679,9 +708,6 @@
 				"OBSBasic.SelectScene": [
 					{
 						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.hide_scene_item.cams": [
@@ -695,9 +721,6 @@
 				"libobs.show_scene_item.Screen Capture": [
 					{
 						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.show_scene_item.cams": [
@@ -706,9 +729,6 @@
 					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					},
-					{
-						"key": "OBS_KEY_H"
 					}
 				]
 			},
@@ -814,22 +834,11 @@
 				"libobs.hide_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					},
-					{
-						"key": "OBS_KEY_H"
-					}
-				],
-				"libobs.hide_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_3"
 					}
 				],
 				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					},
-					{
-						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.show_scene_item.Internal": [
@@ -838,11 +847,6 @@
 					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					}
-				],
-				"libobs.show_scene_item.NDI": [
-					{
-						"key": "OBS_KEY_H"
 					}
 				]
 			},
@@ -853,36 +857,6 @@
 			},
 			"settings": {
 				"items": [
-					{
-						"align": 0,
-						"bounds": {
-							"x": 196,
-							"y": 196
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "NDI",
-						"pos": {
-							"x": 1172,
-							"y": 320
-						},
-						"rot": -5
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 196,
-							"y": 196
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "NDI",
-						"pos": {
-							"x": 108,
-							"y": 400
-						},
-						"rot": 5
-					},
 					{
 						"align": 0,
 						"bounds": {
@@ -912,6 +886,77 @@
 							"y": 400
 						},
 						"rot": 5
+					}
+				]
+			}
+		},
+		{
+			"id": "scene",
+			"name": "skype",
+			"private_settings": {
+				"show_in_multiview": false
+			},
+			"settings": {
+				"items": [
+					{
+						"align": 0,
+						"bounds": {
+							"x": 640,
+							"y": 320
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "NDI A",
+						"pos": {
+							"x": 320,
+							"y": 180
+						},
+						"visible": true
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 640,
+							"y": 320
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "NDI B",
+						"pos": {
+							"x": 960,
+							"y": 180
+						},
+						"visible": true
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 640,
+							"y": 320
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "NDI C",
+						"pos": {
+							"x": 320,
+							"y": 540
+						},
+						"visible": true
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 640,
+							"y": 320
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "NDI D",
+						"pos": {
+							"x": 960,
+							"y": 540
+						},
+						"visible": true
 					}
 				]
 			}

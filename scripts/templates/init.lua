@@ -2,7 +2,7 @@
 hs.alert.defaultStyle.strokeColor = {red = 1, alpha = 1}
 hs.alert.defaultStyle.strokeWidth = 10
 hs.alert.defaultStyle.textColor = {red = 1, alpha = 1}
-hs.alert.defaultStyle.textSize = 64
+-- hs.alert.defaultStyle.textSize = 64
 
 function applicationWatcher(appName, eventType, appObject)
 	if appName == "OBS" then
@@ -32,6 +32,14 @@ function mailLogs()
 end
 
 function postFlight()
+	-- Video
+	devices = hs.screen.allScreens()
+	for i, dev in ipairs(devices) do
+		if dev ~= hs.screen.primaryScreen() then
+			dev:setMode(1920, 1080, 1)					-- specific
+		end
+	end
+
 	-- Alert Sounds
 	hs.osascript._osascript("set volume alert volume 100", "")
 
@@ -41,14 +49,7 @@ function postFlight()
 		dev:setMuted(false)
 		if dev:transportType() == "Built-in" then
 			dev:setDefaultOutputDevice()
-		end
-	end
-
-	-- Video
-	devices = hs.screen.allScreens()
-	for i, dev in ipairs(devices) do
-		if dev ~= hs.screen.primaryScreen() then
-			dev:setMode(5120, 2880, 1)					-- specific
+			dev:setVolume(25)
 		end
 	end
 
@@ -64,8 +65,33 @@ function preFlight()
 	log = io.open("/tmp/log.txt", "w")
 	log:write(os.date() .. "\n")
 
+	-- Video
+	alarm = true
+	log:write("\nScreens\n")
+
+	devices = hs.screen.allScreens()
+	log:write(hs.inspect(devices) .. "\n")
+
+	for i, dev in ipairs(devices) do
+		log:write("Screen: " .. dev:position() .. "\n")
+		log:write("current: " .. hs.inspect(dev:currentMode()) .. "\n")
+		if dev ~= hs.screen.primaryScreen() then
+			dev:setMode(1280, 720, 1)
+			alarm = false
+		elseif dev:name() == "Color LCD" then	-- MacBook?
+--			dev:setMode(1440, 900, 1)					-- specific
+		end
+		log:write("done: " .. hs.inspect(dev:currentMode()) .. "\n")
+--		log:write(hs.inspect(dev:availableModes()) .. "\n")			-- for new platforms
+	end
+	if alarm then
+		hs.alert.show("Connect external MONITOR!")
+		log:write("\nConnect external MONITOR!\n")
+	end
+
 	-- FotoMagico
 	hs.execute("defaults delete com.boinx.FotoMagico5 masterVolume")
+	hs.execute("defaults delete com.boinx.FotoMagico5 'NSWindow Frame GetInfo'")
 	hs.execute("defaults write com.boinx.FotoMagico5 ScreenHasBeenChosen -int 1")
 
 	-- Alert Sounds
@@ -96,7 +122,7 @@ function preFlight()
 		if hs.audiodevice.findDeviceByUID("BuiltInHeadphoneInputDevice"):setDefaultInputDevice() then
 			log:write("re-done: " .. hs.inspect(hs.audiodevice.current(true)) .. "")
 		else
-			hs.alert.show("Connect HEADSET!", 20)
+			hs.alert.show("Connect HEADSET!")
 			log:write("\nConnect HEADSET!\n")
 		end
 	end
@@ -120,72 +146,42 @@ function preFlight()
 			dev:setVolume(50)
 			dev:setMuted(true)
 		end
-		log:write(dev:transportType() .. " " .. dev:name() .. " " .. dev:volume() .. "\n")
+		if dev:inputVolume() then
+			log:write(dev:transportType() .. " " .. dev:name() .. " " .. dev:volume() .. " >< " .. dev:inputVolume() .. "\n")
+		else
+			log:write(dev:transportType() .. " " .. dev:name() .. " " .. dev:volume() .. "\n")
+		end
 	end
 	log:write("done: " .. hs.inspect(hs.audiodevice.current()) .. "\n")
-
-	-- Video
-	alarm = true
-	log:write("\nScreens\n")
-	devices = hs.screen.allScreens()
-	log:write(hs.inspect(devices) .. "\n")
-	for i, dev in ipairs(devices) do
-		log:write("Screen: " .. dev:position() .. "\n")
-		log:write("current: " .. hs.inspect(dev:currentMode()) .. "\n")
-		if dev ~= hs.screen.primaryScreen() then
-			dev:setMode(1280, 720, 1)
-			alarm = false
-		elseif dev:name() == "Color LCD" then	-- MacBook?
-			dev:setMode(2880, 1800, 1)					-- specific
-		end
-		log:write("done: " .. hs.inspect(dev:currentMode()) .. "\n")
---		log:write(hs.inspect(dev:availableModes()) .. "\n")			-- for new platforms
-	end
-	if alarm then
-		hs.alert.show("Connect external MONITOR!", 20)
-		log:write("\nConnect external MONITOR!\n")
-	end
 
 	-- Power Management
 	hs.caffeinate.set("displayIdle", true, false)
 
 	-- Power
 	if hs.battery.powerSource() ~= "AC Power" then
-		hs.alert.show("Connect POWER!", 20)
+		hs.alert.show("Connect POWER!")
 		log:write("\nConnect POWER!\n")
 	end
-
 
 	-- Network
 	if hs.network.interfaceDetails(v4) then
 		if hs.network.interfaceDetails(v4)["AirPort"] then
-			hs.alert.show("Connect LAN!", 20)
+			hs.alert.show("Connect LAN!")
 			log:write("\nConnect LAN!\n")
 		else
 			hs.wifi.setPower(false)
 		end
-	else
-		hs.alert.show("Can not reach YouTube!", 20)
-		log:write("\nCan not reach YouTube!\n")
 	end
+
+	-- Apps
+	hs.application.open("NDI Virtual Input", 0, true)
+
 	hs.notify.new({title = "OBS", informativeText = "Pre-Flight Checklist completed!"}):send()
 	log:close()
 end
 
-function reloadConfig(files)
-	doReload = false
-	for _, file in pairs(files) do
-		if file:sub(-4) == ".lua" then
-			doReload = true
-		end
-	end
-	if doReload then
-		hs.reload()
-	end
-end
-
-function startOBS()
-	hs.execute("open -a 'OBS' --args --scene 'Start' --collection 'gp' --profile 'YTsq' --verbose --startstreaming")
+function startStreaming()
+	hs.execute("open -a 'OBS' --args --scene 'Start' --collection 'gp_naked' --profile 'gpYTsq' --verbose --startstreaming")
 
 	-- Apps
 	for i, app in ipairs(hs.application.runningApplications()) do
@@ -203,18 +199,33 @@ function startOBS()
 		elseif app:name() == "Terminal" then
 		else
 			app:kill()
-			print(app:name())
 		end
 	end
 	hs.application.open("FotoMagico 5", 0, true)
-	hs.application.open("NDI Virtual Input", 0, true)
 	hs.application.open("Skype", 0, true)
 end
 
 -- Watcher/ Key Bindings
-appWatcher = hs.application.watcher.new(applicationWatcher)
-appWatcher:start()
+appWatcher = hs.application.watcher.new(applicationWatcher):start()
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "G", preFlight)
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "M", mailLogs)
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "O", startOBS)
-hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "S", startStreaming)
+
+-- Configuration reloading
+function reloadConfig(files)
+    doReload = false
+    for _,file in pairs(files) do
+        if file:sub(-4) == ".lua" then
+            doReload = true
+        end
+    end
+    if doReload then
+        hs.reload()
+    end
+end
+myWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
+hs.alert.show("Config loaded")
+
+-- Spoons
+-- hs.loadSpoon("ReloadConfiguration")
+-- spoon.ReloadConfiguration:start()

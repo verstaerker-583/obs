@@ -10,9 +10,7 @@
 
 | del(.. |
 	select(.name? == "Overlay Chat"),
-	select(.name? == "Overlay Donate"),
-	select(.key? == "OBS_KEY_F"),
-	select(.key? == "OBS_KEY_H")
+	select(.name? == "Overlay Donate")
 )
 
 | del(.sources[].hotkeys[

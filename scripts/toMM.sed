@@ -4,8 +4,20 @@ s/dev:setMode(1920, 1080, 1)/dev:setMode(5120, 2880, 1)/
 
 s/'YTsq/'gpYTsq/
 
-# basic.ini
+# global.ini
 s/=YTsq/=gpYTsq/
+
+# basic.ini
 /\[Audio\]/a\
-MonitoringDeviceId=BuiltInSpeakerDevice
-#MonitoringDeviceId=BuiltInHeadphoneOutputDevice
+MonitoringDeviceId=BuiltInHeadphoneOutputDevice
+
+#/\[SimpleOutput\]/a\
+#RecQuality=Small\
+
+# experimental
+/\[SimpleOutput\]/a\
+Preset=faster\
+UseAdvanced=true
+
+/\[Video\]/a\
+ScaleType=lanczos

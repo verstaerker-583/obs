@@ -3,10 +3,11 @@
 | del(.[] | select(.name? == "NDI Audio").filters[] | select(.id != "limiter_filter"))
 
 | del(.. |
-	select(.name? == "Capture"),
+	.mixers?,
 	select(.key? == "OBS_KEY_D"),
 	select(.key? == "OBS_KEY_G"),
-	select(.key? == "OBS_KEY_M")
+	select(.key? == "OBS_KEY_M"),
+	select(.name? == "Capture")
 )
 
 | del(.sources[]|select(.name == "NDI").filters[] | select(.id != "mask_filter"))

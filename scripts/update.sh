@@ -12,7 +12,7 @@ jq -S --tab -f nd.jq		../gp/gp.json		> ../gp/nd.json
 jq -S --tab -f sr.jq		../gp/gp_naked.json	> ../sr/sr.json
 
 jq -S --tab -f bd_solo.jq	../gp/gp_naked.json	> ../bd/bd_solo.json
-jq -S --tab -f toLJ.jq		../bd/bd_solo.json	> ../bd/bd_lutz.json
+jq -S --tab -f tolj.jq		../bd/bd_solo.json	> ../bd/bd_lutz.json
 jq -S --tab -f bd_naked.jq	../bd/bd.json		> ../bd/bd_naked.json
 
 for QUALITY in lq mq sq; do
@@ -23,14 +23,14 @@ done
 #
 # ok
 #
+killall obs 2&> /dev/null 
 
-killall obs 
 sudo rm -rf ~/"Library/Application Support/obs-studio"
 
 # ok scenes
 mkdir -p ~/"Library/Application Support/obs-studio/basic/scenes"
 for i in `ls ../*/*.json`; do
-	[ `basename $i` == "bd_lutz.json" ] || jq -S --tab '.' $i > ~/"Library/Application Support/obs-studio/basic/scenes/`basename $i`"
+	[ `basename $i` == "bd_lutz.json" ] || jq -S --tab "." $i > ~/"Library/Application Support/obs-studio/basic/scenes/`basename $i`"
 done
 
 # ok profiles
@@ -39,11 +39,14 @@ for QUALITY in lq mq sq; do
 	sed -f profiles$QUALITY.sed templates/basic.ini|sed -f took.sed > ~/"Library/Application Support/obs-studio/basic/profiles/YT$QUALITY/basic.ini"
 done
 
+cp templates/init.lua ~/.hammerspoon
 sed -f took.sed templates/global.ini > ~/"Library/Application Support/obs-studio/global.ini"
 
 #
 # mm
 #
+
+sudo rm -rf /tmp/obs-studio
 
 # mm scenes
 USERS="mm"
