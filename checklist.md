@@ -6,11 +6,11 @@
 * **[D]** Desktop Audio mten 🔇
 
 ### Szenen
-* **[1]** Szene "Start" ⏰
-    * 🔇
-  
-* **[2]** Szene "Cam" 🎥
-    * alle Audioquellen, außer Gast, offen
+1. **[1]** Szene "Start" ⏰
+    * 🔇 alle Audioquellen geschlossen
+
+2. **[2]** Szene "Cam" 🎥
+    * 🔊 alle Audioquellen, außer Gast, offen
     * 🎥 `Internal`
     * 📺 Screen, Spendenaufruf, ❓ und Chat 💬 nicht sichtbar
 
@@ -19,26 +19,26 @@
     * **[€]** Spendenaufruf
     * **[?]** ❓
     * **[C]** Chat 💬 ein-/ausblenden
-  
-* **[3]** Szene "Screen" 📺
-    * alle Audioquellen, außer Gast, offen
+
+3. **[3]** Szene "Screen" 📺
+    * 🔊 alle Audioquellen, außer Gast, offen
     * Kameras nicht sichtbar
 
     * **[+]** Kameras ein-/ausblenden
         * 🎥 `External` (rechts oben)
         * **[<]** Kameraumschaltung
-  
-* **[4]** Szene "Finish"
+
+4. **[4]** Szene "Finish" 🛌
     * 🔇
-  
+
 ### Intro/ Outro
 * **[I]** Intro 🎞
     * wechselt zu Szene "Cam"
-    * alle Audioquellen, außer Gast, offen
+    * 🔊 alle Audioquellen, außer Gast, offen
 
 * **[O]** Outro 🎞
     * wechselt zu Szene "Finish"
-    * 🔇
+    * 🔇 alle Audioquellen geschlossen
 
 ### Guest 📞
 * **[1]**, **[2]**, **[3]** und **[4]** - Gast niemals hör- und sichtbar
@@ -48,9 +48,9 @@
    * Mikrofon zu
    * **[€]** Spendenaufruf, **[?]** und **[+]** Screen
 
-* **[G]** Szenen "Guest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
+* **[G]** Szene "Guest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
 
-* **[H]** entspricht Szene "Screen" **[3]**
+* **[H]** Szene "History" entspricht Szene "Screen" **[3]**
    * zusätzlich Ton Gast auf
    * Kameras/ Gast unmittelbar sichtbar
 
@@ -60,7 +60,7 @@
 ### Tipps
 * Szene "Cam" **[2]**, "Screen" **[3]**, "Full" **[F]** und "Guest" **[G]** können nach Einblendungen durch erneutes Drücken wieder "aufgeräumt" werden
 * **[2]**,  **[3]** und **[G]** können auch benutzt werden, um z.B. das Mikrofon nach **[M]** wieder zu öffnen
-* der Gast kann in **[G]** durch Wechsel zu **[2]** und in **[H**] zu **[3]** gemutet werden
+* Der Gast kann in **[G]** durch Wechsel zu **[2]** und in **[H**] zu **[3]** ausgeblendet und gemutet werden
 
 
 ## Hotspoon
@@ -72,22 +72,22 @@
 
     * kann immer wieder gedrückt werden, z.B. bei Tonproblemen, oder wenn der Monitor seine EInstellungen vergisst
     * wird immer durchgeführt, wenn OBS geöffent wird
-  
-* **[ctrl][alt][cmd] & [S]** - "Streamen"
+
+* **[ctrl][alt][cmd] & [S]** - "Streamen" 🔧
     * Skype, FotoMagico und NDI Virtual Input werden geöffnet
     * nicht erforderliche Anwendungen werden geschlossen
     * wenn OBS nicht schon auf
-         * "Grundeinstellungen" (weil mit OBS verknüpft)
+        * "Grundeinstellungen" (weil mit OBS verknüpft)
         * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
         * OBS streamt
 
     * auch wiederholbar
-  
+
 * **[ctrl][alt][cmd] & [M]** - "Mail"
     * Log- und Konfiguratuonsdateien sammeln und als Email verschicken
 
 ## FotoMagico
-    * **[cmd] & [P]** Präsentation im Vollbildmodus starten
+    * **\[cmd\] \& \[P\]** Präsentation im Vollbildmodus starten
 
 
 
