@@ -2,17 +2,17 @@
 
 ## OBS
 ### Allgemein
-* **[M]** Mikrofon muten 🔇
-* **[D]** Desktop Audio mten 🔇
+* **[M]** 🔇 Mikrofon
+* **[D]** 🔇 Desktop Audio
 
 ### Szenen
 1. **[1]** Szene "Start" ⏰
     * 🔇 alle Audioquellen geschlossen  
 
 2. **[2]** Szene "Cam" 🎥
-    - 🔊 alle Audioquellen, außer Gast, offen
-    - 🎥 `Internal`
-    - 📺 Screen, Spendenaufruf, ❓ und Chat 💬 nicht sichtbar
+    * 🔊 alle Audioquellen, außer Gast, offen
+    * 🎥 `Internal`
+    * 📺 Screen, Spendenaufruf, ❓ und Chat 💬 nicht sichtbar
     * **[<]** Kameraumschaltung
     * **[+]** "Screen" 📺 ein-/ausblenden
     * **[€]** Spendenaufruf
@@ -20,8 +20,8 @@
     * **[C]** Chat 💬 ein-/ausblenden  
 
 3. **[3]** Szene "Screen" 📺
-    - 🔊 alle Audioquellen, außer Gast, offen
-    - Kameras nicht sichtbar
+    * 🔊 alle Audioquellen, außer Gast, offen
+    * Kameras nicht sichtbar
     * **[+]** Kameras ein-/ausblenden
         * 🎥 `External` (rechts oben)
         * **[<]** Kameraumschaltung  
@@ -31,35 +31,35 @@
 
 ### Intro/ Outro
 * **[I]** **I**ntro 🎞
-    - wechselt zu Szene "Cam"
-    - 🔊 alle Audioquellen, außer Gast, offen
+    * wechselt zu Szene "Cam"
+    * 🔊 alle Audioquellen, außer Gast, offen
 
 * **[O]** **O**utro 🎞
-    - wechselt zu Szene "Finish"
-    - 🔇 alle Audioquellen geschlossen
+    * wechselt zu Szene "Finish"
+    * 🔇 alle Audioquellen geschlossen
 
 ### Guest 📞
-* **[1]**, **[2]**, **[3]** und **[4]** - Gast niemals hör- und sichtbar
+a. **[1]**, **[2]**, **[3]** und **[4]** - Gast niemals hör- und sichtbar
 
-* **[F]** "**F**ull" entspricht Szene "Cam" **[2]** mit Gast anstatt Gastgeber im Großbild
-   - zusätzlich Ton Gast auf
-   - Mikrofon zu
+f. **[F]** Szene "**F**ull" entspricht Szene "Cam" **[2]** mit Gast anstatt Gastgeber im Großbild
+    * zusätzlich Ton Gast auf
+    * Mikrofon zu
 
-   * **[€]** Spendenaufruf, **[?]** und **[+]** Screen
+    * **[€]** Spendenaufruf, **[?]** und **[+]** Screen
 
-* **[G]** Szene "**G**uest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
+g. **[G]** Szene "**G**uest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
 
-* **[H]** Szene "**H**istory" entspricht Szene "Screen" **[3]**
-   * zusätzlich Ton Gast auf
-   * Kameras/ Gast unmittelbar sichtbar
+h. **[H]** Szene "**H**istory" entspricht Szene "Screen" **[3]**
+    * zusätzlich Ton Gast auf
+    * Kameras/ Gast unmittelbar sichtbar
 
-   * **[+]** Kameras aus-/einblenden
+    * **[+]** Kameras aus-/einblenden
         * **[<]** Kameraumschaltung
 
 ### Tipps
 * Szene "Cam" **[2]**, "Screen" **[3]**, "Full" **[F]** und "Guest" **[G]** können nach Einblendungen durch erneutes Drücken wieder "aufgeräumt" werden
 * **[2]**,  **[3]** und **[G]** können auch benutzt werden, um z.B. das Mikrofon nach **[M]** wieder zu öffnen
-* Der Gast kann in **[G]** durch Wechsel zu **[2]** und in **[H**] zu **[3]** ausgeblendet und gemutet werden
+* Der Gast kann in **[G]** durch Wechsel zu **[2]** und in **[H]** zu **[3]** ausgeblendet und gemutet werden
 
 ## Hammerspoon
 * **[ctrl][alt][cmd] & [G]** - ***"Grundeinstellungen"*** 🧯

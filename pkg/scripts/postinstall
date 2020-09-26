@@ -1,6 +1,7 @@
 #!/bin/sh
 
 chown -R $USER /tmp/obs-studio 
+chown -R root /tmp/obs-studio/basic/profiles
 
 OBS="Library/Application Support/obs-studio"
 
@@ -10,5 +11,8 @@ mv /tmp/obs-studio/init.lua ~/.hammerspoon
 mv /tmp/obs-studio ~/"$OBS"
 
 find ~/"$OBS" -d -exec touch -ht 197304291400 '{}' \;
+
+killall Hammerspoon
+open -a Hammerspoon
 
 exit 0
