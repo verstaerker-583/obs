@@ -7,7 +7,7 @@
 
 ### Szenen
 1. **[1]** Szene "Start" ⏰
-    * 🔇 alle Audioquellen geschlossen  
+    * 🔇 alle Audioquellen geschlossen
 
 2. **[2]** Szene "Cam" 🎥
     * 🔊 alle Audioquellen, außer Gast, offen
@@ -17,17 +17,17 @@
     * **[+]** "Screen" 📺 ein-/ausblenden
     * **[€]** Spendenaufruf
     * **[?]** ❓
-    * **[C]** Chat 💬 ein-/ausblenden  
+    * **[C]** Chat 💬 ein-/ausblenden
 
 3. **[3]** Szene "Screen" 📺
     * 🔊 alle Audioquellen, außer Gast, offen
     * Kameras nicht sichtbar
     * **[+]** Kameras ein-/ausblenden
         * 🎥 `External` (rechts oben)
-        * **[<]** Kameraumschaltung  
+        * **[<]** Kameraumschaltung
 
 4. **[4]** Szene "Finish" 🛌
-    * 🔇 alle Audioquellen geschlossen  
+    * 🔇 alle Audioquellen geschlossen
 
 ### Intro/ Outro
 * **[I]** **I**ntro 🎞
@@ -39,17 +39,16 @@
     * 🔇 alle Audioquellen geschlossen
 
 ### Guest 📞
-a. **[1]**, **[2]**, **[3]** und **[4]** - Gast niemals hör- und sichtbar
+* **[1]**, **[2]**, **[3]** und **[4]** - Gast niemals hör- und sichtbar
 
-f. **[F]** Szene "**F**ull" entspricht Szene "Cam" **[2]** mit Gast anstatt Gastgeber im Großbild
+* **[F]** Szene "**F**ull" entspricht Szene "Cam" **[2]** mit Gast anstatt Gastgeber im Großbild
     * zusätzlich Ton Gast auf
     * Mikrofon zu
-
     * **[€]** Spendenaufruf, **[?]** und **[+]** Screen
 
-g. **[G]** Szene "**G**uest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
+* **[G]** Szene "**G**uest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
 
-h. **[H]** Szene "**H**istory" entspricht Szene "Screen" **[3]**
+* **[H]** Szene "**H**istory" entspricht Szene "Screen" **[3]**
     * zusätzlich Ton Gast auf
     * Kameras/ Gast unmittelbar sichtbar
 
@@ -68,7 +67,7 @@ h. **[H]** Szene "**H**istory" entspricht Szene "Screen" **[3]**
     * WiFi deaktiviert
     * verschiedene Prüfungen
     * kann immer wieder gedrückt werden, z.B. bei Tonproblemen, oder wenn der Monitor seine EInstellungen vergisst
-    * wird immer durchgeführt, wenn OBS geöffent wird  
+    * wird immer durchgeführt, wenn OBS geöffent wird
 
 * **[ctrl][alt][cmd] & [S]** - ***"Streamen"*** 🔧
     * Skype, FotoMagico und NDI Virtual Input werden geöffnet
@@ -77,10 +76,10 @@ h. **[H]** Szene "**H**istory" entspricht Szene "Screen" **[3]**
         * "Grundeinstellungen" (weil mit OBS verknüpft)
         * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
         * OBS streamt 🔴
-    * auch wiederholbar  
+    * auch wiederholbar
 
-* **[ctrl][alt][cmd] & [M]** - ***"Mail"*** ✉️ 
-    * Log- und Konfiguratuonsdateien sammeln und als Email verschicken  
+* **[ctrl][alt][cmd] & [M]** - ***"Mail"*** ✉️
+    * Log- und Konfiguratuonsdateien sammeln und als Email verschicken
 
 ## FotoMagico 🖼
 * **[cmd] & [P]** Präsentation im Vollbildmodus starten
