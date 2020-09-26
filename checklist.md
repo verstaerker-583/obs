@@ -15,16 +15,16 @@
     * 📺 Screen, Spendenaufruf, ❓ und Chat 💬 nicht sichtbar
 
     * [<] Kameraumschaltung
-    * [+] "Screen" einblenden
+    * [+] "Screen" ein-/ausblenden
     * [€] Spendenaufruf
     * [?] ❓
-    * [C] Chat 💬 einblenden
+    * [C] Chat 💬 ein-/ausblenden
 
 * [3] Szene "Screen" 📺
     * alle Audioquellen, ausser Gast, offen
     * Kameras nicht sichtbar
 
-    * [+] Kameras einblenden
+    * [+] Kameras ein-/ausblenden
         * 🎥 `External` (rechts oben)
         * [<] Kameraumschaltung
 
@@ -43,50 +43,25 @@
 ### Guest 📞
 * [1], [2], [3] & [4] - Gast niemals hör- und sichtbar
 
-* [F] entspricht Szene "Cam" [2] mit Gast anstatt Gastgeber im Großbild
+* [F] "Full" entspricht Szene "Cam" [2] mit Gast anstatt Gastgeber im Großbild
    * zusätzlich Ton Gast auf
    * Mikrofon zu
    * [€] Spendenaufruf, [?] und **[+]** Screen
 
-* **[G]** entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
+* **[G]** Szenen "Guest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
 
-* [3] Szene "Screen" 📺
-    * alle Audioquellen, ausser Gast, offen
-    * Kameras nicht sichtbar
+* [H] entspricht Szene "Screen" [3] 
+   * zusätzlich Ton Gast auf
+   * Kameras/ Gast unmittelbar sichtbar
 
-    * [+] Kameras einblenden
-        * 🎥 `External` (rechts oben)
+   * [+] Kameras aus-/einblenden
         * [<] Kameraumschaltung
 
-* [4] Szene "Finish"
-    * 🔇
+### Tipps
+* Szene "Cam" [2], "Screen" [3], "Full" [F] & "Guest" [G] können nach Einblendungen durch erneutes Drücken wieder "aufgeräumt" werden
+* [2] & [3] & [G] können auch benutzt werden um z.B. Dein Mikrofon nach [M] wieder zu öffnen
+* der Gast kann in [G] durch Wechsel zu [2] und in [H] zu [3] gemutet werden
 
-### Intro/ Outro
-* [I] Intro 🎞
-    * wechselt zu Szene "Cam"
-    * alle Audioquellen, ausser Gast, offen
-
-* [O] Outro 🎞
-    * wechselt zu Szene "Finish"
-    * 🔇
-
-### Guest 📞
-* [1], [2], [3] & [4] - Gast niemals hör- und sichtbar
-
-* [F] entspricht Szene "Cam" [2] mit Gast anstatt Gastgeber im Großbild
-   * zusätzlich Ton Gast auf
-   * Mikrofon zu
-   * [€] Spendenaufruf, [?] und **[+]** Screen
-
-* **[G]** entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und 
-   * zusätzlich Ton Gast auf
-   * [€] Spendenaufruf und [?]
-
-* [H] entspricht Szene "Screen" **[3]** mit eingeblendetem Gast und Chat
-   * zusätzlich Ton Gast auf
-   * Kameras/ Gast sofort eingeblendet
-        * [<] Kameraumschaltung
-        * [+] Kameras einblenden
 
 ## Hotspoon
 * \[ctrl]\[alt][cmd] & [G] - "Grundeinstellungen" 🧯
@@ -102,7 +77,7 @@
     * Skype, FotoMagico & NDI Virtual Input werden geöffnet
     * nicht erforderliche Anwendungen werden geschlossen
     * wenn OBS nicht schon auf
-        * "Grundeinstellungen" (weil mit OBS verknüpft)
+    📴     * "Grundeinstellungen" (weil mit OBS verknüpft)
         * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
         * OBS streamt
 
