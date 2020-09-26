@@ -105,7 +105,7 @@
 
 ### OBS
 #### Quellen sicht-/unsichtbar schalten und Overlays laden
-* Achtung: Vorschaubild OBS anklicken!
+* ⚠ Vorschaubild OBS anklicken!
 * **[1]**
 * **[2]**, **[€]**
 * **[<]**
@@ -129,9 +129,9 @@
 
 ### Skype
 #### Skype > Einstellungen > Anrufe > Erweitert
-* ☑ `Eingehende Anrufe automatisch annehmen`
-* ☑ `Video automatisch starten`
-* ☑ `NDI-Nutzung erlauben`
+* ☒ `Eingehende Anrufe automatisch annehmen`
+* ☒ `Video automatisch starten`
+* ☒ `NDI-Nutzung erlauben`
 
 #### Skype > Einstellungen > Audio und Video
 * Kamera: `FaceTime HD-Kamera`
@@ -161,8 +161,8 @@
 * 'Stream beenden'
 * **[1]**
 * **Programme geöffnet lassen!**
+<-- ⏹️ ☎️  Olaf  
 
-<-- ⏹️ ☎️  Olaf
 
 ⏰ **18:45 Uhr**
 
@@ -180,7 +180,7 @@
 
 ### OBS
 #### Quellen sicht-/unsichtbar schalten und Overlays laden
-* Achtung: Vorschaubild OBS anklicken!
+* ⚠ Vorschaubild OBS anklicken!
 * **[1]**
 * **[2]**, **[€]**, **[C]**
 * **[<]**
@@ -191,8 +191,8 @@
 * **[1]**
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 * Stream nicht beenden!
+<-- ⏹️ ☎️  Olaf  
 
-<-- ⏹️ ☎️  Olaf
 
 ⏰ **19:15 Uhr**
 
@@ -203,8 +203,8 @@
     * 🔴 Online, Audio gemuted
     * Zuschauer werden benachrichtigt und sehen den Startbildschirm
     * **Guidance is internal!**
+<-- ⏹️ ☎️  Olaf  
 
-<-- ⏹️ ☎️  Olaf
 
 ⏰ **19:30 Uhr**
 ## Launch
