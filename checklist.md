@@ -29,7 +29,7 @@
     * 🎥 `External` aktiv?
 * **[3]**
     * `FotoMagico` (⚠ FotoMagico anklicken, damit bedienbar) sicht- und hörbar?
-* **[+]** Kamera zuschalten > ***Stresstest***
+* **[+]** Kamera zuschalten > ***Stresstest*** (FotoMagico + Kamera, skaliert)
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 * **[4]**
 
@@ -71,11 +71,11 @@
 * **[2]** und auf Anruf warten
 * **[G]** Gast zuschalten, Kameraposition und Ton prüfen
 * **[F]**
-* **[H]** > ***Stresstest***
+* **[H]** > ***Stresstest*** (FotoMagico + Kamera, skaliert + Skype, skaliert)
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 * **[2]** und Gespräch beenden
 
-* 'Stream beenden'
+* `Stream beenden`
 * **[1]**
 * **Programme geöffnet lassen!**
 ⏹️ ☎️  Olaf  
