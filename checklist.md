@@ -1,6 +1,6 @@
 # Checklist
 
-## OBS
+## [OBS](file:/Applications/OBS.app)
 ### Filme
 * Intro [I]
 * Outro [O]
@@ -9,7 +9,7 @@
 * [3] FotoMagico
 * [G] für Chat
 
-## [Skype](file:///Applications/Skype.app)
+## [Skype](file:/Applications/Skype.app)
 
 ### Skype > Einstellungen > Anrufe > Erweitert
 * ☑ `Eingehende Anrufe automatisch annehmen`
