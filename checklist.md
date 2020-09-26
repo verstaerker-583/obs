@@ -187,6 +187,7 @@
 * **[4]**
 * **[1]**
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
+* Stream nicht beenden!
 <-- Ende ☎️  Olaf
 
 ⏰ **19:15 Uhr**
@@ -194,7 +195,7 @@
 ### YouTube
 * Olaf: Stream auf YouTube starten ⚡️
 * Status:
-    * Online, Audio gemuted
+    * 🔴 Online, Audio gemuted
     * Zuschauer werden benachrichtigt und sehen den Startbildschirm
     * **Guidance is internal!**
 <-- ☎️  Olaf
