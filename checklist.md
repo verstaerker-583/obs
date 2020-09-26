@@ -76,7 +76,7 @@
 * [1]
 * **Programme geöffnet lassen!**
 
-19:00 Uhr
+18:45 Uhr
 ## Ignition
 ### Hammerspoon
 * \[ctrl]\[alt]\[cmd] & [G]
@@ -85,11 +85,16 @@
 * Startposition [cmd] & [P]
 
 ### OBS
-* OBS > 'Stream starten'
-* [1], [2], [3], [4], [G]
+* OBS > `Stream starten`
+* [1], [2]
+* [3]
+    * FotoMagico sichtbar?
+* [4], [G]
 * [1] Mic gemutet?
 * Report in OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
  
-19:15 Uhr
+19:00 Uhr
 ### YouTube
 * Stream starten
+
+19:30 Uhr
