@@ -9,7 +9,8 @@
 * [3] FotoMagico
 * [G] für Chat
 
-## Skype
+## [Skype](file:///Applications/Skype.app)
+
 ### Skype > Einstellungen > Anrufe > Erweitert
 * ☑ `Eingehende Anrufe automatisch annehmen`
 * ☑ `Video automatisch starten`
