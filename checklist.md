@@ -86,12 +86,9 @@
 
 # Checklist
 ⏰ **16:00 Uhr**
+
 --> ▶️ ☎️  Olaf
 ## Prelaunch
-
-### Allgemein
-* 📴 Smartphone und Tablet lautlos?
-
 ### Hammerspoon
 * **[ctrl][alt][cmd] & [S]**
     * Audio- und Videoeinstellungen werden vorgenommen
@@ -164,11 +161,17 @@
 * 'Stream beenden'
 * **[1]**
 * **Programme geöffnet lassen!**
+
 <-- ⏹️ ☎️  Olaf
 
 ⏰ **18:45 Uhr**
+
 --> ▶️ ☎️  Olaf
 ## Ignition
+
+### Allgemein
+* 📴 Smartphone und Tablet lautlos?
+
 ### Hammerspoon
 * **[ctrl][alt]\[cmd] & [G]**
 
@@ -188,9 +191,11 @@
 * **[1]**
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 * Stream nicht beenden!
+
 <-- ⏹️ ☎️  Olaf
 
 ⏰ **19:15 Uhr**
+
 --> ▶️ ☎️  Olaf
 ### YouTube
 * Olaf: Stream auf YouTube starten ⚡️
@@ -198,6 +203,7 @@
     * 🔴 Online, Audio gemuted
     * Zuschauer werden benachrichtigt und sehen den Startbildschirm
     * **Guidance is internal!**
+
 <-- ⏹️ ☎️  Olaf
 
 ⏰ **19:30 Uhr**
