@@ -8,7 +8,7 @@
 ### Szenen
 * [1] Szene "Start" ⏰
     * 🔇
-
+  
 * [2] Szene "Cam" 🎥
     * alle Audioquellen, außer Gast, offen
     * 🎥 `Internal`
@@ -19,7 +19,7 @@
     * [€] Spendenaufruf
     * [?] ❓
     * [C] Chat 💬 ein-/ausblenden
-
+  
 * [3] Szene "Screen" 📺
     * alle Audioquellen, außer Gast, offen
     * Kameras nicht sichtbar
@@ -27,10 +27,10 @@
     * [+] Kameras ein-/ausblenden
         * 🎥 `External` (rechts oben)
         * [<] Kameraumschaltung
-
+  
 * [4] Szene "Finish"
     * 🔇
-
+  
 ### Intro/ Outro
 * [I] Intro 🎞
     * wechselt zu Szene "Cam"
@@ -59,7 +59,7 @@
 
 ### Tipps
 * Szene "Cam" [2], "Screen" [3], "Full" [F] & "Guest" [G] können nach Einblendungen durch erneutes Drücken wieder "aufgeräumt" werden
-* [2] & [3] & [G] können auch benutzt werden um z.B. Dein Mikrofon nach [M] wieder zu öffnen
+* [2] & [3] & [G] können auch benutzt werden, um z.B. das Mikrofon nach [M] wieder zu öffnen
 * der Gast kann in [G] durch Wechsel zu [2] und in [H] zu [3] gemutet werden
 
 
