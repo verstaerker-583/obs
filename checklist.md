@@ -1,5 +1,5 @@
 # Checklist
-⏰ **16:00 Uhr**
+⏰ **17:00 Uhr**
 
 ▶️ ☎️  Olaf
 ## Prelaunch
@@ -60,13 +60,15 @@
 
 * Lautsprecher: `Standardgerät`
     * 🎚️= `0`
+    * ☐ `Stummschaltung für eingehende Anrufe aufheben`
 
 * `Kostenlosen Testanruf tätigen`
     * NDI Virtual Input (macOS Menüleiste) -> `(Skype - Aktiver Sprecher)`
     * Mithörton? Eigene Stimme hörbar?
-* **Go-No-Go decision!**
 
-⏰ **16:15 Uhr**
+* **go/no go poll**
+
+⏰ **17:15 Uhr**
 ### OBS
 #### Testanrufe Gast und Co-Moderatorin
 * **[2]** und auf Anruf warten
@@ -74,6 +76,9 @@
 * **[F]**
 * **[H]** > ***Stresstest*** (FotoMagico + Kamera, skaliert + Skype, skaliert)
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
+
+* **go/no go poll Gast**
+
 * **[2]** und Gespräch beenden
 
 * `Stream beenden`
@@ -81,7 +86,7 @@
 * **Programme geöffnet lassen!**
 ⏹️ ☎️  Olaf  
 
-☕
+☕☕☕
 
 ⏰ **18:45 Uhr**
 
@@ -110,6 +115,7 @@
 * **[1]**
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 * ⚠ Stream nicht beenden!
+* **go/no go poll**
 ⏹️ ☎️  Olaf  
 
 🚽
@@ -147,7 +153,7 @@
     * Markus sieht Gast, hört ihn aber noch nicht.
 * Zeichen an Gast
 * **[G]** schaltet Gast live.
-* ⚠ **[F]** Szene "Full" schaltet Markus Mikrofon stumm. Bei Bedarf, Mikro mit **[M]** öffnen. 
+* ⚠ **[F]** Szene "**F**ull" schaltet Markus Mikrofon stumm. Bei Bedarf, Mikro mit **[M]** öffnen. 
 * Gespräch durch **[2]** Szene "Cam", **[3]** Szene "Screen" oder **[O]** Outro beenden/ unterbrechen. Gast ist dann sofort nicht mehr zu hören und zu sehen.
 * Gast wartet ca. 10sec und unterbricht dann selbst die Verbindung. 
 
