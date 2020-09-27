@@ -22,7 +22,7 @@
     * **[€]** Spendenaufruf
 
 3. **[3]** Szene "Screen" 📺
-    * 🔊 alle Audioquellen, außer Gasti ❌, offen
+    * 🔊 alle Audioquellen, außer Gast ❌, offen
     * Kameras ausgeblendet
 
     ⌨ Hotkeys
@@ -43,9 +43,9 @@
     * wechselt zu Szene "Finish"
 
 ### Guest 📞
-* **[1]**, **[2]**, **[3]** und **[4]** - Gast immer stummi geschaltet und ausgeblendet
+* **[1]**, **[2]**, **[3]** und **[4]** - Gast immer stumm geschaltet und ausgeblendet
 
-* **[F]** Szene "**F**ull" entspricht Szene "Cam" **[2]** mit Gast anstatt Gastgeber im Großbild
+* **[F]** Szene "**F**ull" entspricht Szene "Cam" **[2]** mit Gast anstatt Gastgeber im Vollbild
     * 🔊 alle Audioquellen, außer Gastgeber 🔇, offen
 
     ⌨ Hotkeys
@@ -83,8 +83,8 @@
 ## Hammerspoon
 * **[ctrl][alt][cmd] & [G]** - ***"Grundeinstellungen"*** 🧯
     * Audio- und Videoeinstellungen werden vorgenommen
-    * Powermanagement deaktiviert
-    * WiFi deaktiviert
+    * Powermanagement wird deaktiviert
+    * WiFi wird deaktiviert
     * verschiedene Prüfungen werden durchgeführt
     * kann immer wieder gedrückt werden, z.B. bei Tonproblemen, oder wenn der Monitor Einstellungen "vergisst"
     * wird immer durchgeführt, wenn OBS geöffent wird
