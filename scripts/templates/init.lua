@@ -19,7 +19,7 @@ function mailLogs()
 	hs.execute(
 		"system_profiler -json -detailLevel full SPAudioDataType SPCameraDataType SPDisplaysDataType SPHardwareDataType SPSoftwareDataType > /tmp/system.json"
 	)
-	mailer = hs.sharing.newShare("com.apple.share.Mail.compose")
+	local mailer = hs.sharing.newShare("com.apple.share.Mail.compose")
 	mailer:subject("Logfiles " .. os.date()):recipients({"o.koepke@gmx.de"})
 	mailer:shareItems(
 		{
@@ -33,7 +33,7 @@ end
 
 function postFlight()
 	-- Video
-	devices = hs.screen.allScreens()
+	local devices = hs.screen.allScreens()
 	for i, dev in ipairs(devices) do
 		if dev ~= hs.screen.primaryScreen() then
 			dev:setMode(1920, 1080, 1)					-- specific
@@ -62,11 +62,13 @@ function postFlight()
 end
 
 function preFlight()
-	log = io.open("/tmp/log.txt", "w")
+	local muted = "false"
+
+	local log = io.open("/tmp/log.txt", "w")
 	log:write(os.date() .. "\n")
 
 	-- Video
-	alarm = true
+	local alarm = true
 	log:write("\nScreens\n")
 
 	devices = hs.screen.allScreens()
@@ -78,8 +80,8 @@ function preFlight()
 		if dev ~= hs.screen.primaryScreen() then
 			dev:setMode(1280, 720, 1)
 			alarm = false
-		elseif dev:name() == "Color LCD" then	-- MacBook?
---			dev:setMode(1440, 900, 1)					-- specific
+		elseif dev:name() == "Color LCD" then					-- MacBook?
+--			dev:setMode(1680, 1050, 1)					-- specific
 		end
 		log:write("done: " .. hs.inspect(dev:currentMode()) .. "\n")
 --		log:write(hs.inspect(dev:availableModes()) .. "\n")			-- for new platforms
@@ -90,9 +92,15 @@ function preFlight()
 	end
 
 	-- FotoMagico
-	hs.execute("defaults delete com.boinx.FotoMagico5 masterVolume")
 	hs.execute("defaults delete com.boinx.FotoMagico5 'NSWindow Frame GetInfo'")
+	hs.execute("defaults delete com.boinx.FotoMagico5 masterVolume")
+	hs.execute("defaults delete com.boinx.FotoMagico5 FMThemeType")
+--	hs.execute("defaults write com.boinx.FotoMagico5 FMThemeType -int 2")
 	hs.execute("defaults write com.boinx.FotoMagico5 ScreenHasBeenChosen -int 1")
+	hs.execute("defaults write com.boinx.FotoMagico5 defaultHeight -int 720")
+	hs.execute("defaults write com.boinx.FotoMagico5 defaultWidth -int 1280")
+	hs.execute("defaults write com.boinx.FotoMagico5 enableAutoSave -int 1")
+	hs.execute("defaults write com.boinx.FotoMagico5 suspendBackgroundTasksDuringPlayback -int 1")
 
 	-- Alert Sounds
 	hs.osascript._osascript("set volume alert volume 0", "")
@@ -100,8 +108,9 @@ function preFlight()
 	-- Audio Input Devices
 	log:write("\nAudio Input Devices\n")
 	log:write("current: " .. hs.inspect(hs.audiodevice.current(true)) .. "\n")
+
 	devices = hs.audiodevice.allInputDevices()
-	log:write(hs.inspect(devices) .. "\n")
+	log:write(hs.inspect(devices) .. "\n\n")
 	for i, dev in ipairs(devices) do
 		dev:setInputMuted(false)
 		dev:setBalance(0.5)
@@ -113,9 +122,12 @@ function preFlight()
 		else
 			dev:setInputMuted(true)
 		end
-		log:write(dev:transportType() .. " " .. dev:name() .. " " .. dev:volume() .. "\n")
+		if dev:inputMuted() then
+			muted = "Muted"
+		end
+		log:write(dev:transportType() .. " " .. dev:name() .. " " .. dev:inputVolume() .. " " .. muted .. "\n")
 	end
-	log:write("done: " .. hs.inspect(hs.audiodevice.current(true)) .. "\n")
+	log:write("\ndone: " .. hs.inspect(hs.audiodevice.current(true)) .. "\n")
 
 	-- Mac(Book) Pro
 	if hs.audiodevice.findDeviceByUID("BuiltInMicrophoneDevice") then
@@ -130,8 +142,10 @@ function preFlight()
 	-- Audio Output Devices
 	log:write("\nAudio Output Devices\n")
 	log:write("current: " .. hs.inspect(hs.audiodevice.current()) .. "\n")
+
 	devices = hs.audiodevice.allOutputDevices()
 	log:write(hs.inspect(devices) .. "\n")
+
 	for i, dev in ipairs(devices) do
 		dev:setMuted(false)
 		dev:setBalance(0.5)
@@ -139,19 +153,20 @@ function preFlight()
 			dev:setVolume(50)
 		elseif dev:transportType() == "Virtual" then
 			dev:setDefaultOutputDevice()
-			dev:setInputMuted(false)
 			dev:setInputVolume(75)						 -- BlackHole
 			dev:setVolume(100)
 		else
 			dev:setVolume(50)
 			dev:setMuted(true)
 		end
+
 		if dev:inputVolume() then
 			log:write(dev:transportType() .. " " .. dev:name() .. " " .. dev:volume() .. " >< " .. dev:inputVolume() .. "\n")
 		else
 			log:write(dev:transportType() .. " " .. dev:name() .. " " .. dev:volume() .. "\n")
 		end
 	end
+
 	log:write("done: " .. hs.inspect(hs.audiodevice.current()) .. "\n")
 
 	-- Power Management
@@ -177,32 +192,38 @@ function preFlight()
 	hs.application.open("NDI Virtual Input", 0, true)
 
 	hs.notify.new({title = "OBS", informativeText = "Pre-Flight Checklist completed!"}):send()
+
 	log:close()
 end
 
-function startStreaming()
-	hs.execute("open -a 'OBS' --args --scene 'Start' --collection 'gp_naked' --profile 'gpYTsq' --verbose --startstreaming")
-
-	-- Apps
+function closeApps()
 	for i, app in ipairs(hs.application.runningApplications()) do
 		if app:name() == "Finder" then
 		elseif app:name() == "AirPlayUIAgent" then
+		elseif app:name() == "CleanMyMac X" then
 		elseif app:name() == "Dock" then
 		elseif app:name() == "FotoMagico 5" then
 		elseif app:name() == "Hammerspoon" then
-		elseif app:name() == "Mitteilungszentrale" then
 		elseif app:name() == "NDI Virtual Input" then
 		elseif app:name() == "Nachrichten" then
 		elseif app:name() == "Notizen" then
 		elseif app:name() == "OBS" then
+			preFlight()
+		elseif app:name() == "Safari" then
 		elseif app:name() == "Skype" then
 		elseif app:name() == "Terminal" then
 		else
 			app:kill()
 		end
 	end
-	hs.application.open("FotoMagico 5", 0, true)
+end
+
+function startStreaming()
+	closeApps()
+
+	hs.execute("open -a 'OBS' --args --collection 'gp_naked' --profile 'YTsq' --scene 'Start' --startstreaming --verbose")
 	hs.application.open("Skype", 0, true)
+	hs.application.launchOrFocus("FotoMagico 5")
 end
 
 -- Watcher/ Key Bindings
@@ -225,7 +246,3 @@ function reloadConfig(files)
 end
 myWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
 hs.alert.show("Config loaded")
-
--- Spoons
--- hs.loadSpoon("ReloadConfiguration")
--- spoon.ReloadConfiguration:start()

@@ -4,7 +4,7 @@ del(.sources[] |
 	select(.id == "window_capture").settings
 )
 
-| (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/markus/DieWeltImBlick/intro.mp4"
+| (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/markus/DieWeltImBlick/intro.mov"
 | (.sources[] | select(.name == "Outro").settings.local_file) = "/Users/markus/DieWeltImBlick/outro.mov"
 | (.sources[] | select(.id == "window_capture").settings.owner_name) = "FotoMagico 5"
 | (.sources[] | select(.id == "window_capture").settings.window_name) = ""

@@ -12,7 +12,4 @@ mv /tmp/obs-studio ~/"$OBS"
 
 find ~/"$OBS" -d -exec touch -ht 197304291400 '{}' \;
 
-killall Hammerspoon
-open -a Hammerspoon
-
 exit 0

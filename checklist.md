@@ -38,7 +38,8 @@
 * **[O]** **O**utro sicht- und hörbar?
 
 #### Skype
-* **[G]** \(vorerst schwarzer Kreis)
+* **[G]** \(vorerst schwarzer Kreis):0
+
 
 ### Hammerspoon
 * **[ctrl][alt][cmd] & [M]**
@@ -135,6 +136,20 @@
     * alle Audioquellen öffnen, du kannst mit **[M]** muten
     * wechselt automatisch zu Szene "Cams"
 * Auf geht's! 🎬 Apollo 12 Commander Pete Conrad: (...) Man, that may have been a small one for Neil, but that's a long one for me. (...)
+
+## Lunar Orbit Rendezvous
+* ⚠ Sobald Skype den Anruf automatisch annimtt, wird es zum aktiven Fenster. FotoMagico empfängt dann, bis es wieder angeklickt wird, keine Tastatureingaben mehr!
+* Gast: Mindestens YouTube, besser alle Anwendungen schliessen.
+* Gast: Headset überprüfen.
+* Gast ruft an und wartet auf Zeichen von Markus.
+* Status:
+    * Gast sieht und hört Markus.
+    * Markus sieht Gast, hört ihn aber noch nicht.
+* Zeichen an Gast
+* **[G]** schaltet Gast live.
+* ⚠ **[F]** Szene "Full" schaltet Markus Mikrofon stumm. Bei Bedarf, Mikro mit **[M]** öffnen. 
+* Gespräch durch **[2]** Szene "Cam", **[3]** Szene "Screen" oder **[O]** Outro beenden/ unterbrechen. Gast ist dann sofort nicht mehr zu hören und zu sehen.
+* Gast wartet ca. 10sec und unterbricht dann selbst die Verbindung. 
 
 ## Re-entry
 * Nach dem letzten Satz mind. 20sec warten, dann
