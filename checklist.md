@@ -38,7 +38,7 @@
 * **[O]** **O**utro sicht- und hörbar?
 
 #### Skype
-* **[G]** \(vorerst schwarzer Kreis):0
+* **[G]** \(vorerst schwarzer Kreis)
 
 
 ### Hammerspoon
@@ -141,7 +141,8 @@
 * Status:
     * alle Audioquellen öffnen, du kannst mit **[M]** muten
     * wechselt automatisch zu Szene "Cams"
-* Auf geht's! 🎬 Apollo 12 Commander Pete Conrad: (...) Man, that may have been a small one for Neil, but that's a long one for me. (...)
+* Auf geht's! 🎬
+* Apollo 12 Commander Pete Conrad: (...) Man, that may have been a small one for Neil, but that's a long one for me. (...)
 
 ## Lunar Orbit Rendezvous
 * ⚠ Sobald Skype den Anruf automatisch annimtt, wird es zum aktiven Fenster. FotoMagico empfängt dann, bis es wieder angeklickt wird, keine Tastatureingaben mehr!
