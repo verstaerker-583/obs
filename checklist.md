@@ -174,7 +174,7 @@
 # Checklist Guest
 ### Allgemein
 * Smartphones/ Tables stumm schalten
-* Tischdecke/ Tuch unter MacBook erlaubt geräuschloses "Schewnken der Kamera"
+* Tischdecke/ Tuch unter MacBook erlaubt geräuschloses "Schwenken der Kamera"
 * Licht! Licht! Licht! 💡💡💡
 
 ### Computer
@@ -207,5 +207,5 @@
 * Anrufen und auf Zeichen warten
 * Live!
     * Schnelle Bewegungen vermeiden.
-    * Bewusst in die Kamera schaue und das eigene Bild, insbesondere Position zur/ der Kamera, laufend kontrollieren!
-* nach Verabschiedung noch ca. 10sec "verharren" und dann die Verbingung selbst (!) beenden.
+    * Bewusst in die Kamera schauen und das eigene Bild, insbesondere Position zur/ der Kamera, laufend kontrollieren!
+* Nach Verabschiedung noch ca. 10sec "verharren" und dann die Verbingung selbst (!) beenden.
