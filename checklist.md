@@ -1,6 +1,5 @@
 # Checklist
 ⏰ **17:00 Uhr**
-
 ▶️ ☎️  Olaf
 ## Prelaunch
 ### macOS
@@ -65,6 +64,7 @@
 * `Kostenlosen Testanruf tätigen`
     * NDI Virtual Input (macOS Menüleiste) -> `(Skype - Aktiver Sprecher)`
     * Mithörton? Eigene Stimme hörbar?
+
 ### go/no go poll
 
 ⏰ **17:15 Uhr**
@@ -75,6 +75,7 @@
 * **[F]**
 * **[H]** > ***Stresstest*** (FotoMagico + Kamera, skaliert + Skype, skaliert)
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
+
 ### go/no go poll Guests
 
 * **[2]** und Gespräch beenden
@@ -82,12 +83,12 @@
 * `Stream beenden`
 * **[1]**
 * **Programme geöffnet lassen!**
+
 ⏹️ ☎️  Olaf  
 
 ☕☕☕
 
 ⏰ **18:45 Uhr**
-
 ▶️ ☎️  Olaf
 ## Ignition
 
@@ -116,13 +117,14 @@
 
 ### FotoMagico
 * **[cmd] & [P]** Startposition `FotoMagico`/ Vollbild
+
 ### go/no go poll
+
 ⏹️ ☎️  Olaf  
 
 🚽
 
 ⏰ **19:15 Uhr**
-
 ▶️ ☎️  Olaf
 ### YouTube
 * Olaf: Stream auf YouTube starten ⚡️
@@ -143,7 +145,9 @@
     * alle Audioquellen öffnen, du kannst mit **[M]** muten
     * wechselt automatisch zu Szene "Cams"
 * Auf geht's! 🎬
-* Apollo 12 Commander Pete Conrad: (...) Man, that may have been a small one for Neil, but that's a long one for me. (...)
+
+> (...) Man, that may have been a small one for Neil, but that's a long one for me. (...)
+> -- <cite>Pete Conrad, Commander Apollo 12</cite>
 
 ## Lunar Orbit Rendezvous
 * ⚠ Sobald Skype den Anruf automatisch annimtt, wird es zum aktiven Fenster. FotoMagico empfängt dann, bis es wieder angeklickt wird, keine Tastatureingaben mehr!
