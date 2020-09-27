@@ -9,8 +9,8 @@
 ### Hammerspoon
 * **[ctrl][alt][cmd] & [S]**
     * Audio- und Videoeinstellungen werden vorgenommen
-    * Powermanagement deaktiviert
-    * WiFi deaktiviert
+    * Powermanagement wird deaktiviert
+    * WiFi wird deaktiviert
     * nicht erforderliche Anwendungen werden geschlossen
     * verschiedene Prüfungen werden durchgeführt
     * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
