@@ -151,8 +151,6 @@
 
 ## Lunar Orbit Rendezvous
 * ⚠ Sobald Skype den Anruf automatisch annimtt, wird es zum aktiven Fenster. FotoMagico empfängt dann, bis es wieder angeklickt wird, keine Tastatureingaben mehr!
-* Gast: Mindestens YouTube, besser alle Anwendungen schliessen.
-* Gast: Headset überprüfen.
 * Gast ruft an und wartet auf Zeichen von Markus.
 * Status:
     * Gast sieht und hört Markus.
@@ -171,3 +169,41 @@
 ## Landing
 * Streaming in OBS nach frühesten 10min beenden - Jetzt bist Du offline!
 * Olaf: Warten auf das Ausbleiben des Signals und dann den Stream auf YouTube beenden.
+
+
+# Checklist Guest
+### Allgemein
+* Smartphones/ Tables stumm schalten
+* Tischdecke/ Tuch unter MacBook erlaubt geräuschloses "Schewnken der Kamera"
+* Licht! Licht! Licht! 💡💡💡
+
+### Computer
+* Netzwerkkabel verwenden, WiFi deaktivieren
+* Headset verwenden
+
+### Skype
+#### Skype > Einstellungen > Anrufe > Erweitert
+* ☐ `Eingehende Anrufe automatisch annehmen`
+* ☒ `Video automatisch starten`
+* ☐ `NDI-Nutzung erlauben`
+
+#### Skype > Einstellungen > Audio und Video
+* Kamera: `FaceTime HD-Kamera`
+
+* Mikrofon: `Standardgerät` oder (MacBook Pro) `Externes Mikrofon`
+    * ☒ `Mikrofoneinstellungen automatisch anpassen`
+    * 🎚️ ≈ `5` (automatisch durch Skype)
+
+* Lautsprecher: `Standardgerät` oder (MacBook Pro) `Externe Kopfhörer`
+    * 🎚️ ≈ `5`
+    * ☒ `Stummschaltung für eingehende Anrufe aufheben`
+
+* `Kostenlosen Testanruf tätigen`
+    * Mithörton? Eigene Stimme hörbar?
+
+## Lunar Orbit Rendezvous
+* auf vereinbartes Zeichen/ vereinbarten Zeitpunkt warten
+* insbesondere YouTube schliessen 
+* Anrufen und auf Zeichen warten
+* Live! Schnelle Bewegungen vermeiden.
+* nach Verabschiedung noch ca. 10sec "verharren" und dann die Verbingung selbst (!) beenden
