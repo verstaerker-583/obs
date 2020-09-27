@@ -17,9 +17,9 @@
     Hotkeys
     * **[<]** Kameraumschaltung
     * **[+]** "Screen" 📺 ein-/ausblenden
-    * **[€]** Spendenaufruf
     * **[?]** ❓
     * **[C]** Chat 💬 ein-/ausblenden
+    * **[€]** Spendenaufruf
 
 3. **[3]** Szene "Screen" 📺
     * 🔊 alle Audioquellen, außer Gast, offen
@@ -27,7 +27,7 @@
 
     Hotkeys
     * **[+]** Kameras ein-/ausblenden
-        * 🎥 `External` (rechts oben)
+        * 🎥 `Internal` (links unten) voreingestellt
     * **[<]** Kameraumschaltung
 
 4. **[4]** Szene "Finish" 🛌
@@ -46,21 +46,31 @@
 * **[1]**, **[2]**, **[3]** und **[4]** - Gast niemals hör- und sichtbar
 
 * **[F]** Szene "**F**ull" entspricht Szene "Cam" **[2]** mit Gast anstatt Gastgeber im Großbild
-    * zusätzlich Ton Gast auf
-    * 🔇 Mikrofon zu
+    * 🔊 alle Audioquellen, außer Gastgeber 🔇, offen
 
     Hotkeys
-    * **[€]** Spendenaufruf, **[?]** und **[+]** Screen
+    * **[+]** "Screen" 📺 ein-/ausblenden
+    * **[?]** ❓
+    * **[C]** Chat 💬 aus-/einblenden
+    * **[€]** Spendenaufruf
 
 * **[G]** Szene "**G**uest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
+    * 🔊 alle Audioquellen offen
+
+    Hotkeys
+    * **[<]** Kameraumschaltung
+    * **[?]** ❓
+    * **[C]** Chat 💬 aus-/einblenden
+    * **[€]** Spendenaufruf
 
 * **[H]** Szene "**H**istory" entspricht Szene "Screen" **[3]**
-    * zusätzlich Ton Gast auf
+    * 🔊 alle Audioquellen offen
     * Kameras/ Gast unmittelbar sichtbar
+    * 🎥 `External` (rechts oben) voreingestellt
 
     Hotkeys
     * **[+]** Kameras aus-/einblenden
-        * **[<]** Kameraumschaltung
+    * **[<]** Kameraumschaltung
 
 ### Tipps
 * Szene "Cam" **[2]**, "Screen" **[3]**, "Full" **[F]** und "Guest" **[G]** können nach Einblendungen durch erneutes Drücken wieder "aufgeräumt" werden.
