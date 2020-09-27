@@ -38,7 +38,7 @@
 * **[O]** **O**utro sicht- und hörbar?
 
 #### Skype
-* **[G]** \(vorerst schwarzer Kreis)
+* **[G]** (vorerst schwarzer Kreis)
 
 
 ### Hammerspoon
@@ -65,8 +65,7 @@
 * `Kostenlosen Testanruf tätigen`
     * NDI Virtual Input (macOS Menüleiste) -> `(Skype - Aktiver Sprecher)`
     * Mithörton? Eigene Stimme hörbar?
-
-* **go/no go poll**
+### go/no go poll
 
 ⏰ **17:15 Uhr**
 ### OBS
@@ -76,8 +75,7 @@
 * **[F]**
 * **[H]** > ***Stresstest*** (FotoMagico + Kamera, skaliert + Skype, skaliert)
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
-
-* **go/no go poll Gast**
+### go/no go poll Guests
 
 * **[2]** und Gespräch beenden
 
@@ -97,7 +95,7 @@
 * 📴 Smartphone und Tablet lautlos?
 
 ### Hammerspoon
-* **[ctrl][alt]\[cmd] & [G]**
+* **[ctrl][alt][cmd] & [G]**
 
 ### FotoMagico
 * **[cmd] & [P]** Startposition `FotoMagico`/ Vollbild
@@ -115,7 +113,10 @@
 * **[1]**
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 * ⚠ Stream nicht beenden!
-* **go/no go poll**
+
+### FotoMagico
+* **[cmd] & [P]** Startposition `FotoMagico`/ Vollbild
+### go/no go poll
 ⏹️ ☎️  Olaf  
 
 🚽
