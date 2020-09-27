@@ -205,5 +205,7 @@
 * auf vereinbartes Zeichen/ vereinbarten Zeitpunkt warten
 * insbesondere YouTube schliessen 
 * Anrufen und auf Zeichen warten
-* Live! Schnelle Bewegungen vermeiden.
-* nach Verabschiedung noch ca. 10sec "verharren" und dann die Verbingung selbst (!) beenden
+* Live!
+    * Schnelle Bewegungen vermeiden.
+    * Bewusst in die Kamera schaue und das eigene Bild, insbesondere Position zur/ der Kamera, laufend kontrollieren!
+* nach Verabschiedung noch ca. 10sec "verharren" und dann die Verbingung selbst (!) beenden.
