@@ -1,4 +1,4 @@
-# Hotkeys
+# ⌨ Hotkeys
 
 ## OBS
 ### Allgemein
@@ -10,11 +10,11 @@
     * 🔇 alle Audioquellen geschlossen
 
 2. **[2]** Szene "Cam" 🎥
-    * 🔊 alle Audioquellen, außer Gast, offen
-    * 🎥 `Internal`
-    * 📺 Screen, Spendenaufruf, ❓ und Chat 💬 nicht sichtbar
+    * 🔊 alle Audioquellen, außer Gast ❌, offen
+    * 🎥 `Internal` voreingestellt
+    * 📺 Screen, Spendenaufruf, ❓ und Chat 💬 ausgeblendet
 
-    Hotkeys
+    ⌨ Hotkeys
     * **[<]** Kameraumschaltung
     * **[+]** "Screen" 📺 ein-/ausblenden
     * **[?]** ❓
@@ -22,10 +22,10 @@
     * **[€]** Spendenaufruf
 
 3. **[3]** Szene "Screen" 📺
-    * 🔊 alle Audioquellen, außer Gast, offen
-    * Kameras nicht sichtbar
+    * 🔊 alle Audioquellen, außer Gasti ❌, offen
+    * Kameras ausgeblendet
 
-    Hotkeys
+    ⌨ Hotkeys
     * **[+]** Kameras ein-/ausblenden
         * 🎥 `Internal` (links unten) voreingestellt
     * **[<]** Kameraumschaltung
@@ -43,12 +43,12 @@
     * wechselt zu Szene "Finish"
 
 ### Guest 📞
-* **[1]**, **[2]**, **[3]** und **[4]** - Gast niemals hör- und sichtbar
+* **[1]**, **[2]**, **[3]** und **[4]** - Gast immer stummi geschaltet und ausgeblendet
 
 * **[F]** Szene "**F**ull" entspricht Szene "Cam" **[2]** mit Gast anstatt Gastgeber im Großbild
     * 🔊 alle Audioquellen, außer Gastgeber 🔇, offen
 
-    Hotkeys
+    ⌨ Hotkeys
     * **[+]** "Screen" 📺 ein-/ausblenden
     * **[?]** ❓
     * **[C]** Chat 💬 aus-/einblenden
@@ -56,8 +56,10 @@
 
 * **[G]** Szene "**G**uest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
     * 🔊 alle Audioquellen offen
+    * 🎥 `Internal` voreingestellt
+    * 📺 Screen, Spendenaufruf und ❓ ausgeblendet
 
-    Hotkeys
+    ⌨ Hotkeys
     * **[<]** Kameraumschaltung
     * **[?]** ❓
     * **[C]** Chat 💬 aus-/einblenden
@@ -65,10 +67,10 @@
 
 * **[H]** Szene "**H**istory" entspricht Szene "Screen" **[3]**
     * 🔊 alle Audioquellen offen
-    * Kameras/ Gast unmittelbar sichtbar
+    * Kameras/ Gast unmittelbar engeblendet
     * 🎥 `External` (rechts oben) voreingestellt
 
-    Hotkeys
+    ⌨ Hotkeys
     * **[+]** Kameras aus-/einblenden
     * **[<]** Kameraumschaltung
 
