@@ -1,9 +1,3 @@
--- Alerts
-hs.alert.defaultStyle.strokeColor = {red = 1, alpha = 1}
-hs.alert.defaultStyle.strokeWidth = 10
-hs.alert.defaultStyle.textColor = {red = 1, alpha = 1}
--- hs.alert.defaultStyle.textSize = 64
-
 function applicationWatcher(appName, eventType, appObject)
 	if appName == "OBS" then
 		if eventType == hs.application.watcher.launching then
@@ -20,9 +14,12 @@ function mailLogs()
 		"system_profiler -json -detailLevel full SPAudioDataType SPCameraDataType SPDisplaysDataType SPHardwareDataType SPSoftwareDataType > /tmp/system.json"
 	)
 	local mailer = hs.sharing.newShare("com.apple.share.Mail.compose")
-	mailer:subject("Logfiles " .. os.date()):recipients({"o.koepke@gmx.de"})
+--	local mailer = hs.sharing.newShare("com.apple.messages.ShareExtension")
+	mailer:subject("Logfiles " .. os.date()):recipients({ "user@address.com" })
+--	mailer:recipients({ "o.koepke@gmx.de" })
 	mailer:shareItems(
 		{
+			[[ Test ]],
 			hs.sharing.fileURL("/tmp/log.txt"),
 			hs.sharing.fileURL("/tmp/system.json"),
 			hs.sharing.fileURL("~/Library/Application Support/obs-studio/basic"),
@@ -36,7 +33,8 @@ function postFlight()
 	local devices = hs.screen.allScreens()
 	for i, dev in ipairs(devices) do
 		if dev ~= hs.screen.primaryScreen() then
-			dev:setMode(1920, 1080, 1)					-- specific
+			dev:setMode(1920, 1080, 1) -- specific
+			dev:desktopImageURL("file:///System/Library/CoreServices/DefaultDesktop.heic")
 		end
 	end
 
@@ -62,42 +60,50 @@ function postFlight()
 end
 
 function preFlight()
-	local muted = "false"
+	local headset = false
+	local monitor = false
+	local muted = "False"
 
 	local log = io.open("/tmp/log.txt", "w")
 	log:write(os.date() .. "\n")
 
-	hs.messages.iMessage("o.koepke@gmx.de", os.date() .. "Test")
+	hs.messages.iMessage("o.koepke@gmx.de", os.date() .. " preFlight")
 
 	-- Video
-	local alarm = true
-	log:write("\nScreens\n")
+	log:write("🖥️ Screens\n")
 
 	devices = hs.screen.allScreens()
 	log:write(hs.inspect(devices) .. "\n")
 
 	for i, dev in ipairs(devices) do
-		log:write("Screen: " .. dev:position() .. "\n")
+		log:write("🖥️ Screen: " .. dev:position() .. "\n")
 		log:write("current: " .. hs.inspect(dev:currentMode()) .. "\n")
+		dev:setBrightness(0.75)
 		if dev ~= hs.screen.primaryScreen() then
-			dev:setMode(1280, 720, 1)
-			alarm = false
-		elseif dev:name() == "Color LCD" then					-- MacBook?
---			dev:setMode(1680, 1050, 1)					-- specific
+			monitor = dev:setMode(1280, 720, 1)
+			local image =
+				hs.image.imageFromURL(
+				"https://www.tieranzeigen.com/bauernhoftiere/ziegen/ziegen.jpg"
+			)
+			image:saveToFile("/tmp/desktop")
+			dev:desktopImageURL("file:///tmp/desktop")
+		elseif dev:name() == "Color LCD" then -- MacBook?
+		--			dev:setMode(1680, 1050, 1)					-- specific
 		end
-		log:write("done: " .. hs.inspect(dev:currentMode()) .. "\n")
---		log:write(hs.inspect(dev:availableModes()) .. "\n")			-- for new platforms
+		log:write("done: " ..hs.inspect(dev:currentMode()) .. "\n")
+		--		log:write(hs.inspect(dev:availableModes()) .. "\n")			-- for new platforms
 	end
-	if alarm then
-		hs.alert.show("Connect external MONITOR!")
-		log:write("\nConnect external MONITOR!\n")
+	if not monitor then
+		hs.alert.show("🚨 🖥️ 🚨", 10)
+		log:write("🚨 🖥️ 🚨\n")
+		hs.messages.iMessage("o.koepke@gmx.de", "🚨 🖥️ 🚨")
 	end
 
 	-- FotoMagico
 	hs.execute("defaults delete com.boinx.FotoMagico5 'NSWindow Frame GetInfo'")
 	hs.execute("defaults delete com.boinx.FotoMagico5 masterVolume")
 	hs.execute("defaults delete com.boinx.FotoMagico5 FMThemeType")
---	hs.execute("defaults write com.boinx.FotoMagico5 FMThemeType -int 2")
+	--	hs.execute("defaults write com.boinx.FotoMagico5 FMThemeType -int 2")
 	hs.execute("defaults write com.boinx.FotoMagico5 ScreenHasBeenChosen -int 1")
 	hs.execute("defaults write com.boinx.FotoMagico5 defaultHeight -int 720")
 	hs.execute("defaults write com.boinx.FotoMagico5 defaultWidth -int 1280")
@@ -108,41 +114,48 @@ function preFlight()
 	hs.osascript._osascript("set volume alert volume 0", "")
 
 	-- Audio Input Devices
-	log:write("\nAudio Input Devices\n")
+	log:write("🎤 Audio Input Devices\n")
 	log:write("current: " .. hs.inspect(hs.audiodevice.current(true)) .. "\n")
 
 	devices = hs.audiodevice.allInputDevices()
-	log:write(hs.inspect(devices) .. "\n\n")
+	log:write(hs.inspect(devices) .. "\n")
 	for i, dev in ipairs(devices) do
 		dev:setInputMuted(false)
 		dev:setBalance(0.5)
+		if dev:jackConnected() then
+			headset = true
+			log:write("👍 🎧 👌\n")
+		end
 		if dev:transportType() == "Built-in" then
 			dev:setDefaultInputDevice()
-			dev:setInputVolume(40)						 -- Micro
+			dev:setInputVolume(40) -- Micro
 		elseif dev:transportType() == "Virtual" then
-			dev:setInputVolume(40)						 -- NDI Audio
+			dev:setInputVolume(40) -- NDI Audio
 		else
 			dev:setInputMuted(true)
 		end
 		if dev:inputMuted() then
-			muted = "Muted"
+			muted = "true"
 		end
-		log:write(dev:transportType() .. " " .. dev:name() .. " " .. dev:inputVolume() .. " " .. muted .. "\n")
+		log:write(dev:transportType() .. " " .. dev:name() .. " " .. dev:inputVolume() .. " Muted:" .. muted .. "\n")
 	end
-	log:write("\ndone: " .. hs.inspect(hs.audiodevice.current(true)) .. "\n")
+	log:write("done: " .. hs.inspect(hs.audiodevice.current(true)) .. "\n")
 
 	-- Mac(Book) Pro
-	if hs.audiodevice.findDeviceByUID("BuiltInMicrophoneDevice") then
+	if hs.audiodevice.findDeviceByUID("BuiltInHeadphoneInputDevice") then
+		headset = true
 		if hs.audiodevice.findDeviceByUID("BuiltInHeadphoneInputDevice"):setDefaultInputDevice() then
-			log:write("re-done: " .. hs.inspect(hs.audiodevice.current(true)) .. "")
-		else
-			hs.alert.show("Connect HEADSET!")
-			log:write("\nConnect HEADSET!\n")
+			log:write("re-done: " .. hs.inspect(hs.audiodevice.current(true)) .. "\n")
 		end
+	end
+	if not headset then
+		hs.alert.show("🚨 🎧 🚨", 10)
+		log:write("🚨 🎧 🚨\n")
+		hs.messages.iMessage(i "o.koepke@gmx.de", "🚨 🎧 🚨")
 	end
 
 	-- Audio Output Devices
-	log:write("\nAudio Output Devices\n")
+	log:write("🎧 Audio Output Devices\n")
 	log:write("current: " .. hs.inspect(hs.audiodevice.current()) .. "\n")
 
 	devices = hs.audiodevice.allOutputDevices()
@@ -155,7 +168,7 @@ function preFlight()
 			dev:setVolume(50)
 		elseif dev:transportType() == "Virtual" then
 			dev:setDefaultOutputDevice()
-			dev:setInputVolume(75)						 -- BlackHole
+			dev:setInputVolume(75) -- BlackHole
 			dev:setVolume(100)
 		else
 			dev:setVolume(50)
@@ -163,7 +176,9 @@ function preFlight()
 		end
 
 		if dev:inputVolume() then
-			log:write(dev:transportType() .. " " .. dev:name() .. " " .. dev:volume() .. " >< " .. dev:inputVolume() .. "\n")
+			log:write(
+				dev:transportType() .. " " .. dev:name() .. " " .. dev:volume() .. " 🎤 " .. dev:inputVolume() .. "\n"
+			)
 		else
 			log:write(dev:transportType() .. " " .. dev:name() .. " " .. dev:volume() .. "\n")
 		end
@@ -176,15 +191,17 @@ function preFlight()
 
 	-- Power
 	if hs.battery.powerSource() ~= "AC Power" then
-		hs.alert.show("Connect POWER!")
-		log:write("\nConnect POWER!\n")
+		hs.alert.show("🚨 🔌 🚨", 10)
+		log:write("🚨 🔌 🚨\n")
+		hs.messages.iMessage("o.koepke@gmx.de", "🚨 🔌 🚨")
 	end
 
 	-- Network
 	if hs.network.interfaceDetails(v4) then
 		if hs.network.interfaceDetails(v4)["AirPort"] then
-			hs.alert.show("Connect LAN!")
-			log:write("\nConnect LAN!\n")
+			hs.alert.show("🚨 📶 🚨", 10)
+			log:write("🚨 📶 🚨\n")
+			hs.messages.iMessage("o.koepke@gmx.de", "🚨 📶 🚨")
 		else
 			hs.wifi.setPower(false)
 		end
@@ -223,7 +240,8 @@ end
 function startStreaming()
 	closeApps()
 
-	hs.execute("open -a 'OBS' --args --collection 'gp_naked' --profile 'YTsq' --scene 'Start' --startstreaming --verbose")
+	hs.execute("open -a 'OBS' --args --collection 'gp_naked' --profile 'YTsq' --scene 'Start' --startstreaming")
+	hs.application.open("Messages", 0, true)
 	hs.application.open("Skype", 0, true)
 	hs.application.launchOrFocus("FotoMagico 5")
 end
@@ -236,15 +254,15 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "S", startStreaming)
 
 -- Configuration reloading
 function reloadConfig(files)
-    doReload = false
-    for _,file in pairs(files) do
-        if file:sub(-4) == ".lua" then
-            doReload = true
-        end
-    end
-    if doReload then
-        hs.reload()
-    end
+	doReload = false
+	for _, file in pairs(files) do
+		if file:sub(-4) == ".lua" then
+			doReload = true
+		end
+	end
+	if doReload then
+		hs.reload()
+	end
 end
 myWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
 hs.alert.show("Config loaded")
