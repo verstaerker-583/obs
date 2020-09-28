@@ -62,7 +62,9 @@ function postFlight()
 	local devices = hs.screen.allScreens()
 	for i, dev in ipairs(devices) do
 		if dev ~= hs.screen.primaryScreen() then
-			dev:setMode(1920, 1080, 1) -- specific
+			dev:setMode(1920, 1080, 1)					-- specific
+		elseif dev:name() == "Color LCD" then					-- MacBook?
+			dev:setMode(1440, 900, 1)					-- specific
 		end
 	end
 
@@ -88,13 +90,13 @@ function postFlight()
 end
 
 function preFlight()
+	hs.messages.iMessage("o.koepke@gmx.de", os.date() .. " preFlight")
+
 	local headset = false
 	local monitor = false
 
 	local log = io.open("/tmp/log.txt", "w")
 	log:write(os.date() .. "\n")
-
-	hs.messages.iMessage("o.koepke@gmx.de", os.date() .. " preFlight")
 
 	-- Video
 	log:write("🖥️ Screens\n")
@@ -108,8 +110,8 @@ function preFlight()
 		dev:setBrightness(0.75)
 		if dev ~= hs.screen.primaryScreen() then
 			monitor = dev:setMode(1280, 720, 1)
-		elseif dev:name() == "Color LCD" then -- MacBook?
---			dev:setMode(1680, 1050, 1)					-- specific
+		elseif dev:name() == "Color LCD" then					-- MacBook?
+			dev:setMode(1920, 1200, 1)					-- specific
 		end
 		log:write("done: " ..hs.inspect(dev:currentMode()) .. "\n")
 		log:write(hs.inspect(dev:availableModes()) .. "\n")			-- for new platforms
@@ -253,10 +255,10 @@ function watchFiles(files)
 end
 
 -- Watcher
-hs.application.watcher.new(applicationWatcher):start()
-hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
-hs.pathwatcher.new(os.getenv("HOME") .. "/Documents/DieWeltImBlick", watchFiles):start()
-hs.pathwatcher.new(os.getenv("HOME") .. "/Users/markus/Documents/Die Welt im Blick - Online Show", watchFiles):start()
+mywatcher0 = hs.application.watcher.new(applicationWatcher):start()
+mywatcher1 = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
+mywatcher2 = hs.pathwatcher.new(os.getenv("HOME") .. "/Documents/DieWeltImBlick", watchFiles):start()
+mywatcher3 = hs.pathwatcher.new(os.getenv("HOME") .. "/Users/markus/Documents/Die Welt im Blick - Online Show", watchFiles):start()
 
 -- Key Bindings
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "G", preFlight)

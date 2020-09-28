@@ -9,14 +9,9 @@ rm -rf ~/"$OBS"
 #
 # maintenance
 #
-cp "/Users/markus/Documents/Die Welt im Blick - Online Show /Trailer/Intro NE 1 - Zugabe.mov" ~/Documents/DieWeltImBlick/intro.mov
-mv "/Users/markus/Documents/Die Welt im Blick - Online Show " "/Users/markus/Documents/Die Welt im Blick - Online Show"
-
-find ~/Documents/DieWeltImBlick -d -exec touch -ht 197304291400 '{}' \;
-chmod -R -w ~/Documents/DieWeltImBlick
-chown root ~/Documents/DieWeltImBlick/outro.mov
 
 rm -rf /Users/*/"$OBS" /"$OBS"
+
 #
 # maintenance
 #
