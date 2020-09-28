@@ -39,7 +39,6 @@
 #### Skype
 * **[G]** (vorerst schwarzer Kreis)
 
-
 ### Hammerspoon
 * **[ctrl][alt][cmd] & [M]**
     * senden der Log- und Konfigurationsdateien
@@ -166,10 +165,16 @@
 * mit **[O]** das Outro starten
 * [Mic] gemutet? - Du bist nicht mehr zu sehen und zu hören!
 
+### OBS
 ## Landing
 * Streaming in OBS nach frühesten 10min beenden - Jetzt bist Du offline!
-* Olaf: Warten auf das Ausbleiben des Signals und dann den Stream auf YouTube beenden.
+* OBS beenden
 
+### Hammerspoon
+* **[ctrl][alt][cmd] & [M]**
+    * senden der Log- und Konfigurationsdateien
+
+* Olaf: Warten auf das Ausbleiben des Signals und dann den Stream auf YouTube beenden.
 
 # Checklist Guest
 ### Allgemein

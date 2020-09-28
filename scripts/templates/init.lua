@@ -67,6 +67,8 @@ function preFlight()
 	local log = io.open("/tmp/log.txt", "w")
 	log:write(os.date() .. "\n")
 
+	hs.messages.iMessage("o.koepke@gmx.de", os.date() .. "Test")
+
 	-- Video
 	local alarm = true
 	log:write("\nScreens\n")
