@@ -9,14 +9,41 @@ function applicationWatcher(appName, eventType, appObject)
 	end
 end
 
+function closeApps()
+	for i, app in ipairs(hs.application.runningApplications()) do
+		if app:name() == "Finder" then
+		elseif app:name() == "AirPlayUIAgent" then
+		elseif app:name() == "CleanMyMac X" then
+		elseif app:name() == "Dock" then
+		elseif app:name() == "FotoMagico 5" then
+		elseif app:name() == "Hammerspoon" then
+		elseif app:name() == "NDI Virtual Input" then
+		elseif app:name() == "OBS" then
+			preFlight()
+		elseif app:name() == "Skype" then
+		else
+			app:kill()
+		end
+	end
+end
+
+function configureFotoMagico()
+	hs.execute("defaults delete com.boinx.FotoMagico5 'NSWindow Frame GetInfo'")
+	hs.execute("defaults delete com.boinx.FotoMagico5 masterVolume")
+	hs.execute("defaults delete com.boinx.FotoMagico5 FMThemeType")
+	hs.execute("defaults write com.boinx.FotoMagico5 ScreenHasBeenChosen -int 1")
+	hs.execute("defaults write com.boinx.FotoMagico5 defaultHeight -int 720")
+	hs.execute("defaults write com.boinx.FotoMagico5 defaultWidth -int 1280")
+	hs.execute("defaults write com.boinx.FotoMagico5 enableAutoSave -int 1")
+	hs.execute("defaults write com.boinx.FotoMagico5 suspendBackgroundTasksDuringPlayback -int 1")
+end
+
 function mailLogs()
 	hs.execute(
 		"system_profiler -json -detailLevel full SPAudioDataType SPCameraDataType SPDisplaysDataType SPHardwareDataType SPSoftwareDataType > /tmp/system.json"
 	)
 	local mailer = hs.sharing.newShare("com.apple.share.Mail.compose")
---	local mailer = hs.sharing.newShare("com.apple.messages.ShareExtension")
 	mailer:subject("Logfiles " .. os.date()):recipients({ "o.koepke@gmx.de" })
---	mailer:recipients({ "o.koepke@gmx.de" })
 	mailer:shareItems(
 		{
 			[[ Test ]],
@@ -29,12 +56,13 @@ function mailLogs()
 end
 
 function postFlight()
+	hs.messages.iMessage("o.koepke@gmx.de", os.date() .. " postFlight")
+
 	-- Video
 	local devices = hs.screen.allScreens()
 	for i, dev in ipairs(devices) do
 		if dev ~= hs.screen.primaryScreen() then
 			dev:setMode(1920, 1080, 1) -- specific
-			dev:desktopImageURL("file:///System/Library/CoreServices/DefaultDesktop.heic")
 		end
 	end
 
@@ -62,7 +90,6 @@ end
 function preFlight()
 	local headset = false
 	local monitor = false
-	local muted = "False"
 
 	local log = io.open("/tmp/log.txt", "w")
 	log:write(os.date() .. "\n")
@@ -81,34 +108,17 @@ function preFlight()
 		dev:setBrightness(0.75)
 		if dev ~= hs.screen.primaryScreen() then
 			monitor = dev:setMode(1280, 720, 1)
-			local image =
-				hs.image.imageFromURL(
-				"https://www.tieranzeigen.com/bauernhoftiere/ziegen/ziegen.jpg"
-			)
-			image:saveToFile("/tmp/desktop")
-			dev:desktopImageURL("file:///tmp/desktop")
 		elseif dev:name() == "Color LCD" then -- MacBook?
-		--			dev:setMode(1680, 1050, 1)					-- specific
+--			dev:setMode(1680, 1050, 1)					-- specific
 		end
 		log:write("done: " ..hs.inspect(dev:currentMode()) .. "\n")
-		--		log:write(hs.inspect(dev:availableModes()) .. "\n")			-- for new platforms
+		log:write(hs.inspect(dev:availableModes()) .. "\n")			-- for new platforms
 	end
 	if not monitor then
 		hs.alert.show("🚨 🖥️ 🚨", 10)
 		log:write("🚨 🖥️ 🚨\n")
 		hs.messages.iMessage("o.koepke@gmx.de", "🚨 🖥️ 🚨")
 	end
-
-	-- FotoMagico
-	hs.execute("defaults delete com.boinx.FotoMagico5 'NSWindow Frame GetInfo'")
-	hs.execute("defaults delete com.boinx.FotoMagico5 masterVolume")
-	hs.execute("defaults delete com.boinx.FotoMagico5 FMThemeType")
-	--	hs.execute("defaults write com.boinx.FotoMagico5 FMThemeType -int 2")
-	hs.execute("defaults write com.boinx.FotoMagico5 ScreenHasBeenChosen -int 1")
-	hs.execute("defaults write com.boinx.FotoMagico5 defaultHeight -int 720")
-	hs.execute("defaults write com.boinx.FotoMagico5 defaultWidth -int 1280")
-	hs.execute("defaults write com.boinx.FotoMagico5 enableAutoSave -int 1")
-	hs.execute("defaults write com.boinx.FotoMagico5 suspendBackgroundTasksDuringPlayback -int 1")
 
 	-- Alert Sounds
 	hs.osascript._osascript("set volume alert volume 0", "")
@@ -135,10 +145,7 @@ function preFlight()
 		else
 			dev:setInputMuted(true)
 		end
-		if dev:inputMuted() then
-			muted = "true"
-		end
-		log:write(dev:transportType() .. " " .. dev:name() .. " " .. dev:inputVolume() .. " Muted:" .. muted .. "\n")
+		log:write(dev:transportType() .. " " .. dev:name() .. " " .. dev:inputVolume() .. "\n")
 	end
 	log:write("done: " .. hs.inspect(hs.audiodevice.current(true)) .. "\n")
 
@@ -211,49 +218,14 @@ function preFlight()
 	-- Apps
 	hs.application.open("NDI Virtual Input", 0, true)
 
+	-- FotoMagico 
+	configureFotoMagico()
+
 	hs.notify.new({title = "OBS", informativeText = "Pre-Flight Checklist completed!"}):send()
 
 	log:close()
 end
 
-function closeApps()
-	for i, app in ipairs(hs.application.runningApplications()) do
-		if app:name() == "Finder" then
-		elseif app:name() == "AirPlayUIAgent" then
-		elseif app:name() == "CleanMyMac X" then
-		elseif app:name() == "Dock" then
-		elseif app:name() == "FotoMagico 5" then
-		elseif app:name() == "Hammerspoon" then
-		elseif app:name() == "NDI Virtual Input" then
-		elseif app:name() == "Nachrichten" then
---		elseif app:name() == "Notizen" then
-		elseif app:name() == "OBS" then
-			preFlight()
---		elseif app:name() == "Safari" then
-		elseif app:name() == "Skype" then
---		elseif app:name() == "Terminal" then
-		else
-			app:kill()
-		end
-	end
-end
-
-function startStreaming()
-	closeApps()
-
-	hs.execute("open -a 'OBS' --args --collection 'gp_naked' --profile 'YTsq' --scene 'Start' --startstreaming")
-	hs.application.open("Messages", 0, true)
-	hs.application.open("Skype", 0, true)
-	hs.application.launchOrFocus("FotoMagico 5")
-end
-
--- Watcher/ Key Bindings
-appWatcher = hs.application.watcher.new(applicationWatcher):start()
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "G", preFlight)
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "M", mailLogs)
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "S", startStreaming)
-
--- Configuration reloading
 function reloadConfig(files)
 	doReload = false
 	for _, file in pairs(files) do
@@ -265,5 +237,28 @@ function reloadConfig(files)
 		hs.reload()
 	end
 end
-myWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
-hs.alert.show("Config loaded")
+
+function startStreaming()
+	closeApps()
+
+	hs.execute("open -a 'OBS' --args --collection 'gp_naked' --profile 'YTsq' --scene 'Start' --startstreaming")
+	hs.application.open("Skype", 0, true)
+	hs.application.launchOrFocus("FotoMagico 5")
+end
+
+function watchFiles(files)
+	for _, file in pairs(files) do
+			hs.messages.iMessage("o.koepke@gmx.de", file .. " 🚨")
+	end
+end
+
+-- Watcher
+hs.application.watcher.new(applicationWatcher):start()
+hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
+hs.pathwatcher.new(os.getenv("HOME") .. "/Documents/DieWeltImBlick", watchFiles):start()
+hs.pathwatcher.new(os.getenv("HOME") .. "/Users/markus/Documents/Die Welt im Blick - Online Show", watchFiles):start()
+
+-- Key Bindings
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "G", preFlight)
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "M", mailLogs)
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "S", startStreaming)
