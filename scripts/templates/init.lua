@@ -15,7 +15,7 @@ function mailLogs()
 	)
 	local mailer = hs.sharing.newShare("com.apple.share.Mail.compose")
 --	local mailer = hs.sharing.newShare("com.apple.messages.ShareExtension")
-	mailer:subject("Logfiles " .. os.date()):recipients({ "user@address.com" })
+	mailer:subject("Logfiles " .. os.date()):recipients({ "o.koepke@gmx.de" })
 --	mailer:recipients({ "o.koepke@gmx.de" })
 	mailer:shareItems(
 		{
@@ -228,9 +228,9 @@ function closeApps()
 		elseif app:name() == "Notizen" then
 		elseif app:name() == "OBS" then
 			preFlight()
-		elseif app:name() == "Safari" then
+--		elseif app:name() == "Safari" then
 		elseif app:name() == "Skype" then
-		elseif app:name() == "Terminal" then
+--		elseif app:name() == "Terminal" then
 		else
 			app:kill()
 		end
