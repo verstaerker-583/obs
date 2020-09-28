@@ -39,7 +39,7 @@ for QUALITY in lq mq sq; do
 	sed -f profiles$QUALITY.sed templates/basic.ini|sed -f took.sed > ~/"Library/Application Support/obs-studio/basic/profiles/YT$QUALITY/basic.ini"
 done
 
-#cp templates/init.lua ~/.hammerspoon
+cp templates/init.lua ~/.hammerspoon
 sed -f took.sed templates/global.ini > ~/"Library/Application Support/obs-studio/global.ini"
 
 #

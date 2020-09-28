@@ -125,6 +125,7 @@ function preFlight()
 		if dev:jackConnected() then
 			headset = true
 			log:write("👍 🎧 👌\n")
+		hs.messages.iMessage("o.koepke@gmx.de", "👍 🎧 👌")
 		end
 		if dev:transportType() == "Built-in" then
 			dev:setDefaultInputDevice()
@@ -151,7 +152,7 @@ function preFlight()
 	if not headset then
 		hs.alert.show("🚨 🎧 🚨", 10)
 		log:write("🚨 🎧 🚨\n")
-		hs.messages.iMessage(i "o.koepke@gmx.de", "🚨 🎧 🚨")
+		hs.messages.iMessage("o.koepke@gmx.de", "🚨 🎧 🚨")
 	end
 
 	-- Audio Output Devices
@@ -225,7 +226,7 @@ function closeApps()
 		elseif app:name() == "Hammerspoon" then
 		elseif app:name() == "NDI Virtual Input" then
 		elseif app:name() == "Nachrichten" then
-		elseif app:name() == "Notizen" then
+--		elseif app:name() == "Notizen" then
 		elseif app:name() == "OBS" then
 			preFlight()
 --		elseif app:name() == "Safari" then
