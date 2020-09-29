@@ -16,6 +16,7 @@
     * nicht erforderliche Anwendungen werden geschlossen
     * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
     * FotoMagico und Skype werden geöffnet
+
 ▶️ 🔴 OBS streamt
 
 * **[ctrl][alt][cmd] & [W]**
@@ -92,7 +93,9 @@
 
 * **[2]** und Gespräch beenden
 * `Stream beenden`
+
 ⏹️ 🔴
+
 * **[1]**
 * **Programme geöffnet lassen!**
 
@@ -108,7 +111,8 @@
 * 📴 Smartphone und Tablet lautlos?
 
 ### Hammerspoon
-* **[ctrl][alt][cmd] & [G]**
+* **[ctrl][alt][cmd] & [S]**
+
 ▶️ 🔴 OBS streamt
 
 ### FotoMagico
@@ -182,7 +186,9 @@
 ## Landing
 * ~ 10 Minuten warten 
 * `Stream beenden`
+
 ⏹️ 🔴
+
 * OBS beenden
 
 ### Hammerspoon
