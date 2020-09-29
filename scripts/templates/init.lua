@@ -22,7 +22,6 @@ function closeApps()
 		elseif app:name() == "AirPlayUIAgent" then
 --		elseif app:name() == "Dock" then
 		elseif app:name() == "FotoMagico 5" then
-			streamLayout()
 		elseif app:name() == "Hammerspoon" then
 		elseif app:name() == "NDI Virtual Input" then
 		elseif app:name() == "OBS" then
