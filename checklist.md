@@ -6,14 +6,20 @@
 * Neustart Computer
 
 ### Hammerspoon
-* **[ctrl][alt][cmd] & [S]**
+* **[ctrl][alt][cmd] & [G]**
     * Audio- und Videoeinstellungen werden vorgenommen
     * Powermanagement wird deaktiviert
     * WiFi wird deaktiviert
-    * nicht erforderliche Anwendungen werden geschlossen
     * verschiedene Prüfungen werden durchgeführt
+
+* **[ctrl][alt][cmd] & [S]**
+    * nicht erforderliche Anwendungen werden geschlossen
     * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
-    * OBS streamt 🔴
+    * FotoMagico und Skype werden geöffnet
+▶️ 🔴 OBS streamt
+
+* **[ctrl][alt][cmd] & [W]**
+    * `Skype`, `FotoMagico` und `OBS` werden an den vorgegebenen Positionen in der vorgegebenen Größe platziert 
 
 ### FotoMagico
 * Präsentation laden
@@ -21,7 +27,7 @@
 
 ### OBS
 #### Szenen in Ausgangsposition, Quellen sicht-/unsichtbar schalten und Overlays vom Server laden
-* ⚠ Vorschaubild OBS anklicken!
+* ⚠ OBS nicht anklicken, damit FotoMagico bedienbar bleibt. 
 * **[1]**
 * **[2]**, **[€]**
 * **[<]**
@@ -44,6 +50,13 @@
     * senden der Log- und Konfigurationsdateien
 
 ### Skype
+#### Skype > Einstellungen > Allgemein
+* ☐ `Skype nach Schließen weiter ausführen`
+#### Skype > Einstellungen > Darstellung
+* Modi
+    * ☒ `Dunkel`
+#### Skype > Einstellungen > Anrufe
+* ☐ `Anruffenster anzeigen, wenn sich Skype im Hitergrund befindet`
 #### Skype > Einstellungen > Anrufe > Erweitert
 * ☒ `Eingehende Anrufe automatisch annehmen`
 * ☒ `Video automatisch starten`
@@ -78,8 +91,8 @@
 ### go/no go poll Guests
 
 * **[2]** und Gespräch beenden
-
 * `Stream beenden`
+⏹️ 🔴
 * **[1]**
 * **Programme geöffnet lassen!**
 
@@ -96,13 +109,14 @@
 
 ### Hammerspoon
 * **[ctrl][alt][cmd] & [G]**
+▶️ 🔴 OBS streamt
 
 ### FotoMagico
 * **[cmd] & [P]** Startposition `FotoMagico`/ Vollbild
 
 ### OBS
 #### Szenen in Ausgangsposition, Quellen sicht-/unsichtbar schalten und Overlays vom Server laden
-* ⚠ Vorschaubild OBS anklicken!
+* ⚠ OBS nicht anklicken, damit FotoMagico bedienbar bleibt. 
 * **[1]**
 * **[2]**, **[€]**, **[C]**
 * **[<]**
@@ -137,7 +151,6 @@
 
 ⏰ **19:25 Uhr**
 ## Launch
-* `FotoMagico` (anklicken, damit bedienbar)
 * auf den "Alarm" warten
 * mit **[I]** das Intro starten 🚀
 * Status:
@@ -167,7 +180,9 @@
 
 ### OBS
 ## Landing
-* Streaming in OBS nach frühesten 10min beenden - Jetzt bist Du offline!
+* ~ 10 Minuten warten 
+* `Stream beenden`
+⏹️ 🔴
 * OBS beenden
 
 ### Hammerspoon

@@ -5,6 +5,8 @@
 * **[M]** 🔇 Mikrofon
 * **[D]** 🔇 Desktop Audio
 
+* **[ctrl][alt][cmd] & [S]** - ***"Streamen"***
+
 ### Szenen
 1. **[1]** Szene "Start" ⏰
     * 🔇 alle Audioquellen geschlossen
@@ -93,11 +95,13 @@
     * `Skype`, `FotoMagico` und `NDI Virtual Input` werden geöffnet
     * nicht erforderliche Anwendungen werden geschlossen
     * wenn OBS nicht schon aktiv: 
-        * "Grundeinstellungen" (weil mit OBS verknüpft)
         * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
         * OBS streamt 🔴
     * auch wiederholbar
     * Schnellste Möglichkeit - nach z.B einem Reboot, wieder in die volle Streaming-Konfiguration zu kommen.
+
+* **[ctrl][alt][cmd] & [W]** - ***"Windows"*** 🔧
+    * `Skype`, `FotoMagico` und `OBS` werden an den vorgegebenen Positionen in der vorgegebenen Größe platziert 
 
 * **[ctrl][alt][cmd] & [M]** - ***"Mail"*** ✉️
     * Log- und Konfiguratuonsdateien sammeln und als Email verschicken
