@@ -73,6 +73,7 @@ sed -f tomm.sed templates/global.ini > /tmp/obs-studio/global.ini
 sed -f tomm.sed ~/.hammerspoon/init.lua > /tmp/obs-studio/init.lua
 
 sudo find ~/Documents/GitHub/obs -exec touch -ht 197304291400 '{}' \;
+sudo find /tmp/obs-studio -exec touch -ht 197304291400 '{}' \;
 chmod -R -w ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs/.git
 

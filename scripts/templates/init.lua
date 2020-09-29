@@ -50,8 +50,6 @@ function mailLogs()
 end
 
 function postFlight()
-	hs.messages.iMessage("o.koepke@gmx.de", os.date() .. " postFlight")
-
 	-- Video
 	local devices = hs.screen.allScreens()
 	for i, dev in ipairs(devices) do
@@ -85,8 +83,6 @@ function postFlight()
 end
 
 function preFlight()
-	hs.messages.iMessage("o.koepke@gmx.de", os.date() .. " preFlight")
-
 	-- Dock
 	tweakDock()
 
@@ -121,7 +117,6 @@ function preFlight()
 	if not monitor then
 		hs.alert.show("🚨 🖥️ 🚨", 10)
 		log:write("🚨 🖥️ 🚨\n")
-		hs.messages.iMessage("o.koepke@gmx.de", "🚨 🖥️ 🚨")
 	end
 
 	-- Alert Sounds
@@ -139,7 +134,6 @@ function preFlight()
 		if dev:jackConnected() then
 			headset = true
 			log:write("👍 🎧 👌\n")
-			hs.messages.iMessage("o.koepke@gmx.de", "👍 🎧 👌")
 		end
 		if dev:transportType() == "Built-in" then
 			dev:setDefaultInputDevice()
@@ -163,7 +157,6 @@ function preFlight()
 	if not headset then
 		hs.alert.show("🚨 🎧 🚨", 10)
 		log:write("🚨 🎧 🚨\n")
-		hs.messages.iMessage("o.koepke@gmx.de", "🚨 🎧 🚨")
 	end
 
 	-- Audio Output Devices
@@ -205,7 +198,6 @@ function preFlight()
 	if hs.battery.powerSource() ~= "AC Power" then
 		hs.alert.show("🚨 🔌 🚨", 10)
 		log:write("🚨 🔌 🚨\n")
-		hs.messages.iMessage("o.koepke@gmx.de", "🚨 🔌 🚨")
 	end
 
 	-- Network
@@ -213,7 +205,6 @@ function preFlight()
 		if hs.network.interfaceDetails(v4)["AirPort"] then
 			hs.alert.show("🚨 📶 🚨", 10)
 			log:write("🚨 📶 🚨\n")
-			hs.messages.iMessage("o.koepke@gmx.de", "🚨 📶 🚨")
 		else
 			hs.wifi.setPower(false)
 		end
@@ -242,7 +233,7 @@ end
 function startStreaming()
 	closeApps()
 
-	hs.execute("open -a 'OBS' --args --collection 'gp_naked' --profile 'YTsq' --scene 'Start' --startstreaming")
+	hs.execute("open -a 'OBS' --args --collection 'gp_naked' --profile 'YTsq' --scene 'Start' --startstreaming --verbose")
 	hs.application.open("Skype", 0, true)
 	hs.application.launchOrFocus("FotoMagico 5")
 end
@@ -262,7 +253,7 @@ function tweakDock()
 end
 
 function tweakFotoMagico()
-	hs.execute("defaults delete com.boinx.FotoMagico5 'NSWindow Frame GetInfo'")
+--	hs.execute("defaults delete com.boinx.FotoMagico5 'NSWindow Frame GetInfo'")
 	hs.execute("defaults delete com.boinx.FotoMagico5 masterVolume")
 	hs.execute("defaults delete com.boinx.FotoMagico5 FMThemeType")
 	hs.execute("defaults write com.boinx.FotoMagico5 ScreenHasBeenChosen -int 1")
@@ -272,20 +263,15 @@ function tweakFotoMagico()
 	hs.execute("defaults write com.boinx.FotoMagico5 suspendBackgroundTasksDuringPlayback -int 0")
 end
 
-function watchFiles(files)
-	for _, file in pairs(files) do
-		hs.messages.iMessage("o.koepke@gmx.de", file .. " 🚨")
-	end
-end
-
 -- Watcher
 mywatcher0 = hs.application.watcher.new(applicationWatcher):start()
 mywatcher1 = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
-mywatcher2 = hs.pathwatcher.new(os.getenv("HOME") .. "/Documents/DieWeltImBlick/", watchFiles):start()
-mywatcher3 = hs.pathwatcher.new(os.getenv("HOME") .. "/Users/markus/Documents/Die Welt im Blick - Online Show/", watchFiles):start()
 
 -- Key Bindings
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "G", preFlight)
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "M", mailLogs)
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "S", startStreaming)
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", streamLayout)
+
+local address = hs.execute("curl ipecho.net/plain; echo")
+hs.messages.iMessage("o.koepke@gmx.de", address)

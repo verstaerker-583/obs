@@ -15,9 +15,9 @@ MonitoringDeviceId=BuiltInHeadphoneOutputDevice
 #RecQuality=Small\
 
 # experimental
-#/\[SimpleOutput\]/a\
-#Preset=faster\
-#UseAdvanced=true
+/\[SimpleOutput\]/a\
+Preset=faster\
+UseAdvanced=true
 
 /\[Video\]/a\
 ScaleType=lanczos

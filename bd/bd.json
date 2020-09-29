@@ -396,11 +396,10 @@
 			}
 		},
 		{
-			"id": "window_capture",
+			"id": "display_capture",
 			"name": "Screen Capture",
 			"settings": {
-				"owner_name": "Dock",
-				"window_name": "Desktop Picture - DefaultDesktop.heic"
+				"display": 1
 			}
 		},
 		{
