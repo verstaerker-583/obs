@@ -34,7 +34,7 @@
 * **[<]**
     * 🎥 `External` aktiv?
 * **[3]**
-    * `FotoMagico` (⚠ FotoMagico anklicken, damit bedienbar) sicht- und hörbar?
+    * `FotoMagico` sicht- und hörbar?
 * **[+]** Kamera zuschalten > ***Stresstest*** (FotoMagico + Kamera, skaliert)
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 * **[4]**
@@ -57,7 +57,7 @@
 * Modi
     * ☒ `Dunkel`
 #### Skype > Einstellungen > Anrufe
-* ☐ `Anruffenster anzeigen, wenn sich Skype im Hitergrund befindet`
+* ☐ `Anruffenster anzeigen, wenn sich Skype im Hintergrund befindet`
 #### Skype > Einstellungen > Anrufe > Erweitert
 * ☒ `Eingehende Anrufe automatisch annehmen`
 * ☒ `Video automatisch starten`
@@ -126,7 +126,7 @@
 * **[<]**
     * 🎥 `External` aktiv?
 * **[3]**
-    * `FotoMagico` (anklicken, damit bedienbar) sicht- und hörbar?
+    * `FotoMagico` sicht- und hörbar?
 * **[4]**
 * **[1]**
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
@@ -158,7 +158,7 @@
 * auf den "Alarm" warten
 * mit **[I]** das Intro starten 🚀
 * Status:
-    * alle Audioquellen öffnen, du kannst mit **[M]** muten
+    * alle Audioquellen offen, du kannst mit **[M]** muten
     * wechselt automatisch zu Szene "Cams"
 * Auf geht's! 🎬
 
@@ -182,7 +182,6 @@
 * mit **[O]** das Outro starten
 * [Mic] gemutet? - Du bist nicht mehr zu sehen und zu hören!
 
-### OBS
 ## Landing
 * ~ 10 Minuten warten 
 * `Stream beenden`
@@ -234,4 +233,4 @@
 * Live!
     * Schnelle Bewegungen vermeiden.
     * Bewusst in die Kamera schauen und das eigene Bild, insbesondere Position zur/ der Kamera, laufend kontrollieren!
-* Nach Verabschiedung noch ca. 10sec "verharren" und dann die Verbingung selbst (!) beenden.
+* Nach Verabschiedung noch ca. 10sec "verharren" und dann die Verbindung selbst (!) beenden.
