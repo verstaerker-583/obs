@@ -169,7 +169,7 @@ function preFlight()
 		dev:setMuted(false)
 		dev:setBalance(0.5)
 		if dev:transportType() == "Built-in" then
-			dev:setVolume(50)
+			dev:setVolume(75)
 		elseif dev:transportType() == "Virtual" then
 			dev:setDefaultOutputDevice()
 			dev:setInputVolume(75)						-- BlackHole
