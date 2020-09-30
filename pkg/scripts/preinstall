@@ -10,8 +10,6 @@ rm -rf ~/"$OBS"
 # maintenance
 #
 
-rm -rf /Users/*/"$OBS" /"$OBS"
-
 #
 # maintenance
 #

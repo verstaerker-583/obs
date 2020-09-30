@@ -1,15 +1,20 @@
 #!/bin/sh
 
-chown -R $USER /tmp/obs-studio 
-chown -R root /tmp/obs-studio/basic/profiles
-
 OBS="Library/Application Support/obs-studio"
 
 mkdir -p ~/.hammerspoon
 mv /tmp/obs-studio/init.lua ~/.hammerspoon
 
+chown -R root ~/.hammerspoon
+find ~/.hammerspoon -d -exec touch -ht 197304291400 '{}' \;
+
 mv /tmp/obs-studio ~/"$OBS"
 
+chown -R $USER ~/"$OBS"
+#chown -R root ~/"$OBS"/basic/profiles
+
 find ~/"$OBS" -d -exec touch -ht 197304291400 '{}' \;
+
+touch /tmp/$USER
 
 exit 0

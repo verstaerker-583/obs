@@ -59,57 +59,6 @@
 		}
 	},
 	"AuxAudioDevice2": {
-		"filters": [
-			{
-				"id": "compressor_filter",
-				"name": "Compressor"
-			},
-			{
-				"id": "limiter_filter",
-				"name": "Limiter"
-			}
-		],
-		"hotkeys": {
-			"libobs.mute": [
-				{
-					"key": "OBS_KEY_1"
-				},
-				{
-					"key": "OBS_KEY_4"
-				},
-				{
-					"key": "OBS_KEY_D"
-				},
-				{
-					"key": "OBS_KEY_O"
-				}
-			],
-			"libobs.unmute": [
-				{
-					"key": "OBS_KEY_2"
-				},
-				{
-					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_D"
-				},
-				{
-					"key": "OBS_KEY_I"
-				}
-			]
-		},
-		"id": "coreaudio_input_capture",
-		"monitoring_type": 2,
-		"name": "Desktop Audio",
-		"private_settings": {
-			"volume_locked": true
-		},
-		"settings": {
-			"device_id": "BlackHole2ch_UID"
-		}
-	},
-	"AuxAudioDevice3": {
 		"balance": 0.25,
 		"filters": [
 			{
@@ -172,6 +121,57 @@
 		},
 		"settings": {
 			"device_id": "BF568F24-731B-41DB-932E-AC7E260BC71A"
+		}
+	},
+	"DesktopAudioDevice1": {
+		"filters": [
+			{
+				"id": "compressor_filter",
+				"name": "Compressor"
+			},
+			{
+				"id": "limiter_filter",
+				"name": "Limiter"
+			}
+		],
+		"hotkeys": {
+			"libobs.mute": [
+				{
+					"key": "OBS_KEY_1"
+				},
+				{
+					"key": "OBS_KEY_4"
+				},
+				{
+					"key": "OBS_KEY_D"
+				},
+				{
+					"key": "OBS_KEY_O"
+				}
+			],
+			"libobs.unmute": [
+				{
+					"key": "OBS_KEY_2"
+				},
+				{
+					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_D"
+				},
+				{
+					"key": "OBS_KEY_I"
+				}
+			]
+		},
+		"id": "coreaudio_input_capture",
+		"monitoring_type": 2,
+		"name": "Desktop Audio",
+		"private_settings": {
+			"volume_locked": true
+		},
+		"settings": {
+			"device_id": "BlackHole2ch_UID"
 		}
 	},
 	"current_scene": "Start",

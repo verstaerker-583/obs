@@ -1,16 +1,15 @@
 streamingLayout = {
-	{"OBS", nil, nil, nil, hs.geometry.rect(40, 0, 950, 750), nil},
-	{"FotoMagico 5", nil, nil, nil, hs.geometry.rect(-990, -622, 950, 0), nil},
-	{"Skype", nil, nil, nil, hs.geometry.rect(-660, 0, 0, 0), nil}
+	{"OBS", nil, "Color LCD", nil, hs.geometry.rect(40, 0, 950, 750), nil},
+	{"FotoMagico 5", nil, "Color LCD", nil, hs.geometry.rect(-990, -622, 950, 0), nil},
+	{"Skype", nil, "Color LCD", nil, hs.geometry.rect(-660, 0, 0, 0), nil}
 }
 
 function applicationWatcher(appName, eventType, appObject)
 	if appName == "OBS" then
-		if eventType == hs.application.watcher.launching then
+		if eventType == hs.application.watcher.launched then
 			preFlight(true)
 		end
 		if eventType == hs.application.watcher.terminated then
-			print("post")
 			postFlight()
 		end
 	end
