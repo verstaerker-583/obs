@@ -16,6 +16,7 @@ var donate = {
 var pics = {
 	channelIcon: "https://yt3.ggpht.com/a/AATXAJz1rf8F_1ZMrY7BkibAF0CFrkj4qja9n7fTqgrz=s800-c-k-c0xffffffff-no-rj-mo",
 	clockLogo: "../gpLogo.svg",
+	hostLogo: "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/40-jahre-greenpeace-deutschland_0.png?itok=QofPosZv",
 	organizationLogo: "../gpLogo.svg",
 	organizationLogoNeg: "../gpLogoNeg.svg",
 	presenterLogo: "../../gp/mmLogo.png",

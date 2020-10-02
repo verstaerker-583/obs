@@ -7,7 +7,7 @@ streamingLayout = {
 function applicationWatcher(appName, eventType, appObject)
 	if appName == "OBS" then
 		if eventType == hs.application.watcher.launched then
-			preFlight(true)
+--			preFlight(true)
 		end
 		if eventType == hs.application.watcher.terminated then
 			postFlight()

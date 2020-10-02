@@ -635,9 +635,6 @@
 				],
 				"libobs.hide_scene_item.cams": [
 					{
-						"key": "OBS_KEY_3"
-					},
-					{
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
@@ -657,6 +654,9 @@
 					}
 				],
 				"libobs.show_scene_item.cams": [
+					{
+						"key": "OBS_KEY_3"
+					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
 					},

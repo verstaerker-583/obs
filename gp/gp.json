@@ -28,9 +28,6 @@
 					"key": "OBS_KEY_4"
 				},
 				{
-					"key": "OBS_KEY_F"
-				},
-				{
 					"key": "OBS_KEY_M"
 				},
 				{
@@ -43,6 +40,9 @@
 				},
 				{
 					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_F"
 				},
 				{
 					"key": "OBS_KEY_G"
@@ -370,7 +370,7 @@
 			"settings": {
 				"files": [
 					{
-						"value": "https://www.nasa.gov/sites/default/files/images/297755main_GPN-2001-000009_full.jpg"
+						"value": "/System/Library/Desktop Pictures"
 					}
 				],
 				"slide_mode": "mode_manual",
@@ -788,9 +788,6 @@
 				],
 				"libobs.hide_scene_item.cams": [
 					{
-						"key": "OBS_KEY_3"
-					},
-					{
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
@@ -819,6 +816,9 @@
 					}
 				],
 				"libobs.show_scene_item.cams": [
+					{
+						"key": "OBS_KEY_3"
+					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
 					},

@@ -26,6 +26,14 @@
 	color: #50593c;
 }
 
+#hostLogo {
+	bottom: 10px;
+	height: auto;
+	position: absolute;
+	right: 10px;
+	width: 340px;
+}
+
 body {
 	background: #edc9af;
 	background-image: url("https://markus-mauthe.de/site/assets/files/1/dsc6707.jpg");
