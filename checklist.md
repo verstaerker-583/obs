@@ -6,25 +6,25 @@
 * Neustart Computer
 
 ### Hammerspoon
-* **[ctrl][alt][cmd] & [G]**
+* **[⌃][⌥][⌘] & [G]**
     * Audio- und Videoeinstellungen werden vorgenommen
     * Powermanagement wird deaktiviert
     * WiFi wird deaktiviert
     * verschiedene Prüfungen werden durchgeführt
 
-* **[ctrl][alt][cmd] & [S]**
+* **[⌃][⌥][⌘] & [S]**
     * nicht erforderliche Anwendungen werden geschlossen
     * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
     * FotoMagico und Skype werden geöffnet
 
 ▶️ 🔴 OBS streamt
 
-* **[ctrl][alt][cmd] & [W]**
+* **[⌃][⌥][⌘] & [W]**
     * `Skype`, `FotoMagico` und `OBS` werden an den vorgegebenen Positionen in der vorgegebenen Größe platziert 
 
 ### FotoMagico
 * Präsentation laden
-* **[cmd] & [P]** Startposition `FotoMagico`/ Vollbild
+* **[⌘] & [P]** Startposition `FotoMagico`/ Vollbild
 
 ### OBS
 #### Szenen in Ausgangsposition, Quellen sicht-/unsichtbar schalten und Overlays vom Server laden
@@ -47,7 +47,7 @@
 * **[G]** (vorerst schwarzer Kreis)
 
 ### Hammerspoon
-* **[ctrl][alt][cmd] & [M]**
+* **[⌃][⌥][⌘] & [M]**
     * senden der Log- und Konfigurationsdateien
 
 ### Skype
@@ -111,12 +111,12 @@
 * 📴 Smartphone und Tablet lautlos?
 
 ### Hammerspoon
-* **[ctrl][alt][cmd] & [S]**
+* **[⌃][⌥][⌘] & [S]**
 
 ▶️ 🔴 OBS streamt
 
 ### FotoMagico
-* **[cmd] & [P]** Startposition `FotoMagico`/ Vollbild
+* **[⌘] & [P]** Startposition `FotoMagico`/ Vollbild
 
 ### OBS
 #### Szenen in Ausgangsposition, Quellen sicht-/unsichtbar schalten und Overlays vom Server laden
@@ -133,7 +133,7 @@
 * ⚠ Stream nicht beenden!
 
 ### FotoMagico
-* **[cmd] & [P]** Startposition `FotoMagico`/ Vollbild
+* **[⌘] & [P]** Startposition `FotoMagico`/ Vollbild
 
 ### go/no go poll
 
@@ -191,7 +191,7 @@
 * OBS beenden
 
 ### Hammerspoon
-* **[ctrl][alt][cmd] & [M]**
+* **[⌃][⌥][⌘] & [M]**
     * senden der Log- und Konfigurationsdateien
 
 * Olaf: Warten auf das Ausbleiben des Signals und dann den Stream auf YouTube beenden.

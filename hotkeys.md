@@ -5,7 +5,7 @@
 * **[M]** 🔇 Mikrofon
 * **[D]** 🔇 Desktop Audio
 
-* **[ctrl][alt][cmd] & [S]** - ***"Streamen"***
+* **[⌃][⌥][⌘] & [S]** - ***"Streamen"***
 
 ### Szenen
 1. **[1]** Szene "Start" ⏰
@@ -83,7 +83,7 @@
 * Mit Gast kannst Du in [F] ungesehen und ungehört "ordentlich abhusten".
 
 ## Hammerspoon
-* **[ctrl][alt][cmd] & [G]** - ***"Grundeinstellungen"*** 🧯
+* **[⌃][⌥][⌘] & [G]** - ***"Grundeinstellungen"*** 🧯
     * Audio- und Videoeinstellungen werden vorgenommen
     * Powermanagement wird deaktiviert
     * WiFi wird deaktiviert
@@ -91,7 +91,7 @@
     * kann immer wieder gedrückt werden, z.B. bei Tonproblemen, oder wenn der Monitor Einstellungen "vergisst"
     * wird immer durchgeführt, wenn OBS geöffent wird
 
-* **[ctrl][alt][cmd] & [S]** - ***"Streamen"*** 🔧
+* **[⌃][⌥][⌘] & [S]** - ***"Streamen"*** 🔧
     * `Skype`, `FotoMagico` und `NDI Virtual Input` werden geöffnet
     * nicht erforderliche Anwendungen werden geschlossen
     * wenn OBS nicht schon aktiv: 
@@ -100,11 +100,11 @@
     * auch wiederholbar
     * Schnellste Möglichkeit - nach z.B einem Reboot, wieder in die volle Streaming-Konfiguration zu kommen.
 
-* **[ctrl][alt][cmd] & [W]** - ***"Windows"*** 🔧
+* **[⌃][⌥][⌘] & [W]** - ***"Windows"*** 🔧
     * `Skype`, `FotoMagico` und `OBS` werden an den vorgegebenen Positionen in der vorgegebenen Größe platziert 
 
-* **[ctrl][alt][cmd] & [M]** - ***"Mail"*** ✉️
+* **[⌃][⌥][⌘] & [M]** - ***"Mail"*** ✉️
     * Log- und Konfiguratuonsdateien sammeln und als Email verschicken
 
 ## FotoMagico 🖼
-* **[cmd] & [P]** Präsentation im Vollbildmodus starten
+* **[⌘] & [P]** Präsentation im Vollbildmodus starten
