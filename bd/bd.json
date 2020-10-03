@@ -355,12 +355,12 @@
 			"hotkeys": {
 				"SlideShow.NextSlide": [
 					{
-						"key": "OBS_KEY_N"
+						"key": "OBS_KEY_RIGHT"
 					}
 				],
 				"SlideShow.PreviousSlide": [
 					{
-						"key": "OBS_KEY_V"
+						"key": "OBS_KEY_LEFT"
 					}
 				],
 				"SlideShow.Restart": [

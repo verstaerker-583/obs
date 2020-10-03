@@ -196,7 +196,7 @@
 			"id": "av_capture_input",
 			"name": "External",
 			"settings": {
-				"device": "CC27327P54QGDV4AV"
+				"device": "0x14200000046d0823"
 			}
 		},
 		{

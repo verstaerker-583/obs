@@ -1,12 +1,12 @@
 var start = {
-	theme: "#LIVE 🔴 Markus Mauthe - Naturfotograf & Umweltaktivist",
-	message_neg: "Gleich: Die Welt 🌍 im Blick 📷",
+	theme: "40 Jahre Greenpeace Deutschland - Jetzt erst recht!",
+	message_neg: "Jetzt erst recht!",
 	call2action: "👁 Sei jetzt LIVE dabei!"
 };
 var finish = {
-	theme: "#LIVE 🔴 Markus Mauthe - Naturfotograf & Umweltaktivist",
+	theme: "40 Jahre Greenpeace Deutschland",
 	message_neg: "Vielen Dank und auf Wiedersehen! 💚",
-	call2action: "👁 Sei am 28.10. wieder live dabei!"
+	call2action: "⇨ Unterstütze Greenpeace!"
 };
 var donate = {
 	theme: "💚 Schon kleine Spendenbeträge helfen! 💚",

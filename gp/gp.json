@@ -228,7 +228,7 @@
 			"id": "av_capture_input",
 			"name": "External",
 			"settings": {
-				"device": "CC27327P54QGDV4AV"
+				"device": "0x14200000046d0823"
 			}
 		},
 		{
@@ -351,12 +351,12 @@
 			"hotkeys": {
 				"SlideShow.NextSlide": [
 					{
-						"key": "OBS_KEY_N"
+						"key": "OBS_KEY_RIGHT"
 					}
 				],
 				"SlideShow.PreviousSlide": [
 					{
-						"key": "OBS_KEY_V"
+						"key": "OBS_KEY_LEFT"
 					}
 				],
 				"SlideShow.Restart": [
