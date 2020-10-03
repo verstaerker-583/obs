@@ -136,9 +136,30 @@
 		}
 	},
 	"current_scene": "Start",
-	"name": "gp_40",
+	"name": "sr",
 	"preview_locked": true,
 	"sources": [
+		{
+			"filters": [
+				{
+					"id": "sharpness_filter",
+					"name": "Sharpen"
+				},
+				{
+					"id": "clut_filter",
+					"name": "Apply LUT",
+					"settings": {
+						"clut_amount": 0.25,
+						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
+					}
+				}
+			],
+			"id": "av_capture_input",
+			"name": "External",
+			"settings": {
+				"device": "0x14200000046d0823"
+			}
+		},
 		{
 			"filters": [
 				{
@@ -289,7 +310,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/gp/html/start.html",
+				"url": "https://verstaerker-583.github.io/obs/gp40/html/start.html",
 				"width": 1280
 			}
 		},
@@ -302,7 +323,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/gp/html/cam.html",
+				"url": "https://verstaerker-583.github.io/obs/gp40/html/cam.html",
 				"width": 1280
 			}
 		},
@@ -315,7 +336,7 @@
 			"settings": {
 				"css": "@import url(https://verstaerker-583.github.io/obs/gp/html/chat.css)",
 				"height": 120,
-				"url": "https://verstaerker-583.github.io/obs/gp/html/chat.html",
+				"url": "https://verstaerker-583.github.io/obs/gp40/html/chat.html",
 				"width": 640
 			}
 		},
@@ -328,7 +349,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/gp/html/donate.html",
+				"url": "https://verstaerker-583.github.io/obs/gp40/html/donate.html",
 				"width": 1280
 			}
 		},
@@ -341,7 +362,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/gp/html/finish.html",
+				"url": "https://verstaerker-583.github.io/obs/gp40/html/finish.html",
 				"width": 1280
 			}
 		},
@@ -476,6 +497,11 @@
 						"key": "OBS_KEY_MINUS"
 					}
 				],
+				"libobs.show_scene_item.External": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				],
 				"libobs.show_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_2"
@@ -530,6 +556,18 @@
 			"name": "Cam",
 			"settings": {
 				"items": [
+					{
+						"align": 0,
+						"locked": true,
+						"name": "External",
+						"pos": {
+							"x": 640,
+							"y": 360
+						},
+						"private_settings": {
+							"color-preset": 7
+						}
+					},
 					{
 						"align": 0,
 						"locked": true,
@@ -756,6 +794,14 @@
 				}
 			],
 			"hotkeys": {
+				"libobs.hide_scene_item.External": [
+					{
+						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				],
 				"libobs.hide_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
@@ -767,6 +813,14 @@
 				"libobs.hide_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_3"
+					}
+				],
+				"libobs.show_scene_item.External": [
+					{
+						"key": "OBS_KEY_DEAD_GRAVE"
+					},
+					{
+						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.show_scene_item.Internal": [
@@ -819,6 +873,21 @@
 							"y": 400
 						},
 						"rot": 5
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 196,
+							"y": 196
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "External",
+						"pos": {
+							"x": 1172,
+							"y": 320
+						},
+						"rot": -5
 					},
 					{
 						"align": 0,

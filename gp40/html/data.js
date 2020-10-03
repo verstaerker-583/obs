@@ -1,25 +1,25 @@
 var start = {
-	theme: "40 Jahre Greenpeace Deutschland - Jetzt erst recht!",
-	message_neg: "Jetzt erst recht!",
+	theme: "#LIVE 🔴 40 Jahre Greenpeace Deutschland - Jetzt erst recht!",
+	message_neg: "Gleich geht's los!",
 	call2action: "👁 Sei jetzt LIVE dabei!"
 };
 var finish = {
-	theme: "40 Jahre Greenpeace Deutschland",
+	theme: "#LIVE 🔴 40 Jahre Greenpeace Deutschland - Jetzt erst recht!",
 	message_neg: "Vielen Dank und auf Wiedersehen! 💚",
 	call2action: "⇨ Unterstütze Greenpeace!"
 };
 var donate = {
 	theme: "💚 Schon kleine Spendenbeträge helfen! 💚",
-	message: "www.greenpeace.de/DeineSpende",
+	message: "www.greenpeace.de/spenden",
 	call2action: "⇨ Unterstütze Greenpeace!"
 };
 var pics = {
-	channelIcon: "https://yt3.ggpht.com/a/AATXAJz1rf8F_1ZMrY7BkibAF0CFrkj4qja9n7fTqgrz=s800-c-k-c0xffffffff-no-rj-mo",
-	clockLogo: "../gpLogo.svg",
-	organizationLogo: "../gpLogo.svg",
-	organizationLogoNeg: "../gpLogoNeg.svg",
-	presenterLogo: "../../gp/mmLogo.png",
-	videoThumb: "https://i3.ytimg.com/vi/ePWpixWAanI/maxresdefault.jpg"
+	channelIcon: "https://yt3.ggpht.com/a-/AOh14Gjm3Qv-R0uKy2vDnSx6_8Iuxsh5g7x3VSGvqk3t=s196-c-k-c0xffffffff-no-rj-mo",
+	clockLogo: "../../gp/gpLogo.svg",
+	hostLogo: "../gp40Logo.png",
+	organizationLogo: "../../gp/gpLogo.svg",
+	organizationLogoNeg: "../../gp/gpLogoNeg.svg",
+	videoThumb: "https://i3.ytimg.com/vi/8ljL7-t_lUc/maxresdefault.jpg"
 };
-var alarmTime = "19:30";
-var videoId = "ePWpixWAanI";
+var alarmTime = "19:00";
+var videoId = "8ljL7-t_lUc";
