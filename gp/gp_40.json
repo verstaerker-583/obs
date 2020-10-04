@@ -504,6 +504,9 @@
 				],
 				"libobs.show_scene_item.Internal": [
 					{
+						"key": "OBS_KEY_2"
+					},
+					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					},
 					{
@@ -822,6 +825,9 @@
 				],
 				"libobs.show_scene_item.Internal": [
 					{
+						"key": "OBS_KEY_3"
+					},
+					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
@@ -894,7 +900,8 @@
 						"pos": {
 							"x": 108,
 							"y": 400
-						}
+						},
+						"rot": 5
 					}
 				]
 			}
