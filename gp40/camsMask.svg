@@ -2,7 +2,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" fill="black">
 	<defs>
 		<circle id="cam" r="98" />
+		<rect id="screen" ry="44" width="352" height="198" x="-176" y="-99"/>
 	</defs>
-	<rect id="screen" ry="44" width="352" height="198" x="10" y="301"/>
-	<use xlink:href="#cam" x="1172" y="320" />
+	<use xlink:href="#cam" x="108" y="400" />
+	<use xlink:href="#screen" x="1094" y="320" />
 </svg>

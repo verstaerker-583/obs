@@ -871,28 +871,28 @@
 					{
 						"align": 0,
 						"bounds": {
-							"x": 198,
+							"x": 352,
 							"y": 196
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "External",
 						"pos": {
-							"x": 186,
-							"y": 400
+							"x": 1094,
+							"y": 320
 						}
 					},
 					{
 						"align": 0,
 						"bounds": {
-							"x": 198,
+							"x": 196,
 							"y": 196
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "Internal",
 						"pos": {
-							"x": 186,
+							"x": 108,
 							"y": 400
 						}
 					}
