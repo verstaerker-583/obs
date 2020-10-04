@@ -504,9 +504,6 @@
 				],
 				"libobs.show_scene_item.Internal": [
 					{
-						"key": "OBS_KEY_2"
-					},
-					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					},
 					{
@@ -825,9 +822,6 @@
 				],
 				"libobs.show_scene_item.Internal": [
 					{
-						"key": "OBS_KEY_3"
-					},
-					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
@@ -877,32 +871,30 @@
 					{
 						"align": 0,
 						"bounds": {
-							"x": 196,
+							"x": 198,
 							"y": 196
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "External",
 						"pos": {
-							"x": 1172,
-							"y": 320
-						},
-						"rot": -5
+							"x": 186,
+							"y": 540
+						}
 					},
 					{
 						"align": 0,
 						"bounds": {
-							"x": 196,
+							"x": 198,
 							"y": 196
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "Internal",
 						"pos": {
-							"x": 108,
-							"y": 400
-						},
-						"rot": 5
+							"x": 186,
+							"y": 540
+						}
 					}
 				]
 			}
