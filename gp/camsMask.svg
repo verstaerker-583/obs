@@ -3,6 +3,7 @@
 	<defs>
 		<circle id="cam" r="98" />
 	</defs>
-	<use xlink:href="#cam" x="108" y="400" />
-	<use xlink:href="#cam" x="1172" y="320" />
+	<use xlink:href="#cam" x="108" y="240" />
+	<use xlink:href="#cam" x="108" y="480" />
+	<use xlink:href="#cam" x="1172" y="360" />
 </svg>

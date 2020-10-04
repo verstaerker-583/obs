@@ -671,9 +671,6 @@
 						"pos": {
 							"x": 640,
 							"y": 360
-						},
-						"private_settings": {
-							"color-preset": 7
 						}
 					}
 				]
@@ -788,9 +785,6 @@
 						"pos": {
 							"x": 640,
 							"y": 360
-						},
-						"private_settings": {
-							"color-preset": 7
 						}
 					}
 				]
@@ -868,23 +862,8 @@
 						"locked": true,
 						"name": "NDI",
 						"pos": {
-							"x": 1172,
-							"y": 320
-						},
-						"rot": -5
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 196,
-							"y": 196
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "NDI",
-						"pos": {
 							"x": 108,
-							"y": 400
+							"y": 480
 						},
 						"rot": 5
 					},
@@ -899,7 +878,7 @@
 						"name": "External",
 						"pos": {
 							"x": 1172,
-							"y": 320
+							"y": 360
 						},
 						"rot": -5
 					},
@@ -914,7 +893,7 @@
 						"name": "Internal",
 						"pos": {
 							"x": 108,
-							"y": 400
+							"y": 240
 						},
 						"rot": 5
 					}

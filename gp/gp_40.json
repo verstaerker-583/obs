@@ -196,8 +196,11 @@
 					}
 				}
 			],
-			"id": "av_capture_input",
-			"name": "NDI"
+			"id": "image_source",
+			"name": "NDI",
+			"settings": {
+				"file": "/users/olaf/Documents/demo/ndi.png"
+			}
 		},
 		{
 			"id": "color_source",
@@ -279,7 +282,6 @@
 					{
 						"value": "https://www.butenunbinnen.de/bilder/greenpeace-akw-unterweser-aktion-100~_v-800x450_c-1571126119329.jpg"
 					},
-					null,
 					{
 						"value": "https://www.butenunbinnen.de/bilder/fischtrawler-fisch-frachter-bremerhaven-greenpeace-aktion-100~_v-2560x1440_c-1571126120837.jpg"
 					}
@@ -653,9 +655,6 @@
 						"pos": {
 							"x": 640,
 							"y": 360
-						},
-						"private_settings": {
-							"color-preset": 7
 						}
 					}
 				]
@@ -775,9 +774,6 @@
 						"pos": {
 							"x": 640,
 							"y": 360
-						},
-						"private_settings": {
-							"color-preset": 7
 						}
 					}
 				]
@@ -855,23 +851,8 @@
 						"locked": true,
 						"name": "NDI",
 						"pos": {
-							"x": 1172,
-							"y": 320
-						},
-						"rot": -5
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 196,
-							"y": 196
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "NDI",
-						"pos": {
 							"x": 108,
-							"y": 400
+							"y": 480
 						},
 						"rot": 5
 					},
@@ -886,7 +867,7 @@
 						"name": "External",
 						"pos": {
 							"x": 1094,
-							"y": 320
+							"y": 360
 						}
 					},
 					{
@@ -900,7 +881,7 @@
 						"name": "Internal",
 						"pos": {
 							"x": 108,
-							"y": 400
+							"y": 240
 						},
 						"rot": 5
 					}
