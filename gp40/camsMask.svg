@@ -3,6 +3,6 @@
 	<defs>
 		<circle id="cam" r="98" />
 	</defs>
-	<rect id="screen" ry="44" width="352" height="198" x="10" y="441"/>
+	<rect id="screen" ry="44" width="352" height="198" x="10" y="301"/>
 	<use xlink:href="#cam" x="1172" y="320" />
 </svg>
