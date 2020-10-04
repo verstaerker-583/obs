@@ -1,10 +1,10 @@
 var start = {
-	theme: "#LIVE 🔴 40 Jahre Greenpeace Deutschland - Jetzt erst recht!",
+	theme: "#LIVE 🔴 Jetzt erst recht! Aufgeben ist keine Option!",
 	message_neg: "Gleich geht's los!",
 	call2action: "👁 Sei jetzt LIVE dabei!"
 };
 var finish = {
-	theme: "#LIVE 🔴 40 Jahre Greenpeace Deutschland - Jetzt erst recht!",
+	theme: "#LIVE 🔴 Jetzt erst recht! Aufgeben ist keine Option!",
 	message_neg: "Vielen Dank und auf Wiedersehen! 💚",
 	call2action: "⇨ Unterstütze Greenpeace!"
 };
@@ -14,7 +14,10 @@ var donate = {
 	call2action: "⇨ Unterstütze Greenpeace!"
 };
 var pics = {
+	/*
 	channelIcon: "https://yt3.ggpht.com/a-/AOh14Gjm3Qv-R0uKy2vDnSx6_8Iuxsh5g7x3VSGvqk3t=s196-c-k-c0xffffffff-no-rj-mo",
+	*/
+	channelIcon: "../gp40Logo2.png",
 	clockLogo: "../../gp/gpLogo.svg",
 	hostLogo: "../gp40Logo.png",
 	organizationLogo: "../../gp/gpLogo.svg",

@@ -22,3 +22,14 @@
 		"libobs.show_scene_item.Screen Capture"
 	]
 )
+
+#demo
+| del(.sources[] |
+	select(.id == "av_capture_input").settings
+)
+
+| (.sources[] | select(.name == "Internal", .name == "External").id) = "image_source"
+| (.sources[] | select(.name == "Internal").settings.file) = "/users/olaf/Documents/demo/internal.png"
+| (.sources[] | select(.name == "External").settings.file) = "/users/olaf/Documents/demo/external.png"
+| (.sources[] | select(.id == "slideshow").settings.files[].value) = "https://www.butenunbinnen.de/bilder/greenpeace-akw-unterweser-aktion-100~_v-800x450_c-1571126119329.jpg"
+| (.sources[] | select(.id == "slideshow").settings.files[2].value) = "https://www.butenunbinnen.de/bilder/fischtrawler-fisch-frachter-bremerhaven-greenpeace-aktion-100~_v-2560x1440_c-1571126120837.jpg"

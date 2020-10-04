@@ -154,10 +154,10 @@
 					}
 				}
 			],
-			"id": "av_capture_input",
+			"id": "image_source",
 			"name": "External",
 			"settings": {
-				"device": "0x14200000046d0823"
+				"file": "/users/olaf/Documents/demo/external.png"
 			}
 		},
 		{
@@ -175,10 +175,10 @@
 					}
 				}
 			],
-			"id": "av_capture_input",
+			"id": "image_source",
 			"name": "Internal",
 			"settings": {
-				"device": "CC27327P54QGDV4AV"
+				"file": "/users/olaf/Documents/demo/internal.png"
 			}
 		},
 		{
@@ -197,10 +197,7 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "NDI",
-			"settings": {
-				"device": "BB86C477-373F-49D9-AA4B-CE86A0E883F1"
-			}
+			"name": "NDI"
 		},
 		{
 			"id": "color_source",
@@ -280,7 +277,11 @@
 			"settings": {
 				"files": [
 					{
-						"value": "/System/Library/Desktop Pictures"
+						"value": "https://www.butenunbinnen.de/bilder/greenpeace-akw-unterweser-aktion-100~_v-800x450_c-1571126119329.jpg"
+					},
+					null,
+					{
+						"value": "https://www.butenunbinnen.de/bilder/fischtrawler-fisch-frachter-bremerhaven-greenpeace-aktion-100~_v-2560x1440_c-1571126120837.jpg"
 					}
 				],
 				"slide_mode": "mode_manual",
