@@ -1,6 +1,7 @@
 .name = "gp_40"
 
 | (.sources[] | select(.id == "browser_source").settings.url) |= sub("gp";"gp40")
+| (.sources[] | select(.name == "cams").filters[] | select(.id == "mask_filter").settings.image_path) |= sub("gp";"gp40")
 
 
 | del(.DesktopAudioDevice1)

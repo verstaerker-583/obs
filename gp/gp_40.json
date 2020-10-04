@@ -788,7 +788,7 @@
 					"id": "mask_filter",
 					"name": "Image Mask/Blend",
 					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/gp/camsMask.png",
+						"image_path": "https://verstaerker-583.github.io/obs/gp40/camsMask.png",
 						"type": "mask_alpha_filter.effect"
 					}
 				}
