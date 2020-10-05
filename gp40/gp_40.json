@@ -280,10 +280,17 @@
 			"settings": {
 				"files": [
 					{
-						"value": "https://www.butenunbinnen.de/bilder/greenpeace-akw-unterweser-aktion-100~_v-800x450_c-1571126119329.jpg"
+						"value": "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/gp02oc1.jpg"
+					},
+					null,
+					{
+						"value": "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/brent_spar_1.jpg"
 					},
 					{
-						"value": "https://www.butenunbinnen.de/bilder/fischtrawler-fisch-frachter-bremerhaven-greenpeace-aktion-100~_v-2560x1440_c-1571126120837.jpg"
+						"value": "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/gp030rj_medium_res_walfang.jpg"
+					},
+					{
+						"value": "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/gp0stoc2o_medium_res.jpg"
 					}
 				],
 				"slide_mode": "mode_manual",
@@ -852,7 +859,7 @@
 						"name": "NDI",
 						"pos": {
 							"x": 108,
-							"y": 480
+							"y": 240
 						},
 						"rot": 5
 					},
@@ -881,7 +888,7 @@
 						"name": "Internal",
 						"pos": {
 							"x": 108,
-							"y": 240
+							"y": 480
 						},
 						"rot": 5
 					}

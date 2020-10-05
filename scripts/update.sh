@@ -8,7 +8,7 @@ chmod -R +w ~/Documents/GitHub/obs
 
 # scenes
 jq -S --tab -f gp_naked.jq	../gp/gp.json		> ../gp/gp_naked.json
-jq -S --tab -f gp_40.jq		../gp/gp.json		> ../gp/gp_40.json
+jq -S --tab -f gp_40.jq		../gp/gp.json		> ../gp40/gp_40.json
 jq -S --tab -f nd.jq		../gp/gp.json		> ../gp/nd.json
 jq -S --tab -f sr.jq		../gp/gp_naked.json	> ../sr/sr.json
 

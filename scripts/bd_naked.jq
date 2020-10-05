@@ -4,10 +4,12 @@
 
 | del(.. |
 	.mixers?,
-	select(.key? == "OBS_KEY_D"),
-	select(.key? == "OBS_KEY_G"),
-	select(.key? == "OBS_KEY_M"),
-	select(.name? == "Capture")
+	select(
+		.key? == "OBS_KEY_D",
+		.key? == "OBS_KEY_G",
+		.key? == "OBS_KEY_M",
+		.name? == "Capture"
+	)
 )
 
 | del(.sources[]|select(.name == "NDI").filters[] | select(.id != "mask_filter"))

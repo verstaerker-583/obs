@@ -1,9 +1,5 @@
 .name = "nd"
 
-#| (.sources[] | select(.name == "?").settings.color1) = 4287868617
-#| (.sources[] | select(.name == "?").settings.color2) = 4282145104
-#| (.sources[] | select(.id == "color_source").settings.color) = 4287868617
-
 | del(
 	.sources[].hotkeys[
 #		"libobs.hide_scene_item.?",
@@ -26,24 +22,25 @@
 )
 
 | del(.. |
-	select(.id? == "coreaudio_input_capture"),
-
-#	select(.name? == "?"),
 	select(.name? == "?").settings.color1,
 	select(.name? == "?").settings.color2,
-	select(.name? == "Background"),
-	select(.name? == "Color Source"),
-	select(.name? == "Intro"),
-	select(.name? == "NDI"),
-	select(.name? == "Outro"),
-#	select(.name? == "Start"),
 	select(.name? == "Start").settings,
-	select(.name? == "Finish"),
-	select(.name? == "guest"),
 	select(.name? | test("Overlay")?),
 
-	select(.key? == "OBS_KEY_F"),
-	select(.key? == "OBS_KEY_G"),
-	select(.key? == "OBS_KEY_H"),
-	select(.key? == "OBS_KEY_I")
+	select(
+		.id? == "coreaudio_input_capture",
+#		.name? == "?",
+		.name? == "Background",
+		.name? == "Color Source",
+		.name? == "Finish",
+		.name? == "Intro",
+		.name? == "NDI",
+		.name? == "Outro",
+#		.name? == "Start",
+		.name? == "guest",
+		.key? == "OBS_KEY_F",
+		.key? == "OBS_KEY_G",
+		.key? == "OBS_KEY_H",
+		.key? == "OBS_KEY_I"
+	)
 )

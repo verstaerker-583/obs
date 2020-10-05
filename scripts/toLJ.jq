@@ -1,12 +1,12 @@
 del(.sources[] |
-	select(.id == "ffmpeg_source").settings,
+	select(
+		.id == "av_capture_input",
+		.id == "ffmpeg_source",
+		.name == "Screen Capture"
+	).settings,
 	select(.id == "slideshow").settings.files,
-	select(.name == "Screen Capture").settings,
 
-	.mixers,
-	select(.id == "av_capture_input").settings
+	.mixers
 )
 
-| del(.[] |
-	select(.id? == "coreaudio_input_capture")
-)
+| del(.[] |select(.id? == "coreaudio_input_capture"))

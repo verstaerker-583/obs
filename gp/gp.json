@@ -228,7 +228,8 @@
 			"id": "av_capture_input",
 			"name": "External",
 			"settings": {
-				"device": "0x14200000046d0823"
+				"device": "0x14200000046d0823",
+				"preset": "AVCaptureSessionPresetHigh"
 			}
 		},
 		{
@@ -338,13 +339,6 @@
 			"settings": {
 				"input": "https://tinyurl.com/yyczgwlc",
 				"is_local_file": false
-			}
-		},
-		{
-			"id": "image_source",
-			"name": "Background",
-			"settings": {
-				"file": "https://markus-mauthe.de/site/assets/files/1048/sa14.jpg"
 			}
 		},
 		{
@@ -594,11 +588,6 @@
 						"key": "OBS_KEY_MINUS"
 					}
 				],
-				"libobs.show_scene_item.Background": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
 				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_2"
@@ -658,20 +647,6 @@
 			"name": "Cam",
 			"settings": {
 				"items": [
-					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "Background",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
-					},
 					{
 						"align": 0,
 						"locked": true,
@@ -987,7 +962,7 @@
 						"name": "NDI",
 						"pos": {
 							"x": 108,
-							"y": 480
+							"y": 240
 						},
 						"rot": 5
 					},
@@ -1017,7 +992,7 @@
 						"name": "Internal",
 						"pos": {
 							"x": 108,
-							"y": 240
+							"y": 480
 						},
 						"rot": 5
 					}

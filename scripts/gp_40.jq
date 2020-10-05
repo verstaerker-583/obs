@@ -12,25 +12,28 @@
 
 | del(.. |
 	.mixers?,
-	select(.enabled? == "false"),
-	select(.name? == "Background"),
-	select(.name? == "Screen Capture")
+	select(
+		.enabled? == "false",
+		.name? == "Screen Capture"
+	)
 )
 
-| del(.sources[].hotkeys[
-		"libobs.show_scene_item.Background",
-		"libobs.show_scene_item.Screen Capture"
-	]
-)
-
+| del(.sources[].hotkeys["libobs.show_scene_item.Screen Capture"])
+		
 #demo
 | del(.sources[] |
 	select(.id == "av_capture_input").settings
 )
 
-| (.sources[] | select(.name == "Internal", .name == "External", .name == "NDI").id) = "image_source"
+| (.sources[] | select(
+		.name == "Internal",
+		.name == "External",
+		.name == "NDI"
+	).id) = "image_source"
 | (.sources[] | select(.name == "Internal").settings.file) = "/users/olaf/Documents/demo/internal.png"
 | (.sources[] | select(.name == "External").settings.file) = "/users/olaf/Documents/demo/external.png"
 | (.sources[] | select(.name == "NDI").settings.file) = "/users/olaf/Documents/demo/ndi.png"
-| (.sources[] | select(.id == "slideshow").settings.files[0].value) = "https://www.butenunbinnen.de/bilder/greenpeace-akw-unterweser-aktion-100~_v-800x450_c-1571126119329.jpg"
-| (.sources[] | select(.id == "slideshow").settings.files[1].value) = "https://www.butenunbinnen.de/bilder/fischtrawler-fisch-frachter-bremerhaven-greenpeace-aktion-100~_v-2560x1440_c-1571126120837.jpg"
+| (.sources[] | select(.id == "slideshow").settings.files[].value) = "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/gp02oc1.jpg"
+| (.sources[] | select(.id == "slideshow").settings.files[2].value) = "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/brent_spar_1.jpg"
+| (.sources[] | select(.id == "slideshow").settings.files[3].value) = "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/gp030rj_medium_res_walfang.jpg"
+| (.sources[] | select(.id == "slideshow").settings.files[4].value) = "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/gp0stoc2o_medium_res.jpg"

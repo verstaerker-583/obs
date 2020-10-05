@@ -9,10 +9,12 @@
 | (.sources[] | select(.name == "?").settings.color2) = 4294967295
 
 | del(.. |
-	select(.key? == "OBS_KEY_F"),
-	select(.key? == "OBS_KEY_H"),
-	select(.name? == "Overlay Chat"),
-	select(.name? == "Overlay Donate")
+	select(
+		.key? == "OBS_KEY_F",
+		.key? == "OBS_KEY_H",
+		.name? == "Overlay Chat",
+		.name? == "Overlay Donate"
+	)
 )
 
 | del(.sources[].hotkeys[
