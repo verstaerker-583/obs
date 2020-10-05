@@ -13,12 +13,26 @@
 | del(.. |
 	.mixers?,
 	select(
+		.key? == "OBS_KEY_F",
+		.key? == "OBS_KEY_G",
+		.key? == "OBS_KEY_H",
+		.name? == "NDI",
+		.name? == "guest",
+
 		.enabled? == "false",
-		.name? == "Screen Capture"
+		.key? == "OBS_KEY_M",
+		.name? == "Screen Capture",
+		.name? == "NDI Audio"
 	)
 )
 
-| del(.sources[].hotkeys["libobs.show_scene_item.Screen Capture"])
+| del(.sources[].hotkeys[
+	"libobs.hide_scene_item.NDI",
+	"libobs.show_scene_item.NDI",
+
+	"libobs.show_scene_item.Screen Capture"
+	]
+)
 		
 #demo
 | del(.sources[] |
