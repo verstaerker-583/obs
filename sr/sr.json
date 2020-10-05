@@ -11,7 +11,10 @@
 			},
 			{
 				"id": "compressor_filter",
-				"name": "Compressor"
+				"name": "Compressor",
+				"settings": {
+					"attack_time": 0
+				}
 			},
 			{
 				"id": "limiter_filter",
