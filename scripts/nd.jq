@@ -7,6 +7,8 @@
 		"libobs.hide_scene_item.NDI",
 		"libobs.hide_scene_item.Overlay Chat",
 		"libobs.hide_scene_item.Overlay Donate",
+		"libobs.hide_scene_item.Video",
+		"libobs.hide_scene_item.guest",
 #		"libobs.show_scene_item.?",
 		"libobs.show_scene_item.Background",
 		"libobs.show_scene_item.Color Source",
@@ -16,7 +18,7 @@
 		"libobs.show_scene_item.Overlay Chat",
 		"libobs.show_scene_item.Overlay Donate",
 		"libobs.show_scene_item.Overlay Start",
-		"libobs.hide_scene_item.guest",
+		"libobs.show_scene_item.Video",
 		"libobs.show_scene_item.guest"
 	]
 )
@@ -37,10 +39,12 @@
 		.name? == "NDI",
 		.name? == "Outro",
 #		.name? == "Start",
+		.name? == "Video",
 		.name? == "guest",
 		.key? == "OBS_KEY_F",
 		.key? == "OBS_KEY_G",
 		.key? == "OBS_KEY_H",
-		.key? == "OBS_KEY_I"
+		.key? == "OBS_KEY_I",
+		.key? == "OBS_KEY_V"
 	)
 )

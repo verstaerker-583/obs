@@ -81,7 +81,10 @@
 			},
 			{
 				"id": "compressor_filter",
-				"name": "Compressor"
+				"name": "Compressor",
+				"settings": {
+					"attack_time": 0
+				}
 			},
 			{
 				"id": "compressor_filter",
@@ -335,6 +338,30 @@
 			"mixers": 9,
 			"monitoring_type": 2,
 			"name": "Outro",
+			"private_settings": {
+				"mixer_hidden": true,
+				"volume_locked": true
+			},
+			"settings": {
+				"input": "https://tinyurl.com/yyczgwlc",
+				"is_local_file": false
+			}
+		},
+		{
+			"filters": [
+				{
+					"id": "compressor_filter",
+					"name": "Compressor"
+				},
+				{
+					"id": "limiter_filter",
+					"name": "Limiter"
+				}
+			],
+			"id": "ffmpeg_source",
+			"mixers": 9,
+			"monitoring_type": 2,
+			"name": "Video",
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
@@ -761,9 +788,17 @@
 						"key": "OBS_KEY_H"
 					}
 				],
+				"libobs.hide_scene_item.Video": [
+					{
+						"key": "OBS_KEY_3"
+					}
+				],
 				"libobs.hide_scene_item.cams": [
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
+					},
+					{
+						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.show_scene_item.Color Source": [
@@ -788,6 +823,11 @@
 					},
 					{
 						"key": "OBS_KEY_H"
+					}
+				],
+				"libobs.show_scene_item.Video": [
+					{
+						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.show_scene_item.cams": [
@@ -826,6 +866,20 @@
 						"bounds_type": 3,
 						"locked": true,
 						"name": "Screen Capture",
+						"pos": {
+							"x": 640,
+							"y": 360
+						}
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "Video",
 						"pos": {
 							"x": 640,
 							"y": 360
