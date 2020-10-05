@@ -7,7 +7,7 @@ streamingLayout = {
 function applicationWatcher(appName, eventType, appObject)
 	if appName == "OBS" then
 		if eventType == hs.application.watcher.launched then
---			preFlight(true)
+			preFlight(true)
 		end
 		if eventType == hs.application.watcher.terminated then
 			postFlight()
@@ -106,9 +106,9 @@ function preFlight()
 		log:write("current: " .. hs.inspect(dev:currentMode()) .. "\n")
 --		dev:setBrightness(0.50)
 		if dev ~= hs.screen.primaryScreen() then
-			monitor = dev:setMode(1280, 720, 1)
+--			monitor = dev:setMode(1280, 720, 1)
 		elseif dev:name() == "Color LCD" then					-- MacBook?
-			dev:setMode(1920, 1200, 1)					-- specific
+--			dev:setMode(1920, 1200, 1)					-- specific
 		end
 		log:write("done: " .. hs.inspect(dev:currentMode()) .. "\n")
 		log:write(hs.inspect(dev:availableModes()) .. "\n")			-- for new platforms
@@ -135,9 +135,10 @@ function preFlight()
 			log:write("👍 🎧 👌\n")
 		end
 		if dev:transportType() == "Built-in" then
-			dev:setDefaultInputDevice()
+--			dev:setDefaultInputDevice()
 			dev:setInputVolume(40)						-- Micro
 		elseif dev:transportType() == "USB" then
+			dev:setDefaultInputDevice()
 			dev:setInputVolume(40)						-- Monitor/ Camera
 		elseif dev:transportType() == "Virtual" then
 			dev:setInputVolume(40)						-- NDI Audio
@@ -171,9 +172,10 @@ function preFlight()
 		dev:setMuted(false)
 		dev:setBalance(0.5)
 		if dev:transportType() == "Built-in" then
-			dev:setVolume(75)
+--			dev:setVolume(75)
+			dev:setVolume(25)
 		elseif dev:transportType() == "Virtual" then
-			dev:setDefaultOutputDevice()
+--			dev:setDefaultOutputDevice()
 			dev:setInputVolume(75)						-- BlackHole
 			dev:setVolume(100)
 		else

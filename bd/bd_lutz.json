@@ -207,6 +207,9 @@
 					},
 					{
 						"key": "OBS_KEY_I"
+					},
+					{
+						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.hide_scene_item.?": [
@@ -226,6 +229,14 @@
 					}
 				],
 				"libobs.hide_scene_item.Intro": [
+					{
+						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_G"
+					}
+				],
+				"libobs.hide_scene_item.Video": [
 					{
 						"key": "OBS_KEY_2"
 					},
@@ -278,6 +289,11 @@
 				"libobs.show_scene_item.Overlay Cam": [
 					{
 						"key": "OBS_KEY_2"
+					}
+				],
+				"libobs.show_scene_item.Video": [
+					{
+						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.show_scene_item.guest": [
@@ -371,6 +387,20 @@
 							"x": 640,
 							"y": 360
 						}
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "Video",
+						"pos": {
+							"x": 640,
+							"y": 360
+						}
 					}
 				]
 			}
@@ -382,27 +412,14 @@
 						"key": "OBS_KEY_3"
 					}
 				],
-				"libobs.hide_scene_item.Video": [
-					{
-						"key": "OBS_KEY_3"
-					}
-				],
 				"libobs.hide_scene_item.cams": [
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
-					},
-					{
-						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.show_scene_item.Screen Capture": [
 					{
 						"key": "OBS_KEY_3"
-					}
-				],
-				"libobs.show_scene_item.Video": [
-					{
-						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.show_scene_item.cams": [
@@ -427,20 +444,6 @@
 						"bounds_type": 3,
 						"locked": true,
 						"name": "Screen Capture",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "Video",
 						"pos": {
 							"x": 640,
 							"y": 360
