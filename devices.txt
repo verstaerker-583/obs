@@ -4,6 +4,8 @@
 "device": "0x2543000043e9a4d",
 "device_name": "LG UltraFine Display Camera"
 
+"device_name": "LG UltraFine Display Audio"
+
 MonitoringDeviceName=Externe Kopfhörer
 MonitoringDeviceId=BuiltInHeadphoneOutputDevice
 
@@ -12,3 +14,10 @@ MonitoringDeviceId=BuiltInSpeakerDevice
 
 C02C406NK7GF	Mac Pro (2019)
 C02Z2297LVDR	MacBook Pro (15-inch, 2019)
+
+Logitech
+"device": "0x14200000046d0823"
+"device_id": "AppleUSBAudioEngine:Unknown Manufacturer:Unknown USB Audio Device:6EBAAA60:1"
+
+MacBook Air
+"device_id": "AppleHDAEngineInput:1B,0,1,0:1"

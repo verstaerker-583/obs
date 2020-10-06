@@ -62,7 +62,6 @@
 			]
 		},
 		"id": "coreaudio_input_capture",
-		"mixers": 3,
 		"name": "Microphone",
 		"private_settings": {
 			"volume_locked": true
@@ -133,7 +132,6 @@
 			]
 		},
 		"id": "coreaudio_input_capture",
-		"mixers": 17,
 		"monitoring_type": 2,
 		"name": "NDI Audio",
 		"private_settings": {
@@ -197,7 +195,6 @@
 			]
 		},
 		"id": "coreaudio_input_capture",
-		"mixers": 5,
 		"monitoring_type": 2,
 		"name": "Desktop Audio",
 		"private_settings": {
@@ -311,7 +308,6 @@
 				}
 			],
 			"id": "ffmpeg_source",
-			"mixers": 9,
 			"monitoring_type": 2,
 			"name": "Intro",
 			"private_settings": {
@@ -335,7 +331,6 @@
 				}
 			],
 			"id": "ffmpeg_source",
-			"mixers": 9,
 			"monitoring_type": 2,
 			"name": "Outro",
 			"private_settings": {
@@ -359,7 +354,6 @@
 				}
 			],
 			"id": "ffmpeg_source",
-			"mixers": 9,
 			"monitoring_type": 2,
 			"name": "Video",
 			"private_settings": {

@@ -19,7 +19,6 @@
 | del(.DesktopAudioDevice1)
 
 | del(.. |
-	.mixers?,
 	select(
 		.key? == "OBS_KEY_F",
 		.key? == "OBS_KEY_G",

@@ -214,7 +214,7 @@ function preFlight()
 	end
 
 	-- Apps
-	hs.application.open("NDI Virtual Input", 0, true)
+--	hs.application.open("NDI Virtual Input", 0, true)
 
 	hs.notify.new({title = "OBS", informativeText = "Pre-Flight Checklist completed!"}):send()
 

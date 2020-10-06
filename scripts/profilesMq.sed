@@ -4,5 +4,3 @@ Name=YTmq
 ABitrate=128
 /\[Video\]/a\
 FPSCommon=24 NTSC
-
-/\[AdvOut\]/,/^$/d

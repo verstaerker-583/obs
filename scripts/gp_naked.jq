@@ -1,7 +1,6 @@
 .name = "gp_naked"
 
 | del(.. |
-	.mixers?,
 	select(
 		.enabled? == "false",
 		.name? == "Color Source",

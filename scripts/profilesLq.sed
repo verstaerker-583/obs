@@ -6,5 +6,3 @@ VBitrate=500
 ABitrate=48
 /\[Video\]/a\
 FPSCommon=24 NTSC
-
-/\[AdvOut\]/,/^$/d

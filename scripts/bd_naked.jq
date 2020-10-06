@@ -3,7 +3,6 @@
 | del(.[] | select(.name? == "NDI Audio").filters[] | select(.id != "limiter_filter"))
 
 | del(.. |
-	.mixers?,
 	select(
 		.key? == "OBS_KEY_D",
 		.key? == "OBS_KEY_G",
