@@ -26,11 +26,6 @@ yt-live-chat-restricted-participation-renderer {
 	display: none!important
 }
 
-yt-live-chat-paid-message-renderer #header {
-	padding-left: 4px!important;
-	padding-right: 4px!important
-}
-
 yt-live-chat-renderer {
 	background-color: transparent!important
 }
@@ -67,15 +62,17 @@ yt-live-chat-text-message-renderer #author-photo {
 	display: none!important
 }
 
-yt-live-chat-text-message-renderer #content,
-yt-live-chat-legacy-paid-message-renderer #content {
+yt-live-chat-text-message-renderer #content {
 	overflow: initial!important
 }
 
-yt-live-chat-text-message-renderer,
-yt-live-chat-legacy-paid-message-renderer {
+yt-live-chat-text-message-renderer {
+	/*
 	padding-left: 4px!important;
 	padding-right: 4px!important
+	*/
+	padding-left: 0px!important;
+	padding-right: 0px!important
 }
 
 yt-live-chat-text-message-renderer,

@@ -9,6 +9,7 @@
 | (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/olaf/Documents/gp40/intro"
 | (.sources[] | select(.name == "Outro").settings.local_file) = "/Users/olaf/Documents/gp40/outro"
 | (.sources[] | select(.name == "Video").settings.local_file) = "/Users/olaf/Documents/gp40/video"
+| (.sources[] | select(.name == "Overlay Chat").settings.width) = 750
 
 | (.sources[] | select(.name == "cams").filters[] | select(.id == "mask_filter").settings.image_path) |= sub("gp";"gp40")
 | (.sources[] | select(.name == "cams").settings.items[] | select(.name == "External").bounds.x) = 352

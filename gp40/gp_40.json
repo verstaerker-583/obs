@@ -267,9 +267,9 @@
 			},
 			"settings": {
 				"css": "@import url(https://verstaerker-583.github.io/obs/gp/html/chat.css)",
-				"height": 120,
+				"height": 110,
 				"url": "https://verstaerker-583.github.io/obs/gp40/html/chat.html",
-				"width": 640
+				"width": 750
 			}
 		},
 		{
@@ -467,8 +467,8 @@
 						"locked": true,
 						"name": "Overlay Chat",
 						"pos": {
-							"x": 500,
-							"y": 600
+							"x": 360,
+							"y": 610
 						}
 					},
 					{

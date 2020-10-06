@@ -139,7 +139,7 @@ function preFlight()
 			dev:setInputVolume(40)						-- Micro
 		elseif dev:transportType() == "USB" then
 			dev:setDefaultInputDevice()
-			dev:setInputVolume(40)						-- Monitor/ Camera
+			dev:setInputVolume(50)						-- Monitor/ Camera
 		elseif dev:transportType() == "Virtual" then
 			dev:setInputVolume(40)						-- NDI Audio
 		else

@@ -78,6 +78,8 @@ sudo find /tmp/obs-studio -exec touch -ht 197304291400 '{}' \;
 chmod -R -w ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs/.git
 
+exit 0
+
 pkgbuild \
 	--identifier magic\
 	--install-location /tmp/obs-studio\

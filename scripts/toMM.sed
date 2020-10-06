@@ -11,10 +11,6 @@ s/=YTsq/=gpYTsq/
 /\[Audio\]/a\
 MonitoringDeviceId=BuiltInHeadphoneOutputDevice
 
-#/\[SimpleOutput\]/a\
-#RecQuality=Small\
-
-# experimental
 /\[SimpleOutput\]/a\
 Preset=faster\
 UseAdvanced=true
