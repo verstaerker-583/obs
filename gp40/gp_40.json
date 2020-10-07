@@ -31,6 +31,9 @@
 					"key": "OBS_KEY_4"
 				},
 				{
+					"key": "OBS_KEY_M"
+				},
+				{
 					"key": "OBS_KEY_O"
 				}
 			],
@@ -43,6 +46,9 @@
 				},
 				{
 					"key": "OBS_KEY_I"
+				},
+				{
+					"key": "OBS_KEY_M"
 				}
 			]
 		},
