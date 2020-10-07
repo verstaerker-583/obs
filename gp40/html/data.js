@@ -14,11 +14,11 @@ var donate = {
 	call2action: "⇨ Unterstütze Greenpeace!"
 };
 var pics = {
-	channelIcon: "../gp40Logo.png",
+	channelIcon: "../gp40Logo2.png",
 	clockLogo: "../../gp/gpLogo.svg",
-	hostLogo: "../gp40Logo.png",
 	organizationLogo: "../../gp/gpLogo.svg",
 	organizationLogoNeg: "../../gp/gpLogoNeg.svg",
+	presenterLogo:  "../gp40Logo.png",
 	videoThumb: "https://i3.ytimg.com/vi/8ljL7-t_lUc/maxresdefault.jpg"
 };
 var alarmTime = "19:00";

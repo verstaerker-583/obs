@@ -1,9 +1,1 @@
 @import "../../gp/html/stylesheet.css";
-
-#hostLogo {
-	bottom: 10px;
-	height: auto;
-	position: absolute;
-	right: 10px;
-	width: 90px;
-}

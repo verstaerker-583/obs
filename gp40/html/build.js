@@ -8,7 +8,7 @@ function build() {
 	switch (PageName) {
 		case "start":
 			pics.organizationLogo = "";
-			pics.hostLogo = "";
+			pics.presenterLogo = "";
 			/*
 			pics.videoThumb = "";
 			*/
@@ -42,7 +42,7 @@ function build() {
 			break;
 		default:
 			pics.organizationLogo = "";
-			pics.hostLogo = "";
+			pics.presenterLogo = "";
 			buildBanner(finish);
 			loadClock();
 			loadPics();
