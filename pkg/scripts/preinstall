@@ -10,8 +10,4 @@ rm -rf ~/"$OBS"
 # maintenance
 #
 
-#
-# maintenance
-#
-
 exit 0

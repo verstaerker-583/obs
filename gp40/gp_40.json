@@ -125,9 +125,6 @@
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
-			},
-			"settings": {
-				"local_file": "/Users/olaf/Documents/gp40/intro"
 			}
 		},
 		{
@@ -147,9 +144,6 @@
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
-			},
-			"settings": {
-				"local_file": "/Users/olaf/Documents/gp40/outro"
 			}
 		},
 		{
@@ -169,9 +163,6 @@
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
-			},
-			"settings": {
-				"local_file": "/Users/olaf/Documents/gp40/video"
 			}
 		},
 		{
@@ -195,26 +186,6 @@
 			"id": "slideshow",
 			"name": "Slide Show",
 			"settings": {
-				"files": [
-					{
-						"value": "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/atom_unterweser.jpg"
-					},
-					{
-						"value": "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/brent_spar_1.jpg"
-					},
-					{
-						"value": "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/gp02oc1.jpg"
-					},
-					{
-						"value": "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/gp030rj_medium_res_walfang.jpg"
-					},
-					{
-						"value": "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/gp0stoc2o_medium_res.jpg"
-					},
-					{
-						"value": "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/nuclear_free_seas.jpg"
-					}
-				],
 				"slide_mode": "mode_manual",
 				"use_custom_size": "1280x720"
 			}

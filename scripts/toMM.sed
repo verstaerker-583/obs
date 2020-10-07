@@ -5,7 +5,11 @@ s/dev:setMode(1920, 1080, 1)/dev:setMode(5120, 2880, 1)/
 s/--profile '.*'/--profile 'gpYTsq'/
 
 # global.ini
-s/=YTsq/=gpYTsq/
+/\[Basi\]/a\
+Profile=gpYTsq\
+ProfileDir=gpYTsq\
+SceneCollection=gp_naked\
+SceneCollectionFile=gp_naked
 
 # basic.ini
 /\[Audio\]/a\
@@ -14,6 +18,3 @@ MonitoringDeviceId=BuiltInHeadphoneOutputDevice
 /\[SimpleOutput\]/a\
 Preset=faster\
 UseAdvanced=true
-
-/\[Video\]/a\
-ScaleType=lanczos

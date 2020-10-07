@@ -111,10 +111,10 @@ function preFlight()
 --			dev:setMode(1920, 1200, 1)					-- specific
 		end
 		log:write("done: " .. hs.inspect(dev:currentMode()) .. "\n")
-		log:write(hs.inspect(dev:availableModes()) .. "\n")			-- for new platforms
+--		log:write(hs.inspect(dev:availableModes()) .. "\n")			-- for new platforms
 	end
 	if not monitor then
-		hs.alert.show("🚨 🖥️ 🚨", 10)
+--		hs.alert.show("🚨 🖥️ 🚨", 10)
 		log:write("🚨 🖥️ 🚨\n")
 	end
 
@@ -134,14 +134,14 @@ function preFlight()
 			headset = true
 			log:write("👍 🎧 👌\n")
 		end
-		if dev:transportType() == "Built-in" then
+		if dev:transportType() == "Built-in" then				-- Micro
 --			dev:setDefaultInputDevice()
-			dev:setInputVolume(40)						-- Micro
-		elseif dev:transportType() == "USB" then
+			dev:setInputVolume(40)
+		elseif dev:transportType() == "USB" then				-- USB 
 			dev:setDefaultInputDevice()
-			dev:setInputVolume(50)						-- Monitor/ Camera
-		elseif dev:transportType() == "Virtual" then
-			dev:setInputVolume(40)						-- NDI Audio
+			dev:setInputVolume(50)
+		elseif dev:transportType() == "Virtual" then				-- NDI Audio
+			dev:setInputVolume(40)
 		else
 			dev:setInputMuted(true)
 		end
@@ -172,8 +172,11 @@ function preFlight()
 		dev:setMuted(false)
 		dev:setBalance(0.5)
 		if dev:transportType() == "Built-in" then
---			dev:setVolume(75)
-			dev:setVolume(25)
+			if headset then
+				dev:setVolume(75)
+			else
+				dev:setVolume(25)
+			end
 		elseif dev:transportType() == "Virtual" then
 --			dev:setDefaultOutputDevice()
 			dev:setInputVolume(75)						-- BlackHole
@@ -277,4 +280,4 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "S", startStreaming)
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", streamLayout)
 
 local address = hs.execute("curl ipecho.net/plain; echo")
-hs.messages.iMessage("o.koepke@gmx.de", address)
+--hs.messages.iMessage("o.koepke@gmx.de", address)

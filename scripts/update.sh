@@ -1,5 +1,39 @@
 #!/bin/sh
 
+function profiles {
+	for CHANNEL in $1; do
+		for i in `ls ../profiles`; do
+			mkdir -p ../target/$OBSUSR/basic/profiles/$CHANNEL$i
+			SQ="YTsq"
+			sed -e '
+				s/Name=/Name='$CHANNEL'/
+				' ../profiles/$i/basic.ini|sed -f to$OBSUSR.sed > ../target/$OBSUSR/basic/profiles/$CHANNEL$i/basic.ini
+	
+				[ $i == $SQ ] || ln -sf ../$CHANNEL$SQ/service.json ../target/$OBSUSR/basic/profiles/$CHANNEL$i
+		done
+		cp templates/service$CHANNEL.json ../target/$OBSUSR/basic/profiles/$CHANNEL$SQ/service.json
+	done
+	
+	sed -f to$OBSUSR.sed templates/global.ini > ../target/$OBSUSR/global.ini
+	sed -f to$OBSUSR.sed templates/init.lua > ../target/$OBSUSR/init.lua
+}
+
+function package {
+	for OBSUSR in $1; do
+		pkgbuild\
+			--identifier magic\
+			--install-location /tmp/obs-studio\
+			--ownership recommended\
+			--quiet\
+			--root ../target/$OBSUSR\
+			--scripts ../pkg/scripts\
+			--version `date "+%Y%m%d%H%M%S"`\
+			/tmp/magic$OBSUSR.pkg
+		#	--ownership preserve\
+		#	--info ../pkg/PackageInfo\
+	done
+}
+
 sudo chown -R olaf ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs
 
@@ -7,14 +41,14 @@ chmod -R +w ~/Documents/GitHub/obs
 /Applications/Inkscape.app/Contents/MacOS/inkscape --export-type="png" ../*/*Mask.svg &>/dev/null
 
 # scenes
-jq -S --tab -f gp_naked.jq	../gp/gp.json		> ../gp/gp_naked.json
 jq -S --tab -f gp_40.jq		../gp/gp.json		> ../gp40/gp_40.json
+jq -S --tab -f gp_naked.jq	../gp/gp.json		> ../gp/gp_naked.json
 jq -S --tab -f nd.jq		../gp/gp.json		> ../gp/nd.json
 jq -S --tab -f sr.jq		../gp/gp_naked.json	> ../sr/sr.json
 
+jq -S --tab -f bd_naked.jq	../bd/bd.json		> ../bd/bd_naked.json
 jq -S --tab -f bd_solo.jq	../gp/gp_naked.json	> ../bd/bd_solo.json
 jq -S --tab -f tolj.jq		../bd/bd_solo.json	> ../bd/bd_lutz.json
-jq -S --tab -f bd_naked.jq	../bd/bd.json		> ../bd/bd_naked.json
 
 for QUALITY in lq mq sq; do
 	mkdir -p ../profiles/YT$QUALITY
@@ -24,70 +58,54 @@ done
 #
 # ok
 #
-killall obs 2&> /dev/null 
+OBSUSR="ok"
+sudo rm -rf ../target/$OBSUSR
 
-sudo rm -rf ~/"Library/Application Support/obs-studio"
-
-# ok scenes
-mkdir -p ~/"Library/Application Support/obs-studio/basic/scenes"
+# scenes
+mkdir -p ../target/$OBSUSR/basic/scenes
 for i in `ls ../*/*.json`; do
-	[ `basename $i` == "bd_lutz.json" ] || jq -S --tab "." $i > ~/"Library/Application Support/obs-studio/basic/scenes/`basename $i`"
+	jq -S --tab -f to$OBSUSR.jq $i > ../target/$OBSUSR/basic/scenes/`basename $i`
 done
 
-# ok profiles
-for QUALITY in lq mq sq; do
-	mkdir -p ~/"Library/Application Support/obs-studio/basic/profiles/YT$QUALITY"
-	sed -f profiles$QUALITY.sed templates/basic.ini|sed -f took.sed > ~/"Library/Application Support/obs-studio/basic/profiles/YT$QUALITY/basic.ini"
-done
-
-sudo cp templates/init.lua ~/.hammerspoon
-sed -f took.sed templates/global.ini > ~/"Library/Application Support/obs-studio/global.ini"
+# profiles
+profiles "gp mm"
 
 #
 # mm
 #
+OBSUSR="mm"
+sudo rm -rf ../target/$OBSUSR
 
-sudo rm -rf /tmp/obs-studio
-
-# mm scenes
-USERS="mm"
-mkdir -p /tmp/obs-studio/basic/scenes
+# scenes
+mkdir -p ../target/$OBSUSR/basic/scenes
 for i in `ls ../*/*.json`; do
-	[ `basename $i` == "bd_lutz.json" ] || jq -S --tab -f tomm.jq $i > /tmp/obs-studio/basic/scenes/`basename $i`
+	[ `basename $i` == "bd_lutz.json" -o `basename $i` == "gp_40.json" ] || jq -S --tab -f to$OBSUSR.jq $i > ../target/$OBSUSR/basic/scenes/`basename $i`
 done
 
-# mm profiles
-for CHANNEL in bd gp mm; do
-	for i in `ls ../profiles`; do
-		mkdir -p /tmp/obs-studio/basic/profiles/$CHANNEL$i
-		LQ="YTlq"
-		sed -e '
-			s/Name=/Name='$CHANNEL'/
-			' ../profiles/$i/basic.ini|sed -f tomm.sed > /tmp/obs-studio/basic/profiles/$CHANNEL$i/basic.ini
+# profiles
+profiles "bd gp mm"
 
-			[ $i == $LQ ] || ln -sf ../$CHANNEL$LQ/service.json /tmp/obs-studio/basic/profiles/$CHANNEL$i
-	done
-	cp templates/service$CHANNEL.json /tmp/obs-studio/basic/profiles/$CHANNEL$LQ/service.json
+#
+# gp
+#
+OBSUSR="gp"
+sudo rm -rf ../target/$OBSUSR
+
+# scenes
+mkdir -p ../target/$OBSUSR/basic/scenes
+for i in `ls ../*/*.json`; do
+	[ `basename $i` == "gp_40.json" ] && jq -S --tab -f to$OBSUSR.jq $i > ../target/$OBSUSR/basic/scenes/`basename $i`
 done
 
-sed -f tomm.sed templates/global.ini > /tmp/obs-studio/global.ini
-sed -f tomm.sed ~/.hammerspoon/init.lua > /tmp/obs-studio/init.lua
+# profiles
+profiles "gp mm"
+
+#
+#
+#
 
 sudo find ~/Documents/GitHub/obs -exec touch -ht 197304291400 '{}' \;
-sudo find /tmp/obs-studio -exec touch -ht 197304291400 '{}' \;
 chmod -R -w ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs/.git
 
-exit 0
-
-pkgbuild \
-	--identifier magic\
-	--install-location /tmp/obs-studio\
-	--ownership recommended\
-	--quiet\
-	--root /tmp/obs-studio\
-	--scripts ../pkg/scripts\
-	--version `date "+%Y%m%d%H%M%S"`\
-	/tmp/magic.pkg
-#	--ownership preserve\
-#	--info ../pkg/PackageInfo\
+package "gp mm ok"
