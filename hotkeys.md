@@ -36,7 +36,7 @@
         * 🎥 `Internal` (links unten) voreingestellt
     * **[<]** Wechsel Kamera
 
-4. **[4]** Szene "Finish" 🛌
+4. **[4]** Szene "Finish" 🏁
     * 🔇 alle Audioquellen geschlossen
 
 ### Videos 

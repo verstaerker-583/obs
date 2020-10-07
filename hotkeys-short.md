@@ -1,11 +1,13 @@
 # ⌨ Hotkeys
 
-1. [1] Szene "Start" ⏰
+* [1] Szene "Start" ⏰
 
-2. **[2]** Szene "Cam" 🎥
-3. **[3]** Szene "Screen" 🖼
+* **[I]** **I**ntro 🎞
+* **[2]** Szene "Cam" 🎥
+* **[3]** Szene "Screen" 🖼
+* **[O]** **O**utro 🎞
 
-4. [4] Szene "Finish" 🛌
+* [4] Szene "Finish" 🏁
 
 ## in allen Szenen
 * **[<]** Wechsel Kamera
@@ -14,14 +16,11 @@
 * **[▶]** 🖼 Slideshow vor 
 * **[◀]** 🖼 Slideshow zurück
 
+* **[V]** **V**ideo 🎞
+
 * **[M]** 🔇 Stummschaltung Mikrofon
 
-## in Szene 2 "Cam"
+## in Szene 2 "Cam" 🎥
 * **[?]** ❓
 * **[C]** Chat 💬 ein-/ausblenden
 * **[€]** Spendenaufruf
-
-### Videos 
-* **[I]** **I**ntro 🎞
-* **[O]** **O**utro 🎞
-* **[V]** **V**ideo 🎞
