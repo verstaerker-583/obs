@@ -34,7 +34,8 @@ end
 
 function mailLogs()
 	hs.execute(
-		"system_profiler -json -detailLevel full SPAudioDataType SPCameraDataType SPDisplaysDataType SPHardwareDataType SPNetworkDataType SPSoftwareDataType > ~/Library/Application Support/obs-studio/logssystem.json"
+		"system_profiler -json -detailLevel full SPAudioDataType SPCameraDataType SPDisplaysDataType SPHardwareDataType SPNetworkDataType SPSoftwareDataType
+		> ~/Library/Application Support/obs-studio/logs/system.json"
 	)
 	local mailer = hs.sharing.newShare("com.apple.share.Mail.compose")
 	mailer:subject("Logfiles " .. os.date()):recipients({"o.koepke@gmx.de"})
@@ -92,7 +93,7 @@ function preFlight()
 	local headset = false
 	local monitor = false
 
-	local log = io.open("~/Library/Application Support/obs-studio/logslog.txt", "w")
+	local log = io.open("~/Library/Application Support/obs-studio/logs/log.txt", "w")
 	log:write(os.date() .. "\n")
 
 	-- Video
