@@ -10,3 +10,4 @@ del(.sources[] |
 
 | (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/markus/Documents/DieWeltImBlick/intro.mov"
 | (.sources[] | select(.name == "Outro").settings.local_file) = "/Users/markus/Documents/DieWeltImBlick/outro.mov"
+| (.sources[] | select(.id == "ffmpeg").settings.close_when_inactive) = true
