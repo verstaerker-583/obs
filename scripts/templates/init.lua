@@ -141,7 +141,7 @@ function preFlight()
 			dev:setInputVolume(40)
 		elseif dev:transportType() == "USB" then				-- USB 
 			dev:setDefaultInputDevice()
-			dev:setInputVolume(50)
+			dev:setInputVolume(70)
 		elseif dev:transportType() == "Virtual" then				-- NDI Audio
 			dev:setInputVolume(40)
 		else
