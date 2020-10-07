@@ -14,7 +14,7 @@ var donate = {
 	call2action: "⇨ Unterstütze Greenpeace!"
 };
 var pics = {
-	channelIcon: "../gp40Logo2.png",
+	channelIcon: "../gp40Logo.png",
 	clockLogo: "../../gp/gpLogo.svg",
 	hostLogo: "../gp40Logo.png",
 	organizationLogo: "../../gp/gpLogo.svg",
