@@ -14,3 +14,5 @@ del(.sources[] |
 | (.sources[] | select(.id == "slideshow").settings.files[3].value) = "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/gp030rj_medium_res_walfang.jpg"
 | (.sources[] | select(.id == "slideshow").settings.files[4].value) = "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/gp0stoc2o_medium_res.jpg"
 | (.sources[] | select(.id == "slideshow").settings.files[5].value) = "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/nuclear_free_seas.jpg"
+
+| (.AuxAudioDevice1.volume) = 2
