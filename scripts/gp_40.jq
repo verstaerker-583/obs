@@ -21,7 +21,7 @@
 		.name? == "guest",
 
 		.enabled? == "false",
-		.key? == "OBS_KEY_M",
+#		.key? == "OBS_KEY_M",
 		.name? == "Screen Capture",
 		.name? == "NDI Audio"
 	)
