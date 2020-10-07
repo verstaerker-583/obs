@@ -42,6 +42,7 @@ function build() {
 			break;
 		default:
 			pics.organizationLogo = "";
+			pics.hostLogo = "";
 			buildBanner(finish);
 			loadClock();
 			loadPics();
