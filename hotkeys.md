@@ -7,6 +7,10 @@
 
 * **[⌃][⌥][⌘] & [S]** - ***"Streamen"***
 
+### Slideshow
+* **[▶]** 🖼 vor
+* **[◀]** 🖼 zurück
+
 ### Szenen
 1. **[1]** Szene "Start" ⏰
     * 🔇 alle Audioquellen geschlossen
@@ -14,28 +18,28 @@
 2. **[2]** Szene "Cam" 🎥
     * 🔊 alle Audioquellen, außer Gast ❌, offen
     * 🎥 `Internal` voreingestellt
-    * 📺 Screen, Spendenaufruf, ❓ und Chat 💬 ausgeblendet
+    * 🖼 Screen, Spendenaufruf, ❓ und Chat 💬 ausgeblendet
 
     ⌨ Hotkeys
-    * **[<]** Kameraumschaltung
-    * **[+]** "Screen" 📺 ein-/ausblenden
+    * **[<]** Wechsel Kamera
+    * **[+]** "Screen" 🖼 ein-/ausblenden
     * **[?]** ❓
     * **[C]** Chat 💬 ein-/ausblenden
     * **[€]** Spendenaufruf
 
-3. **[3]** Szene "Screen" 📺
+3. **[3]** Szene "Screen" 🖼
     * 🔊 alle Audioquellen, außer Gast ❌, offen
     * Kameras ausgeblendet
 
     ⌨ Hotkeys
     * **[+]** Kameras ein-/ausblenden
         * 🎥 `Internal` (links unten) voreingestellt
-    * **[<]** Kameraumschaltung
+    * **[<]** Wechsel Kamera
 
 4. **[4]** Szene "Finish" 🛌
     * 🔇 alle Audioquellen geschlossen
 
-### Intro/ Outro
+### Videos 
 * **[I]** **I**ntro 🎞
     * 🔊 alle Audioquellen, außer Gast, offen
     * wechselt zu Szene "Cam"
@@ -44,6 +48,10 @@
     * 🔇 alle Audioquellen geschlossen
     * wechselt zu Szene "Finish"
 
+* **[V]** **V**ideo 🎞
+    * 🔊 alle Audioquellen, außer Gast, offen
+    * wechselt zu Szene "Cam"
+
 ### Guest 📞
 * **[1]**, **[2]**, **[3]** und **[4]** - Gast immer stumm geschaltet und ausgeblendet
 
@@ -51,7 +59,7 @@
     * 🔊 alle Audioquellen, außer Gastgeber 🔇, offen
 
     ⌨ Hotkeys
-    * **[+]** "Screen" 📺 ein-/ausblenden
+    * **[+]** "Screen" 🖼 ein-/ausblenden
     * **[?]** ❓
     * **[C]** Chat 💬 aus-/einblenden
     * **[€]** Spendenaufruf
@@ -59,10 +67,10 @@
 * **[G]** Szene "**G**uest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
     * 🔊 alle Audioquellen offen
     * 🎥 `Internal` voreingestellt
-    * 📺 Screen, Spendenaufruf und ❓ ausgeblendet
+    * 🖼 Screen, Spendenaufruf und ❓ ausgeblendet
 
     ⌨ Hotkeys
-    * **[<]** Kameraumschaltung
+    * **[<]** Wechsel Kamera
     * **[?]** ❓
     * **[C]** Chat 💬 aus-/einblenden
     * **[€]** Spendenaufruf
@@ -74,7 +82,7 @@
 
     ⌨ Hotkeys
     * **[+]** Kameras aus-/einblenden
-    * **[<]** Kameraumschaltung
+    * **[<]** Wechsel Kamera
 
 ### Tipps
 * Szene "Cam" **[2]**, "Screen" **[3]**, "Full" **[F]** und "Guest" **[G]** können nach Einblendungen durch erneutes Drücken wieder "aufgeräumt" werden.
