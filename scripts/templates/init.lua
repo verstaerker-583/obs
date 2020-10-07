@@ -7,7 +7,7 @@ streamingLayout = {
 function applicationWatcher(appName, eventType, appObject)
 	if appName == "OBS" then
 		if eventType == hs.application.watcher.launched then
-			preFlight(true)
+			preFlight()
 		end
 		if eventType == hs.application.watcher.terminated then
 			postFlight()
@@ -34,15 +34,16 @@ end
 
 function mailLogs()
 	hs.execute(
-		"system_profiler -json -detailLevel full SPAudioDataType SPCameraDataType SPDisplaysDataType SPHardwareDataType SPNetworkDataType SPSoftwareDataType > /tmp/system.json"
+		"system_profiler -json -detailLevel full SPAudioDataType SPCameraDataType SPDisplaysDataType SPHardwareDataType SPNetworkDataType SPSoftwareDataType > ~/Library/Application Support/obs-studio/logssystem.json"
 	)
 	local mailer = hs.sharing.newShare("com.apple.share.Mail.compose")
 	mailer:subject("Logfiles " .. os.date()):recipients({"o.koepke@gmx.de"})
 	mailer:shareItems(
 		{
-			hs.sharing.fileURL("/tmp/log.txt"),
-			hs.sharing.fileURL("/tmp/system.json"),
+			hs.sharing.fileURL("~/Library/Application Support/obs-studio/logs/log.txt"),
+			hs.sharing.fileURL("~/Library/Application Support/obs-studio/logs/system.json"),
 			hs.sharing.fileURL("~/Library/Application Support/obs-studio/basic"),
+
 			hs.sharing.fileURL("~/Library/Application Support/obs-studio/logs")
 		}
 	)
@@ -91,7 +92,7 @@ function preFlight()
 	local headset = false
 	local monitor = false
 
-	local log = io.open("/tmp/log.txt", "w")
+	local log = io.open("~/Library/Application Support/obs-studio/logslog.txt", "w")
 	log:write(os.date() .. "\n")
 
 	-- Video
