@@ -17,12 +17,12 @@
 * **[<]**	Wechsel Kamera
 * **[+]**	🖼/ 🎥 PiP ein-/ausblenden
 
-* **[◀]**	🖼 **[▶]**  Slideshow vor/ zurück 
+* **[◀]** **[▶]**	🖼 Slideshow vor/ zurück
 * **[V]**	🎞 **V**ideo 
 
-* **[M]**	🔇 Stummschaltung Mikrofon
+* **[M]**	🔇 Stummschaltung **M**ikrofon
 
 ## in Szene 2 "Cam" 🎥
 * **[?]**	❓ ein-/ausblenden
-* **[C]**	💬 Chat
+* **[C]**	💬 **C**hat
 * **[€]**	Spendenaufruf
