@@ -3,31 +3,32 @@ body {
 	overflow: hidden
 }
 
-yt-live-chat-author-chip #author-name {
+yt-live-chat-author-chip #author-name,
+yt-live-chat-renderer,
+yt-live-chat-text-message-renderer {
+/*
+yt-live-chat-text-message-renderer[author-type="moderator"],
+yt-live-chat-text-message-renderer[author-type="moderator"][is-highlighted],
+yt-live-chat-text-message-renderer[author-type="owner"],
+yt-live-chat-text-message-renderer[author-type="owner"][is-highlighted],
+yt-live-chat-text-message-renderer[is-highlighted] {
+*/
 	background-color: transparent!important
 }
 
 yt-live-chat-header-renderer,
-yt-live-chat-message-input-renderer {
+yt-live-chat-message-input-renderer,
+yt-live-chat-mode-change-message-renderer,
+yt-live-chat-restricted-participation-renderer,
+yt-live-chat-text-message-renderer #author-badges,
+yt-live-chat-text-message-renderer #author-photo,
+yt-live-chat-viewer-engagement-message-renderer {
 	display: none!important
 }
 
+yt-live-chat-item-list-renderer #item-scroller,
 yt-live-chat-item-list-renderer #items {
 	overflow: hidden!important
-}
-
-yt-live-chat-item-list-renderer #item-scroller {
-	overflow: hidden!important
-}
-
-yt-live-chat-mode-change-message-renderer,
-yt-live-chat-viewer-engagement-message-renderer,
-yt-live-chat-restricted-participation-renderer {
-	display: none!important
-}
-
-yt-live-chat-renderer {
-	background-color: transparent!important
 }
 
 yt-live-chat-renderer * {
@@ -37,8 +38,20 @@ yt-live-chat-renderer * {
 	line-height: 20px!important
 }
 
-yt-live-chat-text-message-renderer #author-badges {
-	display: none!important
+/*
+yt-live-chat-text-message-renderer {
+	padding-left: 0!important;
+	padding-right: 0!important
+}
+*/
+
+yt-live-chat-text-message-renderer #author-name.moderator,
+yt-live-chat-text-message-renderer #author-name.owner,
+yt-live-chat-text-message-renderer #author-name[type="moderator"],
+yt-live-chat-text-message-renderer #author-name[type="owner"],
+yt-live-chat-text-message-renderer yt-live-chat-author-badge-renderer[type="moderator"],
+yt-live-chat-text-message-renderer yt-live-chat-author-badge-renderer[type="owner"] {
+	color: #73be1e!important
 }
 
 yt-live-chat-text-message-renderer #author-name::after {
@@ -46,55 +59,12 @@ yt-live-chat-text-message-renderer #author-name::after {
 	margin-left: 2px
 }
 
-yt-live-chat-text-message-renderer #author-name[type="moderator"],
-yt-live-chat-text-message-renderer #author-name.moderator,
-yt-live-chat-text-message-renderer yt-live-chat-author-badge-renderer[type="moderator"] {
-	color: #73be1e!important
-}
-
-yt-live-chat-text-message-renderer #author-name[type="owner"],
-yt-live-chat-text-message-renderer #author-name.owner,
-yt-live-chat-text-message-renderer yt-live-chat-author-badge-renderer[type="owner"] {
-	color: #73be1e!important
-}
-
-yt-live-chat-text-message-renderer #author-photo {
-	display: none!important
-}
-
 yt-live-chat-text-message-renderer #content {
 	overflow: initial!important
 }
 
-yt-live-chat-text-message-renderer {
-	/*
-	padding-left: 4px!important;
-	padding-right: 4px!important
-	*/
-	padding-left: 0px!important;
-	padding-right: 0px!important
-}
-
-yt-live-chat-text-message-renderer,
-yt-live-chat-text-message-renderer[is-highlighted] {
-	background-color: transparent!important
-}
-
-yt-live-chat-text-message-renderer[author-type="moderator"],
-yt-live-chat-text-message-renderer[author-type="moderator"][is-highlighted] {
-	background-color: transparent!important
-}
-
-yt-live-chat-text-message-renderer[author-type="owner"],
-yt-live-chat-text-message-renderer[author-type="owner"][is-highlighted] {
-	background-color: transparent!important
-}
-
-yt-live-chat-ticker-renderer {
-	display: none!important
-}
-
 yt-live-chat-ticker-renderer {
 	background-color: transparent!important;
-	box-shadow: none!important
+	box-shadow: none!important;
+	display: none!important
 }

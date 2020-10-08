@@ -1,42 +1,42 @@
-@import "../../gp/html/stylesheet.css";
+@import ../../gp/html/stylesheet.css;
+#hostlogo {
+	bottom: 10px;
+	height: auto;
+	position: absolute;
+	right: 10px;
+	width: 340px
+}
+
+.call2action {
+	background: linear-gradient(tobottom, #c9ae93, #50593c)
+}
+
+.element {
+	border-radius: 5px
+}
+
+.element:after {
+	content: none
+}
+
+.message {
+	background: #edc9af;
+	color: white
+}
+
+.theme {
+	background: #edc9af;
+	color: #50593c
+}
+
 @font-face {
 	font-family: Sunbeat;
 	src: url(https://verstaerker-583.github.io/obs/bd/svg/sunbeat.otf)
 }
 
-.call2action {
-	background: linear-gradient(to bottom, #c9ae93, #50593c);
-}
-
-.element {
-	border-radius: 5px;
-}
-
-.element:after {
-	content: none;
-}
-
-.message {
-	background: #edc9af;
-	color: white;
-}
-
-.theme {
-	background: #edc9af;
-	color: #50593c;
-}
-
-#hostLogo {
-	bottom: 10px;
-	height: auto;
-	position: absolute;
-	right: 10px;
-	width: 340px;
-}
-
 body {
 	background: #edc9af;
-	background-image: url("https://markus-mauthe.de/site/assets/files/1/dsc6707.jpg");
+	background-image: url(https://markus-mauthe.de/site/assets/files/1/dsc6707.jpg);
 	background-size: cover;
-	font-family: Sunbeat;
+	font-family: Sunbeat
 }

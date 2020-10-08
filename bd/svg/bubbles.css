@@ -1,41 +1,11 @@
-@font-face {
-	font-family: Sunbeat;
-	src: url(sunbeat.otf)
-}
-
-feFlood {
-	flood-color: #cc3366;
-	flood-opacity: 90%
-}
-
-.Buntdenker {
-	transform: translate(50%, 50%)
-}
-
-.MarkusCams {
-	transform: translate(90%, 45%)
-}
-
-.MarkusYT,
-.MarkusBackground,
-.Markus {
-	transform: translate(75%, 45%)
-}
-
-.LutzCams {
-	transform: translate(10%, 55%)
-}
-
-.LutzYT,
-.LutzBackground,
-.Lutz {
-	transform: translate(25%, 55%)
-}
-
 .background {
-	fill: #33cc99;
+	fill: #3c9;
 	height: 100%;
 	width: 100%
+}
+
+.buntdenker {
+	transform: translate(50%, 50%)
 }
 
 .frames {
@@ -51,6 +21,26 @@ feFlood {
 	font-size: 62px
 }
 
+.lutzcams {
+	transform: translate(10%, 55%)
+}
+
+.lutzyt,
+.lutzbackground,
+.lutz {
+	transform: translate(25%, 55%)
+}
+
+.markuscams {
+	transform: translate(90%, 45%)
+}
+
+.markusyt,
+.markusbackground,
+.markus {
+	transform: translate(75%, 45%)
+}
+
 .names {
 	dominant-baseline: central;
 	font-family: Sunbeat;
@@ -62,35 +52,45 @@ feFlood {
 	width: 196px
 }
 
-circle.Buntdenker {
+@font-face {
+	font-family: Sunbeat;
+	src: url(sunbeat.otf)
+}
+
+circle.buntdenker {
 	fill: url(#Buntdenker);
 	filter: url(#grayscale)
 }
 
-circle.Markus {
-	fill: url(#Markus)
-}
-
-circle.MarkusCams,
-circle.MarkusBackground {
-	fill: url(#MarkusBackground)
-}
-
-circle.MarkusYT {
-	fill: url(#MarkusYT)
-}
-
-circle.Lutz {
+circle.lutz {
 	fill: url(#Lutz)
 }
 
-circle.LutzCams,
-circle.LutzBackground {
+circle.lutzcams,
+circle.lutzbackground {
 	fill: url(#LutzBackground)
 }
 
-circle.LutzYT {
+circle.lutzyt {
 	fill: url(#LutzYT)
+}
+
+circle.markus {
+	fill: url(#Markus)
+}
+
+circle.markuscams,
+circle.markusbackground {
+	fill: url(#MarkusBackground)
+}
+
+circle.markusyt {
+	fill: url(#MarkusYT)
+}
+
+feflood {
+	flood-color: #c36;
+	flood-opacity: 90%
 }
 
 text {

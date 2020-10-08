@@ -1,8 +1,9 @@
-@import "../../gp/html/stylesheet.css";
-
-#presenterLogo {
+@import ../../gp/html/stylesheet.css;
+#presenterlogo {
 	height: 90px;
+	/*
 	position: absolute;
+	*/
 	right: 10px;
-	top: 10px;
+	top: 10px
 }
