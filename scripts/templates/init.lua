@@ -116,7 +116,7 @@ function preFlight()
 --		log:write(hs.inspect(dev:availableModes()) .. "\n")			-- for new platforms
 	end
 	if not monitor then
---		hs.alert.show("🚨 🖥️ 🚨", 10)
+		hs.alert.show("🚨 🖥️ 🚨", 10)
 		log:write("🚨 🖥️ 🚨\n")
 	end
 

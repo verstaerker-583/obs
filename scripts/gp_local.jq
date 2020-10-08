@@ -1,4 +1,4 @@
-.name = "gp_40"
+.name = "gp_local"
 
 | (.sources[] | select(.id == "browser_source").settings.url) |= sub("gp";"gp40")
 

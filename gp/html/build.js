@@ -5,22 +5,24 @@ function build() {
 	var URL = location.pathname;
 	var PageName = URL.substring(URL.lastIndexOf("/") + 1);
 	PageName = PageName.substring(0, PageName.lastIndexOf("."));
+	pics.videoThumb = "https://i3.ytimg.com/vi/" + videoId + "/maxresdefault.jpg";
 	switch (PageName) {
 		case "start":
-			pics.organizationLogo = "";
-			/*
-			pics.videoThumb = "";
-			*/
+			if (pics.organizationLogoNeg)
+				pics.organizationLogo = false;
+			if (pics.presenterLogo == pics.channelIcon)
+				pics.presenterLogo = false;
 			buildBanner(start);
 			loadClock();
 			loadPics();
 			position();
 			break;
 		case "cam":
-			pics.channelIcon = "";
-			pics.clockLogo = "";
-			pics.organizationLogoNeg = "";
-			pics.videoThumb = "";
+			pics.channelIcon = false;
+			pics.clockLogo = false;
+			if (pics.organizationLogoNeg)
+				pics.organizationLogoNeg = false;
+			pics.videoThumb = false;
 			document.body.style.backgroundColor = "transparent";
 			document.body.style.backgroundImage = "none";
 			loadPics();
@@ -35,12 +37,13 @@ function build() {
 		case "chat":
 			document.body.style.backgroundColor = "transparent";
 			document.body.style.backgroundImage = "none";
-			if (typeof videoId !== 'undefined') {
-				window.location = "https://www.youtube.com/live_chat?is_popout=1&v=" + videoId;
-			}
+			window.location = "https://www.youtube.com/live_chat?is_popout=1&v=" + videoId;
 			break;
 		default:
-			pics.organizationLogo = "";
+			if (pics.organizationLogoNeg)
+				pics.organizationLogo = false;
+			if (pics.presenterLogo == pics.channelIcon)
+				pics.presenterLogo = false;
 			buildBanner(finish);
 			loadClock();
 			loadPics();
