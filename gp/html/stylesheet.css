@@ -1,4 +1,4 @@
-#alarmhand {
+#alarmHand {
 	stroke: #ff0032;
 	visibility: hidden
 }
@@ -9,14 +9,14 @@
 	transform-origin: right top
 }
 
-#channelicon {
+#channelIcon {
 	border: 5px solid;
 	border-radius: 50%;
 	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
-	left: calc(182px-206px/2);
+	left: calc(182px - 206px/2);
 	padding: 8px;
 	position: absolute;
-	top: calc(273px-206px/2);
+	top: calc(273px - 206px/2);
 	width: 180px
 }
 
@@ -32,32 +32,32 @@
 	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
 	height: 196px;
 	position: absolute;
-	right: calc(182.5px-206px/2);
-	top: calc(193px-206px/2);
+	right: calc(182.5px - 206px/2);
+	top: calc(193px - 206px/2);
 	width: 196px
 }
 
-#clockface {
+#clockFace {
 	fill: white
 }
 
-#clocklogo {
+#clockLogo {
 	height: 100px;
 	position: absolute;
-	right: calc(182.5px-100px/2);
-	top: calc(193px-40px);
+	right: calc(182.5px - 100px/2);
+	top: calc(193px - 40px);
 	width: 100px;
 	z-index: -1
 }
 
 #description {
 	bottom: 10px;
-	left: calc(50%-1em);
+	left: calc(50% - 1em);
 	position: absolute
 }
 
-#hourhand,
-#minutehand {
+#hourHand,
+#minuteHand {
 	stroke: white
 }
 
@@ -67,8 +67,8 @@
 	top: 2px
 }
 
-#organizationlogo,
-#organizationlogoneg {
+#organizationLogo,
+#organizationLogoNeg {
 	bottom: 10px;
 	height: auto;
 	left: 10px;
@@ -76,21 +76,21 @@
 	width: 340px
 }
 
-#presenterlogo {
+#presenterLogo {
 	height: 135px;
 	position: absolute;
 	right: 0;
 	top: 0
 }
 
-#secondhand {
+#secondHand {
 	stroke: yellow
 }
 
-#videothumb {
+#videoThumb {
 	border: 5px solid;
 	border-radius: 10px;
-	bottom: calc(226px-234px/2-5px);
+	bottom: calc(226px - 234px/2 - 5px);
 	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
 	height: 234px;
 	left: 50%;
@@ -111,7 +111,7 @@
 }
 
 .call2action {
-	background: linear-gradient(tobottom, #ff0032, #480019);
+	background: linear-gradient(to bottom, #ff0032, #480019);
 	font-size: 200%
 }
 
@@ -162,24 +162,24 @@
 @keyframes heartbeat {
 	10% {
 		animation-timing-function: ease-in;
-		transform: scale(0.91)
+		transform: scale(0.91);
 	}
 	17% {
 		animation-timing-function: ease-out;
-		transform: scale(0.98)
+		transform: scale(0.98);
 	}
 	33% {
 		animation-timing-function: ease-in;
-		transform: scale(0.87)
+		transform: scale(0.87);
 	}
 	45% {
 		animation-timing-function: ease-out;
-		transform: scale(1)
+		transform: scale(1);
 	}
 	from {
 		animation-timing-function: ease-out;
 		transform: scale(1);
-		transform-origin: center center
+		transform-origin: center center;
 	}
 }
 

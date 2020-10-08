@@ -1,5 +1,5 @@
-@import ../../gp/html/stylesheet.css;
-#hostlogo {
+@import "../../gp/html/stylesheet.css";
+#hostLogo {
 	bottom: 10px;
 	height: auto;
 	position: absolute;
@@ -8,7 +8,7 @@
 }
 
 .call2action {
-	background: linear-gradient(tobottom, #c9ae93, #50593c)
+	background: linear-gradient(to bottom, #c9ae93, #50593c)
 }
 
 .element {
@@ -35,8 +35,6 @@
 }
 
 body {
-	background: #edc9af;
-	background-image: url(https://markus-mauthe.de/site/assets/files/1/dsc6707.jpg);
-	background-size: cover;
+	background: #edc9af url(https://markus-mauthe.de/site/assets/files/1/dsc6707.jpg) (cover);
 	font-family: Sunbeat
 }
