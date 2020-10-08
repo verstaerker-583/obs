@@ -148,6 +148,18 @@
 				"name": "Compressor"
 			},
 			{
+				"enabled": "false",
+				"id": "compressor_filter",
+				"name": "Ducking",
+				"settings": {
+					"attack_time": 100,
+					"ratio": 32,
+					"release_time": 600,
+					"sidechain_source": "Microphone",
+					"threshold": -36
+				}
+			},
+			{
 				"id": "limiter_filter",
 				"name": "Limiter"
 			}
@@ -203,6 +215,11 @@
 					"name": "Sharpen"
 				},
 				{
+					"enabled": "false",
+					"id": "chroma_key_filter",
+					"name": "Chroma Key"
+				},
+				{
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
@@ -223,6 +240,11 @@
 				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
+				},
+				{
+					"enabled": "false",
+					"id": "chroma_key_filter",
+					"name": "Chroma Key"
 				},
 				{
 					"id": "clut_filter",
@@ -246,6 +268,11 @@
 					"name": "Sharpen"
 				},
 				{
+					"enabled": "false",
+					"id": "chroma_key_filter",
+					"name": "Chroma Key"
+				},
+				{
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
@@ -258,6 +285,15 @@
 			"name": "NDI",
 			"settings": {
 				"device": "BB86C477-373F-49D9-AA4B-CE86A0E883F1"
+			}
+		},
+		{
+			"id": "color_source",
+			"name": "Color Source",
+			"settings": {
+				"color": 4287868617,
+				"height": 720,
+				"width": 1280
 			}
 		},
 		{
@@ -315,6 +351,31 @@
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
+			}
+		},
+		{
+			"hotkeys": {
+				"SlideShow.NextSlide": [
+					{
+						"key": "OBS_KEY_RIGHT"
+					}
+				],
+				"SlideShow.PreviousSlide": [
+					{
+						"key": "OBS_KEY_LEFT"
+					}
+				],
+				"SlideShow.Restart": [
+					{
+						"key": "OBS_KEY_1"
+					}
+				]
+			},
+			"id": "slideshow",
+			"name": "Slide Show",
+			"settings": {
+				"slide_mode": "mode_manual",
+				"use_custom_size": "1280x720"
 			}
 		},
 		{
@@ -742,7 +803,23 @@
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
+				"libobs.show_scene_item.Color Source": [
+					{
+						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_H"
+					}
+				],
 				"libobs.show_scene_item.Screen Capture": [
+					{
+						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_H"
+					}
+				],
+				"libobs.show_scene_item.Slide Show": [
 					{
 						"key": "OBS_KEY_3"
 					},
@@ -766,6 +843,17 @@
 			"name": "Screen",
 			"settings": {
 				"items": [
+					{
+						"locked": true,
+						"name": "Color Source"
+					},
+					{
+						"locked": true,
+						"name": "Slide Show",
+						"private_settings": {
+							"color-preset": 7
+						}
+					},
 					{
 						"align": 0,
 						"bounds": {
@@ -997,7 +1085,17 @@
 				}
 			],
 			"hotkeys": {
+				"libobs.show_scene_item.Color Source": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				],
 				"libobs.show_scene_item.Screen Capture": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				],
+				"libobs.show_scene_item.Slide Show": [
 					{
 						"key": "OBS_KEY_2"
 					}
@@ -1010,6 +1108,14 @@
 			},
 			"settings": {
 				"items": [
+					{
+						"locked": true,
+						"name": "Color Source"
+					},
+					{
+						"locked": true,
+						"name": "Slide Show"
+					},
 					{
 						"align": 0,
 						"bounds": {

@@ -41,10 +41,10 @@ chmod -R +w ~/Documents/GitHub/obs
 /Applications/Inkscape.app/Contents/MacOS/inkscape --export-type="png" ../*/*Mask.svg &>/dev/null
 
 # scenes
-jq -S --tab -f gp_local.jq		../gp/gp.json		> ../gp40/gp_local.json
+jq -S --tab -f gp_local.jq	../gp/gp.json		> ../gp/gp_local.json
 jq -S --tab -f gp_naked.jq	../gp/gp.json		> ../gp/gp_naked.json
 jq -S --tab -f nd.jq		../gp/gp.json		> ../gp/nd.json
-jq -S --tab -f sr.jq		../gp/gp_naked.json	> ../sr/sr.json
+jq -S --tab -f sr.jq		../gp/gp.json		> ../sr/sr.json
 
 jq -S --tab -f bd_naked.jq	../bd/bd.json		> ../bd/bd_naked.json
 jq -S --tab -f bd_solo.jq	../gp/gp_naked.json	> ../bd/bd_solo.json
@@ -79,7 +79,8 @@ sudo rm -rf ../target/$OBSUSR
 # scenes
 mkdir -p ../target/$OBSUSR/basic/scenes
 for i in `ls ../*/*.json`; do
-	[ `basename $i` == "bd_lutz.json" -o `basename $i` == "gp_local.json" ] || jq -S --tab -f to$OBSUSR.jq $i > ../target/$OBSUSR/basic/scenes/`basename $i`
+#	[ `basename $i` == "bd_lutz.json" -o `basename $i` == "gp_local.json" ] || jq -S --tab -f to$OBSUSR.jq $i > ../target/$OBSUSR/basic/scenes/`basename $i`
+	[ `basename $i` == "bd_lutz.json" ] || jq -S --tab -f to$OBSUSR.jq $i > ../target/$OBSUSR/basic/scenes/`basename $i`
 done
 
 # profiles
