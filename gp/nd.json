@@ -88,6 +88,9 @@
 				"OBSBasic.SelectScene": [
 					{
 						"key": "OBS_KEY_1"
+					},
+					{
+						"key": "OBS_KEY_4"
 					}
 				]
 			},

@@ -55,3 +55,4 @@
 			)
 	)
 )
+| (.sources[] | select(.name == "Start").hotkeys."OBSBasic.SelectScene") |= . + [{"key": "OBS_KEY_4"}]
