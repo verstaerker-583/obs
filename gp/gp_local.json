@@ -152,11 +152,6 @@
 					"name": "Sharpen"
 				},
 				{
-					"enabled": "false",
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
@@ -179,11 +174,6 @@
 					"name": "Sharpen"
 				},
 				{
-					"enabled": "false",
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
@@ -203,11 +193,6 @@
 				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
-				},
-				{
-					"enabled": "false",
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
 				},
 				{
 					"id": "clut_filter",

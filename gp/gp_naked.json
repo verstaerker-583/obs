@@ -141,57 +141,6 @@
 			"device_id": "BF568F24-731B-41DB-932E-AC7E260BC71A"
 		}
 	},
-	"DesktopAudioDevice1": {
-		"filters": [
-			{
-				"id": "compressor_filter",
-				"name": "Compressor"
-			},
-			{
-				"id": "limiter_filter",
-				"name": "Limiter"
-			}
-		],
-		"hotkeys": {
-			"libobs.mute": [
-				{
-					"key": "OBS_KEY_1"
-				},
-				{
-					"key": "OBS_KEY_4"
-				},
-				{
-					"key": "OBS_KEY_D"
-				},
-				{
-					"key": "OBS_KEY_O"
-				}
-			],
-			"libobs.unmute": [
-				{
-					"key": "OBS_KEY_2"
-				},
-				{
-					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_D"
-				},
-				{
-					"key": "OBS_KEY_I"
-				}
-			]
-		},
-		"id": "coreaudio_input_capture",
-		"monitoring_type": 2,
-		"name": "Desktop Audio",
-		"private_settings": {
-			"volume_locked": true
-		},
-		"settings": {
-			"device_id": "BlackHole2ch_UID"
-		}
-	},
 	"current_scene": "Start",
 	"name": "gp_naked",
 	"preview_locked": true,
@@ -261,6 +210,15 @@
 			}
 		},
 		{
+			"id": "color_source",
+			"name": "Color Source",
+			"settings": {
+				"color": 4280204915,
+				"height": 720,
+				"width": 1280
+			}
+		},
+		{
 			"filters": [
 				{
 					"id": "compressor_filter",
@@ -318,6 +276,31 @@
 			}
 		},
 		{
+			"hotkeys": {
+				"SlideShow.NextSlide": [
+					{
+						"key": "OBS_KEY_RIGHT"
+					}
+				],
+				"SlideShow.PreviousSlide": [
+					{
+						"key": "OBS_KEY_LEFT"
+					}
+				],
+				"SlideShow.Restart": [
+					{
+						"key": "OBS_KEY_1"
+					}
+				]
+			},
+			"id": "slideshow",
+			"name": "Slide Show",
+			"settings": {
+				"slide_mode": "mode_manual",
+				"use_custom_size": "1280x720"
+			}
+		},
+		{
 			"id": "text_ft2_source",
 			"name": "?",
 			"settings": {
@@ -329,13 +312,6 @@
 					"style": "Condensed Black"
 				},
 				"text": "?"
-			}
-		},
-		{
-			"id": "display_capture",
-			"name": "Screen Capture",
-			"settings": {
-				"display": 1
 			}
 		},
 		{
@@ -742,7 +718,15 @@
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
-				"libobs.show_scene_item.Screen Capture": [
+				"libobs.show_scene_item.Color Source": [
+					{
+						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_H"
+					}
+				],
+				"libobs.show_scene_item.Slide Show": [
 					{
 						"key": "OBS_KEY_3"
 					},
@@ -767,17 +751,14 @@
 			"settings": {
 				"items": [
 					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
 						"locked": true,
-						"name": "Screen Capture",
-						"pos": {
-							"x": 640,
-							"y": 360
+						"name": "Color Source"
+					},
+					{
+						"locked": true,
+						"name": "Slide Show",
+						"private_settings": {
+							"color-preset": 7
 						}
 					},
 					{
@@ -997,7 +978,12 @@
 				}
 			],
 			"hotkeys": {
-				"libobs.show_scene_item.Screen Capture": [
+				"libobs.show_scene_item.Color Source": [
+					{
+						"key": "OBS_KEY_2"
+					}
+				],
+				"libobs.show_scene_item.Slide Show": [
 					{
 						"key": "OBS_KEY_2"
 					}
@@ -1011,18 +997,12 @@
 			"settings": {
 				"items": [
 					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
 						"locked": true,
-						"name": "Screen Capture",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
+						"name": "Color Source"
+					},
+					{
+						"locked": true,
+						"name": "Slide Show"
 					}
 				]
 			}

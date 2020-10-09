@@ -4,8 +4,6 @@ del(.sources[] |
 )
 | (.sources[] | select(.id == "ffmpeg").settings.close_when_inactive) = true
 
-| (.sources[] | select(.id == "window_capture").settings.owner_name) = "FotoMagico 5"
-| (.sources[] | select(.id == "window_capture").settings.window_name) = ""
 | (.sources[] | select(.name == "External").settings.device) = "0x2543000043e9a4d"
 | (.sources[] | select(.name == "Internal").settings.device) = "0x8020000005ac8514"
 

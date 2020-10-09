@@ -99,11 +99,6 @@
 					"name": "Sharpen"
 				},
 				{
-					"enabled": "false",
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
@@ -131,11 +126,6 @@
 				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
-				},
-				{
-					"enabled": "false",
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
 				},
 				{
 					"id": "clut_filter",
@@ -261,13 +251,6 @@
 					"style": "Condensed Black"
 				},
 				"text": "?"
-			}
-		},
-		{
-			"id": "display_capture",
-			"name": "Screen Capture",
-			"settings": {
-				"display": 1
 			}
 		},
 		{
@@ -511,11 +494,6 @@
 						"key": "OBS_KEY_3"
 					}
 				],
-				"libobs.show_scene_item.Screen Capture": [
-					{
-						"key": "OBS_KEY_3"
-					}
-				],
 				"libobs.show_scene_item.Slide Show": [
 					{
 						"key": "OBS_KEY_3"
@@ -546,20 +524,6 @@
 						"name": "Slide Show",
 						"private_settings": {
 							"color-preset": 7
-						}
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "Screen Capture",
-						"pos": {
-							"x": 640,
-							"y": 360
 						}
 					},
 					{
