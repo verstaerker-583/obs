@@ -36,8 +36,8 @@ yt-live-chat-renderer * {
 }
 
 yt-live-chat-text-message-renderer {
-	padding-left: 4!important;
-	padding-right: 4!important
+	padding-left: 10!important;
+	padding-right: 10!important
 }
 
 yt-live-chat-text-message-renderer #author-name.moderator,

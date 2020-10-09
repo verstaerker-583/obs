@@ -1,5 +1,7 @@
 .name = "sr"
 
+| (.sources[] | select(.name == "Overlay Chat").settings.width) = 560
+
 | (.sources[] | select(.id == "browser_source").settings.css) |= sub("gp";"sr")
 | (.sources[] | select(.id == "browser_source").settings.url) |= sub("gp";"sr")
 | (.sources[] | select(.id == "color_source").settings.color) = 4287868617
