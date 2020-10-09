@@ -8,8 +8,7 @@ function build() {
 	pics.videoThumb = "https://i3.ytimg.com/vi/" + videoId + "/maxresdefault.jpg";
 	switch (PageName) {
 		case "start":
-			if (pics.organizationLogoNeg)
-				pics.organizationLogo = false;
+			pics.organizationLogo = false;
 			if (pics.presenterLogo == pics.channelIcon)
 				pics.presenterLogo = false;
 			buildBanner(start);
@@ -20,7 +19,7 @@ function build() {
 		case "cam":
 			pics.channelIcon = false;
 			pics.clockLogo = false;
-			if (pics.organizationLogoNeg)
+			if (pics.organizationLogo)
 				pics.organizationLogoNeg = false;
 			pics.videoThumb = false;
 			document.body.style.backgroundColor = "transparent";
@@ -40,8 +39,7 @@ function build() {
 			window.location = "https://www.youtube.com/live_chat?is_popout=1&v=" + videoId;
 			break;
 		default:
-			if (pics.organizationLogoNeg)
-				pics.organizationLogo = false;
+			pics.organizationLogo = false;
 			if (pics.presenterLogo == pics.channelIcon)
 				pics.presenterLogo = false;
 			buildBanner(finish);

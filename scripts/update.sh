@@ -109,6 +109,4 @@ sudo find ~/Documents/GitHub/obs -exec touch -ht 197304291400 '{}' \;
 chmod -R -w ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs/.git
 
-exit 0
-
 package "gp mm ok"
