@@ -2,6 +2,7 @@ del(.sources[] |
 	select(.id == "ffmpeg_source").settings,
 	select(.id == "slideshow").settings.files
 )
+| (.sources[] | select(.id == "ffmpeg").settings.close_when_inactive) = true
 
 | (.sources[] | select(.id == "window_capture").settings.owner_name) = "FotoMagico 5"
 | (.sources[] | select(.id == "window_capture").settings.window_name) = ""
@@ -10,4 +11,3 @@ del(.sources[] |
 
 | (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/markus/Documents/DieWeltImBlick/intro.mov"
 | (.sources[] | select(.name == "Outro").settings.local_file) = "/Users/markus/Documents/DieWeltImBlick/outro.mov"
-| (.sources[] | select(.id == "ffmpeg").settings.close_when_inactive) = true

@@ -4,7 +4,9 @@ del(.sources[] |
 		.id == "ffmpeg_source",
 		.name == "Screen Capture"
 	).settings,
-	select(.id == "slideshow").settings.files
+	select(
+		.id == "slideshow"
+	).settings.files
 )
 
 | del(.[] |select(.id? == "coreaudio_input_capture"))
