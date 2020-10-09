@@ -27,12 +27,12 @@ yt-live-chat-item-list-renderer #items {
 }
 
 yt-live-chat-renderer * {
-	/*
 	color: white!important;
+	/*
 	font-family: "Helvetica Neue"!important;
+	*/
 	font-size: 22px!important;
 	line-height: 22px!important
-	*/
 }
 
 yt-live-chat-text-message-renderer {
