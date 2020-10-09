@@ -65,7 +65,8 @@
 		"name": "Microphone",
 		"private_settings": {
 			"volume_locked": true
-		}
+		},
+		"volume": 2
 	},
 	"AuxAudioDevice2": {
 		"balance": 0.25,

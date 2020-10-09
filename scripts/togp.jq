@@ -23,8 +23,6 @@ del(.sources[] |
 	]
 )
 
-| (.AuxAudioDevice1.volume) = 2
-
 | (.sources[] | select(.id == "browser_source").settings.url) |= sub("gp";"gp40")
 | (.sources[] | select(.id == "ffmpeg").settings.close_when_inactive) = true
 
