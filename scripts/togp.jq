@@ -1,6 +1,6 @@
 del(
 	(
-		select(.name == "NDI Audio")
+			.AuxAudioDevice2
 	),
 	(
 		.sources[] |
