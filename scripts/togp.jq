@@ -1,30 +1,40 @@
-del(.sources[] | 
-	select(.id == "ffmpeg_source").settings,
-	select(.id == "slideshow").settings.files
-)
-
-| del(.. |
-	select(
-		.key? == "OBS_KEY_F",
-		.key? == "OBS_KEY_G",
-		.key? == "OBS_KEY_H",
-		.name? == "NDI",
-		.name? == "guest",
-
-		.enabled? == "false",
-		.name? == "Screen Capture",
-		.name? == "NDI Audio"
+del(
+	(
+		.sources[] |
+			(
+				select(.id == "ffmpeg_source").settings,
+				select(.id == "slideshow").settings.files
+			),
+			(
+				., .settings.items[]? | select(
+					.name == "NDI",
+					.name == "guest"
+				)
+			),
+			(
+				.hotkeys[
+					"libobs.hide_scene_item.NDI",
+					"libobs.hide_scene_item.guest",
+					"libobs.show_scene_item.NDI",
+					"libobs.show_scene_item.guest"
+				]
+			)
+	),
+	(
+		.. | select(
+			.key? == "OBS_KEY_F",
+			.key? == "OBS_KEY_G",
+			.key? == "OBS_KEY_H",
+			.enabled? == "false"
+			)
 	)
 )
+| (.sources[] | select(.id == "ffmpeg").settings.close_when_inactive) = true
 
-| del(.sources[].hotkeys[
-	"libobs.hide_scene_item.NDI",
-	"libobs.show_scene_item.NDI"
-	]
-)
+#| (.sources[] | select(.name == "External").settings.device) = "0x14200000046d0823"
+#| (.sources[] | select(.name == "Internal").settings.device) = "0x8020000005ac8514"
 
 | (.sources[] | select(.id == "browser_source").settings.url) |= sub("gp";"gp40")
-| (.sources[] | select(.id == "ffmpeg").settings.close_when_inactive) = true
 
 | (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value": "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/atom_unterweser.jpg"}]
 | (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value": "https://www.greenpeace.de/sites/www.greenpeace.de/files/styles/galleria_desk_1x/public/brent_spar_1.jpg"}]
