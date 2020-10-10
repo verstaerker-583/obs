@@ -141,69 +141,6 @@
 			"device_id": "BF568F24-731B-41DB-932E-AC7E260BC71A"
 		}
 	},
-	"DesktopAudioDevice1": {
-		"filters": [
-			{
-				"id": "compressor_filter",
-				"name": "Compressor"
-			},
-			{
-				"enabled": "false",
-				"id": "compressor_filter",
-				"name": "Ducking",
-				"settings": {
-					"attack_time": 100,
-					"ratio": 32,
-					"release_time": 600,
-					"sidechain_source": "Microphone",
-					"threshold": -36
-				}
-			},
-			{
-				"id": "limiter_filter",
-				"name": "Limiter"
-			}
-		],
-		"hotkeys": {
-			"libobs.mute": [
-				{
-					"key": "OBS_KEY_1"
-				},
-				{
-					"key": "OBS_KEY_4"
-				},
-				{
-					"key": "OBS_KEY_D"
-				},
-				{
-					"key": "OBS_KEY_O"
-				}
-			],
-			"libobs.unmute": [
-				{
-					"key": "OBS_KEY_2"
-				},
-				{
-					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_D"
-				},
-				{
-					"key": "OBS_KEY_I"
-				}
-			]
-		},
-		"id": "coreaudio_input_capture",
-		"monitoring_type": 2,
-		"name": "Desktop Audio",
-		"private_settings": {
-			"volume_locked": true
-		},
-		"settings": {
-			"device_id": "BlackHole2ch_UID"
-		}
-	},
 	"current_scene": "Start",
 	"name": "sr",
 	"preview_locked": true,
@@ -215,9 +152,22 @@
 					"name": "Sharpen"
 				},
 				{
-					"enabled": "false",
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
+					"id": "clut_filter",
+					"name": "Apply LUT",
+					"settings": {
+						"clut_amount": 0.25,
+						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
+					}
+				}
+			],
+			"id": "av_capture_input",
+			"name": "External"
+		},
+		{
+			"filters": [
+				{
+					"id": "sharpness_filter",
+					"name": "Sharpen"
 				},
 				{
 					"id": "clut_filter",
@@ -229,48 +179,13 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "External",
-			"settings": {
-				"device": "0x14200000046d0823",
-				"preset": "AVCaptureSessionPresetHigh"
-			}
+			"name": "Internal"
 		},
 		{
 			"filters": [
 				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
-				},
-				{
-					"enabled": "false",
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
-					"id": "clut_filter",
-					"name": "Apply LUT",
-					"settings": {
-						"clut_amount": 0.25,
-						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
-					}
-				}
-			],
-			"id": "av_capture_input",
-			"name": "Internal",
-			"settings": {
-				"device": "CC27327P54QGDV4AV"
-			}
-		},
-		{
-			"filters": [
-				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
-				},
-				{
-					"enabled": "false",
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
 				},
 				{
 					"id": "clut_filter",
@@ -313,6 +228,9 @@
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
+			},
+			"settings": {
+				"close_when_inactive": true
 			}
 		},
 		{
@@ -332,6 +250,9 @@
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
+			},
+			"settings": {
+				"close_when_inactive": true
 			}
 		},
 		{
@@ -351,6 +272,9 @@
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
+			},
+			"settings": {
+				"close_when_inactive": true
 			}
 		},
 		{
@@ -358,11 +282,17 @@
 				"SlideShow.NextSlide": [
 					{
 						"key": "OBS_KEY_RIGHT"
+					},
+					{
+						"key": "OBS_KEY_DOWN"
 					}
 				],
 				"SlideShow.PreviousSlide": [
 					{
 						"key": "OBS_KEY_LEFT"
+					},
+					{
+						"key": "OBS_KEY_UP"
 					}
 				],
 				"SlideShow.Restart": [
@@ -374,6 +304,7 @@
 			"id": "slideshow",
 			"name": "Slide Show",
 			"settings": {
+				"loop": false,
 				"slide_mode": "mode_manual",
 				"use_custom_size": "1280x720"
 			}
@@ -390,13 +321,6 @@
 					"style": "Condensed Black"
 				},
 				"text": "?"
-			}
-		},
-		{
-			"id": "display_capture",
-			"name": "Screen Capture",
-			"settings": {
-				"display": 1
 			}
 		},
 		{
@@ -675,6 +599,11 @@
 				"items": [
 					{
 						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
 						"locked": true,
 						"name": "External",
 						"pos": {
@@ -811,14 +740,6 @@
 						"key": "OBS_KEY_H"
 					}
 				],
-				"libobs.show_scene_item.Screen Capture": [
-					{
-						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_H"
-					}
-				],
 				"libobs.show_scene_item.Slide Show": [
 					{
 						"key": "OBS_KEY_3"
@@ -852,20 +773,6 @@
 						"name": "Slide Show",
 						"private_settings": {
 							"color-preset": 7
-						}
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "Screen Capture",
-						"pos": {
-							"x": 640,
-							"y": 360
 						}
 					},
 					{
@@ -1090,11 +997,6 @@
 						"key": "OBS_KEY_2"
 					}
 				],
-				"libobs.show_scene_item.Screen Capture": [
-					{
-						"key": "OBS_KEY_2"
-					}
-				],
 				"libobs.show_scene_item.Slide Show": [
 					{
 						"key": "OBS_KEY_2"
@@ -1115,20 +1017,6 @@
 					{
 						"locked": true,
 						"name": "Slide Show"
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "Screen Capture",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
 					}
 				]
 			}

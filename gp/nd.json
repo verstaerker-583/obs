@@ -19,11 +19,7 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "External",
-			"settings": {
-				"device": "0x14200000046d0823",
-				"preset": "AVCaptureSessionPresetHigh"
-			}
+			"name": "External"
 		},
 		{
 			"filters": [
@@ -41,21 +37,24 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "Internal",
-			"settings": {
-				"device": "CC27327P54QGDV4AV"
-			}
+			"name": "Internal"
 		},
 		{
 			"hotkeys": {
 				"SlideShow.NextSlide": [
 					{
 						"key": "OBS_KEY_RIGHT"
+					},
+					{
+						"key": "OBS_KEY_DOWN"
 					}
 				],
 				"SlideShow.PreviousSlide": [
 					{
 						"key": "OBS_KEY_LEFT"
+					},
+					{
+						"key": "OBS_KEY_UP"
 					}
 				],
 				"SlideShow.Restart": [
@@ -67,6 +66,7 @@
 			"id": "slideshow",
 			"name": "Slide Show",
 			"settings": {
+				"loop": false,
 				"slide_mode": "mode_manual",
 				"use_custom_size": "1280x720"
 			}
@@ -155,6 +155,11 @@
 				"items": [
 					{
 						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
 						"locked": true,
 						"name": "External",
 						"pos": {

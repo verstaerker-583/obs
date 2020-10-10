@@ -12,7 +12,10 @@
 			},
 			{
 				"id": "compressor_filter",
-				"name": "Compressor"
+				"name": "Compressor",
+				"settings": {
+					"attack_time": 0
+				}
 			},
 			{
 				"id": "limiter_filter",
@@ -68,7 +71,10 @@
 			},
 			{
 				"id": "compressor_filter",
-				"name": "Compressor"
+				"name": "Compressor",
+				"settings": {
+					"attack_time": 0
+				}
 			},
 			{
 				"id": "compressor_filter",
@@ -219,10 +225,7 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "External",
-			"settings": {
-				"device": "CC27327P54QGDV4AV"
-			}
+			"name": "External"
 		},
 		{
 			"filters": [
@@ -253,10 +256,7 @@
 				}
 			],
 			"id": "av_capture_input",
-			"name": "Internal",
-			"settings": {
-				"device": "CC27327P54QGDV4AV"
-			}
+			"name": "Internal"
 		},
 		{
 			"filters": [
@@ -317,6 +317,9 @@
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
+			},
+			"settings": {
+				"close_when_inactive": true
 			}
 		},
 		{
@@ -336,6 +339,9 @@
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
+			},
+			"settings": {
+				"close_when_inactive": true
 			}
 		},
 		{
@@ -359,6 +365,7 @@
 			"id": "slideshow",
 			"name": "Slide Show",
 			"settings": {
+				"loop": false,
 				"slide_mode": "mode_manual",
 				"use_custom_size": "1280x720"
 			}
