@@ -47,7 +47,8 @@ jq -S --tab -f nd.jq		../gp/gp.json		> ../gp/nd.json
 jq -S --tab -f sr.jq		../gp/gp.json		> ../sr/sr.json
 
 jq -S --tab -f bd_naked.jq	../bd/bd.json		> ../bd/bd_naked.json
-jq -S --tab -f bd_solo.jq	../gp/gp_naked.json	> ../bd/bd_solo.json
+jq -S --tab -f bd_solo.jq	../gp/gp.json		> ../bd/bd_solo.json
+#jq -S --tab -f bd_test.jq	../gp/gp.json		> ../bd/bd_test.json
 #jq -S --tab -f tolj.jq		../bd/bd_solo.json	> ../bd/bd_lutz.json
 
 for QUALITY in lq mq sq; do
