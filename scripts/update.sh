@@ -16,6 +16,12 @@ function profiles {
 	
 	sed -f to$OBSUSR.sed templates/global.ini > ../target/$OBSUSR/global.ini
 	sed -f to$OBSUSR.sed templates/init.lua > ../target/$OBSUSR/init.lua
+  	if [[ $OBSUSR == "mm" ]]
+	then
+		cp templates/com.local.KeyRemapping.VP4910.plist  ../target/$OBSUSR
+	else
+		cp templates/com.local.KeyRemapping.R400.plist  ../target/$OBSUSR
+	fi
 }
 
 function package {

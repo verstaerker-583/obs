@@ -2,17 +2,20 @@
 
 OBS="Library/Application Support/obs-studio"
 
+chown -R $USER /tmp/obs-studio
+
 mkdir -p ~/.hammerspoon
 mv /tmp/obs-studio/init.lua ~/.hammerspoon
 
 find ~/.hammerspoon -d -exec touch -ht 197304291400 '{}' \;
 chown -R root ~/.hammerspoon
 
+mv /tmp/obs-studio/*KeyRemapping*.plist ~/Library/LaunchAgents
+
 mv /tmp/obs-studio ~/"$OBS"
 
 chmod +w ~/"$OBS"
 chmod +w ~/"$OBS/basic/scenes"
-chown -R $USER ~/"$OBS"
 chown -R root ~/"$OBS"/basic/profiles
 
 find ~/"$OBS" -d -exec touch -ht 197304291400 '{}' \;

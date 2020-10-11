@@ -4,3 +4,4 @@
 
 | (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/markus/Documents/DieWeltImBlick/intro.mov"
 | (.sources[] | select(.name == "Outro").settings.local_file) = "/Users/markus/Documents/DieWeltImBlick/outro.mov"
+| (.sources[] | select(.id == "slideshow").settings.files) = [{"value": "/Users/markus/Documents/DieWeltImBlick/Pictures"}]

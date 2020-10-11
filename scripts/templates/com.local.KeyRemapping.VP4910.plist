@@ -9,7 +9,7 @@
 			<string>/usr/bin/hidutil</string>
 			<string>property</string>
 			<string>--matching</string>
-			<string>{"ProductID": 0x291}</string>
+			<string>{"ProductID": 0x34f}</string>
 			<string>--set</string>
 			<string>
 {
