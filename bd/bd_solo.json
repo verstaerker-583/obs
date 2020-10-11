@@ -156,17 +156,11 @@
 				"SlideShow.NextSlide": [
 					{
 						"key": "OBS_KEY_RIGHT"
-					},
-					{
-						"key": "OBS_KEY_DOWN"
 					}
 				],
 				"SlideShow.PreviousSlide": [
 					{
 						"key": "OBS_KEY_LEFT"
-					},
-					{
-						"key": "OBS_KEY_UP"
 					}
 				],
 				"SlideShow.Restart": [
@@ -268,6 +262,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_I"
 					}
 				],
@@ -276,12 +273,18 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_MINUS"
 					}
 				],
 				"libobs.hide_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					},
+					{
+						"key": "OBS_KEY_NUM2"
 					}
 				],
 				"libobs.hide_scene_item.Intro": [
@@ -328,6 +331,9 @@
 				"libobs.show_scene_item.screen": [
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
+					},
+					{
+						"key": "OBS_KEY_NUM2"
 					}
 				]
 			},
@@ -410,6 +416,9 @@
 				"OBSBasic.SelectScene": [
 					{
 						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_NUM3"
 					}
 				],
 				"libobs.hide_scene_item.cams": [
@@ -430,6 +439,9 @@
 				"libobs.show_scene_item.cams": [
 					{
 						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_NUM3"
 					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
@@ -531,10 +543,16 @@
 				],
 				"libobs.hide_scene_item.Internal": [
 					{
+						"key": "OBS_KEY_NUM3"
+					},
+					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
 				"libobs.show_scene_item.External": [
+					{
+						"key": "OBS_KEY_NUM3"
+					},
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}

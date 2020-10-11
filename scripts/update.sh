@@ -23,13 +23,11 @@ function package {
 		pkgbuild\
 			--identifier magic\
 			--install-location /tmp/obs-studio\
-			--ownership recommended\
 			--quiet\
 			--root ../target/$OBSUSR\
 			--scripts ../pkg/scripts\
 			--version `date "+%Y%m%d%H%M%S"`\
 			/tmp/magic$OBSUSR.pkg
-		#	--ownership preserve\
 		#	--info ../pkg/PackageInfo\
 	done
 }
