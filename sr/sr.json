@@ -726,11 +726,6 @@
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
-				"libobs.show_scene_item.Color Source": [
-					{
-						"key": "OBS_KEY_3"
-					}
-				],
 				"libobs.show_scene_item.Slide Show": [
 					{
 						"key": "OBS_KEY_3"
@@ -755,10 +750,6 @@
 			"name": "Screen",
 			"settings": {
 				"items": [
-					{
-						"locked": true,
-						"name": "Color Source"
-					},
 					{
 						"locked": true,
 						"name": "Slide Show",

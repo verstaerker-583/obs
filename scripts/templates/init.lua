@@ -84,6 +84,12 @@ function postFlight()
 end
 
 function preFlight()
+	-- Remote
+	hs.execute(
+		"launchctl unload -F ~/Library/LaunchAgents/com.local.KeyRemapping.*.plist;\
+		launchctl load -F ~/Library/LaunchAgents/com.local.KeyRemapping.*.plist"
+	)
+
 	-- Dock
 	tweakDock()
 
@@ -93,6 +99,9 @@ function preFlight()
 	local headset = false
 	local monitor = false
 
+	hs.execute(
+		"rm /tmp/log.txt"
+	)
 	local log = io.open("/tmp/log.txt", "w")
 	log:write(os.date() .. "\n")
 
