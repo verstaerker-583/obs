@@ -197,6 +197,7 @@
 			"id": "color_source",
 			"name": "Color Source",
 			"settings": {
+				"color": 4278190080,
 				"height": 720,
 				"width": 1280
 			}
@@ -272,11 +273,17 @@
 				"SlideShow.NextSlide": [
 					{
 						"key": "OBS_KEY_RIGHT"
+					},
+					{
+						"key": "OBS_KEY_PAGEDOWN"
 					}
 				],
 				"SlideShow.PreviousSlide": [
 					{
 						"key": "OBS_KEY_LEFT"
+					},
+					{
+						"key": "OBS_KEY_PAGEUP"
 					}
 				],
 				"SlideShow.Restart": [

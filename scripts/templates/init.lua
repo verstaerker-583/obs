@@ -250,7 +250,7 @@ end
 function startStreaming()
 	closeApps()
 
-	hs.execute("open -a 'OBS' --args --collection 'gp_naked' --profile 'YTsq' --scene 'Start' --startstreaming --verbose")
+	hs.execute("open -a 'OBS' --args --collection 'gp_naked' --profile 'mmYTmq' --startstreaming --verbose")
 	hs.application.open("Skype", 0, true)
 	hs.application.launchOrFocus("FotoMagico 5")
 end
@@ -266,7 +266,8 @@ function tweakDock()
 --	hs.execute("defaults delete com.apple.Dock")
 	hs.execute("defaults write com.apple.Dock autohide -int 1")
 	hs.execute("defaults write com.apple.Dock showhidden -bool yes")
---	hs.execute("defaults write com.apple.dock static-only -bool true")
+	hs.execute("defaults write com.apple.dock single-app -bool true")
+	hs.execute("defaults write com.apple.dock static-only -bool true")
 end
 
 function tweakFotoMagico()

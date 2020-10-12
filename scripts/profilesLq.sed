@@ -5,4 +5,4 @@ VBitrate=500
 /\[SimpleOutput\]/a\
 ABitrate=48
 /\[Video\]/a\
-FPSCommon=24 NTSC
+FPSCommon=25
