@@ -351,6 +351,9 @@
 				"SlideShow.NextSlide": [
 					{
 						"key": "OBS_KEY_RIGHT"
+					},
+					{
+						"key": "OBS_KEY_RIGHT"
 					}
 				],
 				"SlideShow.PreviousSlide": [
