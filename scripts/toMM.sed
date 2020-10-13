@@ -5,7 +5,7 @@ s/dev:setMode(1920, 1080, 1)/dev:setMode(5120, 2880, 1)/
 s/--profile '.*'/--profile 'gpYTsq'/
 
 # global.ini
-/\[Basi\]/a\
+/\[Basic\]/a\
 Profile=gpYTsq\
 ProfileDir=gpYTsq\
 SceneCollection=gp_naked\
