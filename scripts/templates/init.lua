@@ -242,7 +242,7 @@ end
 function startStreaming()
 	closeApps()
 
-	hs.execute("open -a 'OBS' --args --collection 'gp_naked' --profile 'mmYTmq' --startstreaming --verbose")
+	hs.execute("open -a 'OBS' --args --collection 'gp_naked' --profile 'gpYTsq' --startstreaming --verbose")
 	hs.application.launchOrFocus("FotoMagico 5")
 	hs.application.open("NDI Virtual Input", 0, true)
 	hs.application.open("Skype", 0, true)
