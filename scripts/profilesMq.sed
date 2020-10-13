@@ -3,4 +3,4 @@ Name=YTmq
 /\[SimpleOutput\]/a\
 ABitrate=128
 /\[Video\]/a\
-FPSCommon=25
+FPSCommon=25 PAL
