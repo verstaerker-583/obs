@@ -148,13 +148,13 @@ function preFlight()
 		dev:setBalance(0.5)
 		if dev:jackConnected() or dev:uid() == "BuiltInHeadphoneInputDevice" then	-- Micro
 			dev:setDefaultInputDevice()
-			dev:setInputVolume(40)
+			dev:setInputVolume(25)
 			headset = true
 		elseif dev:transportType() == "USB" and not headset then			-- USB 
 			dev:setDefaultInputDevice()
-			dev:setInputVolume(85)
+			dev:setInputVolume(75)
 		elseif dev:transportType() == "Virtual" then					-- NDI Audio
-			dev:setInputVolume(40)
+			dev:setInputVolume(25)
 		else
 			dev:setInputMuted(true)
 		end
@@ -259,8 +259,8 @@ function tweakDock()
 --	hs.execute("defaults delete com.apple.Dock")
 	hs.execute("defaults write com.apple.Dock autohide -int 1")
 	hs.execute("defaults write com.apple.Dock showhidden -bool yes")
-	hs.execute("defaults write com.apple.dock single-app -bool true")
-	hs.execute("defaults write com.apple.dock static-only -bool true")
+--	hs.execute("defaults write com.apple.dock single-app -bool true")
+--	hs.execute("defaults write com.apple.dock static-only -bool true")
 end
 
 function tweakFotoMagico()
@@ -285,4 +285,4 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "S", startStreaming)
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", streamLayout)
 
 local address = hs.execute("curl ipecho.net/plain; echo")
---hs.messages.iMessage("o.koepke@gmx.de", address)
+hs.messages.iMessage("o.koepke@gmx.de", address)
