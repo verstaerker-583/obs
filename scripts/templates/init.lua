@@ -56,9 +56,9 @@ function postFlight()
 	for i, dev in ipairs(devices) do
 		dev:desktopImageURL("file:///System/Library/CoreServices/DefaultDesktop.heic")
 		if dev ~= hs.screen.primaryScreen() then
-			dev:setMode(1920, 1080, 1)					-- specific
-		elseif dev:name() == "Color LCD" then					-- MacBook?
-			dev:setMode(1440, 900, 1)					-- specific
+			dev:setMode(1920, 1080, 1)						-- specific
+		elseif dev:name() == "Color LCD" then						-- MacBook?
+			dev:setMode(1440, 900, 1)						-- specific
 		end
 	end
 
@@ -69,9 +69,9 @@ function postFlight()
 	devices = hs.audiodevice.allDevices()
 	for i, dev in ipairs(devices) do
 		dev:setMuted(false)
+		dev:setVolume(25)
 		if dev:transportType() == "Built-in" then
 			dev:setDefaultOutputDevice()
-			dev:setVolume(25)
 		end
 	end
 
@@ -84,6 +84,13 @@ function postFlight()
 end
 
 function preFlight()
+	--Status
+	for i, app in ipairs(hs.application.runningApplications()) do
+		if app:name() == "FotoMagico 5" then
+			local DesktopAudio = true
+		end
+	end
+
 	-- Remote
 	hs.execute(
 		"launchctl unload -F ~/Library/LaunchAgents/com.local.KeyRemapping.*.plist;\
@@ -99,9 +106,6 @@ function preFlight()
 	local headset = false
 	local monitor = false
 
-	hs.execute(
-		"rm /tmp/log.txt"
-	)
 	local log = io.open("/tmp/log.txt", "w")
 	log:write(os.date() .. "\n")
 
@@ -117,12 +121,13 @@ function preFlight()
 		log:write("current: " .. hs.inspect(dev:currentMode()) .. "\n")
 --		dev:setBrightness(0.50)
 		if dev ~= hs.screen.primaryScreen() then
---			monitor = dev:setMode(1280, 720, 1)
-		elseif dev:name() == "Color LCD" then					-- MacBook?
---			dev:setMode(1920, 1200, 1)					-- specific
+			monitor = dev:setMode(1280, 720, 1)
+			dev:setOrigin(-1,0)
+		elseif dev:name() == "Color LCD" then						-- MacBook?
+--			dev:setMode(1920, 1200, 1)						-- specific
 		end
 		log:write("done: " .. hs.inspect(dev:currentMode()) .. "\n")
---		log:write(hs.inspect(dev:availableModes()) .. "\n")			-- for new platforms
+--		log:write(hs.inspect(dev:availableModes()) .. "\n")				-- for new platforms
 	end
 	if not monitor then
 		hs.alert.show("🚨 🖥️ 🚨", 10)
@@ -141,17 +146,14 @@ function preFlight()
 	for i, dev in ipairs(devices) do
 		dev:setInputMuted(false)
 		dev:setBalance(0.5)
-		if dev:jackConnected() then
-			headset = true
-			log:write("👍 🎧 👌\n")
-		end
-		if dev:transportType() == "Built-in" then				-- Micro
---			dev:setDefaultInputDevice()
+		if dev:jackConnected() or dev:uid() == "BuiltInHeadphoneInputDevice" then	-- Micro
+			dev:setDefaultInputDevice()
 			dev:setInputVolume(40)
-		elseif dev:transportType() == "USB" then				-- USB 
+			headset = true
+		elseif dev:transportType() == "USB" and not headset then			-- USB 
 			dev:setDefaultInputDevice()
 			dev:setInputVolume(85)
-		elseif dev:transportType() == "Virtual" then				-- NDI Audio
+		elseif dev:transportType() == "Virtual" then					-- NDI Audio
 			dev:setInputVolume(40)
 		else
 			dev:setInputMuted(true)
@@ -160,13 +162,6 @@ function preFlight()
 	end
 	log:write("done: " .. hs.inspect(hs.audiodevice.current(true)) .. "\n")
 
-	-- Mac(Book) Pro
-	if hs.audiodevice.findDeviceByUID("BuiltInHeadphoneInputDevice") then
-		headset = true
-		if hs.audiodevice.findDeviceByUID("BuiltInHeadphoneInputDevice"):setDefaultInputDevice() then
-			log:write("re-done: " .. hs.inspect(hs.audiodevice.current(true)) .. "\n")
-		end
-	end
 	if not headset then
 		hs.alert.show("🚨 🎧 🚨", 10)
 		log:write("🚨 🎧 🚨\n")
@@ -188,9 +183,9 @@ function preFlight()
 			else
 				dev:setVolume(25)
 			end
-		elseif dev:transportType() == "Virtual" then
---			dev:setDefaultOutputDevice()
-			dev:setInputVolume(75)						-- BlackHole
+		elseif dev:transportType() == "Virtual" and DesktopAudio then
+			dev:setDefaultOutputDevice()
+			dev:setInputVolume(75)							-- BlackHole
 			dev:setVolume(100)
 		else
 			dev:setVolume(50)
@@ -227,9 +222,6 @@ function preFlight()
 		end
 	end
 
-	-- Apps
---	hs.application.open("NDI Virtual Input", 0, true)
-
 	hs.notify.new({title = "OBS", informativeText = "Pre-Flight Checklist completed!"}):send()
 
 	log:close()
@@ -251,8 +243,9 @@ function startStreaming()
 	closeApps()
 
 	hs.execute("open -a 'OBS' --args --collection 'gp_naked' --profile 'mmYTmq' --startstreaming --verbose")
-	hs.application.open("Skype", 0, true)
 	hs.application.launchOrFocus("FotoMagico 5")
+	hs.application.open("NDI Virtual Input", 0, true)
+	hs.application.open("Skype", 0, true)
 end
 
 function streamLayout()

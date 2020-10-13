@@ -462,6 +462,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_G"
 					}
 				],
@@ -504,6 +507,9 @@
 				"libobs.hide_scene_item.guest": [
 					{
 						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_F"
