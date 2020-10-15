@@ -2,20 +2,15 @@
 | del(
 	(
 		.sources[] |
-			(select(.name == "NDI").filters[] | select(.id != "mask_filter")),
+			(
+				select(.name == "NDI").filters[] | select(.id != "mask_filter")
+			),
 			(
 				., .settings.items[]? | select(
 #					.name == "Color Source",
 #					.name == "Slide Show"
 					.name == "Screen Capture"
 				)
-			),
-			(
-				.hotkeys[
-#					"libobs.show_scene_item.Color Source",
-#					"libobs.show_scene_item.Slide Show"
-					"libobs.show_scene_item.Screen Capture"
-				]
 			)
 	),
 	.DesktopAudioDevice1,
@@ -28,3 +23,7 @@
 			)
 	)
 )
+| (
+	.AuxAudioDevice1.hotkeys["libobs.unmute"],
+	.AuxAudioDevice2.hotkeys["libobs.unmute"]
+	) |= . + [{"key": "OBS_KEY_I"}]

@@ -1,6 +1,8 @@
 .name = "nd"
 | del(
-	(.[]|select(.id? == "coreaudio_input_capture")),
+	(
+		.[]|select(.id? == "coreaudio_input_capture")
+	),
 	(
 		.sources[] |
 			(
@@ -17,7 +19,6 @@
 					.name == "Outro",
 					.name == "Video",
 					.name == "guest",
-					.name == "Color Source",
 #					.name == "Slide Show"
 					.name == "Screen Capture"
 				)
@@ -35,12 +36,8 @@
 					"libobs.show_scene_item.Overlay Cam",
 					"libobs.show_scene_item.Overlay Chat",
 					"libobs.show_scene_item.Overlay Donate",
-					"libobs.show_scene_item.Overlay Start",
 					"libobs.show_scene_item.Video",
-					"libobs.show_scene_item.guest",
-					"libobs.show_scene_item.Color Source",
-#					"libobs.show_scene_item.Slide Show"
-					"libobs.show_scene_item.Screen Capture"
+					"libobs.show_scene_item.guest"
 				]
 			)
 	),
@@ -55,4 +52,4 @@
 			)
 	)
 )
-| (.sources[] | select(.name == "Start").hotkeys."OBSBasic.SelectScene") |= . + [{"key": "OBS_KEY_4"}]
+| (.sources[] | select(.name == "Start").hotkeys["OBSBasic.SelectScene"]) |= . + [{"key": "OBS_KEY_4"}]

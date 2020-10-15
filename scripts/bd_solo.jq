@@ -25,10 +25,7 @@
 					"libobs.show_scene_item.Overlay Chat",
 					"libobs.show_scene_item.Overlay Donate",
 					"libobs.show_scene_item.Video",
-					"libobs.show_scene_item.guest",
-#					"libobs.show_scene_item.Color Source",
-#					"libobs.show_scene_item.Slide Show"
-					"libobs.show_scene_item.Screen Capture"
+					"libobs.show_scene_item.guest"
 				]
 			)
 	),

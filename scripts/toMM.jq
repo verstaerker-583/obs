@@ -6,6 +6,7 @@
 | (.sources[] | select(.name == "Outro").settings.local_file) = "/Users/markus/Documents/DieWeltImBlick/outro.mov"
 #| (.sources[] | select(.id == "slideshow").settings.files) = [{"value": "/Users/markus/Documents/DieWeltImBlick/Pictures"}]
 
+# demo
 | (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value":"https://www.markus-mauthe.de/site/assets/files/1046/e1.jpg"}]
 | (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value":"https://www.markus-mauthe.de/site/assets/files/1046/e2.jpg"}]
 | (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value":"https://www.markus-mauthe.de/site/assets/files/1046/e3.jpg"}]

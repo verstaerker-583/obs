@@ -1,11 +1,11 @@
 del(
 	(
-			.AuxAudioDevice2
+		.AuxAudioDevice2
 	),
 	(
 		.sources[] |
 			(
-				select(.name == "Cam").hotkeys."libobs.hide_scene_item.screen"[] | select(.key == "OBS_KEY_NUM2")
+				select(.name == "Cam").hotkeys["libobs.hide_scene_item.screen"][] | select(.key == "OBS_KEY_NUM2")
 			),
 			(
 				., .settings.items[]? | select(
@@ -31,11 +31,10 @@ del(
 			)
 	)
 )
-| (.sources[] | select(.name == "Cam").hotkeys."libobs.show_scene_item.screen") |= . + [{"key": "OBS_KEY_NUM2"}]
+| (.sources[] | select(.name == "Cam").hotkeys["libobs.show_scene_item.screen"]) |= . + [{"key": "OBS_KEY_NUM2"}]
 
-| (.sources[] | select(.name == "External").filters[] | select(.id == "clut_filter").settings.clut_amount) = 1
+| (.sources[] | select(.name == "External").filters[] | select(.id == "clut_filter").settings.clut_amount) = 0.5
 | (.sources[] | select(.name == "External").settings.device) = "0x14200000046d0823"
-| (.sources[] | select(.name == "Internal").filters[] | select(.id == "clut_filter").settings.clut_amount) = 0.5
 | (.sources[] | select(.name == "Internal").settings.device) = "CC24383EGBPF9T9CN"
 
 | (.sources[] | select(.id == "browser_source").settings.url) |= sub("gp";"gp40")
@@ -108,16 +107,16 @@ del(
 | (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value":"/Users/greenpeace/Documents/gp40/pictures/61.jpg"}]
 | (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value":"/Users/greenpeace/Documents/gp40/pictures/62.jpg"}]
 | (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value":"/Users/greenpeace/Documents/gp40/pictures/63.jpg"}]
+
+| (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value": "https://i3.ytimg.com/vi/8ljL7-t_lUc/maxresdefault.jpg"}]
 | (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value":"/Users/greenpeace/Documents/gp40/pictures/64.png"}]
 
 | (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value": "https://i3.ytimg.com/vi/8ljL7-t_lUc/maxresdefault.jpg"}]
-| (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value": "/Users/greenpeace/Documents/gp40/pictures/65.jpg"}]
-| (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value": "/Users/greenpeace/Documents/gp40/pictures/66.jpg"}]
 | (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value": "/Users/greenpeace/Documents/gp40/pictures/67.jpg"}]
+| (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value": "/Users/greenpeace/Documents/gp40/pictures/66.jpg"}]
+| (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value": "/Users/greenpeace/Documents/gp40/pictures/65.jpg"}]
 
 | (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value": "https://i3.ytimg.com/vi/8ljL7-t_lUc/maxresdefault.jpg"}]
 | (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value": "/Users/greenpeace/Documents/gp40/pictures/68.jpg"}]
 | (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value": "/Users/greenpeace/Documents/gp40/pictures/69.jpg"}]
 | (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value": "/Users/greenpeace/Documents/gp40/pictures/70.jpg"}]
-
-| (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value": "https://i3.ytimg.com/vi/ePWpixWAanI/maxresdefault.jpg"}]

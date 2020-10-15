@@ -8,13 +8,6 @@
 #					.name == "Slide Show"
 					.name == "Screen Capture"
 				)
-			),
-			(
-				.hotkeys[
-#					"libobs.show_scene_item.Color Source",
-#					"libobs.show_scene_item.Slide Show"
-					"libobs.show_scene_item.Screen Capture"
-				]
 			)
 	),
 	.DesktopAudioDevice1,
