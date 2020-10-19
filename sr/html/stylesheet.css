@@ -16,7 +16,8 @@
 }
 
 .element:after {
-	content: none
+	border-radius: 5px;
+	transform: skew(0deg)
 }
 
 .message {

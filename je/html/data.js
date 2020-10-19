@@ -5,13 +5,13 @@ var start = {
 };
 var finish = {
 	theme: "#LIVE 🔴 Cati & Johannes Erdmann",
-	message: "Vielen Dank und auf Wiedersehen! ❤️ ",
-	call2action: "👁 Sei auch beim nächsten Mal dabei!"
+	message: "Vielen Dank und auf Wiedersehen! 💙",
+	call2action: "👁 Sei auch nächstes Mal LIVE dabei!"
 };
 var donate = {
 	theme: "☕ Die virtuelle Kaffeekasse! ☕",
 	message: "www.paypal.com/paypalme/mavericksailing",
-	call2action: "⇨ Spendier‘ uns doch einen Kaffee!"
+	call2action: "⇨ Spendier‘ uns doch einen Kaffee! 💙"
 };
 var pics = {
 	channelIcon: "https://yt3.ggpht.com/a/AATXAJwZ4zk60xqw8bifPYzq3OivaUcxC3eUpSTvaJeL=s198-c-k-c0x00ffffff-no-rj",
