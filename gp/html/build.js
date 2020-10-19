@@ -5,7 +5,10 @@ function build() {
 	var URL = location.pathname;
 	var PageName = URL.substring(URL.lastIndexOf("/") + 1);
 	PageName = PageName.substring(0, PageName.lastIndexOf("."));
+	/*
 	pics.videoThumb = "https://i3.ytimg.com/vi/" + videoId + "/maxresdefault.jpg";
+	*/
+	pics.videoThumb = "https://i3.ytimg.com/vi/" + videoId + "/hqdefault.jpg";
 	switch (PageName) {
 		case "start":
 			pics.organizationLogo = false;

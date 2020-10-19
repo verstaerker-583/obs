@@ -1,6 +1,6 @@
 @import "../../gp/html/stylesheet.css";
 .call2action {
-	background: linear-gradient(to bottom, white, blue)
+	background: linear-gradient(to bottom, white, #31c8f3)
 }
 
 .element {
@@ -15,7 +15,7 @@
 .message,
 .theme {
 	background: white;
-	color: blue 
+	color: #31c8f3
 }
 
 body {
