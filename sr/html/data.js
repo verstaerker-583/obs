@@ -18,6 +18,6 @@ var pics = {
 	clockLogo: "https://sofareisen.org/images/logo_schrift.png",
 	hostLogo: "https://sofareisen.org/images/sofareisen_logo_all.png",
 	organizationLogoNeg: "../bdLogo.svg",
-	presenterLogo: "../../gp/mmLogo.png",
+	presenterLogo: "../../gp/mmLogo.png"
 };
 var videoId = "36YnV9STBqc";

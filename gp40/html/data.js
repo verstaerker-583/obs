@@ -16,7 +16,7 @@ var donate = {
 var pics = {
 	channelIcon: "../gp40Logo.png",
 	organizationLogo: "../../gp/gpLogo.svg",
-	organizationLogoNeg: "../../gp/gpLogoNeg.svg",
+	organizationLogoNeg: "../../gp/gpLogoNeg.svg"
 };
 
 pics.presenterLogo = pics.channelIcon;

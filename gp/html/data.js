@@ -6,7 +6,7 @@ var start = {
 var finish = {
 	theme: "#LIVE 🔴 Markus Mauthe - Naturfotograf & Umweltaktivist",
 	message_neg: "Vielen Dank und auf Wiedersehen! 💚",
-	call2action: "👁 Sei am 25.11. wieder live dabei!"
+	call2action: "👁 Sei auch beim nächsten Mal live dabei!"
 };
 var donate = {
 	theme: "💚 Schon kleine Spendenbeträge helfen! 💚",
@@ -17,8 +17,7 @@ var pics = {
 	channelIcon: "https://yt3.ggpht.com/a/AATXAJz1rf8F_1ZMrY7BkibAF0CFrkj4qja9n7fTqgrz=s196-c-k-c0xffffffff-no-rj-mo",
 	organizationLogo: "../gpLogo.svg",
 	organizationLogoNeg: "../gpLogoNeg.svg",
-	presenterLogo: "../../gp/mmLogo.png",
-	videoThumb: "https://i3.ytimg.com/vi/ePWpixWAanI/maxresdefault.jpg"
+	presenterLogo: "../../gp/mmLogo.png"
 };
 
 pics.clockLogo = pics.organizationLogo;
