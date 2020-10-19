@@ -20,19 +20,16 @@
 }
 
 #presenterLogo {
-	border: 5px solid;
 	border-radius: 50%;
-	height: 90px;
-	position: absolute;
+	border: 5px solid;
+	height: 80px;
 	right: 10px;
 	top: 10px
 }
 
-
 body {
 	background: url(https://www.johannes-erdmann.com/wordpress/wp-content/gallery/2017_03_31/Screen-Shot-2017-03-27-at-2.04.51-PM-copy.jpg);
 	background-size: cover;
-	color: #31c8f3;
 	font-family: "Comic Sans MS";
 	font-size: 16px;
 }

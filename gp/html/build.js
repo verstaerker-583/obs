@@ -8,7 +8,7 @@ function build() {
 	/*
 	pics.videoThumb = "https://i3.ytimg.com/vi/" + videoId + "/maxresdefault.jpg";
 	*/
-	pics.videoThumb = "https://i3.ytimg.com/vi/" + videoId + "/default.jpg";
+	pics.videoThumb = "https://i3.ytimg.com/vi/" + videoId + "/mqdefault.jpg";
 	switch (PageName) {
 		case "start":
 			pics.organizationLogo = false;

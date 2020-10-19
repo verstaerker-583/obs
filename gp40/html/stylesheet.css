@@ -1,6 +1,8 @@
 @import "../../gp/html/stylesheet.css";
 #presenterLogo {
-	height: 90px;
+	border-radius: 50%;
+	border: 5px solid;
+	height: 80px;
 	right: 10px;
 	top: 10px
 }
