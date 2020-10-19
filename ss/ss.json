@@ -487,9 +487,6 @@
 						"key": "OBS_KEY_I"
 					},
 					{
-						"key": "OBS_KEY_NUM2"
-					},
-					{
 						"key": "OBS_KEY_V"
 					}
 				],
@@ -632,6 +629,9 @@
 				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					},
+					{
+						"key": "OBS_KEY_NUM2"
 					}
 				],
 				"libobs.show_scene_item.Intro": [
@@ -907,7 +907,7 @@
 					"id": "mask_filter",
 					"name": "Image Mask/Blend",
 					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/gp/camsMask.png",
+						"image_path": "https://verstaerker-583.github.io/obs/gp/camsMaskLocal.png",
 						"type": "mask_alpha_filter.effect"
 					}
 				}
@@ -919,9 +919,6 @@
 					},
 					{
 						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_NUM3"
 					}
 				],
 				"libobs.hide_scene_item.Internal": [
@@ -930,6 +927,9 @@
 					},
 					{
 						"key": "OBS_KEY_H"
+					},
+					{
+						"key": "OBS_KEY_NUM3"
 					}
 				],
 				"libobs.hide_scene_item.NDI": [
@@ -946,6 +946,9 @@
 					},
 					{
 						"key": "OBS_KEY_H"
+					},
+					{
+						"key": "OBS_KEY_NUM3"
 					}
 				],
 				"libobs.show_scene_item.Internal": [
@@ -954,9 +957,6 @@
 					},
 					{
 						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_NUM3"
 					}
 				],
 				"libobs.show_scene_item.NDI": [
@@ -1005,17 +1005,16 @@
 					{
 						"align": 0,
 						"bounds": {
-							"x": 196,
+							"x": 352,
 							"y": 196
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "External",
 						"pos": {
-							"x": 1172,
+							"x": 1094,
 							"y": 360
-						},
-						"rot": -5
+						}
 					}
 				]
 			}

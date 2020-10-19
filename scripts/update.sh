@@ -16,12 +16,9 @@ function profiles {
 	
 	sed -f to$OBSUSR.sed templates/global.ini > ../target/$OBSUSR/global.ini
 	sed -f to$OBSUSR.sed templates/init.lua > ../target/$OBSUSR/init.lua
-  	if [[ $OBSUSR == "mm" ]]
-	then
-		cp templates/com.local.KeyRemapping.VP4910.plist  ../target/$OBSUSR
-	else
-		cp templates/com.local.KeyRemapping.R400.plist  ../target/$OBSUSR
-	fi
+
+	cp templates/com.local.KeyRemapping.R400.plist  ../target/$OBSUSR
+  	[[ $OBSUSR == "mm" ]] && cp templates/com.local.KeyRemapping.VP4910.plist  ../target/$OBSUSR
 }
 
 function package {
@@ -49,7 +46,7 @@ jq -S --tab -f gp_local.jq	../gp/gp.json		> ../gp/gp_local.json
 jq -S --tab -f gp_naked.jq	../gp/gp.json		> ../gp/gp_naked.json
 jq -S --tab -f nd.jq		../gp/gp.json		> ../gp/nd.json
 jq -S --tab -f sr.jq		../gp/gp.json		> ../sr/sr.json
-jq -S --tab -f ss.jq		../gp/gp.json		> ../ss/ss.json
+jq -S --tab -f ss.jq		../gp/gp_local.json	> ../ss/ss.json
 
 jq -S --tab -f bd_naked.jq	../bd/bd.json		> ../bd/bd_naked.json
 jq -S --tab -f bd_solo.jq	../gp/gp.json		> ../bd/bd_solo.json
