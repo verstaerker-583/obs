@@ -1,5 +1,5 @@
 # init.lua
-s/--profile '.*'/--profile 'mmYTmq'/
+s/--profile '.*'/--profile 'gpYTmq'/
 s/--collection '.*'/--collection 'gp_local'/
 
 # global.ini
@@ -8,10 +8,6 @@ Profile=gpYTmq\
 ProfileDir=gpYTmq\
 SceneCollection=gp_local\
 SceneCollectionFile=gp_local
-
-# basic.ini
-#/\[Audio\]/a\
-#MonitoringDeviceId=BuiltInHeadphoneOutputDevice
 
 /\[SimpleOutput\]/a\
 Preset=ultrafast\
