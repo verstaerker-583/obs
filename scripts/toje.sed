@@ -1,13 +1,13 @@
 # init.lua
-s/--profile '.*'/--profile 'mmYTmq'/
-s/--collection '.*'/--collection 'gp_local'/
+s/--profile '.*'/--profile 'jeYTmq'/
+s/--collection '.*'/--collection 'ss'/
 
 # global.ini
 /\[Basic\]/a\
-Profile=gpYTmq\
-ProfileDir=gpYTmq\
-SceneCollection=gp_local\
-SceneCollectionFile=gp_local
+Profile=jeYTmq\
+ProfileDir=jeYTmq\
+SceneCollection=ss\
+SceneCollectionFile=ss
 
 # basic.ini
 #/\[Audio\]/a\

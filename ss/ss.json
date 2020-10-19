@@ -162,7 +162,7 @@
 		}
 	},
 	"current_scene": "Start",
-	"name": "sr",
+	"name": "ss",
 	"preview_locked": true,
 	"sources": [
 		{
@@ -349,7 +349,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/je/html/start.html",
+				"url": "https://verstaerker-583.github.io/obs/ss/html/start.html",
 				"width": 1280
 			}
 		},
@@ -362,7 +362,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/je/html/cam.html",
+				"url": "https://verstaerker-583.github.io/obs/ss/html/cam.html",
 				"width": 1280
 			}
 		},
@@ -373,9 +373,9 @@
 				"mixer_hidden": true
 			},
 			"settings": {
-				"css": "@import url(https://verstaerker-583.github.io/obs/je/html/chat.css)",
+				"css": "@import url(https://verstaerker-583.github.io/obs/ss/html/chat.css)",
 				"height": 110,
-				"url": "https://verstaerker-583.github.io/obs/je/html/chat.html",
+				"url": "https://verstaerker-583.github.io/obs/ss/html/chat.html",
 				"width": 920
 			}
 		},
@@ -388,7 +388,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/je/html/donate.html",
+				"url": "https://verstaerker-583.github.io/obs/ss/html/donate.html",
 				"width": 1280
 			}
 		},
@@ -401,7 +401,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/je/html/finish.html",
+				"url": "https://verstaerker-583.github.io/obs/ss/html/finish.html",
 				"width": 1280
 			}
 		},

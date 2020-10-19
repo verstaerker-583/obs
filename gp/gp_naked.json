@@ -42,9 +42,6 @@
 				},
 				{
 					"key": "OBS_KEY_O"
-				},
-				{
-					"key": "OBS_KEY_V"
 				}
 			],
 			"libobs.unmute": [
@@ -134,9 +131,6 @@
 				},
 				{
 					"key": "OBS_KEY_O"
-				},
-				{
-					"key": "OBS_KEY_V"
 				}
 			],
 			"libobs.unmute": [
@@ -226,7 +220,7 @@
 			"id": "color_source",
 			"name": "Color Source",
 			"settings": {
-				"color": 4278190080,
+				"color": 4280204915,
 				"height": 720,
 				"width": 1280
 			}
@@ -264,28 +258,6 @@
 			"id": "ffmpeg_source",
 			"monitoring_type": 2,
 			"name": "Outro",
-			"private_settings": {
-				"mixer_hidden": true,
-				"volume_locked": true
-			},
-			"settings": {
-				"close_when_inactive": true
-			}
-		},
-		{
-			"filters": [
-				{
-					"id": "compressor_filter",
-					"name": "Compressor"
-				},
-				{
-					"id": "limiter_filter",
-					"name": "Limiter"
-				}
-			],
-			"id": "ffmpeg_source",
-			"monitoring_type": 2,
-			"name": "Video",
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
@@ -442,9 +414,6 @@
 					},
 					{
 						"key": "OBS_KEY_NUM2"
-					},
-					{
-						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.hide_scene_item.?": [
@@ -465,9 +434,6 @@
 					},
 					{
 						"key": "OBS_KEY_NUM2"
-					},
-					{
-						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.hide_scene_item.External": [
@@ -488,26 +454,6 @@
 					},
 					{
 						"key": "OBS_KEY_NUM2"
-					},
-					{
-						"key": "OBS_KEY_V"
-					}
-				],
-				"libobs.hide_scene_item.Intro": [
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_F"
-					},
-					{
-						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
-					},
-					{
-						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.hide_scene_item.NDI": [
@@ -522,9 +468,6 @@
 					},
 					{
 						"key": "OBS_KEY_NUM2"
-					},
-					{
-						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.hide_scene_item.Overlay Chat": [
@@ -562,26 +505,6 @@
 					},
 					{
 						"key": "OBS_KEY_NUM2"
-					},
-					{
-						"key": "OBS_KEY_V"
-					}
-				],
-				"libobs.hide_scene_item.Video": [
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_F"
-					},
-					{
-						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					}
 				],
 				"libobs.hide_scene_item.guest": [
@@ -596,9 +519,6 @@
 					},
 					{
 						"key": "OBS_KEY_NUM2"
-					},
-					{
-						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.hide_scene_item.screen": [
@@ -619,9 +539,6 @@
 					},
 					{
 						"key": "OBS_KEY_NUM2"
-					},
-					{
-						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.show_scene_item.?": [
@@ -632,11 +549,6 @@
 				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					}
-				],
-				"libobs.show_scene_item.Intro": [
-					{
-						"key": "OBS_KEY_I"
 					}
 				],
 				"libobs.show_scene_item.NDI": [
@@ -650,19 +562,11 @@
 					},
 					{
 						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.show_scene_item.Overlay Donate": [
 					{
 						"key": "OBS_KEY_E"
-					}
-				],
-				"libobs.show_scene_item.Video": [
-					{
-						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.show_scene_item.guest": [
@@ -784,20 +688,6 @@
 							"x": 640,
 							"y": 360
 						}
-					},
-					{
-						"align": 0,
-						"bounds": {
-							"x": 1280,
-							"y": 720
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "Video",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
 					}
 				]
 			}
@@ -860,16 +750,6 @@
 					{
 						"key": "OBS_KEY_4"
 					},
-					{
-						"key": "OBS_KEY_O"
-					}
-				],
-				"libobs.hide_scene_item.Outro": [
-					{
-						"key": "OBS_KEY_4"
-					}
-				],
-				"libobs.show_scene_item.Outro": [
 					{
 						"key": "OBS_KEY_O"
 					}
