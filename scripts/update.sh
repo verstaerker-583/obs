@@ -128,4 +128,4 @@ sudo find ~/Documents/GitHub/obs -exec touch -ht 197304291400 '{}' \;
 chmod -R -w ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs/.git
 
-package "gp mm ok"
+package "gp mm ok je"
