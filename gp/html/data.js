@@ -4,7 +4,6 @@ var start = {
 	call2action: "👁 Sei jetzt LIVE dabei!"
 };
 var finish = {
-	theme: "#LIVE 🔴 Markus Mauthe - Naturfotograf & Umweltaktivist",
 	message_neg: "Vielen Dank und auf Wiedersehen! 💚",
 	call2action: "👁 Sei auch nächstes Mal LIVE dabei!"
 };
@@ -19,8 +18,6 @@ var pics = {
 	organizationLogoNeg: "../gpLogoNeg.svg",
 	presenterLogo: "../../gp/mmLogo.png"
 };
-
 pics.clockLogo = pics.organizationLogo;
-
 var alarmTime = "19:30";
 var videoId = "ePWpixWAanI";

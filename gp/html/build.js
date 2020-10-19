@@ -5,9 +5,6 @@ function build() {
 	var URL = location.pathname;
 	var PageName = URL.substring(URL.lastIndexOf("/") + 1);
 	PageName = PageName.substring(0, PageName.lastIndexOf("."));
-	/*
-	pics.videoThumb = "https://i3.ytimg.com/vi/" + videoId + "/maxresdefault.jpg";
-	*/
 	pics.videoThumb = "https://i3.ytimg.com/vi/" + videoId + "/mqdefault.jpg";
 	switch (PageName) {
 		case "start":
@@ -45,6 +42,8 @@ function build() {
 			pics.organizationLogo = false;
 			if (pics.presenterLogo == pics.channelIcon)
 				pics.presenterLogo = false;
+			if (!finish.theme)
+				finish.theme = start.theme;
 			buildBanner(finish);
 			loadClock();
 			loadPics();
