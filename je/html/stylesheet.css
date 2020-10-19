@@ -1,6 +1,7 @@
 @import "../../gp/html/stylesheet.css";
 .call2action {
-	background: linear-gradient(to bottom, white, #31c8f3)
+	background: linear-gradient(to bottom, white, #31c8f3);
+	color: white
 }
 
 .element {
@@ -18,9 +19,20 @@
 	color: #31c8f3
 }
 
+#presenterLogo {
+	border: 5px solid;
+	border-radius: 50%;
+	height: 90px;
+	position: absolute;
+	right: 10px;
+	top: 10px
+}
+
+
 body {
 	background: url(https://www.johannes-erdmann.com/wordpress/wp-content/gallery/2017_03_31/Screen-Shot-2017-03-27-at-2.04.51-PM-copy.jpg);
 	background-size: cover;
+	color: #31c8f3;
 	font-family: "Comic Sans MS";
 	font-size: 16px;
 }
