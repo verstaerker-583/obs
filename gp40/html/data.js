@@ -4,6 +4,7 @@ var start = {
 	call2action: "👁 Sei jetzt LIVE dabei!"
 };
 var finish = {
+	theme: "#LIVE 🔴 Jetzt erst recht! Aufgeben ist keine Option!",
 	message_neg: "Vielen Dank und auf Wiedersehen! 💚",
 	call2action: "⇨ Unterstütze Greenpeace!"
 };

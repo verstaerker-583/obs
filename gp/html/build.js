@@ -42,8 +42,6 @@ function build() {
 			pics.organizationLogo = false;
 			if (pics.presenterLogo == pics.channelIcon)
 				pics.presenterLogo = false;
-			if (!finish.theme)
-				finish.theme = start.theme;
 			buildBanner(finish);
 			loadClock();
 			loadPics();

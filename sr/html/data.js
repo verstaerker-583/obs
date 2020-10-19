@@ -4,6 +4,7 @@ var start = {
 	call2action: "An den Rändern der Welt 🌍"
 };
 var finish = {
+	theme: "#LIVE 🔴 Markus Mauthe - Naturfotograf & Umweltaktivist",
 	message: "Vielen Dank und auf Wiedersehen! 💚",
 	call2action: "Bitte unterstützen Sie GlobalSocial!"
 };
