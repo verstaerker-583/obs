@@ -6,8 +6,10 @@ s/--collection '.*'/--collection 'gp_local'/
 /\[Basic\]/a\
 Profile=gpYTmq\
 ProfileDir=gpYTmq\
-SceneCollection=gp_local\
-SceneCollectionFile=gp_local
+SceneCollection=gp_naked\
+SceneCollectionFile=gp_naked
+#SceneCollection=gp_local\
+#SceneCollectionFile=gp_local
 
 /\[SimpleOutput\]/a\
 Preset=ultrafast\

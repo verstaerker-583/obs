@@ -1,10 +1,13 @@
 var start = {
+	/*
 	theme: "#LIVE 🔴 Jetzt erst recht! Aufgeben ist keine Option!",
+	*/
+	theme: "#LIVE 🔴 Dr. Thomas Henningsen - Meeresbiologe & Kampagnenkoordinator",
 	message_neg: "Gleich geht's los!",
 	call2action: "👁 Sei jetzt LIVE dabei!"
 };
 var finish = {
-	theme: "#LIVE 🔴 Jetzt erst recht! Aufgeben ist keine Option!",
+	theme: start.theme,
 	message_neg: "Vielen Dank und auf Wiedersehen! 💚",
 	call2action: "⇨ Unterstütze Greenpeace!"
 };
@@ -14,11 +17,14 @@ var donate = {
 	call2action: "⇨ Unterstütze Greenpeace!"
 };
 var pics = {
-	channelIcon: "../gp40Logo.png",
+	channelIcon: "https://pbs.twimg.com/profile_images/563692190207967232/FjH9GTM0.jpeg",
 	organizationLogo: "../../gp/gpLogo.svg",
-	organizationLogoNeg: "../../gp/gpLogoNeg.svg"
+	organizationLogoNeg: "../../gp/gpLogoNeg.svg",
+	presenterLogo:  "../gp40Logo.png"
 };
+/*
+pics.channelIcon = pics.presenterLogo;
+*/
 pics.clockLogo = pics.organizationLogo;
-pics.presenterLogo = pics.channelIcon;
 var alarmTime = "19:00";
 var videoId = "8ljL7-t_lUc";

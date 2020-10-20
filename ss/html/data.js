@@ -4,7 +4,7 @@ var start = {
 	call2action: "👁 Sei jetzt LIVE dabei!"
 };
 var finish = {
-	theme: "#LIVE 🔴 Cati & Johannes Erdmann",
+	theme: start.theme, 
 	message: "Vielen Dank und auf Wiedersehen! 💙",
 	call2action: "👁 Sei auch nächstes Mal LIVE dabei!"
 };
