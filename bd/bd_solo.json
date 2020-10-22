@@ -134,6 +134,9 @@
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
+			},
+			"settings": {
+				"close_when_inactive": true
 			}
 		},
 		{

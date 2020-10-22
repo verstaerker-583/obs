@@ -81,7 +81,7 @@ sudo rm -rf ../target/$OBSUSR
 # scenes
 mkdir -p ../target/$OBSUSR/basic/scenes
 for i in `ls ../*/*.json`; do
-	[ `basename $i` == "bd_lutz.json" -o `basename $i` == "je.json" ] || jq -S --tab -f to$OBSUSR.jq $i > ../target/$OBSUSR/basic/scenes/`basename $i`
+	[ `basename $i` == "bd_lutz.json" -o `basename $i` == "ss.json" ] || jq -S --tab -f to$OBSUSR.jq $i > ../target/$OBSUSR/basic/scenes/`basename $i`
 done
 
 # profiles
