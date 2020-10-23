@@ -919,12 +919,6 @@
 				"libobs.hide_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					},
-					{
-						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_NUM3"
 					}
 				],
 				"libobs.hide_scene_item.Internal": [
@@ -932,7 +926,13 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					},
 					{
+						"key": "OBS_KEY_3"
+					},
+					{
 						"key": "OBS_KEY_H"
+					},
+					{
+						"key": "OBS_KEY_NUM3"
 					}
 				],
 				"libobs.hide_scene_item.NDI": [
@@ -948,18 +948,18 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					},
 					{
+						"key": "OBS_KEY_3"
+					},
+					{
 						"key": "OBS_KEY_H"
+					},
+					{
+						"key": "OBS_KEY_NUM3"
 					}
 				],
 				"libobs.show_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					},
-					{
-						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_NUM3"
 					}
 				],
 				"libobs.show_scene_item.NDI": [
