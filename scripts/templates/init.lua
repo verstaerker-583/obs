@@ -1,7 +1,9 @@
 streamingLayout = {
-	{"OBS", nil, "Color LCD", nil, hs.geometry.rect(40, 0, 950, 750), nil},
-	{"FotoMagico 5", nil, "Color LCD", nil, hs.geometry.rect(-990, -622, 950, 0), nil},
-	{"Skype", nil, "Color LCD", nil, hs.geometry.rect(-660, 0, 0, 0), nil}
+--	{"OBS", nil, "Color LCD", nil, hs.geometry.rect(40, 0, 950, 750), nil},
+--	{"FotoMagico 5", nil, "Color LCD", nil, hs.geometry.rect(-990, -622, 950, 0), nil},
+--	{"Skype", nil, "Color LCD", nil, hs.geometry.rect(-660, 0, 0, 0), nil}
+	{"OBS", nil, "Color LCD", nil, hs.geometry.rect(40, 0, 1200, 900), nil},
+	{"Skype", nil, "Color LCD", nil, hs.geometry.rect(-400, 120, 0, 0), nil}
 }
 
 function applicationWatcher(appName, eventType, appObject)
@@ -101,7 +103,7 @@ function preFlight()
 	tweakDock()
 
 	-- FotoMagico
-	tweakFotoMagico()
+--	tweakFotoMagico()
 
 	local headset = false
 	local monitor = false
@@ -125,6 +127,7 @@ function preFlight()
 			dev:setOrigin(-1,0)
 		elseif dev:name() == "Color LCD" then						-- MacBook?
 --			dev:setMode(1920, 1200, 1)						-- specific
+			dev:setMode(1440, 900, 1)						-- specific
 		end
 		log:write("done: " .. hs.inspect(dev:currentMode()) .. "\n")
 --		log:write(hs.inspect(dev:availableModes()) .. "\n")				-- for new platforms
@@ -242,8 +245,8 @@ end
 function startStreaming()
 	closeApps()
 
-	hs.execute("open -a 'OBS' --args --collection 'gp_naked' --profile 'gpYTsq' --startstreaming --verbose")
-	hs.application.launchOrFocus("FotoMagico 5")
+	hs.execute("open -a 'OBS' --args --collection 'gp_naked' --profile 'gpYTsq' --startstreaming --startvirtualcam --verbose")
+--	hs.application.launchOrFocus("FotoMagico 5")
 	hs.application.open("NDI Virtual Input", 0, true)
 	hs.application.open("Skype", 0, true)
 end
