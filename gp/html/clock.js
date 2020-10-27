@@ -44,7 +44,7 @@ function setAlarm() {
 
 function updateTime() {
 	var date = new Date();
-	var hours = 2 + date.getUTCHours();
+	var hours = 1 + date.getUTCHours();
 	var minutes = date.getMinutes();
 	var seconds = date.getSeconds();
 	hours = hours % 12;
