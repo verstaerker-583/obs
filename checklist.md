@@ -33,6 +33,7 @@
 - [ ]  **[<]**
     * 🎥 `External` aktiv?
 - [ ]  **[3]**
+    * **[◀]** **[▶]** Slideshow vor/ zurück
     * `FotoMagico` sicht- und hörbar?
 - [ ]  **[+]** Kamera zuschalten > ***Stresstest*** (FotoMagico + Kamera, skaliert)
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
@@ -41,6 +42,7 @@
 #### Filme
 - [ ]  **[I]** **I**ntro sicht- und hörbar?
 - [ ]  **[O]** **O**utro sicht- und hörbar?
+- [ ]  **[V]** **V**ideo sicht- und hörbar?
 
 #### Skype
 - [ ]  **[G]** (vorerst schwarzer Kreis)
@@ -125,6 +127,7 @@
 - [ ]  **[<]**
     * 🎥 `External` aktiv?
 - [ ]  **[3]**
+    * **[◀]** **[▶]** Slideshow vor/ zurück
     * `FotoMagico` sicht- und hörbar?
 - [ ]  **[4]**
 - [ ]  **[1]**

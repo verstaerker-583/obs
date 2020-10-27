@@ -44,13 +44,13 @@
     * 🔊 alle Audioquellen, außer Gast, offen
     * wechselt zu Szene "Cam"
 
+* **[V]** **V**ideo 🎞
+    * 🔇 alle Audioquellen geschlossen
+    * wechselt zu Szene "Cam"
+
 * **[O]** **O**utro 🎞
     * 🔇 alle Audioquellen geschlossen
     * wechselt zu Szene "Finish"
-
-* **[V]** **V**ideo 🎞
-    * 🔊 alle Audioquellen, außer Gast, offen
-    * wechselt zu Szene "Cam"
 
 ### Guest 📞
 * **[1]**, **[2]**, **[3]** und **[4]** - Gast immer stumm geschaltet und ausgeblendet
