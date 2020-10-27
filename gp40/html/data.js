@@ -27,4 +27,4 @@ pics.channelIcon = pics.presenterLogo;
 */
 pics.clockLogo = pics.organizationLogo;
 var alarmTime = "19:30";
-var videoId = "8ljL7-t_lUc";
+var videoId = "pvIBOQ6gimg";
