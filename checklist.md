@@ -121,18 +121,18 @@
 
 ### OBS
 #### Szenen in Ausgangsposition, Quellen sicht-/unsichtbar schalten und Overlays vom Server laden
-- [ ]  ⚠ OBS nicht anklicken, damit FotoMagico bedienbar bleibt. 
-- [ ]  **[1]**
-- [ ]  **[2]**, **[€]**, **[C]**
-- [ ]  **[<]**
+[ ]  ⚠ OBS nicht anklicken, damit FotoMagico bedienbar bleibt. 
+[ ]  **[1]**
+[ ]  **[2]**, **[€]**, **[C]**
+[ ]  **[<]**
     * 🎥 `External` aktiv?
-- [ ]  **[3]**
+[ ]  **[3]**
     * **[◀]** **[▶]** Slideshow vor/ zurück
     * `FotoMagico` sicht- und hörbar?
-- [ ]  **[4]**
-- [ ]  **[1]**
+[ ]  **[4]**
+[ ]  **[1]**
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
-- [ ]  ⚠ Stream nicht beenden!
+[ ]  ⚠ Stream nicht beenden!
 
 ### FotoMagico
 - [ ]  **[⌘] & [P]** Startposition `FotoMagico`/ Vollbild
