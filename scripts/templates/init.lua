@@ -181,11 +181,14 @@ function preFlight()
 		dev:setMuted(false)
 		dev:setBalance(0.5)
 		if dev:transportType() == "Built-in" then
+			dev:setVolume(75)
+			--[[
 			if headset then
 				dev:setVolume(75)
 			else
 				dev:setVolume(25)
 			end
+			--]]
 		elseif dev:transportType() == "Virtual" and DesktopAudio then
 			dev:setDefaultOutputDevice()
 			dev:setInputVolume(75)							-- BlackHole
