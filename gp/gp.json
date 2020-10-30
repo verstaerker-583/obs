@@ -146,9 +146,6 @@
 				},
 				{
 					"key": "OBS_KEY_O"
-				},
-				{
-					"key": "OBS_KEY_V"
 				}
 			],
 			"libobs.unmute": [
@@ -220,6 +217,9 @@
 				},
 				{
 					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_H"
 				},
 				{
 					"key": "OBS_KEY_NUM2"

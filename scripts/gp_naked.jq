@@ -4,9 +4,9 @@
 		.sources[] |
 			(
 				., .settings.items[]? | select(
-#					.name == "Color Source",
-#					.name == "Slide Show"
-					.name == "Screen Capture"
+					.name == "Color Source",
+					.name == "Slide Show"
+#					.name == "Screen Capture"
 				)
 			)
 	),

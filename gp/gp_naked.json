@@ -41,13 +41,7 @@
 					"key": "OBS_KEY_4"
 				},
 				{
-					"key": "OBS_KEY_F"
-				},
-				{
 					"key": "OBS_KEY_O"
-				},
-				{
-					"key": "OBS_KEY_V"
 				}
 			],
 			"libobs.unmute": [
@@ -61,10 +55,19 @@
 					"key": "OBS_KEY_3"
 				},
 				{
+					"key": "OBS_KEY_F"
+				},
+				{
 					"key": "OBS_KEY_G"
 				},
 				{
 					"key": "OBS_KEY_H"
+				},
+				{
+					"key": "OBS_KEY_I"
+				},
+				{
+					"key": "OBS_KEY_V"
 				},
 				{
 					"key": "OBS_KEY_NUM2"
@@ -143,9 +146,6 @@
 				},
 				{
 					"key": "OBS_KEY_O"
-				},
-				{
-					"key": "OBS_KEY_V"
 				}
 			],
 			"libobs.unmute": [
@@ -232,15 +232,6 @@
 			}
 		},
 		{
-			"id": "color_source",
-			"name": "Color Source",
-			"settings": {
-				"color": 4280204915,
-				"height": 720,
-				"width": 1280
-			}
-		},
-		{
 			"filters": [
 				{
 					"id": "compressor_filter",
@@ -307,38 +298,6 @@
 			}
 		},
 		{
-			"hotkeys": {
-				"SlideShow.NextSlide": [
-					{
-						"key": "OBS_KEY_PAGEDOWN"
-					},
-					{
-						"key": "OBS_KEY_RIGHT"
-					}
-				],
-				"SlideShow.PreviousSlide": [
-					{
-						"key": "OBS_KEY_LEFT"
-					},
-					{
-						"key": "OBS_KEY_PAGEUP"
-					}
-				],
-				"SlideShow.Restart": [
-					{
-						"key": "OBS_KEY_1"
-					}
-				]
-			},
-			"id": "slideshow",
-			"name": "Slide Show",
-			"settings": {
-				"loop": false,
-				"slide_mode": "mode_manual",
-				"use_custom_size": "1280x720"
-			}
-		},
-		{
 			"id": "text_ft2_source",
 			"name": "?",
 			"settings": {
@@ -350,6 +309,13 @@
 					"style": "Condensed Black"
 				},
 				"text": "?"
+			}
+		},
+		{
+			"id": "display_capture",
+			"name": "Screen Capture",
+			"settings": {
+				"display": 1
 			}
 		},
 		{
@@ -550,10 +516,16 @@
 						"key": "OBS_KEY_F"
 					},
 					{
+						"key": "OBS_KEY_G"
+					},
+					{
 						"key": "OBS_KEY_I"
 					},
 					{
 						"key": "OBS_KEY_NUM2"
+					},
+					{
+						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.hide_scene_item.Overlay Donate": [
@@ -659,12 +631,6 @@
 				"libobs.show_scene_item.Overlay Chat": [
 					{
 						"key": "OBS_KEY_C"
-					},
-					{
-						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.show_scene_item.Overlay Donate": [
@@ -852,10 +818,17 @@
 			"settings": {
 				"items": [
 					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
 						"locked": true,
-						"name": "Slide Show",
-						"private_settings": {
-							"color-preset": 7
+						"name": "Screen Capture",
+						"pos": {
+							"x": 640,
+							"y": 360
 						},
 						"visible": true
 					},
@@ -1082,13 +1055,18 @@
 			"settings": {
 				"items": [
 					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
 						"locked": true,
-						"name": "Color Source",
-						"visible": true
-					},
-					{
-						"locked": true,
-						"name": "Slide Show",
+						"name": "Screen Capture",
+						"pos": {
+							"x": 640,
+							"y": 360
+						},
 						"visible": true
 					}
 				]

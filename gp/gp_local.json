@@ -41,13 +41,7 @@
 					"key": "OBS_KEY_4"
 				},
 				{
-					"key": "OBS_KEY_F"
-				},
-				{
 					"key": "OBS_KEY_O"
-				},
-				{
-					"key": "OBS_KEY_V"
 				}
 			],
 			"libobs.unmute": [
@@ -61,10 +55,19 @@
 					"key": "OBS_KEY_3"
 				},
 				{
+					"key": "OBS_KEY_F"
+				},
+				{
 					"key": "OBS_KEY_G"
 				},
 				{
 					"key": "OBS_KEY_H"
+				},
+				{
+					"key": "OBS_KEY_I"
+				},
+				{
+					"key": "OBS_KEY_V"
 				},
 				{
 					"key": "OBS_KEY_NUM2"
@@ -143,9 +146,6 @@
 				},
 				{
 					"key": "OBS_KEY_O"
-				},
-				{
-					"key": "OBS_KEY_V"
 				}
 			],
 			"libobs.unmute": [
@@ -547,10 +547,16 @@
 						"key": "OBS_KEY_F"
 					},
 					{
+						"key": "OBS_KEY_G"
+					},
+					{
 						"key": "OBS_KEY_I"
 					},
 					{
 						"key": "OBS_KEY_NUM2"
+					},
+					{
+						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.hide_scene_item.Overlay Donate": [
@@ -659,12 +665,6 @@
 				"libobs.show_scene_item.Overlay Chat": [
 					{
 						"key": "OBS_KEY_C"
-					},
-					{
-						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_V"
 					}
 				],
 				"libobs.show_scene_item.Overlay Donate": [

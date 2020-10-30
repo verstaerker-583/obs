@@ -18,7 +18,7 @@ function profiles {
 	sed -f to$OBSUSR.sed templates/init.lua > ../target/$OBSUSR/init.lua
 
 	cp templates/com.local.KeyRemapping.R400.plist  ../target/$OBSUSR
-  	[[ $OBSUSR == "mm" ]] && cp templates/com.local.KeyRemapping.VP4910.plist  ../target/$OBSUSR
+#  	[[ $OBSUSR == "mm" ]] && cp templates/com.local.KeyRemapping.VP4910.plist  ../target/$OBSUSR
 }
 
 function package {
