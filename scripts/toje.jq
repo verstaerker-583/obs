@@ -31,7 +31,7 @@ del(
 )
 | (.sources[] | select(.name == "External").settings.device) = "CC27327P54QGDV4AV"
 | (.sources[] | select(.name == "Internal").settings.device) = "CC27327P54QGDV4AV"
-| (.sources[] | select(.name == "cams").settings.items[] | select(.name == "Internal").crop_left) = 640
+#| (.sources[] | select(.name == "cams").settings.items[] | select(.name == "Internal").crop_left) = 640
 
 # demo
 | (.sources[] | select(.id == "slideshow").settings.files) |= . + [{"value":"https://www.johannes-erdmann.com/wordpress/wp-content/uploads/2020/07/IMG_6702-1-401x534.jpg"}]
