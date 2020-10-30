@@ -310,6 +310,12 @@
 			"hotkeys": {
 				"SlideShow.NextSlide": [
 					{
+						"key": "OBS_KEY_DOWN"
+					},
+					{
+						"key": "OBS_KEY_N"
+					},
+					{
 						"key": "OBS_KEY_PAGEDOWN"
 					},
 					{
@@ -318,10 +324,16 @@
 				],
 				"SlideShow.PreviousSlide": [
 					{
+						"key": "OBS_KEY_V"
+					},
+					{
 						"key": "OBS_KEY_LEFT"
 					},
 					{
 						"key": "OBS_KEY_PAGEUP"
+					},
+					{
+						"key": "OBS_KEY_UP"
 					}
 				],
 				"SlideShow.Restart": [
