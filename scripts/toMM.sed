@@ -10,6 +10,7 @@ Profile=gpYTsq\
 ProfileDir=gpYTsq\
 SceneCollection=gp_naked\
 SceneCollectionFile=gp_naked
+/AlwaysOnTop=true/d
 
 # basic.ini
 #/\[Audio\]/a\
