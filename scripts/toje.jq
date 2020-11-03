@@ -37,5 +37,5 @@ del(
 			)
 	)
 )
-| (.sources[] | select(.name == "External").settings.device) = "CC26163C4LSGDV4AA"
-| (.sources[] | select(.name == "Internal").settings.device) = "0x141300001bcf0215"
+| (.sources[] | select(.name == "External").settings.device) = "0x141300001bcf0215"
+| (.sources[] | select(.name == "Internal").settings.device) = "CC26163C4LSGDV4AA"
