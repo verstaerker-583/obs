@@ -20,4 +20,4 @@ var pics = {
 };
 pics.clockLogo = pics.organizationLogoNeg;
 var alarmTime = "20:00";
-var videoId = "36YnV9STBqc";
+var videoId = "uoIq0mOVXVQ";
