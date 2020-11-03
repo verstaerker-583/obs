@@ -14,9 +14,9 @@ var donate = {
 	call2action: "⇨ Spendier‘ uns doch einen Kaffee! 💙"
 };
 var pics = {
-	channelIcon: "https://yt3.ggpht.com/a/AATXAJwZ4zk60xqw8bifPYzq3OivaUcxC3eUpSTvaJeL",
+	channelIcon: "https://yt3.ggpht.com/a/AATXAJwZ4zk60xqw8bifPYzq3OivaUcxC3eUpSTvaJeL=s196",
 	organizationLogoNeg: "../jeLogo.svg",
-	presenterLogo: "https://yt3.ggpht.com/a/AATXAJz8tFuSp02_HZcgDnqwYaXNqTpo_NPVUPgOEbBx"
+	presenterLogo: "https://yt3.ggpht.com/a/AATXAJz8tFuSp02_HZcgDnqwYaXNqTpo_NPVUPgOEbBx=s196"
 };
 pics.clockLogo = pics.organizationLogoNeg;
 var alarmTime = "20:00";
