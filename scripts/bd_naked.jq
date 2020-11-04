@@ -22,13 +22,10 @@
 		.. | select(
 			.enabled? == "false",
 			.key? == (
+				"OBS_KEY_D",
 				"OBS_KEY_G",
 				"OBS_KEY_M"
 				)
 		)
 	)
 )
-| (
-	.AuxAudioDevice1.hotkeys["libobs.unmute"],
-	.AuxAudioDevice2.hotkeys["libobs.unmute"]
-) |= . + [{"key": "OBS_KEY_I"}]

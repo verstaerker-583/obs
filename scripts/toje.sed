@@ -1,6 +1,6 @@
 # init.lua
-s/--profile '.*'/--profile 'jeYTmq'/
 s/--collection '.*'/--collection 'ss'/
+s/--profile '.*'/--profile 'jeYTmq'/
 
 # global.ini
 /\[Basic\]/a\

@@ -52,13 +52,19 @@
 					"key": "OBS_KEY_2"
 				},
 				{
-					"key": "OBS_KEY_3"
-				},
-				{
 					"key": "OBS_KEY_NUM2"
 				},
 				{
+					"key": "OBS_KEY_3"
+				},
+				{
 					"key": "OBS_KEY_NUM3"
+				},
+				{
+					"key": "OBS_KEY_I"
+				},
+				{
+					"key": "OBS_KEY_V"
 				}
 			]
 		},
@@ -132,13 +138,19 @@
 					"key": "OBS_KEY_2"
 				},
 				{
-					"key": "OBS_KEY_3"
-				},
-				{
 					"key": "OBS_KEY_NUM2"
 				},
 				{
+					"key": "OBS_KEY_3"
+				},
+				{
 					"key": "OBS_KEY_NUM3"
+				},
+				{
+					"key": "OBS_KEY_I"
+				},
+				{
+					"key": "OBS_KEY_V"
 				}
 			]
 		},
@@ -198,13 +210,19 @@
 					"key": "OBS_KEY_2"
 				},
 				{
-					"key": "OBS_KEY_3"
-				},
-				{
 					"key": "OBS_KEY_NUM2"
 				},
 				{
+					"key": "OBS_KEY_3"
+				},
+				{
 					"key": "OBS_KEY_NUM3"
+				},
+				{
+					"key": "OBS_KEY_I"
+				},
+				{
+					"key": "OBS_KEY_V"
 				}
 			]
 		},

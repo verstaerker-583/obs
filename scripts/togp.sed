@@ -1,6 +1,6 @@
 # init.lua
-s/--profile '.*'/--profile 'gpYTmq'/
 s/--collection '.*'/--collection 'gp_local'/
+s/--profile '.*'/--profile 'gpYTmq'/
 
 # global.ini
 /\[Basic\]/a\

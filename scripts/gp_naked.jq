@@ -1,6 +1,6 @@
 .name = "gp_naked"
 | del(
-	.DesktopAudioDevice1,
+#	.DesktopAudioDevice1,
 	(
 		.sources[] |
 			(

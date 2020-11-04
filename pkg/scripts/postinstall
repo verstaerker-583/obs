@@ -20,4 +20,6 @@ chown -R root ~/"$OBS"/basic/profiles
 
 find ~/"$OBS" -d -exec touch -ht 197304291400 '{}' \;
 
+softwareupdate -i -a --reset-ignored
+
 exit 0
