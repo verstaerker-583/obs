@@ -15,10 +15,9 @@ var donate = {
 };
 var pics = {
 	channelIcon: "https://yt3.ggpht.com/a/AATXAJwZ4zk60xqw8bifPYzq3OivaUcxC3eUpSTvaJeL=s196",
-	organizationLogoNeg: "../jeLogo.svg",
+	clockLogo: "../jeLogo.svg",
 	organizationLogoNeg: "../jeLogo.png",
 	presenterLogo: "https://yt3.ggpht.com/a/AATXAJz8tFuSp02_HZcgDnqwYaXNqTpo_NPVUPgOEbBx=s196"
 };
-pics.clockLogo = pics.organizationLogoNeg;
 var alarmTime = "20:00";
 var videoId = "uoIq0mOVXVQ";
