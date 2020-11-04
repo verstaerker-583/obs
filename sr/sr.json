@@ -17,15 +17,15 @@
 				}
 			},
 			{
-				"id": "limiter_filter",
-				"name": "Limiter"
-			},
-			{
 				"id": "gain_filter",
 				"name": "Gain",
 				"settings": {
 					"db": 3
 				}
+			},
+			{
+				"id": "limiter_filter",
+				"name": "Limiter"
 			}
 		],
 		"flags": 2,
@@ -113,15 +113,15 @@
 				}
 			},
 			{
-				"id": "limiter_filter",
-				"name": "Limiter"
-			},
-			{
 				"id": "gain_filter",
 				"name": "Gain",
 				"settings": {
 					"db": 3
 				}
+			},
+			{
+				"id": "limiter_filter",
+				"name": "Limiter"
 			}
 		],
 		"hotkeys": {
