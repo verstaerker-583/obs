@@ -1,5 +1,13 @@
 @import "../../gp/html/chat.css";
 
+
+yt-live-chat-renderer * {
+	color: white!important;
+	font-family: "Helvetica Neue"!important;
+	font-size: 16px!important;
+	line-height: 16px!important
+}
+
 yt-live-chat-text-message-renderer #author-name.moderator,
 yt-live-chat-text-message-renderer #author-name.owner,
 yt-live-chat-text-message-renderer #author-name[type="moderator"],
