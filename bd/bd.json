@@ -641,9 +641,6 @@
 						"pos": {
 							"x": 640,
 							"y": 360
-						},
-						"private_settings": {
-							"color-preset": 7
 						}
 					}
 				]
@@ -757,9 +754,6 @@
 						"pos": {
 							"x": 640,
 							"y": 360
-						},
-						"private_settings": {
-							"color-preset": 7
 						}
 					}
 				]

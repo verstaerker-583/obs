@@ -1,17 +1,20 @@
 .name = "bd_solo"
 | del(
+	.AuxAudioDevice2,
+#	.DesktopAudioDevice1,
 	(
 		.sources[] |
 			(
-				., .settings.items[]? | select(
-					.name == "NDI",
-					.name == "guest",
-					.name == "Overlay Chat",
-					.name == "Overlay Donate",
-					.name == "Video",
-#					.name == "Color Source",
-#					.name == "Slide Show"
-					.name == "Screen Capture"
+				., .settings.items[]? | select(.name == (
+					"NDI",
+					"Overlay Chat",
+					"Overlay Donate",
+					"Video",
+					"guest",
+					"Color Source",
+					"Slide Show"
+#					"Screen Capture"
+					)
 				)
 			),
 			(
@@ -26,19 +29,19 @@
 					"libobs.show_scene_item.Overlay Donate",
 					"libobs.show_scene_item.Video",
 					"libobs.show_scene_item.guest"
-				]
+					]
 			)
 	),
-	.DesktopAudioDevice1,
-	.AuxAudioDevice2,
 	(
 		.. | select(
-			.key? == "OBS_KEY_F",
-			.key? == "OBS_KEY_G",
-			.key? == "OBS_KEY_H",
-			.key? == "OBS_KEY_V",
-			.enabled? == "false"
-			)
+			.enabled? == "false",
+			.key? == (
+				"OBS_KEY_F",
+				"OBS_KEY_G",
+				"OBS_KEY_H",
+				"OBS_KEY_V"
+				)
+		)
 	)
 )
 | (.sources[] | select(.id == "browser_source").settings.url) |= gsub("html";"svg")

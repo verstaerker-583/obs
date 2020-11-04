@@ -1,29 +1,34 @@
 .name = "bd_naked"
 | del(
+#	.DesktopAudioDevice1,
+	(
+		.AuxAudioDevice2.filters[] | select(.id != "limiter_filter")
+	),
 	(
 		.sources[] |
 			(
 				select(.name == "NDI").filters[] | select(.id != "mask_filter")
 			),
 			(
-				., .settings.items[]? | select(
-#					.name == "Color Source",
-#					.name == "Slide Show"
-					.name == "Screen Capture"
+				., .settings.items[]? | select(.name == (
+#					"Color Source",
+#					"Slide Show"
+					"Screen Capture"
+					)
 				)
 			)
 	),
-	.DesktopAudioDevice1,
-	(.AuxAudioDevice2.filters[] | select(.id != "limiter_filter")),
 	(
 		.. | select(
-			.key? == "OBS_KEY_G",
-			.key? == "OBS_KEY_M",
-			.enabled? == "false"
-			)
+			.enabled? == "false",
+			.key? == (
+				"OBS_KEY_G",
+				"OBS_KEY_M"
+				)
+		)
 	)
 )
 | (
 	.AuxAudioDevice1.hotkeys["libobs.unmute"],
 	.AuxAudioDevice2.hotkeys["libobs.unmute"]
-	) |= . + [{"key": "OBS_KEY_I"}]
+) |= . + [{"key": "OBS_KEY_I"}]

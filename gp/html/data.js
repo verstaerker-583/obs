@@ -14,7 +14,7 @@ var donate = {
 	call2action: "⇨ Unterstütze Greenpeace!"
 };
 var pics = {
-	channelIcon: "https://yt3.ggpht.com/a/AATXAJz1rf8F_1ZMrY7BkibAF0CFrkj4qja9n7fTqgrz",
+	channelIcon: "https://yt3.ggpht.com/a/AATXAJz1rf8F_1ZMrY7BkibAF0CFrkj4qja9n7fTqgrz=s196",
 	organizationLogo: "../gpLogo.svg",
 	organizationLogoNeg: "../gpLogoNeg.svg",
 	presenterLogo: "../../gp/mmLogo.png"

@@ -52,7 +52,13 @@
 					"key": "OBS_KEY_2"
 				},
 				{
+					"key": "OBS_KEY_NUM2"
+				},
+				{
 					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_NUM3"
 				},
 				{
 					"key": "OBS_KEY_F"
@@ -68,12 +74,6 @@
 				},
 				{
 					"key": "OBS_KEY_V"
-				},
-				{
-					"key": "OBS_KEY_NUM2"
-				},
-				{
-					"key": "OBS_KEY_NUM3"
 				}
 			]
 		},
@@ -133,16 +133,16 @@
 					"key": "OBS_KEY_2"
 				},
 				{
-					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_4"
-				},
-				{
 					"key": "OBS_KEY_NUM2"
 				},
 				{
+					"key": "OBS_KEY_3"
+				},
+				{
 					"key": "OBS_KEY_NUM3"
+				},
+				{
+					"key": "OBS_KEY_4"
 				},
 				{
 					"key": "OBS_KEY_O"
@@ -216,16 +216,28 @@
 					"key": "OBS_KEY_2"
 				},
 				{
+					"key": "OBS_KEY_NUM2"
+				},
+				{
 					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_NUM3"
+				},
+				{
+					"key": "OBS_KEY_F"
+				},
+				{
+					"key": "OBS_KEY_G"
 				},
 				{
 					"key": "OBS_KEY_H"
 				},
 				{
-					"key": "OBS_KEY_NUM2"
+					"key": "OBS_KEY_I"
 				},
 				{
-					"key": "OBS_KEY_NUM3"
+					"key": "OBS_KEY_V"
 				}
 			]
 		},
@@ -408,9 +420,6 @@
 				],
 				"SlideShow.PreviousSlide": [
 					{
-						"key": "OBS_KEY_V"
-					},
-					{
 						"key": "OBS_KEY_LEFT"
 					},
 					{
@@ -418,6 +427,9 @@
 					},
 					{
 						"key": "OBS_KEY_UP"
+					},
+					{
+						"key": "OBS_KEY_V"
 					}
 				],
 				"SlideShow.Restart": [
@@ -547,6 +559,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
@@ -554,9 +569,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -570,6 +582,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
@@ -577,9 +592,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -593,6 +605,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
@@ -600,9 +615,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -613,13 +625,13 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
 						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -630,13 +642,13 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_G"
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -650,6 +662,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
@@ -657,9 +672,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -673,6 +685,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
@@ -680,9 +695,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -693,6 +705,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
@@ -700,9 +715,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					}
 				],
 				"libobs.hide_scene_item.guest": [
@@ -710,13 +722,13 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -730,6 +742,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
@@ -737,9 +752,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -924,10 +936,10 @@
 						"key": "OBS_KEY_3"
 					},
 					{
-						"key": "OBS_KEY_H"
+						"key": "OBS_KEY_NUM3"
 					},
 					{
-						"key": "OBS_KEY_NUM3"
+						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.hide_scene_item.cams": [
@@ -943,10 +955,10 @@
 						"key": "OBS_KEY_3"
 					},
 					{
-						"key": "OBS_KEY_H"
+						"key": "OBS_KEY_NUM3"
 					},
 					{
-						"key": "OBS_KEY_NUM3"
+						"key": "OBS_KEY_H"
 					}
 				]
 			},
@@ -1056,10 +1068,10 @@
 						"key": "OBS_KEY_3"
 					},
 					{
-						"key": "OBS_KEY_H"
+						"key": "OBS_KEY_NUM3"
 					},
 					{
-						"key": "OBS_KEY_NUM3"
+						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.hide_scene_item.NDI": [
@@ -1078,10 +1090,10 @@
 						"key": "OBS_KEY_3"
 					},
 					{
-						"key": "OBS_KEY_H"
+						"key": "OBS_KEY_NUM3"
 					},
 					{
-						"key": "OBS_KEY_NUM3"
+						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.show_scene_item.Internal": [

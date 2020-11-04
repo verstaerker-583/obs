@@ -1,6 +1,6 @@
 {
 	"current_scene": "Start",
-	"name": "nd",
+	"name": "lj",
 	"preview_locked": true,
 	"sources": [
 		{
@@ -40,9 +40,55 @@
 			"name": "Internal"
 		},
 		{
+			"filters": [
+				{
+					"id": "compressor_filter",
+					"name": "Compressor"
+				},
+				{
+					"id": "limiter_filter",
+					"name": "Limiter"
+				}
+			],
+			"id": "ffmpeg_source",
+			"monitoring_type": 2,
+			"name": "Intro",
+			"private_settings": {
+				"mixer_hidden": true,
+				"volume_locked": true
+			},
+			"settings": {
+				"close_when_inactive": true
+			}
+		},
+		{
+			"filters": [
+				{
+					"id": "compressor_filter",
+					"name": "Compressor"
+				},
+				{
+					"id": "limiter_filter",
+					"name": "Limiter"
+				}
+			],
+			"id": "ffmpeg_source",
+			"monitoring_type": 2,
+			"name": "Outro",
+			"private_settings": {
+				"mixer_hidden": true,
+				"volume_locked": true
+			},
+			"settings": {
+				"close_when_inactive": true
+			}
+		},
+		{
 			"id": "text_ft2_source",
 			"name": "?",
 			"settings": {
+				"color1": 4284888012,
+				"color2": 4294967295,
 				"font": {
 					"face": "Helvetica Neue",
 					"size": 288,
@@ -59,18 +105,63 @@
 			}
 		},
 		{
+			"id": "browser_source",
+			"name": "Overlay Start",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "",
+				"height": 720,
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/start.svg",
+				"width": 1280
+			}
+		},
+		{
+			"id": "browser_source",
+			"name": "Overlay Cam",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "",
+				"height": 720,
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/bubbles.svg",
+				"width": 1280
+			}
+		},
+		{
+			"id": "browser_source",
+			"name": "Overlay Finish",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "",
+				"height": 720,
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/finish.svg",
+				"width": 1280
+			}
+		},
+		{
 			"hotkeys": {
 				"OBSBasic.SelectScene": [
 					{
 						"key": "OBS_KEY_1"
-					},
-					{
-						"key": "OBS_KEY_4"
 					}
 				]
 			},
 			"id": "scene",
-			"name": "Start"
+			"name": "Start",
+			"settings": {
+				"items": [
+					{
+						"locked": true,
+						"name": "Overlay Start",
+						"visible": true
+					}
+				]
+			}
 		},
 		{
 			"hotkeys": {
@@ -80,6 +171,9 @@
 					},
 					{
 						"key": "OBS_KEY_NUM2"
+					},
+					{
+						"key": "OBS_KEY_I"
 					}
 				],
 				"libobs.hide_scene_item.?": [
@@ -91,12 +185,26 @@
 					},
 					{
 						"key": "OBS_KEY_NUM2"
+					},
+					{
+						"key": "OBS_KEY_I"
 					}
 				],
 				"libobs.hide_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
 					},
+					{
+						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
+						"key": "OBS_KEY_I"
+					}
+				],
+				"libobs.hide_scene_item.Intro": [
 					{
 						"key": "OBS_KEY_2"
 					},
@@ -113,6 +221,9 @@
 					},
 					{
 						"key": "OBS_KEY_NUM2"
+					},
+					{
+						"key": "OBS_KEY_I"
 					}
 				],
 				"libobs.show_scene_item.?": [
@@ -123,6 +234,11 @@
 				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					}
+				],
+				"libobs.show_scene_item.Intro": [
+					{
+						"key": "OBS_KEY_I"
 					}
 				],
 				"libobs.show_scene_item.screen": [
@@ -184,6 +300,25 @@
 							"x": 250,
 							"y": 340
 						}
+					},
+					{
+						"locked": true,
+						"name": "Overlay Cam",
+						"visible": true
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "Intro",
+						"pos": {
+							"x": 640,
+							"y": 360
+						}
 					}
 				]
 			}
@@ -237,6 +372,53 @@
 					{
 						"locked": true,
 						"name": "cams"
+					}
+				]
+			}
+		},
+		{
+			"hotkeys": {
+				"OBSBasic.SelectScene": [
+					{
+						"key": "OBS_KEY_4"
+					},
+					{
+						"key": "OBS_KEY_O"
+					}
+				],
+				"libobs.hide_scene_item.Outro": [
+					{
+						"key": "OBS_KEY_4"
+					}
+				],
+				"libobs.show_scene_item.Outro": [
+					{
+						"key": "OBS_KEY_O"
+					}
+				]
+			},
+			"id": "scene",
+			"name": "Finish",
+			"settings": {
+				"items": [
+					{
+						"locked": true,
+						"name": "Overlay Finish",
+						"visible": true
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "Outro",
+						"pos": {
+							"x": 640,
+							"y": 360
+						}
 					}
 				]
 			}

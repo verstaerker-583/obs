@@ -52,7 +52,13 @@
 					"key": "OBS_KEY_2"
 				},
 				{
+					"key": "OBS_KEY_NUM2"
+				},
+				{
 					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_NUM3"
 				},
 				{
 					"key": "OBS_KEY_F"
@@ -68,12 +74,6 @@
 				},
 				{
 					"key": "OBS_KEY_V"
-				},
-				{
-					"key": "OBS_KEY_NUM2"
-				},
-				{
-					"key": "OBS_KEY_NUM3"
 				}
 			]
 		},
@@ -133,16 +133,16 @@
 					"key": "OBS_KEY_2"
 				},
 				{
-					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_4"
-				},
-				{
 					"key": "OBS_KEY_NUM2"
 				},
 				{
+					"key": "OBS_KEY_3"
+				},
+				{
 					"key": "OBS_KEY_NUM3"
+				},
+				{
+					"key": "OBS_KEY_4"
 				},
 				{
 					"key": "OBS_KEY_O"
@@ -168,6 +168,75 @@
 		},
 		"settings": {
 			"device_id": "BF568F24-731B-41DB-932E-AC7E260BC71A"
+		}
+	},
+	"DesktopAudioDevice1": {
+		"filters": [
+			{
+				"id": "compressor_filter",
+				"name": "Compressor"
+			},
+			{
+				"id": "limiter_filter",
+				"name": "Limiter"
+			}
+		],
+		"hotkeys": {
+			"libobs.mute": [
+				{
+					"key": "OBS_KEY_D"
+				},
+				{
+					"key": "OBS_KEY_1"
+				},
+				{
+					"key": "OBS_KEY_4"
+				},
+				{
+					"key": "OBS_KEY_O"
+				}
+			],
+			"libobs.unmute": [
+				{
+					"key": "OBS_KEY_D"
+				},
+				{
+					"key": "OBS_KEY_2"
+				},
+				{
+					"key": "OBS_KEY_NUM2"
+				},
+				{
+					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_NUM3"
+				},
+				{
+					"key": "OBS_KEY_F"
+				},
+				{
+					"key": "OBS_KEY_G"
+				},
+				{
+					"key": "OBS_KEY_H"
+				},
+				{
+					"key": "OBS_KEY_I"
+				},
+				{
+					"key": "OBS_KEY_V"
+				}
+			]
+		},
+		"id": "coreaudio_input_capture",
+		"monitoring_type": 2,
+		"name": "Desktop Audio",
+		"private_settings": {
+			"volume_locked": true
+		},
+		"settings": {
+			"device_id": "BlackHole2ch_UID"
 		}
 	},
 	"current_scene": "Start",
@@ -229,15 +298,6 @@
 			"name": "NDI",
 			"settings": {
 				"device": "BB86C477-373F-49D9-AA4B-CE86A0E883F1"
-			}
-		},
-		{
-			"id": "color_source",
-			"name": "Color Source",
-			"settings": {
-				"color": 4280204915,
-				"height": 720,
-				"width": 1280
 			}
 		},
 		{
@@ -307,50 +367,6 @@
 			}
 		},
 		{
-			"hotkeys": {
-				"SlideShow.NextSlide": [
-					{
-						"key": "OBS_KEY_DOWN"
-					},
-					{
-						"key": "OBS_KEY_N"
-					},
-					{
-						"key": "OBS_KEY_PAGEDOWN"
-					},
-					{
-						"key": "OBS_KEY_RIGHT"
-					}
-				],
-				"SlideShow.PreviousSlide": [
-					{
-						"key": "OBS_KEY_V"
-					},
-					{
-						"key": "OBS_KEY_LEFT"
-					},
-					{
-						"key": "OBS_KEY_PAGEUP"
-					},
-					{
-						"key": "OBS_KEY_UP"
-					}
-				],
-				"SlideShow.Restart": [
-					{
-						"key": "OBS_KEY_1"
-					}
-				]
-			},
-			"id": "slideshow",
-			"name": "Slide Show",
-			"settings": {
-				"loop": false,
-				"slide_mode": "mode_manual",
-				"use_custom_size": "1280x720"
-			}
-		},
-		{
 			"id": "text_ft2_source",
 			"name": "?",
 			"settings": {
@@ -362,6 +378,13 @@
 					"style": "Condensed Black"
 				},
 				"text": "?"
+			}
+		},
+		{
+			"id": "display_capture",
+			"name": "Screen Capture",
+			"settings": {
+				"display": 1
 			}
 		},
 		{
@@ -456,6 +479,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
@@ -463,9 +489,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -479,6 +502,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
@@ -486,9 +512,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -519,13 +542,13 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
 						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -536,13 +559,13 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_G"
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -556,6 +579,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
@@ -563,9 +589,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -579,6 +602,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
@@ -586,9 +612,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -599,6 +622,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
@@ -606,9 +632,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					}
 				],
 				"libobs.hide_scene_item.guest": [
@@ -616,13 +639,13 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -643,9 +666,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -697,6 +717,9 @@
 				"libobs.show_scene_item.screen": [
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
+					},
+					{
+						"key": "OBS_KEY_NUM2"
 					}
 				]
 			},
@@ -833,10 +856,10 @@
 						"key": "OBS_KEY_3"
 					},
 					{
-						"key": "OBS_KEY_H"
+						"key": "OBS_KEY_NUM3"
 					},
 					{
-						"key": "OBS_KEY_NUM3"
+						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.hide_scene_item.cams": [
@@ -852,10 +875,10 @@
 						"key": "OBS_KEY_3"
 					},
 					{
-						"key": "OBS_KEY_H"
+						"key": "OBS_KEY_NUM3"
 					},
 					{
-						"key": "OBS_KEY_NUM3"
+						"key": "OBS_KEY_H"
 					}
 				]
 			},
@@ -864,10 +887,17 @@
 			"settings": {
 				"items": [
 					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
 						"locked": true,
-						"name": "Slide Show",
-						"private_settings": {
-							"color-preset": 7
+						"name": "Screen Capture",
+						"pos": {
+							"x": 640,
+							"y": 360
 						},
 						"visible": true
 					},
@@ -950,10 +980,10 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					},
 					{
-						"key": "OBS_KEY_H"
+						"key": "OBS_KEY_NUM3"
 					},
 					{
-						"key": "OBS_KEY_NUM3"
+						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.hide_scene_item.NDI": [
@@ -969,10 +999,10 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					},
 					{
-						"key": "OBS_KEY_H"
+						"key": "OBS_KEY_NUM3"
 					},
 					{
-						"key": "OBS_KEY_NUM3"
+						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.show_scene_item.Internal": [
@@ -1093,13 +1123,18 @@
 			"settings": {
 				"items": [
 					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
 						"locked": true,
-						"name": "Color Source",
-						"visible": true
-					},
-					{
-						"locked": true,
-						"name": "Slide Show",
+						"name": "Screen Capture",
+						"pos": {
+							"x": 640,
+							"y": 360
+						},
 						"visible": true
 					}
 				]

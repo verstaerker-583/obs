@@ -13,14 +13,17 @@
 			(
 				., .settings.items[]? | select(
 					(.name | test("Overlay")),
-					.name == "Finish",
-					.name == "Intro",
-					.name == "NDI",
-					.name == "Outro",
-					.name == "Video",
-					.name == "guest",
-#					.name == "Slide Show"
-					.name == "Screen Capture"
+					.name == (
+						"Finish",
+						"Intro",
+						"NDI",
+						"Outro",
+						"Video",
+						"guest",
+						"Color Source",
+						"Slide Show"
+#						"Screen Capture"
+					)
 				)
 			),
 			(
@@ -38,18 +41,20 @@
 					"libobs.show_scene_item.Overlay Donate",
 					"libobs.show_scene_item.Video",
 					"libobs.show_scene_item.guest"
-				]
+					]
 			)
 	),
 	(
 		.. | select(
-			.key? == "OBS_KEY_F",
-			.key? == "OBS_KEY_G",
-			.key? == "OBS_KEY_H",
-			.key? == "OBS_KEY_I",
-			.key? == "OBS_KEY_V",
-			.enabled? == "false"
-			)
+			.enabled? == "false",
+			.key? == (
+				"OBS_KEY_F",
+				"OBS_KEY_G",
+				"OBS_KEY_H",
+				"OBS_KEY_I",
+				"OBS_KEY_V"
+				)
+		)
 	)
 )
 | (.sources[] | select(.name == "Start").hotkeys["OBSBasic.SelectScene"]) |= . + [{"key": "OBS_KEY_4"}]

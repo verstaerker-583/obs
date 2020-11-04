@@ -52,7 +52,13 @@
 					"key": "OBS_KEY_2"
 				},
 				{
+					"key": "OBS_KEY_NUM2"
+				},
+				{
 					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_NUM3"
 				},
 				{
 					"key": "OBS_KEY_F"
@@ -68,12 +74,6 @@
 				},
 				{
 					"key": "OBS_KEY_V"
-				},
-				{
-					"key": "OBS_KEY_NUM2"
-				},
-				{
-					"key": "OBS_KEY_NUM3"
 				}
 			]
 		},
@@ -133,16 +133,16 @@
 					"key": "OBS_KEY_2"
 				},
 				{
-					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_4"
-				},
-				{
 					"key": "OBS_KEY_NUM2"
 				},
 				{
+					"key": "OBS_KEY_3"
+				},
+				{
 					"key": "OBS_KEY_NUM3"
+				},
+				{
+					"key": "OBS_KEY_4"
 				},
 				{
 					"key": "OBS_KEY_O"
@@ -168,6 +168,75 @@
 		},
 		"settings": {
 			"device_id": "BF568F24-731B-41DB-932E-AC7E260BC71A"
+		}
+	},
+	"DesktopAudioDevice1": {
+		"filters": [
+			{
+				"id": "compressor_filter",
+				"name": "Compressor"
+			},
+			{
+				"id": "limiter_filter",
+				"name": "Limiter"
+			}
+		],
+		"hotkeys": {
+			"libobs.mute": [
+				{
+					"key": "OBS_KEY_D"
+				},
+				{
+					"key": "OBS_KEY_1"
+				},
+				{
+					"key": "OBS_KEY_4"
+				},
+				{
+					"key": "OBS_KEY_O"
+				}
+			],
+			"libobs.unmute": [
+				{
+					"key": "OBS_KEY_D"
+				},
+				{
+					"key": "OBS_KEY_2"
+				},
+				{
+					"key": "OBS_KEY_NUM2"
+				},
+				{
+					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_NUM3"
+				},
+				{
+					"key": "OBS_KEY_F"
+				},
+				{
+					"key": "OBS_KEY_G"
+				},
+				{
+					"key": "OBS_KEY_H"
+				},
+				{
+					"key": "OBS_KEY_I"
+				},
+				{
+					"key": "OBS_KEY_V"
+				}
+			]
+		},
+		"id": "coreaudio_input_capture",
+		"monitoring_type": 2,
+		"name": "Desktop Audio",
+		"private_settings": {
+			"volume_locked": true
+		},
+		"settings": {
+			"device_id": "BlackHole2ch_UID"
 		}
 	},
 	"current_scene": "Start",
@@ -410,6 +479,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
@@ -417,9 +489,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -433,6 +502,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
@@ -440,9 +512,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -465,9 +534,6 @@
 						"key": "OBS_KEY_I"
 					},
 					{
-						"key": "OBS_KEY_NUM2"
-					},
-					{
 						"key": "OBS_KEY_V"
 					}
 				],
@@ -476,13 +542,13 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
 						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -493,13 +559,13 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_G"
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -513,6 +579,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
@@ -520,9 +589,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -536,6 +602,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
@@ -543,9 +612,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -556,6 +622,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
@@ -563,9 +632,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					}
 				],
 				"libobs.hide_scene_item.guest": [
@@ -573,13 +639,13 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_NUM2"
+					},
+					{
 						"key": "OBS_KEY_F"
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_NUM2"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -602,9 +668,6 @@
 						"key": "OBS_KEY_I"
 					},
 					{
-						"key": "OBS_KEY_NUM2"
-					},
-					{
 						"key": "OBS_KEY_V"
 					}
 				],
@@ -616,6 +679,9 @@
 				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					},
+					{
+						"key": "OBS_KEY_NUM2"
 					}
 				],
 				"libobs.show_scene_item.Intro": [
@@ -651,6 +717,9 @@
 				"libobs.show_scene_item.screen": [
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
+					},
+					{
+						"key": "OBS_KEY_NUM2"
 					}
 				]
 			},
@@ -787,10 +856,10 @@
 						"key": "OBS_KEY_3"
 					},
 					{
-						"key": "OBS_KEY_H"
+						"key": "OBS_KEY_NUM3"
 					},
 					{
-						"key": "OBS_KEY_NUM3"
+						"key": "OBS_KEY_H"
 					}
 				],
 				"libobs.hide_scene_item.cams": [
@@ -806,10 +875,10 @@
 						"key": "OBS_KEY_3"
 					},
 					{
-						"key": "OBS_KEY_H"
+						"key": "OBS_KEY_NUM3"
 					},
 					{
-						"key": "OBS_KEY_NUM3"
+						"key": "OBS_KEY_H"
 					}
 				]
 			},
@@ -901,6 +970,9 @@
 				"libobs.hide_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					},
+					{
+						"key": "OBS_KEY_3"
 					}
 				],
 				"libobs.hide_scene_item.Internal": [
@@ -908,13 +980,10 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					},
 					{
-						"key": "OBS_KEY_3"
+						"key": "OBS_KEY_NUM3"
 					},
 					{
 						"key": "OBS_KEY_H"
-					},
-					{
-						"key": "OBS_KEY_NUM3"
 					}
 				],
 				"libobs.hide_scene_item.NDI": [
@@ -930,18 +999,18 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					},
 					{
-						"key": "OBS_KEY_3"
+						"key": "OBS_KEY_NUM3"
 					},
 					{
 						"key": "OBS_KEY_H"
-					},
-					{
-						"key": "OBS_KEY_NUM3"
 					}
 				],
 				"libobs.show_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					},
+					{
+						"key": "OBS_KEY_3"
 					}
 				],
 				"libobs.show_scene_item.NDI": [

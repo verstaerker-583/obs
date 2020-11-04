@@ -1,19 +1,20 @@
 .name = "gp_naked"
 | del(
+	.DesktopAudioDevice1,
 	(
 		.sources[] |
 			(
-				., .settings.items[]? | select(
-#					.name == "Color Source",
-#					.name == "Slide Show"
-					.name == "Screen Capture"
+				., .settings.items[]? | select(.name == (
+					"Color Source",
+					"Slide Show"
+#					"Screen Capture"
+					)
 				)
 			)
 	),
-	.DesktopAudioDevice1,
 	(
 		.. | select(
 			.enabled? == "false"
-			)
+		)
 	)
 )
