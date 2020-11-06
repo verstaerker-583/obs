@@ -39,5 +39,5 @@ del(
 | (.sources[] | select(.name == "External").filters[] | select(.id == "clut_filter").settings.clut_amount) = 1
 | (.sources[] | select(.name == "External").settings.device) = "0x141300001bcf0215"
 | (.sources[] | select(.name == "Internal").settings.device) = "CC26163C4LSGDV4AA"
-| (.sources[] | select(.name == "Cam").settings.items[] | select(.name == "Overlay Chat").pos.y) = 500
-| (.sources[] | select(.name == "Overlay Chat").settings.height) = 220
+| (.sources[] | select(.name == "Cam").settings.items[] | select(.name == "Overlay Chat").pos.y) = 520
+| (.sources[] | select(.name == "Overlay Chat").settings.height) = 200
