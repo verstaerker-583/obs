@@ -19,6 +19,12 @@
 	color: #31c8f3
 }
 
+#clockLogo {
+	right: calc(182.5px - 150px/2);
+	top: calc(193px - 30px);
+	width: 150px;
+}
+
 #presenterLogo {
 	border-radius: 50%;
 	border: 5px solid;
