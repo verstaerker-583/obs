@@ -65,6 +65,7 @@ end
 
 function postFlight()
 	-- Audio
+	hs.osascript("set volume alert volume 100")
 	devices = hs.audiodevice.allDevices()
 	for i, dev in ipairs(devices) do
 		dev:setMuted(false)
@@ -103,6 +104,8 @@ end
 function preFlightAudio()
 	local headset = false
 	local usbmic = false
+
+	hs.osascript("set volume alert volume 0")
 
 	-- Audio Input Devices
 	devices = hs.audiodevice.allInputDevices()
