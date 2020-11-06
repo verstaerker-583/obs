@@ -9,8 +9,8 @@ SceneCollection=gp_naked\
 SceneCollectionFile=gp_naked
 
 # basic.ini
-#/\[Audio\]/a\
-#MonitoringDeviceId=AppleHDAEngineOutput:1B,0,1,1:0
+/\[Audio\]/a\
+MonitoringDeviceId=AppleHDAEngineOutput:1B,0,1,1:0
 
 /\[SimpleOutput\]/a\
 Preset=ultrafast\

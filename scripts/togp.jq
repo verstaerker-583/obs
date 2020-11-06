@@ -4,6 +4,15 @@ del(
 	(
 		.sources[] |
 			(
+				select(.name == "Cam").settings.items[] | select(.name == "External")
+			),
+			(
+				select(.name == "Cam").hotkeys[
+					"libobs.hide_scene_item.External",
+					"libobs.show_scene_item.External"
+					]
+			),
+			(
 				., .settings.items[]? | select(.name == (
 					"NDI",
 					"guest"

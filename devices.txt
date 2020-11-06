@@ -4,6 +4,9 @@
 "device": "0x2543000043e9a4d",
 "device_name": "LG UltraFine Display Camera"
 
+"device": "0x141300001bcf0215",
+"device_name": "Aukey-PC-LM1E Camera"
+
 "device_name": "LG UltraFine Display Audio"
 
 MonitoringDeviceName=Externe Kopfhörer
@@ -21,3 +24,5 @@ Logitech
 
 MacBook Air
 "device_id": "AppleHDAEngineInput:1B,0,1,0:1"
+
+"device_id": "AppleUSBAudioEngine:Unknown Manufacturer:Trust GXT 232 Microphone:14200000:1"

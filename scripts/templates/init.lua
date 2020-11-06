@@ -1,238 +1,221 @@
+Skype = false
+FotoMagico = false
+
 streamingLayout = {
-	{"OBS", nil, "Color LCD", nil, hs.geometry.rect(40, 0, 950, 750), nil},
---	{"FotoMagico 5", nil, "Color LCD", nil, hs.geometry.rect(-990, -622, 950, 0), nil},
---	{"Skype", nil, "Color LCD", nil, hs.geometry.rect(-660, 0, 0, 0), nil}
---	{"OBS", nil, "Color LCD", nil, hs.geometry.rect(40, 0, 1200, 900), nil},
-	{"Skype", nil, "Color LCD", nil, hs.geometry.rect(-400, 120, 0, 0), nil}
+	{"OBS", nil, "Color LCD", nil, hs.geometry.rect(292, 97, 0, 705), nil},
+	{"Skype", nil, "Color LCD", nil, hs.geometry.rect(-0, 120, 0, 0), nil}
 }
 
-function applicationWatcher(appName, eventType, appObject)
-	if appName == "OBS" then
-		if eventType == hs.application.watcher.launched then
-			preFlight()
-		end
-		if eventType == hs.application.watcher.terminated then
-			postFlight()
-		end
-	end
-end
+streamingLayoutFM = {
+	{"FotoMagico 5", nil, "Color LCD", nil, hs.geometry.rect(-990, -622, 950, 0), nil},
+	{"OBS", nil, "Color LCD", nil, hs.geometry.rect(40, 0, 950, 750), nil},
+	{"Skype", nil, "Color LCD", nil, hs.geometry.rect(-660, 0, 0, 0), nil}
+}
 
-function closeApps()
+function appsClose()
 	for i, app in ipairs(hs.application.runningApplications()) do
-		if app:name() == "Finder" then
+		if app:name() == "OBS" then
 		elseif app:name() == "AirPlayUIAgent" then
---		elseif app:name() == "Dock" then
 		elseif app:name() == "FotoMagico 5" then
 		elseif app:name() == "Hammerspoon" then
-		elseif app:name() == "Microsoft PowerPoint" then
-		elseif app:name() == "NDI Virtual Input" then
-		elseif app:name() == "OBS" then
-			preFlight()
-		elseif app:name() == "Skype" then
+		elseif app:name() == "Microsoft PowerPoint" and not FotoMagico then
+		elseif app:name() == "NDI Virtual Input" and Skype then
+		elseif app:name() == "Skype" and Skype then
 		elseif app:name() == "TeamViewer" then
+		elseif app:name() == "Terminal" then
 		else
 			app:kill()
 		end
 	end
 end
 
-function mailLogs()
+function appsStart()
 	hs.execute(
-		"system_profiler -json -detailLevel full SPAudioDataType SPCameraDataType SPDisplaysDataType SPHardwareDataType SPNetworkDataType SPSoftwareDataType\
-		> ~/Library/Application Support/obs-studio/logs/system.json"
+		"open -a 'OBS' --args --collection 'gp_naked' --disable-updater --profile 'gpYTsq' --scene 'Screen' --startstreaming --startvirtualcam --unfiltered_log --verbose"
 	)
-	local mailer = hs.sharing.newShare("com.apple.share.Mail.compose")
-	mailer:subject("Logfiles " .. os.date()):recipients({"o.koepke@gmx.de"})
-	mailer:shareItems(
-		{
-			hs.sharing.fileURL("/tmp/log.txt"),
-			hs.sharing.fileURL("~/Library/Application Support/obs-studio/logs/system.json"),
-			hs.sharing.fileURL("~/Library/Application Support/obs-studio/basic"),
+	if Skype then
+		hs.application.open("NDI Virtual Input", 0, true)
+		hs.application.open("Skype", 0, true)
+	end
+end
 
-			hs.sharing.fileURL("~/Library/Application Support/obs-studio/logs")
-		}
-	)
+function applicationWatcher(appName, eventType, appObject)
+	if (eventType == hs.application.watcher.launched) then
+		if (appName == "OBS") then
+			preFlight()
+		end
+	end
+	if (eventType == hs.application.watcher.terminated) then
+		if (appName == "OBS") then
+			postFlight()
+		end
+	end
+end
+
+function Layout()
+	if FotoMagico then
+		hs.layout.apply(streamingLayoutFM)
+	else
+		hs.layout.apply(streamingLayout)
+	end
+	for i, window in ipairs(hs.window.allWindows()) do
+		window:unminimize()
+	end
 end
 
 function postFlight()
+	-- Audio
+	devices = hs.audiodevice.allDevices()
+	for i, dev in ipairs(devices) do
+		dev:setMuted(false)
+		dev:setInputMuted(false)
+		dev:setVolume(25)
+		dev:setInputVolume(50)
+		if dev:transportType() == "Built-in" then
+			dev:setDefaultInputDevice()
+			dev:setDefaultOutputDevice()
+		end
+	end
+
+	-- Power Management
+	hs.caffeinate.set("system", false, false)
+
+	-- Wifi
+	hs.wifi.setPower(true)
+
 	-- Video
 	local devices = hs.screen.allScreens()
 	for i, dev in ipairs(devices) do
 		dev:desktopImageURL("file:///System/Library/CoreServices/DefaultDesktop.heic")
 		if dev ~= hs.screen.primaryScreen() then
-			dev:setMode(1920, 1080, 1)						-- specific
-		elseif dev:name() == "Color LCD" then						-- MacBook?
-			dev:setMode(1440, 900, 1)						-- specific
+			dev:setMode(1920, 1080, 1)
+		elseif dev:name() == "Color LCD" then
+			dev:setMode(1440, 900, 1)
 		end
 	end
-
-	-- Alert Sounds
-	hs.osascript._osascript("set volume alert volume 100", "")
-
-	-- Audio
-	devices = hs.audiodevice.allDevices()
-	for i, dev in ipairs(devices) do
-		dev:setMuted(false)
-		dev:setVolume(25)
-		if dev:transportType() == "Built-in" then
-			dev:setDefaultOutputDevice()
-		end
-	end
-
-	-- Power Management
-	hs.caffeinate.set("displayIdle", false, false)
-
-	-- Wifi
-	hs.wifi.setPower(true)
-	hs.notify.new({title = "OBS", informativeText = "Post-Flight Checklist completed!"}):send()
 end
 
 function preFlight()
-	--Status
-	for i, app in ipairs(hs.application.runningApplications()) do
-		if app:name() == "FotoMagico 5" then
-			local DesktopAudio = true
-		end
-	end
+	preFlightSystem()
+	preFlightAudio()
+end
 
-	-- Remote
-	hs.execute(
-		"launchctl unload -F ~/Library/LaunchAgents/com.local.KeyRemapping.*.plist;\
-		launchctl load -F ~/Library/LaunchAgents/com.local.KeyRemapping.*.plist"
-	)
-
-	-- Dock
-	tweakDock()
-
-	-- FotoMagico
---	tweakFotoMagico()
-
+function preFlightAudio()
 	local headset = false
-	local monitor = false
-
-	local log = io.open("/tmp/log.txt", "w")
-	log:write(os.date() .. "\n")
-
-	-- Video
-	log:write("🖥️ Screens\n")
-
-	devices = hs.screen.allScreens()
-	log:write(hs.inspect(devices) .. "\n")
-
-	for i, dev in ipairs(devices) do
-		dev:desktopImageURL("file:///System/Library/Desktop%20Pictures/Solid%20Colors/Black.png")
-		log:write("🖥️ Screen: " .. dev:position() .. "\n")
-		log:write("current: " .. hs.inspect(dev:currentMode()) .. "\n")
---		dev:setBrightness(0.50)
-		if dev ~= hs.screen.primaryScreen() then
-			monitor = dev:setMode(1280, 720, 1)
-			dev:setOrigin(-1,0)
-		elseif dev:name() == "Color LCD" then						-- MacBook?
---			dev:setMode(1920, 1200, 1)						-- specific
-			dev:setMode(1440, 900, 1)						-- specific
-		end
-		log:write("done: " .. hs.inspect(dev:currentMode()) .. "\n")
---		log:write(hs.inspect(dev:availableModes()) .. "\n")				-- for new platforms
-	end
-	if not monitor then
-		hs.alert.show("🚨 🖥️ 🚨", 10)
-		log:write("🚨 🖥️ 🚨\n")
-	end
-
-	-- Alert Sounds
-	hs.osascript._osascript("set volume alert volume 0", "")
+	local usbmic = false
 
 	-- Audio Input Devices
-	log:write("🎤 Audio Input Devices\n")
-	log:write("current: " .. hs.inspect(hs.audiodevice.current(true)) .. "\n")
-
 	devices = hs.audiodevice.allInputDevices()
-	log:write(hs.inspect(devices) .. "\n")
 	for i, dev in ipairs(devices) do
-		dev:setInputMuted(false)
 		dev:setBalance(0.5)
-		if dev:jackConnected() or dev:uid() == "BuiltInHeadphoneInputDevice" then	-- Micro
-			dev:setDefaultInputDevice()
-			dev:setInputVolume(25)
-			headset = true
-		elseif dev:transportType() == "USB" and not headset then			-- USB 
+		dev:setInputMuted(false)
+		if dev:transportType() == "Built-in" then
+			if dev:jackConnected() or dev:uid() == "BuiltInHeadphoneInputDevice" then
+				dev:setDefaultInputDevice()
+				dev:setInputVolume(25)
+				headset = true
+			elseif not headset and not usbmic then
+				dev:setDefaultInputDevice()
+				dev:setInputVolume(75)
+			end
+		elseif dev:transportType() == "USB" and not headset then
 			dev:setDefaultInputDevice()
 			dev:setInputVolume(75)
-		elseif dev:transportType() == "Virtual" then					-- NDI Audio
-			dev:setInputVolume(25)
+			usbmic = true
+		elseif dev:transportType() == "Virtual" then -- NDI
+			dev:setInputVolume(45)
 		else
 			dev:setInputMuted(true)
 		end
-		log:write(dev:transportType() .. " " .. dev:name() .. " " .. dev:inputVolume() .. "\n")
-	end
-	log:write("done: " .. hs.inspect(hs.audiodevice.current(true)) .. "\n")
-
-	if not headset then
-		hs.alert.show("🚨 🎧 🚨", 10)
-		log:write("🚨 🎧 🚨\n")
 	end
 
 	-- Audio Output Devices
-	log:write("🎧 Audio Output Devices\n")
-	log:write("current: " .. hs.inspect(hs.audiodevice.current()) .. "\n")
-
 	devices = hs.audiodevice.allOutputDevices()
-	log:write(hs.inspect(devices) .. "\n")
-
 	for i, dev in ipairs(devices) do
-		dev:setMuted(false)
 		dev:setBalance(0.5)
+		dev:setMuted(false)
+
 		if dev:transportType() == "Built-in" then
-			dev:setVolume(75)
-			--[[
 			if headset then
-				dev:setVolume(75)
+				dev:setOutputVolume(100)
 			else
-				dev:setVolume(25)
+				dev:setOutputVolume(25)
 			end
-			--]]
-		elseif dev:transportType() == "Virtual" and DesktopAudio then
+		elseif dev:transportType() == "USB" and not headset then
+			dev:setOutputVolume(50)
+		elseif dev:transportType() == "Virtual" then -- BlackHole
 			dev:setDefaultOutputDevice()
-			dev:setInputVolume(75)							-- BlackHole
-			dev:setVolume(100)
+			dev:setInputVolume(75)
+			dev:setOutputVolume(100)
 		else
-			dev:setVolume(50)
 			dev:setMuted(true)
 		end
+	end
 
-		if dev:inputVolume() then
-			log:write(
-				dev:transportType() .. " " .. dev:name() .. " " .. dev:volume() .. " 🎤 " .. dev:inputVolume() .. "\n"
-			)
-		else
-			log:write(dev:transportType() .. " " .. dev:name() .. " " .. dev:volume() .. "\n")
+	if not headset then
+		hs.alert.show("🚨 🎧 🚨", 10)
+		if not usbmic then
+			hs.alert.show("🚨 🎙 🚨", 10)
 		end
 	end
+end
 
-	log:write("done: " .. hs.inspect(hs.audiodevice.current()) .. "\n")
+function preFlightFull()
+	tweakOSX()
+	appsClose()
+	preFlightVideo()
+	appsStart()
+end
 
-	-- Power Management
-	hs.caffeinate.set("displayIdle", true, false)
-
+function preFlightSystem()
 	-- Power
 	if hs.battery.powerSource() ~= "AC Power" then
-		hs.alert.show("🚨 🔌 🚨", 10)
-		log:write("🚨 🔌 🚨\n")
+		hs.alert("🚨 🔌 🚨", 10)
 	end
 
-	-- Network
+	-- Power Management
+	hs.caffeinate.set("system", true, false)
+
+	-- Wifi
 	if hs.network.interfaceDetails(v4) then
 		if hs.network.interfaceDetails(v4)["AirPort"] then
-			hs.alert.show("🚨 📶 🚨", 10)
-			log:write("🚨 📶 🚨\n")
+			hs.alert("🚨 📶 🚨", 10)
 		else
 			hs.wifi.setPower(false)
 		end
 	end
+end
 
-	hs.notify.new({title = "OBS", informativeText = "Pre-Flight Checklist completed!"}):send()
+function preFlightVideo()
+	local monitor = false
+	devices = hs.screen.allScreens()
+	for i, dev in ipairs(devices) do
+		dev:desktopImageURL("file:///System/Library/Desktop%20Pictures/Solid%20Colors/Black.png")
+		if dev:name() == "Color LCD" then
+			if FotoMagico then
+				dev:setMode(1920, 1200, 1)
+			else
+				dev:setMode(1440, 900, 1)
+			end
+		elseif dev ~= hs.screen.primaryScreen() then
+			monitor = dev:setMode(1280, 720, 1)
+			function Layout()
+				if FotoMagico then
+					hs.layout.apply(streamingLayoutFM)
+				else
+					hs.layout.apply(streamingLayout)
+				end
+				for i, window in ipairs(hs.window.allWindows()) do
+					window:unminimize()
+				end
+			end
 
-	log:close()
+			dev:setOrigin(-1, 0)
+		end
+	end
+	if not monitor then
+		hs.alert.show("🚨 🖥️ 🚨", 10)
+	end
 end
 
 function reloadConfig(files)
@@ -247,30 +230,6 @@ function reloadConfig(files)
 	end
 end
 
-function startStreaming()
-	closeApps()
-
-	hs.execute("open -a 'OBS' --args --disable-updater --startstreaming --startvirtualcam --unfiltered_log --verbose --collection 'gp_naked' --profile 'gpYTsq'")
---	hs.application.launchOrFocus("FotoMagico 5")
-	hs.application.open("NDI Virtual Input", 0, true)
-	hs.application.open("Skype", 0, true)
-end
-
-function streamLayout()
-	for i, window in ipairs(hs.window.allWindows()) do
-		window:unminimize()
-	end
-	hs.layout.apply(streamingLayout)
-end
-
-function tweakDock()
---	hs.execute("defaults delete com.apple.Dock")
-	hs.execute("defaults write com.apple.Dock autohide -int 1")
-	hs.execute("defaults write com.apple.Dock showhidden -bool yes")
---	hs.execute("defaults write com.apple.dock single-app -bool true")
---	hs.execute("defaults write com.apple.dock static-only -bool true")
-end
-
 function tweakFotoMagico()
 --	hs.execute("defaults delete com.boinx.FotoMagico5 'NSWindow Frame GetInfo'")
 	hs.execute("defaults delete com.boinx.FotoMagico5 masterVolume")
@@ -282,15 +241,38 @@ function tweakFotoMagico()
 	hs.execute("defaults write com.boinx.FotoMagico5 suspendBackgroundTasksDuringPlayback -int 0")
 end
 
+function tweakOSX()
+--	hs.execute("defaults delete com.apple.Dock")
+	hs.execute("defaults write com.apple.Dock autohide -bool true")
+	hs.execute("defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1")
+	hs.execute("defaults write com.apple.dashboard mcx-disabled -bool  true")
+	hs.execute("defaults write com.apple.dock ResetLaunchPad -bool true")
+--	hs.execute("defaults write com.apple.dock single-app -bool true")
+--	hs.execute("defaults write com.apple.dock static-only -bool true")
+end
+
+if FotoMagico then
+	teakFotoMagico()
+end
+
+-- Hammerspoon Preferences
+hs.autoLaunch(true)
+hs.automaticallyCheckForUpdates(true)
+hs.closeConsole()
+hs.consoleOnTop(false)
+
 -- Watcher
-mywatcher0 = hs.application.watcher.new(applicationWatcher):start()
-mywatcher1 = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
+myWatcher0 = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
+myWatcher1 = hs.application.watcher.new(applicationWatcher):start()
 
 -- Key Bindings
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "G", preFlight)
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "M", mailLogs)
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "S", startStreaming)
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", streamLayout)
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "a", preFlightAudio)
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "p", preFlightFull)
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "w", Layout)
 
-local address = hs.execute("curl ipecho.net/plain; echo")
-hs.messages.iMessage("o.koepke@gmx.de", address)
+-- URL Bindings
+hs.urlevent.bind("Audio", preFlightAudio)
+hs.urlevent.bind("Full", preFlightFull)
+hs.urlevent.bind("Layout", Layout)
+
+hs.alert("Config loaded")
