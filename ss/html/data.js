@@ -21,4 +21,6 @@ var pics = {
 };
 var alarmTime = "20:00";
 var videoId = "uoIq0mOVXVQ";
+/*
 var videoId = "36YnV9STBqc";
+*/
