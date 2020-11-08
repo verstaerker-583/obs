@@ -5,26 +5,24 @@
 ### macOS
 - Neustart Computer
 
+### FotoMagico
+- Präsentation laden
+- **[⌘] & [P]** Startposition `FotoMagico`/ Vollbild
+
 ### Hammerspoon
-- **[⌃][⌥][⌘] & [G]**
+- **[⌃][⌥][⌘] & [F]**
     * Audio- und Videoeinstellungen werden vorgenommen
     * Powermanagement wird deaktiviert
     * WiFi wird deaktiviert
-    * verschiedene Prüfungen werden durchgeführt
-
-- **[⌃][⌥][⌘] & [S]**
     * nicht erforderliche Anwendungen werden geschlossen
+    * verschiedene Prüfungen werden durchgeführt
+    * Skype wird geöffnet
     * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
-    * FotoMagico und Skype werden geöffnet
 
 ▶️ 🔴 OBS streamt
 
 - **[⌃][⌥][⌘] & [W]**
     * `Skype`, `FotoMagico` und `OBS` werden an den vorgegebenen Positionen in der vorgegebenen Größe platziert 
-
-### FotoMagico
-- Präsentation laden
-- **[⌘] & [P]** Startposition `FotoMagico`/ Vollbild
 
 ### OBS
 #### Szenen in Ausgangsposition, Quellen sicht-/unsichtbar schalten und Overlays vom Server laden
@@ -46,10 +44,6 @@
 
 #### Skype
 - **[G]** (vorerst schwarzer Kreis)
-
-### Hammerspoon
-- **[⌃][⌥][⌘] & [M]**
-    * senden der Log- und Konfigurationsdateien
 
 ### Skype
 #### Skype > Einstellungen > Allgemein
@@ -112,7 +106,7 @@
 - 📴 Smartphone und Tablet lautlos?
 
 ### Hammerspoon
-- **[⌃][⌥][⌘] & [S]**
+- **[⌃][⌥][⌘] & [A]**
 
 ▶️ 🔴 OBS streamt
 

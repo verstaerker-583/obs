@@ -15,7 +15,6 @@
 * **[<]**	Wechsel Kamera 🎥
 * **[+]**	PiP ein-/ausblenden 🖼/ 🎥
 
-* **[◀]** **[▶]**	Slideshow vor/ zurück 🖼
 * **[V]**	**V**ideo 🎞
 
 * **[M]**	Stummschaltung **M**ikrofon 🔇

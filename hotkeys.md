@@ -7,10 +7,6 @@
 
 * **[⌃][⌥][⌘] & [S]** - ***"Streamen"***
 
-### Slideshow
-* **[▶]** 🖼 vor
-* **[◀]** 🖼 zurück
-
 ### Szenen
 1. **[1]** Szene "Start" ⏰
     * 🔇 alle Audioquellen geschlossen
@@ -45,7 +41,7 @@
     * wechselt zu Szene "Cam"
 
 * **[V]** **V**ideo 🎞
-    * 🔇 alle Audioquellen geschlossen
+    * 🔊 alle Audioquellen, außer Gast, offen
     * wechselt zu Szene "Cam"
 
 * **[O]** **O**utro 🎞
@@ -56,7 +52,7 @@
 * **[1]**, **[2]**, **[3]** und **[4]** - Gast immer stumm geschaltet und ausgeblendet
 
 * **[F]** Szene "**F**ull" entspricht Szene "Cam" **[2]** mit Gast anstatt Gastgeber im Vollbild
-    * 🔊 alle Audioquellen, außer Gastgeber 🔇, offen
+    * 🔊 alle Audioquellen offen
 
     ⌨ Hotkeys
     * **[+]** "Screen" 🖼 ein-/ausblenden
@@ -64,7 +60,7 @@
     * **[C]** Chat 💬 aus-/einblenden
     * **[€]** Spendenaufruf
 
-* **[G]** Szene "**G**uest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast und Chat 💬
+* **[G]** Szene "**G**uest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast
     * 🔊 alle Audioquellen offen
     * 🎥 `Internal` voreingestellt
     * 🖼 Screen, Spendenaufruf und ❓ ausgeblendet
@@ -86,9 +82,7 @@
 
 ### Tipps
 * Szene "Cam" **[2]**, "Screen" **[3]**, "Full" **[F]** und "Guest" **[G]** können nach Einblendungen durch erneutes Drücken wieder "aufgeräumt" werden.
-* **[2]**,  **[3]** und **[G]** können auch benutzt werden, um z.B. das Mikrofon nach **[M]** wieder zu öffnen.
 * Der Gast kann in **[G]** durch Wechsel zu **[2]** und in **[H]** zu **[3]** ausgeblendet und gemutet werden.
-* Mit Gast kannst Du in [F] ungesehen und ungehört "ordentlich abhusten".
 
 ## Hammerspoon
 * **[⌃][⌥][⌘] & [G]** - ***"Grundeinstellungen"*** 🧯
@@ -110,9 +104,6 @@
 
 * **[⌃][⌥][⌘] & [W]** - ***"Windows"*** 🔧
     * `Skype`, `FotoMagico` und `OBS` werden an den vorgegebenen Positionen in der vorgegebenen Größe platziert 
-
-* **[⌃][⌥][⌘] & [M]** - ***"Mail"*** ✉️
-    * Log- und Konfiguratuonsdateien sammeln und als Email verschicken
 
 ## FotoMagico 🖼
 * **[⌘] & [P]** Präsentation im Vollbildmodus starten
