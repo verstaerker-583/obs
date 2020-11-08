@@ -13,14 +13,9 @@
 				"id": "compressor_filter",
 				"name": "Compressor",
 				"settings": {
-					"attack_time": 0
-				}
-			},
-			{
-				"id": "gain_filter",
-				"name": "Gain",
-				"settings": {
-					"db": 3
+					"attack_time": 0,
+					"output_gain": 3,
+					"ratio": 4
 				}
 			},
 			{
@@ -84,7 +79,6 @@
 		}
 	},
 	"AuxAudioDevice2": {
-		"balance": 0.25,
 		"filters": [
 			{
 				"id": "noise_suppress_filter",
@@ -98,7 +92,9 @@
 				"id": "compressor_filter",
 				"name": "Compressor",
 				"settings": {
-					"attack_time": 0
+					"attack_time": 0,
+					"output_gain": 3,
+					"ratio": 4
 				}
 			},
 			{
@@ -113,17 +109,11 @@
 				}
 			},
 			{
-				"id": "gain_filter",
-				"name": "Gain",
-				"settings": {
-					"db": 3
-				}
-			},
-			{
 				"id": "limiter_filter",
 				"name": "Limiter"
 			}
 		],
+		"flags": 2,
 		"hotkeys": {
 			"libobs.mute": [
 				{
@@ -196,6 +186,15 @@
 					"key": "OBS_KEY_4"
 				},
 				{
+					"key": "OBS_KEY_F"
+				},
+				{
+					"key": "OBS_KEY_G"
+				},
+				{
+					"key": "OBS_KEY_H"
+				},
+				{
 					"key": "OBS_KEY_O"
 				}
 			],
@@ -214,15 +213,6 @@
 				},
 				{
 					"key": "OBS_KEY_NUM3"
-				},
-				{
-					"key": "OBS_KEY_F"
-				},
-				{
-					"key": "OBS_KEY_G"
-				},
-				{
-					"key": "OBS_KEY_H"
 				},
 				{
 					"key": "OBS_KEY_I"

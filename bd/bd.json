@@ -14,14 +14,9 @@
 				"id": "compressor_filter",
 				"name": "Compressor",
 				"settings": {
-					"attack_time": 0
-				}
-			},
-			{
-				"id": "gain_filter",
-				"name": "Gain",
-				"settings": {
-					"db": 3
+					"attack_time": 0,
+					"output_gain": 3,
+					"ratio": 4
 				}
 			},
 			{
@@ -29,6 +24,7 @@
 				"name": "Limiter"
 			}
 		],
+		"flags": 2,
 		"hotkeys": {
 			"libobs.mute": [
 				{
@@ -89,7 +85,9 @@
 				"id": "compressor_filter",
 				"name": "Compressor",
 				"settings": {
-					"attack_time": 0
+					"attack_time": 0,
+					"output_gain": 3,
+					"ratio": 4
 				}
 			},
 			{
@@ -104,17 +102,11 @@
 				}
 			},
 			{
-				"id": "gain_filter",
-				"name": "Gain",
-				"settings": {
-					"db": 3
-				}
-			},
-			{
 				"id": "limiter_filter",
 				"name": "Limiter"
 			}
 		],
+		"flags": 2,
 		"hotkeys": {
 			"libobs.mute": [
 				{

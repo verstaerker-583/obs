@@ -13,14 +13,9 @@
 				"id": "compressor_filter",
 				"name": "Compressor",
 				"settings": {
-					"attack_time": 0
-				}
-			},
-			{
-				"id": "gain_filter",
-				"name": "Gain",
-				"settings": {
-					"db": 3
+					"attack_time": 0,
+					"output_gain": 3,
+					"ratio": 4
 				}
 			},
 			{
