@@ -31,7 +31,7 @@
 - **[3]**
     * `Präsentation` sicht- und hörbar?
 - **[+]** Kamera zuschalten > ***Stresstest*** (Präsentation + Kamera, skaliert)
-    * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
+    * **Report** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 - **[4]**
 
 #### Filme
@@ -79,7 +79,7 @@
 - **[G]** Gast zuschalten, Kameraposition und Ton prüfen
 - **[F]**
 - **[H]** > ***Stresstest*** (Präsentation + Kamera, skaliert + Skype, skaliert)
-    * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
+    * **Report** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 
 ### go/no go poll Guests
 
@@ -121,7 +121,7 @@
     * `Präsentation` sicht- und hörbar?
 - **[4]**
 - **[1]**
-    * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
+    * **Report** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 - ⚠ Stream nicht beenden!
 
 ### Präsentation
@@ -159,13 +159,12 @@
 
 ## Lunar Orbit Rendezvous
 - ⚠ Sobald Skype den Anruf automatisch annimtt, wird es zum aktiven Fenster. Präsentation empfängt dann, bis es wieder angeklickt wird, keine Tastatureingaben mehr!
-- Gast ruft an und wartet auf Zeichen von Markus.
+- Gast ruft an und wartet auf Zeichen
 - Status:
-    * Gast sieht und hört Markus.
-    * Markus sieht Gast, hört ihn aber noch nicht.
+    * Gast sieht und hört Gastgeber.
+    * Gastgeber sieht Gast, hört ihn aber noch nicht.
 - Zeichen an Gast
 - **[G]** schaltet Gast live.
-- ⚠ **[F]** Szene "**F**ull" schaltet Markus Mikrofon stumm. Bei Bedarf, Mikro mit **[M]** öffnen. 
 - Gespräch durch **[2]** Szene "Cam", **[3]** Szene "Screen" oder **[O]** Outro beenden/ unterbrechen. Gast ist dann sofort nicht mehr zu hören und zu sehen.
 - Gast wartet ca. 10sec und unterbricht dann selbst die Verbindung. 
 
