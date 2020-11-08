@@ -31,7 +31,7 @@ end
 
 function appsStart()
 	hs.execute(
-		"open -a 'OBS' --args --collection 'gp_naked' --disable-updater --profile 'gpYTsq' --scene 'Screen' --startstreaming --startvirtualcam --unfiltered_log --verbose"
+		"open -a 'OBS' --args --collection 'gp_naked' --disable-updater --profile 'gpYTmq' --startstreaming --startvirtualcam --unfiltered_log --verbose"
 	)
 	if Skype then
 		hs.application.open("NDI Virtual Input", 0, true)
@@ -112,25 +112,32 @@ function preFlightAudio()
 	for i, dev in ipairs(devices) do
 		dev:setBalance(0.5)
 		dev:setInputMuted(false)
-		if dev:transportType() == "Built-in" then
+		if dev:transportType() == "Built-in" then						-- Mic
 			if dev:jackConnected() or dev:uid() == "BuiltInHeadphoneInputDevice" then
 				dev:setDefaultInputDevice()
 				dev:setInputVolume(25)
 				headset = true
 			elseif not headset and not usbmic then
 				dev:setDefaultInputDevice()
-				dev:setInputVolume(75)
+				dev:setInputVolume(25)
 			end
 		elseif dev:transportType() == "USB" and not headset then
 			dev:setDefaultInputDevice()
 			dev:setInputVolume(75)
 			usbmic = true
-		elseif dev:transportType() == "Virtual" then -- NDI
+		elseif dev:transportType() == "Virtual" then						 -- NDI
 			dev:setInputVolume(45)
 		else
 			dev:setInputMuted(true)
 		end
+
+		if dev:outputVolume() then
+			log.f('In-/Output Device "%s"\n\t"%s"\t(%s) %.0f/%.0f (%s)', dev:name(), dev:uid(), dev:transportType(), dev:inputVolume(), dev:outputVolume(), dev:muted())
+		else
+			log.f('Input Device "%s"\n\t"%s"\t(%s) %.0f (%s)', dev:name(), dev:uid(), dev:transportType(), dev:inputVolume(), dev:muted())
+		end
 	end
+	log.f('Default Input Device\n%s', hs.inspect(hs.audiodevice.current(true)))
 
 	-- Audio Output Devices
 	devices = hs.audiodevice.allOutputDevices()
@@ -146,19 +153,28 @@ function preFlightAudio()
 			end
 		elseif dev:transportType() == "USB" and not headset then
 			dev:setOutputVolume(50)
-		elseif dev:transportType() == "Virtual" then -- BlackHole
+		elseif dev:transportType() == "Virtual" then						 -- BlackHole
 			dev:setDefaultOutputDevice()
 			dev:setInputVolume(75)
 			dev:setOutputVolume(100)
 		else
 			dev:setMuted(true)
 		end
+
+		if dev:inputVolume() then
+			log.f('In-/Output Device "%s"\n\t"%s"\t(%s) %.0f/%.0f (%s)', dev:name(), dev:uid(), dev:transportType(), dev:inputVolume(), dev:outputVolume(), dev:muted())
+		else
+			log.f('Input Device "%s"\n\t"%s"\t(%s) %.0f (%s)', dev:name(), dev:uid(), dev:transportType(), dev:outputVolume(), dev:muted())
+		end
 	end
+	log.f('Default Output Device\n%s', hs.inspect(hs.audiodevice.current(false)))
 
 	if not headset then
 		hs.alert.show("🚨 🎧 🚨", 10)
+		log.i("🚨 🎧 🚨")
 		if not usbmic then
 			hs.alert.show("🚨 🎙 🚨", 10)
+			log.i("🚨 🎙 🚨")
 		end
 	end
 end
@@ -174,6 +190,7 @@ function preFlightSystem()
 	-- Power
 	if hs.battery.powerSource() ~= "AC Power" then
 		hs.alert("🚨 🔌 🚨", 10)
+		log.i("🚨 🔌 🚨")
 	end
 
 	-- Power Management
@@ -183,6 +200,7 @@ function preFlightSystem()
 	if hs.network.interfaceDetails(v4) then
 		if hs.network.interfaceDetails(v4)["AirPort"] then
 			hs.alert("🚨 📶 🚨", 10)
+			log.i("🚨 📶 🚨")
 		else
 			hs.wifi.setPower(false)
 		end
@@ -202,22 +220,12 @@ function preFlightVideo()
 			end
 		elseif dev ~= hs.screen.primaryScreen() then
 			monitor = dev:setMode(1280, 720, 1)
-			function Layout()
-				if FotoMagico then
-					hs.layout.apply(streamingLayoutFM)
-				else
-					hs.layout.apply(streamingLayout)
-				end
-				for i, window in ipairs(hs.window.allWindows()) do
-					window:unminimize()
-				end
-			end
-
-			dev:setOrigin(-1, 0)
 		end
+		log.f('🖥️ "%s" %s\n%s', dev:name(), dev:position(), hs.inspect(dev:currentMode()))
 	end
 	if not monitor then
 		hs.alert.show("🚨 🖥️ 🚨", 10)
+		log.i("🚨 🖥️ 🚨")
 	end
 end
 
@@ -248,11 +256,13 @@ function tweakOSX()
 --	hs.execute("defaults delete com.apple.Dock")
 	hs.execute("defaults write com.apple.Dock autohide -bool true")
 	hs.execute("defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1")
-	hs.execute("defaults write com.apple.dashboard mcx-disabled -bool  true")
-	hs.execute("defaults write com.apple.dock ResetLaunchPad -bool true")
+--	hs.execute("defaults write com.apple.dashboard mcx-disabled -bool  true")
+--	hs.execute("defaults write com.apple.dock ResetLaunchPad -bool true")
 --	hs.execute("defaults write com.apple.dock single-app -bool true")
 --	hs.execute("defaults write com.apple.dock static-only -bool true")
 end
+
+log = hs.logger.new("Pre-Flight","debug")
 
 if FotoMagico then
 	teakFotoMagico()
@@ -261,7 +271,7 @@ end
 -- Hammerspoon Preferences
 hs.autoLaunch(true)
 hs.automaticallyCheckForUpdates(true)
-hs.closeConsole()
+-- hs.closeConsole()
 hs.consoleOnTop(false)
 
 -- Watcher
@@ -270,12 +280,14 @@ myWatcher1 = hs.application.watcher.new(applicationWatcher):start()
 
 -- Key Bindings
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "a", preFlightAudio)
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "p", preFlightFull)
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "f", preFlightFull)
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "v", preFlightVideo)
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "w", Layout)
 
 -- URL Bindings
 hs.urlevent.bind("Audio", preFlightAudio)
 hs.urlevent.bind("Full", preFlightFull)
+hs.urlevent.bind("Video", preFlightVideo)
 hs.urlevent.bind("Layout", Layout)
 
 hs.alert("Config loaded")
