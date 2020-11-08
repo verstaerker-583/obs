@@ -85,22 +85,16 @@
 * Der Gast kann in **[G]** durch Wechsel zu **[2]** und in **[H]** zu **[3]** ausgeblendet und gemutet werden.
 
 ## Hammerspoon
-* **[⌃][⌥][⌘] & [G]** - ***"Grundeinstellungen"*** 🧯
+* **[⌃][⌥][⌘] & [L]** - ***"Launch"***
     * Audio- und Videoeinstellungen werden vorgenommen
     * Powermanagement wird deaktiviert
     * WiFi wird deaktiviert
     * verschiedene Prüfungen werden durchgeführt
-    * kann immer wieder gedrückt werden, z.B. bei Tonproblemen, oder wenn der Monitor Einstellungen "vergisst"
-    * wird immer durchgeführt, wenn OBS geöffent wird
-
-* **[⌃][⌥][⌘] & [S]** - ***"Streamen"*** 🔧
-    * `Skype`, `FotoMagico` und `NDI Virtual Input` werden geöffnet
+    * `Skype` und `NDI Virtual Input` werden geöffnet
     * nicht erforderliche Anwendungen werden geschlossen
     * wenn OBS nicht schon aktiv: 
         * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
         * OBS streamt 🔴
-    * auch wiederholbar
-    * Schnellste Möglichkeit - nach z.B einem Reboot, wieder in die volle Streaming-Konfiguration zu kommen.
 
 * **[⌃][⌥][⌘] & [W]** - ***"Windows"*** 🔧
     * `Skype`, `FotoMagico` und `OBS` werden an den vorgegebenen Positionen in der vorgegebenen Größe platziert 

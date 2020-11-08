@@ -36,8 +36,11 @@ del(
 		)
 	)
 )
-| (.sources[] | select(.name == "External").filters[] | select(.id == "clut_filter").settings.clut_amount) = 1
-| (.sources[] | select(.name == "External").settings.device) = "0x141300001bcf0215"
-| (.sources[] | select(.name == "Internal").settings.device) = "CC26163C4LSGDV4AA"
+| (.sources[] | select(.name == "External").filters[] | select(.id == "clut_filter").settings.clut_amount) = 0.5
+| (.sources[] | select(.name == "External").filters[] | select(.id == "color_filter").settings.gamma) = -0.25
+#| (.sources[] | select(.name == "External").settings.device) = "0x141300001bcf0215"
+#| (.sources[] | select(.name == "Internal").settings.device) = "CC26163C4LSGDV4AA"
+| (.sources[] | select(.name == "External").settings.device) = "0x14200000046d0823"
+| (.sources[] | select(.name == "Internal").settings.device) = "CC27327P54QGDV4AV"
 | (.sources[] | select(.name == "Cam").settings.items[] | select(.name == "Overlay Chat").pos.y) = 510
 | (.sources[] | select(.name == "Overlay Chat").settings.height) = 210

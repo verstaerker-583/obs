@@ -2,12 +2,18 @@
 
 OBS="Library/Application Support/obs-studio"
 
+killall Hammerspoon
 killall obs
 
 rm -rf ~/"$OBS"
+rm -rf ~/.hammerspoon
 
 #
 # maintenance
 #
+
+rm -f ~/Library/LaunchAgents/*KeyRemapping*.plist
+
+softwareupdate -i -a --reset-ignored
 
 exit 0

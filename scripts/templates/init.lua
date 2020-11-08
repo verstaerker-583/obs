@@ -1,5 +1,4 @@
 Skype = false
-FotoMagico = false
 
 streamingLayout = {
 	{"OBS", nil, "Color LCD", nil, hs.geometry.rect(292, 97, 0, 705), nil},
@@ -13,12 +12,17 @@ streamingLayoutFM = {
 }
 
 function appsClose()
+	for i, window in ipairs(hs.window.allWindows()) do
+		window:unminimize()
+	end
 	for i, app in ipairs(hs.application.runningApplications()) do
 		if app:name() == "OBS" then
 		elseif app:name() == "AirPlayUIAgent" then
 		elseif app:name() == "FotoMagico 5" then
+			tweakFotoMagico()
+			FotoMagico = true
 		elseif app:name() == "Hammerspoon" then
-		elseif app:name() == "Microsoft PowerPoint" and not FotoMagico then
+		elseif app:name() == "Microsoft PowerPoint" then
 		elseif app:name() == "NDI Virtual Input" and Skype then
 		elseif app:name() == "Skype" and Skype then
 		elseif app:name() == "TeamViewer" then
@@ -31,7 +35,7 @@ end
 
 function appsStart()
 	hs.execute(
-		"open -a 'OBS' --args --collection 'gp_naked' --disable-updater --profile 'gpYTsq' --startstreaming --startvirtualcam --unfiltered_log --verbose"
+		"open -a 'OBS' --args --collection 'gp_naked' --disable-updater --profile 'gpYTsq' --scene 'Screen' --startstreaming --startvirtualcam --unfiltered_log --verbose"
 	)
 	if Skype then
 		hs.application.open("NDI Virtual Input", 0, true)
@@ -40,26 +44,14 @@ function appsStart()
 end
 
 function applicationWatcher(appName, eventType, appObject)
-	if (eventType == hs.application.watcher.launched) then
-		if (appName == "OBS") then
+	if (appName == "OBS") then
+		if (eventType == hs.application.watcher.launched) then
 			preFlight()
-		end
-	end
-	if (eventType == hs.application.watcher.terminated) then
-		if (appName == "OBS") then
+		elseif (eventType == hs.application.watcher.terminated) then
 			postFlight()
+		else
+			windowLayout()
 		end
-	end
-end
-
-function Layout()
-	if FotoMagico then
-		hs.layout.apply(streamingLayoutFM)
-	else
-		hs.layout.apply(streamingLayout)
-	end
-	for i, window in ipairs(hs.window.allWindows()) do
-		window:unminimize()
 	end
 end
 
@@ -123,7 +115,7 @@ function preFlightAudio()
 			end
 		elseif dev:transportType() == "USB" and not headset then
 			dev:setDefaultInputDevice()
-			dev:setInputVolume(75)
+			dev:setInputVolume(50)
 			usbmic = true
 		elseif dev:transportType() == "Virtual" then						 -- NDI
 			dev:setInputVolume(45)
@@ -169,17 +161,18 @@ function preFlightAudio()
 	end
 	log.f('Default Output Device\n%s', hs.inspect(hs.audiodevice.current(false)))
 
-	if not headset then
+	if usbmic then
+		hs.alert.show("👍 🎙 👍", 10)
+		log.i("👍 🎙 👍")
+	elseif not headset then
 		hs.alert.show("🚨 🎧 🚨", 10)
 		log.i("🚨 🎧 🚨")
-		if not usbmic then
-			hs.alert.show("🚨 🎙 🚨", 10)
-			log.i("🚨 🎙 🚨")
-		end
 	end
 end
 
-function preFlightFull()
+function preFlightLaunch()
+	hs.alert.show("🚀 OBS 🚀", 10)
+	log.i("🚀 OBS 🚀")
 	tweakOSX()
 	appsClose()
 	preFlightVideo()
@@ -262,17 +255,24 @@ function tweakOSX()
 --	hs.execute("defaults write com.apple.dock static-only -bool true")
 end
 
-log = hs.logger.new("Pre-Flight","debug")
-
-if FotoMagico then
-	teakFotoMagico()
+function windowLayout()
+	if FotoMagico then
+		hs.layout.apply(streamingLayoutFM)
+	else
+		hs.layout.apply(streamingLayout)
+	end
 end
+
+FotoMagico = false
+log = hs.logger.new("Pre-Flight","debug")
 
 -- Hammerspoon Preferences
 hs.autoLaunch(true)
 hs.automaticallyCheckForUpdates(true)
--- hs.closeConsole()
+hs.closeConsole()
 hs.consoleOnTop(false)
+hs.uploadCrashData(false)
+hs.window.animationDuration = 0
 
 -- Watcher
 myWatcher0 = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
@@ -280,14 +280,12 @@ myWatcher1 = hs.application.watcher.new(applicationWatcher):start()
 
 -- Key Bindings
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "a", preFlightAudio)
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "f", preFlightFull)
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "l", preFlightLaunch)
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "v", preFlightVideo)
-hs.hotkey.bind({"cmd", "alt", "ctrl"}, "w", Layout)
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "w", windowLayout)
 
 -- URL Bindings
 hs.urlevent.bind("Audio", preFlightAudio)
-hs.urlevent.bind("Full", preFlightFull)
+hs.urlevent.bind("Launch", preFlightFull)
 hs.urlevent.bind("Video", preFlightVideo)
-hs.urlevent.bind("Layout", Layout)
-
-hs.alert("Config loaded")
+hs.urlevent.bind("Layout", windowLayout)

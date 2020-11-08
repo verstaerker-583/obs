@@ -16,7 +16,7 @@
 				"settings": {
 					"attack_time": 0,
 					"output_gain": 3,
-					"ratio": 4
+					"threshold": -18
 				}
 			},
 			{
@@ -86,8 +86,7 @@
 				"name": "Compressor",
 				"settings": {
 					"attack_time": 0,
-					"output_gain": 3,
-					"ratio": 4
+					"output_gain": 3
 				}
 			},
 			{
@@ -244,6 +243,13 @@
 					"name": "Chroma Key"
 				},
 				{
+					"id": "color_filter",
+					"name": "Color Correction",
+					"settings": {
+						"gamma": 0.25
+					}
+				},
+				{
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
@@ -273,6 +279,13 @@
 					"enabled": "false",
 					"id": "chroma_key_filter",
 					"name": "Chroma Key"
+				},
+				{
+					"id": "color_filter",
+					"name": "Color Correction",
+					"settings": {
+						"gamma": 0.25
+					}
 				},
 				{
 					"id": "clut_filter",

@@ -10,6 +10,13 @@
 					"name": "Sharpen"
 				},
 				{
+					"id": "color_filter",
+					"name": "Color Correction",
+					"settings": {
+						"gamma": 0.25
+					}
+				},
+				{
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
@@ -26,6 +33,13 @@
 				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
+				},
+				{
+					"id": "color_filter",
+					"name": "Color Correction",
+					"settings": {
+						"gamma": 0.25
+					}
 				},
 				{
 					"id": "clut_filter",

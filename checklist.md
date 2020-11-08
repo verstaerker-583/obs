@@ -5,24 +5,22 @@
 ### macOS
 - Neustart Computer
 
-### FotoMagico
+### Präsentation
 - Präsentation laden
 - **[⌘] & [P]** Startposition `FotoMagico`/ Vollbild
+- **[⌘] & [⏎]** Startposition `PowerPoint`/ Vollbild
 
 ### Hammerspoon
-- **[⌃][⌥][⌘] & [F]**
+- **[⌃][⌥][⌘] & [L]**
     * Audio- und Videoeinstellungen werden vorgenommen
     * Powermanagement wird deaktiviert
     * WiFi wird deaktiviert
     * nicht erforderliche Anwendungen werden geschlossen
     * verschiedene Prüfungen werden durchgeführt
     * Skype wird geöffnet
-    * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
+    * OBS wird mit dem voreingestellten Profil der voreingestellten Szenensammlung geöffnet
 
 ▶️ 🔴 OBS streamt
-
-- **[⌃][⌥][⌘] & [W]**
-    * `Skype`, `FotoMagico` und `OBS` werden an den vorgegebenen Positionen in der vorgegebenen Größe platziert 
 
 ### OBS
 #### Szenen in Ausgangsposition, Quellen sicht-/unsichtbar schalten und Overlays vom Server laden
@@ -31,9 +29,8 @@
 - **[<]**
     * 🎥 `External` aktiv?
 - **[3]**
-    * **[◀]** **[▶]** Slideshow vor/ zurück
-    * `FotoMagico` sicht- und hörbar?
-- **[+]** Kamera zuschalten > ***Stresstest*** (FotoMagico + Kamera, skaliert)
+    * `Präsentation` sicht- und hörbar?
+- **[+]** Kamera zuschalten > ***Stresstest*** (Präsentation + Kamera, skaliert)
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 - **[4]**
 
@@ -81,7 +78,7 @@
 - **[2]** und auf Anruf warten
 - **[G]** Gast zuschalten, Kameraposition und Ton prüfen
 - **[F]**
-- **[H]** > ***Stresstest*** (FotoMagico + Kamera, skaliert + Skype, skaliert)
+- **[H]** > ***Stresstest*** (Präsentation + Kamera, skaliert + Skype, skaliert)
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 
 ### go/no go poll Guests
@@ -110,25 +107,24 @@
 
 ▶️ 🔴 OBS streamt
 
-### FotoMagico
+### Präsentation
 - **[⌘] & [P]** Startposition `FotoMagico`/ Vollbild
 
 ### OBS
 #### Szenen in Ausgangsposition, Quellen sicht-/unsichtbar schalten und Overlays vom Server laden
-- ⚠ OBS nicht anklicken, damit FotoMagico bedienbar bleibt. 
+- ⚠ OBS nicht anklicken, damit Präsentation bedienbar bleibt. 
 - **[1]**
 - **[2]**, **[€]**, **[C]**
 - **[<]**
     * 🎥 `External` aktiv?
 - **[3]**
-    * **[◀]** **[▶]** Slideshow vor/ zurück
-    * `FotoMagico` sicht- und hörbar?
+    * `Präsentation` sicht- und hörbar?
 - **[4]**
 - **[1]**
     * **Report Markus** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 - ⚠ Stream nicht beenden!
 
-### FotoMagico
+### Präsentation
 - **[⌘] & [P]** Startposition `FotoMagico`/ Vollbild
 
 ### go/no go poll
@@ -162,7 +158,7 @@
 > -- <cite>Pete Conrad, Commander Apollo 12</cite>
 
 ## Lunar Orbit Rendezvous
-- ⚠ Sobald Skype den Anruf automatisch annimtt, wird es zum aktiven Fenster. FotoMagico empfängt dann, bis es wieder angeklickt wird, keine Tastatureingaben mehr!
+- ⚠ Sobald Skype den Anruf automatisch annimtt, wird es zum aktiven Fenster. Präsentation empfängt dann, bis es wieder angeklickt wird, keine Tastatureingaben mehr!
 - Gast ruft an und wartet auf Zeichen von Markus.
 - Status:
     * Gast sieht und hört Markus.

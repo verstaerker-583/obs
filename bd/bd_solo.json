@@ -15,7 +15,7 @@
 				"settings": {
 					"attack_time": 0,
 					"output_gain": 3,
-					"ratio": 4
+					"threshold": -18
 				}
 			},
 			{
@@ -134,6 +134,13 @@
 					"name": "Sharpen"
 				},
 				{
+					"id": "color_filter",
+					"name": "Color Correction",
+					"settings": {
+						"gamma": 0.25
+					}
+				},
+				{
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
@@ -150,6 +157,13 @@
 				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
+				},
+				{
+					"id": "color_filter",
+					"name": "Color Correction",
+					"settings": {
+						"gamma": 0.25
+					}
 				},
 				{
 					"id": "clut_filter",
