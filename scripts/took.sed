@@ -1,5 +1,5 @@
 # init.lua
-s/--profile '.*'/--profile 'gpYTmq'/
+s/--profile 'gpYTsq'/--profile 'gpYTmq'/
 
 # global.ini
 /\[Basic\]/a\

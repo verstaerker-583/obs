@@ -15,8 +15,7 @@
 				"name": "Compressor",
 				"settings": {
 					"attack_time": 0,
-					"output_gain": 3,
-					"threshold": -18
+					"output_gain": 3
 				}
 			},
 			{

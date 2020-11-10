@@ -5,6 +5,10 @@
 ### macOS
 - Neustart Computer
 
+### Hammerspoon
+- **[⌃][⌥][⌘] & [V]**
+    * Videoeinstellungen werden vorgenommen
+
 ### Präsentation
 - Präsentation laden
 - **[⌘] & [P]** Startposition `FotoMagico`/ Vollbild

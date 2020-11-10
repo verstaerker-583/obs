@@ -1,6 +1,8 @@
 # init.lua
-s/--collection '.*'/--collection 'ss'/
-s/--profile '.*'/--profile 'jeYTmq'/
+s/--collection 'gp_naked'/--collection 'ss'/
+s/--profile 'gpYTsq'/--profile 'jeYTmq'/
+s/dev:setInputVolume(50) -- USB/dev:setInputVolume(100) -- USB/
+			
 
 # global.ini
 /\[Basic\]/a\
