@@ -111,11 +111,11 @@ function preFlightAudio()
 				headset = true
 			elseif not headset and not usbmic then
 				dev:setDefaultInputDevice()
-				dev:setInputVolume(50)
+				dev:setInputVolume(100)
 			end
 		elseif dev:transportType() == "USB" and not headset then
 			dev:setDefaultInputDevice()
-			dev:setInputVolume(50) -- USB
+			dev:setInputVolume(75) -- USB
 			usbmic = true
 		elseif dev:transportType() == "Virtual" then
 			dev:setInputVolume(50) -- NDI
@@ -139,7 +139,7 @@ function preFlightAudio()
 
 		if dev:transportType() == "Built-in" then
 			if headset then
-				dev:setOutputVolume(100)
+				dev:setOutputVolume(75)
 			else
 				dev:setOutputVolume(25)
 			end

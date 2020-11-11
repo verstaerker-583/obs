@@ -12,11 +12,7 @@
 			},
 			{
 				"id": "compressor_filter",
-				"name": "Compressor",
-				"settings": {
-					"attack_time": 0,
-					"output_gain": 3
-				}
+				"name": "Compressor"
 			},
 			{
 				"id": "limiter_filter",
@@ -82,11 +78,7 @@
 			},
 			{
 				"id": "compressor_filter",
-				"name": "Compressor",
-				"settings": {
-					"attack_time": 0,
-					"output_gain": 3
-				}
+				"name": "Compressor"
 			},
 			{
 				"id": "compressor_filter",

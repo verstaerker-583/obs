@@ -4,6 +4,9 @@ del(
 	(
 		.sources[] |
 			(
+				select(.name == "External").filters[] | select(.id != "sharpness_filter")
+			),
+			(
 				., .settings.items[]? | select(.name == (
 					"NDI",
 					"Outro",
@@ -36,10 +39,9 @@ del(
 		)
 	)
 )
+| (.AuxAudioDevice1.settings.device_id) = "AppleUSBAudioEngine:Unknown Manufacturer:Trust GXT 232 Microphone:14200000:1"
 | (.sources[] | select(.name == "Cam").settings.items[] | select(.name == "Overlay Chat").pos.y) = 510
-| (.sources[] | select(.name == "External").filters[] | select(.id == "clut_filter").settings.clut_amount) = 1
-| (.sources[] | select(.name == "External").filters[] | select(.id == "color_filter").settings.gamma) = -0.25
+| (.sources[] | select(.name == "External").filters[] | select(.id == "color_filter").settings.saturation) = 0.25
 | (.sources[] | select(.name == "External").settings.device) = "0x141300001bcf0215"
 | (.sources[] | select(.name == "Internal").settings.device) = "CC26163C4LSGDV4AA"
 | (.sources[] | select(.name == "Overlay Chat").settings.height) = 210
-| (.AuxAudioDevice1.settings.device_id) = "AppleUSBAudioEngine:Unknown Manufacturer:Trust GXT 232 Microphone:14200000:1"
