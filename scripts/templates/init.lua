@@ -1,4 +1,4 @@
-Skype = true 
+Skype = false
 
 streamingLayout = {
 	{"OBS", nil, "Color LCD", nil, hs.geometry.rect(292, 97, 0, 705), nil},
