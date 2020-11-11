@@ -107,18 +107,18 @@ function preFlightAudio()
 		if dev:transportType() == "Built-in" then
 			if dev:jackConnected() or dev:uid() == "BuiltInHeadphoneInputDevice" then
 				dev:setDefaultInputDevice()
-				dev:setInputVolume(25) -- Mic
+				dev:setInputVolume(50) -- Mic
 				headset = true
 			elseif not headset and not usbmic then
 				dev:setDefaultInputDevice()
-				dev:setInputVolume(25)
+				dev:setInputVolume(50)
 			end
 		elseif dev:transportType() == "USB" and not headset then
 			dev:setDefaultInputDevice()
 			dev:setInputVolume(50) -- USB
 			usbmic = true
 		elseif dev:transportType() == "Virtual" then
-			dev:setInputVolume(45) -- NDI
+			dev:setInputVolume(50) -- NDI
 		else
 			dev:setInputMuted(true)
 		end
@@ -156,7 +156,7 @@ function preFlightAudio()
 		if dev:inputVolume() then
 			log.f('In-/Output Device "%s"\n\t"%s"\t(%s) %.0f/%.0f (%s)', dev:name(), dev:uid(), dev:transportType(), dev:inputVolume(), dev:outputVolume(), dev:muted())
 		else
-			log.f('Input Device "%s"\n\t"%s"\t(%s) %.0f (%s)', dev:name(), dev:uid(), dev:transportType(), dev:inputVolume(), dev:muted())
+			log.f('Output Device "%s"\n\t"%s"\t(%s) %.0f (%s)', dev:name(), dev:uid(), dev:transportType(), dev:volume(), dev:muted())
 		end
 	end
 	log.f('Default Output Device\n%s', hs.inspect(hs.audiodevice.current(false)))
