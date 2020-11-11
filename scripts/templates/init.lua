@@ -139,7 +139,7 @@ function preFlightAudio()
 
 		if dev:transportType() == "Built-in" then
 			if headset then
-				dev:setOutputVolume(50)
+				dev:setOutputVolume(25) -- Headset
 			else
 				dev:setOutputVolume(25)
 			end
@@ -286,6 +286,6 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "w", windowLayout)
 
 -- URL Bindings
 hs.urlevent.bind("Audio", preFlightAudio)
-hs.urlevent.bind("Launch", preFlightFull)
+hs.urlevent.bind("Launch", preFlightLaunch)
 hs.urlevent.bind("Video", preFlightVideo)
 hs.urlevent.bind("Layout", windowLayout)
