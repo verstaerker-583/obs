@@ -4,7 +4,7 @@ del(
 	(
 		.sources[] |
 			(
-				select(.name == "External").filters[] | select(.id != "sharpness_filter")
+				select(.name == "External").filters[] | select(.id == "sharpness_filter")
 			),
 			(
 				., .settings.items[]? | select(.name == (

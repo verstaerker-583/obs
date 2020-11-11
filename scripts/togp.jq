@@ -3,9 +3,9 @@ del(
 	.DesktopAudioDevice1,
 	(
 		.sources[] |
-#			(
-#				select(.name == "External").filters[] | select(.id != "sharpness_filter")
-#			),
+			(
+				select(.name == "External").filters[] | select(.id == "sharpness_filter")
+			),
 			(
 				select(.name == "Cam").settings.items[] | select(.name == "External")
 			),
