@@ -4,8 +4,23 @@ del(
 	(
 		.sources[] |
 			(
-				select(.name == "External").filters[] | select(.id == "sharpness_filter")
+				select(.name == "Cam").hotkeys["libobs.hide_scene_item.screen"][] | select(.key == (
+					"OBS_KEY_2",
+					"OBS_KEY_V"
+					)
+				)
 			),
+			(
+				., .settings.items[]? | select(.name == (
+					"?",
+					"Overlay Chat",
+					"Overlay Donate"
+					)
+				)
+			),
+#			(
+#				select(.name == "External").filters[] | select(.id == "sharpness_filter")
+#			),
 			(
 				select(.name == "Cam").settings.items[] | select(.name == "External")
 			),
@@ -24,9 +39,15 @@ del(
 			),
 			(
 				.hotkeys[
+					"libobs.hide_scene_item.?",
 					"libobs.hide_scene_item.NDI",
+					"libobs.hide_scene_item.Overlay Chat",
+					"libobs.hide_scene_item.Overlay Donate",
 					"libobs.hide_scene_item.guest",
+					"libobs.show_scene_item.?",
 					"libobs.show_scene_item.NDI",
+					"libobs.show_scene_item.Overlay Chat",
+					"libobs.show_scene_item.Overlay Donate",
 					"libobs.show_scene_item.guest"
 					]
 			)
@@ -42,6 +63,8 @@ del(
 )
 | (.AuxAudioDevice1.settings.device_id) = "AppleHDAEngineInput:1B,0,1,0:1"
 | (.sources[] | select(.id == "browser_source").settings.url) |= sub("gp";"gp40")
+| (.sources[] | select(.name == "Cam").hotkeys["libobs.show_scene_item.screen"]) |= . + [{"key": "OBS_KEY_2"}]
+| (.sources[] | select(.name == "Cam").hotkeys["libobs.show_scene_item.screen"]) |= . + [{"key": "OBS_KEY_V"}]
 #| (.sources[] | select(.name == "External").filters[] | select(.id == "clut_filter").settings.clut_amount) = 0.5
 #| (.sources[] | select(.name == "External").filters[] | select(.id == "color_filter").settings.saturation) = 0.25
 #| (.sources[] | select(.name == "External").settings.device) = "0x14200000046d0823"
