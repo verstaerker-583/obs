@@ -6,10 +6,6 @@
 				"name": "Noise Suppression"
 			},
 			{
-				"id": "noise_gate_filter",
-				"name": "Noise Gate"
-			},
-			{
 				"id": "compressor_filter",
 				"name": "Compressor"
 			},

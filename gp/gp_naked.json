@@ -6,10 +6,6 @@
 				"name": "Noise Suppression"
 			},
 			{
-				"id": "noise_gate_filter",
-				"name": "Noise Gate"
-			},
-			{
 				"id": "compressor_filter",
 				"name": "Compressor"
 			},
@@ -80,23 +76,8 @@
 				"name": "Noise Suppression"
 			},
 			{
-				"id": "noise_gate_filter",
-				"name": "Noise Gate"
-			},
-			{
 				"id": "compressor_filter",
 				"name": "Compressor"
-			},
-			{
-				"id": "compressor_filter",
-				"name": "Ducking",
-				"settings": {
-					"attack_time": 100,
-					"ratio": 32,
-					"release_time": 600,
-					"sidechain_source": "Microphone",
-					"threshold": -36
-				}
 			},
 			{
 				"id": "limiter_filter",

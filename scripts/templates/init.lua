@@ -1,4 +1,4 @@
-Skype = false
+Skype = true 
 
 streamingLayout = {
 	{"OBS", nil, "Color LCD", nil, hs.geometry.rect(292, 97, 0, 705), nil},
@@ -107,15 +107,15 @@ function preFlightAudio()
 		if dev:transportType() == "Built-in" then
 			if dev:jackConnected() or dev:uid() == "BuiltInHeadphoneInputDevice" then
 				dev:setDefaultInputDevice()
-				dev:setInputVolume(50) -- Mic
+				dev:setInputVolume(25) -- Mic
 				headset = true
 			elseif not headset and not usbmic then
 				dev:setDefaultInputDevice()
-				dev:setInputVolume(100)
+				dev:setInputVolume(50)
 			end
 		elseif dev:transportType() == "USB" and not headset then
 			dev:setDefaultInputDevice()
-			dev:setInputVolume(75) -- USB
+			dev:setInputVolume(40) -- USB
 			usbmic = true
 		elseif dev:transportType() == "Virtual" then
 			dev:setInputVolume(50) -- NDI
@@ -139,7 +139,7 @@ function preFlightAudio()
 
 		if dev:transportType() == "Built-in" then
 			if headset then
-				dev:setOutputVolume(75)
+				dev:setOutputVolume(50)
 			else
 				dev:setOutputVolume(25)
 			end

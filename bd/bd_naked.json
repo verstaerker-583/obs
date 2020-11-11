@@ -3,10 +3,6 @@
 		"balance": 0.75,
 		"filters": [
 			{
-				"id": "noise_gate_filter",
-				"name": "Noise Gate"
-			},
-			{
 				"id": "noise_suppress_filter",
 				"name": "Noise Suppression"
 			},
