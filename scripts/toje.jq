@@ -39,6 +39,7 @@ del(
 		)
 	)
 )
+| (.AuxAudioDevice1.filters[] | select(.id == "compressor_filter").settings.output_gain) = 3
 | (.sources[] | select(.name == "Cam").settings.items[] | select(.name == "Overlay Chat").pos.y) = 510
 | (.sources[] | select(.name == "External").filters[] | select(.id == "clut_filter").settings.clut_amount) = 0.5
 | (.sources[] | select(.name == "External").filters[] | select(.id == "color_filter").settings.saturation) = 0.25
