@@ -3,22 +3,22 @@
 function profiles {
 	for CHANNEL in $1; do
 		for i in `ls ../profiles`; do
-			mkdir -p ../target/$OBSUSR/basic/profiles/$CHANNEL$i
+			mkdir -p /tmp/target/$OBSUSR/basic/profiles/$CHANNEL$i
 			SQ="YTsq"
 			sed -e '
 				s/Name=/Name='$CHANNEL'/
-				' ../profiles/$i/basic.ini|sed -f to$OBSUSR.sed > ../target/$OBSUSR/basic/profiles/$CHANNEL$i/basic.ini
+				' ../profiles/$i/basic.ini|sed -f to$OBSUSR.sed > /tmp/target/$OBSUSR/basic/profiles/$CHANNEL$i/basic.ini
 	
-				[ $i == $SQ ] || ln -sf ../$CHANNEL$SQ/service.json ../target/$OBSUSR/basic/profiles/$CHANNEL$i
+				[ $i == $SQ ] || ln -sf ../$CHANNEL$SQ/service.json /tmp/target/$OBSUSR/basic/profiles/$CHANNEL$i
 		done
-		cp templates/service$CHANNEL.json ../target/$OBSUSR/basic/profiles/$CHANNEL$SQ/service.json
+		cp templates/service$CHANNEL.json /tmp/target/$OBSUSR/basic/profiles/$CHANNEL$SQ/service.json
 	done
 	
-	sed -f to$OBSUSR.sed templates/global.ini > ../target/$OBSUSR/global.ini
-	sed -f to$OBSUSR.sed templates/init.lua > ../target/$OBSUSR/init.lua
+	sed -f to$OBSUSR.sed templates/global.ini > /tmp/target/$OBSUSR/global.ini
+	sed -f to$OBSUSR.sed templates/init.lua > /tmp/target/$OBSUSR/init.lua
 
-#	cp templates/com.local.KeyRemapping.R400.plist  ../target/$OBSUSR
-#  	[[ $OBSUSR == "mm" ]] && cp templates/com.local.KeyRemapping.VP4910.plist  ../target/$OBSUSR
+#	cp templates/com.local.KeyRemapping.R400.plist  /tmp/target/$OBSUSR
+#  	[[ $OBSUSR == "mm" ]] && cp templates/com.local.KeyRemapping.VP4910.plist  /tmp/target/$OBSUSR
 }
 
 function package {
@@ -27,7 +27,7 @@ function package {
 			--identifier magic\
 			--install-location /tmp/obs-studio\
 			--quiet\
-			--root ../target/$OBSUSR\
+			--root /tmp/target/$OBSUSR\
 			--scripts ../pkg/scripts\
 			--version `date "+%Y%m%d%H%M%S"`\
 			/tmp/magic$OBSUSR.pkg
@@ -57,16 +57,17 @@ for QUALITY in lq mq sq; do
 	sed -f profiles$QUALITY.sed templates/basic.ini > ../profiles/YT$QUALITY/basic.ini
 done
 
+sudo rm -rf /tmp/target
+
 #
 # ok
 #
 OBSUSR="ok"
-sudo rm -rf ../target/$OBSUSR
 
 # scenes
-mkdir -p ../target/$OBSUSR/basic/scenes
+mkdir -p /tmp/target/$OBSUSR/basic/scenes
 for i in `ls ../*/*.json`; do
-	jq -S --tab -f to$OBSUSR.jq $i > ../target/$OBSUSR/basic/scenes/`basename $i`
+	jq -S --tab -f to$OBSUSR.jq $i > /tmp/target/$OBSUSR/basic/scenes/`basename $i`
 done
 
 # profiles
@@ -76,12 +77,11 @@ profiles "gp mm"
 # mm
 #
 OBSUSR="mm"
-sudo rm -rf ../target/$OBSUSR
 
 # scenes
-mkdir -p ../target/$OBSUSR/basic/scenes
+mkdir -p /tmp/target/$OBSUSR/basic/scenes
 for i in `ls ../*/*.json`; do
-	[ `basename $i` == "bd_lutz.json" -o `basename $i` == "ss.json" ] || jq -S --tab -f to$OBSUSR.jq $i > ../target/$OBSUSR/basic/scenes/`basename $i`
+	[ `basename $i` == "bd_lutz.json" -o `basename $i` == "ss.json" ] || jq -S --tab -f to$OBSUSR.jq $i > /tmp/target/$OBSUSR/basic/scenes/`basename $i`
 done
 
 # profiles
@@ -91,13 +91,12 @@ profiles "bd gp mm"
 # gp
 #
 OBSUSR="gp"
-sudo rm -rf ../target/$OBSUSR
 
 # scenes
-mkdir -p ../target/$OBSUSR/basic/scenes
+mkdir -p /tmp/target/$OBSUSR/basic/scenes
 for i in `ls ../*/*.json`; do
-#	[ `basename $i` == "gp_local.json" ] && jq -S --tab -f to$OBSUSR.jq $i > ../target/$OBSUSR/basic/scenes/`basename $i`
-	[ `basename $i` == "gp_naked.json" ] && jq -S --tab -f to$OBSUSR.jq $i > ../target/$OBSUSR/basic/scenes/`basename $i`
+#	[ `basename $i` == "gp_local.json" ] && jq -S --tab -f to$OBSUSR.jq $i > /tmp/target/$OBSUSR/basic/scenes/`basename $i`
+	[ `basename $i` == "gp_naked.json" ] && jq -S --tab -f to$OBSUSR.jq $i > /tmp/target/$OBSUSR/basic/scenes/`basename $i`
 done
 
 # profiles
@@ -107,12 +106,11 @@ profiles "gp"
 # je
 #
 OBSUSR="je"
-sudo rm -rf ../target/$OBSUSR
 
 # scenes
-mkdir -p ../target/$OBSUSR/basic/scenes
+mkdir -p /tmp/target/$OBSUSR/basic/scenes
 for i in `ls ../*/*.json`; do
-	[ `basename $i` == "ss.json" ] && jq -S --tab -f to$OBSUSR.jq $i > ../target/$OBSUSR/basic/scenes/`basename $i`
+	[ `basename $i` == "ss.json" ] && jq -S --tab -f to$OBSUSR.jq $i > /tmp/target/$OBSUSR/basic/scenes/`basename $i`
 done
 
 # profiles

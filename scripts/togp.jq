@@ -61,7 +61,6 @@ del(
 		)
 	)
 )
-| (.AuxAudioDevice1.settings.device_id) = "AppleHDAEngineInput:1B,0,1,0:1"
 | (.sources[] | select(.id == "browser_source").settings.url) |= sub("gp";"gp40")
 | (.sources[] | select(.name == "Cam").hotkeys["libobs.show_scene_item.screen"]) |= . + [{"key": "OBS_KEY_2"}]
 | (.sources[] | select(.name == "Cam").hotkeys["libobs.show_scene_item.screen"]) |= . + [{"key": "OBS_KEY_I"}]

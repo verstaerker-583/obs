@@ -1,11 +1,15 @@
 Skype = false
 
-streamingLayout = {
+streamingLayoutSkype = {
+	{"OBS", nil, "Color LCD", nil, hs.geometry.rect(292, 97, 0, 705), nil}
+}
+
+streamingLayoutSkype = {
 	{"OBS", nil, "Color LCD", nil, hs.geometry.rect(292, 97, 0, 705), nil},
 	{"Skype", nil, "Color LCD", nil, hs.geometry.rect(-0, 120, 0, 0), nil}
 }
 
-streamingLayoutFM = {
+streamingLayoutFotoMagico = {
 	{"FotoMagico 5", nil, "Color LCD", nil, hs.geometry.rect(-990, -622, 950, 0), nil},
 	{"OBS", nil, "Color LCD", nil, hs.geometry.rect(40, 0, 950, 750), nil},
 	{"Skype", nil, "Color LCD", nil, hs.geometry.rect(-660, 0, 0, 0), nil}
@@ -107,18 +111,23 @@ function preFlightAudio()
 		if dev:transportType() == "Built-in" then
 			if dev:jackConnected() or dev:uid() == "BuiltInHeadphoneInputDevice" then
 				dev:setDefaultInputDevice()
-				dev:setInputVolume(25) -- Mic
+				dev:setInputVolume(50) -- Mic
 				headset = true
 			elseif not headset and not usbmic then
 				dev:setDefaultInputDevice()
 				dev:setInputVolume(50)
 			end
-		elseif dev:transportType() == "USB" and not headset then
+		elseif dev:transportType() == "Virtual" then
+			dev:setInputVolume(50) -- NDI
+
+		elseif not headset and dev:uid() == "AppleUSBAudioEngine:Unknown Manufacturer:Trust GXT 232 Microphone:14130000:1" then
+			dev:setDefaultInputDevice()
+			dev:setInputVolume(100) -- USB
+			usbmic = true
+		elseif not headset and dev:uid() == "AppleUSBAudioEngine:Unknown Manufacturer:Unknown USB Audio Device:6EBAAA60:1" then
 			dev:setDefaultInputDevice()
 			dev:setInputVolume(40) -- USB
 			usbmic = true
-		elseif dev:transportType() == "Virtual" then
-			dev:setInputVolume(50) -- NDI
 		else
 			dev:setInputMuted(true)
 		end
@@ -141,7 +150,7 @@ function preFlightAudio()
 			if headset then
 				dev:setOutputVolume(25) -- Headset
 			else
-				dev:setOutputVolume(25)
+				dev:setOutputVolume(10)
 			end
 		elseif dev:transportType() == "USB" and not headset then
 			dev:setOutputVolume(50)
@@ -237,7 +246,7 @@ end
 function tweakFotoMagico()
 --	hs.execute("defaults delete com.boinx.FotoMagico5 'NSWindow Frame GetInfo'")
 	hs.execute("defaults delete com.boinx.FotoMagico5 masterVolume")
-	hs.execute("defaults delete com.boinx.FotoMagico5 FMThemeType")
+	hs.execute("defaults delete com.boinx.FotoMagico5 FotoMagicoThemeType")
 	hs.execute("defaults write com.boinx.FotoMagico5 ScreenHasBeenChosen -int 1")
 	hs.execute("defaults write com.boinx.FotoMagico5 defaultHeight -int 720")
 	hs.execute("defaults write com.boinx.FotoMagico5 defaultWidth -int 1280")
@@ -257,7 +266,9 @@ end
 
 function windowLayout()
 	if FotoMagico then
-		hs.layout.apply(streamingLayoutFM)
+		hs.layout.apply(streamingLayoutFotoMagico)
+	elseif Skype then
+		hs.layout.apply(streamingLayoutSkype)
 	else
 		hs.layout.apply(streamingLayout)
 	end

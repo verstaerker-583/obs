@@ -6,8 +6,18 @@
 				"name": "Noise Suppression"
 			},
 			{
+				"id": "noise_gate_filter",
+				"name": "Noise Gate",
+				"settings": {
+					"attack_time": 1
+				}
+			},
+			{
 				"id": "compressor_filter",
-				"name": "Compressor"
+				"name": "Compressor",
+				"settings": {
+					"attack_time": 1
+				}
 			},
 			{
 				"id": "limiter_filter",
@@ -74,6 +84,13 @@
 			{
 				"id": "noise_suppress_filter",
 				"name": "Noise Suppression"
+			},
+			{
+				"id": "noise_gate_filter",
+				"name": "Noise Gate",
+				"settings": {
+					"attack_time": 1
+				}
 			},
 			{
 				"id": "compressor_filter",
