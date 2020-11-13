@@ -135,7 +135,7 @@ function preFlightAudio()
 		if dev:outputVolume() then
 			log.f('In-/Output Device "%s"\n\t"%s"\t(%s) %.0f/%.0f (%s)', dev:name(), dev:uid(), dev:transportType(), dev:inputVolume(), dev:outputVolume(), dev:muted())
 		else
---			log.f('Input Device "%s"\n\t"%s"\t(%s) %.0f (%s)', dev:name(), dev:uid(), dev:transportType(), dev:inputVolume(), dev:muted())
+			log.f('Input Device "%s"\n\t"%s"\t(%s) %s (%s)', dev:name(), dev:uid(), dev:transportType(), dev:inputVolume(), dev:muted())
 		end
 	end
 	log.f('Default Input Device\n%s', hs.inspect(hs.audiodevice.current(true)))
@@ -165,7 +165,7 @@ function preFlightAudio()
 		if dev:inputVolume() then
 			log.f('In-/Output Device "%s"\n\t"%s"\t(%s) %.0f/%.0f (%s)', dev:name(), dev:uid(), dev:transportType(), dev:inputVolume(), dev:outputVolume(), dev:muted())
 		else
-			log.f('Output Device "%s"\n\t"%s"\t(%s) %.0f (%s)', dev:name(), dev:uid(), dev:transportType(), dev:volume(), dev:muted())
+			log.f('Output Device "%s"\n\t"%s"\t(%s) %s (%s)', dev:name(), dev:uid(), dev:transportType(), dev:volume(), dev:muted())
 		end
 	end
 	log.f('Default Output Device\n%s', hs.inspect(hs.audiodevice.current(false)))
