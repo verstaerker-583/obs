@@ -1,8 +1,9 @@
-.DS_Store
-*.zip
 *.swp
+*.zip
+.DS_Store
 servicebd.json
 servicegp.json
+serviceje.json
 servicemm.json
 sw/
 target/
