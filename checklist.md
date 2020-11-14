@@ -22,14 +22,16 @@
     * nicht erforderliche Anwendungen werden geschlossen
     * verschiedene Prüfungen werden durchgeführt
     * Skype wird geöffnet
-    * OBS wird mit dem voreingestellten Profil der voreingestellten Szenensammlung geöffnet
+    * OBS wird mit dem voreingestellten Profil und der voreingestellten Szenensammlung geöffnet
 
 ▶️ 🔴 OBS streamt
 
 ### OBS
 #### Szenen in Ausgangsposition, Quellen sicht-/unsichtbar schalten und Overlays vom Server laden
 - **[1]**
-- **[2]**, **[€]**
+- **[2]**, **[€]**, **[C]**, **[?]**
+- **[+]**
+    * `Präsentation` sicht- und hörbar?
 - **[<]**
     * 🎥 `External` aktiv?
 - **[3]**
@@ -113,12 +115,13 @@
 
 ### Präsentation
 - **[⌘] & [P]** Startposition `FotoMagico`/ Vollbild
+- **[⌘] & [⏎]** Startposition `PowerPoint`/ Vollbild
 
 ### OBS
 #### Szenen in Ausgangsposition, Quellen sicht-/unsichtbar schalten und Overlays vom Server laden
 - ⚠ OBS nicht anklicken, damit Präsentation bedienbar bleibt. 
 - **[1]**
-- **[2]**, **[€]**, **[C]**
+- **[2]**, **[€]**, **[C]**, **[?]**
 - **[<]**
     * 🎥 `External` aktiv?
 - **[3]**
@@ -130,6 +133,7 @@
 
 ### Präsentation
 - **[⌘] & [P]** Startposition `FotoMagico`/ Vollbild
+- **[⌘] & [⏎]** Startposition `PowerPoint`/ Vollbild
 
 ### go/no go poll
 
