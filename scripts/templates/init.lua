@@ -148,7 +148,7 @@ function preFlightAudio()
 
 		if dev:transportType() == "Built-in" then
 			if headset then
-				dev:setOutputVolume(25) -- Headset
+				dev:setOutputVolume(50) -- Headset
 			else
 				dev:setOutputVolume(10)
 			end

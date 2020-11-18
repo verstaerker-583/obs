@@ -13,8 +13,8 @@ SceneCollectionFile=gp_naked
 
 # basic.ini
 /\[Audio\]/a\
-MonitoringDeviceId=BuiltInSpeakerDevice
-#MonitoringDeviceId=BuiltInHeadphoneOutputDevice
+MonitoringDeviceId=BuiltInHeadphoneOutputDevice
+#MonitoringDeviceId=BuiltInSpeakerDevice
 
 /\[SimpleOutput\]/a\
 Preset=faster\

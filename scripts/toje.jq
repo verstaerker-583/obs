@@ -4,7 +4,11 @@ del(
 	(
 		.sources[] |
 			(
-				select(.name == "External").filters[] | select(.id == "sharpness_filter")
+				select(.name == "External").filters[] | select(.id == (
+					"color_filter",
+					"sharpness_filter"
+					)
+				)
 			),
 			(
 				., .settings.items[]? | select(.name == (
