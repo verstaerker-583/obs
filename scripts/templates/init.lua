@@ -1,5 +1,5 @@
-Skype = false
 FotoMagico = false
+Skype = false
 
 streamingLayout = {
 	{"OBS", nil, "Color LCD", nil, hs.geometry.rect(292, 97, 0, 705), nil}
@@ -152,7 +152,7 @@ function preFlightAudio()
 
 		if dev:transportType() == "Built-in" then
 			if headset then
-				dev:setOutputVolume(50) -- Headset
+				dev:setOutputVolume(75) -- Headset
 			else
 				dev:setOutputVolume(10)
 			end
