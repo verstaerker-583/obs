@@ -129,6 +129,11 @@ function preFlightAudio()
 			dev:setInputVolume(40) -- USB
 			usbmic = true
 		else
+		elseif not headset and dev:uid() == "AppleUSBAudioEngine:Unknown Manufacturer: ??? LG ???" then
+			dev:setDefaultInputDevice()
+			dev:setInputVolume(75) -- USB
+			usbmic = true
+		else
 			dev:setInputMuted(true)
 		end
 
