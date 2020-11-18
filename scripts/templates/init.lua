@@ -118,7 +118,7 @@ function preFlightAudio()
 				dev:setInputVolume(50)
 			end
 		elseif dev:transportType() == "Virtual" then
-			dev:setInputVolume(50) -- NDI
+			dev:setInputVolume(60) -- NDI
 
 		elseif not headset and dev:uid() == "AppleUSBAudioEngine:Unknown Manufacturer:Trust GXT 232 Microphone:14130000:1" then
 			dev:setDefaultInputDevice()
@@ -128,7 +128,6 @@ function preFlightAudio()
 			dev:setDefaultInputDevice()
 			dev:setInputVolume(40) -- USB
 			usbmic = true
-		else
 		elseif not headset and dev:uid() == "AppleUSBAudioEngine:Unknown Manufacturer: ??? LG ???" then
 			dev:setDefaultInputDevice()
 			dev:setInputVolume(75) -- USB
@@ -279,7 +278,6 @@ function windowLayout()
 	end
 end
 
-FotoMagico = false
 log = hs.logger.new("Pre-Flight","debug")
 
 -- Hammerspoon Preferences

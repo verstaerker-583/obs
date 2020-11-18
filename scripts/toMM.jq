@@ -15,6 +15,7 @@ del(
 			)
 	)
 )
+| (.sources[] | select(.id == "display_capture").settings.display) = 0 
 | (.sources[] | select(.name == "External").settings.device) = "0x2543000043e9a4d"
 | (.sources[] | select(.name == "Internal").settings.device) = "0x8020000005ac8514"
 | (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/markus/Documents/DieWeltImBlick/intro"

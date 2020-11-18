@@ -631,6 +631,9 @@
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_B"
+					},
+					{
 						"key": "OBS_KEY_NUM2"
 					},
 					{
@@ -707,6 +710,9 @@
 					}
 				],
 				"libobs.show_scene_item.screen": [
+					{
+						"key": "OBS_KEY_B"
+					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
 					},

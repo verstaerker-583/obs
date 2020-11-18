@@ -34,6 +34,7 @@ del(
 	),
 	(
 		.. | select(.key? == (
+			"OBS_KEY_B",
 			"OBS_KEY_F",
 			"OBS_KEY_G",
 			"OBS_KEY_H",
