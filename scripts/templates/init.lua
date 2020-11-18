@@ -1,4 +1,5 @@
 Skype = false
+FotoMagico = false
 
 streamingLayout = {
 	{"OBS", nil, "Color LCD", nil, hs.geometry.rect(292, 97, 0, 705), nil}
@@ -24,7 +25,6 @@ function appsClose()
 		elseif app:name() == "AirPlayUIAgent" then
 		elseif app:name() == "FotoMagico 5" then
 			tweakFotoMagico()
-			FotoMagico = true
 		elseif app:name() == "Hammerspoon" then
 		elseif app:name() == "Microsoft PowerPoint" then
 		elseif app:name() == "NDI Virtual Input" and Skype then
