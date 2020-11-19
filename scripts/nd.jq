@@ -19,10 +19,7 @@
 						"NDI",
 						"Outro",
 						"Video",
-						"guest",
-						"Color Source",
-						"Slide Show"
-#						"Screen Capture"
+						"guest"
 					)
 				)
 			),

@@ -1,18 +1,4 @@
 .name = "sr"
-| del(
-#	.DesktopAudioDevice1,
-	(
-		.sources[] |
-			(
-				., .settings.items[]? | select(.name == (
-					"Color Source",
-					"Slide Show"
-#					"Screen Capture"
-					)
-				)
-			)
-	)
-)
 | (.sources[] | select(.id == "browser_source").settings|
 	.css,
 	.url
