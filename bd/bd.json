@@ -4,20 +4,25 @@
 		"filters": [
 			{
 				"id": "noise_suppress_filter",
-				"name": "Noise Suppression"
+				"name": "Noise Suppression",
+				"settings": {
+					"suppress_level": -32
+				}
 			},
 			{
 				"id": "noise_gate_filter",
 				"name": "Noise Gate",
 				"settings": {
-					"attack_time": 1
+					"attack_time": 1,
+					"open_threshold": -28
 				}
 			},
 			{
 				"id": "compressor_filter",
 				"name": "Compressor",
 				"settings": {
-					"attack_time": 1
+					"attack_time": 1,
+					"output_gain": 3
 				}
 			},
 			{
@@ -76,20 +81,25 @@
 		"filters": [
 			{
 				"id": "noise_suppress_filter",
-				"name": "Noise Suppression"
+				"name": "Noise Suppression",
+				"settings": {
+					"suppress_level": -32
+				}
 			},
 			{
 				"id": "noise_gate_filter",
 				"name": "Noise Gate",
 				"settings": {
-					"attack_time": 1
+					"attack_time": 1,
+					"open_threshold": -28
 				}
 			},
 			{
 				"id": "compressor_filter",
 				"name": "Compressor",
 				"settings": {
-					"attack_time": 1
+					"attack_time": 1,
+					"output_gain": 3
 				}
 			},
 			{
@@ -223,13 +233,6 @@
 					"name": "Chroma Key"
 				},
 				{
-					"id": "color_filter",
-					"name": "Color Correction",
-					"settings": {
-						"gamma": 0.25
-					}
-				},
-				{
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
@@ -259,13 +262,6 @@
 					"enabled": "false",
 					"id": "chroma_key_filter",
 					"name": "Chroma Key"
-				},
-				{
-					"id": "color_filter",
-					"name": "Color Correction",
-					"settings": {
-						"gamma": 0.25
-					}
 				},
 				{
 					"id": "clut_filter",

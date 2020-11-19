@@ -51,6 +51,7 @@
 ### Skype
 #### Skype > Einstellungen > Allgemein
 - ☐ `Skype nach Schließen weiter ausführen`
+- ☐ `Globale Tastenkürzel aktivieren`
 #### Skype > Einstellungen > Darstellung
 - Modi
     * ☒ `Dunkel`

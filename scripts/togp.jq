@@ -65,8 +65,6 @@ del(
 | (.sources[] | select(.id == "browser_source").settings.url) |= sub("gp";"gp40")
 | (.sources[] | select(.name == "Cam").hotkeys["libobs.show_scene_item.screen"]) |= . + [{"key": "OBS_KEY_2"}]
 | (.sources[] | select(.name == "Cam").hotkeys["libobs.show_scene_item.screen"]) |= . + [{"key": "OBS_KEY_I"}]
-#| (.sources[] | select(.name == "External").filters[] | select(.id == "clut_filter").settings.clut_amount) = 0.5
-#| (.sources[] | select(.name == "External").filters[] | select(.id == "color_filter").settings.saturation) = 0.25
 #| (.sources[] | select(.name == "External").settings.device) = "0x14200000046d0823"
 | (.sources[] | select(.name == "External").settings.device) = "CC24383EGBPF9T9CN"
 | (.sources[] | select(.name == "Internal").settings.device) = "CC24383EGBPF9T9CN"

@@ -54,7 +54,7 @@ function applicationWatcher(appName, eventType, appObject)
 		elseif (eventType == hs.application.watcher.terminated) then
 			postFlight()
 		else
-			windowLayout()
+--			windowLayout()
 		end
 	end
 end
@@ -118,7 +118,7 @@ function preFlightAudio()
 				dev:setInputVolume(50)
 			end
 		elseif dev:transportType() == "Virtual" then
-			dev:setInputVolume(60) -- NDI
+			dev:setInputVolume(50) -- NDI
 
 		elseif not headset and dev:uid() == "AppleUSBAudioEngine:Unknown Manufacturer:Trust GXT 232 Microphone:14130000:1" then
 			dev:setDefaultInputDevice()
