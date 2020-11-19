@@ -40,6 +40,56 @@
 			"name": "Internal"
 		},
 		{
+			"id": "color_source",
+			"name": "Color Source",
+			"settings": {
+				"color": 4280204915,
+				"height": 720,
+				"width": 1280
+			}
+		},
+		{
+			"hotkeys": {
+				"SlideShow.NextSlide": [
+					{
+						"key": "OBS_KEY_DOWN"
+					},
+					{
+						"key": "OBS_KEY_N"
+					},
+					{
+						"key": "OBS_KEY_PAGEDOWN"
+					},
+					{
+						"key": "OBS_KEY_RIGHT"
+					}
+				],
+				"SlideShow.PreviousSlide": [
+					{
+						"key": "OBS_KEY_LEFT"
+					},
+					{
+						"key": "OBS_KEY_PAGEUP"
+					},
+					{
+						"key": "OBS_KEY_UP"
+					}
+				],
+				"SlideShow.Restart": [
+					{
+						"key": "OBS_KEY_1"
+					}
+				]
+			},
+			"id": "slideshow",
+			"name": "Slide Show",
+			"settings": {
+				"loop": false,
+				"slide_mode": "mode_manual",
+				"use_custom_size": "1280x720"
+			}
+		},
+		{
 			"id": "text_ft2_source",
 			"name": "?",
 			"settings": {
@@ -220,6 +270,14 @@
 			"settings": {
 				"items": [
 					{
+						"locked": true,
+						"name": "Slide Show",
+						"private_settings": {
+							"color-preset": 7
+						},
+						"visible": true
+					},
+					{
 						"align": 0,
 						"bounds": {
 							"x": 1280,
@@ -342,6 +400,16 @@
 			},
 			"settings": {
 				"items": [
+					{
+						"locked": true,
+						"name": "Color Source",
+						"visible": true
+					},
+					{
+						"locked": true,
+						"name": "Slide Show",
+						"visible": true
+					},
 					{
 						"align": 0,
 						"bounds": {
