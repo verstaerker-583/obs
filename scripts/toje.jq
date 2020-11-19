@@ -5,7 +5,6 @@ del(
 		.sources[] |
 			(
 				select(.name == "External").filters[] | select(.id == (
-					"color_filter",
 					"sharpness_filter"
 					)
 				)
@@ -15,7 +14,10 @@ del(
 					"NDI",
 					"Outro",
 					"Video",
-					"guest"
+					"guest",
+					"Color Source",
+					"Slide Show"
+#					"Screen Capture"
 					)
 				)
 			),
@@ -34,7 +36,6 @@ del(
 	),
 	(
 		.. | select(.key? == (
-			"OBS_KEY_B",
 			"OBS_KEY_F",
 			"OBS_KEY_G",
 			"OBS_KEY_H",
@@ -44,12 +45,7 @@ del(
 		)
 	)
 )
-#| (.AuxAudioDevice1.filters[] | select(.id == "compressor_filter").settings.output_gain) = 3
-#| (.AuxAudioDevice1.filters[] | select(.id == "noise_gate_filter").settings.open_threshold) = -28
-#| (.AuxAudioDevice1.filters[] | select(.id == "noise_suppress_filter").settings.suppress_level) = -32
-| (.sources[] | select(.name == "Cam").settings.items[] | select(.name == "Overlay Chat").pos.y) = 510
 | (.sources[] | select(.name == "External").settings.device) = "0x141300001bcf0215"
 | (.sources[] | select(.name == "Internal").settings.device) = "CC26163C4LSGDV4AA"
 | (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/johanneserdmann/Desktop/intro.mp4"
 | (.sources[] | select(.name == "Intro").volume) = 0.5
-| (.sources[] | select(.name == "Overlay Chat").settings.height) = 210

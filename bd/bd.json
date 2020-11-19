@@ -581,7 +581,6 @@
 							"x": 960,
 							"y": 324
 						},
-						"rot": -5,
 						"visible": true
 					},
 					{
@@ -600,7 +599,6 @@
 						"private_settings": {
 							"color-preset": 7
 						},
-						"rot": -5,
 						"visible": true
 					},
 					{
@@ -616,7 +614,6 @@
 							"x": 320,
 							"y": 396
 						},
-						"rot": 5,
 						"visible": true
 					},
 					{
@@ -802,7 +799,6 @@
 							"x": 128,
 							"y": 396
 						},
-						"rot": 5,
 						"visible": true
 					},
 					{
@@ -832,8 +828,7 @@
 						"pos": {
 							"x": 1152,
 							"y": 324
-						},
-						"rot": -5
+						}
 					}
 				]
 			}

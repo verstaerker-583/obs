@@ -244,11 +244,6 @@
 					"name": "Sharpen"
 				},
 				{
-					"enabled": "false",
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
@@ -267,11 +262,6 @@
 					"name": "Sharpen"
 				},
 				{
-					"enabled": "false",
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
-				},
-				{
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
@@ -288,11 +278,6 @@
 				{
 					"id": "sharpness_filter",
 					"name": "Sharpen"
-				},
-				{
-					"enabled": "false",
-					"id": "chroma_key_filter",
-					"name": "Chroma Key"
 				},
 				{
 					"id": "clut_filter",
@@ -701,7 +686,7 @@
 						"key": "OBS_KEY_2"
 					},
 					{
-						"key": "OBS_KEY_B"
+						"key": "OBS_KEY_BRACKETRIGHT"
 					},
 					{
 						"key": "OBS_KEY_NUM2"
@@ -781,9 +766,6 @@
 				],
 				"libobs.show_scene_item.screen": [
 					{
-						"key": "OBS_KEY_B"
-					},
-					{
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				]
@@ -862,8 +844,7 @@
 						"pos": {
 							"x": 250,
 							"y": 360
-						},
-						"rot": 5
+						}
 					},
 					{
 						"align": 0,
@@ -1111,8 +1092,7 @@
 						"pos": {
 							"x": 108,
 							"y": 240
-						},
-						"rot": 5
+						}
 					},
 					{
 						"align": 0,
@@ -1126,8 +1106,7 @@
 						"pos": {
 							"x": 108,
 							"y": 480
-						},
-						"rot": 5
+						}
 					},
 					{
 						"align": 0,
@@ -1141,8 +1120,7 @@
 						"pos": {
 							"x": 1172,
 							"y": 360
-						},
-						"rot": -5
+						}
 					}
 				]
 			}

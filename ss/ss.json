@@ -295,6 +295,15 @@
 			}
 		},
 		{
+			"id": "color_source",
+			"name": "Color Source",
+			"settings": {
+				"color": 4294166577,
+				"height": 720,
+				"width": 1280
+			}
+		},
+		{
 			"filters": [
 				{
 					"id": "compressor_filter",
@@ -358,6 +367,50 @@
 			}
 		},
 		{
+			"hotkeys": {
+				"SlideShow.NextSlide": [
+					{
+						"key": "OBS_KEY_DOWN"
+					},
+					{
+						"key": "OBS_KEY_N"
+					},
+					{
+						"key": "OBS_KEY_PAGEDOWN"
+					},
+					{
+						"key": "OBS_KEY_RIGHT"
+					}
+				],
+				"SlideShow.PreviousSlide": [
+					{
+						"key": "OBS_KEY_LEFT"
+					},
+					{
+						"key": "OBS_KEY_PAGEUP"
+					},
+					{
+						"key": "OBS_KEY_UP"
+					},
+					{
+						"key": "OBS_KEY_V"
+					}
+				],
+				"SlideShow.Restart": [
+					{
+						"key": "OBS_KEY_1"
+					}
+				]
+			},
+			"id": "slideshow",
+			"name": "Slide Show",
+			"settings": {
+				"loop": false,
+				"slide_mode": "mode_manual",
+				"use_custom_size": "1280x720"
+			}
+		},
+		{
 			"id": "text_ft2_source",
 			"name": "?",
 			"settings": {
@@ -412,7 +465,7 @@
 			},
 			"settings": {
 				"css": "@import url(https://verstaerker-583.github.io/obs/ss/html/chat.css)",
-				"height": 110,
+				"height": 210,
 				"url": "https://verstaerker-583.github.io/obs/ss/html/chat.html",
 				"width": 920
 			}
@@ -522,9 +575,6 @@
 						"key": "OBS_KEY_G"
 					},
 					{
-						"key": "OBS_KEY_I"
-					},
-					{
 						"key": "OBS_KEY_V"
 					}
 				],
@@ -630,7 +680,7 @@
 						"key": "OBS_KEY_2"
 					},
 					{
-						"key": "OBS_KEY_B"
+						"key": "OBS_KEY_BRACKETRIGHT"
 					},
 					{
 						"key": "OBS_KEY_NUM2"
@@ -676,6 +726,9 @@
 					},
 					{
 						"key": "OBS_KEY_NUM2"
+					},
+					{
+						"key": "OBS_KEY_I"
 					}
 				],
 				"libobs.show_scene_item.Intro": [
@@ -709,9 +762,6 @@
 					}
 				],
 				"libobs.show_scene_item.screen": [
-					{
-						"key": "OBS_KEY_B"
-					},
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
 					},
@@ -765,7 +815,7 @@
 						"name": "Overlay Chat",
 						"pos": {
 							"x": 360,
-							"y": 610
+							"y": 510
 						}
 					},
 					{
@@ -794,8 +844,7 @@
 						"pos": {
 							"x": 250,
 							"y": 360
-						},
-						"rot": 5
+						}
 					},
 					{
 						"align": 0,
@@ -883,6 +932,14 @@
 			"name": "Screen",
 			"settings": {
 				"items": [
+					{
+						"locked": true,
+						"name": "Slide Show",
+						"private_settings": {
+							"color-preset": 7
+						},
+						"visible": true
+					},
 					{
 						"align": 0,
 						"bounds": {
@@ -1035,8 +1092,7 @@
 						"pos": {
 							"x": 108,
 							"y": 240
-						},
-						"rot": 5
+						}
 					},
 					{
 						"align": 0,
@@ -1050,8 +1106,7 @@
 						"pos": {
 							"x": 108,
 							"y": 480
-						},
-						"rot": 5
+						}
 					},
 					{
 						"align": 0,
@@ -1119,6 +1174,16 @@
 			},
 			"settings": {
 				"items": [
+					{
+						"locked": true,
+						"name": "Color Source",
+						"visible": true
+					},
+					{
+						"locked": true,
+						"name": "Slide Show",
+						"visible": true
+					},
 					{
 						"align": 0,
 						"bounds": {

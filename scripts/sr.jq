@@ -11,9 +11,6 @@
 					)
 				)
 			)
-	),
-	(
-		.. | select(.enabled? == "false")
 	)
 )
 | (.sources[] | select(.id == "browser_source").settings|

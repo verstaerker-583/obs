@@ -1,6 +1,5 @@
 .name = "gp_local"
 | del(
-#	.DesktopAudioDevice1,
 	(
 		.sources[] |
 			(
@@ -14,21 +13,7 @@
 					"libobs.hide_scene_item.Internal",
 					"libobs.show_scene_item.External"
 					][] | select(.key == "OBS_KEY_3")
-			),
-			(
-				select(.name == "cams").settings.items[] |select(.name == "External").rot
-			),
-			(
-				., .settings.items[]? | select(.name == (
-					"Color Source",
-					"Slide Show"
-#					"Screen Capture"
-					)
-				)
 			)
-	),
-	(
-		.. | select(.enabled? == "false")
 	)
 )
 | (.sources[] | select(.name == "Cam").hotkeys["libobs.show_scene_item.External"]) |= . + [{"key": "OBS_KEY_NUM2"}]

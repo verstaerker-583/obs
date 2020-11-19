@@ -633,7 +633,7 @@
 						"key": "OBS_KEY_2"
 					},
 					{
-						"key": "OBS_KEY_B"
+						"key": "OBS_KEY_BRACKETRIGHT"
 					},
 					{
 						"key": "OBS_KEY_NUM2"
@@ -713,9 +713,6 @@
 				],
 				"libobs.show_scene_item.screen": [
 					{
-						"key": "OBS_KEY_B"
-					},
-					{
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				]
@@ -794,8 +791,7 @@
 						"pos": {
 							"x": 250,
 							"y": 360
-						},
-						"rot": 5
+						}
 					},
 					{
 						"align": 0,
@@ -1035,8 +1031,7 @@
 						"pos": {
 							"x": 108,
 							"y": 240
-						},
-						"rot": 5
+						}
 					},
 					{
 						"align": 0,
@@ -1050,8 +1045,7 @@
 						"pos": {
 							"x": 108,
 							"y": 480
-						},
-						"rot": 5
+						}
 					},
 					{
 						"align": 0,
@@ -1065,8 +1059,7 @@
 						"pos": {
 							"x": 1172,
 							"y": 360
-						},
-						"rot": -5
+						}
 					}
 				]
 			}

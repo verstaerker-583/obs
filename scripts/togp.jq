@@ -14,7 +14,10 @@ del(
 				., .settings.items[]? | select(.name == (
 					"?",
 					"Overlay Chat",
-					"Overlay Donate"
+					"Overlay Donate",
+					"Color Source",
+					"Slide Show"
+#					"Screen Capture"
 					)
 				)
 			),
@@ -54,7 +57,6 @@ del(
 	),
 	(
 		.. | select(.key? == (
-			"OBS_KEY_B",
 			"OBS_KEY_F",
 			"OBS_KEY_G",
 			"OBS_KEY_H"

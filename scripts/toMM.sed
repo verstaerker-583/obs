@@ -8,8 +8,8 @@ s/dev:setMode(1920, 1080, 1)/dev:setMode(5120, 2880, 1)/
 /\[Basic\]/a\
 Profile=gpYTsq\
 ProfileDir=gpYTsq\
-SceneCollection=gp_naked\
-SceneCollectionFile=gp_naked
+SceneCollection=gp\
+SceneCollectionFile=gp
 /AlwaysOnTop=true/d
 
 # basic.ini

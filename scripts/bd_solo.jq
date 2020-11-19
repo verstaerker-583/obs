@@ -1,7 +1,6 @@
 .name = "bd_solo"
 | del(
 	.AuxAudioDevice2,
-#	.DesktopAudioDevice1,
 	(
 		.sources[] |
 			(
@@ -10,10 +9,7 @@
 					"Overlay Chat",
 					"Overlay Donate",
 					"Video",
-					"guest",
-					"Color Source",
-					"Slide Show"
-#					"Screen Capture"
+					"guest"
 					)
 				)
 			),
@@ -36,7 +32,6 @@
 		.. | select(
 			.enabled? == "false",
 			.key? == (
-				"OBS_KEY_B",
 				"OBS_KEY_F",
 				"OBS_KEY_G",
 				"OBS_KEY_H",

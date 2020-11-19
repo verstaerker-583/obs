@@ -349,6 +349,13 @@
 			}
 		},
 		{
+			"id": "display_capture",
+			"name": "Screen Capture",
+			"settings": {
+				"display": 1
+			}
+		},
+		{
 			"id": "browser_source",
 			"name": "Overlay Start",
 			"private_settings": {
@@ -507,7 +514,6 @@
 							"x": 960,
 							"y": 324
 						},
-						"rot": -5,
 						"visible": true
 					},
 					{
@@ -526,7 +532,6 @@
 						"private_settings": {
 							"color-preset": 7
 						},
-						"rot": -5,
 						"visible": true
 					},
 					{
@@ -542,7 +547,6 @@
 							"x": 320,
 							"y": 396
 						},
-						"rot": 5,
 						"visible": true
 					},
 					{
@@ -612,6 +616,21 @@
 						"name": "Slide Show",
 						"private_settings": {
 							"color-preset": 7
+						},
+						"visible": true
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "Screen Capture",
+						"pos": {
+							"x": 640,
+							"y": 360
 						},
 						"visible": true
 					},
@@ -713,7 +732,6 @@
 							"x": 128,
 							"y": 396
 						},
-						"rot": 5,
 						"visible": true
 					},
 					{
@@ -743,8 +761,7 @@
 						"pos": {
 							"x": 1152,
 							"y": 324
-						},
-						"rot": -5
+						}
 					}
 				]
 			}

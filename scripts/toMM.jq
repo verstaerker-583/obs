@@ -1,18 +1,83 @@
-del(
+if .name == "gp_naked" then
+	del(
+		.DesktopAudioDevice1,
+		(
+			.sources[] |
+				(
+					., .settings.items[]? | select(.name == (
+						"?"
+						)
+					)
+				),
+				(
+					.hotkeys[
+						"libobs.hide_scene_item.?",
+						"libobs.show_scene_item.?"
+						]
+				)
+		)
+	)
+elif .name == "gp_local" then
+	del(
+		.AuxAudioDevice2,
+		(
+			.sources[] |
+				(
+					., .settings.items[]? | select(.name == (
+						"NDI",
+						"guest"
+						)
+					)
+				),
+				(
+					.hotkeys[
+						"libobs.hide_scene_item.NDI",
+						"libobs.hide_scene_item.guest",
+						"libobs.show_scene_item.NDI",
+						"libobs.show_scene_item.guest"
+						]
+				)
+		),
+		(
+			.. | select(.key? == (
+				"OBS_KEY_F",
+				"OBS_KEY_G",
+				"OBS_KEY_H"
+				)
+			)
+		)
+	)
+else
+	.
+end
+
+| del(
 	(
 		.sources[] |
 			(
 				., .settings.items[]? | select(.name == (
-					"Overlay Chat"
+					"Overlay Chat",
+					"Video",
+					"Color Source",
+					"Slide Show"
+#					"Screen Capture"
 					)
 				)
 			),
 			(
 				.hotkeys[
 					"libobs.hide_scene_item.Overlay Chat",
-					"libobs.show_scene_item.Overlay Chat"
+					"libobs.hide_scene_item.Video",
+					"libobs.show_scene_item.Overlay Chat",
+					"libobs.show_scene_item.Video"
 					]
 			)
+	),
+	(
+		.. | select(.key? == (
+			"OBS_KEY_V"
+			)
+		)
 	)
 )
 | (.sources[] | select(.name == "External").settings.device) = "0x2543000043e9a4d"

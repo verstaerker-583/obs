@@ -1,4 +1,12 @@
 @import "../../gp/html/stylesheet.css";
+#hostLogo {
+	bottom: 10px;
+	height: 90px;
+	position: absolute;
+	right: 10px;
+	width: auto
+}
+
 .call2action {
 	background: linear-gradient(to bottom, white, #31c8f3);
 	color: white

@@ -43,7 +43,6 @@ chmod -R +w ~/Documents/GitHub/obs
 
 # scenes
 jq -S --tab -f gp_local.jq	../gp/gp.json		> ../gp/gp_local.json
-jq -S --tab -f gp_naked.jq	../gp/gp.json		> ../gp/gp_naked.json
 jq -S --tab -f nd.jq		../gp/gp.json		> ../gp/nd.json
 jq -S --tab -f sr.jq		../gp/gp.json		> ../sr/sr.json
 jq -S --tab -f ss.jq		../gp/gp_local.json	> ../ss/ss.json
@@ -96,7 +95,7 @@ OBSUSR="gp"
 mkdir -p /tmp/target/$OBSUSR/basic/scenes
 for i in `ls ../*/*.json`; do
 #	[ `basename $i` == "gp_local.json" ] && jq -S --tab -f to$OBSUSR.jq $i > /tmp/target/$OBSUSR/basic/scenes/`basename $i`
-	[ `basename $i` == "gp_naked.json" ] && jq -S --tab -f to$OBSUSR.jq $i > /tmp/target/$OBSUSR/basic/scenes/`basename $i`
+	[ `basename $i` == "gp.json" ] && jq -S --tab -f to$OBSUSR.jq $i > /tmp/target/$OBSUSR/basic/scenes/`basename $i`
 done
 
 # profiles

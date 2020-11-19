@@ -1,5 +1,5 @@
 # init.lua
-s/--collection 'gp_naked'/--collection 'ss'/
+s/--collection 'gp'/--collection 'ss'/
 s/--profile 'gpYTsq'/--profile 'jeYTmq'/
 
 # global.ini
