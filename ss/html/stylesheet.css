@@ -8,7 +8,7 @@
 }
 
 #countdown {
-	color: #31c8f3;
+	color: #23b1d1;
 	font-size: 20px;
 	/*
 	right: 110px;
@@ -21,7 +21,7 @@
 }
 
 .call2action {
-	background: linear-gradient(to bottom, white, #31c8f3);
+	background: linear-gradient(to bottom, white, #23b1d1);
 	color: white
 }
 
@@ -37,7 +37,7 @@
 .message,
 .theme {
 	background: white;
-	color: #31c8f3
+	color: #23b1d1
 }
 
 #clockLogo {

@@ -13,8 +13,8 @@
 	.css,
 	.url
 	) |= sub("gp";"ss")
-| (.sources[] | select(.id == "color_source").settings.color) = 4294166577
-| (.sources[] | select(.name == "?").settings.color1) = 4294166577
+| (.sources[] | select(.id == "color_source").settings.color) = 4291932451
+| (.sources[] | select(.name == "?").settings.color1) = 4291932451
 | (.sources[] | select(.name == "?").settings.color2) = 4294967295
 | (.sources[] | select(.name == "Cam").hotkeys[
 	"libobs.show_scene_item.External"
