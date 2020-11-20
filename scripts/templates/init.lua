@@ -13,7 +13,7 @@ streamingLayoutSkype = {
 streamingLayoutFotoMagico = {
 	{"FotoMagico 5", nil, "Color LCD", nil, hs.geometry.rect(-990, -622, 950, 0), nil},
 	{"OBS", nil, "Color LCD", nil, hs.geometry.rect(40, 0, 950, 750), nil},
-	{"Skype", nil, "Color LCD", nil, hs.geometry.rect(-660, 0, 0, 0), nil}
+	{"Skype", nil, "Color LCD", nil, hs.geometry.rect(-695, 0, 0, 0), nil}
 }
 
 function appsClose()
@@ -115,11 +115,15 @@ function preFlightAudio()
 				headset = true
 			elseif not headset and not usbmic then
 				dev:setDefaultInputDevice()
-				dev:setInputVolume(50)
+				dev:setInputVolume(75)
 			end
 		elseif dev:transportType() == "Virtual" then
 			dev:setInputVolume(50) -- NDI
 
+		elseif not headset and dev:uid() == "AppleUSBAudioEngine:LG Electronics Inc.:USB Audio:14541000:1" then
+			dev:setDefaultInputDevice()
+			dev:setInputVolume(75) -- USB
+			usbmic = true
 		elseif not headset and dev:uid() == "AppleUSBAudioEngine:Unknown Manufacturer:Trust GXT 232 Microphone:14130000:1" then
 			dev:setDefaultInputDevice()
 			dev:setInputVolume(100) -- USB
@@ -127,10 +131,6 @@ function preFlightAudio()
 		elseif not headset and dev:uid() == "AppleUSBAudioEngine:Unknown Manufacturer:Unknown USB Audio Device:6EBAAA60:1" then
 			dev:setDefaultInputDevice()
 			dev:setInputVolume(40) -- USB
-			usbmic = true
-		elseif not headset and dev:uid() == "AppleUSBAudioEngine:Unknown Manufacturer: ??? LG ???" then
-			dev:setDefaultInputDevice()
-			dev:setInputVolume(75) -- USB
 			usbmic = true
 		else
 			dev:setInputMuted(true)
@@ -156,8 +156,6 @@ function preFlightAudio()
 			else
 				dev:setOutputVolume(10)
 			end
-		elseif dev:transportType() == "USB" and not headset then
-			dev:setOutputVolume(50)
 		elseif dev:transportType() == "Virtual" then						 -- BlackHole
 			dev:setDefaultOutputDevice()
 			dev:setInputVolume(75)

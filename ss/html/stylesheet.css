@@ -7,6 +7,19 @@
 	width: auto
 }
 
+#countdown {
+	color: #31c8f3;
+	font-size: 20px;
+	/*
+	right: 110px;
+	top: 42px;
+	*/
+	bottom: 50%;
+	right: 10px;
+	align: center;
+	position: absolute;
+}
+
 .call2action {
 	background: linear-gradient(to bottom, white, #31c8f3);
 	color: white

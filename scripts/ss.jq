@@ -21,3 +21,4 @@
 	]) |= . + [{"key": "OBS_KEY_I"}]
 | (.sources[] | select(.name == "Cam").settings.items[] | select(.name == "Overlay Chat").pos.y) = 510
 | (.sources[] | select(.name == "Overlay Chat").settings.height) = 210
+| (.sources[] | select(.name == "Overlay Chat").settings.width) = 750

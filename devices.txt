@@ -18,6 +18,7 @@ C02Z2297LVDR	MacBook Pro (15-inch, 2019)
 
 LG
 "device_name": "LG UltraFine Display Audio"
+"device_id": "AppleUSBAudioEngine:LG UltraFine Display Audio:LG Electronics Inc.:14541000:1"
 
 Logitech
 "device": "0x14200000046d0823"
