@@ -1,6 +1,6 @@
 var start = {
 	theme: "#LIVE 🔴 Cati & Johannes Erdmann",
-	message: "Gleich: ⛵ Segelsofa 2.0 🛋️",
+	message: "Gleich: ⛵ #Segelsofa 🛋️",
 	call2action: "👁 Sei jetzt LIVE dabei!"
 };
 var finish = {

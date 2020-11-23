@@ -3,12 +3,6 @@ del(
 	.DesktopAudioDevice1,
 	(
 		.sources[] |
-#			(
-#				select(.name == "External").filters[] | select(.id == (
-#					"sharpness_filter"
-#					)
-#				)
-#			),
 			(
 				., .settings.items[]? | select(.name == (
 					"NDI",

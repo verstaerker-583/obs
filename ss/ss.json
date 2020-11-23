@@ -417,7 +417,7 @@
 				"color1": 4291932451,
 				"color2": 4294967295,
 				"font": {
-					"face": "Helvetica Neue",
+					"face": "Comic Sans MS",
 					"size": 288,
 					"style": "Condensed Black"
 				},
@@ -852,7 +852,7 @@
 						"name": "?",
 						"pos": {
 							"x": 250,
-							"y": 340
+							"y": 320
 						}
 					},
 					{
