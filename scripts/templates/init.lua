@@ -120,9 +120,9 @@ function preFlightAudio()
 		elseif dev:transportType() == "Virtual" then
 			dev:setInputVolume(50) -- NDI
 
-		elseif not headset and dev:uid() == "AppleUSBAudioEngine:LG Electronics Inc.:USB Audio:14541000:1" then
+		elseif not headset and dev:uid() == "AppleUSBAudioEngine:LG Electronics Inc.:USB Audio:141000:1" then
 			dev:setDefaultInputDevice()
-			dev:setInputVolume(75) -- USB
+			dev:setInputVolume(100) -- USB
 			usbmic = true
 		elseif not headset and dev:uid() == "AppleUSBAudioEngine:Unknown Manufacturer:Trust GXT 232 Microphone:14130000:1" then
 			dev:setDefaultInputDevice()
@@ -156,6 +156,8 @@ function preFlightAudio()
 			else
 				dev:setOutputVolume(10)
 			end
+		elseif dev:transportType() == "USB" then						 -- USB
+				dev:setOutputVolume(10)
 		elseif dev:transportType() == "Virtual" then						 -- BlackHole
 			dev:setDefaultOutputDevice()
 			dev:setInputVolume(75)

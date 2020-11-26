@@ -47,6 +47,7 @@ elif .name == "gp_local" then
 			)
 		)
 	)
+	| (.sources[] | select(.name == "Cam").settings.items[] | select(.name == "screen").pos.y) = 475
 elif .name == "bd" then
 	del(
 		(
