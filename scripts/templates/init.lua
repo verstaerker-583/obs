@@ -39,7 +39,7 @@ end
 
 function appsStart()
 	hs.execute(
-		"open -a 'OBS' --args --collection 'gp' --disable-updater --profile 'gpYTsq' --scene 'Start' --startstreaming --startvirtualcam --unfiltered_log --verbose"
+		"open -a 'OBS' --args --collection 'gp' --disable-updater --profile 'gpYTsq' --scene 'Start' --startvirtualcam --unfiltered_log --verbose"
 	)
 	if Skype then
 		hs.application.open("NDI Virtual Input", 0, true)

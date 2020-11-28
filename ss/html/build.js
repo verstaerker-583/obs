@@ -87,17 +87,22 @@ function countdown() {
 
 		var distance = countDownDate - now;
 
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		document.getElementById("countdown").innerHTML = + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+		document.getElementById("countdown").innerHTML = "📍" + hours + "h " + minutes + "m " + seconds + "s ";
 
 		if (distance < 0) {
-			clearInterval(x);
+			document.getElementById("hostLogo").classList.add("heartbeat");
 			document.getElementById("countdown").classList.add("heartbeat");
 			document.getElementById("countdown").innerHTML = "🎉 Herzlichen Glückwunsch Johannes! 🍻";
+
+			document.getElementById("horn").play();
+		}
+		if (distance < -30000) {
+			clearInterval(x);
+			document.getElementById("countdown").remove();
 		}
 	}, 1000);
 }
@@ -106,6 +111,13 @@ function loadCountdown() {
 	var elmnt = document.createElement("div");
 	elmnt.id = "countdown";
 	document.body.appendChild(elmnt);
+
+	elmnt = document.createElement("AUDIO");
+	elmnt.id = "horn";
+	elmnt.src = "https://www.klang-kanal.de/fileadmin//user_upload/HornSchoen.wav";
+	elmnt.preload;
+	document.body.appendChild(elmnt);
+
 	countdown();
 }
 
