@@ -21,4 +21,4 @@ var pics = {
 	presenterLogo: "https://yt3.ggpht.com/a/AATXAJz8tFuSp02_HZcgDnqwYaXNqTpo_NPVUPgOEbBx=s196"
 };
 var alarmTime = "20:00";
-var videoId = "1_kg4FkPFfo";
+var videoId = "d36usGhzZ7E";
