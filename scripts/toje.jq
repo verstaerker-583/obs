@@ -36,6 +36,9 @@ del(
 		)
 	)
 )
+| (.AuxAudioDevice1.filters[] | select(.id == "noise_gate_filter").settings.open_threshold) = -32
+| (.sources[] | select(.name == "External").filters) |= . + [{"id": "color_filter"}]
+| (.sources[] | select(.name == "External").filters[] | select(.id == "color_filter").name) = "Color Correction" 
 | (.sources[] | select(.name == "External").settings.device) = "0x141300001bcf0215"
 | (.sources[] | select(.name == "Internal").settings.device) = "CC26163C4LSGDV4AA"
 | (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/johanneserdmann/Desktop/intro.mp4"

@@ -575,6 +575,9 @@
 						"key": "OBS_KEY_G"
 					},
 					{
+						"key": "OBS_KEY_I"
+					},
+					{
 						"key": "OBS_KEY_V"
 					}
 				],
@@ -726,9 +729,6 @@
 					},
 					{
 						"key": "OBS_KEY_NUM2"
-					},
-					{
-						"key": "OBS_KEY_I"
 					}
 				],
 				"libobs.show_scene_item.Intro": [

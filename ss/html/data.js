@@ -16,7 +16,7 @@ var donate = {
 var pics = {
 	channelIcon: "https://yt3.ggpht.com/a/AATXAJwZ4zk60xqw8bifPYzq3OivaUcxC3eUpSTvaJeL=s196",
 	clockLogo: "../jeLogo.svg",
-	hostLogo: "https://upload.wikimedia.org/wikipedia/commons/4/42/Bundesstraße_35_number.svg",
+	hostLogo: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Weihnachtsbaum.wiki.png",
 	organizationLogoNeg: "../jeLogo2.png",
 	presenterLogo: "https://yt3.ggpht.com/a/AATXAJz8tFuSp02_HZcgDnqwYaXNqTpo_NPVUPgOEbBx=s196"
 };

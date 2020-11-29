@@ -1,23 +1,10 @@
 @import "../../gp/html/stylesheet.css";
 #hostLogo {
 	bottom: 10px;
-	height: 90px;
+	height: 135px;
 	position: absolute;
 	right: 10px;
 	width: auto
-}
-
-#countdown {
-	color: #23b1d1;
-	font-size: 20px;
-	/*
-	right: 110px;
-	top: 42px;
-	*/
-	bottom: 50%;
-	right: 10px;
-	align: center;
-	position: absolute;
 }
 
 .call2action {
