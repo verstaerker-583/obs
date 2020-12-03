@@ -21,4 +21,4 @@ var pics = {
 };
 pics.clockLogo = pics.organizationLogo;
 var alarmTime = "19:30";
-var videoId = "42cLW0l2Gt0";
+var videoId = "3-zfp-wB10o";

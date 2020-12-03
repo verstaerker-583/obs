@@ -160,7 +160,7 @@ function preFlightAudio()
 				dev:setOutputVolume(10)
 		elseif dev:transportType() == "Virtual" then						 -- BlackHole
 			dev:setDefaultOutputDevice()
-			dev:setInputVolume(75)
+			dev:setInputVolume(100)
 			dev:setOutputVolume(100)
 		else
 			dev:setMuted(true)
