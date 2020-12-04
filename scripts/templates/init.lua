@@ -93,8 +93,8 @@ function postFlight()
 end
 
 function preFlight()
-	preFlightSystem()
 	preFlightAudio()
+	preFlightSystem()
 end
 
 function preFlightAudio()
