@@ -122,7 +122,7 @@ function preFlightAudio()
 
 		elseif not headset and dev:uid() == "AppleUSBAudioEngine:LG Electronics Inc.:USB Audio:141000:1" then
 			dev:setDefaultInputDevice()
-			dev:setInputVolume(100) -- USB
+			dev:setInputVolume(90) -- USB
 			usbmic = true
 		elseif not headset and dev:uid() == "AppleUSBAudioEngine:Unknown Manufacturer:Trust GXT 232 Microphone:14130000:1" then
 			dev:setDefaultInputDevice()
@@ -208,7 +208,7 @@ function preFlightSystem()
 			hs.alert("🚨 📶 🚨", 10)
 			log.i("🚨 📶 🚨")
 		else
-			hs.wifi.setPower(false)
+--			hs.wifi.setPower(false)
 		end
 	end
 end

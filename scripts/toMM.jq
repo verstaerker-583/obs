@@ -1,4 +1,4 @@
-if .name == "gp_naked" then
+if .name == "gp" then
 	del(
 		.DesktopAudioDevice1,
 		(
