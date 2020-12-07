@@ -5,4 +5,4 @@ specific obs configurations and overlays
 
 [🔴 #DieWeltImBlick mit Markus Mauthe](https://www.youtube.com/playlist?list=PL6J1Sg6X3cyzoqTCSOT2KBQgiaEMqguG9)
 
-[#Segelsofa 🔴](https://www.youtube.com/playlist?list=PL8dKlqIamEwQ9cqebtHu7SGSUo0Zve-Lo)
+[🔴 #Segelsofa](https://www.youtube.com/playlist?list=PL8dKlqIamEwQ9cqebtHu7SGSUo0Zve-Lo)
