@@ -42,13 +42,13 @@ chmod -R +w ~/Documents/GitHub/obs
 /Applications/Inkscape.app/Contents/MacOS/inkscape --export-type="png" ../*/*Mask*.svg &>/dev/null
 
 # scenes
-jq -S --tab -f gp_local.jq	../gp/gp.json		> ../gp/gp_local.json
-jq -S --tab -f nd.jq		../gp/gp.json		> ../gp/nd.json
-jq -S --tab -f sr.jq		../gp/gp.json		> ../sr/sr.json
-jq -S --tab -f ss.jq		../gp/gp_local.json	> ../ss/ss.json
+jq -S --tab -c -f gp_local.jq	../gp/gp.json		> ../gp/gp_local.json
+jq -S --tab -c -f nd.jq		../gp/gp.json		> ../gp/nd.json
+jq -S --tab -c -f sr.jq		../gp/gp.json		> ../sr/sr.json
+jq -S --tab -c -f ss.jq		../gp/gp_local.json	> ../ss/ss.json
 
-jq -S --tab -f bd_solo.jq	../gp/gp.json		> ../bd/bd_solo.json
-jq -S --tab -f tolj.jq		../bd/bd_solo.json	> ../bd/bd_lutz.json
+jq -S --tab -c -f bd_solo.jq	../gp/gp.json		> ../bd/bd_solo.json
+jq -S --tab -c -f tolj.jq	../bd/bd_solo.json	> ../bd/bd_lutz.json
 
 for QUALITY in lq mq sq; do
 	mkdir -p ../profiles/YT$QUALITY

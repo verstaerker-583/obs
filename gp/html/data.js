@@ -1,3 +1,4 @@
+/*
 var start = {
 	theme: "#LIVE 🔴 Markus Mauthe - Naturfotograf & Umweltaktivist",
 	message_neg: "Gleich: Die Welt 🌍 im Blick 📷",
@@ -21,4 +22,5 @@ var pics = {
 };
 pics.clockLogo = pics.organizationLogo;
 var alarmTime = "19:30";
-var videoId = "3-zfp-wB10o";
+var videoId = "3py7TVckUT0";
+*/
