@@ -14,7 +14,7 @@ var donate = {
 	call2action: "⇨ Spendier‘ uns doch einen Kaffee! 💙"
 };
 var pics = {
-	channelIcon: "https://yt3.ggpht.com/a/AATXAJwZ4zk60xqw8bifPYzq3OivaUcxC3eUpSTvaJeL=s196",
+	channelIcon: "https://yt3.ggpht.com/ytc/AAUvwni8JzXEQMDZ7AaB9V1DbrqGv1qRXPHkBe-56NtM=s196",
 	clockLogo: "../jeLogo.svg",
 	organizationLogoNeg: "../jeLogo2.png",
 	presenterLogo: "https://yt3.ggpht.com/a/AATXAJz8tFuSp02_HZcgDnqwYaXNqTpo_NPVUPgOEbBx=s196"
