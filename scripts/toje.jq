@@ -43,3 +43,5 @@ del(
 | (.sources[] | select(.name == "Internal").settings.device) = "CC26163C4LSGDV4AA"
 | (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/johanneserdmann/Desktop/intro.mp4"
 | (.sources[] | select(.name == "Intro").volume) = 0.5
+
+| del(..|.monitoring_type?)

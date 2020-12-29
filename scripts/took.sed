@@ -1,6 +1,6 @@
 # init.lua
-s/FotoMagico = false/FotoMagico = true/
-s/Skype = false/Skype = true/
+#s/FotoMagico = false/FotoMagico = true/
+#s/Skype = false/Skype = true/
 s/--profile 'gpYTsq'/--profile 'gpYTmq'/
 
 # global.ini
