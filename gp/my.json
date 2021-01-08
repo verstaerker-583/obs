@@ -3,15 +3,26 @@
 		"filters": [
 			{
 				"id": "noise_suppress_filter",
-				"name": "Noise Suppression"
+				"name": "Noise Suppression",
+				"settings": {
+					"suppress_level": -32
+				}
 			},
 			{
 				"id": "noise_gate_filter",
-				"name": "Noise Gate"
+				"name": "Noise Gate",
+				"settings": {
+					"attack_time": 1,
+					"open_threshold": -28
+				}
 			},
 			{
 				"id": "compressor_filter",
-				"name": "Compressor"
+				"name": "Compressor",
+				"settings": {
+					"attack_time": 1,
+					"output_gain": 3
+				}
 			},
 			{
 				"id": "limiter_filter",
@@ -22,19 +33,22 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
+					"key": "OBS_KEY_M"
+				},
+				{
 					"key": "OBS_KEY_1"
 				},
 				{
 					"key": "OBS_KEY_4"
 				},
 				{
-					"key": "OBS_KEY_M"
-				},
-				{
 					"key": "OBS_KEY_O"
 				}
 			],
 			"libobs.unmute": [
+				{
+					"key": "OBS_KEY_M"
+				},
 				{
 					"key": "OBS_KEY_2"
 				},
@@ -52,9 +66,6 @@
 				},
 				{
 					"key": "OBS_KEY_I"
-				},
-				{
-					"key": "OBS_KEY_M"
 				}
 			]
 		},
@@ -62,6 +73,77 @@
 		"name": "Microphone",
 		"private_settings": {
 			"volume_locked": true
+		}
+	},
+	"AuxAudioDevice2": {
+		"filters": [
+			{
+				"id": "noise_suppress_filter",
+				"name": "Noise Suppression",
+				"settings": {
+					"suppress_level": -32
+				}
+			},
+			{
+				"id": "noise_gate_filter",
+				"name": "Noise Gate",
+				"settings": {
+					"attack_time": 1,
+					"open_threshold": -28
+				}
+			},
+			{
+				"id": "compressor_filter",
+				"name": "Compressor",
+				"settings": {
+					"attack_time": 1,
+					"output_gain": 3
+				}
+			},
+			{
+				"id": "limiter_filter",
+				"name": "Limiter"
+			}
+		],
+		"flags": 2,
+		"hotkeys": {
+			"libobs.mute": [
+				{
+					"key": "OBS_KEY_1"
+				},
+				{
+					"key": "OBS_KEY_2"
+				},
+				{
+					"key": "OBS_KEY_3"
+				},
+				{
+					"key": "OBS_KEY_4"
+				},
+				{
+					"key": "OBS_KEY_O"
+				}
+			],
+			"libobs.unmute": [
+				{
+					"key": "OBS_KEY_F"
+				},
+				{
+					"key": "OBS_KEY_G"
+				},
+				{
+					"key": "OBS_KEY_H"
+				}
+			]
+		},
+		"id": "coreaudio_input_capture",
+		"monitoring_type": 2,
+		"name": "NDI Audio",
+		"private_settings": {
+			"volume_locked": true
+		},
+		"settings": {
+			"device_id": "BF568F24-731B-41DB-932E-AC7E260BC71A"
 		}
 	},
 	"DesktopAudioDevice1": {
@@ -78,13 +160,13 @@
 		"hotkeys": {
 			"libobs.mute": [
 				{
+					"key": "OBS_KEY_D"
+				},
+				{
 					"key": "OBS_KEY_1"
 				},
 				{
 					"key": "OBS_KEY_4"
-				},
-				{
-					"key": "OBS_KEY_D"
 				},
 				{
 					"key": "OBS_KEY_F"
@@ -101,13 +183,13 @@
 			],
 			"libobs.unmute": [
 				{
+					"key": "OBS_KEY_D"
+				},
+				{
 					"key": "OBS_KEY_2"
 				},
 				{
 					"key": "OBS_KEY_3"
-				},
-				{
-					"key": "OBS_KEY_D"
 				},
 				{
 					"key": "OBS_KEY_I"
@@ -125,7 +207,7 @@
 		}
 	},
 	"current_scene": "Start",
-	"name": "new",
+	"name": "gp",
 	"preview_locked": true,
 	"sources": [
 		{
@@ -165,130 +247,24 @@
 			"name": "Internal"
 		},
 		{
-			"id": "browser_source",
-			"name": "Overlay Cam",
-			"settings": {
-				"css": "",
-				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/gp/html/cam.html",
-				"width": 1280
-			}
-		},
-		{
-			"id": "browser_source",
-			"name": "Overlay Chat",
-			"settings": {
-				"css": "@import url(https://verstaerker-583.github.io/obs/gp/html/chat.css)",
-				"height": 110,
-				"url": "https://verstaerker-583.github.io/obs/gp/html/chat.html",
-				"width": 920
-			}
-		},
-		{
-			"id": "browser_source",
-			"name": "Overlay Donate",
-			"settings": {
-				"css": "",
-				"fps_custom": true,
-				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/gp/html/donate.html",
-				"width": 1280
-			}
-		},
-		{
-			"id": "browser_source",
-			"name": "Overlay Finish",
-			"settings": {
-				"css": "",
-				"fps_custom": true,
-				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/gp/html/finish.html",
-				"width": 1280
-			}
-		},
-		{
-			"id": "browser_source",
-			"name": "Overlay Start",
-			"settings": {
-				"css": "",
-				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/gp/html/start.html",
-				"width": 1280
-			}
-		},
-		{
 			"filters": [
 				{
-					"enabled": false,
-					"id": "noise_suppress_filter",
-					"name": "Noise Suppression"
+					"id": "sharpness_filter",
+					"name": "Sharpen"
 				},
 				{
-					"enabled": false,
-					"id": "noise_gate_filter",
-					"name": "Noise Gate"
-				},
-				{
-					"enabled": false,
-					"id": "compressor_filter",
-					"name": "Compressor"
-				},
-				{
-					"enabled": false,
-					"id": "limiter_filter",
-					"name": "Limiter"
+					"id": "clut_filter",
+					"name": "Apply LUT",
+					"settings": {
+						"clut_amount": 0.25,
+						"image_path": "https://verstaerker-583.github.io/obs/webcam_preset_1.png"
+					}
 				}
 			],
-			"flags": 2,
-			"hotkeys": {
-				"libobs.mute": [
-					{
-						"key": "OBS_KEY_1"
-					},
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_4"
-					},
-					{
-						"key": "OBS_KEY_O"
-					}
-				],
-				"libobs.unmute": [
-					{
-						"key": "OBS_KEY_F"
-					},
-					{
-						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_H"
-					}
-				]
-			},
-			"id": "browser_source",
-			"monitoring_type": 2,
-			"name": "Remote",
-			"private_settings": {
-				"volume_locked": true
-			},
+			"id": "av_capture_input",
+			"name": "NDI",
 			"settings": {
-				"css": "",
-				"height": 720,
-				"reroute_audio": true,
-				"url": "https://obs.ninja/beta?codec=h264&quality=2&room=verstaerker_583&scene&view=GuestA",
-				"width": 1280
-			}
-		},
-		{
-			"id": "display_capture",
-			"name": "Screen Capture",
-			"settings": {
-				"display": 1
+				"device": "BB86C477-373F-49D9-AA4B-CE86A0E883F1"
 			}
 		},
 		{
@@ -308,9 +284,6 @@
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
-			},
-			"settings": {
-				"hw_decode": true
 			}
 		},
 		{
@@ -332,8 +305,7 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"close_when_inactive": true,
-				"hw_decode": true
+				"close_when_inactive": true
 			}
 		},
 		{
@@ -348,6 +320,78 @@
 					"style": "Condensed Black"
 				},
 				"text": "?"
+			}
+		},
+		{
+			"id": "display_capture",
+			"name": "Screen Capture",
+			"settings": {
+				"display": 1
+			}
+		},
+		{
+			"id": "browser_source",
+			"name": "Overlay Start",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "",
+				"height": 720,
+				"url": "https://verstaerker-583.github.io/obs/gp/html/start.html",
+				"width": 1280
+			}
+		},
+		{
+			"id": "browser_source",
+			"name": "Overlay Cam",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "",
+				"height": 720,
+				"url": "https://verstaerker-583.github.io/obs/gp/html/cam.html",
+				"width": 1280
+			}
+		},
+		{
+			"id": "browser_source",
+			"name": "Overlay Chat",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "@import url(https://verstaerker-583.github.io/obs/gp/html/chat.css)",
+				"height": 110,
+				"url": "https://verstaerker-583.github.io/obs/gp/html/chat.html",
+				"width": 920
+			}
+		},
+		{
+			"id": "browser_source",
+			"name": "Overlay Donate",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "",
+				"height": 720,
+				"url": "https://verstaerker-583.github.io/obs/gp/html/donate.html",
+				"width": 1280
+			}
+		},
+		{
+			"id": "browser_source",
+			"name": "Overlay Finish",
+			"private_settings": {
+				"mixer_hidden": true
+			},
+			"settings": {
+				"css": "",
+				"height": 720,
+				"url": "https://verstaerker-583.github.io/obs/gp/html/finish.html",
+				"width": 1280
 			}
 		},
 		{
@@ -388,6 +432,9 @@
 				],
 				"libobs.hide_scene_item.?": [
 					{
+						"key": "OBS_KEY_MINUS"
+					},
+					{
 						"key": "OBS_KEY_2"
 					},
 					{
@@ -398,17 +445,14 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_MINUS"
 					}
 				],
 				"libobs.hide_scene_item.External": [
 					{
-						"key": "OBS_KEY_2"
+						"key": "OBS_KEY_DEAD_GRAVE"
 					},
 					{
-						"key": "OBS_KEY_DEAD_GRAVE"
+						"key": "OBS_KEY_2"
 					},
 					{
 						"key": "OBS_KEY_F"
@@ -431,12 +475,23 @@
 						"key": "OBS_KEY_G"
 					}
 				],
-				"libobs.hide_scene_item.Overlay Chat": [
+				"libobs.hide_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_2"
 					},
 					{
+						"key": "OBS_KEY_G"
+					},
+					{
+						"key": "OBS_KEY_I"
+					}
+				],
+				"libobs.hide_scene_item.Overlay Chat": [
+					{
 						"key": "OBS_KEY_C"
+					},
+					{
+						"key": "OBS_KEY_2"
 					},
 					{
 						"key": "OBS_KEY_F"
@@ -450,24 +505,13 @@
 				],
 				"libobs.hide_scene_item.Overlay Donate": [
 					{
-						"key": "OBS_KEY_2"
-					},
-					{
 						"key": "OBS_KEY_E"
 					},
 					{
-						"key": "OBS_KEY_F"
-					},
-					{
-						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_I"
-					}
-				],
-				"libobs.hide_scene_item.Remote": [
-					{
 						"key": "OBS_KEY_2"
+					},
+					{
+						"key": "OBS_KEY_F"
 					},
 					{
 						"key": "OBS_KEY_G"
@@ -492,10 +536,10 @@
 				],
 				"libobs.hide_scene_item.screen": [
 					{
-						"key": "OBS_KEY_2"
+						"key": "OBS_KEY_BRACKETRIGHT"
 					},
 					{
-						"key": "OBS_KEY_BRACKETRIGHT"
+						"key": "OBS_KEY_2"
 					},
 					{
 						"key": "OBS_KEY_F"
@@ -522,6 +566,11 @@
 						"key": "OBS_KEY_I"
 					}
 				],
+				"libobs.show_scene_item.NDI": [
+					{
+						"key": "OBS_KEY_F"
+					}
+				],
 				"libobs.show_scene_item.Overlay Chat": [
 					{
 						"key": "OBS_KEY_C"
@@ -530,11 +579,6 @@
 				"libobs.show_scene_item.Overlay Donate": [
 					{
 						"key": "OBS_KEY_E"
-					}
-				],
-				"libobs.show_scene_item.Remote": [
-					{
-						"key": "OBS_KEY_F"
 					}
 				],
 				"libobs.show_scene_item.guest": [
@@ -582,10 +626,18 @@
 					{
 						"align": 0,
 						"locked": true,
-						"name": "Remote",
+						"name": "NDI",
 						"pos": {
 							"x": 640,
 							"y": 360
+						}
+					},
+					{
+						"locked": true,
+						"name": "Overlay Chat",
+						"pos": {
+							"x": 360,
+							"y": 610
 						}
 					},
 					{
@@ -632,14 +684,6 @@
 					},
 					{
 						"locked": true,
-						"name": "Overlay Chat",
-						"pos": {
-							"x": 360,
-							"y": 610
-						}
-					},
-					{
-						"locked": true,
 						"name": "Overlay Donate"
 					},
 					{
@@ -676,10 +720,10 @@
 				],
 				"libobs.show_scene_item.cams": [
 					{
-						"key": "OBS_KEY_3"
+						"key": "OBS_KEY_BRACKETRIGHT"
 					},
 					{
-						"key": "OBS_KEY_BRACKETRIGHT"
+						"key": "OBS_KEY_3"
 					},
 					{
 						"key": "OBS_KEY_H"
@@ -765,7 +809,7 @@
 					"id": "mask_filter",
 					"name": "Image Mask/Blend",
 					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/gp/camsMaskNew.png",
+						"image_path": "https://verstaerker-583.github.io/obs/gp/camsMask.png",
 						"type": "mask_alpha_filter.effect"
 					}
 				}
@@ -778,26 +822,26 @@
 				],
 				"libobs.hide_scene_item.Internal": [
 					{
-						"key": "OBS_KEY_3"
+						"key": "OBS_KEY_DEAD_GRAVE"
 					},
 					{
-						"key": "OBS_KEY_DEAD_GRAVE"
+						"key": "OBS_KEY_3"
 					},
 					{
 						"key": "OBS_KEY_H"
 					}
 				],
-				"libobs.hide_scene_item.Remote": [
+				"libobs.hide_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_3"
 					}
 				],
 				"libobs.show_scene_item.External": [
 					{
-						"key": "OBS_KEY_3"
+						"key": "OBS_KEY_DEAD_GRAVE"
 					},
 					{
-						"key": "OBS_KEY_DEAD_GRAVE"
+						"key": "OBS_KEY_3"
 					},
 					{
 						"key": "OBS_KEY_H"
@@ -808,7 +852,7 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.show_scene_item.Remote": [
+				"libobs.show_scene_item.NDI": [
 					{
 						"key": "OBS_KEY_H"
 					}
@@ -829,10 +873,10 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "External",
+						"name": "NDI",
 						"pos": {
-							"x": 1182,
-							"y": 360
+							"x": 108,
+							"y": 240
 						}
 					},
 					{
@@ -845,7 +889,7 @@
 						"locked": true,
 						"name": "Internal",
 						"pos": {
-							"x": 98,
+							"x": 108,
 							"y": 480
 						}
 					},
@@ -857,10 +901,10 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Remote",
+						"name": "External",
 						"pos": {
-							"x": 98,
-							"y": 240
+							"x": 1172,
+							"y": 360
 						}
 					}
 				]
@@ -872,7 +916,7 @@
 					"id": "mask_filter",
 					"name": "Image Mask/Blend",
 					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/gp/camMask.png",
+						"image_path": "https://verstaerker-583.github.io/obs/bd/camMask.png",
 						"type": "mask_alpha_filter.effect"
 					}
 				}
@@ -887,7 +931,7 @@
 					{
 						"align": 0,
 						"locked": true,
-						"name": "Remote",
+						"name": "NDI",
 						"pos": {
 							"x": 640,
 							"y": 360

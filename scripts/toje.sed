@@ -1,14 +1,14 @@
 # init.lua
 s/--collection 'gp'/--collection 'ss'/
-s/--profile 'gpYTsq'/--profile 'jeYTmq'/
+s/--profile 'gpYTsq'/--profile 'jeYTsq'/
 
 # global.ini
 /\[Basic\]/a\
-Profile=jeYTmq\
-ProfileDir=jeYTmq\
+Profile=jeYTsq\
+ProfileDir=jeYTsq\
 SceneCollection=ss\
 SceneCollectionFile=ss
 
-/\[SimpleOutput\]/a\
-Preset=ultrafast\
-UseAdvanced=true
+#/\[SimpleOutput\]/a\
+#Preset=ultrafast\
+#UseAdvanced=true

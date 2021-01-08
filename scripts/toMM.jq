@@ -79,32 +79,19 @@ end
 		.sources[] |
 			(
 				., .settings.items[]? | select(.name == (
-					"Overlay Chat",
-					"Video",
-					"Color Source",
-					"Slide Show"
-#					"Screen Capture"
+					"Overlay Chat"
 					)
 				)
 			),
 			(
 				.hotkeys[
 					"libobs.hide_scene_item.Overlay Chat",
-					"libobs.hide_scene_item.Video",
-					"libobs.show_scene_item.Overlay Chat",
-					"libobs.show_scene_item.Video"
+					"libobs.show_scene_item.Overlay Chat"
 					]
 			)
-	),
-	(
-		.. | select(.key? == (
-			"OBS_KEY_V"
-			)
-		)
 	)
 )
 | (.sources[] | select(.name == "External").settings.device) = "0x2543000043e9a4d"
 | (.sources[] | select(.name == "Internal").settings.device) = "0x8020000005ac8514"
 | (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/markus/Documents/DieWeltImBlick/intro"
 | (.sources[] | select(.name == "Outro").settings.local_file) = "/Users/markus/Documents/DieWeltImBlick/outro"
-| (.sources[] | select(.name == "Video").settings.local_file) = "/Users/markus/Documents/DieWeltImBlick/video"

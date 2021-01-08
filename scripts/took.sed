@@ -7,8 +7,8 @@ s/--profile 'gpYTsq'/--profile 'gpYTmq'/
 /\[Basic\]/a\
 Profile=mmYTmq\
 ProfileDir=mmYTmq\
-SceneCollection=nd\
-SceneCollectionFile=nd
+SceneCollection=new\
+SceneCollectionFile=new
 /AlwaysOnTop=true/d
 
 # basic.ini

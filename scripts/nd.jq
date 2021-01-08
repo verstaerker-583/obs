@@ -18,7 +18,6 @@
 						"Intro",
 						"NDI",
 						"Outro",
-						"Video",
 						"guest"
 					)
 				)
@@ -29,14 +28,12 @@
 					"libobs.hide_scene_item.NDI",
 					"libobs.hide_scene_item.Overlay Chat",
 					"libobs.hide_scene_item.Overlay Donate",
-					"libobs.hide_scene_item.Video",
 					"libobs.hide_scene_item.guest",
 					"libobs.show_scene_item.Intro",
 					"libobs.show_scene_item.NDI",
 					"libobs.show_scene_item.Overlay Cam",
 					"libobs.show_scene_item.Overlay Chat",
 					"libobs.show_scene_item.Overlay Donate",
-					"libobs.show_scene_item.Video",
 					"libobs.show_scene_item.guest"
 					]
 			)
@@ -47,8 +44,7 @@
 				"OBS_KEY_F",
 				"OBS_KEY_G",
 				"OBS_KEY_H",
-				"OBS_KEY_I",
-				"OBS_KEY_V"
+				"OBS_KEY_I"
 				)
 		)
 	)

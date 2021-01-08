@@ -14,10 +14,7 @@ del(
 				., .settings.items[]? | select(.name == (
 					"?",
 					"Overlay Chat",
-					"Overlay Donate",
-					"Color Source",
-					"Slide Show"
-#					"Screen Capture"
+					"Overlay Donate"
 					)
 				)
 			),
@@ -72,4 +69,3 @@ del(
 | (.sources[] | select(.name == "Internal").settings.device) = "CC24383EGBPF9T9CN"
 | (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/greenpeace/Documents/gp40/intro"
 | (.sources[] | select(.name == "Outro").settings.local_file) = "/Users/greenpeace/Documents/gp40/outro"
-| (.sources[] | select(.name == "Video").settings.local_file) = "/Users/greenpeace/Documents/gp40/video"
