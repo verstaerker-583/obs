@@ -1,0 +1,98 @@
+      body {
+      	font-size: 32px;
+      	background: transparent;
+      }
+      
+      .banner {
+	      position: absolute;
+	      left: 5%;
+	      bottom: 45%;
+      }
+      
+      .button {
+      	background-color: rgba(204, 0, 0);
+      	border-radius: 2px;
+      	border: none;
+      	color: white;
+      	padding: 0.5em;
+      	font-size: 32px;
+      	text-align: center;
+      	animation: goB 10s steps(1, end) infinite;
+      }
+      
+      .icons {
+      	top: 0.95em;
+      	height: 2.5em;
+      	position: relative;
+      }
+      
+      #thumb {
+      	display: inline;
+      	fill: rgba(144, 144, 144);
+      	animation: goA 10s steps(1, end) infinite;
+      }
+      
+      #bell_before {
+      	animation: goC 10s steps(1, end) infinite;
+      }
+      
+      #bell_after {
+      	animation: goD 10s steps(1, end) infinite;
+      }
+      
+      .button::before {
+      	content: "ABONNIEREN";
+      	animation: animate 10s steps(1, end) infinite;
+      }
+      
+      @keyframes animate {
+      	0% {
+      		content: "ABONNIEREN";
+      	}
+      	60% {
+      		content: "ABONNIERT";
+      	}
+      }
+      
+      @keyframes goA {
+      	0% {
+      		fill: rgba(144, 144, 144);
+      	}
+      	20% {
+      		fill: rgba(6, 95, 212);
+      	}
+      }
+      
+      @keyframes goB {
+      	0% {
+      		opacity: 0
+      	}
+      	40% {
+      		background-color: rgba(204, 0, 0);
+      		opacity: 1
+      	}
+      	60% {
+      		background-color: rgba(144, 144, 144);
+      	}
+      }
+      
+      @keyframes goC {
+      	0% {
+      		opacity: 0
+      	}
+      	60% {
+      		opacity: 1
+      	}
+      	80% {
+      		opacity: 0
+      	}
+      }
+      
+      @keyframes goD {
+      	0% {
+      		opacity: 0
+      	}
+      	80% {
+      		opacity: 1
+      	}
+      }

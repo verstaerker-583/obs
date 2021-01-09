@@ -1,140 +1,24 @@
 <!DOCTYPE HTML>
 <html>
-   <head>
-      <title>obs</title>
-      <meta charset="utf-8">
-      <meta name="author" content="Olaf Koepke,o.koepke@gmx.de">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-   <style>
-      body {
-      font-size: 32px;
-      }
-      .button {
-	      display: flex;
-      background-color: rgba(204,0,0);
-      border-radius: 2px;
-      border: none;
-      color: white;
-      padding: 0.5em;
-      font-size: 32px;
-      text-align: center;
-      animation: goB 10s steps(1, end) infinite;
-      }
-
-
-      .icons {
-      top: 0.95em;
-      height: 2.5em;
-      position: relative;
-      }
-      #ThumbUp {
-	display: inline;
-      	fill: rgba(144,144,144);
-      animation: goA 10s steps(1, end) infinite;
-     }
-      #bell_before {
-      animation: goC 10s steps(1, end) infinite;
-      }
-      #bell_after {
-      animation: goD 10s steps(1, end) infinite;
-      }
-      #buttonA {
-      animation: goBA 10s steps(1, end) infinite;
-      }
-      #buttonB {
-      animation: goBB 10s steps(1, end) infinite;
-      }
-
-@keyframes goA {
-	0%   {fill: rgba(144,144,144);
-	}
-	20%   {
-		fill: rgba(6,95,212);
-	}
-}
-
-@keyframes goB {
-	0% {
-		opacity: 0 
-	}
-	40% {
-		background-color: rgba(204,0,0);
-		opacity: 1 
-	}
-	60%   {
-		background-color: rgba(0,0,0,0.05);
-		content: "Blue";
-	}
-}
-
-@keyframes goBA {
-	0% {
-		opacity: 0; 
-		font-size: 0%
-	}
-	40% {
-		opacity: 1; 
-		font-size: 100%
-	}
-	60% {
-		opacity: 0; 
-		font-size: 0%
-	}
-}
-
-@keyframes goBB {
-	0% {
-		opacity: 0; 
-		font-size: 0%
-	}
-	40% {
-		opacity: 0; 
-		font-size: 0%
-	}
-	60% {
-		opacity: 1; 
-		font-size: 100%
-	}
-}
-
-@keyframes goC {
-	0% {
-		opacity: 0 
-	}
-	60%   {
-		opacity: 1 
-	}
-	80%   {
-		opacity: 0 
-	}
-}
-
-@keyframes goD {
-	0% {
-		opacity: 0 
-	}
-	80%   {
-		opacity: 1 
-	}
-}
-   </style>
-   <body>
-      <div>
-         <svg id="ThumbUp" class="icons" viewBox="0 0 24 24" height="48">
-            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z">
-            </path>
-         </svg>
-
-         <button class="button">
-		 <div id="buttonA">ABONNIEREN</div>
-		 <div id="buttonB">ABONNIERT</div>
-	 </button>
-
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" class="icons">
-            <path id="bell_before" d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"></path>
-            <path id="bell_after" d="M7.58 4.08L6.15 2.65C3.75 4.48 2.17 7.3 2.03 10.5h2c.15-2.65 1.51-4.97 3.55-6.42zm12.39 6.42h2c-.15-3.2-1.73-6.02-4.12-7.85l-1.42 1.43c2.02 1.45 3.39 3.77 3.54 6.42zM18 11c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2v-5zm-6 11c.14 0 .27-.01.4-.04.65-.14 1.18-.58 1.44-1.18.1-.24.15-.5.15-.78h-4c.01 1.1.9 2 2.01 2z"></path>
-  </svg>
-      </div>
-   </body>
+	<head>
+		<link rel="stylesheet" href="subscribe.css">
+		<meta charset="utf-8">
+		<meta name="author" content="Olaf Koepke,o.koepke@gmx.de">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>subscribe</title>
+	</head>
+	<body>
+		<span class="banner">
+			<svg id="thumb" class="icons" viewBox="0 0 24 24" height="48">
+				<path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z">
+				</path>
+			</svg>
+			<button class="button">
+			</button>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" class="icons">
+				<path id="bell_before" d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"></path>
+				<path id="bell_after" d="M7.58 4.08L6.15 2.65C3.75 4.48 2.17 7.3 2.03 10.5h2c.15-2.65 1.51-4.97 3.55-6.42zm12.39 6.42h2c-.15-3.2-1.73-6.02-4.12-7.85l-1.42 1.43c2.02 1.45 3.39 3.77 3.54 6.42zM18 11c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2v-5zm-6 11c.14 0 .27-.01.4-.04.65-.14 1.18-.58 1.44-1.18.1-.24.15-.5.15-.78h-4c.01 1.1.9 2 2.01 2z"></path>
+			</svg>
+		</span>
+	</body>
 </html>
