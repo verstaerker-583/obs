@@ -115,7 +115,7 @@ function preFlightAudio()
 				headset = true
 			elseif not headset and not usbmic then
 				dev:setDefaultInputDevice()
-				dev:setInputVolume(75)
+				dev:setInputVolume(100)
 			end
 		elseif dev:transportType() == "Virtual" then
 			dev:setInputVolume(50) -- NDI
@@ -124,7 +124,7 @@ function preFlightAudio()
 			dev:setDefaultInputDevice()
 			dev:setInputVolume(90) -- USB
 			usbmic = true
-		elseif not headset and dev:uid() == "AppleUSBAudioEngine:Unknown Manufacturer:Trust GXT 232 Microphone:14130000:1" then
+		elseif not headset and dev:uid() == "AppleUSBAudioEngine:Unknown Manufacturer:Trust GXT 232 Microphone:1114000:1" then
 			dev:setDefaultInputDevice()
 			dev:setInputVolume(100) -- USB
 			usbmic = true
@@ -136,11 +136,14 @@ function preFlightAudio()
 			dev:setInputMuted(true)
 		end
 
+--[[
 		if dev:outputVolume() then
 			log.f('In-/Output Device "%s"\n\t"%s"\t(%s) %.0f/%.0f (%s)', dev:name(), dev:uid(), dev:transportType(), dev:inputVolume(), dev:outputVolume(), dev:muted())
 		else
 			log.f('Input Device "%s"\n\t"%s"\t(%s) %s (%s)', dev:name(), dev:uid(), dev:transportType(), dev:inputVolume(), dev:muted())
 		end
+--]]		
+		log.f('Input Device "%s"\n\t"%s"\t(%s) %s (%s)', dev:name(), dev:uid(), dev:transportType(), dev:inputVolume(), dev:muted())
 	end
 	log.f('Default Input Device\n%s', hs.inspect(hs.audiodevice.current(true)))
 
@@ -160,7 +163,7 @@ function preFlightAudio()
 				dev:setOutputVolume(10)
 		elseif dev:transportType() == "Virtual" then						 -- BlackHole
 			dev:setDefaultOutputDevice()
-			dev:setInputVolume(100)
+--			dev:setInputVolume(100)
 			dev:setOutputVolume(100)
 		else
 			dev:setMuted(true)
@@ -169,7 +172,7 @@ function preFlightAudio()
 		if dev:inputVolume() then
 			log.f('In-/Output Device "%s"\n\t"%s"\t(%s) %.0f/%.0f (%s)', dev:name(), dev:uid(), dev:transportType(), dev:inputVolume(), dev:outputVolume(), dev:muted())
 		else
-			log.f('Output Device "%s"\n\t"%s"\t(%s) %s (%s)', dev:name(), dev:uid(), dev:transportType(), dev:volume(), dev:muted())
+			log.f('Output Device "%s"\n\t"%s"\t(%s) %.0f (%s)', dev:name(), dev:uid(), dev:transportType(), dev:volume(), dev:muted())
 		end
 	end
 	log.f('Default Output Device\n%s', hs.inspect(hs.audiodevice.current(false)))
