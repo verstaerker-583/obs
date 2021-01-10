@@ -124,10 +124,6 @@ function preFlightAudio()
 			dev:setDefaultInputDevice()
 			dev:setInputVolume(90) -- USB
 			usbmic = true
-		elseif not headset and dev:uid() == "AppleUSBAudioEngine:Unknown Manufacturer:Trust GXT 232 Microphone:1114000:1" then
-			dev:setDefaultInputDevice()
-			dev:setInputVolume(100) -- USB
-			usbmic = true
 		elseif not headset and dev:uid() == "AppleUSBAudioEngine:Unknown Manufacturer:Unknown USB Audio Device:6EBAAA60:1" then
 			dev:setDefaultInputDevice()
 			dev:setInputVolume(40) -- USB
