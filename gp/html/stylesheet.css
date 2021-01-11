@@ -126,8 +126,8 @@
 .element:after {
 	background: inherit;
 	bottom: 0;
-	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
 	box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
 	content: "";
 	left: 0;
 	outline: solid transparent;
@@ -140,7 +140,7 @@
 }
 
 .heartbeat {
-	animation: heartbeat 1.5s ease-in-out infinite both
+	animation: heartbeat 2s ease-in-out infinite both
 }
 
 .message {
