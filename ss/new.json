@@ -277,6 +277,7 @@
 			"settings": {
 				"css": "",
 				"height": 720,
+				"shutdown": true,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/subscribe.html",
 				"width": 1280
 			}
