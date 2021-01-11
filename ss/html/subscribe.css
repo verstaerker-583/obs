@@ -1,97 +1,104 @@
-body {
-	background: transparent;
-}
-
-.banner {
-	bottom: 45%;
-	font-size: 32px;
-	left: 5%;
-	position: absolute
-}
-
-.button {
-	animation: goB 10s steps(1, end) infinite;
-	background-color: rgba(204, 0, 0);
-	border: 0;
-	border-radius: 2px;
-	color: white;
-	font-size: inherit;
-	padding: .5em;
-}
-
-.icons {
-	height: 2.5em;
-	position: relative;
-	top: .95em
-}
-
-#thumb {
-	animation: goA 10s steps(1, end) infinite;
-	display: inline;
-	fill: rgba(144, 144, 144)
+#bell_after {
+	animation: bell_after 10s steps(1, end) infinite
 }
 
 #bell_before {
-	animation: goC 10s steps(1, end) infinite
+	animation: bell_before 10s steps(1, end) infinite
 }
 
-#bell_after {
-	animation: goD 10s steps(1, end) infinite
+#like {
+	animation: like 10s steps(1, end) infinite
 }
 
-.button::before {
-	animation: animate 10s steps(1, end) infinite;
-	content: "ABONNIEREN"
+.icons {
+	fill: rgba(144, 144, 144);
+	height: 2em;
+	position: relative;
+	top: .75em
 }
 
-@keyframes animate {
-	0% {
-		content: "ABONNIEREN"
-	}
-	60% {
-		content: "ABONNIERT"
-	}
+#share {
+	animation: share 10s steps(1, end) infinite;
 }
 
-@keyframes goA {
-	0% {
-		fill: rgba(144, 144, 144)
-	}
-	20% {
-		fill: rgba(6, 95, 212)
-	}
+.subscribe {
+	animation: subscribe 10s steps(1, end) infinite;
+	background-color: rgba(204, 0, 0);
+	border: 0;
+	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+	box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+	color: white;
+	font-size: inherit;
+	padding: .5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	text-transform: uppercase
 }
 
-@keyframes goB {
+.subscribe::before {
+	animation: content 10s steps(1, end) infinite;
+	content: "abonnieren"
+}
+
+.youtube {
+	font-size: 32px;
+	left: 10px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%)
+}
+
+@keyframes bell_after {
 	0% {
 		opacity: 0
 	}
-	40% {
-		background-color: rgba(204, 0, 0);
+	60% {
 		opacity: 1
 	}
-	60% {
+}
+
+@keyframes bell_before {
+	0% {
+		opacity: 0
+	}
+	45% {
+		opacity: 1
+	}
+}
+
+@keyframes subscribe {
+	0% {
+		opacity: 0
+	}
+	30% {
+		opacity: 1
+	}
+	45% {
 		background-color: rgba(144, 144, 144)
 	}
 }
 
-@keyframes goC {
-	0% {
-		opacity: 0
-	}
-	60% {
-		opacity: 1
-	}
-	80% {
-		opacity: 0
+@keyframes content {
+	45% {
+		content: "abonniert"
 	}
 }
 
-@keyframes goD {
+@keyframes like {
+	15% {
+		fill: rgba(6, 95, 212)
+	}
+}
+
+@keyframes share {
 	0% {
 		opacity: 0
 	}
-	80% {
+	85% {
 		opacity: 1
 	}
+}
+
+body {
+	background: transparent
 }
