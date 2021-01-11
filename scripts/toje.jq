@@ -44,5 +44,3 @@ del(
 | (.sources[] | select(.name == "Internal").settings.device) = "EAB7A68FEC2B4487AADFD8A91C1CB782"
 | (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/johanneserdmann/Desktop/intro.mp4"
 | (.sources[] | select(.name == "Intro").volume) = 0.5
-
-| del(..|.monitoring_type?)

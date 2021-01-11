@@ -12,5 +12,3 @@ del(
 | (.sources[] | select(.name == "External").settings.device) = "0x14100000046d0823"
 #| (.sources[] | select(.name == "External").settings.device) = "CC27327P54QGDV4AV"
 | (.sources[] | select(.name == "Internal").settings.device) = "CC27327P54QGDV4AV"
-
-| del(..|.monitoring_type?)

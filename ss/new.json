@@ -225,7 +225,6 @@
 			},
 			"settings": {
 				"css": "",
-				"fps_custom": true,
 				"height": 720,
 				"reroute_audio": true,
 				"url": "https://obs.ninja/beta?codec=h264&quality=2&room=verstaerker_583&scene&view=GuestA",
@@ -267,7 +266,6 @@
 			"name": "Overlay Donate",
 			"settings": {
 				"css": "",
-				"fps_custom": true,
 				"height": 720,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/donate.html",
 				"width": 1280
@@ -278,7 +276,6 @@
 			"name": "Overlay Subscribe",
 			"settings": {
 				"css": "",
-				"fps_custom": true,
 				"height": 720,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/subscribe.html",
 				"width": 1280
@@ -289,7 +286,6 @@
 			"name": "Overlay Finish",
 			"settings": {
 				"css": "",
-				"fps_custom": true,
 				"height": 720,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/finish.html",
 				"width": 1280
