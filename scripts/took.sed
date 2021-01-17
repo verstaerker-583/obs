@@ -1,7 +1,7 @@
 # init.lua
-#s/FotoMagico = false/FotoMagico = true/
-#s/Skype = false/Skype = true/
 s/--profile 'gpYTsq'/--profile 'gpYTmq'/
+s/--collection 'gp'/--collection 'new'/
+s/--startstreaming //
 
 # global.ini
 /\[Basic\]/a\
@@ -9,7 +9,8 @@ Profile=mmYTmq\
 ProfileDir=mmYTmq\
 SceneCollection=new\
 SceneCollectionFile=new
-/AlwaysOnTop=true/d
+#SceneCollection=gp\
+#SceneCollectionFile=gp
 
 # basic.ini
 /\[Audio\]/a\

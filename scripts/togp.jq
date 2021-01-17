@@ -61,7 +61,7 @@ del(
 		)
 	)
 )
-| (.sources[] | select(.id == "browser_source").settings.url) |= sub("gp";"gp40")
+| (.sources[] | select(.id == "browser_source").settings[]|strings)|= sub("gp";"gp40")
 | (.sources[] | select(.name == "Cam").hotkeys["libobs.show_scene_item.screen"]) |= . + [{"key": "OBS_KEY_2"}]
 | (.sources[] | select(.name == "Cam").hotkeys["libobs.show_scene_item.screen"]) |= . + [{"key": "OBS_KEY_I"}]
 #| (.sources[] | select(.name == "External").settings.device) = "0x14200000046d0823"

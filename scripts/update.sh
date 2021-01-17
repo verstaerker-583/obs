@@ -45,8 +45,8 @@ chmod -R +w ~/Documents/GitHub/obs
 jq -S --tab -c -f gp_local.jq	../gp/gp.json		> ../gp/gp_local.json
 jq -S --tab -c -f nd.jq		../gp/gp.json		> ../gp/nd.json
 jq -S --tab -c -f sr.jq		../gp/gp.json		> ../sr/sr.json
-#jq -S --tab -c -f ss.jq		../gp/gp_local.json	> ../ss/ss.json
-jq -S --tab -c -f ss_new.jq		../ss/new.json		> ../ss/ss.json
+#jq -S --tab -c -f ss.jq	../gp/gp_local.json	> ../ss/ss.json
+jq -S --tab -c -f ss_new.jq	../ss/new.json		> ../ss/ss.json
 
 jq -S --tab -c -f bd_solo.jq	../gp/gp.json		> ../bd/bd_solo.json
 jq -S --tab -c -f tolj.jq	../bd/bd_solo.json	> ../bd/bd_lutz.json

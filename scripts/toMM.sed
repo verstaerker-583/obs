@@ -1,9 +1,8 @@
 # init.lua
 #s/--collection 'gp'/--collection 'gp_local'/
-s/FotoMagico = false/FotoMagico = true/
-s/Skype = false/Skype = true/
-s/dev:setMode(1440, 900, 1)/dev:setMode(1680, 1050, 1)/
-s/dev:setMode(1920, 1080, 1)/dev:setMode(5120, 2880, 1)/
+s/Mode01w = 1440/Mode01w = 1920/
+s/Mode01h = 900/Mode01h = 1200/
+s/--always-on-top //
 
 # global.ini
 /\[Basic\]/a\
@@ -11,7 +10,6 @@ Profile=gpYTsq\
 ProfileDir=gpYTsq\
 SceneCollection=gp\
 SceneCollectionFile=gp
-/AlwaysOnTop=true/d
 
 # basic.ini
 /\[Audio\]/a\

@@ -1,6 +1,7 @@
 # init.lua
 s/--collection 'gp'/--collection 'ss'/
 s/--profile 'gpYTsq'/--profile 'jeYTsq'/
+s/--startvirtualcam //
 
 # global.ini
 /\[Basic\]/a\
@@ -9,6 +10,11 @@ ProfileDir=jeYTsq\
 SceneCollection=ss\
 SceneCollectionFile=ss
 
-#/\[SimpleOutput\]/a\
-#Preset=ultrafast\
-#UseAdvanced=true
+# basic.ini
+/\[Audio\]/a\
+MonitoringDeviceId=BuiltInSpeakerDevice
+#MonitoringDeviceId=BuiltInHeadphoneOutputDevice
+
+/\[SimpleOutput\]/a\
+Preset=faster\
+UseAdvanced=true

@@ -169,24 +169,8 @@
 				{
 					"id": "noise_suppress_filter",
 					"name": "Noise Suppression"
-				},
-				{
-					"enabled": false,
-					"id": "noise_gate_filter",
-					"name": "Noise Gate"
-				},
-				{
-					"enabled": false,
-					"id": "compressor_filter",
-					"name": "Compressor"
-				},
-				{
-					"enabled": false,
-					"id": "limiter_filter",
-					"name": "Limiter"
 				}
 			],
-			"flags": 2,
 			"hotkeys": {
 				"libobs.mute": [
 					{
@@ -219,15 +203,16 @@
 			},
 			"id": "browser_source",
 			"monitoring_type": 2,
-			"name": "GuestA",
+			"name": "Guest",
 			"private_settings": {
 				"volume_locked": true
 			},
 			"settings": {
-				"css": "",
 				"height": 720,
 				"reroute_audio": true,
-				"url": "https://obs.ninja/beta?codec=h264&quality=2&room=verstaerker_583&scene&view=GuestA",
+				"url": "https://rtc.ninja/beta?aj&clean&np&wc&optimize=0&ad=built&vd=obs&mvb=200&push=host&bc=guest&r=verstaerker583",
+				"url": "https://rtc.ninja/beta?aj&clean&np&wc&optimize=0&ad=built&vd=obs&mvb=200&push=verstaerker583host&pull=verstaerker583guest",
+				"url": "https://rtc.ninja/beta?aj&np&wc&optimize=0&ad=built&vd=obs&mvb=200&push=verstaerker583host&pull=verstaerker583guest",
 				"width": 1280
 			}
 		},
@@ -265,7 +250,6 @@
 			"id": "browser_source",
 			"name": "Overlay Donate",
 			"settings": {
-				"css": "",
 				"height": 720,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/donate.html",
 				"width": 1280
@@ -275,7 +259,6 @@
 			"id": "browser_source",
 			"name": "Overlay Subscribe",
 			"settings": {
-				"css": "",
 				"height": 720,
 				"shutdown": true,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/subscribe.html",
@@ -428,7 +411,7 @@
 						"key": "OBS_KEY_I"
 					}
 				],
-				"libobs.hide_scene_item.GuestA": [
+				"libobs.hide_scene_item.Guest": [
 					{
 						"key": "OBS_KEY_2"
 					},
@@ -539,7 +522,7 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.show_scene_item.GuestA": [
+				"libobs.show_scene_item.Guest": [
 					{
 						"key": "OBS_KEY_F"
 					}
@@ -609,7 +592,7 @@
 					{
 						"align": 0,
 						"locked": true,
-						"name": "GuestA",
+						"name": "Guest",
 						"pos": {
 							"x": 640,
 							"y": 360
@@ -802,7 +785,7 @@
 						"key": "OBS_KEY_H"
 					}
 				],
-				"libobs.hide_scene_item.GuestA": [
+				"libobs.hide_scene_item.Guest": [
 					{
 						"key": "OBS_KEY_3"
 					}
@@ -817,7 +800,7 @@
 						"key": "OBS_KEY_DEAD_GRAVE"
 					}
 				],
-				"libobs.show_scene_item.GuestA": [
+				"libobs.show_scene_item.Guest": [
 					{
 						"key": "OBS_KEY_H"
 					}
@@ -874,7 +857,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "GuestA",
+						"name": "Guest",
 						"pos": {
 							"x": 1172,
 							"y": 216
@@ -908,7 +891,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "GuestA",
+						"name": "Guest",
 						"pos": {
 							"x": 1064,
 							"x": 216,
