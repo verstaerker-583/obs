@@ -210,9 +210,9 @@
 			"settings": {
 				"height": 720,
 				"reroute_audio": true,
-				"url": "https://rtc.ninja/beta?aj&clean&np&wc&optimize=0&ad&vd=obs&mvb=200&push=host&bc=guest&r=verstaerker583",
-				"url": "https://rtc.ninja/beta?aj&clean&np&wc&optimize=0&ad&vd=obs&mvb=200&push=verstaerker583host&pull=verstaerker583guest",
-				"url": "https://rtc.ninja/beta?aj&clean&np&wc&optimize=0&ad&vd=obs&mvb=200&push=verstaerker583host&pull=verstaerker583guest",
+				"url": "https://rtc.ninja/beta?aj&clean&np&wc&optimize=0&sl&ad&vd=obs&mvb=200&push=host&bc=guest&r=verstaerker583",
+				"url": "https://rtc.ninja/beta?aj&clean&np&wc&optimize=0&sl&ad&vd=obs&mvb=200&push=verstaerker583host&pull=verstaerker583guest",
+				"url": "https://rtc.ninja/beta?aj&clean&np&wc&optimize=0&sl&ad&vd=obs&mvb=200&push=verstaerker583host&pull=verstaerker583guest",
 				"width": 1280
 			}
 		},
@@ -620,7 +620,7 @@
 						"locked": true,
 						"name": "?",
 						"pos": {
-							"x": 250,
+							"x": 640,
 							"y": 340
 						}
 					},
@@ -895,7 +895,7 @@
 						"name": "Guest",
 						"pos": {
 							"x": 1064,
-							"x": 216,
+							"x": 162,
 							"y": 360
 						},
 						"visible": true

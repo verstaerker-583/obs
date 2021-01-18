@@ -1,29 +1,29 @@
 @import "../../gp/html/stylesheet.css";
 
-#hostLogo {
-	border: 5px solid;
+#hostLogo,
+#organizationLogo,
+#organizationLogoNeg {
 	border-radius: 50%;
+	border: 5px solid;
 	bottom: 10px;
 	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
-	right: 10px;
 	padding: 8px;
 	position: absolute;
-	width: 124px
+	right: 10px;
+	width: 98px
 }
 
 #organizationLogo,
 #organizationLogoNeg {
-	border: 5px solid;
-	border-radius: 50%;
-	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
 	left: 10px;
-	padding: 8px;
-	position: absolute;
-	width: 124px
+	width: 98px
 }
 
-.call2action {
-	background: linear-gradient(to bottom, #feb900, #f39200)
+.call2action, 
+.message,
+.theme {
+	background: linear-gradient(to bottom, #feb900, #f39200);
+	color: white
 }
 
 .element:after {
@@ -31,19 +31,7 @@
 	transform: skew(0deg) translate(0.5em)
 }
 
-.message,
-.theme {
-	background: #fffad1;
-	background: #feb900;
-}
-
-@font-face {
-	font-family: Sunbeat;
-	src: url(https://verstaerker-583.github.io/obs/bd/svg/sunbeat.otf)
-}
-
 body {
 	background: no-repeat fixed url(https://yt3.ggpht.com/cDskyRniCi-_lwpNdiIvOzaj8YNIK6RyZ1LyDnvuBtzVtQVTn_XCyfRKkHRcz87dOm5srekI=w1280);
-	background-size: cover;
-	color: #fffad1;
+	background-size: cover
 }

@@ -16,10 +16,10 @@ var donate = {
 var pics = {
 	channelIcon: "https://yt3.ggpht.com/a/AATXAJz1rf8F_1ZMrY7BkibAF0CFrkj4qja9n7fTqgrz=s196",
 	clockLogo: "https://sofareisen.org/images/logo_schrift.png",
-	hostLogo: "https://sofareisen.org/images/sofareisen_logo_all.png",
 	hostLogo: "https://yt3.ggpht.com/ytc/AAUvwngniP7LA5XVERT6U-ePwCQWvcek3QREoU3GNZ-S=s196",
 	organizationLogoNeg: "https://yt3.ggpht.com/ytc/AAUvwnhKw1dCYkoz8Zt6uXvnodOynVRFiX4fBDHzXQnJ=s196",
 	presenterLogo: "../../gp/mmLogo.png"
 };
+var leftX = 79;
 var alarmTime = "19:30";
 var videoId = "WrAlgjXlARQ";

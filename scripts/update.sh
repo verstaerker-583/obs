@@ -39,6 +39,7 @@ chmod -R +w ~/Documents/GitHub/obs
 /Applications/Inkscape.app/Contents/MacOS/inkscape --export-type="png" ../*/*Mask*.svg &>/dev/null
 
 # scenes
+jq -S --tab -c -f mm.jq		../gp/gp.json		> ../mm/mm.json
 jq -S --tab -c -f nd.jq		../gp/gp.json		> ../gp/nd.json
 jq -S --tab -c -f sr.jq		../gp/gp.json		> ../sr/sr.json
 jq -S --tab -c -f ss.jq		../gp/gp.json		> ../ss/ss.json
