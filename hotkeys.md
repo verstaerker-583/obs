@@ -14,14 +14,15 @@
 2. **[2]** Szene "Cam" 🎥
     * 🔊 alle Audioquellen, außer Gast ❌, offen
     * 🎥 `Internal` voreingestellt
-    * 🖼 Screen, Spendenaufruf, ❓ und Chat 💬 ausgeblendet
+    * 🖼 Screen, Abo- und Spendenaufruf, ❓ und Chat 💬 ausgeblendet
 
     ⌨ Hotkeys
     * **[<]** Wechsel Kamera
     * **[+]** "Screen" 🖼 ein-/ausblenden
     * **[?]** ❓
+    * **[A]** Aboaufruf 👍 ein-/ausblenden
     * **[C]** Chat 💬 ein-/ausblenden
-    * **[€]** Spendenaufruf
+    * **[€]** Spendenaufruf 🤲
 
 3. **[3]** Szene "Screen" 🖼
     * 🔊 alle Audioquellen, außer Gast ❌, offen
@@ -40,10 +41,6 @@
     * 🔊 alle Audioquellen, außer Gast, offen
     * wechselt zu Szene "Cam"
 
-* **[V]** **V**ideo 🎞
-    * 🔊 alle Audioquellen, außer Gast, offen
-    * wechselt zu Szene "Cam"
-
 * **[O]** **O**utro 🎞
     * 🔇 alle Audioquellen geschlossen
     * wechselt zu Szene "Finish"
@@ -57,19 +54,21 @@
     ⌨ Hotkeys
     * **[+]** "Screen" 🖼 ein-/ausblenden
     * **[?]** ❓
+    * **[A]** Aboaufruf 👍 ein-/ausblenden
     * **[C]** Chat 💬 aus-/einblenden
-    * **[€]** Spendenaufruf
+    * **[€]** Spendenaufruf 🤲
 
 * **[G]** Szene "**G**uest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast
     * 🔊 alle Audioquellen offen
     * 🎥 `Internal` voreingestellt
-    * 🖼 Screen, Spendenaufruf und ❓ ausgeblendet
+    * 🖼 Screen, Abo- und Spendenaufruf und ❓ ausgeblendet
 
     ⌨ Hotkeys
     * **[<]** Wechsel Kamera
     * **[?]** ❓
+    * **[A]** Aboaufruf 👍 ein-/ausblenden
     * **[C]** Chat 💬 aus-/einblenden
-    * **[€]** Spendenaufruf
+    * **[€]** Spendenaufruf 🤲
 
 * **[H]** Szene "**H**istory" entspricht Szene "Screen" **[3]**
     * 🔊 alle Audioquellen offen
@@ -90,10 +89,9 @@
     * Powermanagement wird deaktiviert
     * WiFi wird deaktiviert
     * verschiedene Prüfungen werden durchgeführt
-    * `Skype` und `NDI Virtual Input` werden geöffnet
     * nicht erforderliche Anwendungen werden geschlossen
     * wenn OBS nicht schon aktiv: 
-        * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp_naked` geöffnet
+        * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp` geöffnet
         * OBS streamt 🔴
 
 * **[⌃][⌥][⌘] & [W]** - ***"Windows"*** 🔧

@@ -244,6 +244,13 @@
 			}
 		},
 		{
+			"id": "display_capture",
+			"name": "Screen Capture",
+			"settings": {
+				"display": 1
+			}
+		},
+		{
 			"filters": [
 				{
 					"id": "compressor_filter",
@@ -300,13 +307,6 @@
 					"style": "Condensed Black"
 				},
 				"text": "?"
-			}
-		},
-		{
-			"id": "display_capture",
-			"name": "Screen Capture",
-			"settings": {
-				"display": 1
 			}
 		},
 		{
@@ -559,7 +559,7 @@
 					},
 					{
 						"locked": true,
-						"name": "cams"
+						"name": "cam"
 					}
 				]
 			}
@@ -628,7 +628,7 @@
 				]
 			},
 			"id": "scene",
-			"name": "cams",
+			"name": "cam",
 			"private_settings": {
 				"show_in_multiview": false
 			},

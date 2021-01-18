@@ -18,8 +18,10 @@
 * **[V]**	**V**ideo 🎞
 
 * **[M]**	Stummschaltung **M**ikrofon 🔇
+* **[D]**	Stummschaltung **D**esktop Audio 🔇
 
 ## in Szene 2 "Cam" 🎥
-* **[?]**	ein-/ausblenden ❓
+* **[?]**	❓
+* **[A]**	Aboaufruf 👍
 * **[C]**	**C**hat 💬
-* **[€]**	Spendenaufruf
+* **[€]**	Spendenaufruf 🤲
