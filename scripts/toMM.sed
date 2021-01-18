@@ -1,5 +1,6 @@
 # init.lua
-#s/--collection 'gp'/--collection 'gp_local'/
+#s/--collection 'gp'/--collection 'mm'/
+#s/--profile 'gpYTsq'/--profile 'mmYTmq'/
 s/Mode01w = 1440/Mode01w = 1920/
 s/Mode01h = 900/Mode01h = 1200/
 s/--always-on-top //
@@ -10,6 +11,10 @@ Profile=gpYTsq\
 ProfileDir=gpYTsq\
 SceneCollection=gp\
 SceneCollectionFile=gp
+#Profile=mmYTmq\
+#ProfileDir=mmYTmq\
+#SceneCollection=mm\
+#SceneCollectionFile=mm
 
 # basic.ini
 /\[Audio\]/a\
@@ -18,5 +23,5 @@ MonitoringDeviceId=BuiltInHeadphoneOutputDevice
 #MonitoringDeviceId=BuiltInSpeakerDevice
 
 /\[SimpleOutput\]/a\
-Preset=faster\
-UseAdvanced=true
+UseAdvanced=true\
+Preset=faster

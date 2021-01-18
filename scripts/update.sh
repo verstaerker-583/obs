@@ -16,9 +16,6 @@ function profiles {
 	
 	sed -f to$OBSUSR.sed templates/global.ini > /tmp/target/$OBSUSR/global.ini
 	sed -f to$OBSUSR.sed templates/init.lua > /tmp/target/$OBSUSR/init.lua
-
-#	cp templates/com.local.KeyRemapping.R400.plist  /tmp/target/$OBSUSR
-#  	[[ $OBSUSR == "mm" ]] && cp templates/com.local.KeyRemapping.VP4910.plist  /tmp/target/$OBSUSR
 }
 
 function package {
@@ -42,12 +39,9 @@ chmod -R +w ~/Documents/GitHub/obs
 /Applications/Inkscape.app/Contents/MacOS/inkscape --export-type="png" ../*/*Mask*.svg &>/dev/null
 
 # scenes
-jq -S --tab -c -f gp_local.jq	../gp/gp.json		> ../gp/gp_local.json
 jq -S --tab -c -f nd.jq		../gp/gp.json		> ../gp/nd.json
 jq -S --tab -c -f sr.jq		../gp/gp.json		> ../sr/sr.json
-#jq -S --tab -c -f ss.jq	../gp/gp_local.json	> ../ss/ss.json
-#jq -S --tab -c -f ss_new.jq	../ss/new.json		> ../ss/ss.json
-jq -S --tab -c -f ss_new.jq	../gp/gp.json		> ../ss/ss.json
+jq -S --tab -c -f ss.jq		../gp/gp.json		> ../ss/ss.json
 
 jq -S --tab -c -f bd_solo.jq	../gp/gp.json		> ../bd/bd_solo.json
 jq -S --tab -c -f tolj.jq	../bd/bd_solo.json	> ../bd/bd_lutz.json
@@ -88,14 +82,13 @@ done
 profiles "bd gp mm"
 
 #
-# gp
+# th
 #
-OBSUSR="gp"
+OBSUSR="th"
 
 # scenes
 mkdir -p /tmp/target/$OBSUSR/basic/scenes
 for i in `ls ../*/*.json`; do
-#	[ `basename $i` == "gp_local.json" ] && jq -S --tab -f to$OBSUSR.jq $i > /tmp/target/$OBSUSR/basic/scenes/`basename $i`
 	[ `basename $i` == "gp.json" ] && jq -S --tab -f to$OBSUSR.jq $i > /tmp/target/$OBSUSR/basic/scenes/`basename $i`
 done
 
@@ -124,4 +117,4 @@ sudo find ~/Documents/GitHub/obs -exec touch -ht 197304291400 '{}' \;
 chmod -R -w ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs/.git
 
-package "gp mm ok je"
+package "je mm ok th"

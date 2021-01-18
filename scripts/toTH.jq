@@ -1,5 +1,4 @@
 del(
-	.AuxAudioDevice2,
 	.DesktopAudioDevice1,
 	(
 		.sources[] |
@@ -14,7 +13,8 @@ del(
 				., .settings.items[]? | select(.name == (
 					"?",
 					"Overlay Chat",
-					"Overlay Donate"
+					"Overlay Donate",
+					"Overlay Subscribe"
 					)
 				)
 			),
@@ -32,7 +32,7 @@ del(
 			),
 			(
 				., .settings.items[]? | select(.name == (
-					"NDI",
+					"Guest",
 					"guest"
 					)
 				)
@@ -40,14 +40,16 @@ del(
 			(
 				.hotkeys[
 					"libobs.hide_scene_item.?",
-					"libobs.hide_scene_item.NDI",
+					"libobs.hide_scene_item.Guest",
 					"libobs.hide_scene_item.Overlay Chat",
 					"libobs.hide_scene_item.Overlay Donate",
+					"libobs.hide_scene_item.Overlay Subscribe",
 					"libobs.hide_scene_item.guest",
 					"libobs.show_scene_item.?",
-					"libobs.show_scene_item.NDI",
+					"libobs.show_scene_item.Guest",
 					"libobs.show_scene_item.Overlay Chat",
 					"libobs.show_scene_item.Overlay Donate",
+					"libobs.show_scene_item.Overlay Subscribe",
 					"libobs.show_scene_item.guest"
 					]
 			)

@@ -1,7 +1,8 @@
 # init.lua
 s/--collection 'gp'/--collection 'ss'/
 s/--profile 'gpYTsq'/--profile 'jeYTsq'/
-s/--startvirtualcam //
+#s/--enable-media-stream //
+#s/--startvirtualcam //
 
 # global.ini
 /\[Basic\]/a\
@@ -16,5 +17,5 @@ MonitoringDeviceId=BuiltInSpeakerDevice
 #MonitoringDeviceId=BuiltInHeadphoneOutputDevice
 
 /\[SimpleOutput\]/a\
-Preset=faster\
-UseAdvanced=true
+UseAdvanced=true\
+Preset=faster

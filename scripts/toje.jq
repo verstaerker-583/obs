@@ -1,26 +1,23 @@
 del(
 	.DesktopAudioDevice1,
-#	(
-#		.AuxAudioDevice1.filters[] | select(.id == "noise_gate_filter")
-#	),
 	(
 		.sources[] |
 			(
 				., .settings.items[]? | select(.name == (
-					"GuestA",
+					"Guest",
 					"Outro",
-					"guests"
+					"guest"
 					)
 				)
 			),
 			(
 				.hotkeys[
-					"libobs.hide_scene_item.GuestA",
+					"libobs.hide_scene_item.Guest",
 					"libobs.hide_scene_item.Outro",
-					"libobs.hide_scene_item.guests",
-					"libobs.show_scene_item.GuestA",
+					"libobs.hide_scene_item.guest",
+					"libobs.show_scene_item.Guest",
 					"libobs.show_scene_item.Outro",
-					"libobs.show_scene_item.guests"
+					"libobs.show_scene_item.guest"
 					]
 			)
 	),
