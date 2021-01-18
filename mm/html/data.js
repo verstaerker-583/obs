@@ -18,6 +18,7 @@ var pics = {
 	clockLogo: "https://sofareisen.org/images/logo_schrift.png",
 	hostLogo: "https://yt3.ggpht.com/ytc/AAUvwngniP7LA5XVERT6U-ePwCQWvcek3QREoU3GNZ-S=s196",
 	organizationLogoNeg: "https://yt3.ggpht.com/ytc/AAUvwnhKw1dCYkoz8Zt6uXvnodOynVRFiX4fBDHzXQnJ=s196",
+	organizationLogoNeg: "https://www.amap-brazil.org/site/templates/img/amap.svg",
 	presenterLogo: "../../gp/mmLogo.png"
 };
 var leftX = 79;

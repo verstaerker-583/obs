@@ -16,6 +16,7 @@ function profiles {
 	
 	sed -f to$OBSUSR.sed templates/global.ini > /tmp/target/$OBSUSR/global.ini
 	sed -f to$OBSUSR.sed templates/init.lua > /tmp/target/$OBSUSR/init.lua
+	cp ../sw/Black* /tmp/target/$OBSUSR
 }
 
 function package {

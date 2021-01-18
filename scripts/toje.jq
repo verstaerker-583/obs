@@ -1,5 +1,4 @@
 del(
-	.DesktopAudioDevice1,
 	(
 		.sources[] |
 			(

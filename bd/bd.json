@@ -124,10 +124,6 @@
 		{
 			"filters": [
 				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
-				},
-				{
 					"enabled": "false",
 					"id": "chroma_key_filter",
 					"name": "Chroma Key"
@@ -154,10 +150,6 @@
 		},
 		{
 			"filters": [
-				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
-				},
 				{
 					"enabled": "false",
 					"id": "chroma_key_filter",
@@ -239,7 +231,6 @@
 			"settings": {
 				"height": 720,
 				"reroute_audio": true,
-				"url": "https://rtc.ninja/beta?aj&clean&np&wc&optimize=0&sl&ad&vd=obs&mvb=200&push=verstaerker583host&pull=verstaerker583guest",
 				"width": 1280
 			}
 		},
@@ -350,14 +341,14 @@
 		},
 		{
 			"id": "browser_source",
-			"name": "Overlay cams",
+			"name": "Overlay cam",
 			"private_settings": {
 				"mixer_hidden": true
 			},
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/bd/svg/cams.svg",
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/cam.svg",
 				"width": 1280
 			}
 		},
@@ -524,12 +515,12 @@
 						"key": "OBS_KEY_3"
 					}
 				],
-				"libobs.hide_scene_item.cams": [
+				"libobs.hide_scene_item.cam": [
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				],
-				"libobs.show_scene_item.cams": [
+				"libobs.show_scene_item.cam": [
 					{
 						"key": "OBS_KEY_3"
 					},
@@ -636,7 +627,7 @@
 				"items": [
 					{
 						"locked": true,
-						"name": "Overlay cams",
+						"name": "Overlay cam",
 						"visible": true
 					},
 					{

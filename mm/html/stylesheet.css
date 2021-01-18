@@ -22,8 +22,8 @@
 .call2action, 
 .message,
 .theme {
-	background: linear-gradient(to bottom, #feb900, #f39200);
-	color: white
+	background: linear-gradient(to bottom, #fbba00, #f39200);
+	color: inherit
 }
 
 .element:after {
@@ -32,6 +32,9 @@
 }
 
 body {
+	background-size: cover;
 	background: no-repeat fixed url(https://yt3.ggpht.com/cDskyRniCi-_lwpNdiIvOzaj8YNIK6RyZ1LyDnvuBtzVtQVTn_XCyfRKkHRcz87dOm5srekI=w1280);
-	background-size: cover
+	color: white;
+	font-family: sans-serif;
+	font-size: 18px
 }

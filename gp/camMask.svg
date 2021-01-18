@@ -6,4 +6,9 @@
 	<use xlink:href="#cam" y="50%" x="108"/>
 	<use xlink:href="#cam" y="30%" x="100%"/>
 	<use xlink:href="#cam" y="70%" x="100%"/>
+	<desc>
+		left 1	x=0%	obs x = 108
+		left 2	x=108	obs x = 162
+		right	x=100%	obs x = 1172
+	</desc>
 </svg>

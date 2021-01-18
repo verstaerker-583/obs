@@ -131,10 +131,6 @@
 		{
 			"filters": [
 				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
-				},
-				{
 					"id": "clut_filter",
 					"name": "Apply LUT",
 					"settings": {
@@ -148,10 +144,6 @@
 		},
 		{
 			"filters": [
-				{
-					"id": "sharpness_filter",
-					"name": "Sharpen"
-				},
 				{
 					"id": "clut_filter",
 					"name": "Apply LUT",
@@ -210,9 +202,6 @@
 			"settings": {
 				"height": 720,
 				"reroute_audio": true,
-				"url": "https://rtc.ninja/beta?aj&clean&np&wc&optimize=0&sl&ad&vd=obs&mvb=200&push=host&bc=guest&r=verstaerker583",
-				"url": "https://rtc.ninja/beta?aj&clean&np&wc&optimize=0&sl&ad&vd=obs&mvb=200&push=verstaerker583host&pull=verstaerker583guest",
-				"url": "https://rtc.ninja/beta?aj&clean&np&wc&optimize=0&sl&ad&vd=obs&mvb=200&push=verstaerker583host&pull=verstaerker583guest",
 				"width": 1280
 			}
 		},
@@ -241,9 +230,9 @@
 			"name": "Overlay Chat",
 			"settings": {
 				"css": "@import url(https://verstaerker-583.github.io/obs/gp/html/chat.css)",
-				"height": 110,
+				"height": 144,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/chat.html",
-				"width": 920
+				"width": 560
 			}
 		},
 		{
@@ -601,7 +590,8 @@
 					{
 						"align": 0,
 						"bounds": {
-							"x": 480
+							"x": 480,
+							"y": 270
 						},
 						"bounds_type": 3,
 						"locked": true,
@@ -621,7 +611,7 @@
 						"name": "?",
 						"pos": {
 							"x": 640,
-							"y": 340
+							"y": 360
 						}
 					},
 					{
@@ -630,11 +620,12 @@
 						"visible": true
 					},
 					{
+						"align": 0,
 						"locked": true,
 						"name": "Overlay Chat",
 						"pos": {
-							"x": 360,
-							"y": 610
+							"x": 640,
+							"y": 648
 						}
 					},
 					{
@@ -827,6 +818,7 @@
 					{
 						"align": 0,
 						"bounds": {
+							"x": 324,
 							"y": 216
 						},
 						"bounds_type": 3,
@@ -841,6 +833,7 @@
 					{
 						"align": 0,
 						"bounds": {
+							"x": 216,
 							"y": 216
 						},
 						"bounds_type": 3,
@@ -854,6 +847,7 @@
 					{
 						"align": 0,
 						"bounds": {
+							"x": 216,
 							"y": 216
 						},
 						"bounds_type": 3,
@@ -888,6 +882,7 @@
 					{
 						"align": 0,
 						"bounds": {
+							"x": 432,
 							"y": 432
 						},
 						"bounds_type": 3,
@@ -895,7 +890,7 @@
 						"name": "Guest",
 						"pos": {
 							"x": 1064,
-							"x": 162,
+							"x": 216,
 							"y": 360
 						},
 						"visible": true

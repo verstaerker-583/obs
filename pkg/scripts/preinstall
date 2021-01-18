@@ -15,10 +15,8 @@ rm -rf ~/.hammerspoon
 killall "System Preferences"
 softwareupdate -i -a
 
-rm -f ~/Library/LaunchAgents/*KeyRemapping*.plist
-
 sudo -u $USER defaults delete -g
-sudo -u $USER defaults delete com.apple.dock
+sudo -u $USER defaults delete com.apple.audio.AudioMIDISetup
 sudo -u $USER defaults delete com.apple.finder
 sudo -u $USER defaults delete com.apple.spaces
 sudo -u $USER defaults delete com.boinx.FotoMagico5
@@ -27,7 +25,6 @@ sudo -u $USER defaults write -g "_HIHideMenuBar" -bool false
 sudo -u $USER defaults write -g AppleInterfaceStyleSwitchesAutomatically -bool true
 sudo -u $USER defaults write -g AppleShowScrollBars -string "Always"
 sudo -u $USER defaults write com.apple.LaunchServices LSQuarantine -bool false
-sudo -u $USER defaults write com.apple.dock ResetLaunchPad -bool true
 sudo -u $USER defaults write com.apple.dock autohide -bool true
 sudo -u $USER defaults write com.apple.finder NewWindowTarget -string "PfHm"
 sudo -u $USER defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
@@ -35,7 +32,19 @@ sudo -u $USER defaults write com.apple.finder ShowHardDrivesOnDesktop -bool fals
 sudo -u $USER defaults write com.apple.finder ShowPathbar -bool true
 sudo -u $USER defaults write com.apple.spaces spans-displays -bool true
 
+sudo -u $USER defaults delete com.apple.dock
+sudo -u $USER defaults write com.apple.dock ResetLaunchPad -bool true
+
 killall Dock
 killall Finder
+
+rm -f ~/Library/LaunchAgents/*KeyRemapping*.plist
+rm -rf ~/Library/Application Support/Microsoft
+
+rm -rf /Library/Audio/Plug-Ins
+rm -rf /Library/CoreMediaIO/Plug-Ins
+rm -rf /Applications/NDI*
+mkdir /Library/CoreMediaIO/Plug-Ins
+
 
 exit 0

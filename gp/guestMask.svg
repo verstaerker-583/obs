@@ -5,4 +5,8 @@
 	</defs>
 	<use xlink:href="#cam" y="50%"/>
 	<use xlink:href="#cam" y="50%" x="100%"/>
+	<desc>
+		left 1	x=0%	obs x = 216
+		right	x=100%	obs x = 1064
+	</desc>
 </svg>
