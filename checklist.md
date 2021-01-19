@@ -21,7 +21,6 @@
     * WiFi wird deaktiviert
     * nicht erforderliche Anwendungen werden geschlossen
     * verschiedene Prüfungen werden durchgeführt
-    * Skype wird geöffnet
     * OBS wird mit dem voreingestellten Profil und der voreingestellten Szenensammlung geöffnet
 
 ▶️ 🔴 OBS streamt
@@ -45,47 +44,14 @@
 - **[O]** **O**utro sicht- und hörbar?
 - **[V]** **V**ideo sicht- und hörbar?
 
-#### Skype
-- **[G]** (vorerst schwarzer Kreis)
-
-### Skype
-#### Skype > Einstellungen > Allgemein
-- ☐ `Skype nach Schließen weiter ausführen`
-- ☐ `Globale Tastenkürzel aktivieren`
-#### Skype > Einstellungen > Darstellung
-- Modi
-    * ☒ `Dunkel`
-#### Skype > Einstellungen > Anrufe
-- ☐ `Anruffenster anzeigen, wenn sich Skype im Hintergrund befindet`
-#### Skype > Einstellungen > Anrufe > Erweitert
-- ☒ `Eingehende Anrufe automatisch annehmen`
-- ☒ `Video automatisch starten`
-- ☒ `NDI-Nutzung erlauben`
-
-#### Skype > Einstellungen > Audio und Video
-- Kamera: `FaceTime HD-Kamera`
-
-- Mikrofon: `Standardgerät`
-    * ☐ `Mikrofoneinstellungen automatisch anpassen`
-    * 🎚️ ≈ `4` (automatisch durch Hammerspoon)
-
-- Lautsprecher: `Standardgerät`
-    * 🎚️= `0`
-    * ☐ `Stummschaltung für eingehende Anrufe aufheben`
-
-- `Kostenlosen Testanruf tätigen`
-    * NDI Virtual Input (macOS Menüleiste) -> `(Skype - Aktiver Sprecher)`
-    * Mithörton? Eigene Stimme hörbar?
-
 ### go/no go poll
 
 ⏰ **17:15 Uhr**
 ### OBS
 #### Testanrufe Gast und Co-Moderatorin
-- **[2]** und auf Anruf warten
 - **[G]** Gast zuschalten, Kameraposition und Ton prüfen
 - **[F]**
-- **[H]** > ***Stresstest*** (Präsentation + Kamera, skaliert + Skype, skaliert)
+- **[H]** > ***Stresstest*** (Präsentation + Kamera, skaliert + Gast, skaliert)
     * **Report** In OBS unten rechts angezeigte Werte: cpu, fps, Ampelfarbe und kb/s
 
 ### go/no go poll Guests
@@ -167,7 +133,6 @@
 > -- <cite>Pete Conrad, Commander Apollo 12</cite>
 
 ## Lunar Orbit Rendezvous
-- ⚠ Sobald Skype den Anruf automatisch annimtt, wird es zum aktiven Fenster. Präsentation empfängt dann, bis es wieder angeklickt wird, keine Tastatureingaben mehr!
 - Gast ruft an und wartet auf Zeichen
 - Status:
     * Gast sieht und hört Gastgeber.
@@ -206,26 +171,6 @@
 - Netzwerkkabel verwenden, WiFi deaktivieren
 - Headset verwenden
 
-### Skype
-#### Skype > Einstellungen > Anrufe > Erweitert
-- ☐ `Eingehende Anrufe automatisch annehmen`
-- ☒ `Video automatisch starten`
-- ☐ `NDI-Nutzung erlauben`
-
-#### Skype > Einstellungen > Audio und Video
-- Kamera: `FaceTime HD-Kamera`
-
-- Mikrofon: `Standardgerät` oder (MacBook Pro) `Externes Mikrofon`
-    * ☒ `Mikrofoneinstellungen automatisch anpassen`
-    * 🎚️ ≈ `5` (automatisch durch Skype)
-
-- Lautsprecher: `Standardgerät` oder (MacBook Pro) `Externe Kopfhörer`
-    * 🎚️ ≈ `5`
-    * ☒ `Stummschaltung für eingehende Anrufe aufheben`
-
-- `Kostenlosen Testanruf tätigen`
-    * Mithörton? Eigene Stimme hörbar?
-
 ## Lunar Orbit Rendezvous
 - auf vereinbartes Zeichen/ vereinbarten Zeitpunkt warten
 - insbesondere YouTube schliessen 
@@ -233,4 +178,4 @@
 - Live!
     * Schnelle Bewegungen vermeiden.
     * Bewusst in die Kamera schauen und das eigene Bild, insbesondere Position zur/ der Kamera, laufend kontrollieren!
-- Nach Verabschiedung noch ca. 10sec "verharren" und dann die Verbindung selbst (!) beenden.
+- Nach Verabschiedung noch ca. 10sec "verharren"
