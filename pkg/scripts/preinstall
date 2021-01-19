@@ -44,7 +44,7 @@ rm -rf ~/Library/Application Support/Microsoft
 rm -rf /Library/Audio/Plug-Ins
 rm -rf /Library/CoreMediaIO/Plug-Ins
 rm -rf /Applications/NDI*
-mkdir /Library/CoreMediaIO/Plug-Ins
+mkdir -p /Library/CoreMediaIO/Plug-Ins/DAL 
 
 
 exit 0
