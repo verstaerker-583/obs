@@ -38,8 +38,8 @@ end
 
 function postFlight()
     -- System
-    --hs.execute("defaults write com.apple.finder CreateDesktop -bool true")
-    --hs.execute("killall Finder")
+    hs.execute("defaults write com.apple.finder CreateDesktop -bool true")
+    hs.execute("killall Finder")
 
     -- Audio
     hs.osascript("set volume alert volume 100")
@@ -205,8 +205,10 @@ end
 
 function preFlightSystem()
     hs.execute("killall 'System Preferences'")
+--[[
     hs.execute("defaults write com.apple.finder CreateDesktop -bool false")
     hs.execute("killall 'Finder'")
+--]]
 
     -- Wifi
     if hs.network.interfaceDetails(v4) then
