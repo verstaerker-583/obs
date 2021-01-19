@@ -1,12 +1,7 @@
-body {
-	background-color: transparent!important;
-	overflow: hidden
-}
-
 yt-live-chat-author-chip #author-name,
 yt-live-chat-renderer,
 yt-live-chat-text-message-renderer {
-	background-color: transparent!important
+	background: transparent!important
 }
 
 yt-live-chat-header-renderer,
@@ -15,23 +10,23 @@ yt-live-chat-mode-change-message-renderer,
 yt-live-chat-restricted-participation-renderer,
 yt-live-chat-text-message-renderer #author-badges,
 yt-live-chat-text-message-renderer #author-photo,
+yt-live-chat-ticker-renderer,
 yt-live-chat-viewer-engagement-message-renderer {
 	display: none!important
 }
 
 yt-live-chat-item-list-renderer #item-scroller,
 yt-live-chat-item-list-renderer #items {
-	overflow: hidden!important
+	overflow: hidden!important;
+	background: rgba(0, 0, 0, 0.5);!important;
+	border-radius: .5em;
+	padding: 0!important;
+	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
 }
 
 yt-live-chat-renderer * {
-	color: white!important;
-	font-family: "Helvetica Neue"!important;
-	font-size: inherit!important;
-/*
-	font-size: 22px!important;
-	line-height: 22px!important
-*/
+	color: #fff!important;
+	font-size: 22px!important
 }
 
 yt-live-chat-text-message-renderer #author-name.moderator,
@@ -50,10 +45,4 @@ yt-live-chat-text-message-renderer #author-name::after {
 
 yt-live-chat-text-message-renderer #content {
 	overflow: initial!important
-}
-
-yt-live-chat-ticker-renderer {
-	background-color: transparent!important;
-	box-shadow: none!important;
-	display: none!important
 }
