@@ -55,6 +55,20 @@ done
 sudo rm -rf /tmp/target
 
 #
+# je
+#
+OBSUSR="je"
+
+# scenes
+mkdir -p /tmp/target/$OBSUSR/basic/scenes
+for i in `ls ../*/*.json`; do
+	[ `basename $i` == "ss.json" ] && jq -S --tab -f to$OBSUSR.jq $i > /tmp/target/$OBSUSR/basic/scenes/`basename $i`
+done
+
+# profiles
+profiles "je"
+
+#
 # ok
 #
 OBSUSR="ok"
@@ -66,7 +80,8 @@ for i in `ls ../*/*.json`; do
 done
 
 # profiles
-profiles "gp mm"
+#profiles "bd gp mm"
+profiles "mm"
 
 #
 # mm
@@ -81,7 +96,7 @@ done
 
 # profiles
 #profiles "bd gp mm"
-profiles "mm"
+profiles "bd mm"
 
 #
 # th
@@ -96,20 +111,6 @@ done
 
 # profiles
 profiles "gp"
-
-#
-# je
-#
-OBSUSR="je"
-
-# scenes
-mkdir -p /tmp/target/$OBSUSR/basic/scenes
-for i in `ls ../*/*.json`; do
-	[ `basename $i` == "ss.json" ] && jq -S --tab -f to$OBSUSR.jq $i > /tmp/target/$OBSUSR/basic/scenes/`basename $i`
-done
-
-# profiles
-profiles "je"
 
 #
 #

@@ -20,7 +20,7 @@ local Mode11h = 720
 
 -- Audio
 local headsetInput = 50
-local headsetOutput = 75
+local headsetOutput = 50
 
 local builtinInput = 100
 local builtinOutput = 50

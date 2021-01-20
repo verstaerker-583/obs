@@ -3,12 +3,14 @@
 	<defs>
 		<rect id="cam" height="30%" width="432" ry="15%" x="-216" y="-15%"/>
 	</defs>
+	<use xlink:href="#cam" y="17.5%"/>
 	<use xlink:href="#cam" y="50%" x="108"/>
+	<use xlink:href="#cam" y="82.5%"/>
 	<use xlink:href="#cam" y="30%" x="100%"/>
 	<use xlink:href="#cam" y="70%" x="100%"/>
 	<desc>
-		left 1	x=0%	obs x = 108
-		left 2	x=108	obs x = 162
+		left s	x=0%	obs x = 108
+		left b	x=108	obs x = 162
 		right	x=100%	obs x = 1172
 	</desc>
 </svg>

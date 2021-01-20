@@ -1,14 +1,14 @@
 # init.lua
 s/--collection 'gp'/--collection 'mm'/
-s/--profile 'gpYTsq'/--profile 'mmYTmq'/
+s/--profile 'gpYTsq'/--profile 'mmYTsq'/
 s/Mode01w = 1440/Mode01w = 1920/
 s/Mode01h = 900/Mode01h = 1200/
 s/--always-on-top //
 
 # global.ini
 /\[Basic\]/a\
-Profile=mmYTmq\
-ProfileDir=mmYTmq\
+Profile=mmYTsq\
+ProfileDir=mmYTsq\
 SceneCollection=mm\
 SceneCollectionFile=mm
 #Profile=gpYTsq\

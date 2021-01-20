@@ -24,7 +24,7 @@ sudo -u $USER defaults delete com.apple.audio.AudioMIDISetup
 sudo -u $USER defaults delete com.apple.finder
 sudo -u $USER defaults delete com.apple.spaces
 sudo -u $USER defaults delete com.boinx.FotoMagico5
-sudo -u $USER defaults delete com.microsoft.Powerpoint
+##sudo -u $USER defaults delete com.microsoft.Powerpoint
 
 sudo -u $USER defaults write -g "_HIHideMenuBar" -bool false
 sudo -u $USER defaults write -g AppleInterfaceStyleSwitchesAutomatically -bool true

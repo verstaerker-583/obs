@@ -3,6 +3,7 @@
 | (.sources[] | select(.name == "External").settings.device) = "CC27327P54QGDV4AV"
 | (.sources[] | select(.name == "Internal").settings.device) = "CC27327P54QGDV4AV"
 
-| (.sources[] | select(.name == "Send").settings.url) = "https://rtc.ninja/beta/?ad&aj&bc&wc&vd=obs&r=verstaerker583&push=host"
-| (.sources[] | select(.name == "Guest").settings.url) = "https://rtc.ninja/beta/?optimize=0&scene=1&r=verstaerker583"
-| (.sources[] | select(.name == "GuestB").settings.url) = "https://rtc.ninja/beta/?optimize=0&scene&r=verstaerker583&pull=guestA"
+| (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja/beta/?ad&aj&bc&mvb=200&vd=obs&wc&r=verstaerker583&pull=director&push=host"
+| (.sources[] | select(.name == "GuestA").settings.url) = "https://rtc.ninja/beta/?optimize=0&scene&r=verstaerker583&pull=guestA"
+| (.sources[] | select(.name == "GuestB").settings.url) = "https://rtc.ninja/beta/?optimize=0&scene&r=verstaerker583&pull=guestB"
+| (.sources[] | select(.name == "GuestX").settings.url) = "https://rtc.ninja/beta/?optimize=0&scene&r=verstaerker583&pull=guestX"
