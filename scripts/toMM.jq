@@ -24,7 +24,8 @@ del(
 						"Host",
 						"cam+",
 						"guest",
-						"guest+"
+						"guest+",
+						"host"
 						)
 					)
 				),
@@ -80,12 +81,17 @@ end
 			)
 	)
 )
-#| (.sources[] | select(.name == "External").settings.device) = "0x2543000043e9a4d"
+| (.sources[] | select(.name == "External").settings.device) = "0x2543000043e9a4d"
 | (.sources[] | select(.name == "External").settings.device) = "0x8020000005ac8514"
 | (.sources[] | select(.name == "Internal").settings.device) = "0x8020000005ac8514"
-| (.sources[] | select(.name == "Overlay Chat").settings.url) = "https://verstaerker-583.github.io/obs/gp/html/chat.html"
 
 | (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja/beta/?ad&aj&bc&mvb=200&vd=obs&wc&r=verstaerker583mm&pull=director&push=host"
 | (.sources[] | select(.name == "GuestA").settings.url) = "https://rtc.ninja/beta/?optimize=0&scene&r=verstaerker583mm&pull=guestA"
 | (.sources[] | select(.name == "GuestB").settings.url) = "https://rtc.ninja/beta/?optimize=0&scene&r=verstaerker583mm&pull=guestB"
 | (.sources[] | select(.name == "GuestX").settings.url) = "https://rtc.ninja/beta/?optimize=0&scene&r=verstaerker583mm&pull=guestX"
+
+# audiofix ?
+| (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja/beta/?ad&aj&bc&mvb=200&vd=obs&wc&r=verstaerker583&push=host"
+| del (.sources[] | select(.id == "browser_source") | select(.name != "Host").monitoring_type)
+# chat
+| (.sources[] | select(.name == "Overlay Chat").settings.url) = "https://verstaerker-583.github.io/obs/gp/html/chat.html"

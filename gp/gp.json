@@ -605,9 +605,6 @@
 					},
 					{
 						"key": "OBS_KEY_V"
-					},
-					{
-						"key": "OBS_KEY_X"
 					}
 				],
 				"libobs.hide_scene_item.?": [
@@ -957,7 +954,7 @@
 						"name": "?",
 						"pos": {
 							"x": 640,
-							"y": 360
+							"y": 340
 						}
 					},
 					{
@@ -1426,6 +1423,9 @@
 			"settings": {
 				"items": [
 					{
+						"name": "Host"
+					},
+					{
 						"align": 0,
 						"bounds": {
 							"x": 432,
@@ -1547,9 +1547,6 @@
 			},
 			"settings": {
 				"items": [
-					{
-						"name": "Host"
-					},
 					{
 						"align": 0,
 						"bounds": {

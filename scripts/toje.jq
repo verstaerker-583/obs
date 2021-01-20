@@ -9,7 +9,8 @@ del(
 					"Host",
 					"cam+",
 					"guest",
-					"guest+"
+					"guest+",
+					"host"
 					)
 				)
 			),

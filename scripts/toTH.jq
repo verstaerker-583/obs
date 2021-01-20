@@ -12,7 +12,8 @@ del(
 					"Overlay Subscribe",
 					"cam+",
 					"guest",
-					"guest+"
+					"guest+",
+					"host"
 					)
 				)
 			),
