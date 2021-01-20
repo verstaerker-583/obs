@@ -1,8 +1,6 @@
 .
 | (.sources[] | select(.id == "display_capture").settings.display) = 0 
 | (.sources[] | select(.name == "External").settings.device) = "CC27327P54QGDV4AV"
-#| (.sources[] | select(.name == "External").settings.device) = "0x14100000046d0823"
-#| (.sources[] | select(.name == "External").settings.preset) = "AVCaptureSessionPreset1920x1080"
 | (.sources[] | select(.name == "Internal").settings.device) = "CC27327P54QGDV4AV"
 
 | (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja/beta/?ad&aj&bc&mvb=200&vd=obs&wc&r=verstaerker583&pull=director&push=host"
