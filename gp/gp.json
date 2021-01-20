@@ -280,6 +280,7 @@
 				"volume_locked": true
 			},
 			"settings": {
+				"css": "body {background: yellow}",
 				"height": 720,
 				"reroute_audio": true,
 				"width": 1280
@@ -353,6 +354,7 @@
 				"volume_locked": true
 			},
 			"settings": {
+				"css": "body {background: red}",
 				"height": 720,
 				"reroute_audio": true,
 				"width": 1280
@@ -429,6 +431,7 @@
 				"volume_locked": true
 			},
 			"settings": {
+				"css": "body {background: orange}",
 				"height": 720,
 				"reroute_audio": true,
 				"width": 1280
@@ -1067,6 +1070,10 @@
 					{
 						"locked": true,
 						"name": "cam"
+					},
+					{
+						"locked": true,
+						"name": "cam+"
 					}
 				]
 			}
@@ -1363,6 +1370,9 @@
 						"key": "OBS_KEY_G"
 					},
 					{
+						"key": "OBS_KEY_T"
+					},
+					{
 						"key": "OBS_KEY_V"
 					}
 				],
@@ -1380,6 +1390,9 @@
 						"key": "OBS_KEY_G"
 					},
 					{
+						"key": "OBS_KEY_T"
+					},
+					{
 						"key": "OBS_KEY_V"
 					},
 					{
@@ -1389,6 +1402,9 @@
 				"libobs.show_scene_item.GuestA": [
 					{
 						"key": "OBS_KEY_G"
+					},
+					{
+						"key": "OBS_KEY_T"
 					}
 				],
 				"libobs.show_scene_item.GuestB": [

@@ -1,7 +1,7 @@
 @import "../../gp/html/stylesheet.css";
-#hostLogo,
 #organizationLogo,
-#organizationLogoNeg {
+#organizationLogoNeg,
+#presenterLogo {
 	border-radius: 50%;
 	border: 5px solid;
 	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
@@ -9,10 +9,23 @@
 	width: 98px
 }
 
+#hostLogo {
+	bottom: 10px;
+	height: 124px;
+	right: 10px;
+}
+
 #organizationLogo,
 #organizationLogoNeg {
 	left: 10px;
 	width: 98px
+}
+
+#presenterLogo {
+	height: 90px;
+	right: 10px;
+	top: 10px;
+	width: 90px
 }
 
 .call2action,

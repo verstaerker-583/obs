@@ -6,7 +6,7 @@ del(
 					"GuestA",
 					"GuestB",
 					"GuestX",
-#					"Host",
+					"Host",
 					"cam+",
 					"guest",
 					"guest+"
@@ -68,8 +68,9 @@ del(
 | (.sources[] | select(.name == "External").filters[] | select(.id == "color_filter").name) = "Color Correction" 
 | (.sources[] | select(.name == "External").filters[] | select(.id == "color_filter").settings.enabled) = false
 | (.sources[] | select(.name == "External").settings.device) = "0x11120001bcf0215"
+| (.sources[] | select(.name == "External").settings.preset) = "AVCaptureSessionPreset1920x1080"
 | (.sources[] | select(.name == "Internal").settings.device) = "EAB7A68FEC2B4487AADFD8A91C1CB782"
-| (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/johanneserdmann/Desktop/intro.mp4"
+| (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/johanneserdmann/Documents/Segelsofa/intro.mp4"
 
 | (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja/beta/?ad&aj&bc&mvb=200&vd=obs&wc&r=verstaerker583je&pull=director&push=host"
 | (.sources[] | select(.name == "GuestA").settings.url) = "https://rtc.ninja/beta/?optimize=0&scene&r=verstaerker583je&pull=guestA"

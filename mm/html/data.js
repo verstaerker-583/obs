@@ -17,9 +17,11 @@ var pics = {
 	channelIcon: "https://yt3.ggpht.com/a/AATXAJz1rf8F_1ZMrY7BkibAF0CFrkj4qja9n7fTqgrz=s196",
 	clockLogo: "https://sofareisen.org/images/logo_schrift.png",
 	hostLogo: "https://yt3.ggpht.com/ytc/AAUvwngniP7LA5XVERT6U-ePwCQWvcek3QREoU3GNZ-S=s196",
+	hostLogo: "https://www.globalsocial-network.org/wp-content/uploads/logo_GlobalSocial.png",
 	organizationLogoNeg: "https://yt3.ggpht.com/ytc/AAUvwnhKw1dCYkoz8Zt6uXvnodOynVRFiX4fBDHzXQnJ=s196",
 	organizationLogoNeg: "https://www.amap-brazil.org/site/templates/img/amap.svg",
-	presenterLogo: "../../gp/mmLogo.png"
+	presenterLogo: "../../gp/mmLogo.png",
+	presenterLogo: "https://yt3.ggpht.com/ytc/AAUvwngniP7LA5XVERT6U-ePwCQWvcek3QREoU3GNZ-S=s196",
 };
 var leftX = 79;
 var alarmTime = "19:30";

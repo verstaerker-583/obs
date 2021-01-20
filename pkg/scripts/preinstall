@@ -40,4 +40,9 @@ sudo -u $USER defaults write com.apple.spaces spans-displays -bool true
 killall Dock
 killall Finder
 
+if [ "$USER" = "johanneserdmann" ]; then
+	mkdir ~/Documents/Segelsofa && mv ~/Desktop/intro.mp4 ~/Documents/Segelsofa
+fi
+	ln -sf ~/"Library/Application Support/obs-studio/logs" ~/Desktop/send-to-olaf
+
 exit 0
