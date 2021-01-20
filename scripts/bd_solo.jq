@@ -38,8 +38,8 @@
 		)
 	)
 )
-| (.sources[] | select(.id == "browser_source").settings.url) |= gsub("html";"svg")
-| (.sources[] | select(.id == "browser_source").settings.url) |= sub("cam";"bubbles")
-| (.sources[] | select(.id == "browser_source").settings[]|strings)|= sub("gp";"bd")
+| (.sources[] | select(.id == "browser_source").settings[]?|strings) |= gsub("html";"svg")
+| (.sources[] | select(.id == "browser_source").settings[]?|strings) |= sub("cam";"bubbles")
+| (.sources[] | select(.id == "browser_source").settings[]?|strings?)|= sub("gp";"bd")
 | (.sources[] | select(.name == "?").settings.color1) = 4284888012
 | (.sources[] | select(.name == "?").settings.color2) = 4294967295

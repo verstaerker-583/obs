@@ -1,1 +1,37 @@
-@import "../../gp/html/stylesheet.css";#hostLogo,#organizationLogo,#organizationLogoNeg{border-radius:50%;border:5px solid;bottom:10px;box-shadow:0 15px 5px rgba(0,0,0,0.1),10px 20px 5px rgba(0,0,0,0.05),-10px 20px 5px rgba(0,0,0,0.05);padding:8px;position:absolute;right:10px;width:98px}#organizationLogo,#organizationLogoNeg{left:10px;width:98px}.call2action,.message,.theme{background:linear-gradient(to bottom,#fbba00,#f39200);color:inherit}.element:after{border-radius:1em;transform:skew(0deg) translate(0.5em)}body{background-size:cover;background:no-repeat fixed url(https://yt3.ggpht.com/cDskyRniCi-_lwpNdiIvOzaj8YNIK6RyZ1LyDnvuBtzVtQVTn_XCyfRKkHRcz87dOm5srekI=w1280);color:white;font-family:sans-serif;font-size:18px}
+@import "../../gp/html/stylesheet.css";
+#hostLogo,
+#organizationLogo,
+#organizationLogoNeg {
+	border-radius: 50%;
+	border: 5px solid;
+	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+	padding: 8px;
+	width: 98px
+}
+
+#organizationLogo,
+#organizationLogoNeg {
+	left: 10px;
+	width: 98px
+}
+
+.call2action,
+.message,
+.theme {
+	background: linear-gradient(to bottom, #fbba00, #f39200);
+	border-bottom-right-radius: 1em;
+	border-top-right-radius: 1em;
+	color: inherit
+}
+
+.element:after {
+	display: none
+}
+
+body {
+	background-size: cover;
+	background: no-repeat fixed url(https://yt3.ggpht.com/cDskyRniCi-_lwpNdiIvOzaj8YNIK6RyZ1LyDnvuBtzVtQVTn_XCyfRKkHRcz87dOm5srekI=w1280);
+	color: white;
+	font-family: sans-serif;
+	font-size: 18px
+}

@@ -157,6 +157,10 @@
 			"name": "Internal"
 		},
 		{
+			"id": "browser_source",
+			"name": "Host"
+		},
+		{
 			"filters": [
 				{
 					"id": "noise_suppress_filter",
@@ -203,10 +207,8 @@
 			},
 			"id": "browser_source",
 			"monitoring_type": 2,
+			"muted": true,
 			"name": "Guest",
-			"private_settings": {
-				"volume_locked": true
-			},
 			"settings": {
 				"height": 720,
 				"reroute_audio": true,
@@ -887,6 +889,9 @@
 			},
 			"settings": {
 				"items": [
+					{
+						"name": "Host"
+					},
 					{
 						"align": 0,
 						"bounds": {

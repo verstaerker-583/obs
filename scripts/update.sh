@@ -16,7 +16,6 @@ function profiles {
 	
 	sed -f to$OBSUSR.sed templates/global.ini > /tmp/target/$OBSUSR/global.ini
 	sed -f to$OBSUSR.sed templates/init.lua > /tmp/target/$OBSUSR/init.lua
-	cp ../sw/Black* /tmp/target/$OBSUSR
 }
 
 function package {
@@ -81,7 +80,8 @@ for i in `ls ../*/*.json`; do
 done
 
 # profiles
-profiles "bd gp mm"
+#profiles "bd gp mm"
+profiles "mm"
 
 #
 # th
@@ -119,4 +119,5 @@ sudo find ~/Documents/GitHub/obs -exec touch -ht 197304291400 '{}' \;
 chmod -R -w ~/Documents/GitHub/obs
 chmod -R +w ~/Documents/GitHub/obs/.git
 
-package "je mm ok th"
+#package "je mm ok th"
+package "je mm ok"

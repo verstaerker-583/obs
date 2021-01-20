@@ -10,11 +10,6 @@ mv /tmp/obs-studio/init.lua ~/.hammerspoon
 find ~/.hammerspoon -d -exec touch -ht 197304291400 '{}' \;
 chown -R root ~/.hammerspoon
 
-#mv /tmp/obs-studio/*KeyRemapping*.plist ~/Library/LaunchAgents
-
-installer -pkg /tmp/obs-studio/*.pkg -target /
-rm /tmp/obs-studio/*.pkg
-
 mv /tmp/obs-studio ~/"$OBS"
 
 chmod +w ~/"$OBS"

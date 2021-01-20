@@ -23,7 +23,7 @@ local headsetInput = 50
 local headsetOutput = 75
 
 local builtinInput = 100
-local builtinOutput = 25
+local builtinOutput = 50
 
 function launch()
     tweakOSX()
@@ -163,7 +163,7 @@ function preFlightCloseApps()
     for i, win in ipairs(hs.window.allWindows()) do
         bundle = win:application():bundleID()
         if bundle == "com.obsproject.obs-studio" then
-        -- elseif bundle == "com.apple.Safari" then
+        elseif bundle == "com.apple.Safari" then
         elseif bundle == "com.apple.Terminal" then
         elseif bundle == "com.boinx.FotoMagico5" then
         elseif bundle == "com.microsoft.Powerpoint" then
@@ -178,7 +178,7 @@ end
 function preFlightScreens()
     for _, dev in ipairs(hs.screen.allScreens()) do
         dev:desktopImageURL("file:///System/Library/Desktop%20Pictures/Solid%20Colors/Black.png")
-        --        dev:setBrightness(0.75)
+        dev:setBrightness(0.50)
 
         if dev:name() == "Color LCD" then
             dev:setPrimary()
@@ -204,21 +204,23 @@ function preFlightScreens()
 end
 
 function preFlightSystem()
-    hs.execute("killall 'System Preferences'")
+    hs.execute("defaults write com.apple.dock autohide -bool true")
     hs.execute("defaults write com.apple.finder CreateDesktop -bool false")
+    hs.execute("killall 'Dock'")
     hs.execute("killall 'Finder'")
+    hs.execute("killall 'System Preferences'")
 
     -- Wifi
     if hs.network.interfaceDetails(v4) then
         if hs.network.interfaceDetails(v4)["AirPort"] then
-            hs.alert("🚨 📶 🚨", 10)
+--            hs.alert("🚨 📶 🚨", 10)
             log.i("🚨 📶 🚨")
         end
     end
 
     -- Power
     if hs.battery.powerSource() ~= "AC Power" then
-        hs.alert("🚨 🔌 🚨", 10)
+--        hs.alert("🚨 🔌 🚨", 10)
         log.i("🚨 🔌 🚨")
     end
 

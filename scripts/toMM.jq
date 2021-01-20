@@ -75,4 +75,7 @@ end
 #| (.sources[] | select(.name == "External").settings.device) = "0x2543000043e9a4d"
 | (.sources[] | select(.name == "External").settings.device) = "0x8020000005ac8514"
 | (.sources[] | select(.name == "Internal").settings.device) = "0x8020000005ac8514"
-| (.sources[] | select(.name == "Guest").settings.url) = "https://rtc.ninja/beta?aj&clean&np&wc&optimize=0&ad&vd=obs&push=verstaerker583host&pull=verstaerker583guest"
+| (.sources[] | select(.name == "Send").settings.url) = "https://rtc.ninja/beta/?ad&aj&bc&wc&vd=obs&r=verstaerker583&push=host"
+| (.sources[] | select(.name == "Guest").settings.url) = "https://rtc.ninja/beta/?optimize=0&scene=1&r=verstaerker583"
+| (.sources[] | select(.name == "GuestB").settings.url) = "https://rtc.ninja/beta/?optimize=0&scene&r=verstaerker583&pull=guestB"
+| (.sources[] | select(.name == "Overlay Chat").settings.url) = "https://verstaerker-583.github.io/obs/gp/html/chat.html"

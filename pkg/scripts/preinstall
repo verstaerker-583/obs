@@ -5,8 +5,11 @@ OBS="Library/Application Support/obs-studio"
 killall Hammerspoon
 killall obs
 
-rm -rf ~/"$OBS"
-rm -rf ~/.hammerspoon
+##rm -rf ~/"$OBS"
+##rm -rf ~/.hammerspoon
+
+rm -rf /Users/*/"$OBS"
+rm -rf /Users/*/.hammerspoon
 
 #
 # maintenance
@@ -17,10 +20,12 @@ softwareupdate -i -a
 
 sudo -u $USER defaults delete -g
 sudo -u $USER defaults delete com.apple.audio.AudioMIDISetup
+##sudo -u $USER defaults delete com.apple.dock
 sudo -u $USER defaults delete com.apple.finder
 sudo -u $USER defaults delete com.apple.spaces
 sudo -u $USER defaults delete com.boinx.FotoMagico5
 sudo -u $USER defaults delete com.microsoft.Powerpoint
+
 sudo -u $USER defaults write -g "_HIHideMenuBar" -bool false
 sudo -u $USER defaults write -g AppleInterfaceStyleSwitchesAutomatically -bool true
 sudo -u $USER defaults write -g AppleShowScrollBars -string "Always"
@@ -32,19 +37,7 @@ sudo -u $USER defaults write com.apple.finder ShowHardDrivesOnDesktop -bool fals
 sudo -u $USER defaults write com.apple.finder ShowPathbar -bool true
 sudo -u $USER defaults write com.apple.spaces spans-displays -bool true
 
-sudo -u $USER defaults delete com.apple.dock
-sudo -u $USER defaults write com.apple.dock ResetLaunchPad -bool true
-
 killall Dock
 killall Finder
-
-rm -f ~/Library/LaunchAgents/*KeyRemapping*.plist
-rm -rf ~/Library/Application Support/Microsoft
-
-rm -rf /Library/Audio/Plug-Ins
-rm -rf /Library/CoreMediaIO/Plug-Ins
-rm -rf /Applications/NDI*
-mkdir -p /Library/CoreMediaIO/Plug-Ins/DAL 
-
 
 exit 0
