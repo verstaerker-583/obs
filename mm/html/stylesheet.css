@@ -19,9 +19,13 @@
 .message,
 .theme {
 	background: linear-gradient(to bottom, #fbba00, #f39200);
+	color: inherit
+}
+
+.element {
 	border-bottom-right-radius: 1em;
 	border-top-right-radius: 1em;
-	color: inherit
+	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05)
 }
 
 .element:after {

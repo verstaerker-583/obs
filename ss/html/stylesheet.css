@@ -10,7 +10,8 @@
 }
 
 .element {
-	border-radius: .25em
+	border-radius: .25em;
+	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
 }
 
 .element:after {
@@ -38,8 +39,8 @@
 }
 
 body {
-	background: no-repeat fixed url(https://yt3.ggpht.com/g7AVR3Cl1D1kuR-VQVH7N171lbM7Q8tARJEK8OBfrbmc4oe3ueTxOsJeqQ1NBTXuYt92dNrapw=w1280);
 	background-size: cover;
+	background: no-repeat fixed url(https://yt3.ggpht.com/g7AVR3Cl1D1kuR-VQVH7N171lbM7Q8tARJEK8OBfrbmc4oe3ueTxOsJeqQ1NBTXuYt92dNrapw=w1280);
 	font-family: "Comic Sans MS";
 	font-size: 16px
 }

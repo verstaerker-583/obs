@@ -1,1 +1,123 @@
-"use strict";function build(){var e=location.pathname,t=e.substring(e.lastIndexOf("/")+1);switch(t=t.substring(0,t.lastIndexOf(".")),pics.videoThumb="https://i3.ytimg.com/vi/"+videoId+"/mqdefault.jpg",t){case"start":pics.organizationLogo=!1,pics.presenterLogo==pics.channelIcon&&(pics.presenterLogo=!1),buildBanner(start),loadClock(),loadPics(),position();break;case"cam":pics.channelIcon=!1,pics.clockLogo=!1,pics.organizationLogo&&(pics.organizationLogoNeg=!1),pics.videoThumb=!1,document.body.style.backgroundColor="transparent",document.body.style.backgroundImage="none",loadPics();break;case"donate":document.body.style.backgroundColor="transparent",document.body.style.backgroundImage="none",buildArrows(),buildBanner(donate),call2action.classList.add("heartbeat");break;case"chat":document.body.style.backgroundColor="transparent",document.body.style.backgroundImage="none",window.location="https://www.youtube.com/live_chat?is_popout=1&v="+videoId;break;default:pics.organizationLogo=!1,pics.presenterLogo==pics.channelIcon&&(pics.presenterLogo=!1),buildBanner(finish),loadClock(),loadPics(),position(),channelIcon.classList.add("heartbeat"),clock.classList.add("heartbeat")}}function buildArrows(){for(const t of["chat","description","infocards"]){var e=document.createElement("span");e.classList.add("arrows","call2action","heartbeat"),e.id=t,e.textContent="⇨",document.body.appendChild(e)}description.textContent="⇩"}function buildBanner(e){var t=document.createElement("span");t.id="banner";for(let[o,a]of Object.entries(e)){var n=document.createElement("span");n.classList.add("element",o),n.id=o,n.textContent=a,t.appendChild(n),n=document.createElement("br"),t.appendChild(n)}document.body.appendChild(t)}function loadClock(){var e=document.createElement("object");e.data="clock.svg",e.id="clock",document.body.appendChild(e)}function loadPics(){for(let[t,n]of Object.entries(pics)){var e=document.createElement("img");e.id=t,e.src=n,n&&document.body.appendChild(e)}}function position(){var e,t=document.getElementById("clock"),n=getComputedStyle(t),o=parseInt(n.left),a=parseInt(n.top);"undefined"!=typeof leftX?(t=document.getElementById("channelIcon"),e=leftX):(t=document.getElementById("organizationLogoNeg"),n=getComputedStyle(t),e=parseInt(t.offsetWidth)/2+parseInt(n.left)+2,t=document.getElementById("channelIcon"),e-=parseInt(t.offsetWidth)/2);var d=a+Math.tan(5*Math.PI/180)*(o-e);t.style.left=e+"px",t.style.top=d+"px";var c=parseInt(t.offsetWidth);(t=document.getElementById("banner")).style.left=e+c/2+"px",t.style.top=d+"px";var i=parseInt(t.offsetHeight);t.style.paddingLeft=2*c/3+"px",t.style.paddingTop=(c-i)/2+"px",t.style.transformOrigin="left center"}window.addEventListener("load",build);
+"use strict";
+window.addEventListener('load', build);
+
+function build() {
+	var URL = location.pathname;
+	var PageName = URL.substring(URL.lastIndexOf("/") + 1);
+	PageName = PageName.substring(0, PageName.lastIndexOf("."));
+	pics.videoThumb = "https://i3.ytimg.com/vi/" + videoId + "/mqdefault.jpg";
+	switch (PageName) {
+		case "start":
+			pics.organizationLogo = false;
+			if (pics.presenterLogo == pics.channelIcon)
+				pics.presenterLogo = false;
+			buildBanner(start);
+			loadClock();
+			loadPics();
+			position();
+			break;
+		case "cam":
+			pics.channelIcon = false;
+			pics.clockLogo = false;
+			if (pics.organizationLogo)
+				pics.organizationLogoNeg = false;
+			pics.videoThumb = false;
+			document.body.style.backgroundColor = "transparent";
+			document.body.style.backgroundImage = "none";
+			loadPics();
+			break;
+		case "donate":
+			document.body.style.backgroundColor = "transparent";
+			document.body.style.backgroundImage = "none";
+			buildArrows();
+			buildBanner(donate);
+			call2action.classList.add("heartbeat");
+			break;
+		case "chat":
+			document.body.style.backgroundColor = "transparent";
+			document.body.style.backgroundImage = "none";
+			window.location = "https://www.youtube.com/live_chat?is_popout=1&v=" + videoId;
+			break;
+		default:
+			pics.organizationLogo = false;
+			if (pics.presenterLogo == pics.channelIcon)
+				pics.presenterLogo = false;
+			buildBanner(finish);
+			loadClock();
+			loadPics();
+			position();
+			channelIcon.classList.add("heartbeat");
+			clock.classList.add("heartbeat");
+	}
+}
+
+function buildArrows() {
+	for (const id of ["chat", "description", "infocards"]) {
+		var elmnt = document.createElement("span");
+		elmnt.classList.add("arrows", "call2action", "heartbeat");
+		elmnt.id = id;
+		elmnt.textContent = "⇨";
+		document.body.appendChild(elmnt);
+	}
+	description.textContent = "⇩";
+}
+
+function buildBanner(object) {
+	var banner = document.createElement("span");
+	banner.id = "banner";
+	for (let [key, value] of Object.entries(object)) {
+		var elmnt = document.createElement("span");
+		elmnt.classList.add("element", key);
+		elmnt.id = key;
+		elmnt.textContent = value;
+		banner.appendChild(elmnt);
+		elmnt = document.createElement("br");
+		banner.appendChild(elmnt);
+	}
+	document.body.appendChild(banner);
+}
+
+function loadClock() {
+	var elmnt = document.createElement("object");
+	elmnt.data = "clock.svg";
+	elmnt.id = "clock";
+	document.body.appendChild(elmnt);
+}
+
+function loadPics() {
+	for (let [key, value] of Object.entries(pics)) {
+		var elmnt = document.createElement("img");
+		elmnt.id = key;
+		elmnt.src = value;
+		if (value) document.body.appendChild(elmnt);
+	}
+}
+
+function position() {
+	var elmnt = document.getElementById("clock");
+	var cssObj = getComputedStyle(elmnt);
+	var x0 = parseInt(cssObj.left);
+	var y0 = parseInt(cssObj.top);
+	elmnt = document.getElementById("organizationLogoNeg");
+	cssObj = getComputedStyle(elmnt);
+	var x = parseInt(elmnt.offsetWidth) / 2 + parseInt(cssObj.left) + 2;
+	elmnt = document.getElementById("channelIcon");
+
+	if (typeof leftX != "undefined")
+		x = leftX;
+	else {
+		x -= parseInt(elmnt.offsetWidth) / 2;
+		elmnt.style.left = x + "px";
+	}
+	
+	var y = y0 + Math.tan(5 * Math.PI / 180) * (x0 - x);
+	elmnt.style.top = y + "px";
+	var width = parseInt(elmnt.offsetWidth);
+	elmnt = document.getElementById("banner");
+	elmnt.style.left = x + width / 2 + "px";
+	elmnt.style.top = y + "px";
+	var height = parseInt(elmnt.offsetHeight);
+	elmnt.style.paddingLeft = 2 * width / 3 + "px";
+	elmnt.style.paddingTop = (width - height) / 2 + "px";
+	elmnt.style.transformOrigin = "left center";
+}
