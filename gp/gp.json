@@ -207,6 +207,7 @@
 				"volume_locked": true
 			},
 			"settings": {
+				"css": "",
 				"height": 720,
 				"reroute_audio": true,
 				"width": 1280
@@ -280,7 +281,7 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"css": "body {background: yellow}",
+				"css": "",
 				"height": 720,
 				"reroute_audio": true,
 				"width": 1280
@@ -354,7 +355,7 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"css": "body {background: red}",
+				"css": "",
 				"height": 720,
 				"reroute_audio": true,
 				"width": 1280
@@ -431,7 +432,7 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"css": "body {background: orange}",
+				"css": "",
 				"height": 720,
 				"reroute_audio": true,
 				"width": 1280
