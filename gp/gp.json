@@ -197,27 +197,6 @@
 				{
 					"id": "noise_suppress_filter",
 					"name": "Noise Suppression"
-				}
-			],
-			"id": "browser_source",
-			"monitoring_type": 1,
-			"name": "Host",
-			"private_settings": {
-				"mixer_hidden": true,
-				"volume_locked": true
-			},
-			"settings": {
-				"css": "",
-				"height": 720,
-				"reroute_audio": true,
-				"width": 1280
-			}
-		},
-		{
-			"filters": [
-				{
-					"id": "noise_suppress_filter",
-					"name": "Noise Suppression"
 				},
 				{
 					"id": "clut_filter",
@@ -439,12 +418,23 @@
 			}
 		},
 		{
+			"filters": [
+				{
+					"id": "noise_suppress_filter",
+					"name": "Noise Suppression"
+				}
+			],
 			"id": "browser_source",
-			"name": "Overlay Start",
+			"monitoring_type": 1,
+			"name": "Host",
+			"private_settings": {
+				"mixer_hidden": true,
+				"volume_locked": true
+			},
 			"settings": {
 				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/gp/html/start.html",
+				"reroute_audio": true,
 				"width": 1280
 			}
 		},
@@ -479,21 +469,31 @@
 		},
 		{
 			"id": "browser_source",
-			"name": "Overlay Subscribe",
-			"settings": {
-				"height": 720,
-				"shutdown": true,
-				"url": "https://verstaerker-583.github.io/obs/gp/html/subscribe.html",
-				"width": 1280
-			}
-		},
-		{
-			"id": "browser_source",
 			"name": "Overlay Finish",
 			"settings": {
 				"css": "",
 				"height": 720,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/finish.html",
+				"width": 1280
+			}
+		},
+		{
+			"id": "browser_source",
+			"name": "Overlay Start",
+			"settings": {
+				"css": "",
+				"height": 720,
+				"url": "https://verstaerker-583.github.io/obs/gp/html/start.html",
+				"width": 1280
+			}
+		},
+		{
+			"id": "browser_source",
+			"name": "Overlay Subscribe",
+			"settings": {
+				"height": 720,
+				"shutdown": true,
+				"url": "https://verstaerker-583.github.io/obs/gp/html/subscribe.html",
 				"width": 1280
 			}
 		},
@@ -926,20 +926,6 @@
 						}
 					},
 					{
-						"align": 0,
-						"bounds": {
-							"x": 480,
-							"y": 270
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "screen",
-						"pos": {
-							"x": 1030,
-							"y": 360
-						}
-					},
-					{
 						"locked": true,
 						"name": "guest",
 						"visible": true
@@ -948,15 +934,6 @@
 						"locked": true,
 						"name": "guest+",
 						"visible": true
-					},
-					{
-						"align": 0,
-						"locked": true,
-						"name": "?",
-						"pos": {
-							"x": 640,
-							"y": 340
-						}
 					},
 					{
 						"locked": true,
@@ -979,6 +956,29 @@
 					{
 						"locked": true,
 						"name": "Overlay Subscribe"
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 480,
+							"y": 270
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "screen",
+						"pos": {
+							"x": 1030,
+							"y": 360
+						}
+					},
+					{
+						"align": 0,
+						"locked": true,
+						"name": "?",
+						"pos": {
+							"x": 640,
+							"y": 340
+						}
 					},
 					{
 						"align": 0,
@@ -1168,9 +1168,26 @@
 						"key": "OBS_KEY_Y"
 					}
 				],
+				"libobs.hide_scene_item.GuestX": [
+					{
+						"key": "OBS_KEY_3"
+					},
+					{
+						"key": "OBS_KEY_H"
+					},
+					{
+						"key": "OBS_KEY_N"
+					},
+					{
+						"key": "OBS_KEY_Y"
+					}
+				],
 				"libobs.hide_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					},
+					{
+						"key": "OBS_KEY_X"
 					},
 					{
 						"key": "OBS_KEY_Y"
@@ -1179,6 +1196,9 @@
 				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
+					},
+					{
+						"key": "OBS_KEY_X"
 					},
 					{
 						"key": "OBS_KEY_Y"
@@ -1195,6 +1215,11 @@
 				"libobs.show_scene_item.GuestB": [
 					{
 						"key": "OBS_KEY_N"
+					}
+				],
+				"libobs.show_scene_item.GuestX": [
+					{
+						"key": "OBS_KEY_X"
 					}
 				],
 				"libobs.show_scene_item.Internal": [
@@ -1273,6 +1298,20 @@
 						"pos": {
 							"x": 1172,
 							"y": 216
+						}
+					},
+					{
+						"align": 0,
+						"bounds": {
+							"x": 216,
+							"y": 216
+						},
+						"bounds_type": 3,
+						"locked": true,
+						"name": "GuestX",
+						"pos": {
+							"x": 1172,
+							"y": 504
 						}
 					}
 				]
