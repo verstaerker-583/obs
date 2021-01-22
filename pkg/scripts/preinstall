@@ -16,7 +16,14 @@ rm -rf /Users/*/.hammerspoon
 #
 
 killall "System Preferences"
-softwareupdate -i -a
+
+if [ "$USER" = "johanneserdmann" ]; then
+	mkdir ~/Documents/Segelsofa && mv ~/Desktop/intro.mp4 ~/Documents/Segelsofa
+fi
+
+if [ "$USER" = "markus" ]; then
+	echo "none"
+fi
 
 sudo -u $USER defaults delete -g
 sudo -u $USER defaults delete com.apple.audio.AudioMIDISetup
@@ -39,10 +46,5 @@ sudo -u $USER defaults write com.apple.spaces spans-displays -bool true
 
 killall Dock
 killall Finder
-
-if [ "$USER" = "johanneserdmann" ]; then
-	mkdir ~/Documents/Segelsofa && mv ~/Desktop/intro.mp4 ~/Documents/Segelsofa
-fi
-	ln -sf ~/"Library/Application Support/obs-studio/logs" ~/Desktop/send-to-olaf
 
 exit 0

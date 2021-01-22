@@ -1,23 +1,25 @@
 #bell_after {
-	animation: bell_after 10s steps(1, end) infinite
+	animation: bell_after 10s steps(1) infinite;
+	transform-origin: 50% 10%;
 }
 
 #bell_before {
-	animation: bell_before 10s steps(1, end) infinite
+	animation: bell_before 10s steps(1) infinite
 }
 
 #like {
-	animation: like 10s steps(1, end) infinite
+	animation: like 10s steps(1) infinite
 }
 
 #share {
-	animation: share 10s steps(1, end) infinite
+	animation: share 10s steps(1) infinite
 }
 
 .subscribe {
-	animation: subscribe 10s steps(1, end) infinite;
+	animation: subscribe 10s steps(1) infinite;
 	background-color: rgba(204, 0, 0);
 	border: 0;
+	border-radius: 0.125em;
 	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
 	color: #fff;
 	font-size: inherit;
@@ -28,7 +30,7 @@
 }
 
 .subscribe::before {
-	animation: content 10s steps(1, end) infinite;
+	animation: content 10s steps(1) infinite;
 	content: "abonnieren"
 }
 
@@ -55,8 +57,76 @@ body {
 	0% {
 		opacity: 0
 	}
-	60% {
+	50% {
 		opacity: 1
+	}
+	60% {
+		transform: rotate(0);
+		fill: rgba(204, 0, 0);
+	}
+	61% {
+		transform: rotate(34deg);
+	}
+	62% {
+		transform: rotate(-34deg);
+	}
+	63% {
+		transform: rotate(30deg);
+	}
+	64% {
+		transform: rotate(-30deg);
+	}
+	65% {
+		transform: rotate(26deg);
+	}
+	66% {
+		transform: rotate(-26deg);
+	}
+	67% {
+		transform: rotate(20deg);
+	}
+	68% {
+		transform: rotate(-20deg);
+	}
+	69% {
+		transform: rotate(16deg);
+	}
+	70% {
+		transform: rotate(-16deg);
+	}
+	71% {
+		transform: rotate(12deg);
+	}
+	72% {
+		transform: rotate(-12deg);
+	}
+	73% {
+		transform: rotate(8deg);
+	}
+	74% {
+		transform: rotate(-8deg);
+	}
+	75% {
+		transform: rotate(4deg);
+	}
+	76% {
+		transform: rotate(-4deg);
+	}
+	77% {
+		transform: rotate(2deg);
+	}
+	78% {
+		transform: rotate(-2deg);
+	}
+	79% {
+		transform: rotate(0deg);
+		fill: rgba(144, 144, 144);
+	}
+	80% {
+		transform: rotate(0);
+	}
+	90% {
+		opacity: 0
 	}
 }
 
@@ -64,8 +134,11 @@ body {
 	0% {
 		opacity: 0
 	}
-	45% {
+	30% {
 		opacity: 1
+	}
+	50% {
+		opacity: 0
 	}
 }
 
@@ -73,23 +146,29 @@ body {
 	0% {
 		opacity: 0
 	}
-	30% {
+	20% {
 		opacity: 1
 	}
-	45% {
+	30% {
 		background-color: rgba(144, 144, 144)
+	}
+	90% {
+		opacity: 0
 	}
 }
 
 @keyframes content {
-	45% {
+	30% {
 		content: "abonniert"
 	}
 }
 
 @keyframes like {
-	15% {
+	10% {
 		fill: rgba(6, 95, 212)
+	}
+	90% {
+		opacity: 0
 	}
 }
 
@@ -97,10 +176,13 @@ body {
 	0% {
 		opacity: 0
 	}
-	75% {
+	70% {
 		opacity: 1
 	}
-	85% {
+	80% {
 		fill: rgba(6, 95, 212)
+	}
+	90% {
+		opacity: 0
 	}
 }

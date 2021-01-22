@@ -1,8 +1,9 @@
 # init.lua
 s/--collection 'gp'/--collection 'ss'/
+s/--enable-media-stream //
 s/--profile 'gpYTsq'/--profile 'jeYTsq'/
-#s/--enable-media-stream //
-#s/--startvirtualcam //
+s/--startvirtualcam //
+s/gp\/html/je\/html/
 
 # global.ini
 /\[Basic\]/a\

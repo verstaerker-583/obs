@@ -25,13 +25,13 @@ local headsetOutput = 50
 local builtinInput = 100
 local builtinOutput = 50
 
-function launch()
+function Launch()
+    preFlightCloseApps()
     tweakOSX()
     preFlightSystem()
-    preFlightCloseApps()
     preFlightScreens()
     hs.execute(
-        "open -a 'OBS' --args --always-on-top --collection 'gp' --disable-updater --enable-media-stream --profile 'gpYTsq' --startstreaming --startvirtualcam --unfiltered_log --verbose"
+        "open -a OBS --args --always-on-top --collection 'gp' --disable-notifications --disable-updater --enable-media-stream --profile 'gpYTsq' --startstreaming --startvirtualcam --unfiltered_log --verbose"
     )
     preFlightWindows()
 end
@@ -159,18 +159,23 @@ function preFlightAudio()
     log.f("🎙🔴\n%s", hs.inspect(x))
 end
 
+function preFlightChat()
+    hs.execute("open -F -n -b com.google.Chrome --args --disable-notifications --app=https://verstaerker-583.github.io/obs/gp/html/chat.html")
+end
+
 function preFlightCloseApps()
     for i, win in ipairs(hs.window.allWindows()) do
         bundle = win:application():bundleID()
         if bundle == "com.obsproject.obs-studio" then
-        elseif bundle == "com.apple.Safari" then
+        -- elseif bundle == "com.apple.Safari" then
         elseif bundle == "com.apple.Terminal" then
         elseif bundle == "com.boinx.FotoMagico5" then
         elseif bundle == "com.microsoft.Powerpoint" then
         elseif bundle == "com.teamviewer.TeamViewer" then
         elseif bundle == "org.hammerspoon.Hammerspoon" then
         else
-            win:application():kill()
+	    win:close()
+            win:application():kill9()
         end
     end
 end
@@ -240,6 +245,8 @@ function preFlightWindows()
         elseif bundle == "com.microsoft.Powerpoint" and win:unminimize():isStandard() then
             win:setSize(0, 0)
             win:maximize()
+        elseif bundle == "com.google.Chrome" and win:unminimize():isStandard() then
+            topLeftMaxY(win)
         else
             win:minimize()
         end
@@ -247,8 +254,9 @@ function preFlightWindows()
 end
 
 function tweakFotoMagico()
+    hs.execute("defaults com.boinx.FotoMagico5 FMThemeType")
     hs.execute("defaults delete com.boinx.FotoMagico5 masterVolume")
-    hs.execute("defaults  com.boinx.FotoMagico5 FMThemeType")
+    hs.execute("defaults delete com.google.Chrome")
     -- hs.execute("defaults write com.boinx.FotoMagico5 FMThemeType -int 2")
     hs.execute("defaults write com.boinx.FotoMagico5 ScreenHasBeenChosen -int 1")
     hs.execute("defaults write com.boinx.FotoMagico5 defaultHeight -int 720")
@@ -283,6 +291,19 @@ function topCenter(win)
 
     x.x = ((max.w - f.w) / 2) + max.x
     x.y = 0
+    win:setFrame(x)
+end
+
+function topLeftMaxY(win)
+    local f = win:frame()
+    local max = win:screen():fullFrame()
+
+    local x = f
+
+    x.x = 0 
+    x.y = 0
+    x.w = 500
+    x.h = max.h
     win:setFrame(x)
 end
 
@@ -325,10 +346,10 @@ hs.window.animationDuration = 0
 -- Key Bindings
 hyper = {"ctrl", "alt", "cmd"}
 hs.hotkey.bind(hyper, "a", preFlightAudio)
-hs.hotkey.bind(hyper, "c", preFlightCloseApps)
+hs.hotkey.bind(hyper, "c", preFlightChat)
 hs.hotkey.bind(hyper, "s", preFlightScreens)
 hs.hotkey.bind(hyper, "w", preFlightWindows)
-hs.hotkey.bind(hyper, "l", launch)
+hs.hotkey.bind(hyper, "l", Launch)
 
 -- Watcher
 myWatcher0 = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()

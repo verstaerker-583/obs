@@ -13,8 +13,7 @@
 					"Overlay Subscribe",
 					"cam+",
 					"guest",
-					"guest+",
-					"host"
+					"guest+"
 					)
 				)
 			),
