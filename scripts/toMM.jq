@@ -91,7 +91,7 @@ end
 | (.sources[] | select(.name == "GuestX").settings.url) = "https://rtc.ninja/beta/?optimize=0&scene&r=verstaerker583mm&pull=guestX"
 
 # audiofix ?
-| (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja/beta/?ad&aj&bc&mvb=200&vd=obs&wc&r=verstaerker583&push=host"
+| (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja/beta/?ad&aj&bc&mvb=200&vd=obs&wc&r=verstaerker583mm&push=host"
 | del (.sources[] | select(.id == "browser_source") | select(.name != "Host").monitoring_type)
 # chat
 | (.sources[] | select(.name == "Overlay Chat").settings.url) = "https://verstaerker-583.github.io/obs/gp/html/chat.html"
