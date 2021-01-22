@@ -1,6 +1,7 @@
 # init.lua
+s/--collection 'gp'/--collection 'mm'/
 s/--profile 'gpYTsq'/--profile 'mmYTlq'/
-s/--startstreaming //
+#s/--startstreaming //
 s/gp\/html/mm\/html/
 
 # global.ini

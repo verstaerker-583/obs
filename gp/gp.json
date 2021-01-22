@@ -11,7 +11,11 @@
 			},
 			{
 				"id": "compressor_filter",
-				"name": "Compressor"
+				"name": "Compressor",
+				"settings": {
+					"attack_time": 1,
+					"output_gain": 3
+				}
 			},
 			{
 				"id": "limiter_filter",
@@ -258,7 +262,6 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"css": "",
 				"height": 720,
 				"reroute_audio": true,
 				"width": 1280
@@ -331,7 +334,6 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"css": "",
 				"height": 720,
 				"reroute_audio": true,
 				"width": 1280
@@ -407,7 +409,6 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"css": "",
 				"height": 720,
 				"reroute_audio": true,
 				"width": 1280
@@ -428,7 +429,6 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"css": "",
 				"height": 720,
 				"reroute_audio": true,
 				"width": 1280
@@ -908,31 +908,21 @@
 						}
 					},
 					{
-						"align": 0,
 						"locked": true,
-						"name": "GuestA",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
-					},
-					{
-						"align": 0,
-						"locked": true,
-						"name": "GuestB",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
+						"name": "GuestA"
 					},
 					{
 						"locked": true,
-						"name": "guest",
-						"visible": true
+						"name": "GuestB"
 					},
 					{
 						"locked": true,
 						"name": "guest+",
+						"visible": true
+					},
+					{
+						"locked": true,
+						"name": "guest",
 						"visible": true
 					},
 					{
@@ -969,7 +959,8 @@
 						"pos": {
 							"x": 1030,
 							"y": 360
-						}
+						},
+						"scale_filter": "lanczos"
 					},
 					{
 						"align": 0,
@@ -1067,11 +1058,11 @@
 					},
 					{
 						"locked": true,
-						"name": "cam"
+						"name": "cam+"
 					},
 					{
 						"locked": true,
-						"name": "cam+"
+						"name": "cam"
 					}
 				]
 			}
@@ -1147,6 +1138,9 @@
 					},
 					{
 						"key": "OBS_KEY_N"
+					},
+					{
+						"key": "OBS_KEY_X"
 					}
 				],
 				"libobs.hide_scene_item.GuestA": [
@@ -1177,6 +1171,9 @@
 					},
 					{
 						"key": "OBS_KEY_N"
+					},
+					{
+						"key": "OBS_KEY_X"
 					},
 					{
 						"key": "OBS_KEY_Y"
@@ -1234,6 +1231,9 @@
 					},
 					{
 						"key": "OBS_KEY_N"
+					},
+					{
+						"key": "OBS_KEY_X"
 					}
 				]
 			},

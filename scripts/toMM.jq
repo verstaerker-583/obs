@@ -32,9 +32,11 @@ del(
 					.hotkeys[
 						"libobs.hide_scene_item.GuestA",
 						"libobs.hide_scene_item.GuestB",
+						"libobs.hide_scene_item.GuestX",
 						"libobs.hide_scene_item.cam+",
 						"libobs.show_scene_item.GuestA",
 						"libobs.show_scene_item.GuestB",
+						"libobs.show_scene_item.GuestX",
 						"libobs.show_scene_item.cam+"
 						]
 				)

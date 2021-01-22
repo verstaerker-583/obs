@@ -468,7 +468,8 @@
 						},
 						"private_settings": {
 							"color-preset": 7
-						}
+						},
+						"visible": true
 					},
 					{
 						"align": 0,

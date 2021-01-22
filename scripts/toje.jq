@@ -17,9 +17,11 @@ del(
 				.hotkeys[
 					"libobs.hide_scene_item.GuestA",
 					"libobs.hide_scene_item.GuestB",
+					"libobs.hide_scene_item.GuestX",
 					"libobs.hide_scene_item.cam+",
 					"libobs.show_scene_item.GuestA",
 					"libobs.show_scene_item.GuestB",
+					"libobs.show_scene_item.GuestX",
 					"libobs.show_scene_item.cam+"
 					]
 			)
@@ -66,7 +68,7 @@ del(
 )
 | (.sources[] | select(.name == "External").filters) |= . + [{"id": "color_filter"}]
 | (.sources[] | select(.name == "External").filters[] | select(.id == "color_filter").name) = "Color Correction" 
-| (.sources[] | select(.name == "External").filters[] | select(.id == "color_filter").settings.enabled) = false
+| (.sources[] | select(.name == "External").filters[] | select(.id == "color_filter").enabled) = false
 | (.sources[] | select(.name == "External").settings.device) = "0x11120001bcf0215"
 | (.sources[] | select(.name == "External").settings.preset) = "AVCaptureSessionPreset1920x1080"
 | (.sources[] | select(.name == "Internal").settings.device) = "EAB7A68FEC2B4487AADFD8A91C1CB782"
