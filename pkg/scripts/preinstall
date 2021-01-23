@@ -18,9 +18,7 @@ rm -rf /Users/*/.hammerspoon
 killall "System Preferences"
 
 if [ "$USER" = "johanneserdmann" ]; then
-	mkdir ~/Documents/Segelsofa && cp -a ~/Desktop/intro.mp4 ~/Documents/Segelsofa
-	chown -R root ~/Documents/Segelsofa
-	chmod -R -w ~/Documents/Segelsofa
+	echo "none"
 fi
 
 if [ "$USER" = "markus" ]; then
