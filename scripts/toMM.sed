@@ -18,6 +18,7 @@ SceneCollectionFile=mm
 #SceneCollectionFile=gp
 
 # basic.ini
+#/ScaleType/d
 /\[Audio\]/a\
 MonitoringDeviceId=BuiltInHeadphoneOutputDevice
 #MonitoringDeviceId=AppleUSBAudioEngine:LG Electronics Inc.:USB Audio:141000:2

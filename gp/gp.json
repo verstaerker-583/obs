@@ -449,7 +449,7 @@
 			"name": "Overlay Chat",
 			"settings": {
 				"css": "@import url(https://verstaerker-583.github.io/obs/gp/html/chat.css)",
-				"fps_custom": true,
+				"fps_custom": false,
 				"height": 144,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/chat.html",
 				"width": 560
@@ -459,7 +459,7 @@
 			"id": "browser_source",
 			"name": "Overlay Donate",
 			"settings": {
-				"fps_custom": true,
+				"fps_custom": false,
 				"height": 720,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/donate.html",
 				"width": 1280
@@ -470,7 +470,7 @@
 			"name": "Overlay Finish",
 			"settings": {
 				"css": "",
-				"fps_custom": true,
+				"fps_custom": false,
 				"height": 720,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/finish.html",
 				"width": 1280
@@ -490,7 +490,7 @@
 			"id": "browser_source",
 			"name": "Overlay Subscribe",
 			"settings": {
-				"fps_custom": true,
+				"fps_custom": false,
 				"height": 720,
 				"shutdown": true,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/subscribe.html",

@@ -13,6 +13,7 @@ SceneCollection=ss\
 SceneCollectionFile=ss
 
 # basic.ini
+/ScaleType/d
 /\[Audio\]/a\
 MonitoringDeviceId=BuiltInSpeakerDevice
 #MonitoringDeviceId=BuiltInHeadphoneOutputDevice

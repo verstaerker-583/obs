@@ -11,6 +11,7 @@ SceneCollection=gp\
 SceneCollectionFile=gp
 
 # basic.ini
+/ScaleType/d
 /\[Audio\]/a\
 MonitoringDeviceId=AppleHDAEngineOutput:1B,0,1,1:0
 
