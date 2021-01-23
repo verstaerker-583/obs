@@ -74,7 +74,7 @@ del(
 | (.sources[] | select(.name == "Internal").settings.device) = "EAB7A68FEC2B4487AADFD8A91C1CB782"
 | (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/johanneserdmann/Documents/Segelsofa/intro.mp4"
 
-| (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja/beta?ad&aj&bc&mvb=200&vd=obs&wc&r=verstaerker583je&push=host"
-| (.sources[] | select(.name == "GuestA").settings.url) = "https://rtc.ninja/beta?optimize=0&scene&r=verstaerker583je&pull=guestA"
-| (.sources[] | select(.name == "GuestB").settings.url) = "https://rtc.ninja/beta?optimize=0&scene&r=verstaerker583je&pull=guestB"
-| (.sources[] | select(.name == "GuestX").settings.url) = "https://rtc.ninja/beta?optimize=0&scene&r=verstaerker583je&pull=guestX"
+| (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja?ad&aj&bc&mvb=200&vd=obs&wc&r=verstaerker583je&push=host"
+| (.sources[] | select(.name == "GuestA").settings.url) = "https://rtc.ninja?optimize=0&scene&r=verstaerker583je&pull=guestA"
+| (.sources[] | select(.name == "GuestB").settings.url) = "https://rtc.ninja?optimize=0&scene&r=verstaerker583je&pull=guestB"
+| (.sources[] | select(.name == "GuestX").settings.url) = "https://rtc.ninja?optimize=0&scene&r=verstaerker583je&pull=guestX"
