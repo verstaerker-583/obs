@@ -48,6 +48,7 @@ function build() {
 			position();
 			channelIcon.classList.add("heartbeat");
 			clock.classList.add("heartbeat");
+			videoThumb.classList.add("heartbeat");
 	}
 }
 

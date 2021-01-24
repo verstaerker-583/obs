@@ -277,7 +277,7 @@
 		},
 		{
 			"id": "display_capture",
-			"name": "Screen Capture",
+			"name": "Display Capture",
 			"settings": {
 				"display": 1
 			}
@@ -518,7 +518,7 @@
 				]
 			},
 			"id": "scene",
-			"name": "Screen",
+			"name": "Display",
 			"settings": {
 				"items": [
 					{
@@ -529,7 +529,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Screen Capture",
+						"name": "Display Capture",
 						"pos": {
 							"x": 640,
 							"y": 360
