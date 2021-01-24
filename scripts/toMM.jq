@@ -57,7 +57,7 @@ del(
 			)
 		)
 	)
-	| (.sources[] | select(.name == "Cam").settings.items[] | select(.name == "screen").pos.y) = 475
+	| (.sources[] | select(.name == "Cam").settings.items[] | select(.name == "display").pos.y) = 475
 	| (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/markus/Documents/DieWeltImBlick/intro"
 	| (.sources[] | select(.name == "Outro").settings.local_file) = "/Users/markus/Documents/DieWeltImBlick/outro"
 
@@ -86,7 +86,7 @@ end
 | (.sources[] | select(.name == "External").settings.device) = "0x8020000005ac8514"
 | (.sources[] | select(.name == "Internal").settings.device) = "0x8020000005ac8514"
 
-| (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja?ad&aj&bc&mvb=200&vd=obs&wc&r=verstaerker583mm&push=host"
-| (.sources[] | select(.name == "GuestA").settings.url) = "https://rtc.ninja?optimize=0&scene&r=verstaerker583mm&pull=guestA"
-| (.sources[] | select(.name == "GuestB").settings.url) = "https://rtc.ninja?optimize=0&scene&r=verstaerker583mm&pull=guestB"
-| (.sources[] | select(.name == "GuestX").settings.url) = "https://rtc.ninja?optimize=0&scene&r=verstaerker583mm&pull=guestX"
+| (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja/beta?ad&aj&bc&mvb=200&vd=obs&wc&r=verstaerker583mm&push=host"
+| (.sources[] | select(.name == "GuestA").settings.url) = "https://rtc.ninja/beta?optimize=0&scene&r=verstaerker583mm&pull=guestA"
+| (.sources[] | select(.name == "GuestB").settings.url) = "https://rtc.ninja/beta?optimize=0&scene&r=verstaerker583mm&pull=guestB"
+| (.sources[] | select(.name == "GuestX").settings.url) = "https://rtc.ninja/beta?optimize=0&scene&r=verstaerker583mm&pull=guestX"
