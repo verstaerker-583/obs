@@ -27,8 +27,8 @@ fi
 
 sudo -u $USER defaults delete -g
 sudo -u $USER defaults delete com.apple.audio.AudioMIDISetup
-##sudo -u $USER defaults delete com.apple.dock
-sudo -u $USER defaults delete com.apple.finder
+#sudo -u $USER defaults delete com.apple.dock
+#sudo -u $USER defaults delete com.apple.finder
 sudo -u $USER defaults delete com.apple.spaces
 sudo -u $USER defaults delete com.boinx.FotoMagico5
 ##sudo -u $USER defaults delete com.microsoft.Powerpoint
