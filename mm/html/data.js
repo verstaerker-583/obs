@@ -24,5 +24,5 @@ var pics = {
 	presenterLogo: "https://yt3.ggpht.com/ytc/AAUvwngniP7LA5XVERT6U-ePwCQWvcek3QREoU3GNZ-S=s196",
 };
 var leftX = 79;
-var alarmTime = "19:30";
-var videoId = "WrAlgjXlARQ";
+var alarmTime = "20:00";
+var videoId = "vdn6JrXwir0";
