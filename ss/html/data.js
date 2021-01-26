@@ -16,9 +16,8 @@ var donate = {
 var pics = {
 	channelIcon: "https://yt3.ggpht.com/ytc/AAUvwni8JzXEQMDZ7AaB9V1DbrqGv1qRXPHkBe-56NtM=s196",
 	clockLogo: "../jeLogo.svg",
-	hostLogo: "https://www.delius-klasing.de/media/image/a7/29/90/9783667119766.jpg",
 	organizationLogoNeg: "../jeLogo2.png",
 	presenterLogo: "https://yt3.ggpht.com/a/AATXAJz8tFuSp02_HZcgDnqwYaXNqTpo_NPVUPgOEbBx=s196"
 };
 var alarmTime = "20:00";
-var videoId = "xAwoAuzy7QQ";
+var videoId = "I7xTf_hso4E";

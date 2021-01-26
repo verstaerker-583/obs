@@ -1,21 +1,16 @@
 @import "../../gp/html/stylesheet.css";
-#hostLogo {
-	height: 134px;
-	width: auto
-}
 
 .call2action {
-	background: linear-gradient(to bottom, white, #23b1d1);
-	color: white
+	background: linear-gradient(to bottom, white, #23b1d1)
 }
 
 .element {
 	border-radius: .25em;
-	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05)
 }
 
 .element:after {
-	display: none;
+	display: none
 }
 
 .message,
@@ -25,22 +20,21 @@
 }
 
 #clockLogo {
-	right: calc(182.5px - 150px/2);
-	top: calc(193px - 30px);
+	right: calc(28px + 27px * 2 - 5px + 208px/2 - 150px/2 - 5px);
 	width: 150px
 }
 
 #presenterLogo {
 	border-radius: 50%;
 	border: 5px solid;
-	height: 80px;
-	right: 10px;
-	top: 10px
+	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+	height: calc(90px - 20px);
+	padding: 5px
 }
 
 body {
-	background-size: cover;
-	background: no-repeat fixed url(https://yt3.ggpht.com/g7AVR3Cl1D1kuR-VQVH7N171lbM7Q8tARJEK8OBfrbmc4oe3ueTxOsJeqQ1NBTXuYt92dNrapw=w1280);
-	font-family: "Comic Sans MS";
-	font-size: 16px
+	background-color: inherit;
+	background-image: url(https://yt3.ggpht.com/g7AVR3Cl1D1kuR-VQVH7N171lbM7Q8tARJEK8OBfrbmc4oe3ueTxOsJeqQ1NBTXuYt92dNrapw=h720);
+	background-size: auto 100vh; 
+	font-family: "Comic Sans MS"
 }

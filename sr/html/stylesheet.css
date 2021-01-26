@@ -1,6 +1,6 @@
 @import "../../gp/html/stylesheet.css";
+
 #hostLogo {
-	height: auto;
 	width: 340px
 }
 
@@ -10,11 +10,11 @@
 
 .element {
 	border-radius: .25em;
-	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05)
 }
 
 .element:after {
-	display: none;
+	display: none
 }
 
 .message {
@@ -33,7 +33,7 @@
 }
 
 body {
-	background: no-repeat fixed url(https://markus-mauthe.de/site/assets/files/1/dsc6707.jpg);
-	background-size: cover;
+	background-color: inherit;
+	background-image: url(https://markus-mauthe.de/site/assets/files/1/dsc6707.jpg);
 	font-family: "Sunbeat"
 }

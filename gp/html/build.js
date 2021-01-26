@@ -99,18 +99,9 @@ function position() {
 	var cssObj = getComputedStyle(elmnt);
 	var x0 = parseInt(cssObj.left);
 	var y0 = parseInt(cssObj.top);
-	elmnt = document.getElementById("organizationLogoNeg");
-	cssObj = getComputedStyle(elmnt);
-	var x = parseInt(elmnt.offsetWidth) / 2 + parseInt(cssObj.left) + 2;
 	elmnt = document.getElementById("channelIcon");
-
-	if (typeof leftX != "undefined")
-		x = leftX;
-	else {
-		x -= parseInt(elmnt.offsetWidth) / 2;
-		elmnt.style.left = x + "px";
-	}
-	
+	cssObj = getComputedStyle(elmnt);
+	var x = parseInt(cssObj.left);
 	var y = y0 + Math.tan(5 * Math.PI / 180) * (x0 - x);
 	elmnt.style.top = y + "px";
 	var width = parseInt(elmnt.offsetWidth);

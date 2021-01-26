@@ -10,14 +10,13 @@
 }
 
 #channelIcon {
-	border: 5px solid;
 	border-radius: 50%;
+	border: 5px solid;
 	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
-	left: calc(182px - 206px/2);
-	padding: 8px;
+	left: calc(30px + 27px * 2 - 5px);
+	padding: 5px;
 	position: absolute;
-	top: calc(273px - 206px/2);
-	width: 180px
+	width: calc(198px - 10px)
 }
 
 #chat {
@@ -30,22 +29,22 @@
 	border: 5px solid currentColor;
 	border-radius: 50%;
 	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
-	height: 196px;
+	height: auto;
 	position: absolute;
-	right: calc(182.5px - 206px/2);
-	top: calc(193px - 206px/2);
-	width: 196px
+	right: calc(28px + 27px * 2 - 5px);
+	top: calc(28px + 27px * 2 - 5px);
+	width: 198px
 }
 
 #clockFace {
-	fill: #fff
+	fill: white
 }
 
 #clockLogo {
 	height: 100px;
 	position: absolute;
-	right: calc(182.5px - 100px/2);
-	top: calc(193px - 40px);
+	right: calc(28px + 27px * 2 - 5px + 208px/2 - 100px/2);
+	top: calc(28px + 27px * 2 - 5px + 208px/2);
 	width: 100px;
 	z-index: -1
 }
@@ -64,7 +63,7 @@
 
 #hourHand,
 #minuteHand {
-	stroke: #fff
+	stroke: white
 }
 
 #infocards {
@@ -76,35 +75,34 @@
 #organizationLogo,
 #organizationLogoNeg {
 	bottom: 10px;
-	height: auto;
+	height: 90px;
 	left: 10px;
-	position: absolute;
-	width: 340px
+	position: absolute
 }
 
 #presenterLogo {
-	height: 135px;
+	height: 90px;
 	position: absolute;
-	right: 0;
-	top: 0
+	right: 10px;
+	top: 10px
 }
 
 #secondHand {
-	stroke: #ff0
+	stroke: yellow
 }
 
 #videoThumb {
-	border-radius: 10px;
 	border: 5px solid;
 	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
 	display: block;
-	height: 234px;
+	height: calc(232px - 10px); 
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
+	padding: 5px;
 	position: relative;
-	top: calc(100vh - 234px - 129px);
-	width: 416px
+	top: calc(100vh - 110px - 232px - 5px);
+	width: calc(414px - 10px)
 }
 
 .arrows {
@@ -155,18 +153,18 @@
 }
 
 .message_neg {
-	background: #fff;
+	background: white;
 	color: #73be1e;
 	font-size: 200%
 }
 
 .shadow {
-	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05)
 }
 
 .theme {
-	background: #ff0;
-	color: #000;
+	background: yellow;
+	color: black;
 	font-size: 100%
 }
 
@@ -195,9 +193,10 @@
 }
 
 body {
-	background: #73be1e;
-	color: #fff;
+	background-color: #73be1e;
+	background-size: cover;
+	color: white;
 	font-family: "Helvetica Neue";
 	font-size: 18px;
-	font-weight: 700
+	font-weight: bold
 }
