@@ -1248,69 +1248,69 @@
 						"align": 0,
 						"bounds": {
 							"x": 324,
-							"y": 216
+							"y": 200
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "External",
 						"pos": {
-							"x": 162,
+							"x": 150,
 							"y": 360
 						}
 					},
 					{
 						"align": 0,
 						"bounds": {
-							"x": 216,
-							"y": 216
+							"x": 200,
+							"y": 200
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "Internal",
 						"pos": {
-							"x": 1172,
+							"x": 1180,
 							"y": 504
 						}
 					},
 					{
 						"align": 0,
 						"bounds": {
-							"x": 216,
-							"y": 216
+							"x": 200,
+							"y": 200
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "GuestA",
 						"pos": {
-							"x": 1172,
-							"y": 216
+							"x": 1180,
+							"y": 200
 						}
 					},
 					{
 						"align": 0,
 						"bounds": {
-							"x": 216,
-							"y": 216
+							"x": 200,
+							"y": 200
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "GuestB",
 						"pos": {
-							"x": 1172,
-							"y": 216
+							"x": 1180,
+							"y": 200
 						}
 					},
 					{
 						"align": 0,
 						"bounds": {
-							"x": 216,
-							"y": 216
+							"x": 200,
+							"y": 200
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "GuestX",
 						"pos": {
-							"x": 1172,
+							"x": 1180,
 							"y": 504
 						}
 					}
@@ -1356,14 +1356,14 @@
 					{
 						"align": 0,
 						"bounds": {
-							"x": 216,
-							"y": 216
+							"x": 200,
+							"y": 200
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "GuestB",
 						"pos": {
-							"x": 1172,
+							"x": 1180,
 							"y": 504
 						}
 					}
@@ -1468,42 +1468,42 @@
 					{
 						"align": 0,
 						"bounds": {
-							"x": 432,
-							"y": 432
+							"x": 400,
+							"y": 400
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "GuestA",
 						"pos": {
-							"x": 216,
+							"x": 200,
 							"y": 360
 						}
 					},
 					{
 						"align": 0,
 						"bounds": {
-							"x": 432,
-							"y": 432
+							"x": 400,
+							"y": 400
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "GuestB",
 						"pos": {
-							"x": 216,
+							"x": 200,
 							"y": 360
 						}
 					},
 					{
 						"align": 0,
 						"bounds": {
-							"x": 432,
-							"y": 432
+							"x": 400,
+							"y": 400
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "GuestX",
 						"pos": {
-							"x": 1064,
+							"x": 1080,
 							"y": 360
 						}
 					}
@@ -1555,14 +1555,14 @@
 					{
 						"align": 0,
 						"bounds": {
-							"x": 432,
-							"y": 432
+							"x": 400,
+							"y": 400
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "GuestB",
 						"pos": {
-							"x": 1064,
+							"x": 1080,
 							"y": 360
 						}
 					}

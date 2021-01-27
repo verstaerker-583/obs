@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1929" height="1080">
+	<defs>
+		<rect id="cam" height="200" width="400" rx="100" x="-200" y="-100"/>
+	</defs>
+	<use xlink:href="#cam" y="17.5%"/>
+	<use xlink:href="#cam" y="50%" x="100"/>
+	<use xlink:href="#cam" y="82.5%"/>
+
+	<use xlink:href="#cam" y="130"/>
+	<use xlink:href="#cam" y="360" x="100"/>
+	<use xlink:href="#cam" y="590"/>
+
+	<use xlink:href="#cam" y="130" x="100%"/>
+	<use xlink:href="#cam" y="360" x="100%"/>
+	<use xlink:href="#cam" y="590" x="100%"/>
+</svg>
