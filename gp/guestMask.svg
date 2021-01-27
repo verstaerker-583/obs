@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1920" height="1080">
 	<defs>
-		<rect id="cam" width="1200" height="600" rx="300" x="-600" y="-300"/>
+		<rect id="cam" width="800" height="400" rx="200" x="-400" y="-200"/>
 	</defs>
 	<use xlink:href="#cam" y="50%"/>
 	<use xlink:href="#cam" y="50%" x="100%"/>

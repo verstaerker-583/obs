@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1920" height="1080">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720">
 	<defs>
-		<rect id="cam" width="600" height="300" rx="150" x="-300" y="-150"/>
+		<rect id="cam" width="400" height="200" rx="100" x="-200" y="-100"/>
 	</defs>
 	<use xlink:href="#cam" y="17.5%"/>
-	<use xlink:href="#cam" y="50%" x="150"/>
+	<use xlink:href="#cam" y="50%" x="100"/>
 	<use xlink:href="#cam" y="82.5%"/>
 	<use xlink:href="#cam" y="30%" x="100%"/>
 	<use xlink:href="#cam" y="70%" x="100%"/>
