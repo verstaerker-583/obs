@@ -1248,7 +1248,7 @@
 						"align": 0,
 						"bounds": {
 							"x": 324,
-							"y": 200
+							"y": 216
 						},
 						"bounds_type": 3,
 						"locked": true,
@@ -1262,7 +1262,7 @@
 						"align": 0,
 						"bounds": {
 							"x": 200,
-							"y": 200
+							"y": 216
 						},
 						"bounds_type": 3,
 						"locked": true,
@@ -1276,35 +1276,35 @@
 						"align": 0,
 						"bounds": {
 							"x": 200,
-							"y": 200
+							"y": 216
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "GuestA",
 						"pos": {
 							"x": 1180,
-							"y": 200
+							"y": 216
 						}
 					},
 					{
 						"align": 0,
 						"bounds": {
 							"x": 200,
-							"y": 200
+							"y": 216
 						},
 						"bounds_type": 3,
 						"locked": true,
 						"name": "GuestB",
 						"pos": {
 							"x": 1180,
-							"y": 200
+							"y": 216
 						}
 					},
 					{
 						"align": 0,
 						"bounds": {
 							"x": 200,
-							"y": 200
+							"y": 216
 						},
 						"bounds_type": 3,
 						"locked": true,
@@ -1357,7 +1357,7 @@
 						"align": 0,
 						"bounds": {
 							"x": 200,
-							"y": 200
+							"y": 216
 						},
 						"bounds_type": 3,
 						"locked": true,
