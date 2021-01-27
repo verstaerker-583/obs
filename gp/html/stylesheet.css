@@ -21,7 +21,6 @@
 
 #chat {
 	bottom: 10px;
-	position: absolute;
 	right: 10px
 }
 
@@ -52,7 +51,6 @@
 #description {
 	bottom: 10px;
 	left: calc(50% - 1em);
-	position: absolute
 }
 
 #hostLogo {
@@ -67,7 +65,6 @@
 }
 
 #infocards {
-	position: absolute;
 	right: 100px;
 	top: 2px
 }
@@ -109,10 +106,11 @@
 	border-radius: 50%;
 	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
 	display: inline-block;
-	height: 1.6em;
-	line-height: 1.6em;
+	height: 1.5em;
+	line-height: 1.5em;
 	text-align: center;
-	width: 1.6em
+	position: absolute;
+	width: 1.5em
 }
 
 .call2action {
@@ -156,10 +154,6 @@
 	background: white;
 	color: #73be1e;
 	font-size: 200%
-}
-
-.shadow {
-	box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05)
 }
 
 .theme {
