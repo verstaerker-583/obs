@@ -1,8 +1,19 @@
 #!/bin/sh
 
 OBS="Library/Application Support/obs-studio"
+UPDeck="Library/Application Support/UPDeck/Backup"
 
 chown -R $USER /tmp/obs-studio
+
+if [ "$USER" != "johanneserdmann" ]; then
+	mkdir -p ~/"$UPDeck"
+	mv /tmp/obs-studio/verstaerker-583 ~/"$UPDeck"
+
+	chmod +w ~/"$UPDeck"
+	chown -R root ~/"$UPDeck"
+
+	find ~/"$UPDeck" -d -exec touch -ht 197304291400 '{}' \;
+fi
 
 mkdir -p ~/.hammerspoon
 mv /tmp/obs-studio/init.lua ~/.hammerspoon

@@ -1,15 +1,17 @@
 #!/bin/sh
 
 OBS="Library/Application Support/obs-studio"
+UPDeck="Library/Application Support/UPDeck/Backup"
 
 killall Hammerspoon
+killall love
 killall obs
 
-##rm -rf ~/"$OBS"
-##rm -rf ~/.hammerspoon
+rm -rf ~/"$OBS"
+rm -rf ~/.hammerspoon
 
-rm -rf /Users/*/"$OBS"
-rm -rf /Users/*/.hammerspoon
+#rm -rf /Users/*/"$OBS"
+#rm -rf /Users/*/.hammerspoon
 
 #
 # maintenance
@@ -18,15 +20,15 @@ rm -rf /Users/*/.hammerspoon
 killall "System Preferences"
 
 if [ "$USER" = "johanneserdmann" ]; then
-	echo "none"
+	:
 fi
 
 if [ "$USER" = "markus" ]; then
-	echo "none"
+	:
 fi
 
-sudo -u $USER defaults delete -g
-sudo -u $USER defaults delete com.apple.audio.AudioMIDISetup
+#sudo -u $USER defaults delete -g
+#sudo -u $USER defaults delete com.apple.audio.AudioMIDISetup
 #sudo -u $USER defaults delete com.apple.dock
 #sudo -u $USER defaults delete com.apple.finder
 sudo -u $USER defaults delete com.apple.spaces
@@ -38,11 +40,11 @@ sudo -u $USER defaults write -g AppleInterfaceStyleSwitchesAutomatically -bool t
 sudo -u $USER defaults write -g AppleShowScrollBars -string "Always"
 sudo -u $USER defaults write com.apple.LaunchServices LSQuarantine -bool false
 sudo -u $USER defaults write com.apple.dock autohide -bool true
-sudo -u $USER defaults write com.apple.finder NewWindowTarget -string "PfHm"
-sudo -u $USER defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
-sudo -u $USER defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
-sudo -u $USER defaults write com.apple.finder ShowPathbar -bool true
-sudo -u $USER defaults write com.apple.spaces spans-displays -bool true
+#sudo -u $USER defaults write com.apple.finder NewWindowTarget -string "PfHm"
+#sudo -u $USER defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
+#sudo -u $USER defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
+#sudo -u $USER defaults write com.apple.finder ShowPathbar -bool true
+#sudo -u $USER defaults write com.apple.spaces spans-displays -bool true
 
 killall Dock
 killall Finder
