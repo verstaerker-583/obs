@@ -11,6 +11,8 @@ Profile=jeYTsq\
 ProfileDir=jeYTsq\
 SceneCollection=ss\
 SceneCollectionFile=ss
+/\[General\]/a\
+HotkeyFocusType=DisableHotkeysOutOfFocus
 
 # basic.ini
 /ScaleType/d

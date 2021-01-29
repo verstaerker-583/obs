@@ -1,18 +1,20 @@
 #!/bin/sh
 
 OBS="Library/Application Support/obs-studio"
-UPDeck="Library/Application Support/UPDeck/Backup"
+UPDeck="Library/Application Support/UPDeck"
 
 chown -R $USER /tmp/obs-studio
 
 if [ "$USER" != "johanneserdmann" ]; then
-	mkdir -p ~/"$UPDeck"
-	mv /tmp/obs-studio/verstaerker-583 ~/"$UPDeck"
+	mkdir -p ~/"$UPDeck"/Backup
+	mv /tmp/obs-studio/UPDeck_2-1-19.lua ~/"$UPDeck"
+	mv /tmp/obs-studio/verstaerker-583.json ~/"$UPDeck"/Backup
 
-	chmod +w ~/"$UPDeck"
-	chown -R root ~/"$UPDeck"
+	chown -R $USER ~/"$UPDeck"
+	chown -R root ~/"$UPDeck"/backup
 
 	find ~/"$UPDeck" -d -exec touch -ht 197304291400 '{}' \;
+        open -jb com.splash21.updeck
 fi
 
 mkdir -p ~/.hammerspoon
@@ -29,6 +31,6 @@ chown -R root ~/"$OBS"/basic/profiles
 
 find ~/"$OBS" -d -exec touch -ht 197304291400 '{}' \;
 
-open -a Hammerspoon
+open -b org.hammerspoon.Hammerspoon
 
 exit 0

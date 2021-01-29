@@ -25,17 +25,6 @@ local headsetOutput = 50
 local builtinInput = 100
 local builtinOutput = 50
 
-function Launch()
-    preFlightCloseApps()
-    tweakOSX()
-    preFlightSystem()
-    preFlightScreens()
-    hs.execute(
-        "open -a OBS --args --always-on-top --collection 'gp' --disable-notifications --disable-updater --enable-media-stream --profile 'gpYTsq' --startstreaming --startvirtualcam --unfiltered_log --verbose"
-    )
-    preFlightWindows()
-end
-
 function postFlight()
     -- System
     hs.execute("defaults write com.apple.finder CreateDesktop -bool true")
@@ -52,6 +41,9 @@ function postFlight()
         if dev:transportType() == "Built-in" then
             dev:setDefaultInputDevice()
             dev:setDefaultOutputDevice()
+	elseif dev:transportType() == "Virtual" then
+            dev:setVolume(0)
+            dev:setMuted(true)
         end
     end
 
@@ -160,7 +152,9 @@ function preFlightAudio()
 end
 
 function preFlightChat()
-    hs.execute("open -F -n -b com.google.Chrome --args --disable-notifications --app=https://verstaerker-583.github.io/obs/gp/html/chat.html")
+    hs.execute(
+        "open -Fnb com.google.Chrome --args --disable-notifications --app=https://verstaerker-583.github.io/obs/gp/html/chat.html"
+    )
 end
 
 function preFlightCloseApps()
@@ -171,13 +165,25 @@ function preFlightCloseApps()
         elseif bundle == "com.apple.Terminal" then
         elseif bundle == "com.boinx.FotoMagico5" then
         elseif bundle == "com.microsoft.Powerpoint" then
+        elseif bundle == "com.splash21.updeck" then
         elseif bundle == "com.teamviewer.TeamViewer" then
         elseif bundle == "org.hammerspoon.Hammerspoon" then
         else
-	    win:close()
+        win:close()
             win:application():kill9()
         end
     end
+end
+
+function preFlightLaunch()
+    preFlightCloseApps()
+    tweakOSX()
+    preFlightSystem()
+    preFlightScreens()
+    hs.execute(
+        "open -a OBS --args --always-on-top --collection 'gp' --disable-notifications --disable-updater --enable-media-stream --profile 'gpYTsq' --scene 'start' --startstreaming --startvirtualcam"
+    )
+    preFlightWindows()
 end
 
 function preFlightScreens()
@@ -349,7 +355,11 @@ hs.hotkey.bind(hyper, "a", preFlightAudio)
 hs.hotkey.bind(hyper, "c", preFlightChat)
 hs.hotkey.bind(hyper, "s", preFlightScreens)
 hs.hotkey.bind(hyper, "w", preFlightWindows)
-hs.hotkey.bind(hyper, "l", Launch)
+hs.hotkey.bind(hyper, "l", preFlightLaunch)
+
+-- URL Bindings
+hs.urlevent.bind("Windows", preFlightWindows)
+hs.urlevent.bind("Launch", preFlightLaunch)
 
 -- Watcher
 myWatcher0 = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
