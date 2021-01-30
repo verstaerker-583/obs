@@ -11,6 +11,7 @@
 					"desc": "Mute"
 				}
 			],
+			"cmd": "switch\tscene=Start\nmute\tval=1\tDesktop Audio\tMicrophone",
 			"group": "Scenes",
 			"hilite": 5,
 			"icon": "1-1611925400638.png",
