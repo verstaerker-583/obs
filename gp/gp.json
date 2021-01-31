@@ -66,16 +66,10 @@
 					"key": "OBS_KEY_N"
 				},
 				{
-					"key": "OBS_KEY_T"
-				},
-				{
 					"key": "OBS_KEY_V"
 				},
 				{
 					"key": "OBS_KEY_X"
-				},
-				{
-					"key": "OBS_KEY_Y"
 				}
 			]
 		},
@@ -140,16 +134,10 @@
 					"key": "OBS_KEY_N"
 				},
 				{
-					"key": "OBS_KEY_T"
-				},
-				{
 					"key": "OBS_KEY_V"
 				},
 				{
 					"key": "OBS_KEY_X"
-				},
-				{
-					"key": "OBS_KEY_Y"
 				}
 			]
 		},
@@ -210,51 +198,6 @@
 					}
 				}
 			],
-			"hotkeys": {
-				"libobs.mute": [
-					{
-						"key": "OBS_KEY_1"
-					},
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_4"
-					},
-					{
-						"key": "OBS_KEY_B"
-					},
-					{
-						"key": "OBS_KEY_N"
-					},
-					{
-						"key": "OBS_KEY_O"
-					},
-					{
-						"key": "OBS_KEY_V"
-					}
-				],
-				"libobs.unmute": [
-					{
-						"key": "OBS_KEY_F"
-					},
-					{
-						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_H"
-					},
-					{
-						"key": "OBS_KEY_T"
-					},
-					{
-						"key": "OBS_KEY_Y"
-					}
-				]
-			},
 			"id": "browser_source",
 			"name": "GuestA",
 			"private_settings": {
@@ -262,9 +205,9 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"height": 720,
+				"height": 360,
 				"reroute_audio": true,
-				"width": 1280
+				"width": 640
 			}
 		},
 		{
@@ -282,51 +225,6 @@
 					}
 				}
 			],
-			"hotkeys": {
-				"libobs.mute": [
-					{
-						"key": "OBS_KEY_1"
-					},
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_4"
-					},
-					{
-						"key": "OBS_KEY_F"
-					},
-					{
-						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_H"
-					},
-					{
-						"key": "OBS_KEY_O"
-					}
-				],
-				"libobs.unmute": [
-					{
-						"key": "OBS_KEY_B"
-					},
-					{
-						"key": "OBS_KEY_N"
-					},
-					{
-						"key": "OBS_KEY_T"
-					},
-					{
-						"key": "OBS_KEY_V"
-					},
-					{
-						"key": "OBS_KEY_Y"
-					}
-				]
-			},
 			"id": "browser_source",
 			"name": "GuestB",
 			"private_settings": {
@@ -334,9 +232,9 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"height": 720,
+				"height": 360,
 				"reroute_audio": true,
-				"width": 1280
+				"width": 640
 			}
 		},
 		{
@@ -354,54 +252,6 @@
 					}
 				}
 			],
-			"hotkeys": {
-				"libobs.mute": [
-					{
-						"key": "OBS_KEY_1"
-					},
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_4"
-					},
-					{
-						"key": "OBS_KEY_B"
-					},
-					{
-						"key": "OBS_KEY_F"
-					},
-					{
-						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_H"
-					},
-					{
-						"key": "OBS_KEY_N"
-					},
-					{
-						"key": "OBS_KEY_O"
-					},
-					{
-						"key": "OBS_KEY_T"
-					},
-					{
-						"key": "OBS_KEY_V"
-					},
-					{
-						"key": "OBS_KEY_X"
-					}
-				],
-				"libobs.unmute": [
-					{
-						"key": "OBS_KEY_X"
-					}
-				]
-			},
 			"id": "browser_source",
 			"name": "GuestX",
 			"private_settings": {
@@ -409,9 +259,9 @@
 				"volume_locked": true
 			},
 			"settings": {
-				"height": 720,
+				"height": 360,
 				"reroute_audio": true,
-				"width": 1280
+				"width": 640
 			}
 		},
 		{
@@ -602,9 +452,6 @@
 						"key": "OBS_KEY_I"
 					},
 					{
-						"key": "OBS_KEY_T"
-					},
-					{
 						"key": "OBS_KEY_V"
 					}
 				],
@@ -626,9 +473,6 @@
 					},
 					{
 						"key": "OBS_KEY_MINUS"
-					},
-					{
-						"key": "OBS_KEY_T"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -654,9 +498,6 @@
 						"key": "OBS_KEY_I"
 					},
 					{
-						"key": "OBS_KEY_T"
-					},
-					{
 						"key": "OBS_KEY_V"
 					}
 				],
@@ -672,9 +513,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_T"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -695,9 +533,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_T"
 					}
 				],
 				"libobs.hide_scene_item.Intro": [
@@ -712,9 +547,6 @@
 					},
 					{
 						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_T"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -743,9 +575,6 @@
 						"key": "OBS_KEY_I"
 					},
 					{
-						"key": "OBS_KEY_T"
-					},
-					{
 						"key": "OBS_KEY_V"
 					}
 				],
@@ -767,9 +596,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_T"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -795,9 +621,6 @@
 						"key": "OBS_KEY_I"
 					},
 					{
-						"key": "OBS_KEY_T"
-					},
-					{
 						"key": "OBS_KEY_V"
 					}
 				],
@@ -819,9 +642,6 @@
 					},
 					{
 						"key": "OBS_KEY_I"
-					},
-					{
-						"key": "OBS_KEY_T"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -881,17 +701,16 @@
 			"settings": {
 				"items": [
 					{
-						"align": 0,
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
 						"locked": true,
 						"name": "Internal",
-						"pos": {
-							"x": 640,
-							"y": 360
-						},
 						"visible": true
 					},
 					{
-						"align": 0,
 						"bounds": {
 							"x": 1280,
 							"y": 720
@@ -899,26 +718,27 @@
 						"bounds_type": 3,
 						"locked": true,
 						"name": "External",
-						"pos": {
-							"x": 640,
-							"y": 360
-						},
 						"private_settings": {
 							"color-preset": 7
 						}
 					},
 					{
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
 						"locked": true,
 						"name": "GuestA"
 					},
 					{
+						"bounds": {
+							"x": 1280,
+							"y": 720
+						},
+						"bounds_type": 3,
 						"locked": true,
 						"name": "GuestB"
-					},
-					{
-						"locked": true,
-						"name": "guest+",
-						"visible": true
 					},
 					{
 						"locked": true,
@@ -931,13 +751,8 @@
 						"visible": true
 					},
 					{
-						"align": 0,
 						"locked": true,
-						"name": "Overlay Chat",
-						"pos": {
-							"x": 640,
-							"y": 648
-						}
+						"name": "Overlay Chat"
 					},
 					{
 						"locked": true,
@@ -972,18 +787,13 @@
 						}
 					},
 					{
-						"align": 0,
 						"bounds": {
 							"x": 1280,
 							"y": 720
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Intro",
-						"pos": {
-							"x": 640,
-							"y": 360
-						}
+						"name": "Intro"
 					}
 				]
 			}
@@ -999,17 +809,9 @@
 					},
 					{
 						"key": "OBS_KEY_N"
-					},
-					{
-						"key": "OBS_KEY_Y"
 					}
 				],
 				"libobs.hide_scene_item.cam": [
-					{
-						"key": "OBS_KEY_BRACKETRIGHT"
-					}
-				],
-				"libobs.hide_scene_item.cam+": [
 					{
 						"key": "OBS_KEY_BRACKETRIGHT"
 					}
@@ -1026,14 +828,6 @@
 					},
 					{
 						"key": "OBS_KEY_N"
-					},
-					{
-						"key": "OBS_KEY_Y"
-					}
-				],
-				"libobs.show_scene_item.cam+": [
-					{
-						"key": "OBS_KEY_Y"
 					}
 				]
 			},
@@ -1042,7 +836,6 @@
 			"settings": {
 				"items": [
 					{
-						"align": 0,
 						"bounds": {
 							"x": 1280,
 							"y": 720
@@ -1050,15 +843,7 @@
 						"bounds_type": 3,
 						"locked": true,
 						"name": "Display Capture",
-						"pos": {
-							"x": 640,
-							"y": 360
-						},
 						"visible": true
-					},
-					{
-						"locked": true,
-						"name": "cam+"
 					},
 					{
 						"locked": true,
@@ -1138,9 +923,6 @@
 					},
 					{
 						"key": "OBS_KEY_N"
-					},
-					{
-						"key": "OBS_KEY_X"
 					}
 				],
 				"libobs.hide_scene_item.GuestA": [
@@ -1157,9 +939,6 @@
 					},
 					{
 						"key": "OBS_KEY_H"
-					},
-					{
-						"key": "OBS_KEY_Y"
 					}
 				],
 				"libobs.hide_scene_item.GuestX": [
@@ -1167,46 +946,22 @@
 						"key": "OBS_KEY_3"
 					},
 					{
-						"key": "OBS_KEY_H"
-					},
-					{
-						"key": "OBS_KEY_N"
-					},
-					{
 						"key": "OBS_KEY_X"
-					},
-					{
-						"key": "OBS_KEY_Y"
 					}
 				],
 				"libobs.hide_scene_item.Internal": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					},
-					{
-						"key": "OBS_KEY_X"
-					},
-					{
-						"key": "OBS_KEY_Y"
 					}
 				],
 				"libobs.show_scene_item.External": [
 					{
 						"key": "OBS_KEY_DEAD_GRAVE"
-					},
-					{
-						"key": "OBS_KEY_X"
-					},
-					{
-						"key": "OBS_KEY_Y"
 					}
 				],
 				"libobs.show_scene_item.GuestA": [
 					{
 						"key": "OBS_KEY_H"
-					},
-					{
-						"key": "OBS_KEY_Y"
 					}
 				],
 				"libobs.show_scene_item.GuestB": [
@@ -1231,9 +986,6 @@
 					},
 					{
 						"key": "OBS_KEY_N"
-					},
-					{
-						"key": "OBS_KEY_X"
 					}
 				]
 			},
@@ -1255,7 +1007,7 @@
 						"name": "External",
 						"pos": {
 							"x": 150,
-							"y": 360
+							"y": 480
 						}
 					},
 					{
@@ -1269,7 +1021,7 @@
 						"name": "Internal",
 						"pos": {
 							"x": 1180,
-							"y": 504
+							"y": 360
 						}
 					},
 					{
@@ -1283,7 +1035,7 @@
 						"name": "GuestA",
 						"pos": {
 							"x": 1180,
-							"y": 216
+							"y": 150
 						}
 					},
 					{
@@ -1297,7 +1049,7 @@
 						"name": "GuestB",
 						"pos": {
 							"x": 1180,
-							"y": 216
+							"y": 150
 						}
 					},
 					{
@@ -1311,60 +1063,7 @@
 						"name": "GuestX",
 						"pos": {
 							"x": 1180,
-							"y": 504
-						}
-					}
-				]
-			}
-		},
-		{
-			"filters": [
-				{
-					"id": "mask_filter",
-					"name": "Image Mask/Blend",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/gp/camMask.png",
-						"type": "mask_alpha_filter.effect"
-					}
-				}
-			],
-			"hotkeys": {
-				"libobs.hide_scene_item.GuestB": [
-					{
-						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_H"
-					},
-					{
-						"key": "OBS_KEY_N"
-					}
-				],
-				"libobs.show_scene_item.GuestB": [
-					{
-						"key": "OBS_KEY_Y"
-					}
-				]
-			},
-			"id": "scene",
-			"name": "cam+",
-			"private_settings": {
-				"show_in_multiview": false
-			},
-			"settings": {
-				"items": [
-					{
-						"align": 0,
-						"bounds": {
-							"x": 200,
-							"y": 216
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "GuestB",
-						"pos": {
-							"x": 1180,
-							"y": 504
+							"y": 570
 						}
 					}
 				]
@@ -1407,9 +1106,6 @@
 						"key": "OBS_KEY_G"
 					},
 					{
-						"key": "OBS_KEY_T"
-					},
-					{
 						"key": "OBS_KEY_V"
 					}
 				],
@@ -1427,9 +1123,6 @@
 						"key": "OBS_KEY_G"
 					},
 					{
-						"key": "OBS_KEY_T"
-					},
-					{
 						"key": "OBS_KEY_V"
 					},
 					{
@@ -1439,9 +1132,6 @@
 				"libobs.show_scene_item.GuestA": [
 					{
 						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_T"
 					}
 				],
 				"libobs.show_scene_item.GuestB": [
@@ -1502,65 +1192,6 @@
 						"bounds_type": 3,
 						"locked": true,
 						"name": "GuestX",
-						"pos": {
-							"x": 1080,
-							"y": 360
-						}
-					}
-				]
-			}
-		},
-		{
-			"filters": [
-				{
-					"id": "mask_filter",
-					"name": "Image Mask/Blend",
-					"settings": {
-						"image_path": "https://verstaerker-583.github.io/obs/gp/guestMask.png",
-						"type": "mask_alpha_filter.effect"
-					}
-				}
-			],
-			"hotkeys": {
-				"libobs.hide_scene_item.GuestB": [
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_B"
-					},
-					{
-						"key": "OBS_KEY_F"
-					},
-					{
-						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_V"
-					}
-				],
-				"libobs.show_scene_item.GuestB": [
-					{
-						"key": "OBS_KEY_T"
-					}
-				]
-			},
-			"id": "scene",
-			"name": "guest+",
-			"private_settings": {
-				"show_in_multiview": false
-			},
-			"settings": {
-				"items": [
-					{
-						"align": 0,
-						"bounds": {
-							"x": 400,
-							"y": 400
-						},
-						"bounds_type": 3,
-						"locked": true,
-						"name": "GuestB",
 						"pos": {
 							"x": 1080,
 							"y": 360

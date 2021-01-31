@@ -22,9 +22,7 @@ del(
 						"GuestB",
 						"GuestX",
 						"Host",
-						"cam+",
-						"guest",
-						"guest+"
+						"guest"
 						)
 					)
 				),
@@ -33,11 +31,9 @@ del(
 						"libobs.hide_scene_item.GuestA",
 						"libobs.hide_scene_item.GuestB",
 						"libobs.hide_scene_item.GuestX",
-						"libobs.hide_scene_item.cam+",
 						"libobs.show_scene_item.GuestA",
 						"libobs.show_scene_item.GuestB",
-						"libobs.show_scene_item.GuestX",
-						"libobs.show_scene_item.cam+"
+						"libobs.show_scene_item.GuestX"
 						]
 				)
 		),
@@ -49,8 +45,6 @@ del(
 					"OBS_KEY_B",
 					"OBS_KEY_N",
 					"OBS_KEY_X",
-					"OBS_KEY_T",
-					"OBS_KEY_Y",
 					"OBS_KEY_G",
 					"OBS_KEY_H"
 					)
@@ -87,6 +81,6 @@ end
 | (.sources[] | select(.name == "Internal").settings.device) = "0x8020000005ac8514"
 
 | (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja/beta?ad&aj&bc&mvb=200&vd=obs&wc&r=verstaerker583mm&push=host"
-| (.sources[] | select(.name == "GuestA").settings.url) = "https://rtc.ninja/beta?optimize=0&q=2&scene&r=verstaerker583mm&pull=guestA"
-| (.sources[] | select(.name == "GuestB").settings.url) = "https://rtc.ninja/beta?optimize=0&q=2&scene&r=verstaerker583mm&pull=guestB"
-| (.sources[] | select(.name == "GuestX").settings.url) = "https://rtc.ninja/beta?optimize=0&q=2&scene&r=verstaerker583mm&pull=guestX"
+| (.sources[] | select(.name == "GuestA").settings.url) = "https://rtc.ninja/beta?optimize=0&scene&r=verstaerker583mm&pull=guestA"
+| (.sources[] | select(.name == "GuestB").settings.url) = "https://rtc.ninja/beta?optimize=0&scene&r=verstaerker583mm&pull=guestB"
+| (.sources[] | select(.name == "GuestX").settings.url) = "https://rtc.ninja/beta?optimize=0&scene&r=verstaerker583mm&pull=guestX"

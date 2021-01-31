@@ -1,2 +1,2 @@
-	del(.sources[]),
-	(.sources|sort_by(.name)|sort_by(.id))
+del(.sources[]),
+(.sources|sort_by(.name)|sort_by(.id))

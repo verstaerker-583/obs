@@ -7,9 +7,7 @@ del(
 					"GuestB",
 					"GuestX",
 					"Host",
-					"cam+",
-					"guest",
-					"guest+"
+					"guest"
 					)
 				)
 			),
@@ -18,11 +16,9 @@ del(
 					"libobs.hide_scene_item.GuestA",
 					"libobs.hide_scene_item.GuestB",
 					"libobs.hide_scene_item.GuestX",
-					"libobs.hide_scene_item.cam+",
 					"libobs.show_scene_item.GuestA",
 					"libobs.show_scene_item.GuestB",
-					"libobs.show_scene_item.GuestX",
-					"libobs.show_scene_item.cam+"
+					"libobs.show_scene_item.GuestX"
 					]
 			)
 	),
@@ -34,8 +30,6 @@ del(
 				"OBS_KEY_B",
 				"OBS_KEY_N",
 				"OBS_KEY_X",
-				"OBS_KEY_T",
-				"OBS_KEY_Y",
 				"OBS_KEY_G",
 				"OBS_KEY_H"
 				)

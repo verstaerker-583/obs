@@ -3,9 +3,9 @@
 	<defs>
 		<rect id="cam" width="400" height="200" rx="100" x="-200" y="-100"/>
 	</defs>
-	<use xlink:href="#cam" y="17.5%"/>
-	<use xlink:href="#cam" y="50%" x="100"/>
-	<use xlink:href="#cam" y="82.5%"/>
-	<use xlink:href="#cam" y="30%" x="100%"/>
-	<use xlink:href="#cam" y="70%" x="100%"/>
+	<use xlink:href="#cam" y="240" x="100"/>
+	<use xlink:href="#cam" y="480"/>
+	<use xlink:href="#cam" y="150" x="100%"/>
+	<use xlink:href="#cam" y="360" x="100%"/>
+	<use xlink:href="#cam" y="570" x="100%"/>
 </svg>
