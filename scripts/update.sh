@@ -16,9 +16,6 @@ function profiles {
 	
 	sed -f to$OBSUSR.sed templates/global.ini > /tmp/target/$OBSUSR/global.ini
 	sed -f to$OBSUSR.sed templates/init.lua > /tmp/target/$OBSUSR/init.lua
-
-	sed -f to$OBSUSR.sed templates/verstaerker-583.json > /tmp/target/$OBSUSR/verstaerker-583.json
-	cp -a ../sw/UPDeck_2-1-19.lua /tmp/target/$OBSUSR
 }
 
 function package {
@@ -71,6 +68,10 @@ done
 # profiles
 profiles "je"
 
+# SW
+sed -f to$OBSUSR.sed templates/verstaerker-583.json > /tmp/target/$OBSUSR/verstaerker-583.json
+cp -a ../sw/UPDeck_2-1-19.lua /tmp/target/$OBSUSR
+
 #
 # ok
 #
@@ -85,6 +86,10 @@ done
 # profiles
 #profiles "bd gp mm"
 profiles "mm"
+
+# SW
+sed -f to$OBSUSR.sed templates/verstaerker-583.json > /tmp/target/$OBSUSR/verstaerker-583.json
+cp -a ../sw/UPDeck_2-1-19.lua /tmp/target/$OBSUSR
 
 #
 # mm

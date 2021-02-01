@@ -4,6 +4,7 @@ s/--enable-media-stream //
 s/--profile 'gpYTsq'/--profile 'jeYTsq'/
 s/--startvirtualcam //
 s/gp\/html/je\/html/
+s/hs.autoLaunch(true)/hs.autoLaunch(false)/
 
 # global.ini
 /\[Basic\]/a\
