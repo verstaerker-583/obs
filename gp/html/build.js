@@ -8,20 +8,18 @@ function build() {
 	pics.videoThumb = "https://i3.ytimg.com/vi/" + videoId + "/mqdefault.jpg";
 	switch (PageName) {
 		case "start":
-			pics.organizationLogo = false;
-			if (pics.presenterLogo == pics.channelIcon)
-				pics.presenterLogo = false;
+			delete pics.organizationLogo;
 			buildBanner(start);
 			loadClock();
 			loadPics();
 			position();
 			break;
 		case "cam":
-			pics.channelIcon = false;
-			pics.clockLogo = false;
+			delete pics.channelIcon;
+			delete pics.clockLogo;
 			if (pics.organizationLogo)
-				pics.organizationLogoNeg = false;
-			pics.videoThumb = false;
+				delete pics.organizationLogoNeg;
+			delete pics.videoThumb;
 			document.body.style.backgroundColor = "transparent";
 			document.body.style.backgroundImage = "none";
 			loadPics();
@@ -39,9 +37,7 @@ function build() {
 			window.location = "https://www.youtube.com/live_chat?is_popout=1&v=" + videoId;
 			break;
 		default:
-			pics.organizationLogo = false;
-			if (pics.presenterLogo == pics.channelIcon)
-				pics.presenterLogo = false;
+			delete pics.organizationLogo;
 			buildBanner(finish);
 			loadClock();
 			loadPics();
@@ -90,7 +86,7 @@ function loadPics() {
 		var elmnt = document.createElement("img");
 		elmnt.id = key;
 		elmnt.src = value;
-		if (value) document.body.appendChild(elmnt);
+		document.body.appendChild(elmnt);
 	}
 }
 

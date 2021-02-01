@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
-	<defs>
-		<rect id="cam" width="400" height="200" rx="100" x="-200" y="-100"/>
-	</defs>
-	<use xlink:href="#cam" y="240" x="100"/>
-	<use xlink:href="#cam" y="480"/>
-	<use xlink:href="#cam" y="150" x="100%"/>
-	<use xlink:href="#cam" y="360" x="100%"/>
-	<use xlink:href="#cam" y="570" x="100%"/>
+<svg width="1280" height="720" version="1.1" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <rect id="cam" x="-200" y="-100" width="400" height="200" rx="100"/>
+ </defs>
+ <use x="100" y="240" xlink:href="#cam"/>
+ <use y="480" xlink:href="#cam"/>
+ <use x="100%" y="150" xlink:href="#cam"/>
+ <use x="100%" y="360" xlink:href="#cam"/>
+ <use x="100%" y="570" xlink:href="#cam"/>
 </svg>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720">
-	<defs>
-		<rect id="cam" width="800" height="400" rx="200" x="-400" y="-200"/>
-	</defs>
-	<use xlink:href="#cam" y="50%"/>
-	<use xlink:href="#cam" y="50%" x="100%"/>
+<svg width="1280" height="720" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <rect id="cam" x="-400" y="-200" width="800" height="400" rx="200"/>
+ </defs>
+ <use y="50%" xlink:href="#cam"/>
+ <use x="100%" y="50%" xlink:href="#cam"/>
 </svg>

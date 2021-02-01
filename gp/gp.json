@@ -1007,7 +1007,7 @@
 						"name": "External",
 						"pos": {
 							"x": 150,
-							"y": 480
+							"y": 240
 						}
 					},
 					{
@@ -1114,13 +1114,7 @@
 						"key": "OBS_KEY_2"
 					},
 					{
-						"key": "OBS_KEY_B"
-					},
-					{
 						"key": "OBS_KEY_F"
-					},
-					{
-						"key": "OBS_KEY_G"
 					},
 					{
 						"key": "OBS_KEY_V"
