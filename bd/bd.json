@@ -195,36 +195,9 @@
 					}
 				}
 			],
-			"hotkeys": {
-				"libobs.mute": [
-					{
-						"key": "OBS_KEY_1"
-					},
-					{
-						"key": "OBS_KEY_4"
-					},
-					{
-						"key": "OBS_KEY_G"
-					},
-					{
-						"key": "OBS_KEY_O"
-					}
-				],
-				"libobs.unmute": [
-					{
-						"key": "OBS_KEY_2"
-					},
-					{
-						"key": "OBS_KEY_3"
-					},
-					{
-						"key": "OBS_KEY_G"
-					}
-				]
-			},
 			"id": "browser_source",
 			"monitoring_type": 2,
-			"name": "Guest",
+			"name": "Remote",
 			"private_settings": {
 				"mixer_hidden": true,
 				"volume_locked": true
@@ -269,9 +242,8 @@
 			"id": "browser_source",
 			"name": "Overlay cam",
 			"settings": {
-				"css": "",
 				"height": 720,
-				"url": "https://verstaerker-583.github.io/obs/bd/svg/screen.svg",
+				"url": "https://verstaerker-583.github.io/obs/bd/svg/cams.svg",
 				"width": 1280
 			}
 		},
@@ -431,7 +403,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Guest",
+						"name": "Remote",
 						"pos": {
 							"x": 320,
 							"y": 396
@@ -513,7 +485,7 @@
 						"key": "OBS_KEY_3"
 					},
 					{
-						"key": "OBS_KEY_DEAD_GRAVE"
+						"key": "OBS_KEY_BRACKETRIGHT"
 					}
 				]
 			},
@@ -522,7 +494,6 @@
 			"settings": {
 				"items": [
 					{
-						"align": 0,
 						"bounds": {
 							"x": 1280,
 							"y": 720
@@ -530,10 +501,6 @@
 						"bounds_type": 3,
 						"locked": true,
 						"name": "Display Capture",
-						"pos": {
-							"x": 640,
-							"y": 360
-						},
 						"visible": true
 					},
 					{
@@ -626,7 +593,7 @@
 						},
 						"bounds_type": 3,
 						"locked": true,
-						"name": "Guest",
+						"name": "Remote",
 						"pos": {
 							"x": 128,
 							"y": 396

@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="bubbles.css"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="720">
-	<script xlink:href="bubbles.js" />
-	<defs>
-		<filter id="grayscale">
-			<feColorMatrix type="saturate" in="SourceGraphic" values="1">
-				<animate attributeName="values" values="0;1.5;0" dur="5s" repeatCount="indefinite" />
-			</feColorMatrix>
-		</filter>
-		<filter id="flooder">
-			<feFlood result="flood" />
-			<feMerge>
-				<feMergeNode in="flood" />
-				<feMergeNode in="SourceGraphic" />
-			</feMerge>
-		</filter>
-		<linearGradient id="lg" x1="0.3" y1="0" x2="1" y2="0">
-			<stop offset="0" stop-color="white" />
-			<stop offset="1" stop-color="#cc3366" />
-		</linearGradient>
-		<pattern id="Lutz" width="100%" height="100%">
-			<image class="small" href="https://static.wixstatic.com/media/b8486a_56df73b6eede4d99b24f7ca93b4f6cfb~mv2.png" />
-		</pattern>
-		<pattern id="LutzYT" width="100%" height="100%">
-			<image class="small" href="https://yt3.ggpht.com/a/AATXAJzPcLTgb4YF7T6Wlvpvpm-2YYLqI8sK02j5RgM9RA" />
-		</pattern>
-		<pattern id="LutzBackground" viewBox="0 0 1366 1366" width="100%" height="100%">
-			<image href="https://lutz-jaekel.com/wp-content/uploads/2018/07/jaek_1405_abudhabi-2017-1.jpg" />
-		</pattern>
-		<pattern id="Markus" width="100%" height="100%">
-			<image class="small" href="https://static.wixstatic.com/media/b8486a_8802ee4cc1c845eea7d8574535c554aa~mv2.png" />
-		</pattern>
-		<pattern id="MarkusYT" width="100%" height="100%">
-			<image class="small" href="https://yt3.ggpht.com/a/AATXAJz1rf8F_1ZMrY7BkibAF0CFrkj4qja9n7fTqgrz" />
-		</pattern>
-		<pattern id="MarkusBackground" viewBox="0 0 669 669" width="100%" height="100%">
-			<image href="https://www.markus-mauthe.de/site/assets/files/1108/na5.jpg" />
-		</pattern>
-		<pattern id="Buntdenker" width="100%" height="100%">
-			<image height="50%" href="https://static.wixstatic.com/media/b8486a_9193e57831044be08b3803d9ddbf5227~mv2.png" />
-		</pattern>
-	</defs>
+   <script xlink:href="bubbles.js" />
+   <defs>
+      <filter id="grayscale">
+         <feColorMatrix type="saturate" in="SourceGraphic" values="1">
+            <animate attributeName="values" values="0;1.5;0" dur="5s" repeatCount="indefinite" />
+         </feColorMatrix>
+      </filter>
+      <filter id="flooder">
+         <feFlood result="flood" />
+         <feMerge>
+            <feMergeNode in="flood" />
+            <feMergeNode in="SourceGraphic" />
+         </feMerge>
+      </filter>
+      <linearGradient id="lg" x1="0.3" y1="0" x2="1" y2="0">
+         <stop offset="0" stop-color="white" />
+         <stop offset="1" stop-color="#cc3366" />
+      </linearGradient>
+      <pattern id="Lutz" width="100%" height="100%">
+         <image class="small" href="https://static.wixstatic.com/media/b8486a_56df73b6eede4d99b24f7ca93b4f6cfb~mv2.png" />
+      </pattern>
+      <pattern id="LutzYT" width="100%" height="100%">
+         <image class="small" href="https://yt3.ggpht.com/a/AATXAJzPcLTgb4YF7T6Wlvpvpm-2YYLqI8sK02j5RgM9RA" />
+      </pattern>
+      <pattern id="LutzBackground" viewBox="0 0 1366 1366" width="100%" height="100%">
+         <image href="https://lutz-jaekel.com/wp-content/uploads/2018/07/jaek_1405_abudhabi-2017-1.jpg" />
+      </pattern>
+      <pattern id="Markus" width="100%" height="100%">
+         <image class="small" href="https://static.wixstatic.com/media/b8486a_8802ee4cc1c845eea7d8574535c554aa~mv2.png" />
+      </pattern>
+      <pattern id="MarkusYT" width="100%" height="100%">
+         <image class="small" href="https://yt3.ggpht.com/a/AATXAJz1rf8F_1ZMrY7BkibAF0CFrkj4qja9n7fTqgrz" />
+      </pattern>
+      <pattern id="MarkusBackground" viewBox="0 0 669 669" width="100%" height="100%">
+         <image href="https://www.markus-mauthe.de/site/assets/files/1108/na5.jpg" />
+      </pattern>
+      <pattern id="Buntdenker" width="100%" height="100%">
+         <image height="50%" href="https://static.wixstatic.com/media/b8486a_9193e57831044be08b3803d9ddbf5227~mv2.png" />
+      </pattern>
+   </defs>
 </svg>

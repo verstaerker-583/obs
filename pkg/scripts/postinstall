@@ -14,7 +14,7 @@ if [ "$USER" != "johanneserdmann" ]; then
 	chown -R root ~/"$UPDeck"/backup
 
 	find ~/"$UPDeck" -d -exec touch -ht 197304291400 '{}' \;
-        open -jb com.splash21.updeck
+#        open -jb com.splash21.updeck
 fi
 
 mkdir -p ~/.hammerspoon

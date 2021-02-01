@@ -67,9 +67,6 @@
 				},
 				{
 					"key": "OBS_KEY_V"
-				},
-				{
-					"key": "OBS_KEY_X"
 				}
 			]
 		},
@@ -135,9 +132,6 @@
 				},
 				{
 					"key": "OBS_KEY_V"
-				},
-				{
-					"key": "OBS_KEY_X"
 				}
 			]
 		},
@@ -288,7 +282,6 @@
 			"id": "browser_source",
 			"name": "Overlay Cam",
 			"settings": {
-				"css": "",
 				"height": 720,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/cam.html",
 				"width": 1280
@@ -299,8 +292,7 @@
 			"name": "Overlay Chat",
 			"settings": {
 				"css": "@import url(https://verstaerker-583.github.io/obs/gp/html/chat.css)",
-				"fps_custom": false,
-				"height": 144,
+				"height": 160,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/chat.html",
 				"width": 560
 			}
@@ -309,7 +301,6 @@
 			"id": "browser_source",
 			"name": "Overlay Donate",
 			"settings": {
-				"fps_custom": false,
 				"height": 720,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/donate.html",
 				"width": 1280
@@ -320,7 +311,6 @@
 			"name": "Overlay Finish",
 			"settings": {
 				"css": "",
-				"fps_custom": false,
 				"height": 720,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/finish.html",
 				"width": 1280
@@ -340,7 +330,6 @@
 			"id": "browser_source",
 			"name": "Overlay Subscribe",
 			"settings": {
-				"fps_custom": false,
 				"height": 720,
 				"shutdown": true,
 				"url": "https://verstaerker-583.github.io/obs/gp/html/subscribe.html",
@@ -751,8 +740,13 @@
 						"visible": true
 					},
 					{
+						"align": 0,
 						"locked": true,
-						"name": "Overlay Chat"
+						"name": "Overlay Chat",
+						"pos": {
+							"x": 640,
+							"y": 650
+						}
 					},
 					{
 						"locked": true,
@@ -1092,6 +1086,9 @@
 						"key": "OBS_KEY_F"
 					},
 					{
+						"key": "OBS_KEY_I"
+					},
+					{
 						"key": "OBS_KEY_V"
 					}
 				],
@@ -1106,6 +1103,9 @@
 						"key": "OBS_KEY_G"
 					},
 					{
+						"key": "OBS_KEY_I"
+					},
+					{
 						"key": "OBS_KEY_V"
 					}
 				],
@@ -1115,6 +1115,9 @@
 					},
 					{
 						"key": "OBS_KEY_F"
+					},
+					{
+						"key": "OBS_KEY_I"
 					},
 					{
 						"key": "OBS_KEY_V"
@@ -1213,7 +1216,6 @@
 			"settings": {
 				"items": [
 					{
-						"align": 0,
 						"bounds": {
 							"x": 1280,
 							"y": 720
@@ -1221,10 +1223,6 @@
 						"bounds_type": 3,
 						"locked": true,
 						"name": "Display Capture",
-						"pos": {
-							"x": 640,
-							"y": 360
-						},
 						"visible": true
 					}
 				]

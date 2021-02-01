@@ -3,20 +3,20 @@ del(
 		.sources[] |
 			(
 				., .settings.items[]? | select(.name == (
-					"GuestA",
+#					"GuestA",
 					"GuestB",
-					"GuestX",
-					"Host",
-					"guest"
+					"GuestX"
+#					"Host",
+#					"guest"
 					)
 				)
 			),
 			(
 				.hotkeys[
-					"libobs.hide_scene_item.GuestA",
+#					"libobs.hide_scene_item.GuestA",
 					"libobs.hide_scene_item.GuestB",
 					"libobs.hide_scene_item.GuestX",
-					"libobs.show_scene_item.GuestA",
+#					"libobs.show_scene_item.GuestA",
 					"libobs.show_scene_item.GuestB",
 					"libobs.show_scene_item.GuestX"
 					]
@@ -25,13 +25,13 @@ del(
 	(
 		.. | select(
 			.key? == (
-				"OBS_KEY_F",
+#				"OBS_KEY_F",
 				"OBS_KEY_V",
 				"OBS_KEY_B",
 				"OBS_KEY_N",
-				"OBS_KEY_X",
-				"OBS_KEY_G",
-				"OBS_KEY_H"
+				"OBS_KEY_X"
+#				"OBS_KEY_G",
+#				"OBS_KEY_H"
 				)
 		)
 	)
@@ -51,9 +51,9 @@ del(
 					"libobs.hide_scene_item.Outro",
 					"libobs.show_scene_item.Outro"
 					]
-			),
-			(
-				select(.name == "Internal").filters[] | select(.id == "clut_filter")
+#			),
+#			(
+#				select(.name == "Internal").filters[] | select(.id == "clut_filter")
 			)
 	),
 	(
@@ -73,7 +73,5 @@ del(
 | (.sources[] | select(.name == "Internal").settings.device) = "EAB7A68FEC2B4487AADFD8A91C1CB782"
 | (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/johanneserdmann/Documents/Segelsofa/intro.mp4"
 
-| (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja?ad&aj&bc&mvb=200&vd=obs&wc&r=verstaerker583je&push=host"
-| (.sources[] | select(.name == "GuestA").settings.url) = "https://rtc.ninja?optimize=0&scene&r=verstaerker583je&pull=guestA"
-| (.sources[] | select(.name == "GuestB").settings.url) = "https://rtc.ninja?optimize=0&scene&r=verstaerker583je&pull=guestB"
-| (.sources[] | select(.name == "GuestX").settings.url) = "https://rtc.ninja?optimize=0&scene&r=verstaerker583je&pull=guestX"
+| (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja/beta?ad&aj&clean&bc&mvb=200&push=host&r=verstaerker583je&vd=obs&wc"
+| (.sources[] | select(.name == "GuestA").settings.url) = "https://rtc.ninja/beta?optimize=0&q=2&r=verstaerker583je&scene&pull=GuestA"
