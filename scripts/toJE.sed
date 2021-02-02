@@ -1,8 +1,8 @@
 # init.lua
-s/--collection 'gp'/--collection 'ss'/
-s/--enable-media-stream //
-s/--profile 'gpYTsq'/--profile 'jeYTsq'/
-s/--startvirtualcam //
+#s/ --enable-media-stream//
+#s/ --startvirtualcam//
+s/OBS --args/& --collection 'ss'/
+s/OBS --args/& --profile 'jeYTsq'/
 s/gp\/html/je\/html/
 s/hs.autoLaunch(true)/hs.autoLaunch(false)/
 
@@ -12,11 +12,11 @@ Profile=jeYTsq\
 ProfileDir=jeYTsq\
 SceneCollection=ss\
 SceneCollectionFile=ss
+
 /\[General\]/a\
 HotkeyFocusType=DisableHotkeysOutOfFocus
 
 # basic.ini
-/ScaleType/d
 /\[Audio\]/a\
 MonitoringDeviceId=BuiltInSpeakerDevice
 #MonitoringDeviceId=BuiltInHeadphoneOutputDevice

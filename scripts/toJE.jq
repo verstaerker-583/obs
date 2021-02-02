@@ -1,3 +1,4 @@
+#
 del(
 	(
 		.sources[] |
@@ -73,7 +74,7 @@ del(
 | (.sources[] | select(.name == "External").settings.preset) = "AVCaptureSessionPreset1920x1080"
 
 | (.sources[] | select(.name == "GuestA").settings.url) = "https://rtc.ninja/beta?optimize=0&r=verstaerker583je&scene&pull=GuestA"
-| (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja/beta?ad&aj&clean&bc&mvb=200&push=host&r=verstaerker583je&vd=obs&wc"
+| (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja/beta?ad&aj&clean&bc&mvb=200&push=Host&r=verstaerker583je&vd=obs&wc"
 | (.sources[] | select(.name == "Internal").settings.device) = "EAB7A68FEC2B4487AADFD8A91C1CB782"
 
 | (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/johanneserdmann/Documents/Segelsofa/intro.mp4"

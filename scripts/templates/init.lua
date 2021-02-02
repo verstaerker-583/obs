@@ -41,7 +41,7 @@ function postFlight()
         if dev:transportType() == "Built-in" then
             dev:setDefaultInputDevice()
             dev:setDefaultOutputDevice()
-	elseif dev:transportType() == "Virtual" then
+        elseif dev:transportType() == "Virtual" then
             dev:setVolume(0)
             dev:setMuted(true)
         end
@@ -153,7 +153,7 @@ end
 
 function preFlightChat()
     hs.execute(
-        "open -Fnb com.google.Chrome --args --disable-notifications --app=https://verstaerker-583.github.io/obs/gp/html/chat.html"
+        "open -Fnb com.google.Chrome --args --app=https://verstaerker-583.github.io/obs/gp/html/chat.html --disable-notifications"
     )
 end
 
@@ -161,7 +161,7 @@ function preFlightCloseApps()
     for i, win in ipairs(hs.window.allWindows()) do
         bundle = win:application():bundleID()
         if bundle == "com.obsproject.obs-studio" then
-        -- elseif bundle == "com.apple.Safari" then
+            -- elseif bundle == "com.apple.Safari" then
         elseif bundle == "com.apple.Terminal" then
         elseif bundle == "com.boinx.FotoMagico5" then
         elseif bundle == "com.microsoft.Powerpoint" then
@@ -169,10 +169,13 @@ function preFlightCloseApps()
         elseif bundle == "com.teamviewer.TeamViewer" then
         elseif bundle == "org.hammerspoon.Hammerspoon" then
         else
-        win:close()
+            win:close()
             win:application():kill9()
         end
     end
+    hs.execute(
+        "osascript -e 'tell application "Finder" to close every window'"
+    )
 end
 
 function preFlightLaunch()
@@ -181,7 +184,7 @@ function preFlightLaunch()
     preFlightSystem()
     preFlightScreens()
     hs.execute(
-        "open -a OBS --args --always-on-top --collection 'gp' --disable-notifications --disable-updater --enable-media-stream --profile 'gpYTsq' --scene 'start' --startstreaming --startvirtualcam"
+        "open -a OBS --args --disable-notifications --disable-updater --enable-media-stream --scene 'start' --startstreaming --startvirtualcam"
     )
     preFlightWindows()
 end
@@ -224,14 +227,14 @@ function preFlightSystem()
     -- Wifi
     if hs.network.interfaceDetails(v4) then
         if hs.network.interfaceDetails(v4)["AirPort"] then
---            hs.alert("🚨 📶 🚨", 10)
+            --            hs.alert("🚨 📶 🚨", 10)
             log.i("🚨 📶 🚨")
         end
     end
 
     -- Power
     if hs.battery.powerSource() ~= "AC Power" then
---        hs.alert("🚨 🔌 🚨", 10)
+        --        hs.alert("🚨 🔌 🚨", 10)
         log.i("🚨 🔌 🚨")
     end
 
@@ -306,7 +309,7 @@ function topLeftMaxY(win)
 
     local x = f
 
-    x.x = 0 
+    x.x = 0
     x.y = 0
     x.w = 500
     x.h = max.h

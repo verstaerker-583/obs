@@ -1,7 +1,8 @@
 # init.lua
-s/--collection 'gp'/--collection 'mm'/
-s/--profile 'gpYTsq'/--profile 'mmYTlq'/
-#s/--startstreaming //
+s/ --startstreaming//
+s/ --startvirtualcam//
+s/OBS --args/& --collection 'mm'/
+s/OBS --args/& --profile 'mmYTlq'/
 s/gp\/html/mm\/html/
 
 # global.ini
@@ -12,7 +13,6 @@ SceneCollection=mm\
 SceneCollectionFile=mm
 
 # basic.ini
-/ScaleType/d
 /\[Audio\]/a\
 MonitoringDeviceId=AppleHDAEngineOutput:1B,0,1,1:0
 

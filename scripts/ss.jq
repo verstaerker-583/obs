@@ -1,3 +1,4 @@
+#
 .name = "ss"
 | (.sources[] | select(.id == "browser_source").settings[]?|strings)|= sub("gp";"ss")
 | (.sources[] | select(.name == "?").settings.color1) = 4291932451

@@ -1,7 +1,8 @@
 # init.lua
-s/--profile 'gpYTsq'/--profile 'gpYTmq'/
-s/--startvirtualcam //
-s/--enable-media-stream //
+s/ --enable-media-stream//
+s/ --startvirtualcam//
+s/OBS --args/& --collection 'gp'/
+s/OBS --args/& --profile 'gpYTmq'/
 
 # global.ini
 /\[Basic\]/a\
@@ -11,7 +12,6 @@ SceneCollection=gp\
 SceneCollectionFile=gp
 
 # basic.ini
-/ScaleType/d
 /\[Audio\]/a\
 MonitoringDeviceId=AppleHDAEngineOutput:1B,0,1,1:0
 

@@ -1,9 +1,8 @@
 # init.lua
-s/--always-on-top //
-s/--collection 'gp'/--collection 'mm'/
-s/--profile 'gpYTsq'/--profile 'mmYTsq'/
 s/Mode01h = 900/Mode01h = 1200/
 s/Mode01w = 1440/Mode01w = 1920/
+s/OBS --args/& --collection 'mm'/
+s/OBS --args/& --profile 'mmYTsq'/
 s/gp\/html/mm\/html/
 
 # global.ini
@@ -18,7 +17,6 @@ SceneCollectionFile=mm
 #SceneCollectionFile=gp
 
 # basic.ini
-/ScaleType/d
 /\[Audio\]/a\
 MonitoringDeviceId=BuiltInHeadphoneOutputDevice
 #MonitoringDeviceId=AppleUSBAudioEngine:LG Electronics Inc.:USB Audio:141000:2
