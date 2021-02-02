@@ -54,7 +54,7 @@ function postFlight()
     local devices = hs.screen.allScreens()
     for i, dev in ipairs(devices) do
         dev:desktopImageURL("file:///System/Library/Desktop%20Pictures/Big%20Sur.heic")
-        -- dev:desktopImageURL("file:///System/Library/CoreServices/DefaultDesktop.heic")
+        --dev:desktopImageURL("file:///System/Library/CoreServices/DefaultDesktop.heic")
 
         if dev == hs.screen.primaryScreen() then
             if not dev:setMode(Mode00w, Mode00w, 2) then
@@ -161,7 +161,6 @@ function preFlightCloseApps()
     for i, win in ipairs(hs.window.allWindows()) do
         bundle = win:application():bundleID()
         if bundle == "com.obsproject.obs-studio" then
-            -- elseif bundle == "com.apple.Safari" then
         elseif bundle == "com.apple.Terminal" then
         elseif bundle == "com.boinx.FotoMagico5" then
         elseif bundle == "com.microsoft.Powerpoint" then
@@ -173,9 +172,6 @@ function preFlightCloseApps()
             win:application():kill9()
         end
     end
-    hs.execute(
-        "osascript -e 'tell application "Finder" to close every window'"
-    )
 end
 
 function preFlightLaunch()
