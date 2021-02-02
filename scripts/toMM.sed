@@ -21,7 +21,3 @@ SceneCollectionFile=mm
 MonitoringDeviceId=BuiltInHeadphoneOutputDevice
 #MonitoringDeviceId=AppleUSBAudioEngine:LG Electronics Inc.:USB Audio:141000:2
 #MonitoringDeviceId=BuiltInSpeakerDevice
-
-/\[SimpleOutput\]/a\
-UseAdvanced=true\
-Preset=faster

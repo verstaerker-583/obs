@@ -20,7 +20,3 @@ HotkeyFocusType=DisableHotkeysOutOfFocus
 /\[Audio\]/a\
 MonitoringDeviceId=BuiltInSpeakerDevice
 #MonitoringDeviceId=BuiltInHeadphoneOutputDevice
-
-/\[SimpleOutput\]/a\
-UseAdvanced=true\
-Preset=faster
