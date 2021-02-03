@@ -10,10 +10,10 @@ local Mode01h = 900
 -- external
 local Mode10w = 1920
 local Mode10h = 1080
---local Mode01w = 3840
---local Mode01h = 2160
---local Mode01w = 5120
---local Mode01h = 2880
+--local Mode10w = 3840
+--local Mode10h = 2160
+--local Mode10w = 5120
+--local Mode10h = 2880
 
 local Mode11w = 1280
 local Mode11h = 720
@@ -30,6 +30,9 @@ function postFlight()
     hs.execute("defaults write com.apple.finder CreateDesktop -bool true")
     hs.execute("killall Finder")
 
+    -- FotoMagico
+    hs.execute("defaults write com.boinx.FotoMagico5 masterVolume -int 25")
+
     -- Audio
     hs.osascript("set volume alert volume 100")
     devices = hs.audiodevice.allDevices()
@@ -37,7 +40,7 @@ function postFlight()
         dev:setMuted(false)
         dev:setInputMuted(false)
         dev:setVolume(25)
-        dev:setInputVolume(50)
+        dev:setInputVolume(25)
         if dev:transportType() == "Built-in" then
             dev:setDefaultInputDevice()
             dev:setDefaultOutputDevice()
@@ -180,7 +183,7 @@ function preFlightLaunch()
     preFlightSystem()
     preFlightScreens()
     hs.execute(
-        "open -a OBS --args --disable-notifications --disable-updater --enable-media-stream --scene 'start' --startstreaming --startvirtualcam"
+        "open -a OBS --args --disable-notifications --disable-updater --enable-media-stream --scene 'start' --startstreaming --startvirtualcam --unfiltered_log --verbose"
     )
     preFlightWindows()
 end
@@ -259,7 +262,7 @@ function preFlightWindows()
 end
 
 function tweakFotoMagico()
-    hs.execute("defaults com.boinx.FotoMagico5 FMThemeType")
+    hs.execute("defaults delete com.boinx.FotoMagico5 FMThemeType")
     hs.execute("defaults delete com.boinx.FotoMagico5 masterVolume")
     hs.execute("defaults delete com.google.Chrome")
     -- hs.execute("defaults write com.boinx.FotoMagico5 FMThemeType -int 2")

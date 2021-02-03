@@ -9,5 +9,8 @@
 | (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja/beta?ad&aj&clean&bc&mvb=200&push=Host&r=verstaerker583mm&vd=obs&wc"
 | (.sources[] | select(.name == "Remote").settings.url) = "https://rtc.ninja/beta?ad&aj&clean&mvb=200&push=host&r=verstaerker583mm&vd=obs&wc&optimize=0&bc=Remote"
 
+| (.sources[] | select(.name == "Intro").settings.local_file) = "/System/Library/PrivateFrameworks/Slideshows.framework/Versions/A/Resources/Content/Styles/PhotoMobile.mrbStyle/Contents/Resources/Preview.mov"
+| (.sources[] | select(.name == "Outro").settings.local_file) = "/System/Library/PrivateFrameworks/Slideshows.framework/Versions/A/Resources/Content/Styles/HolidayMobile.mrbStyle/Contents/Resources/Preview.mov"
+
 | setpath(["modules","scripts-tool",0,"path"];"/Users/olaf/Library/Application Support/UPDeck/UPDeck_2-1-19.lua")
 | setpath(["modules","scripts-tool",0,"settings","msgPath"];"/Users/olaf/Library/Application Support/UPDeck")
