@@ -330,12 +330,7 @@ end
 function applicationWatcher(appName, eventType, appObject)
     if (appName == "OBS") then
         if (eventType == hs.application.watcher.launched) then
-            if
-                hs.application.applicationsForBundleID("com.boinx.FotoMagico5") or
-                    hs.application.applicationsForBundleID("com.microsoft.Powerpoint")
-             then
-                preFlightAudio()
-            end
+            preFlightAudio()
         elseif (eventType == hs.application.watcher.terminated) then
             postFlight()
         end
