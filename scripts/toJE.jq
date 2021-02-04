@@ -1,6 +1,9 @@
 #
 del(
 	(
+		.DesktopAudioDevice1
+	),
+	(
 		.AuxAudioDevice1.filters[] | select(.id == "noise_gate_filter")
 	),
 	(
