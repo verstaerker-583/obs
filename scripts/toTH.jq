@@ -85,8 +85,8 @@ del(
 	)
 )
 | (.sources[] | select(.id == "browser_source").settings[]?|strings)|= sub("gp";"gp40")
-| (.sources[] | select(.name == "Cam").hotkeys["libobs.show_scene_item.display"]) |= . + [{"key": "OBS_KEY_2"}]
-| (.sources[] | select(.name == "Cam").hotkeys["libobs.show_scene_item.display"]) |= . + [{"key": "OBS_KEY_I"}]
+| (.sources[] | select(.name == "Cam").hotkeys["libobs.show_scene_item.display"]) |= . + [{"key": "OBS_KEY_2","key": "OBS_KEY_I"}]
+#| (.sources[] | select(.name == "Cam").hotkeys["libobs.show_scene_item.display"]) |= . + [{"key": "OBS_KEY_I"}]
 | (.sources[] | select(.name == "External").settings.device) = "CC24383EGBPF9T9CN"
 | (.sources[] | select(.name == "Internal").settings.device) = "CC24383EGBPF9T9CN"
 | (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/greenpeace/Documents/gp40/intro"

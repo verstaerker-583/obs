@@ -4,7 +4,6 @@ OBS="Library/Application Support/obs-studio"
 UPDeck="Library/Application Support/UPDeck"
 
 killall Hammerspoon
-killall love
 killall obs
 
 rm -rf ~/"$OBS"
@@ -23,10 +22,7 @@ find ~ -iname '.ds*' -delete
 killall "System Preferences"
 
 if [ "$USER" = "johanneserdmann" ]; then
-	mkdir -p ~/Documents/Segelsofa
-	cp ~/Desktop/intro.mp4 ~/Documents/Segelsofa
-	chmod -R -w ~/Documents/Segelsofa
-	chown -R root ~/Documents/Segelsofa
+	:
 fi
 
 if [ "$USER" = "markus" ]; then

@@ -5,17 +5,6 @@ UPDeck="Library/Application Support/UPDeck"
 
 chown -R $USER /tmp/obs-studio
 
-if [ "$USER" != "johanneserdmann" ]; then
-	mkdir -p ~/"$UPDeck"/Backup
-	mv /tmp/obs-studio/UPDeck_2-1-19.lua ~/"$UPDeck"
-	mv /tmp/obs-studio/verstaerker-583.json ~/"$UPDeck"/Backup
-
-	chown -R $USER ~/"$UPDeck"
-	chown -R root ~/"$UPDeck"/backup
-
-	find ~/"$UPDeck" -d -exec touch -ht 197304291400 '{}' \;
-fi
-
 mkdir -p ~/.hammerspoon
 mv /tmp/obs-studio/init.lua ~/.hammerspoon
 

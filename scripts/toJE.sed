@@ -1,6 +1,6 @@
 # init.lua
-#s/ --enable-media-stream//
-#s/ --startvirtualcam//
+s/ --enable-media-stream//
+s/ --startvirtualcam//
 s/OBS --args/& --collection 'ss'/
 s/OBS --args/& --profile 'jeYTsq'/
 s/gp\/html/je\/html/
@@ -18,5 +18,10 @@ HotkeyFocusType=DisableHotkeysOutOfFocus
 
 # basic.ini
 /\[Audio\]/a\
-MonitoringDeviceId=BuiltInSpeakerDevice
+MonitoringDeviceId=AppleHDAEngineOutput:1B,0,1,1:0
+#MonitoringDeviceId=BuiltInSpeakerDevice
 #MonitoringDeviceId=BuiltInHeadphoneOutputDevice
+
+/\[SimpleOutput\]/a\
+UseAdvanced=true\
+Preset=ultrafast

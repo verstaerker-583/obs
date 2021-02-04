@@ -120,13 +120,18 @@ function preFlightAudio()
         if dev:transportType() == "Built-in" then
             if dev:jackConnected() or dev:uid() == "BuiltInHeadphoneInputDevice" then
                 dev:setInputVolume(headsetInput)
-                headset = dev:setDefaultInputDevice()
+                if not usbmic then
+                    headset = dev:setDefaultInputDevice()
+                end
             else
                 dev:setInputVolume(builtinInput)
-                if not headset then
+                if not headset and not usbmic then
                     dev:setDefaultInputDevice()
                 end
             end
+        elseif dev:name() == "Trust GXT 232 Microphone" then
+                dev:setInputVolume(100)
+                usbmic = dev:setDefaultInputDevice()
         else
             dev:setInputVolume(25)
             dev:setInputMuted(true)

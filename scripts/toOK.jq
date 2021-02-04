@@ -11,6 +11,3 @@
 
 | (.sources[] | select(.name == "Intro").settings.local_file) = "/System/Library/PrivateFrameworks/Slideshows.framework/Versions/A/Resources/Content/Styles/PhotoMobile.mrbStyle/Contents/Resources/Preview.mov"
 | (.sources[] | select(.name == "Outro").settings.local_file) = "/System/Library/PrivateFrameworks/Slideshows.framework/Versions/A/Resources/Content/Styles/HolidayMobile.mrbStyle/Contents/Resources/Preview.mov"
-
-| setpath(["modules","scripts-tool",0,"path"];"/Users/olaf/Library/Application Support/UPDeck/UPDeck_2-1-19.lua")
-| setpath(["modules","scripts-tool",0,"settings","msgPath"];"/Users/olaf/Library/Application Support/UPDeck")
