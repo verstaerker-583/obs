@@ -2,7 +2,7 @@
 s/ --enable-media-stream//
 s/ --startvirtualcam//
 s/OBS --args/& --collection 'ss'/
-s/OBS --args/& --profile 'jeYTsq'/
+s/OBS --args/& --profile 'jeYTmq'/
 s/gp\/html/je\/html/
 s/hs.autoLaunch(true)/hs.autoLaunch(false)/
 
@@ -17,8 +17,7 @@ SceneCollectionFile=ss
 HotkeyFocusType=DisableHotkeysOutOfFocus
 
 # basic.ini
-/\[Audio\]/a\
-MonitoringDeviceId=AppleHDAEngineOutput:1B,0,1,1:0
+#/\[Audio\]/a\
 #MonitoringDeviceId=BuiltInSpeakerDevice
 #MonitoringDeviceId=BuiltInHeadphoneOutputDevice
 
