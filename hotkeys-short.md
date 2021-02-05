@@ -15,13 +15,11 @@
 * **[<]**	Wechsel Kamera 🎥
 * **[+]**	PiP ein-/ausblenden 🖼/ 🎥
 
-* **[V]**	**V**ideo 🎞
-
 * **[M]**	Stummschaltung **M**ikrofon 🔇
 * **[D]**	Stummschaltung **D**esktop Audio 🔇
 
 ## in Szene 2 "Cam" 🎥
 * **[?]**	❓
-* **[A]**	Aboaufruf 👍
+* **[A]**	**A**boaufruf 👍
 * **[C]**	**C**hat 💬
 * **[€]**	Spendenaufruf 🤲

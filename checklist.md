@@ -42,7 +42,6 @@
 #### Filme
 - **[I]** **I**ntro sicht- und hörbar?
 - **[O]** **O**utro sicht- und hörbar?
-- **[V]** **V**ideo sicht- und hörbar?
 
 ### go/no go poll
 

@@ -12,7 +12,7 @@
     * 🔇 alle Audioquellen geschlossen
 
 2. **[2]** Szene "Cam" 🎥
-    * 🔊 alle Audioquellen, außer Gast ❌, offen
+    * 🔊 alle Audioquellen offen
     * 🎥 `Internal` voreingestellt
     * 🖼 Screen, Abo- und Spendenaufruf, ❓ und Chat 💬 ausgeblendet
 
@@ -20,12 +20,12 @@
     * **[<]** Wechsel Kamera
     * **[+]** "Screen" 🖼 ein-/ausblenden
     * **[?]** ❓
-    * **[A]** Aboaufruf 👍 ein-/ausblenden
-    * **[C]** Chat 💬 ein-/ausblenden
+    * **[A]** **A**boaufruf 👍 ein-/ausblenden
+    * **[C]** **C**hat 💬 ein-/ausblenden
     * **[€]** Spendenaufruf 🤲
 
 3. **[3]** Szene "Screen" 🖼
-    * 🔊 alle Audioquellen, außer Gast ❌, offen
+    * 🔊 alle Audioquellen offen
     * Kameras ausgeblendet
 
     ⌨ Hotkeys
@@ -54,8 +54,8 @@
     ⌨ Hotkeys
     * **[+]** "Screen" 🖼 ein-/ausblenden
     * **[?]** ❓
-    * **[A]** Aboaufruf 👍 ein-/ausblenden
-    * **[C]** Chat 💬 aus-/einblenden
+    * **[A]** **A**boaufruf 👍 ein-/ausblenden
+    * **[C]** **C**hat 💬 aus-/einblenden
     * **[€]** Spendenaufruf 🤲
 
 * **[G]** Szene "**G**uest" entspricht Szene "Cam" **[2]** mit eingeblendetem Gast
@@ -66,8 +66,8 @@
     ⌨ Hotkeys
     * **[<]** Wechsel Kamera
     * **[?]** ❓
-    * **[A]** Aboaufruf 👍 ein-/ausblenden
-    * **[C]** Chat 💬 aus-/einblenden
+    * **[A]** **A**boaufruf 👍 ein-/ausblenden
+    * **[C]** **C**hat 💬 aus-/einblenden
     * **[€]** Spendenaufruf 🤲
 
 * **[H]** Szene "**H**istory" entspricht Szene "Screen" **[3]**
@@ -95,7 +95,7 @@
         * OBS streamt 🔴
 
 * **[⌃][⌥][⌘] & [W]** - ***"Windows"*** 🔧
-    * `Skype`, `FotoMagico` und `OBS` werden an den vorgegebenen Positionen in der vorgegebenen Größe platziert 
+    * `FotoMagico` und `OBS` werden an den vorgegebenen Positionen in der vorgegebenen Größe platziert 
 
 ## FotoMagico 🖼
 * **[⌘] & [P]** Präsentation im Vollbildmodus starten
