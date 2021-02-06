@@ -1,8 +1,6 @@
 # init.lua
 s/Mode01h = 900/Mode01h = 1200/
 s/Mode01w = 1440/Mode01w = 1920/
-s/Mode10h = 1920/Mode10h = 3840/
-s/Mode10w = 1080/Mode10w = 2160/
 s/OBS --args/& --collection 'mm'/
 s/OBS --args/& --profile 'mmYTsq'/
 s/gp\/html/mm\/html/
