@@ -68,6 +68,7 @@ del(
 )
 | (.sources[] | select(.name == "External").filters) |= [
 	{
+		"enabled": "false",
 		"id": "color_filter",
 		"name": "Color Correction",
 		"settings": {
@@ -76,13 +77,8 @@ del(
 		}
 	}
 ] + .
-| (.sources[] | select(.name == "External").filters[] | select(.id == "clut_filter").settings.clut_amount) = 0.35
-| (.sources[] | select(.name == "External").settings) =
-	{
-		"device": "0x11120001bcf0215",
-		"preset": "AVCaptureSessionPreset1920x1080"
-	}
-| (.sources[] | select(.name == "Internal").settings.device) = "EAB7A68FEC2B4487AADFD8A91C1CB782"
+| (.sources[] | select(.name == "External").settings.device) = "0x141000001bcf0215"
+| (.sources[] | select(.name == "Internal").settings.device) = "CC26163C4LSGDV4AA"
 | (.sources[] | select(.name == "GuestA").settings.url) = "https://rtc.ninja/beta?optimize=0&r=verstaerker583je&scene&pull=GuestA"
 | (.sources[] | select(.name == "Host").settings.url) = "https://rtc.ninja/beta?ad&aj&clean&bc&mvb=200&push=Host&r=verstaerker583je&vd=obs&wc"
 | (.sources[] | select(.name == "Intro").settings.local_file) = "/Users/johanneserdmann/Documents/Segelsofa/intro.mp4"
