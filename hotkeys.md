@@ -98,7 +98,7 @@
 * **[⌃][⌥][⌘] & [S]** - ***"Screen"*** 🔧
     * Bildschirmeinstellungen werden vorgenommen
 
-* **[⌃][⌥][⌘] & [A]** - ***"Screen"*** 🔧
+* **[⌃][⌥][⌘] & [A]** - ***"Audio"*** 🔧
     * Audioeinstellungen werden vorgenommen
    
 ## FotoMagico 🖼
