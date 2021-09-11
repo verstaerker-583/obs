@@ -5,8 +5,6 @@
 * **[M]** 🔇 Mikrofon
 * **[D]** 🔇 Desktop Audio
 
-* **[⌃][⌥][⌘] & [S]** - ***"Streamen"***
-
 ### Szenen
 1. **[1]** Szene "Start" ⏰
     * 🔇 alle Audioquellen geschlossen
@@ -95,7 +93,7 @@
         * OBS streamt 🔴
 
 * **[⌃][⌥][⌘] & [W]** - ***"Windows"*** 🔧
-    * `FotoMagico` und `OBS` werden an den vorgegebenen Positionen in der vorgegebenen Größe platziert 
+    * `FotoMagico`/ `PowerPoint` und `OBS` werden an den vorgegebenen Positionen in der vorgegebenen Größe platziert 
 
 ## FotoMagico 🖼
 * **[⌘] & [P]** Präsentation im Vollbildmodus starten
