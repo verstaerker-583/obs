@@ -6,8 +6,8 @@
 - Neustart Computer
 
 ### Hammerspoon
-- **[⌃][⌥][⌘] & [V]**
-    * Videoeinstellungen werden vorgenommen
+- **[⌃][⌥][⌘] & [S]**
+    * Bildschirmeinstellungen werden vorgenommen
 
 ### Präsentation
 - Präsentation laden
