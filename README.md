@@ -10,3 +10,6 @@ specific obs configurations and overlays
 [🔴 #Segelsofa](https://www.youtube.com/playlist?list=PL8dKlqIamEwQ9cqebtHu7SGSUo0Zve-Lo)
 
 [🔴 #buntgespräch](https://youtube.com/playlist?list=PLavonjDY6GRP0segQC4iHs4yJjMP1Efit)
+
+[Checklist](https://verstaerker-583.github.io/obs/checklist)
+[Hotkeys](https://verstaerker-583.github.io/obs/hotkeys)
