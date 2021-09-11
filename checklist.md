@@ -28,7 +28,7 @@
 ### OBS
 #### Szenen in Ausgangsposition, Quellen sicht-/unsichtbar schalten und Overlays vom Server laden
 - **[1]**
-- **[2]**, **[€]**, **[C]**, **[?]**
+- **[2]**, **[€]**, **[C]**, **[?]**, **[A]**
 - **[+]**
     * `Präsentation` sicht- und hörbar?
 - **[<]**
@@ -87,7 +87,7 @@
 #### Szenen in Ausgangsposition, Quellen sicht-/unsichtbar schalten und Overlays vom Server laden
 - ⚠ OBS nicht anklicken, damit Präsentation bedienbar bleibt. 
 - **[1]**
-- **[2]**, **[€]**, **[C]**, **[?]**
+- **[2]**, **[€]**, **[C]**, **[?]**, **[A]**
 - **[<]**
     * 🎥 `External` aktiv?
 - **[3]**
@@ -153,10 +153,6 @@
 ⏹️ 🔴
 
 - OBS beenden
-
-### Hammerspoon
-- **[⌃][⌥][⌘] & [M]**
-    * senden der Log- und Konfigurationsdateien
 
 - Olaf: Warten auf das Ausbleiben des Signals und dann den Stream auf YouTube beenden.
 
