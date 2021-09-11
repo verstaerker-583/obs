@@ -23,3 +23,23 @@
 * **[A]**	**A**boaufruf 👍
 * **[C]**	**C**hat 💬
 * **[€]**	Spendenaufruf 🤲
+
+## Hammerspoon
+* **[⌃][⌥][⌘] & [L]** - ***"Launch"***
+    * Audio- und Videoeinstellungen werden vorgenommen
+    * Powermanagement wird deaktiviert
+    * WiFi wird deaktiviert
+    * verschiedene Prüfungen werden durchgeführt
+    * nicht erforderliche Anwendungen werden geschlossen
+    * wenn OBS nicht schon aktiv: 
+        * OBS wird mit dem richtigen Profil und der richtigen Szenensammlung geöffnet
+        * OBS streamt 🔴
+
+* **[⌃][⌥][⌘] & [W]** - ***"Windows"*** 🔧
+    * `FotoMagico`/ `PowerPoint` und `OBS` werden an den vorgegebenen Positionen in der vorgegebenen Größe platziert 
+
+* **[⌃][⌥][⌘] & [S]** - ***"Screen"*** 🔧
+    * Bildschirmeinstellungen werden vorgenommen
+
+* **[⌃][⌥][⌘] & [A]** - ***"Audio"*** 🔧
+    * Audioeinstellungen werden vorgenommen
