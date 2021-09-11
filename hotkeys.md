@@ -89,11 +89,17 @@
     * verschiedene Prüfungen werden durchgeführt
     * nicht erforderliche Anwendungen werden geschlossen
     * wenn OBS nicht schon aktiv: 
-        * OBS wird mit dem Profil `gpYTsq` und der Szenensammlung `gp` geöffnet
+        * OBS wird mit dem richtigen Profil und der richtigen Szenensammlung geöffnet
         * OBS streamt 🔴
 
 * **[⌃][⌥][⌘] & [W]** - ***"Windows"*** 🔧
     * `FotoMagico`/ `PowerPoint` und `OBS` werden an den vorgegebenen Positionen in der vorgegebenen Größe platziert 
 
+* **[⌃][⌥][⌘] & [S]** - ***"Screen"*** 🔧
+    * Bildschirmeinstellungen werden vorgenommen
+
+* **[⌃][⌥][⌘] & [A]** - ***"Screen"*** 🔧
+    * Audioeinstellungen werden vorgenommen
+   
 ## FotoMagico 🖼
 * **[⌘] & [P]** Präsentation im Vollbildmodus starten
