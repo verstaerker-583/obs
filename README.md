@@ -12,4 +12,7 @@ specific obs configurations and overlays
 [🔴 #buntgespräch](https://youtube.com/playlist?list=PLavonjDY6GRP0segQC4iHs4yJjMP1Efit)
 
 [Checklist](https://verstaerker-583.github.io/obs/checklist)
+
+[Hotkeys - short](https://verstaerker-583.github.io/obs/hotkeys-short)
+
 [Hotkeys](https://verstaerker-583.github.io/obs/hotkeys)
