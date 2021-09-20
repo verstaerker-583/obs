@@ -1,6 +1,6 @@
 # ⌨ Hotkeys
 
-* **[1]**	Szene "Start" ⏰
+* **[1]**	Szene "Start" [⏰](https://verstaerker-583.github.io/obs/ss/html/start.html)
   
 * **[I]**	**I**ntro 🎞
 
