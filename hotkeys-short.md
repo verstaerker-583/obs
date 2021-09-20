@@ -4,12 +4,12 @@
   
 * **[I]**	**I**ntro 🎞
 
-* **[2]**	Szene "Cam" 🎥
+* **[2]**	Szene "Cam" [🎥](https://verstaerker-583.github.io/obs/ss/html/cam.html)
 * **[3]**	Szene "Screen" 🖼
 
 * **[O]**	**O**utro 🎞
   
-* **[4]**	Szene "Finish" 🏁
+* **[4]**	Szene "Finish" [🏁](https://verstaerker-583.github.io/obs/ss/html/finish.html)
 
 ## in allen Szenen
 * **[<]**	Wechsel Kamera 🎥
@@ -20,9 +20,10 @@
 
 ## in Szene 2 "Cam" 🎥
 * **[?]**	❓
-* **[A]**	**A**boaufruf 👍
-* **[C]**	**C**hat 💬
-* **[€]**	Spendenaufruf 🤲
+* **[A]**	**A**boaufruf [👍](https://verstaerker-583.github.io/obs/ss/html/subscribe.html)
+* **[C]**	**C**hat [💬](https://verstaerker-583.github.io/obs/ss/html/chat.html)
+* **[€]**	Spendenaufruf [🤲](https://verstaerker-583.github.io/obs/ss/html/donate.html)
+
 
 ## Hammerspoon
 * **[⌃][⌥][⌘] & [L]** - ***"Launch"***
